@@ -1,0 +1,139 @@
+\magnification=1200
+
+
+ \def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf On Barnes functions }
+
+
+Consider ring $B$ with generators $\{\s_a\}$, where $a$ is an arbitrary complex number.  We consider also functions $s_a$ such that
+        $$
+    s_a(t)={1\over e^{-at}}
+        $$
+One can consider homomorphism $\iota$ of the ring $B$ to the algebra 
+of functions defined by relations
+     $$
+\iota(\s_a)=s_a\,.
+     $$
+Denote by $N$ the kernel of this isomorphism.
+
+{\bf Fact}
+
+ For arbitrary complex numbers ${a_1,a_2,\dots a_n}$, the elements
+       $$
+   \s_{a_1+\dots+a_n}\prod\left(\sigma_{a_i}-1\right)-
+      (\s_{a_1+\dots+a_n}-1)\prod\left(\sigma_{a_i}\right)\,
+       $$
+belong to the subring $N$, that is the functions
+    $$
+   s_{a_1+\dots+a_n}(t)\prod\left(s_{a_i}(t)-1\right)-
+      (s_{a_1+\dots+a_n}(t)-1)\prod\left(s_{a_i}(t)\right)\,
+       $$
+vanish
+
+ For example elements
+        $$
+  \s_{a+b}-\s_{a+b}(\s_a+\s_b)+\s_a\s_b\,,\quad
+   \s_{a+b+c}-\s_{a+b+c}\left(\s_a+\s_b+\s_c
+     -\s_a\s_b-\s_a\s_c-\s_b\s_c\right)-\s_a\s_b\s_c
+        $$
+belong to the subring $N$ and 
+         $$
+      \matrix
+         {
+  s_{a+b}(t)-s_{a+b}(t)(s_a(t)+s_b(t))+s_a(t)s_b(t)\equiv 0\,\cr
+   s_{a+b+c}(t)-s_{a+b+c}(t)\left(s_a(t)+s_b(t)+s_c(t)
+     -s_a(t)s_b(t)-s_a(t)s_c(t)-s_b(t)s_c(t)\right)-
+      s_a(t)s_b(t)s_c(t)\equiv 0\cr
+          }
+        $$
+{\bf Question:  How looks ring $N$???}
+
+  
+Let $r$ be an arbitrary element of the ring $B$,
+     
+ Now we consider on the space of functions the linear map $R$:
+          $$
+R\colon\quad A(t)\mapsto R(A)(t)=A_-(t)-A_0e^{-t}
+          $$
+(see the \'etude in)
+
+
+One can assing to every monom $r=\sigma_{a_1}\dots\s_{a_n}\in B$ 
+the following Barnes function
+            $$
+  B_r(z|a_1,\dots,a_n)=\exp
+               \left(
+          \int_0^\infty 
+          \left(
+       e^{-zt}\iota(r)(t)-R\left[e^{-zt}\iota(r)\right](t)
+            \right){dt\over t}
+               \right)=
+            $$  
+               $$
+                \exp
+               \left(
+          \int_0^\infty 
+          \left(
+       e^{-zt}s_{a_1}(t)\dots s_{a_n}(t)-
+          R\left[e^{-zt}s_{a_1}\dots s_{a_n}\right](t)
+            \right){dt\over t}
+               \right)\,.
+            $$
+For example to the monom $\s_a\s_b\s_c$ corresponds the barnes function
+          $$
+   B(z|a,b,c)=   \exp
+               \left(
+          \int_0^\infty 
+          \left(
+          {e^{-zt}\over (1-e^{-at})(1-e^{-bt})(1-e^{-ct})}-
+          R\left[{e^{-zt}\over (1-e^{-at})(1-e^{-bt})(1-e^{-ct})}\right]
+            \right){dt\over t}
+               \right)\,.
+          $$
+
+ \bye
+

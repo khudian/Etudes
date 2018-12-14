@@ -1,0 +1,165 @@
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 21 July 2017
+
+    \centerline {\bf Angle function}
+
+
+ { In this etude we will speak about one function
+which can be defined in a very simple way, and it has relations
+with such  beautiful problem of mathematics as  Dirichle problem for
+domain, conformal  map. e.t.c}
+
+
+
+
+  Let $C\colon \r=\r(t)$ be a curve in $\E^2$. 
+Consider the function
+            $$
+W(\R)=\hbox{the angle at which one sees the curve
+  $C$ from the point $\R$}
+         \eqno (1.1)
+            $$
+
+What can we say about this function?
+
+%  {\it
+1) This function is harmonic function:
+     $$ 
+    \Delta W=
+{\p^2 W(x,y)\over \p x^2}+
+{\p^2 W(x,y)\over \p y^2}=0 \,,\quad  \hbox
+{for all the points $\r\not\in C $}
+         $$
+
+($x,y$ are standard Cartesian coordinates in $\E^2$)
+
+on the surface $C$ this function has jump of values
+
+{\bf Example 1}
+1. Let $AB$ be a segment 
+of straight line between points
+$A=(a,b)$
+and $B=(1,1)$ on the axis $Ox=X$,
+$A=(a,0)$, $B=(b,0)$.
+
+Consider an arbitrary point $P=(X,Y)$ on $\E^2$.
+ Let $N=(0,X)$ be a projection of the point $P$
+on the axis $OX$. Then it 
+is obvious that
+       $$
+W(P)=W(X,Y)=\angle PAN-\angle PBN=
+  {\rm arctan\,}{X-a\over Y}-
+  {\rm arctan\,}{X-b\over Y}\,.
+       \eqno (1.Ex1.1)
+       $$
+
+{\bf Example 2}  Let $u(\varphi)$,
+$\nu(\varphi)$ be functions
+on unit circle $x^2+y^2=1$ then
+              $$
+  W(r,\theta)=\int_0^{2\pi}{1-r\cos(\theta-\varphi)\over 
+      1+r^2-2r\cos(\theta-\varphi)}
+      \nu(\varphi)d\varphi=
+ {1\over 2\pi}\int_0^{2\pi}{1-r^2\over 
+      1+r^2-2r\cos(\theta-\varphi)}
+      f(\varphi)d\varphi
+              $$
+is a harmonic function in circle with ``wall'' on the circle.
+the jump is equal to $\pi \nu(\varphi)$.
+
+
+\m
+
+{\bf Example 3} Let $u(x)$ be a function on axis $OX$. Then
+                $$
+   W(x,y)=\int {yu(t)\over (x-t)^2+y^2}dt
+                $$
+is harmonic function with wall on the axis $OX$
+
+\m
+
+One can easy to generalise this example considering
+ instead $C$ hypersurface pf dimension $n-1$ in $\E^n$,
+and instead angle cohomology  (see later)
+For example for (1.1)
+              $$
+W(X,Y)=\int F^*_\R(xdy-ydx)=\int {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
+                   $$
+for the case $n>1$ one have to consider instead $1$-form -cohomology
+    $xdy-ydx\over x^2+y^2$. the $n-1$-form
+              $$
+\w\colon\,   dx^1\wedge\dots\wedge dx^n=r^{n-1}dr \wedge \w
+              $$    
+
+
+3)This function is related wih the potential of double layer
+  (see later)
+
+
+4) This function is related with Dirichle problem:
+ find a function $W$ which is harmonic in a domain $U$
+  if its value on the boundary $\p U$ is equal to 
+the given function
+
+
+5)  Conformal mapping: Let $U$ be a function which is conjugate
+to the function $W$, i.e.
+               $$
+        F(x,y)=W+iU
+               $$
+is meromorphic function
+
+%}
+
+
+
+\bye

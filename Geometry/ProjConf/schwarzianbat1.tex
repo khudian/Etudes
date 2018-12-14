@@ -1,0 +1,247 @@
+          \magnification=1200
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf p}}
+\def \exer {{\sl Exercise$\,\,$}}
+
+ \centerline   {\bf Orbits of Batalin-Vilkovisky groupoid and... Schwarzian}
+  \bigskip
+
+ Many years ago with Ted we consider the {\it canonical} pencil of second
+ order operators acting on densities.
+                  $$
+ \Delta_w({\bf \Psi})={1\over 2}
+              \left[
+              \p_a\left(S^{ab}\p_b \Psi\right)
+                  +
+                  (2w+\lambda-1)\gamma^a\p_a\Psi
+                  +
+                  \left(
+                  w\p_a\gamma^a+w(w+\gamma-1)\theta
+                  \right)|Dx|^{w+\lambda}
+              \right]
+              \eqno (1)
+                  $$
+ It is the operator of the weight $\lambda$ which acts on the
+ density ${\bf \Psi}=\Psi(x)|Dx|^w$ of the weight $w$.
+
+This is self-adjoint operator (with respect to canonical scalar product on the space of densitites which
+is normalised by the condition $\Delta 1=0$.) (See the details in [1].)
+
+
+ ${\bf S}=S^{ab}|Dx|^\lambda\p_a\p_b$ is density valued symmetric tensor field of the rank 2.
+
+ $\gamma^a\p_a|Dx|^\lambda, \theta|Dx|^\lambda$ are connection and Brans-Dicke "scalar"
+ (See the details in [1].),
+
+We omit here the signs related with the fact that some of
+coordinates are odd.
+
+
+
+Here we will be interesting in the case when ${\bf S}=S^{ab}|Dx|^\lambda\p_a\p_b$ is {\it non-degenerate.}
+
+
+Let $\gamma_a$ be Christoffel symbols of an arbitrary connection on volume forms. Then one can see that
+             $$
+          \gamma^a|Dx|^\lambda=S^{ab}\gamma_b|Dx|^\lambda,\,\,\, \theta=\gamma_aS^{ab}\gamma_b|Dx|^\lambda
+             $$
+are required density valued upper connection and Brans-Dicke "density".
+
+We know already very well the geometrical meaning of this pencil for $\lambda=0$.
+
+To understand this constructions for $\lambda\not=0$ it is illuminating to do the exercises:
+
+ {\bf Exercise 1} Let $\Delta$ be a self-adjoint operator on densities $\Delta=\delta(\p_x, \hat w)$ on densities
+  of the weight $\lambda=0$. Consider the volume form and the operator:
+                      $$
+                  \Delta'={1\over 2}\left(\rho (x)|Dx|^\lambda\Delta+\Delta \rho (x)|Dx|^\lambda\right)
+                      $$
+This is self-adjoint operator.  Its value for fixed $w$ gives the pencil/
+ \medskip
+
+{\bf Exercise 2}  Let us try to construct by hand an operator
+$\Psi|dx|^w\,\,{\buildrel \Delta\over \longrightarrow}\,\, \Psi|dx|^{w+\lambda}$
+
+
+Consider an arbitrary volume form $\rho(x)|dx|$ and the arbitrary connection $\gamma_a$.
+
+Then consider density valued vector field
+             $$
+  {\bf \rm grad}{\bf \Psi}={\bf T}^a=T^a|Dx|^w=
+  {\bf S}^{ab}\nabla_b {\bf \Psi}=\left(S^{ab}|Dx|^\lambda\right)\left(\p_a\Psi+w\gamma_a\Psi^a\right)|Dx|^w
+             $$
+
+  In the case if
+              $$
+             w+\lambda-1=0\,.
+              $$
+This vector field takes values in the density of the weight $1$ and one can consider its divergence:
+  $\p_a{\bf T}^a$.
+    In the general case we use volume form
+    and we come to the operator
+             $$
+          \Delta {\bf \Psi}= \rho^{w+\lambda-1}{\bf \rm div} \left(\rho^{1-w-\lambda}{\bf \rm grad}{\bf \Psi}\right)=
+            \rho^{w+\lambda-1}\p_a
+            \left[
+               \rho^{1-w-\lambda}
+               \left[
+              S^{ab}
+              \left(
+                \p_b\Psi+w\gamma_b\Psi
+              \right)
+               \right]
+               \right]|Dx|^{w+\lambda}
+             $$
+             $$
+             =\left[\p_a(S^{ab}\p_b\Psi)+
+             \left(w+\gamma-1\right))\gamma^{(0)}_aS^{ab}\left(\p_b\Psi+w\gamma_b\Psi\right)+
+                 w\p_a\left(\gamma^a\Psi\right)\right]|Dx|^{w+\l}=
+             $$
+             $$
+\left[\p_a(S^{ab}\p_b\Psi)+
+             \left( w\gamma^a+
+             \left(w+\gamma-1\right)){\gamma^{(0)}}^a\right)\p_a\Psi+
+                 w\p_a\gamma^a\Psi+
+            w(w+\l-1){\gamma^{(0)}}^a\gamma_a
+                 \Psi\right]|Dx|^{w+\l}
+             $$
+Here $\gamma^a, \gamma^{(0)a}$ are components of upeer valued connection-density:
+ (e.g.$\gamma^a=S^{ab}\gamma_b$)
+
+To simplify if   $\gamma^a=\gamma^{(0)a}$ then we come to
+              $$
+ \Delta{\bf\Psi}=\left[\p_a(S^{ab}\p_b\Psi)+
+             \left( 2w+\gamma-1\right)\gamma^a\p_a\Psi+
+                 w\p_a\gamma^a\Psi+
+            w(w+\l-1)\gamma^a\gamma_a
+                \Psi \right]|Dx|^{w+\l}
+              $$
+
+We see that
+
+1)  we can put $\gamma^a=S^{ab}\gamma_b$ where $\gamma$ is usual connection and
+$\theta=\gamma^a\gamma_a$.
+
+ \medskip
+
+ {\it Schwazian}
+
+In what follows we assume that the symbol-density ${\bf S}$ is non-degenerate,
+$\gamma_a$ are Christoffel symbols of connection , $\gamma^a={\bf S}^{ab}\gamma_b$ and  $\theta=\gamma^a\gamma_a$.
+
+
+ Now consider the case if $2w+\l-1=0$, i.e.
+         $$
+         w={1-\l\over 2}\,\,.
+         $$
+  In this case
+        $$
+        \Delta{\bf\Psi}=\Delta\left(\Psi|Dx|^w\right)=\left[\p_a(S^{ab}\p_b\Psi)+
+                    +
+                 w\p_a\gamma^a\Psi+
+            w(w+\l-1)\gamma^a\gamma_a
+                 \Psi\right]|Dx|^{w+\l}
+        $$
+For a given connecion $\nabla$ with Christoffel symbol $\gamma_a$the orbit of Batalin-Vilkovisky groupoid is given nu differential equation:
+             $$
+          w\p_a\gamma^a+
+            w(w+\l-1)\gamma^a\gamma_a=w\p_a\gamma'^a+
+            w(w+\l-1)\gamma'^a\gamma'_a
+             $$
+i.e.
+            $$
+   w\p_a(S^{ab}\gamma_b)+w(w+\l-1)\gamma_aS^{ab}\gamma_b=w\p_a(S^{ab}\gamma'_b)+w(w+\l-1)\gamma'_aS^{ab}\gamma'_b
+            $$
+ The equation of vector field $\X=\gamma'-\gamma$ is
+(C`est important: nous arrivons a invariant operator on vector densitites. Do it!)
+
+In the special case $\lambda=0$ it is usual Batalin-Vilkoviskyu groupoid.
+
+I consider here another special case:
+     $$
+     \lambda=2, 2w+\lambda-1=0, w=-{1\over 2}
+     $$
+In this case if the space is one-dimensional one can consider invariant vector density
+        $$
+      \V={\p\over \p x}|dx|
+        $$
+     and respectively the symbol-density of the weight 2
+             $$
+            {\bf S}=|dx|^2{\p\over \p x}{\p\over \p x}
+              $$
+The Laplacian becomes:
+       $$
+          \Delta{\bf\Psi}=
+          \Delta\left(\Psi|Dx|^{-{1\over 2}}\right)=\left[\Psi''
+                    -
+                 {1\over 2}\gamma'\Psi
+             -{1\over 4}\gamma^2
+                 \Psi\right]|Dx|^2
+       $$
+let $\gamma$ be an arbitrary connection. Since $n=1$ there are coordinates such that
+in these coordinates $\gamma=0$ and
+ $$
+ \Delta{\bf\Psi}=\Delta\left(\Psi|Dx|^{-{1\over 2}}\right)=\Psi''|Dx|^2
+  $$
+
+
+Find all coordinates such that the appearance of operator be the same.
+(In the case of Batalin-Vilkovisky it was Darboux coordinates:)
+
+        If $\gamma=0$ in given coordinates, then in coordinates $y=y(x)$, then $|dx|=x_y|dy|$ and
+        $\gamma=-\p_y\log x_y=-{x_{yy}\over x_y}$. We see
+         that
+             $$
+      \gamma'+{1\over 2}\gamma^2=\left(-{x_{yy}\over x_y}\right)_y+{x^2_{yy}\over x_y^2}=
+ {3\over 2}{x^2_{yy}\over x_y^2}-{x_{yy}\over x_y}=-\hbox{Schwarzian of the function $y(x)$}
+             $$
+
+Hence we see that operator will have the form $ \Delta{\bf\Psi}=\Delta\left(\Psi|Dx|^{-{1\over 2}}\right)=\Psi''|Dx|^2$
+ after arbitrary Mobius transformation.
+
+ We see that Mobius transformations is the orbit of Batalin-Vilkovisky groupoid as
+ in the odd sympelctic case the Darboux coordinates are the orbit of groupoid.
+
+
+
+\bye

@@ -1,0 +1,1069 @@
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+
+
+
+
+
+\centerline  {\bf  30 July 2017}
+
+
+Учу гипербол. геом.
+Очень полезен Лаврентьев Шабат.
+
+   Долгое время не понимал:
+ Lioville Theorem prohibits conformal bijection
+of plane on the disc, whilst there is no problem
+of conformal bikjection half-plane to disc
+
+********************************************************
+
+\bigskip
+
+\centerline  {\bf  31 July 2017}
+
+      Study conformal mapings, Dirichle problem (Lavrentiev book)
+      
+            Изучаю.
+
+
+       Метод сглаживания:
+
+   Let $C$ be a curve with pieces (arcs) $C_\a$.
+  (e.g. polygon)
+   
+  Let $f=f(t)$ be a function on $C$, 
+which has jumps.
+Let $D_i$ be internal points
+of arcs $C_\a$, where $f$ has a jump.
+Let $A_i$ be vertices $A_\a$: the arc $C_\a$ 
+goes from the vertex $A_\a$
+to the vertex $A_{\a+1}$.
+  Note that at vertices we have a jump of 
+angles: at the vertex $A_\a$ 
+the jump $$
+\delta\varphi_\a=
+\varphi_\a^{(+)}-
+\varphi_\a^{(-)}\,.
+    $$
+ 
+      Let  $F(z)$ be function with jumpes $h_k$
+at the points $D_k$, where curve is smooth and
+  with jumps $H_\a$ at the vertices $A_\a$
+
+Consider (with Lavrentiev-Shabad) the new 
+function
+          $$
+\tilde F(z)=F(z)+
+{1\over \pi}\sum_k\arg (z-D_k)-
+  \sum_\a {H_\a\over \delta\varphi_a}
+\arg(z-A_\a )
+          $$
+This function has no jumps!!!
+
+
+
+********************************************
+\bigskip
+
+\centerline  {\bf  1 August 2017}
+
+How look linear factional maps which send
+ disc $x^2+y^2=1$ onto itself:
+this is representation of the group
+  $SL(2,R)/??$ in Poincare disc.
+
+(Linear fractional bijections of upper-half plane onto itself
+are $SL(2,R)/Z_2$?)
+
+
+  If $$
+ w={Az+B\over Cz+D}
+        $$ 
+and $|w|=1$ if $|z|=1$ , then
+             $$
+z\bar z=1\to w\bar w=1, i.e. 
+  (Az+B)(\bar A\bar z+\bar B)=
+  (Cz+D)(\bar C\bar z+\bar D)
+             $$
+we come to
+      $$
+|A|^2+|B|^2+(A\bar B z+c.c.)=
+|C|^2+|D|^2+(C\bar D z+c.c.)\,.
+      $$
+We see that for $g=\pmatrix{A & B\cr C & D}$,
+         $$
+ |A|^2+|B|^2=|C|^2+|D|^2\,,\quad
+ {\rm and}\,,\quad 
+ A\bar B-C\bar D=0
+    \eqno (*)
+    $$
+This means that  $g$  up to dilation 
+preserves hermitian
+scalar product with signature $(1.1)$,
+we come to the group $SU(1,1)/\{1.-1\}$.
+
+Indeed
+  Let
+    $g=\pmatrix{A & B\cr C & D\cr}$ 
+Then conditions (*)  means that
+         $$
+g^{+}\cdot 
+\pmatrix{1 & 0\cr 0 & -1\cr}\cdot
+g=
+ \pmatrix{\bar A & \bar C\cr 
+ \bar B & \bar D\cr}
+\pmatrix{1 & 0\cr 0 & -1\cr}
+\pmatrix{A & B\cr C & D\cr}
+=
+   \lambda
+ \pmatrix{1 & 0\cr 0 & -1\cr}\,
+         $$
+i.e. removing scaling factor $\l$
+and putting $\det g=1$ we come to 
+               $$
+    g^{+}=
+    \pmatrix{\bar A & \bar C\cr 
+        \bar B & \bar D}=
+  \pmatrix{1 & 0\cr 0 & -1\cr}
+ \pmatrix{A & B\cr C & D\cr}^{-1}
+     \pmatrix{1 & 0\cr 0 & -1\cr}
+         =
+  \pmatrix{1 & 0\cr 0 & -1\cr}
+ \pmatrix{D & -B\cr -C & A\cr}
+\pmatrix{1 & 0\cr 0 & -1\cr}=
+ \pmatrix{D & B\cr C & A\cr}\,,
+           $$
+i.e. $D=\bar A, C=\bar B$
+  Thus  symmetries of Poincare disc
+is $SU(1,1)/\{1,-1\}$, where
+      $$
+SU(1.1)=\left\{  g=
+\pmatrix{A & B\cr \bar B & \bar A\cr}\colon
+      |A|^2-|B|^2=1
+          \right\}\,.
+      $$
+
+How look linear factional maps which send
+ disc $x^2+y^2=1$ onto itself:
+this is representation of the group
+  $SL(2,R)/??$ in Poincare disc.
+
+(Linear fractional bijections of upper-half plane onto itself
+are $SL(2,R)/Z_2$?)
+
+
+  If $$
+ w={Az+B\over Cz+D}
+        $$ 
+and $|w|=1$ if $|z|=1$ , then
+             $$
+z\bar z=1\to w\bar w=1, i.e. 
+  (Az+B)(\bar A\bar z+\bar B)=
+  (Cz+D)(\bar C\bar z+\bar D)
+             $$
+we come to
+      $$
+|A|^2+|B|^2+(A\bar B z+c.c.)=
+|C|^2+|D|^2+(C\bar D z+c.c.)\,.
+      $$
+We see that for $g=\pmatrix{A & B\cr C & D}$,
+         $$
+ |A|^2+|B|^2=|C|^2+|D|^2\,,\quad
+ {\rm and}\,,\quad 
+ A\bar B-C\bar D=0
+    \eqno (*)
+    $$
+This means that  $g$  up to dilation 
+preserves hermitian
+scalar product with signature $(1.1)$,
+we come to the group $SU(1,1)/\{1.-1\}$.
+
+Indeed
+  Let
+    $g=\pmatrix{A & B\cr C & D\cr}$ 
+Then conditions (*)  means that
+         $$
+g^{+}\cdot 
+\pmatrix{1 & 0\cr 0 & -1\cr}\cdot
+g=
+ \pmatrix{\bar A & \bar C\cr 
+ \bar B & \bar D\cr}
+\pmatrix{1 & 0\cr 0 & -1\cr}
+\pmatrix{A & B\cr C & D\cr}
+=
+   \lambda
+ \pmatrix{1 & 0\cr 0 & -1\cr}\,
+         $$
+i.e. removing scaling factor $\l$
+and putting $\det g=1$ we come to 
+               $$
+    g^{+}=
+    \pmatrix{\bar A & \bar C\cr 
+        \bar B & \bar D}=
+  \pmatrix{1 & 0\cr 0 & -1\cr}
+ \pmatrix{A & B\cr C & D\cr}^{-1}
+     \pmatrix{1 & 0\cr 0 & -1\cr}
+         =
+  \pmatrix{1 & 0\cr 0 & -1\cr}
+ \pmatrix{D & -B\cr -C & A\cr}
+\pmatrix{1 & 0\cr 0 & -1\cr}=
+ \pmatrix{D & B\cr C & A\cr}\,,
+           $$
+i.e. $D=\bar A, C=\bar B$
+  Thus  symmetries of Poincare disc
+is $SU(1,1)/\{1,-1\}$, where
+      $$
+SU(1.1)=\left\{  g=
+\pmatrix{A & B\cr \bar B & \bar A\cr}\colon
+      |A|^2-|B|^2=1
+          \right\}\,.
+      $$
+
+********************************************
+
+
+\bigskip
+
+\centerline  {\bf  2 August 2017}
+
+
+
+
+\def\w {\omega}
+
+ 
+Let $\xi$ be a point in the unit disc,
+then the trasformation
+     $$
+w=w(z)={z=\xi\over 1-\bar \xi z }
+     $$
+trasforms disc onto disc and the point $\xi$
+on the centre.
+
+  Mы знали какбы с детства (инверсия),  
+но все таки приятно:
+
+
+********************************************
+
+
+\bigskip
+
+\centerline  {\bf  3 August 2017}
+
+
+Let $u=u(x,y)$ be harmonic function
+in the disc,
+and let $z_0$ be its singulr point.
+
+Consider conjugaate function $v$:
+       $$
+v_x=-u_y\,,v_y=-u_x
+       $$
+it is antiderivative of $1$-form
+$dv=u_ydx-u_xdy$. It defines
+multivalued function
+    $
+V=\int (u_ydx-u_xdy)
+    $
+whic is defined up to a period
+     $$
+\Pi=\int_{C}(u_ydx-u_xdy)\,.
+  $$
+  We come to multivalued holomorphic function
+$u+iv$ with period $\Pi$. On the other hand 
+the function
+     $$
+{\Pi\over 2\pi}Log (z-z_0)
+     $$
+    is multivalued, with the same period.
+Hence the function:
+        $$
+F(z)=u(z)+iv(z)-
+{\Pi\over 2\pi}\log (z-z_0)
+        $$
+has disconnected leaves.  This is multivalued
+function $f(z)\to f(z)+i\Pi$. Consider the function
+        $$
+G(z)=\exp\left(-{2\pi F(z)\over \Pi}\right)=
+\exp\left( u(z)+iv(z)-
+{\Pi\over 2\pi}\log (z-z_0)\right)=
+ (z-z_0)\exp\left(-{2\pi F(z)\over \Pi}\right)
+        $$
+This is ONE-VALUED! holomorphic function:
+        $$
+   f(z)\to f(z)+i\Pi\,, G(z)\to 
+   \exp{{2\pi\over \Pi}\left(F(z)+i\Pi\right)}=G(z)\,.
+         $$
+(here ther are slight inconveniences.....)
+
+ 
+  This is holomorphic function in the disc.
+Consider function
+           $$
+    G
+           $$
+   Почти элементарно, но так приятно,
+и все это есть в Лаврентьеве!
+
+
+********************************************
+
+
+\bigskip
+
+\centerline  {\bf  4 August 2017}
+     Why the function multivalued function
+$\arctan {y\over x}$
+appeared often in calculations?
+
+Because this function is conjugate to
+$\log \sqrt {x^2+y^2}$:
+           $$
+\log z=\log (x+iy)\log \sqrt {x^2+y^2}
++\arctan {y\over x}
+           $$
+
+
+
+********************************************
+
+
+
+\bigskip
+
+\centerline  {\bf 5 August 2017}
+     Why the function multivalued function
+$\arctan {y\over x}$
+appeared often in calculations?
+
+Because this function is conjugate to
+$\log \sqrt {x^2+y^2}$:
+           $$
+\log z=\log (x+iy)\log \sqrt {x^2+y^2}
++\arctan {y\over x}
+           $$
+
+
+
+********************************************
+
+
+
+\bigskip
+
+\centerline  {\bf   6 August 2017}
+
+
+I know well angle function and its relation
+with Green function:
+
+
+In fact Green function generalises this concept.
+
+   recall sketchly :
+ Let $G_U==G(z_0,z)$  be a Green  function of 
+the domain $U$, i.e. the function such that
+ 
+1) $G\approx \log(z-z_0)$ in a vicnity of the point
+$z_0$,
+
+2) it is harmonic elswhere in $U$ except 
+a point $z_0$
+
+3) it vanishes at boundary $\p U$
+  
+
+    Using the identity:
+        $$
+\int_U  u\Delta v-\int_U v\Delta u=
+\int_{\p U} u *dv-\int_{\p V} v * du=
+     \eqno (identity)
+        $$
+we solve the boundary problem
+   $$
+\cases 
+{\Delta F=f\cr 
+F\big\vert_{\p U}=\mu\cr
+}\,,\qquad
+      F=\int_U G\circ f+\int_{\p U}*dG \mu
+$$
+where $\circ$ is convolution.
+(this is called Dirichle problem 
+if $f\equiv 0$.)
+
+
+On the other hand one can come
+to the Green function
+$G_U$  trhough
+
+  1)   Green function $G_\infty(z_0,z)=
+-{1\over 2\pi}\log(z-z_0)$
+
+2) and the ``angle function''
+  defined on the boundary
+solving (with Arsenin) the integral equation.
+  Recall that angle function
+defines for every curve the function
+on plane 
+which is equal to the angle
+that we look at  this curve
+\footnote{$^*$}{another name: 
+double layer potential}.
+
+{\bf Remark}  {\it 
+We wrote identity (ident.)
+in a way to emphasize as much as possible
+the relation between `angle' function and
+  Green function.
+   This identity is written in
+ standard way as following:
+     $$
+\int_U  u\Delta v-\int_U v\Delta u=
+\oint_{\p U} u{\p v\over \p n}d{\bf S} -
+ \oint_{\p V} v {\p u\over \p n}d{\bf S}=
+     \eqno (identity')
+        $$
+(see any book).
+In fact for every vector field $\A$
+      $$
+\underbrace
+\int_C \A d{\bf s}_{\hbox{flux of $\A$ trhough the 
+surface $C$}}=\int \Omega {\cal c}\A\,,
+      $$
+where $\Omega$ is volume $2$-form, and
+      $$
+{\p f\over \p n}={\grad}f
+      $$
+and $*$ is Hodge operation:
+       $$
+   * df=\Omega {\cal c}\grad f
+       $$
+Notice that for harmonic function $u$,
+$d^{-1}(*du)$ is conjugate function:
+      $$
+\Delta u(x,y)=0
+ \Leftrightarrow 
+ u(x,y)+id^{-1}(*d u(x,y))=F(z)\,\,
+ \hbox{is holomorphoc function}
+         $$
+, e.g.
+        $$
+  d^{-1}(*d\log\sqrt{x^2+y^2})={\rm arctan}{y\over x}\,,
+    \log {x^2+y^2}+i{\rm arctan}{y\over x}=\log (x+iy)
+        $$
+it is how angle function relates with 
+normal derivative of Green function.
+}
+
+
+\bigskip
+
+ Thus on the space $C(\p U)$ 
+of functions on boundary we 
+have to linear operators:
+
+  First operator:
+    $$
+  C(\p U)\ni \nu\mapsto   \mu\in C(\p U)\colon
+    \quad
+     s(t)=\int_{\p U} L(t,t')\nu(t')dt'
+    $$
+  Second operator
+          $$
+  C(\p U)\ni \nu\mapsto 
+W\in C(U)\colon\quad
+ W(\r)=\int_U L(\r,t')\nu(t')dt'      
+          $$
+On the other hand we know that
+  for the angle function $L$
+the difference of values of these operators
+on the boundary $\p U$ is equal to 
+$\pi \nu(t)$:
+         $$
+  C(\p U)\ni \nu\mapsto 
+\left(\lim_{\r\to t}
+int_U L(\r,t')\nu(t')dt'\right)-
+ \int_{\p U} L(t,t')\nu(t')dt'=\pi\nu(t)
+         $$
+Thus to solve the Dirichle problem,
+i.e. to reconstruct harmonic function $W$
+by its value $\nu$ at the 
+boundary $\p U_{0_-}$
+we first solving integral equation
+find a function  $\nu$
+such that 
+        $$
+\pi\nu+\int_{\p U} L(t,t')\nu(t')dt'=\mu(t)
+          $$
+ then we reconstruct $W$ in terms of $\nu$.
+
+
+
+$$ $$
+
+ {\bf Example}
+
+
+  Tro to recontruct
+    harmonic function
+$W$ in the disc $x^2+y^2<1$
+using different methods.
+
+First: Green function:
+       $$
+W=\int_{x^2+y^2=1} *d G
+       $$
+but here we need to know $G=G(z_0,0)$
+ We already know the conformal map
+    whoch transforms circle to circle,
+and we know the Green fucntion for  $z_0=0$,
+hence
+     $$
+G(z_0,z)=-{1\over 2\pi}\log
+            \left|
+   {z-z_0\over 1-\bar {z_0}z}
+            \right|
+     $$
+
+Another way to calculate:
+ 
+
+
+
+********************************************
+
+
+\bigskip
+
+\centerline  {\bf 7 August  2017}
+
+
+
+\centerline {\bf Calculation for Green 
+function of disc and half-plane.}
+
+
+
+Recall that if $G_U(z_0,z)$ is Green function
+of domain $U$ then 
+the identity
+      $$
+  \int_U \left(u\Delta v-v\Delta v\right)=
+\int_{\p U}\left(u *dv-v *du\right) 
+ \eqno (0.1)
+      $$
+implies that
+         the function
+      $$
+u(\zeta)=\G_U(\zeta,z)f(z)\Omega+
+\int_{\p U} *d_{(z)}G(\zeta,z)\mu\,,\quad
+   (\Omega \hbox{is area form on $z$-plane})
+ \eqno (0.2)
+      $$
+is the solution of boundary problem
+       $$
+\cases{
+   \Delta u=f\cr u\big\vert_{\p U}=\mu\cr
+         }
+   \eqno (0.3)
+       $$
+
+\m
+
+   \centerline {\bf Green function for disc}
+
+     Having a map
+         $$
+z\to w={z-\zeta\over 1-\bar\zeta z }
+         $$
+which maps unic disc onto unit disc and 
+boundary on boundary, and
+the point $\zeta$ on the centre we define
+               $$
+    G(z_0,z)=-{1\over 2\pi}\log
+            \left|
+   {z-z_0\over 1-\bar {z_0}z}
+            \right|
+               $$ 
+  One can see that
+              $$
+  *dG_{z}=\Omega{\cal c}\grad G_{z}=
+rdr\wedge d\varphi{\cal c}
+\left({\p G\over \p r}{\p \over \p r}+
+{1\over r^2}{\p G\over \p \varphi}{\p \over \p \varphi}\right)=
+  r{\p G\over \p r}{\p \over \p r}d\varphi-{1\over r}{\p G\over \p \varphi}dr
+              $$
+($z=x+iy=r\cos\varphi_ir\sin\varphi$, $z_0=R\cos\theta+iR\sin\theta$)
+   We need derivatives of Green function on boundary $r=1$:
+              $$
+  *dG_{z}\big\vert{|z|=1}=-\Omega{\cal c}
+    \grad G_{z}\big\vert{|z|=1}=
+  -r{\p G\over \p r}{\p \over \p r}\big\vert_{r=1}d\varphi=
+              $$
+      $$
+-r{\p\over \p r}\left(
+        -{1\over 2\pi}
+\log \left|r^{i\varphi}-Re^{i\theta}\right|
+        +{1\over 2\pi}
+\log \left|1-Re^{-i\theta}r^{e^{i\varphi}}\right|
+  \right)\big\vert_{r=1}d\varphi=
+      $$
+      $$
+-r{\p\over \p r}\left(
+        -{1\over 2\pi}
+\log \sqrt{R^2-2Rr\cos(\theta-\varphi)r+r^2}
+        +{1\over 2\pi}
+\log \sqrt{1-2Rr\cos(\theta-\varphi)r+R^2r^2}
+       \right)\big\vert_{r=1}d\varphi=
+      $$
+         $$
+      -{1\over 2\pi} 
+{1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi
+            $$
+
+{\bf Remark} (Peut etre un problem de sign?)
+
+
+This we have the solution of Dirichle problme for the circle:
+if $W$ harmonic function in the disc $D\colon\,x^2+y^2<1$
+such that $W_{\p D}=\mu(\varphi)$
+($r\to 1$????) then
+         $$
+W(R,\theta)={1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
+         $$
+
+Look at this formula.
+It is useful sometimes to write it:
+
+         $$
+W(R,\theta)={1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+
+Notice also that 
+If $\mu(\varphi)=C$ then obviously
+          $$
+W(R,\theta)=\cases{C \,\hbox{for $R<1$}\cr 
+{C\over 2}\,\hbox{for $R=1$} }
+          $$
+if $\mu(\varphi)=e^{in\varphi}$, $n\geq 0$ then 
+          $$
+W(R,\theta)=\cases{z^n=R^n e^{in\varphi}\,\hbox{for $R<1$}\cr 
+\,\hbox{for $R=1$} }
+          $$
+ then we come to harmonic polynomials.....
+
+{\bf Remark} {\it In the formula (*) there is a jump,
+so to be more precise we have to write:
+
+         $$
+W(R,\theta)=\lim_{R\to R_-}{1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+sure this is important only for $R=1$:
+         $$
+W(1,\theta)=\lim_{R\to 1_-}{1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+}
+
+{\bf Remark 2} {\it All this can be done much more easilly 
+using Fourier transform :
+Indeed if $\mu(\varphi=e^{ik\theta})$
+then $W=r^ke^{ik\varphi}$, hence 
+           $$
+W(R,\theta)=\sum\mu_k R^k e^{ik\theta}=
+  {1\over 2\pi}\sum_k\left(
+   \int_0^{2\pi}\mu(\varphi)e^{-ik\varphi}d\varphi\right)
+         R^{|k|} e^{ik\theta}=
+           $$
+      $$
+     {1\over 2\pi}\int_0^{2\pi}
+\left(\sum_{k=-\infty}^{k=\infty}
+   R^{|k|}e^{ik(\theta-\varphi)}\right)
+      d\varphi
+      = {1\over 2\pi}\int_0^{2\pi}
+\left(
+{1\over 1-Re^{i(\theta-\varphi)}}+
+{1\over 1-Re^{-i(\theta-\varphi)}}-1
+\right)
+      d\varphi
+      $$
+}
+
+\m
+
+Sure we can solve Dirichle problem
+just using angle function.
+  Recall shortly the calculation of
+ angle function
+            $$
+       Angle_C(\R)=\int_C{(x-X)dy-(y-Y)dx} 
+             $$
+(compare with $*d\log|z|={xdy-ydx\over (x-X)^2+(y-Y)^2}$).
+Put $x=\cos\varphi, y=\sin\varphi$ we come to
+           $$
+   L(R,\theta,\varphi)d\varphi=
+  {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
+\big\vert_
+{X=R\cos\theta, Y=R\sin\theta,x=\cos\varphi,y=\sin\varphi}=
+           $$
+       $$
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}d\varphi
+       $$
+
+Now we solve Dirichle problem via integral equation.
+
+  Consider the distribution $\nu(\varphi)$ on the circle.
+  It defines thefunction:
+              $$
+     U(R,\theta)=
+\int_0^{2\pi}\nu(\varphi)
+    L(R,\theta,\varphi)d\varphi=
+\int_0^{2\pi}\nu(\varphi)
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
+              $$
+This function is harmonic in the interior of the disc
+, in the exterior of the dis, but it has the jump:
+            $$
+    U(R,\theta)\big\vert_{R=1-0_+}=
+    U(R,\theta)\big\vert_{R=1}+\pi\nu(\theta)\,,\quad
+    U(R,\theta)\big\vert_{R=1+0_+}=
+    U(R,\theta)\big\vert_{R=1}-\pi\nu(\theta)\,.
+            $$
+
+In particular we come to the harmonic function
+in the disc such that its values at the boundary are equal to
+        $$
+\mu(\varphi)=
+    U(R,\theta)\big\vert_{R=1-0_+}=
+    U(R,\theta)\big\vert_{R=1}+\pi\nu(\theta)=
+       $$
+       $$
+\int_0^{2\pi}\nu(\varphi)
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}\big\vert_{R=1}d\varphi+
+\pi\nu(\theta)=
+   {1\over 2}\int_0^{2\pi}\nu(\varphi)
+    d\varphi+
+\pi\nu(\theta)
+        $$
+This is linear integral equation on the function  
+$\nu(\theta)$:
+       $$
+\mu(\theta)=
+     {1\over 2}\int_0^{2\pi}\nu(\varphi)
+    d\varphi+
+\pi\nu(\theta)\,.
+        $$
+Solving it we come to
+        $$
+\nu(\theta)={\mu(\theta)\over \pi}-{1\over 4\pi^2}
+\int_0^{2\pi}\mu(\varphi)d\varphi\,.
+         $$
+Hence   $$
+     U(R,\theta)=
+\int_0^{2\pi}\nu(\varphi)
+    L(R,\theta,\varphi)d\varphi=
+        $$
+        $$
+\int_0^{2\pi}\left[
+   {\mu(\varphi)\over \pi}-{1\over 4\pi^2}
+\int_0^{2\pi}\mu(\tau)d\tau\right]
+    L(R,\theta,\varphi)d\varphi=
+       $$
+       $$
+\int_0^{2\pi}\mu(\varphi){L(R,\theta,\varphi)\over \pi}-
+\int_0^{2\pi}{L(R,\theta,\varphi\over \pi}d\varphi\cdot
+ {1\over 4\pi^2}\int_0^{2\pi}\mu(\tau)d\tau=
+        $$
+        $$
+\int_0^{2\pi}\mu(\varphi){L(R,\theta,\varphi)\over \pi}-
+2\pi\cdot
+ {1\over 4\pi^2}\int_0^{2\pi}\mu(\varphi)d\varphi=
+{1\over \pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left(L(R,\theta,\varphi)-{1\over 2}\right)d\varphi=
+              $$
+         $$
+       {1\over \pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left({1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}-{1\over 2}\right)d\varphi
+       =
+ {1\over 2\pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left({1-R^2\over 
+1-2R\cos(\theta-\varphi)+R^2}-{1\over 2}\right)d\varphi
+         $$
+Thus we come to the solutioj of Dirichle problem.
+
+{\bf Remark} {\it Sure using angle function we can reconstruct
+not only $*dG$ but the Green fucntion also.
+We take the ordinary Green function, $G_\infty(z_0,z)$
+and using Dirichle problem solution we will find harmonic
+function $W$ such that $G_\infty+W$ becomes the Green function:
+  this harmonic function is the soluton of
+Dirichle problem $W\big\vert_{boundary}=-
+G_\infty\big\vert_{boundary}$
+}
+
+\bigskip
+
+\centerline{Upper-half plane: Green function, Dirichle problem}
+G
+We know that $w={iz+1\over z+i}$ maps $\H\leftrightarrow D$
+  (in fact this is not arbitrary: see the blog on 10-th August)
+
+taking composition we come to the map:
+        $$
+w=w(\xi,z)={{iz+1\over z+i}-{i\zeta+1\over \zeta+i}
+        \over 
+ 1-{-i\bar\zeta+1\over \bar\zeta-i}{iz+1\over z+i} }
+        $$
+maps upper half plane $H$ on the disc $x^2+y^2<1$
+and a point $\zeta$ on the centre.
+
+Hence Green function for half-plane is
+        $$
+  G(z_0,z)=\log|w(z_0,z)|
+   \eqno (3.1)
+        $$
+{\bf Remark} {this is very stupid way to calculate
+Green function. Much easier another way: see the blog on 10 August!}
+
+ It seems that here it is much easier way to 
+calculate Dirichle problem solution
+straightforwardly, using angle function.
+We will do it, but in tomorrow file you will see that
+it is much easier to calculate straightforwardly Green function
+using reciprocity method.
+   
+Indeed due to
+       $$
+   A_C(\R)=\int_C {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
+       $$
+Put $x=t,y=0$ we come to
+          $$
+L(\R,t)dt={Ydt\over (t-X)^2+Y^2}=
+d\left(\arctan{t-X\over y}\right)
+          $$
+The potential of double layer with density $\nu(t)$
+(compare with disc) is equal to
+        $$
+U(X,Y)=\int_{-\infty}^{\infty}\nu(t)
+   {Ydt\over (t-X)^2+Y^2}
+      eqno (2.1)
+        $$
+in the same way as for the circle
+          $$
+  U(X,0_+)=\pi\nu(x)+U(X,0),
+          $$
+but for the boundary of half plane this function vanishes:
+the calculations are simpler, we do not need
+to solve the integral equation. The function
+       (2.1)  is the solution of Dirichle problem:
+          $$
+\cases {
+  \Delta W=0\cr
+  W\big\vert=\mu(x)
+}
+  \Rightarrow    W(X,Y)={1\over \pi}
+   \int_{-\infty}^{\infty}\mu(t)
+   {Ydt\over (t-X)^2+Y^2}
+\eqno (2.2) 
+          $$  
+
+{\bf Remark} {\it One can see straightforwardly that
+the function
+           $$
+ F(X)=\lim_{Y\to 0}{Ydt\over (t-X)^2+Y^2}=\pi\delta(t-x)\,.
+           $$
+Indeed   $F(X)=0$ for all  $X\not=t$ and $\int F(X)dX=\pi$
+
+  This implies the boundary condition
+
+}
+
+Calculate Green function using solution of Dirichle problem:
+  Let
+             $$
+G_\H(z_0,z)=G_{\rm classic}(z_0,z)+W=
+          $$
+        $$
+     -{1\over 2\pi}\log|z-z_0|+W=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+W(x,y)
+              $$
+The condition that $G_\H$ vanishes at absolute implies that
+        $$
+W(x,y)\big\vert_{y=0}=
+     {1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}\big\vert_{y=0}=
+     {1\over 2\pi}\log\sqrt {(x-X)^2+Y^2}
+     $$
+thus we have that in Dirichle problem (2.2)
+$\mu(t)={1\over 2\pi}\log\sqrt {(t-X)^2+Y^2}$, thus
+     $$
+W(x,y)={1\over 2\pi^2}
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}
+      $$
+and
+      $$
+G_\H(z_0,z)=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+
+       {1\over 2\pi^2}
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}\,.
+      $$
+
+It seems that calculation of the integral here are not  an easy task.
+But instead,  note that the Green function can be immediately
+    obtained using symmetry arguments:
+         $$
+  G_\H(z_0,z)=-{1\over 2\pi}\left(\log|z-z_0|-\log|z-\bar z_0|\right)=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+
+    {1\over 2\pi}\log\sqrt {(x-X)^2+(y+Y)^2}+
+            $$
+Thus:
+                      $$      
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}=
+  ...\log|z-\bar z_0|=
+    ...\log\sqrt {(x-X)^2+(y+Y)^2}+
+                     $$
+Beautiful, is not it???
+
+********************************************
+
+\bigskip
+
+\centerline  {\bf 8 August  2017}
+
+\centerline {\bf Calculation for half-plane, encore}
+
+  Yesterday we did difficult caclulations for
+half-plane. On the other hand it is obvious that
+     $$
+-{1\over 2\pi}\left(\log|z-z_0|-\log|z+\bar z_0|\right)
+     $$
+is a Green function!
+This imeediately gives answer
+for $*dG$ on the absolute and implies
+many identities!
+ inncluding the relation for the integral (see the end of yesterday file.)
+
+
+********************************************
+
+\bigskip
+
+\centerline  {\bf 10 August  2017}
+
+
+   {\bf Conformal map and
+in terms of Green function}
+
+  This is the topic why I began to read the Lavrentiev inspired
+by French book. Now it is alright.
+   If we know the Green function $G_U(z_0,z)$  
+ then it defines in  $U\backslash \{z_0\}$ holomorphic function
+$\hat G=G+iU$ where $U$ 
+is defined up to period  $\Pi=\oint...$
+
+Thus we come to  the map $e^{...G\over \Pi}$.
+
+\m
+
+  (comment ca marche: the question of bijection????)
+
+\m
+
+  {\bf Example}  How to construct $\H\to D$
+We know that
+             $$
+  G_\H=...\left(\log|z-z_0|-\log|z-\bar z_0|\right)
+             $$
+(coefficient $-{1\over 2\pi}$)
+
+  Hence  $G(z_0,z)=\approx {z-z_0\over z-\bar z_0}$
+
+is it unique? Yes up to the coefficient $e^{i\varphi}$. 
+
+ In  the blog on 7 August
+we considered function
+       $$
+    {G(z_0,z)-G(z_0,\zeta)\over 1-\bar{G(z_0.\zeta)} 
+G(z_0,z)}
+       $$
+Thus we see that this function is equal to
+      $z-\zeta\over z-\bar\zeta$ up to a coefficient.
+
+{\bf Remark} { \it We used here that every $F$ holomorphic map
+of Disc $|z|<1$ onto itself such that $F(\zeta)=0$ 
+is nothing but
+${z-\zeta\over 1-\bar\zeta z}e^{i\varphi}$ }
+
+
+
+\bye

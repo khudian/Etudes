@@ -1,0 +1,270 @@
+
+  \magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\AA {{\bf A}}
+\def\A {{\cal A}}
+\def\t {\tilde}
+\def\bs {{\bf s}}
+\def\a {\alpha}
+\def\d {\delta}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\B {{\cal B}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\F {{\cal F}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def \grad {{\rm grad\,}}
+\def\e {{\bf e}}
+\def\f {{\bf f}}
+\def\g {{\bf g}}
+
+
+
+  \centerline    {\bf Locally Euclidean geometries and 
+       hyperbolic geometry}
+
+  \centerline {H.M.Khudaverdian}
+
+{\tt This talks is based on the book of S.Nikuin, R.Shafarevich}
+
+\medskip
+
+Abstract: {\it Geometry on the surface of the cylinder is 
+locally Euclidean. An "ant-mathematician" who lives 
+on the cylinder will not  distinguish the geometry of  
+the surface at small distances from the Euclidean  
+geometry; the Pythagorean Theorem will be almost the same, 
+and for "not too large" triangles the sum of the angles will
+ be $\pi$.
+      In the first part of talk, we will study locally 
+Euclidean two-dimensional geometries. We will study  
+these geometries by using discrete subgroups of the 
+isometry group of the Euclidean 
+plane $E^2$. The list of locally Euclidean geometries is 
+exhausted by the geometries  on the surface of the cylinder, 
+on the surface of the torus, on the surface of the 
+"twisted cylinder" (the Moebius band), 
+and on the so-called Klein bottle.
+         In the second part of the talk, we will 
+consider the set of locally Euclidean  geometries, 
+and will show that this set can be naturally 
+parametrized by the points of the Lobachevsky 
+(hyperbolic) plane.
+}
+
+
+  We consider locally Euclidean $2$-dimensional 
+geometries.  An arbitrary $2$-dimensional  geometry 
+can be considered ass
+$2$-dimensional  Riemannian surface---$(M,G)$.
+$M$ is a surface, and $G$ defines scalar product of
+tangent vectors, i.e. length of an arbitrary curve.
+For arbitrary curve
+  $\x=\x(t), t_1\leq t\leq t_2$
+             $$
+ \hbox {length of the curve}=
+   \int_{t_1}^{t_2} \sqrt{\left(\v(t),\v(t)\right)}dt\,,\,
+\hbox{scalar product}\,\,  
+\left(\v(t),\v(t)\right)=G(\v(t),\v(t))\,, 
+             $$
+where $\v(t)$ is velocity vector. 
+ In local coordinates $x^i$,
+the curve has appearance  $\x(t)=x^i(t)$,
+    $G=g_{ik}(x)dx^idx^k$,
+  $\v(t)=v^i(x(t))\p_i={dx^i(t)\over dt}{\p\over \p x^i}$,
+and 
+the scalar product of velocity vector on itself 
+is equal to
+      $$
+\left(\v,\v\right)=
+ v^i(x(t))g_{ik}(x(t))v^k(x(t))=
+ {d x^i(x(t))\over dt}
+   g_{ik}(x(t))
+ {d x^k(x(t))\over dt}\,,
+      $$
+i.e.
+      $$
+ \hbox {length of the curve}=
+   \int_{t_1}^{t_2} \sqrt{\left(\v(t),\v(t)\right)}dt
+      =
+    \int_{t_1}^{t_2} \sqrt{
+  {d x^i(x(t))\over dt}
+   g_{ik}(x(t))
+ {d x^k(x(t))\over dt} \,.   
+             }dt
+      $$
+We say that $M$ is (uniformly) locally Eucldean
+if
+
+1) in a vicinity of arbitrary points there are 
+ Eucldean coordiantes, i.e. the coordinates  $u,v$
+such that  $G=du^2+dv^2$ in these coordinates
+
+
+2) This  neighborhood is enough large:
+there exists $\delta>0$
+   i.e. these coordinates $u,v$ are defined in
+the circle of radius $\delta$
+
+
+{\bf Remark} 
+  Surface is called locally Euclidean if the first condition
+is obeyed. In the case if the second condition is
+obeyed also, 
+the surface is called {\it uniformly locally  Euclidean.}
+
+
+\medskip
+
+{\bf Exercise}  Show that the surface of sphere
+is not locally Eucldean.
+
+
+{\bf Exercise}  Show that domain $a<x<b$ of $\E^2$
+is locally Eucldean but it is not uniformly 
+locally Eucldean.
+
+(We suppose that metric on the surface
+$M$ in $\E^3$
+is  the metric induced from $\E^3$.)
+
+In this talk we will consider only uniformly locally 
+Euclidean surface, and we will call them just
+locally Eucldean.
+
+\m
+   First of all examples of locally Euclidean surfaces.
+
+   We will consider the following set of examples.
+
+
+Let $\G$ be subgroup of isometries of $\E^2$.
+We say that the subgroup $\G$ acts properly discontinuous
+on $\E^2$ if there exists $\delta$ such that
+for an arbitrary point $A\in \E^2$, and for an arbitrary
+non-identity element $g\in \G$ 
+        $$
+      d(A,g(A))\geq \delta
+        $$
+ In other words it means that the distance between 
+distinct points of an arbitrary orbit exceeds the  $\delta$.
+
+Why these groups are interesting?  Because every such group
+defines locally Eucldean manifold. 
+
+Indeed, let $\G$ be an arbitrary subgroup
+of group of isometries of $\E^2$.
+
+
+Assign to the group $K$ a
+space $M_\G$ of orbits of $G$-group action
+on $\E^2$,
+$M_\G=\E^2\backslash \G$, i.e. 
+           
+The points of the space $M_\G$, the orbits, 
+ we denote by handwriting letters $\A,\B,C,\D,\dots$
+
+Every  point $A\in \E^2$ produces the point
+$\A\in \E^2\backslash \G$, the equivalence class
+of a point $A$ with respect to the gropu $\G$:
+         $$
+\A=[A]_\G\,,\qquad  g\in \G\,,
+A'=g(A)\in [A]\,. 
+        $$
+To establish the geometry on $M$
+we define the distance between points $\A,\B$
+as the minimal distance between the orbit
+   $\{A^g\}$ and $\{B^g\}$:
+            $$
+\hbox{if $\A=[A]$ and $\B=[B]$ then}\,\,
+d(\A,\B)=\min_{g,g'\in\G}d(A^g,B^{g'})
+            $$ 
+
+{\bf Exercise 1}  Let $\G$ be group of rweflection
+with resepct to the line $l$.
+
+  Describe the geometry $M_\G$
+and show that this is not uniformly locally Euclidean manifold.
+
+\medskip
+
+{\bf Theorem}  $M_\G$ is uniformly locally Eucldean, 
+if and only if the group $\G$ is uniformly discontinuous.  
+
+ {\tt Sketch of the proof}.
+
+Let $\G$ be uniformly discontinuous:
+         $$
+\exists\delta\geq 0 \,,,
+\hbox{such that for an arbitrary}\,\,
+ A\in \E^2\,, g\in \G\,, d(A^g,A)<\delta \Rightarrow
+   g=1\,.    
+        $$
+
+and let $B$ be an arbitrary point  
+which belong to the disc $D_{\delta\over r3}(A)$
+Consider orbits $\A$ and $\B$ of these points.
+It is easy to see from triangle inequality that
+for arbitrary points $A'\in\A$ and $B'\in \B$
+the distance between these points is bigger or equal to
+  $r={\delta\over 2}$. Indeed let $A"=A^g$, and 
+$B'=B^h$. Denote $\tilde B=B^{hg^{-1}}$. Then
+$d(A',B')=
+d\left(A, \left(B^h\right)^{g^{-1}}\right)=
+d\left(A, \tilde B\right)$, and by triangle inequality
+     $$
+d(A',B')=d(A,\tilde B)\geq \left|d(B,\tilde B)-d(A,B)\right|
+>\delta
+     $$
+if $B\not=\tilde B$.
+
+
+Thus we see that in the case if two points $A$
+and $B$ are closer than $\delta\over 2$,
+then the distance between orbits $\A$ and $\B$
+is equal to the distance $d(A,B)$.
+This proves that $M_\G$ is uniformly locally Euclidean
+if $\G$ is uniformly discontinous.
+
+
+
+the orbit of the point $B$ and the orbit of the point $A$
+the  disc of radius
+\bye

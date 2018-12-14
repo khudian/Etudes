@@ -1,0 +1,299 @@
+
+
+
+
+
+\magnification=1200
+
+\baselineskip=17pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf Two toy examples.}
+
+ Let $U,V$ be a vector spaces, and $L\colon U\to V$ linear map from
+   $V$ to $U$. One can consider its adjont $L^*\colon V^*\to U^*$:
+                      $$
+L^*\colon V^*\to U^*\,\, \hbox {such that for arbitr.}\,\,
+     \Y\in U, \langle\Y, L^*(\w) \rangle
+              =\langle L(\Y), \w \rangle\,.
+                      $$
+  In the case if $V=U^*$ both  $L$ and $L^*$
+map $U\to U^*$.
+  Map $L$ is self-adjoint (anti-self adjoint if $L=L^*$.
+   This is standard text-book stuff. Using
+   Vornov's thick mrophisms in fact generalise
+this statement for non-linear maps.
+
+   All the constructions will be based on
+   Voronov's thick morphisms.
+
+        For vector spaces
+ $U,V$ consider in a symplectic space $T^*U\times (-T^*V)$
+   Lagrangian surface $\Lambda_S$ defined by the function  $S(x,q)$:
+                  $$
+ \Lambda_S=\{(x^i,p_j,y^a,q_b)\colon\,\, p_i={\p S(x,q)\over \p x^i}\,\,
+    y^a={\p S(x,q)\over \p q_a},\}
+                 $$
+($x^i$ are coordinates in $U$, $p_j$ are coordinates in $U^*$, 
+respectively$y^a$ are coordinates in $V$, $q_b$ are coordinates in $V^*$.
+Symplectic form is $dp_i\wedge dx^i-dq_a\wedge dy^a$)
+
+  Lagrangian surface $S=S_\Phi$ defines thick morphism $\Phi\colon U\to V$.
+    (This is definition.)
+
+{\bf Core of construction}:
+
+  Thick morphism  $\Phi$ defines pull-back
+$\Phi^*$  from space  $C(V)$ of functions on $V$ to 
+space of functions $C(U)$ on $U$ in the following way:
+               $$
+C(V)\ni g(y)\to \Phi_S^*(g)(x)=f(x)=g(y)+S(x,q)-y^aq_a\,,\,\,
+                           \eqno (defintion)
+\,\,
+               $$
+where $y^a=y^a(x), q_b=q_b(x)$ are defined by the conditions
+                    $$
+y^a={\p S(x,q)\over \p q_a}\,,    q_b={\p g(y)\over y^b}\,.
+\eqno {definition1}
+                    $$
+Functions $g$ and $f=\Phi^*g$ define Lagrangian
+surfaces in $T^*V$ and $T^*U$ respectively and
+they are realted by lLagrangian surface $\L_S$.
+
+Note that the map $\Phi^*$ in general is non-linear.
+
+  Two reamkrs which explain the definitions above:
+
+ {\bf Remark} Let $\phi$ be a usual (may be non-linear) map
+   $y^a=F^a(x^i)$. Assign to this map Lagrangian surface
+            $$
+            S_\varphi(x,q)=F^a(x)q_a\,.
+            $$
+Then it is easy to see that
+  the pull-back $\phi^*$ is nothing but usual pull-back,
+which is a usual homomorphism of functions:
+    If $S=F^a(x)q_a$, then equations
+   (definit 1) imply that $y^a=F^a(x)$, hence it follows from
+equation (definition) that
+          $$
+f(x)=(g(y)+F^a(x)q_a-y^aq_a)\big\vert_{y^a=F^a(x)}=g(F(x))\,.
+          $$
+ 
+{\bf Remark}
+Notice that the non-linear pull-back can be defined as `classical limit'
+of the following integral:
+               $$
+f(x)\colon \,\,
+  e^{f(x)}\approx
+ \int e^{i\tau\left(S(x,q)-y^aq_a+g(y)\right)} DyDq\,, 
+       \tau\to \infty\,.
+               $$
+
+   What for is it useful?
+
+  {\bf Theorem}(Voronov)
+
+Every Hamiltonian $H=H(x,p)$ on $T^*V$
+defines Hamilton-Jacobi vector field $\X_H$ on the space of functions on $U$:
+                   $$
+\X_H\colon f\to f+\varepsilon H\left(x, p={\p f\over \p x}\right)
+                   $$
+
+Let $\Phi$ be an arbitrary thick morphism  $\Phi\colon U\to V$.
+
+ 
+
+  Let $H(x,p)$, $h(y,q)$ be Hamiltonians on
+    $T^*U$ and $T^*V$ respectively.
+
+   We say that these Hamiltonians are $\Phi$-related if
+                       $$
+                H\left(x,{\p S(x,q)\over \p x^a}\right)\equiv
+                h\left({\p S(x,q)\over \p q^a}, q\right)
+                       $$
+where $S$ is a function generating the thick morphism.
+
+
+
+  Consider on the spaces $C(U), C(V)$ (infinite-dimensional space!)
+vector fields
+    $\X_H, \Y_h$. Then these vector fields
+are $\Phi$-related if their Hamiltonians are $\Phi$-related, i.e.
+              $$
+ \Phi^*\left(g+\varepsilon h\left(y, q={\p g\over \p y}\right)\right)=
+ \Phi^*g+\varepsilon H\left(x, p={\p \Phi^*g\over \p x}\right)\,.
+              $$
+if Hamitonians are $\Phi$-related.
+
+
+
+Now it is time to consider thick morphisms generalising adjoint maps.
+
+  Let $\Phi=\Phi_S$ be a thick morphism from $U$ to $V$ defined by the
+ Lagrangian surface $\L_S$, which in its turn
+is defined by generatig function  $S=S(x^a,q_b)$, as above.
+
+   An arbitrary thick morphism from $V^*$ to $U^*$
+has to be defined by generating function $S'(q_a,x^b)$.
+   We define a morphism  $\Phi^*$
+adjoint to the morphism $\Phi=\Phi_S$, as a morphism defined
+by the `same' generating function
+             $$
+      S'(q,x)=S(x,q)
+                  $$
+
+{\bf Exercise} Consider morphism $\Phi\colon U\to V$ 
+with generating function
+   $S(x,q)=A_{i}^a x^iq_a$.  This is usual linear map  $y^a=A_i^ax^i$.
+  Its adjoint is generated by the `same' function
+  $S(q,x)=A_i^a q_a x^i$ (we change in purpose the order 
+of arguments, emphasizing that the first argument is the argument of the map,
+and the second is conjugate to its value.)
+It is nothing but adjoint map: $p_i=A_i^aq_a$.
+
+
+We see that in the special case
+if $V=U^*$ every thick morphism has its pair. 
+
+
+ 
+
+
+we consider its adjoint: $\Phi^*=\Phi^*_{S^*}$. where  
+
+
+
+  Consider the map from
+   $V$ to $V^*$, i.e.  collection
+   $\{F_0,  F_1, F_2,\dots, F_i,\dots\}$ of maps, where
+   $F_k$ is $k$-linear map from $V$, to $V^*$,
+which is symmetrical with respect to 
+$k-1$ arguments:  
+              $$
+F_0\in V^*\,   F_1\in V^*\otimes V^*\,,
+ F_2\in V^*\otimes  V^*\otimes_S V^*\,,
+            F_k\in V^*\otimes \underbrace{V^*\otimes_S\dots\otimes+S V^*}
+                            _{\hbox {$k$ times}}
+              $$
+This collection of maps defines non-linear map $F\colon V\to V^*$
+such that
+      $$
+    F(\X)=F_0+F_1(\X)+F_2(\X,\X)+\dots
+      $$
+This non-linear map defines pull-back of functions:
+                   $$
+V^*\ni g(\w)\to F^*g=f(\X)=g(F(\X))\qquad
+   (g \hbox {is a function on dual space $V^*$})
+                   $$
+
+One can define the function $f$ as 
+               $$
+f=F^*g\colon \quad  f(\X)=
+           g(\w)+S(\Y,\X)-\w(\Y)\, 
+               $$
+where
+                    $$
+       S(\Y,\X)=\langle\Y, F(\X)\rangle
+                    $$
+and  $\X$ is chosen such that {\it 
+RHS does not depend on $\Y$ and $\w$}
+
+  Now consider thick morphism $F_{\rm th}$ adjusted to $F$.
+  We consider instead function $S(\X,\Y)$ the function
+$S(\Y,\X)$, then
+Thick morphism defines non-linear pull-back 
+                $$
+f=F_{\rm thick}^*g\colon \quad  f(\X)=
+           g(\w)+S(\X,\Y)-\w(\Y)\, \,\quad
+      S(\X,\Y)=\langle \X,F(\Y)\rangle
+               $$
+where  RHS  does not depend on $\Y$ and  $\w$:
+                $$
+       f(\X)=g(w_a)+F_a(y)x^a- w_a y^a\,,
+                   \cases
+                        {   
+        \w=\langle\X,\p_\Y F(\Y)\rangle\cr
+              \Y=\p_\w g(\w)\cr
+                     }
+              $$
+   In components 
+              $$
+       f(x^a)=g(w_a)+F_a(y)x^a- w_a y^a\,,
+                   \cases
+                        {   
+        w_a={\p F_b(y)x^b\over \p y^a}\cr
+              y^a={\p g(w)\over \p w^a}\cr
+                     }
+              $$
+        Thus we come to the following iteration formula
+                 $$
+   f(\X)=g(F'(\Y)\X)\big\vert_{\Y=}
+                 $$
+We denote by $\X,\Y$ vectors on $V$ and $\w,\sigma$ covectors on $V^*$
+
+  Consider a function $w=F(x)$ of one-variable.
+ It is useful to ebar in mind that
+   $x$ is a vector and $w$-covector. This is a map $V\to V^*$ for $V=\R$.
+
+Consider thick  morphism adjoint to this map.
+  The map $w=F(x)\colon \R\to \R^*$ can be defined as 
+  
+
+
+
+
+
+
+
+
+
+\bye

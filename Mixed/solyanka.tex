@@ -1,0 +1,2215 @@
+                 \magnification=1200
+
+                        \centerline {\bf SOLYANKA}
+
+                          $$ $$
+
+              \centerline {\bf Contents}
+
+              \bigskip
+
+             {\bf 1 Arithmetics}
+
+             1.1 Prosto krassivo!
+
+             1.2 A vot dve zadachki
+
+             1.3 The problem of the coins:DIVIDE ET IMPERA
+
+             1.4 $n$-Points on the Plane (Ochenj staraja zadachka!)
+
+              1.5  Points on Integer Distances
+
+              1.6  Odd and Even
+
+               1.7 $\pi(n)$ for prime numbers
+
+               \medskip
+
+               {\bf 2 Geometry}
+
+                 2.1 Something very amazing about circles
+
+                 2.2 The equation of the curve whose curvature is
+               proporional to its length
+
+                  2.3 One approach to higher order invariants
+
+                 2.4 Invariants of Hypersurfaces in Euclidean Space
+
+                  2.5 Spirality of particles, Screw in mechanics
+                  and one invariant of motions in $E^3$
+
+                 2.6 Space of planes...
+
+               2.7 Seeley formula and one integral
+
+               2.8 K zadache o kreste
+
+               2.9 Dva slova o jacobian problem
+
+                   \medskip
+
+                    {\bf 3 Algebra}
+
+                 3.1 Representation functor for jets
+
+                3.2 Projective module of Mobius band global sections
+
+                     $$ $$
+
+
+     \bigskip
+
+          \centerline    {\bf 1.Arithmetics}
+
+                  \bigskip
+
+
+     \centerline {\bf 1.1 Prosto krassivo:}
+
+      Ramanujan formula for $\pi$:
+
+ Each term of this series produces an additional eight
+ correct digits:
+                        $$
+        {1\over\pi}=
+        {2\sqrt 2\over 9801}
+        \sum^\infty_{k=0}
+                {
+          (4k)!(1103+26,390 k)
+             \over
+             (k!)^4 396^{4k}
+                 }        $$
+
+$$ $$
+
+ \centerline {\bf 1.2 A vot dve zadachki}
+
+\medskip
+
+Eto zadacha iz 70 g0dov:
+
+
+ You have 100 roubles.
+ The bottle of bear costs 37 k.
+ The empty bottle 12 k.
+
+ You buy on all money bear drink it,
+ then return bottles, buy again and so on...
+
+ How much bottles of bear you will drink?
+
+ ***************************
+ Two sequences of real numbers $\{x_n\}$ and $\{y_n\}$
+  obey to conditions:
+                       $$
+                       \cases
+                         {
+                         y_n-x_n=n\cr
+                         y_n\cdot x_n=n\cr
+                         }
+                         $$
+   Calculate limit of $y_n-x_n$ when $n$ tends to $\infty$
+
+
+           $$ $$
+
+
+
+     \centerline {\bf 1.3 The problem of the coins}
+
+\bigskip
+  \centerline {Along the paper of  Mario Marteli and Gerald Ganon:}
+
+
+  \centerline {The College Mathematics journal, 28, No5, pp. 365-367,1997}
+
+
+
+ It is the very old problem how to find the odd coin from 12 coins
+ by 4 measurements...
+
+    \bigskip
+
+
+   \centerline {\it DIVIDE ET IMPERA}
+
+      $$ $$
+  For finding the strategy we first solve three preliminary
+  problems:
+
+       $$
+       1)\rightarrow 2)\rightarrow 3)\rightarrow 4)
+                    $$
+
+  {\bf Proposition 1}
+   Number of coins is equal to $3^n$ and {\bf odd coin is heavier}.
+    One can find it by $n$ measurements.
+
+
+    The proof (trivial): The case $n=1$ is evident. Let $n=k+1$. During the
+    first measurement we put $3^k$ coins on left and $3^k$ on the
+    right. If "$left > right$" by induction we choose odd coin in
+    the left set by $k$ measurements. If "left=right" we do it
+    with $3^k$ remaining coins.
+
+       \bigskip
+
+     {\bf Proposition 2}
+      Number of coins is $3^n$. Coins are marked: they are red or black and
+     red coins are heavier or equal by weight to black,
+     i.e. odd coin is heavier if it is red and it is  lighter if it
+     is black.
+     One can find it by $n$ measurements.
+
+     The proof. The case $n=1$ is trivial again.
+   Let the statement is right for $n=k$.
+
+      Let $n=k+1$.
+     We always can choose $2a$ red and
+    $2b$ black coins such that $a+b=3^n$ $(a=0,1,2,\dots)$ and put on the left
+    pan $a$ red coins and $b$ black coins, the same on the
+     right pan. If "$left> right$" hence the odd
+  coin is one of the $a$ red or one of the $b$ black.
+  We take $3^n=a+b$ coins ($a$ red from the left and $b$ right
+  from the right and by $n$ measurements find the odd one.
+
+    If "$left=right$" the we find odd one in the remaining $3^n$
+    coins.
+
+ \bigskip
+
+   {\bf Proposition 3}
+       Number of coins is equal to $s_n={3^n-1\over 2}$,
+    ($s_1=1,s_2=4,s_3=13,s_4=40,s_5=121,\dots$ ($s_{n+1}=3s_n+1$).
+
+   The coins are not marked and
+   we do not know is the odd coin heavier or odd but we have
+    {\bf additionally the coin which sure is not odd.}
+    One can find it by $n$ measurements!?
+
+    {\bf Proof} The case $n=1$ is evident. We compare the coin
+    with test one and see is it odd or not.
+
+
+   Let we can find the odd one for $n=k$
+   and consider the case $n=k+1$.
+
+                   $$
+    s_{k+1}=s_k+s_k+s_k+1
+                    $$
+    We put aside $s_k$ coins. We put $s_k$ coins and
+     additional test coin on the left pan and $s_k+1$
+      coins on the right pan.
+      If "left>right" we throw out the test coin,
+      mark the $s_k$ coins on the left pan by red paint,
+       mark the $s_k+1$ coins on the right pan by black pain.
+       We have $s_k+s_k+1=3^k$ marked coins. Using
+        Proposition 2) we find the odd coin by $k$ measurements.
+
+        If "left=right" we know that odd coin
+        is in the rest $s_k$ coins and we find it
+        with test coins by $k$ measurements.
+
+
+                $$ $$
+
+   Finally we come to
+
+           {\bf Theorem}
+     Number of coins is equal to $p_n s_n-1={3^n-3\over 2}$,
+    ($p_1=0,p_2=3,p_3=12,p_4=39,p_5=120,\dots$ ($p_{n+1}=3p_n+3$).
+
+   We do not know is the odd coin heavier or odd!
+
+    One can find it by $n$ measurements!!!
+
+
+      {\bf Proof}
+
+
+    Let $n=k+1$.
+
+   One can see that
+                  $$
+                 p_{k+1}=(p_k+1)+(p_k+1)+(p_k+1)
+                    $$
+
+           We put $p_k+1$ coins on the left side and $p_k+1$ on the right.
+
+           a) If "$left>right$" It means
+            that odd coin is "red" if it is on the
+           left pan and it is right if it is on the
+            right pan (See Proposition 2).
+            We mark coins on the left pan by red and coins on the
+            right pan by black, add one coin from
+            the remaining coins. (This additional coin is sure not odd,
+            so it can be marked as we want red or black)
+               $(p_k+1)+(p_k+1)+1=3^k$. Hence we have $3^k$
+               marked coins and we can find the odd coin amongst
+               them, according to Proposition 2)
+
+
+      b) "left=right". In this case we know that odd coin is
+      in the remaining $p_k+1$ coins. But $p_k+1=s_k$ (See Proposition 3)
+
+          We take remainig $s_k$ coins and the test coins from
+          the coins which we measured also and due to Proposition 3)
+          we find it by $k$ measurements.
+                 \bigskip
+                    It is all!
+
+     {\bf Example} Let we have 12  $\{1,2,3,4,5,6,7,8,9,10,11,12\}$ coins.
+
+    First meauserement:
+      $\{1,2,3,4\}$ on the left and $\{5,6,7,8\}$ on the black.
+
+           \medskip
+
+     a)If $\{1,2,3,4\}>\{5,6,7,8\}$ we mark $\{1,2,3,4\}$ by red, $\{5,6,7,8\}$
+   by black and consider $\{1_r,2_r,3_r,4_r,5_b,6_b,7_b,8_b,10_b\}$.
+
+     We do second measurement:
+       $\{1_r,2_r,5_b\}$ on the left and $\{3_r,4_r,6_b\}$
+   on the right.
+   If $\{1_r,2_r,5_b\}>\{3_r,4_r,6_b\}$ it means that
+   odd is or on the left and red or on the right and black.
+   We take the coins
+   $\{1_r,2_r,5_b\}$ and find by the third measurement
+    the odd one, putting $1_r$ on the left and $_b$ on the right.
+
+    If $\{1_r,2_r,4_b\}=\{3_r,4_r,5_b\}$ it means that
+    the odd is in the set $\{7_b,8_b,10_b\}$ and we
+    find it by one measurement,
+    putting $7_b$ on the left and $8_b$ on the right.
+
+  Now consider the second case:
+
+   \medskip
+   a)If $\{1,2,3,4\}=\{5,6,7,8\}$. Then the odd is in the set
+    $\{9,10,11,12\}$. We take the coin $1$ as the test coin and add it to
+    the set $\{9,10,11,12\}$. Consider the set $\{1,9,10,11,12\}$
+    where $1$ is the test coin (sure not odd).
+
+     We do the second measurement according to the proof of Proposition 3):
+     putting the coins $\{1,9\}$ on the left pan and
+     $\{10,11\}$ on the right pan.
+    Now if $\{1,9\}>\{10,11\}$ we mark ( coin by red and 10 and 11 by black
+     and during the third measurement we
+     put the coin 9 on the left pan and 10 on the right pan
+     and find the odd coin in the set $\{9,10,11\}$.
+   If $\{1,9\}=\{10,11\}$ then the odd coin is the coin $12$
+   and we do not need the third measurement.
+
+
+        $$ $$
+           \centerline {\bf 1.4 $n$-Points on the Plane}
+
+           \medskip
+   (Etu zadachu mne zadal Senja Rubanovitch v 1971 godu)
+
+
+                     $$ $$
+   \item{I} There are $n$-points on the plane. For every 2 points there exist
+ the third which is on the same line.
+ Prove that all the points are on the same line.
+
+ There is the following elegant solution (Daniel informed me about it)
+
+ Esli eti tochki ne lezhat na odnoj prjamoj, rassmotrim
+ konfiguratsiju:
+ <tochka $A$, prjamaja prokhodjashaja cherez dve tochki $B$ i $C$>,
+ tak shto  rasstojanije mezhdu tochkoj i prjamoj naimenjshee vozmozhnoje
+  (iz otlichnykh ot nulja). Esli $D$ tretja tochka na prjamoj $BC$
+  to pridjom k protivorechiju (estj konfiguratsija s boleje malenjkim rasstojanijem)
+
+
+  Odnako u menja estj drugoje reshenije:
+                   \smallskip
+        \centerline{The main idea of solution.}
+                  \smallskip
+
+\def\variables#1#2 {#1=1,\dots,#2}
+   We can always choose coordinates $(x,y)$ on the plane
+   and the numeration of the points in the following way:
+    If $(x_i, y_i)$ are coordinates of the $i$-th point
+   ($\variables{i}{n}$)   then
+             $$
+   x_1\leq x_2\leq x_3\leq\dots\leq x_n,\quad
+   y_1\leq y_2\leq y_3\leq\dots\leq y_n\,.
+             $$
+We consider the equivalent problem
+
+  \item{II} From the every point $x_1$ the "point" with constant velocity
+     $v_i=y_i$ begins to move.  All the intersections are not binar!
+ (it corresponds that for every 2 points there exist
+ the third one on the same line).
+  Prove that all the lines intersect simultaneously!
+
+
+ This second formulation admits combinatoril reformulation.
+ Every collision is the rearrangement of the points.
+
+
+ There are $n$  symbols on the line-- $a_1,\dots,a_n$.
+ The rules of the game are following:...
+
+ This third reformulation is solved by me.
+
+          $$ $$
+
+
+      \centerline {1.5\bf Points on Integer Distances}
+
+    \medskip
+
+Yulii Rudyak gave me the following problem:
+
+ {\bf $X$ is the set of the points on the plane, such that
+ not all the points are on the same line and all the distances
+ between the points are integers. Prove that in this case $X$
+ has to be a finite set.}
+
+\smallskip
+
+ {\bf Remark} One can easily to construct for every $N$ a set of
+$N$ points which are not on the same line and
+ all the distances are
+ integer. One can also construct the infinite set $X$
+of points not on the same line with rational distances
+between them.
+
+E.g. consider the points
+ $\{A_0,A_1,\dots.A_p,\dots\}$ which have following
+cartesian coordinates:
+               $A_0$ has coordinates $(0.2)$ and
+the point $A_k$ has coordinates $(k-{1\over k})$ ($k=0,1,2,3,\dots$).
+It is easy to see that all the distances between these points are rational.
+On the other hand for arbitrary $N$ under
+dilatation $(x,y)\rightarrow$ $(N!x,N!Y)$ the subset of first
+ $N+1$ points transforms to the set with integer distances.
+
+\smallskip
+
+ Now we go to the proof of the Rudyak,s statement.
+
+ Let $A,B,C$ be three points from the set $X$
+ which are not on the same line and
+  there lengths are equal to $|AB|=c$, $|BC|=a$
+
+We consider the subset $X_{pq}$ which is defined in the following way:
+                            $$
+    X_{pq}\colon \quad {\bf r} \in X_{pq}\quad{\rm iff}
+                         \,\,{\bf r}\in X\quad {\rm and}\,
+                       \cases
+                         {
+                  |\rho({\bf r},A)-\rho({\bf r},B)|=p\,,\cr
+                  |\rho({\bf r},A)-\rho({\bf r},C|= q\,\cr
+                         }
+                                    \eqno (1)
+                        $$
+In other words $X_{pq}$ are the points of $X$ whose distances
+between $A$ and $B$ differs on $p$ and between $A$ and $C$
+differs on $q$.
+
+It is evident that the integers $p$ and $q$ are restricted by
+   integers $c$ and $b$ respectively: $0\leq p\leq c$,$0\leq q\leq b$,
+
+Hence it remains to prove that all $X_{pq}$ are finite sets,
+because
+                        $$
+      X=\bigcup_{p\leq c, q\leq b}X_{pq}
+                \eqno (2)
+                         $$
+The fact that every $X_{pq}$ is the finite sets immediately follows from the
+  fact that  belongs simultaneously to hyperbole
+  $\Gamma_p^1$ {\bf r} {\bf r} with focuses in the points $A$ and $B$,
+   defined by the first equation in (1) and
+to the hyperbole $\Gamma_q^2$ with focuses in the points $A$ and $C$
+ defined by the second equation in (1).
+ Hence these hyperboles have not more than $4$ general points,
+because their focuses do not belong to the same line.
+ (The degenerated hyperboles: $\Gamma^1_0$, $\Gamma^2_0$---lines
+ and $\Gamma^1_c$ and $\Gamma^2_b$---rayons are considered also like hyperboles.
+ "Hyperboles" $\Gamma^1_c$ and $\Gamma_b^2$ --- rayons
+ have infinite set of general points if $A,B,C$ would be on the same line)
+
+ We came to the conclusion that the number of ponts in $X_{pq}$
+is not more that $4$. From (3) and (2) it follows that number of points in
+ $X$ is not more than $4bc$.
+The statement is proved.
+
+ Compare this problem with the problem discussed in
+ "$n$-points on the plane"
+
+$$ $$
+   \centerline {\bf 1.6 Odd and Even}
+
+\medskip
+
+Corollary 1 and Corollary 2 are the reason why it is not worthless
+ to read this text. If you had a trouble to calculate degrees of freedom of
+ symmetrical tensors of rank $k$ on $n$-dimensional space
+ then may be you will not be angry on this text.
+
+ Problem formulated in Corollary 2 was suggested to me by Senja Veinstein in 1997.
+
+
+   So...
+
+   \medskip
+
+ In this etude we consider two isomorphisms of
+different nature between the following sets.
+
+1) $A$--is the set of not-decreasing finite sequences of natural
+numbers. $\{a_1,\dots,a_n\}\in A$ if
+   $a_1\leq a_2\leq\dots\leq a_n$
+
+2) $B$ is the set of increasing natural numbers.
+$\{a_1,\dots,a_n\}\in B$ if
+   $a_1< a_2<\dots< a_n$.
+
+   The first isomorphism $\varphi_1$:
+
+
+                    $$
+  \forall \{a_1,\dots,a_n\}\in A
+                   \varphi (\{a_1,\dots,a_n\})=
+                    \{a_1,a_2+2,\dots,a_n+n\}\in B
+                      \eqno (1)
+                            $$
+
+It is evident that $\varphi$ is an isomorphism
+
+
+To construct the second isomorphism we first identify the space
+$A$, the set of not-decreasing finite sequences of natural
+numbers, with the set $A^\prime$--the set of not-decreasing
+finite sequences of odd natural  numbers by isomorphism
+                  $$
+     \tau\colon\quad
+       \forall \{a_1,\dots,a_n\}\in A_0,
+       \tau (\{a_1,\dots,a_n\})=
+         \{2a_1-1,2a_2-1,\dots,2a_n-1\}\in A^\prime
+            $$
+   and consider the following "tricky" isomorphism between
+    $A^\prime$ and $B$.
+    Let $b=\{b_1,\dots,b_n\}\in B$. For every $b_i\in b$ there
+    exist natural numbers $p_i$ and $q_i$ such that
+                    $$
+            q_i \,\,{\rm is\,\, odd\,\,and}\quad
+            b_i=2^{p_i}q_i
+            \eqno (4)
+                       $$
+         We put in correspondence to the sequence
+         $\{b_1,\dots,b_n\}$ the sequence
+                           $$
+         \left\{
+     {\underbrace {q_1,q_1,\dots,q_1}_{p_1\, {\rm times}}}\,,\,
+     {\underbrace {q_2,q_2,\dots,q_2}_{p_2\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_n,q_n,\dots,q_n}_{p_n\, {\rm times}}}
+         \right\}
+         $$
+Then rearrange the odd numbers $\{q_1,\dots,q_n\}$ in
+not-decreasing order  $q_{i_1}\leq q_{i_2}\leq\dots\leq q_{i_n}$
+we finally come to isomorphism $\varphi_2$:
+                             $$
+                    \varphi_2 (\{b_1,\dots,b_n\})=
+     \left\{
+     {\underbrace {q_{i_1},q_{i_1},\dots,q_{i_1}}_{p_{i_1}\, {\rm times}}}\,,\,
+     {\underbrace {q_{i_2},q_{i_2},\dots,q_{i_2}}_{p_{i_2}\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_{i_n},q_{i_n},\dots,q_{i_n}}_{p_{i_n}\, {\rm times}}}
+         \right\}
+                         $$
+between $B$ and $A^\prime$. The inverse to $\varphi_2$ isomorphism
+is following. Consider
+                  $$
+      \left\{
+     {\underbrace {q_1,q_1,\dots,q_1}_{f_1\, {\rm times}}}\,,\,
+     {\underbrace {q_2,q_2,\dots,q_2}_{f_2\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_n,q_n,\dots,q_n}_{f_n\, {\rm times}}}
+         \right\}\in A^\prime
+             \eqno (lalala)
+                        $$
+                        then
+                     every number $f_i$ can be uniquely
+                     represented as
+                    $$
+                    f_i=\sum_k 2^k \delta_{ik}\quad {\rm
+                    where}\,\, \delta_{ik}=0,1
+                        $$
+
+
+We consider the numbers $2^{k}q_i$ if $\delta_{ik}\not=0$ and
+arrange the sequence from $B$.
+
+They are so far from each other isomorphisms $\varphi_1$ and
+$\varphi_2$!!!
+
+For every sequence $a$ in $A$, $A^\prime$ or $B$
+we denote by $\#(a)$ the number of elements of this sequence and
+by $s(a)$ the sum of elements of this sequence.
+The following relations are obvious:
+
+1.
+                 $$
+           \#(\varphi_1(a))=\#(a),
+                   $$
+2. If $\#(a)=n$, then
+                   $$
+             s(\varphi_1(a))=
+             s(a)+{n(n+1)\over 2}
+                $$
+                $$
+           \quad s(a)=s(\varphi_2(a))
+                     \eqno ()
+                   $$
+These relations leads to interesting corollaries:
+
+{\bf Corollary 1}.
+
+  {\it Dimension of the space of symmetrical tensors of rank $k$ in
+   $n$-dimensional
+   space is equal to the
+ a dimension of the space of antisymmetrical tensors of rank $k$ in
+   $\left(n+{k(k+1)\over 2}\right)$-dimensional space.
+  space.}
+
+
+
+
+
+{\bf Corollary 2}.
+
+{\it For every integer number $N$
+a number
+of choices such that $N$ can be represented as a sum of different
+natural numbers is equal
+a number
+of choices such that $N$ can be represented as a sum of
+odd natural numbers.}
+ (We do not differ two choices
+which differ by rearrangement.)
+
+
+We can use the corollary 1 for calculating the dimension of symmetrical tensors space:
+because
+for antisymmetrical tensors it can be calculated  straightforwardly:
+
+
+{\bf Corollary 3}.
+
+  {\it Dimension of the space of symmetrical tensors of rank $k$ in $n$-dimensional
+   space is equal to the}
+               $$
+               C^k_{n+{k(k+1)\over 2}}=
+                     {
+                     \left(n+{k(k+1)\over 2}\right)!
+                         \over
+                         k!
+                         \left(n+{k(k-1)\over 2}\right)!
+                         }
+                       $$
+ We denote by $A_n$ the number of choices for odd numbers
+and $B_n$ the number of choices for different natural numbers.
+It is evident that
+              $$
+           \sum_{n=1}^\infty B_n x^n=
+           \sum_i\left(
+           \sum_{n_1\geq 1,\dots n_i\geq 1}
+              x^{n_1}x^{n_1+n_2}\dots x^{n_1+\dots+n_i}
+           \right)=
+            $$
+            $$
+            \sum_{n=1}^\infty
+                 {x^{n(n+1)\over 2}\over
+   (1-x)(1-x^2)(1-x^3)\dots (1-x^n)
+                 }
+              $$
+   and
+           $$
+           \sum_{n=1}^\infty A_n x^n=
+           \sum_i\left(
+           \sum_{n_1\geq 0,\dots n_i\geq 0}
+              x^{2n_1+1}x^{2n_1+2n_2+1}\dots x^{2n_1+\dots+2n_i+1}
+           \right)=
+            $$
+            $$
+            \sum_{n=1}^\infty
+                 {x^n\over
+   (1-x^2)(1-x^4)(1-x^6)\dots (1-x^{2n})
+                 }
+              $$
+       We come to
+{\bf Corollary 4}
+                         $$
+                \sum_{n=1}^\infty
+                 {x^n\over
+       (1-x^2)(1-x^4)(1-x^6)\dots (1-x^{2n})
+                 }=
+             \sum_{n=1}^\infty
+                 {x^{n(n+1)\over 2}\over
+   (1-x)(1-x^2)(1-x^3)\dots (1-x^n)
+                 }
+                 $$
+in a vicinity of $x=0$:
+
+
+I cannot calculate the number of choices  $A_n$ and $B_n$(see Corollary 2)
+but one interesting identity for this.
+We denote by $S^p_N$ the number of choices that $N$ can be represented
+by $p$ different integers.
+It is evident that
+                  $$
+                  S^p_N=\sum_k S^{p-1}_{N-pk}
+                  $$
+   Applying this equation many times we come to the
+
+   {\bf Corollary 5}
+   The number of choices for $N$ is equal to the number of solutions
+    of the equation
+                  $$
+                2x_1+3x_2+4x_3+........<N
+                   $$
+                   plus $1$
+    where $x_1,\dots,x_n$ are {\bf non-negative} integers.
+(Do not confuse with number of values less that $N$!)
+In other words we take $N$ (representing as one number)
+then calculate the number of $x_1$ such that
+  $2x_1< N$,
+  ...
+
+  For example
+   $S^1_20=1$, $S^2_20=9$,
+   $$
+   S^3_20=S^2_17+S^2_13+.....$$
+      $$
+      S^4_20=S^3_16+S^3_12+...$$
+
+
+>>>>>>>>>>>>>>>>>>>>>>
+              $$ $$
+
+                  \centerline {\bf 1.7 $\pi(n)$ for prime numbers}
+
+ {\bf Theorem}
+
+           $\pi(n)\approx {n\over \log n}$
+
+
+
+Two years ago I obtained  empirical proof of this Theorem
+ considering $N!$ for large $N$ and using the fact that
+ for every primary $p$ $N!$ is divisible on $p^r$
+ where
+   $$
+  r\approx \left[N\over p\right]+\left[N\over p^2\right]+\dots
+  \approx {Np\over p-1}
+         $$
+Then considering integrals instead series we come to the "proof".
+It is very rough but I guess that the classic proof is founded on
+this remark.
+
+\smallskip
+
+Few days ago in the article about Erdos (The Mathematical Intelligence,
+{\bf 19}, 2, pp.38---48) I found the marvelous proof that blongs to Erdos.
+
+I will try to write here about his proof.
+
+  Denote by $\Pi (m,n)$ the product of primary numbers
+  that belong to the segment $[m,n]$ ($m<n$):
+                      $$
+                      \Pi(m,n)=\prod_{m\leq p\leq n} p
+                      \quad \hbox {where $p$ are prime numbers}
+                      $$
+
+  {\bf Lemma 0}.   $C^m_n\leq 2^{n-1}$ (at least for odd n)
+
+\medskip
+
+  {\bf Lemma 1}. If $2m>n-1$ then $\Pi(m,n)\leq C^m_n$.
+
+\medskip
+
+  {\bf Lemma 2}. $\Pi (1,n)<4^n$!!!.
+
+ From this Lemma it obviously follows that
+               $$
+          \pi(n)<{n\over \log_4 n}
+          $$
+
+\medskip
+
+  Lemma 2 belongs to Erdos and
+  {\it a brilliant idea, a suprising step
+     to prove it is} (from Math. Intell.) is the  content of Lemma 1.
+
+ the statement of Lemma 0 is trivial. If $n$ is odd then
+                  $$
+   C^m_n={1\over 2}(C^m_n+C^{n-m}_n)<{1\over 2}\sum C^k_n=
+         {1\over 2}2^n=2^{n-1}
+                   $$
+ The statement of lemma 2 is obvious as soon as it is formulated!
+
+ Now prove Lemma 2 by induction. For n=2 it is valid.
+
+ Let $\Pi (1,k)<4^k$ for all $k<n$. Prove for $k=n$.
+ If $n$ is even then $\Pi(1,n)=\Pi(1,n-1)$.
+ If $n=2q+1$ is odd then using inductive hypothesis and Lemma 1
+  we come to
+ $$
+ \Pi(1,n)=\Pi(1,q+1)\cdot\Pi(q+2,2q-1)<4^{q+1}C^{q+2}_{2q-1}<
+     4^{q+1}2^{2q-2}=4^{2q}\,.$$
+
+
+         $$ $$ $$ $$
+
+          \centerline {\bf 2. Geometry}
+
+             $$ $$
+
+             \centerline {\bf 2.1 Something very amazing about circles}
+
+\medskip
+
+Thinking about Frenet curvature and performing {\bf fault
+considerations} I came occasionally to very elementar but amazing
+statement.
+
+  {\bf Question}. Consider the point on the plane which moves with
+  constant angular velocity $w$ around the point $O$ and with
+  constant velocity $v$. What will be its trajectory?
+
+  \smallskip
+
+  The trivial answer is: it will be the circle with centre $O$
+  and with radius $R$ such that
+                        $$
+                                   v=wR\,.
+                         $$
+ But there is exactly one another case!!!
+ The circle with radius ${R\over 2}$
+ with centre in the point $O$.
+ In fact trivial solution is "ogibajushaja" of these solutions!
+
+ Frome the point of view of differential equations it is
+ following:
+ The diff.equation
+                    $$
+                      \cases
+                       {
+                       \dot x=\sqrt {1-x^2}\cr
+                          x(0)=1,\quad o\leq t\leq {\pi\over 2}\cr
+                          }
+                          $$
+               has exactly two solutions:
+            the first one $x(t)=1$,
+            the second one: $x(t)=\sin t$.
+
+
+      $$ $$
+      \def\p{\varphi}
+
+  \centerline {\bf 2.2 The equation of the curve whose curvature is
+  proporional to its length}
+
+\medskip
+
+     Let $x(t), y(t)$ be equation of this curve. Then
+ the curvature
+          $$
+         K(t)={1\over\sqrt{x_t^2+y_t^2}}
+                     {d\over dt}
+                            \left(
+                     {1\over\sqrt{x_t^2+y_t^2}}
+                                {\rm arctg}
+                                   {y_t\over x_t}
+        \right)\,.
+                       $$
+                   And the equation:
+                         $$
+                         \cases
+                         {
+                       {d\over dt}K(t)=\sqrt{x_t^2+y_t^2},\cr
+                           K(0)=0\cr
+                           }
+                           $$
+
+The curve can be rotated and translated so we choose additional
+initial conditions:
+                        $$
+                     x(0)=y(0)=y_t(0)=0
+                               $$
+
+
+   One can see that it is useful to choose as parameter $t$ the
+   angle
+                     $$
+                     \varphi={\rm arctg}{y_t\over x_t}
+                      $$
+   This immediately leads us to the answer.
+   Choosing this parameter we rewrite the equation as
+
+                              $$
+                       {d\over d\varphi}\left(
+       {1\over\sqrt{x_\p^2+y_\p^2}}
+                       \right)=\sqrt{x_\p^2+y_\p^2}
+                           $$
+so
+                    $$
+       {1\over\sqrt{x_\p^2+y_\p^2}}=\sqrt{2\p}
+                     $$
+                and
+           $$
+           x_\p={\cos\p\over \sqrt{2\p}},\quad y_\phi=x_\p={\sin\p\over \sqrt{2\p}}
+           $$
+       hence
+                   $$
+              x(\p)+iy(\p)=\int_0^\p{\exp(i\p)\over\sqrt{2\p}}d\p
+                               $$
+
+ In particular the limit point is:
+                                      $$
+              x(\infty)+iy(\infty)=\int_0^\infty{\exp(i\p)\over\sqrt{2\p}}d\p=
+                {1\over \sqrt i}\Gamma{1\over 2}\quad
+                ({\rm up\quad to\quad some\quad coefficient})
+                                     $$
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                 $$ $$
+
+                    \centerline {\bf 2.3 One approach to higher order invariants}
+
+\medskip
+
+
+ We consider curves---  $x^i=x^i(t)$ in $d$-dimensional
+eucledian space. Our goal is to construct local integrands
+ over these curves which are
+
+1) reparametrization invariant
+
+2) invariant under global translation  and rotation of curves
+
+3) are full divergence!---i.e. their Euler Lagrange equations are trivial
+
+ If we omit condition (3) the answer is invariant densities--
+length: $\sqrt {{dx^i\over dt}{dx^i\over dt}}$,...
+
+But how to construct at least one invariant closed density?
+In fact in $d$-dimensional case we restrict ourself by densities
+whose rank (the order of derivatives) is not higher than $d$
+
+
+1) $d=1$ . Answer is trivial:
+
+               $$
+        A=  x_t
+                         \eqno (1)
+                $$
+
+2) $d=2$ Less trivial but I think you know it:
+                 $$
+ A= {x_ty_{tt}-y_tx_{tt}\over x_t^2+y_t^2}
+                               \eqno (2)
+                   $$
+  One can see easily that (2) is total divergence
+ (it is evident in polar coordinates).
+
+
+3) Now I present you the closed density in $3$-dimensional space:
+                      $$
+                      A=
+                      {
+                    \det
+                   \pmatrix
+                      {
+           &x_t &y_t & z_t \cr
+           &x_{tt} &y_{tt} &z_{tt} \cr
+           &x_{ttt} &y_{ttt} &z_{ttt} \cr
+                      }
+                      \over
+            (x_ty_{tt}-y_{t}x_{tt})^2+
+            (y_tz_{tt}-z_{t}y_{tt})^2+
+            (z_tx_{tt}-x_{t}z_{tt})^2
+                      }
+                      \cdot
+                \sqrt
+              {x_t^2+y_t^2+z_t^2}
+                                             \eqno (3)
+                        $$
+
+  Do you want to check by straightforward calculation
+that (3) is total divergence?
+Note please that "razmernostj" in (3) and (2) is $[{1\over sec}]$
+I came to (3) using (2)...
+
+In fact I think that in $d$-dimensional space all invariant densities
+can be expressed in terms of determinant as in (3) and its
+first minors.
+For example:
+
+  Let we denote by $x^i_{(n)}$ the $n$-th derivative by $t$ of the
+ coordinate $x^i$  in $I\!E^d$  $(i=1,...,d)$.
+  We consider  the matrix
+                        $$
+          \pmatrix
+                        {
+             &x^1_{(1)}, &x^2_{(1)},  &x^3_{(1)}, ...,&x^d_{(1)} \cr
+             &x^1_{(2)}, &x^2_{(2)},  &x^3_{(2)}, ...,&x^d_{(2)} \cr
+             &x^1_{(3)}, &x^2_{(3)},  &x^3_{(3)}, ...,&x^d_{(3)} \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+           &x^1_{(d)}, &x^2_{(d)},  &x^3_{(d)}, ...,&x^d_{(d)} \cr
+                   }
+                          \eqno (4)
+                      $$
+ We denote
+                  $$
+ \Delta_1= \sqrt {(x^1_{(1)})^2+(x^2_{(1)})^2+(x^3_{(1)})^2+
+      (x^d_{(1)})^2}\,,
+                    $$
+                    $$
+    \Delta_2=\sqrt
+                        {
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^1_{(1)}, &x^2_{(1)}\cr
+                       &x^1_{(2)}, &x^2_{(2)} \cr
+                                        }
+                                  \right)^2
+                               +
+                 \dots+
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^{d-1}_{(1)}, &x^d_{(1)}\cr
+                       &x^{d-1}_{(2)}, &x^d_{(2)} \cr
+                                        }
+                                  \right)^2
+                     }
+                              $$
+
+                    $$
+    \Delta_3=\sqrt
+                        {
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^1_{(1)}, &x^2_{(1)},&x^3_{(1)}\cr
+                       &x^1_{(2)}, &x^2_{(2)},&x^3_{(2)} \cr
+                       &x^1_{(3)}, &x^2_{(3)},&x^3_{(3)} \cr
+                                         }
+                                  \right)^2
+                               +
+                 \dots+
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                    &x^{d-2}_{(1)}, &x^{d-1}_{(1)}, &x^d_{(1)}\cr
+                 &x^{d-2}_{(2)}, &x^{d-1}_{(2)}, &x^d_{(2)} \cr
+                 &x^{d-2}_{(3)}, &x^{d-1}_{(3)}, &x^d_{(3)} \cr
+                                      }
+                                  \right)^2
+                     }
+                              $$
+ e.t.c. $\Delta_d$ is nothing that the determinant of the matrix (4).
+
+We consider in $d$-dimensional space the following invariant densities
+ the densities
+               $$
+ A_1=\Delta_1,\quad  A_2={\Delta_2\over\Delta_1^2},  \quad
+         A_3={\Delta_3\cdot\Delta_1\over\Delta_2^2},\dots
+           \eqno (5)
+            $$
+It is easy to see that $A_1$ is nothing but the lenghth of the curve,
+and it is divergence in the case $d=1$, $A_2$ is the density of
+second rank which coincides with (2)
+if $d=2$, $A_3$ is the density of third rank which
+coincides with (3) if $d=3$.
+Sure one can continue this sequence:
+In $d$-dimensional case one can consider
+ther sequence of the invariant densities
+   $\{A_1,...,A_d\}$ such that
+the last one is total divergence...
+
+  Do you like it?
+Do you know how I come for example to (3)?
+                  \bigskip
+         \centerline {\bf Section2 continuation}
+                     \medskip
+  How one can come to the expression (3)
+
+
+ We recall at first the essence of the formula (2).
+If $L$ is the curve in $I\!E^2$ then the tangent unit
+ vector to this curve maps the curve $L$ to the curve in $S^1$:
+            $$
+             \varphi={\rm arctg}{y_t\over x_t}
+              \eqno (2.1)
+                $$
+ and (2) corresponds to the pull back of the volume form $d\varphi$
+  on the $S^1$. In the other word the density (2) is constructed via
+ the canonical density on the $S^1$ and the density (2.1)
+  {\bf which takes values in the unit vectors}---it is
+ the composition of the densities.
+                  $$
+     A_2={d\over dt} {\rm arctg}{y_t\over x_t}
+                $$
+ Now bearing in mind this interpretation for (2)
+we consider for the curve $L$ in the three-dimensional
+space the map analogous to (2.1).---Considering
+the unit vector to the every point of the curve
+ $L$ we transform this curve to the curve
+ on the sphere $S^2$:
+                         $$
+               \theta=
+       {\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}},\quad
+                 \varphi={\rm arctg}{y_t\over x_t}
+           \eqno (2.2)
+                    $$
+ We come to the curve on the $2$-dimensional sphere and we apply
+ the formula (2) for this curve. Of course the sphere is not
+ euclidean but physical intuition say us that in this case
+      for the curves on the $S^2$ the analog of (2) will be something like
+                $$
+      {d\over dt} {\rm arctg}{\sin\theta \cdot\varphi_t\over \theta_t}
+                  $$
+Combining this density with previous one we come to
+ the "answer"
+                $$
+  A_3 ={d\over dt} {\rm arctg}{\sin\theta \cdot\varphi_t\over \theta_t}=
+     {d\over dt}\left (
+        {\rm arctg}{\sin
+                 \left(
+{\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}}
+           \right)
+                       \cdot
+        \left(
+              {\rm arctg}{y_t\over x_t}
+                     \right)_t
+                 \over
+                  \left(
+         {\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}}
+             \right)_t}
+                 \right)
+            \eqno (2.3)
+                      $$
+
+ Can you calcule this? I cannot. It is here where I began to think.
+ (All previous constructions, you understand,
+ do no need paper in spite of
+their "artificiel" complicatness...)
+
+ For considering this tremendous expression I consider first the case
+ where  in the given point
+                 $$
+               z_t\big\vert_{t=t_0}=y_t\big\vert_{t=t_0}=0
+               $$
+ hence in the monstre (2.3)
+                    $$
+            \theta(t) \big\vert_{t=t_0}={\pi\over 2},\quad
+            \varphi\big\vert_{t=t_0}=0
+            $$
+  Using the multiple time the fact known in school that
+               $$
+            \left(f(x)x\right)^\prime_{x=0}=f(0)
+                    $$
+one comes in 15 minutes to the result
+                        $$
+       A_2= {y_{tt}z_{ttt}-y_{ttt}z_{tt}\over y_{tt}^2+z_{tt}^2}\quad
+                {\rm if}\quad
+               z_t\big\vert_{t=t_0}=y_t\big\vert_{t=t_0}=0
+                     $$
+ Now I began to do beautiful tricks  considering
+ the global rotations
+\def\a{\alpha}
+\def\b{\beta}
+
+                $$
+         \cases
+          {
+          x\rightarrow  x\cos\a+z\sin\a\cr
+          z\rightarrow -x\sin\a+z\cos\a\cr
+                      }\qquad
+         \cases
+          {
+          x\rightarrow  x\cos\b+y\sin\b\cr
+          y\rightarrow -x\sin\b+z\cos\b\cr
+                      }\qquad
+             $$
+
+Where the angles $\a,\b$ are defined by the values
+ of $z_t,y_t$ and I came to the (3).
+ITo be fair I have to tell you that from the very beginning
+ I noticed that determinant of the matrix (4) is the density
+ and invariant density and I couldnot see nothing more--
+ and everything have to be combined via this determinant?.
+but I did not understand how the invariant combinations of minors arise.
+
+ {\bf Conjecture.} Looking on the sequence (5)  I did the following
+  conjecture:
+     In the $d$-dimensional space one can consider the sequence
+       $\{A_1,A_2,\dots,A_d\}$ where
+                  $$
+   A_1=\Delta_1,  A_2={\Delta_2\over A_1^2},
+          A_3={\Delta_3\over A_2^2\cdot A_1^3},
+          A_4={\Delta_4\over A_3^2\cdot A_2^3\cdot A_1^4},
+                       \dots
+         A_d={\Delta_d\over A_{d-1}^2\cdot A_{d-2}^3\cdot
+              A_{d-3}^4\dots A_1^d}
+                         $$
+   In general the recurrent formula maybe is
+                                $$
+                        A_{n+1}=
+      {\Delta_{n+1}\over\prod_{k=1}^{k=n} A_k^{n+2-k}}
+              $$
+ I have not any proof yet. Of course
+   in the way how I constructed the (3)
+  I can consider the sequence of the maps
+     from the curve $L$ on the $S^{d-1}$ using the unit vectors
+ but I affraid now to consider this after my calculations
+for $S^2$...
+
+There are the fo following hints that
+    this sequence may be is true:
+
+  1) in the first three terms this is right
+
+  2) the dimension is always the same $[{1\over sec}]$
+
+ Sure this has to come from 19 century. Indeed in classical mathematics
+ for the curve in $d$-dimensional space there are the sequence of Frenet
+  curvatures $\{k_1,...,k_{d-1}\}$. The curvature $k_1$ is proportional
+ to $A_2$:
+               $$
+    k_1={\Delta_2\over\Delta_1^3}={A_2\over\Delta_1}
+                $$
+  it meausures in $[{1\over cm}]$.
+My sequence have to be strictly connected with the sequence
+ of curvatures but my goal was to come to divergence-like
+ lagrangians. In some sence this means that the last
+curvature is proportional to the divergence-like Lagrangian.
+
+  One can consider the $d$-basis in every point of the curve.
+The first vector is tangent vector, the first two-dimensional plane
+is the plane spanned by the tangent vector and its acceleration
+during the motion, e.t.c.--- Hence the movement on the
+  $SO(d)$ of the solid particle can be considered.-- I think
+it is just what people call rigid particle motion,
+ (Armen considered Lagrangians depended on higher curvatures.)
+  I think that all these formulaes may be in the other
+ interpretation have to be revealed in rigid particle physics.
+   In fact I sent the beginning of this text to Armen,
+  and still do not know his reaction.
+  Do you want to know why and how I spent yesterday
+ morning and day on this calculations?
+          S Vas butylka!---Togda skazhu!
+
+            Do svidanija O.M.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+    $$ $$
+
+\def\p {\partial}
+\def \D {\Delta_{d{\bf v}}}
+\def \Ds  {\Delta^{\#}}
+\def\t{\tilde}
+\def\s {\sigma}
+\def\L {\Lambda}
+\def\Darboux {$z^A=$  $x^1,\dots,x^n$, $\theta_1,\dots,\theta_n$}
+\def\a{\alpha}
+\def\O{\Omega}
+\def\d{\delta}
+\def\dv  {{d{\bf{v}}}}
+\def\A {{\cal A}}
+\def\R {I\!R}
+\def\t {\tilde}
+\centerline {\bf 2.4 Invariants of Hypersurfaces in Euclidean Space}
+
+   \medskip
+
+
+   Recently Nikita Sidorov (l`homme Nikita) gave me the following
+   school problem: Let $L$ be a closed (convex) curve and a curve $L_{h}$
+   is set of points which are on the distance $h$ from $L$
+   ($\forall x\in L_h$ $\min_{y\in L}d(x,y)=h$). How to calculate
+    the surface of the domain between these curves?
+    There is a "school" solutions if we consider curve $L$ as a
+    limit of "nogougoljnikov". But I solved in more complicated way
+    and my solution can be generalized on $n$-dimensional case.
+
+    Let $(x,y)$ be Cartesian coordinates on $I\!R^2$ and $t$ be any coordinate
+    on $L$. Then we consider
+   new coordinates $(\rho,t)$ in a tubular neighborhood
+    of $L$ such that for every point $A\in I\!R$
+                        $$
+    \rho(A)=\hbox {distance between $A$ and $L$}=\min_{y\in L}d(A,y)
+                                          \eqno (2)
+                      $$
+ and $t(A)$ be $t$ coordinate of the point $y_0$ such that
+      $d(A,y_0)=\rho(A)$.
+
+      One can see that a function $\rho(x,y)$ obeys to equation
+                          $$
+                       \rho_x^2+\rho_y^2=1,\quad \rho\big\vert_L=0
+                                 \eqno (2)
+                                 $$
+  Moreover if ${\bf r}_0(t)=(x_0(t),y_0(t))$ is an equation of $L$
+  then in a vicinity of $L$
+                      $$
+  {\bf r}(t)={\bf r}_0(t)+\rho{\bf n}(t)\,,
+                                 \eqno (3)
+                       $$
+  where ${\bf n}(t)$ is unit vector normal to $L$ at the point ${\bf r}_0(t)$.
+                   $$
+             {\bf n}(t)=
+             \left\{-{x_t\over\sqrt{x_t^2+y_t^2}},
+             {y_t\over\sqrt{x_t^2+y_t^2}} \right\}
+             \eqno (4)
+            $$
+ Calculate Jacobian of coordinate transformaton from Cartesian coordinates
+ $(x,y)$ to these new coordinates.
+ According to (3,4)
+                        $$
+                        \cases
+                        {
+           x(\rho,t)=x_0(t)-\rho{x_t\over\sqrt{x_t^2+y_t^2}}\cr
+           y(\rho,t)=y_0(t)+\rho{y_t\over\sqrt{x_t^2+y_t^2}}\cr
+                             }
+                             \eqno (5)
+                             $$
+Straightforward calculations (here straightforward still dimension is $2$!)
+  give that
+                        $$
+          \det\left({\p(x,y)\over\p(\rho,t)}\right)=
+          \sqrt {x_t^2+y_t^2}+\rho{x_t y_{tt}-y_t x_{tt}\over x_t^2+y_t^2}=
+           \sqrt {x_t^2+y_t^2}+\rho {d\over dt}{\rm arctg}{y_t\over x_t}
+                   $$
+  the first term is an element of the length of $L$.
+  The second term is Frenet curvature and it is full derivative.
+
+Now solution follows from the last formula:
+The surface of the domain between curves is equal to the
+                   $$
+                  \int_{L,L_h} dx dy=
+                  \int  \det\left({\p(x,y)\over\p(\rho,t)}\right)
+                              d\rho dt=
+                       $$
+                       $$
+             \int_{0}^h d\rho
+             \int_L dt\left(
+\sqrt {x_t^2+y_t^2}+\rho {d\over dt}{\rm arctg}{y_t\over x_t}
+             \right)=
+              h|L|+\pi h^2
+               $$
+  Now we try to generalize this result.
+  Of course the main problem will be to calculate jacobian
+  and we are not so naive to hope that everything will be
+ exhausted by total derivatives.
+
+ So go on...
+
+ Let $M^n\hookrightarrow \R^{n+1}$.
+Let $x^\mu$ $\mu=0,1,...,n$ be cartesian coordinates on $I\!R^{n+1}$.
+  and $f^\mu=f^\mu(t^1,\dots,t^n)$ be local parameterization of hypersurface
+   $M^n$. Conisder $\rho({\bf r})=\min d({\bf r}, M)$.
+   ${\rm grad} \rho^2=0$ and $\rho_M=0$. It is ray.
+ In the same way as before consider transformation
+            $$
+    x^\mu(\rho,t)=f^\mu(t^1,\dots,t^n)+\rho n^\mu
+   $$
+  where ${bf n}$ is normal unit vector.
+Consider any point $\lambda_0$ on $M^n$ with coordinates $t^1_0,\dots,t^n_0$,
+ $x^\mu_0=f^\mu(t^1_0,\dots,t^n_0)$.
+
+Conisder cartesian coordinates $\tilde x^\mu$ and parametrization $\tilde t^i$
+ {\rm adjusted to the point $\lambda_0$},
+ i.e. such that in a vicinity of $\lambda_0$
+           $$
+           \cases
+            {
+            \tilde x^0=A_{ik}t^it^k+o(t^2),\cr
+            \tilde x^i=t^i \cr
+               }
+               $$
+  $A_{ik}$ corresponds to bilinear symmetric form on hypersurfaces
+  which is defined on tangent vectors and takes values
+  in normal vectors.
+
+        It is not awfull to calculate Jacobian
+        of transformation from $\rho,tilde t$ to $\tilde x$
+        in the point $\lambda_0$. Answer is
+                         $$
+        \det\left({\p(\t x^0,\t x^i)\over\p(\rho,\t t)}\right)=
+                     \det\left(\delta_{ik}+\rho A_{ik}\right)
+                         $$
+  We note that jacobian of transformation from cartesian coordinates
+  to another is equal to one, and jacobian of transformations from
+   parameters $t$ to another parameters is proportional to
+   the surface density. Hence
+                      $$
+             \int dx^0\dots dx^n=
+             \int \det \left(
+               1+\rho A
+             \right)dsd\rho
+              $$
+Expanding determinant by powers of $\rho$ we come to series
+of densities on $M$:
+               $$
+             \int \det \left(
+               1+ A
+             \right)ds=
+             \int ds+\int TrA ds+....+\int\det A ds
+               $$
+
+ The first density is surface density , next one is a mean curvature,
+ the last density is a total derivative-it is nothing but pull-back of
+ volume form on unit sphere $S^{n}$ under the Gauss map of $M^n$
+ embedding in $\R^{n+1}$
+ in $S^n$ (to every point on $M^n$ corresponds point on $S^n$ via
+ unit normal vector ${\bf n}$).
+
+Now we rewrite it in dual notations.
+let surface $M$ is given by equation:
+            $$
+            \Phi=0
+             $$
+During calculations I received the following answer dual
+to previous:
+                     $$
+                 \int
+                 \det
+                 \left[
+                    \delta_{ik}+
+                    \Pi^\mu_i
+                 {\p^2 \Phi\over \p x^\mu\p x^\nu}
+                     \Pi^\nu_k
+                     \right]
+                     \cdot
+                     |{\rm grad}\Phi|
+                      \delta(\Phi)
+                    d^{n+1}x\,,
+                     $$
+where
+                      $$
+ |{\rm grad}\Phi|=\sqrt
+                       {
+          {\p\Phi\over \p x^\mu}
+            {\p\Phi\over \p x^\mu}
+                   }
+                    $$
+But one can write the following answer too:
+
+ Density of the weight zero:
+                $$
+                                \det
+                 \left[
+                    \delta_{ik}+
+                      {1\over |{\rm grad}\Phi|^d}
+                    \Pi^\mu_i
+                 {\p^2 \Phi\over \p x^\mu\p x^\nu}
+                     \Pi^\nu_k
+                     \right]
+                     $$
+          I do not understand this answer.
+          I forget how I receive all these dual objects
+          I forget what is it exactly $\Pi^\mu_i$
+       (Immediately after these calculations we loosed lagguage
+        of my son).
+        But I have to remember it!
+
+
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     $$ $$
+         \centerline {\bf 2.5 Spirality of particles, Screw in mechanics
+      and one invariant of motions in $E^3$}
+\bigskip
+               (Zadacha voznikla pri obsuzhdeniji s Martirosianom Ashotom o mekhanike)
+
+\medskip
+
+  Consider affine space $E^3$, fix a point $O$ (nachalo koordinat)
+  we come to linear space $I\!R^3$. To arbitrary motion $\cal A$ in $E^3$
+  corresponds a pair $(A,b)$ where $A$ is orthogonal transformation
+  of $I\!R^3$ and $b$ is a vector:
+                    $x^\prime=  Ax+b$
+If we consider another nachalo koordinat $O^\prime$
+such that vector $OO^\prime$ is equal to $r$ then
+to the motion $\cal A$ corresponds a pair $(A,b^\prime)$:
+$y^\prime=  Oy+b^\prime$
+where $x=y+r$
+and
+             $$
+          b^\prime=b+Ar-r
+          \eqno (1)
+              $$
+       At what extent vector $b$ is defined iniquely
+       for a given motion $\cal A$ under a changing of nachalo coordinate?
+       Let $\bf n$ be axis corresponding to orthogonal
+       operator $A$: linear transformation via $A$ is rotation
+       around axis $\bf n$, or in another words $\bf n$
+       is eigen vector of $A$: $A\bf n=n$
+
+ It is easy to see from (1) that
+   the component of vector $b$ orthogonal to $\bf n$ can be vanished
+   by suitable choice of $r$ and
+   component of $b$ parallel to axis remains unchanged.
+   Formally it follows from the fact that image of operator
+   $A-{\bf id}$ is two-dimensional space ($\det(A-1)=0$)
+   orthogonal to $b$.
+
+   We come to the invariant of motions: projection of $b$ on $\bf n$.
+
+
+   {\bf Statement}
+
+   Every motion of $E^3$ can be expressed as rotation over axis
+   and translation along this axis, i.e. screw movement
+   (vintovoje dvizhenije).
+
+   Shag vinta--projection of $b$ on $n$ is invariant.
+
+   Infinitezimally to this invariant corresponds
+   invariant in affine algebra of rotations and translation:
+   scalar product $\bf Lp$ of operators of angualr moment and moments.
+
+ This simple statement can be considered as geometrical
+ interpretation of spirality...
+
+
+       > > >>>>>>>>>>>>>>>>>>>>>>>>
+
+$$ $$
+\def \a {\alpha}
+\def\s {\sigma}
+
+\def \F {{\cal F}}
+\def \L {{\cal L}}
+\def \D {{\cal D}}
+\def \N {{\cal N}}
+\def\p{\partial}
+\def\d{\delta}
+\def \P {{\cal P}}
+\def \Pi {{\cal Pi}}
+\def \V {{\cal V}}
+\def\R {\bf R}
+\def \O{\Omega}
+
+\centerline {\bf 2.6 Space of planes...}
+
+\medskip
+
+  {\it The most exciting point of this etud is that
+   the space of planes which are tranvesal
+   to the given plane $X$ in the linear space $E$
+   is the space of projectors
+   on the $X$ and this space is associated to the
+   linear space of operators on $E$ which
+    vanish {\bf on} $X$ and which take values {\bf in} $X$.
+    This space appeared in proving the Theorem of
+    irredusible representations for semisimple algebras
+    via Whitehead lemmas...}
+
+                 $$ $$
+ \centerline{  The description  of lagrangian surfaces transversal to the
+      given one.}
+
+   $$ $$
+
+   Let $X$ be given lagrangian surface in linear symplectic space.
+
+   How to describe the space of planes transversal to it?
+
+   \smallskip
+
+   First of all we consider the space of all transversal planes (ignoring the symplectic structure).
+
+
+   Let $Y_0$ be any transversal plane. Consider the pair $(X,Y_0))$. If $Y$ is any
+   other plane transversal to $X$  then one can consider linear operator
+    $A\colon\quad Y_0\rightarrow X$ such that
+                   $$
+                   Y=Y_0\oplus AY_0
+                    \eqno (1)
+                   $$
+   The operator $A$ defines uniquely the operator $W$ on $E$ such that
+    $W\Big\vert_{X}=0$. This operator obeys to relation
+                  $$
+                  {\bf\rm Im}W\subset X\subset {\bf\rm ker}W
+                     \eqno (2)
+                  $$
+
+
+     {\bf Proposition 1}
+     The space of surfaces transversal to $X$ is affine space. The associated linear
+     space is the linear space of operators $W\in {\rm Hom}(E,E)$ obeying to (2).
+
+
+
+    In fact the best way to describe the affine space of transcversal surfaces it is to use
+     projection operators for which $X$ is kernel, or for which $X$ is identity domain.
+
+     Let $P_0$ be a  projection operator
+  corresponding to the plane $Y_0$ transversal to $X$, i.e.
+  $P_0\big\vert_{Y_)}={\bf \rm id}$ and ${\rm ker}P_0=X$
+     (or $\tilde P_0=1-P_0$ is the projection operator such
+      that ${\rm ker}\tilde P_0=Y_0$ and $\tilde P_0\big\vert_X={\bf \rm id}$).
+          It is easy to see that projection operator corresponding to the
+    the plane $Y$  is equal to the
+                      $$
+                  P=P_0+W
+                       $$
+
+{\bf Proposition 2}
+     The affine space of planes transversal to $X$ is
+     the affine space of projectors of $E$ on the $X$.
+     For arbitrary projector $P_0$ of $E$ on the $X$
+     $P$ is    projector $P_0$ of $E$ on the $X$ also,
+     if and only if $W=P-P_0$ belongs to the linear space (2)
+
+
+  {\bf Remark} What is the meaning of the cohomology of (2) ($W^2=0$).
+
+   $$ $$
+
+   Now we return to symplectic and lagrangian structure.
+This put additional conditions on $W$ and $P$.
+
+The operator $A$ in (1) is the linear operator on Lagrangian surface $Y_0$
+ with values in Lagrangian surface $X$.
+ Correspondingly the operator $W$ in (1) is the linear operator the whole symplectic
+ space $E$ into itself such that it takes values
+ with values in Lagrangian plane $X$ which belongs to its kernel.
+ Identifying $E$ with dual space $E^*$ (via symplectic product) we put in
+ correspondence to the linear operator $W$ the {\bf bilinear form} $\O$:
+                               $$
+                               \O(a,b)=<W(a),b>
+                                  \eqno (4)
+                                $$
+    Correspondingly identifying lagrangian plane $X$ with dual to $Y_0$
+    we put in correspondence to $A$ in (1) the bilionear form on $Y_0$.
+  From (1) it follows  that $<Au,v>+<u,Av>=0$, for arbitrary $u,v,\in Y_0$,
+  because $Y$ is lagrangian plane also. Correspondingly for $W$
+  $<Wu,v>+<u,Wv>=0$, for arbitrary $u,v,\in E$.
+  Hence $\O$ is bilinear symmetric form.
+
+
+ {\bf Proposition 1L}
+     The space of lagrangian planes transversal to
+     the given lagrangian plane $X$ in the linear symplectic
+     space  is affine space.
+     The associated linear
+     space is the linear space of symmetric bilinear forms
+     on $E$ which vanish on $X$ (forms on $E/X$).
+
+   {\bf Remark}. In component language it is nothing but
+    constructing lagrangian surface $Y$ as graph of the linear function
+    generating by quadratic function on $Y$.
+
+
+  One can see easily that condition that $X$ and $Y$ are lagrangian put the following
+   constraints on the projector $P$:
+                              $$
+                   <Pu,v>+<u,Pv>=<u,v>
+                                  \eqno (5)
+                              $$
+Note that from (2) it follows that
+ $<Wu,v>+<u,Wv>=0$ $<Wu,v>=<Wv,u>$.
+И ещё заметим, что (5) как у Стернберга!!!
+
+{\bf Proposition 2L}
+     The affine space of lagrangian planes transversal to
+      the lagrangian plane $X$ is
+     the affine space of projectors of $E$ on the $X$,
+      obeying to (5).
+     For arbitrary such projector $P_0$ of $E$ on the $X$
+     $P$ is  projector $P_0$ of $E$ on the $X$ which also
+       defines transversal lagrangian plane
+     if and only if
+      $W=P-P_0$ belongs to the linear space (2)
+      and $<W...,...>$ is symmetric.
+
+               $$ $$
+                 \def \sint {\int_1^\infty {\exp(-at)\over t}dt}
+                    $$ $$
+            \centerline{\bf 2.7 One method of Calculating
+       Integral   $\int_1^\infty {\exp(-at)\over t}dt$
+                 for small $a$}
+
+            \centerline{\bf and Seeley Formulae}
+                        \bigskip
+            \centerline{\bf O.M. Khudaverdian}
+                     \medskip
+  We consider calculating of the integral $\sint$
+ using ideas inspired by Seeley formulae.
+  First the calculation. For estimating the behaviour
+of $\sint$ for large $a$ one can consider integration by parts
+                      $$
+     \sint={e^{-a}\over a}\sum_{n=0}^N{n!(-1)^n \over a^n }
+         +{(-1)^N N!\over a^{N+1}}\int_1^\infty e^{-at}t^{N+1}
+                                             \eqno (1)
+                        $$
+{\bf Remark} One can see that this formula does not give
+convergent power series. On the other hand for every fixed $N$
+ the reminder term is $e^{-a}o(1\over a^{N})$.
+
+ \bigskip
+
+
+ For small $a$ the Eq.(1) is helpless.
+
+  We consdider the trivial identity
+                     $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+       {\int_0^\infty t^{s-1}\exp(-at)dt}
+                \quad {\rm for} \quad s>0
+                                        \eqno (2)
+                    $$
+
+     One can rewrite the l.h.s. of (2) in the way
+  to consider its analytical continuation for
+neibourhood of $s=0$
+                     $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+       {\int_0^\infty t^{s-1}\exp(-at)dt}
+                   =
+                   $$
+                  $$
+              {1\over \Gamma(s)}
+            \left(
+       {\int_0^1 t^{s-1}\left(\exp(-at)-1\right)dt}+
+       {\int_0^1 t^{s-1}dt}+
+       {\int_1^\infty t^{s-1}\exp(-at)dt}
+                     \right)
+                    $$
+                     $$ =
+              {1\over \Gamma(s)}
+                         \left(B(s)+
+              {1\over s}\right)
+                                    \eqno (3)
+                    $$
+               where we denote
+                          $$
+                 B(s) =
+            \left(
+       \int_0^1 t^{s-1}\left(\exp(-at)-1\right)dt+
+         \int_1^\infty t^{s-1}\exp(-at)dt
+                     \right)
+                        $$
+
+       Hence
+                         $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+                          \left(
+                         B(s)+
+              {1\over \Gamma(s+1)}\right)
+                                         \eqno (4)
+                      $$
+   The both parts of (3) are defined and can be differentiate
+ in the neibourhood of $s=0$.
+           Using that
+                     $$
+              {1\over \Gamma(s)}\big\vert_{s=0}=0
+                \quad {\rm and}\quad
+           \left({d\over ds}
+              {1\over \Gamma(s)}\right)\Big\vert_{s=0}=
+                    \left(
+                    {d\over ds}
+                    \left(
+              {s\over \Gamma(s+1)}\right)\right)\Big\vert_{s=0}=1
+                                                \eqno (5)
+                       $$
+
+    we come from (4) to
+                  $$
+         {d\over ds}a^{-s}\big\vert_{s=0}= -\log a=
+              B(0)- \Gamma^\prime (1)
+                                    \eqno (6)
+                      $$
+ the derivative  $\Gamma^\prime (1)$  is the famous
+  Euler constant
+                         $$
+            \Gamma^\prime (1)=
+                          \lim_{n\rightarrow\infty}
+                      \left(
+                      1+{1\over 2}
+                         +{1\over 3}+
+                          {1\over 4}+\dots+
+                          {1\over n}-\log n
+                      \right)
+                                     \eqno (7)
+                              $$
+
+             We see from (2---6) that
+
+                    $$
+            B(0)=
+       \int_0^1 {\exp(-at)-1\over t}dt+
+       \int_1^\infty {\exp(-at)\over t}dt=
+       \Gamma^\prime(1)-\log a
+                                       \eqno (8)
+                   $$
+        This gives representation for $\sint$
+  which is  convenient for small $a$
+                      $$
+      \int_1^\infty {\exp(-at)\over t}dt=
+       \Gamma^\prime(1)-\log a-
+       \int_0^1 {\exp(-at)-1\over t}dt=
+                  $$
+              $$
+       \Gamma^\prime(1)-\log a-
+          \sum_{n=1}^\infty {(-1)^na^n\over n!n}=
+                           \eqno (9)
+                     $$
+                     $$
+     -\log a+\Gamma^\prime(1)+a-{a^2\over 2\cdot 2!}+
+       {a^3\over 3\cdot 3!}-{a^4\over 4\cdot 4!}+\dots
+                     $$
+   (where $\Gamma^\prime(1)$ is nothing but Euler constant $C$:
+
+   \noindent $\Gamma^\prime(1)=C=
+   \lim_{n\rightarrow \infty}
+   (1+{1\over 2}+{1\over 3}+\dots+{1\over n}-\log n)$)
+   Empirically $B(0)$ in (8) can be considered as
+  renormalized value of the integral
+         $$
+         \int_1^\infty t^{s-1}\exp(-at)dt=\dots
+                         \eqno (10)
+              $$
+
+      And naively (which happens often in Quantum Field Theory)
+      one can calculate it using
+   Frullany formula:
+
+                       $$
+                \int {f(at)-f(bt)\over t}dt=f(0)\cdot\log{b\over a}
+                             $$
+
+  The exact result
+  differs  from naive expectation on the Euler constant !!!.
+
+   In fact all this stuff is the reduction of the Seeley formulae
+
+
+
+
+   \bigskip
+
+   I think this very trivial exercise is useful
+
+   shtoby vvesti
+populjarno ideologiju perenormirovok v formulakh Sili (Seleey)
+
+
+
+
+{\bf Remark 2}
+
+Denote $I(a)=\sint$ and
+$K(a)=\sum_{n=1}^\infty {(-1)^na^n\over
+n!n}$
+
+ We note that
+                $$
+            \Gamma^\prime(1)=\int_0^\infty \log t e^{-t}dt=
+\int_0^1 \log t e^{-1}dt+\int_1^\infty \log t e^{-1}dt=
+         K(1)+I(1)
+           $$
+ hence we come to
+ the identity at $a=1$. Helas our formula does not give
+ series for $a=1$...
+
+ {\bf Remark 3} Tut vsjo zatsepleno: Naprimer
+                       $$
+                       \int_0^1 {e^{-at}-1\over at}dt=
+                       \int_0^1 \log t e^{-at}dt
+                       $$
+            The second integral is related with $\Gamma^\prime(1)$.
+
+
+$$ $$
+
+    \centerline {\bf 2.8 K zadache o kreste}
+
+\medskip
+
+ Related with etud jakob.tex and wanted to remember
+ my very old solution of the squares (see square.tex)
+I was thinking on the non-linear
+map with Jakobian 1.
+It is following.
+
+Let $R^n$ be $n$-dimensional space.
+We consider the following non-linear map
+              $$
+   \xi^i=x^i+ a^i F(b^mx^m)
+                 \eqno (1)
+              $$
+where $F(t)$ is a smooth function, $\bf a$
+and $\bf b$ are orthogonal vectors.
+The differential of this map is matrix
+                $$
+           \delta^i_m+a^ib^mf^\prime(B^mx^m)
+               \eqno (2)
+                  $$
+It is easy to see that its determinant is equal to $1$.
+(The matrix in (2) is equal to $1+S$ where $S$ is nilpotent $S^2=0$,
+because vectors $a$ and $b$ are orthogonal, hence
+                 $$
+\det(1+S)=\det\exp S=\exp{\rm tr}S=1
+                   \eqno (3)
+                 $$
+The transformation (1) is exponential flow of the vector field
+\def\p{\partial}
+              $$
+           {\bf X}=a^iF(b^m x^m){\p\over\p x^i}
+                     \eqno (4)
+                 $$
+and its integral of motion is $b^mx^m$.
+In fact I wanted to construct non-linear map
+with jakobian 1 which transforms
+two families of lines in the lines.---It is impossible!
+One can to construct non-linear map with linear
+jakobian with these properties:
+           $$
+           \cases
+               {
+         x\mapsto x+axy\cr
+         y\mapsto y+bxy\cr
+                   }
+                  \eqno (5)
+               $$
+This map transforms the square $(0,0), (0,1), (1,0), (1,1)$
+to the quatreangle   $(0,0), (0,1), (1,0), (1+a,1+b)$
+and all vertical and horizontal lines to the lines also!
+Moreover its jakobian is equal
+ to
+                   $$
+             1+2ay+2bx
+                            \eqno (6)
+                $$
+hence  the middle square $(1/3,1/3), (1/3,2/3), (2/3,1/3), (2/3,2/3)$
+  whose area is equal to $1/9$ transforms to the
+ quatreangle with area wich is $1/9$ part of the area of the
+ quatreangle  $(0,0), (0,1), (1,0), (1+a,1+b)$ .
+
+This I did in 1989 in Geneve...
+Yesterday I spent 10 hours wanted to reconstruct thsi solution.
+My false idea was to find transformation like (5) with Jakobian 1,
+but it is impossible, because only
+middle quatreangle preserves its property to be $1/9$
+part of all! Why? because
+                  $$
+             \left({2\over 3}\right)^2-
+             \left({1\over 3}\right)^2=
+               {3\over 9}=
+               {1\over 3}
+                   \eqno (7)
+                      $$
+ This is proptery of middle segment...
+
+   $$ $$
+
+                        {\bf 2.9 Dva slova o jacobian problem}
+
+                        \medskip
+
+                      It is a little note about so called Jacobiin problem.
+
+  Let $P(x,y)$ and $Q(x,y)$ be two polynomipals on variables $x,y$
+such that
+\def\p{\partial}
+                     $$
+                   \det
+                    \pmatrix
+                     {
+               {\p P\over \p x}
+                   {\p P\over \p y}\cr
+                    {\p Q\over \p x}
+                    {\p Q\over \p y}\cr
+                      }
+                         =1
+                       \eqno (1)
+                   $$
+Then the inverse functions are always polynomials too.
+For example to the polynomial transformation
+                  $$
+                 \cases
+                     {
+                    x\mapsto x+(x+y)^3\cr
+                    y\mapsto x+y  \cr
+                        }
+                      $$
+ corresponds inverse transformation
+                           $$
+                \cases
+                   {
+                    x\mapsto x-y^3\cr
+                    y\mapsto y+y^3-x\cr
+                      }
+                            $$
+As is stated in the book of Kirillov: ("Shto takoje chislo"---broshjura,
+1993 god) this problem is unsolved till now. (Kak ja ponimaju net
+kontrprimera i ne dokazano eto utverzhdenije.)
+One can following to this book
+consider non-commutative version of this problem.
+Let $W$ be associative algebra with unity, generated by two generators
+  $p$ and $q$ which obey only to the constraint:
+                    $$
+                       pq-qp=1
+                      $$
+  (Weyl algebra)
+Let $A$ and $B$ be two polynomials on $p$ and $q$ such that
+            $$
+         AB-BA=1
+                                  \eqno (2)
+             $$
+Then the endomorphism generated by the map
+                 $$
+           p\mapsto A, q\mapsto B
+                  $$
+  has to be an isomorphism!---i.e. $p$ and $q$ can be expressed as
+polynomials of $A$ and $B$.
+You see that the first problem is quasiclassical limit of the second one
+(commutator (2) $\rightarrow$ Poisson bracket $=$ jakobian.)
+
+$$ $$ $$ $$
+
+         \centerline {\bf Algebra}
+
+      $$ $$
+
+       \centerline {\bf 3.1 Representation functor for jets}
+\medskip
+
+ Reading Krassilshik Verbovetsky I became really  really
+ happy understanding the algebraic definition of jets!!!
+\def \K {{I\!K}}
+\def\D  {\Delta}
+   So on:
+   Let $P$ and $Q$ be two modules over commutative algebra $A$
+ which is algebra over the main field $\!K$. In the space
+     linear space $Hom_\K(P,Q)$ one can consider two modules structure.
+The first one defining by
+                      $$
+  \forall \D \in Hom_\K(P,Q), a\in A\quad
+            (a\circ\D)(p)=a\D(p)
+                  \eqno (1)
+                    $$
+and the second one defined by
+                      $$
+  \forall \D \in Hom_\K(P,Q), a\in A\quad
+            (a\circ\D)(p)=\D(ap)
+                  \eqno (1)
+                    $$
+It is easy define the gradation. ($Diff=\oplus Diff_n$)
+   We denote the first module by $Diff(P,Q)$ and the second one by
+  $Diff^+(P,Q)$. The elements of $Hom_\K(P,Q)$ which are in fact
+  $A$-linear (i.e. belong to $Hom_A(P,Q)$) are zero order differential
+operators.   By induction the operator $\D$ belongs to
+ $Diff_{n+1}$ if for every $a\in A$
+                             $$
+             \delta_a(\D)= \D a-a\D\in Diff_{n}
+                   \eqno (2)
+                         $$
+ Sure the basic example is (see also the example below!)
+the following
+
+         {\bf Example 1}
+  Let $P$ and $Q$  be the modules of sections (more simple
+  the modules of functions) and $A$ be an algebra
+ of functions. Then $Diff_n$  is nothing but $n$-order
+differential operators.
+
+ But there is another example which is very useful for jets definition!!!
+
+     {\bf Example 2} Let $P$ be a module (simple: the module of functions)
+ and  $A$ be arbitrary algebra (simple: algebra of functions)
+   Let
+               $$
+              Q=A_K\otimes P
+                                    \eqno (4)
+                 $$
+(note that tensor product is over $A$ not over $K$!!!)
+and module structure on $Q$ is defined by
+                  $$
+               b\circ (a\otimes p)=ba\otimes p
+                    $$
+ We consider the map
+                     $$
+Hom_\K(P,Q)\ni\epsilon\colon\quad \epsilon(p)=1\otimes p
+                          \eqno (5)
+           $$
+ Exercise
+ This is infinite-order differential operator!!!
+
+And this leads us to jets (see Krasilshik Verbovetsky)
+
+ A imenno:
+
+ We consider $\mu^k$---the subspace of $Q=A_K\otimes P$
+which is generated by terms
+ $\delta_{a_0\dots a_k}(\epsilon)(p)$
+where $\delta_{a_0\dots a_k}(\epsilon)(p)$
+are generated subsequently by commutators by the rule (2).
+We define jets space by the formula
+               $$
+            {cal I}^k P=(A_K\otimes P)/mu^k
+                    $$
+ Magic definition!
+     Exercise
+We consider the functor $Diff_n(P,\cdot)$:
+                    $$
+         \forall Q ({\rm over A})\quad
+             Q\rightarrow Diff_n(P,Q)
+                   $$
+i.e. the functor which put in correspondence to the module
+ $Q$ $n$-th order differential operators with value in this module.
+This fumctor is representing by the space
+                   $$
+                  Hom_A({\cal I}^n P,Q)=Diff_n(P,Q)
+               $$
+i.e. differential operators on $P$ with value in $Q$ are representing
+by $A$-linear functions on the   space of $n$-th jets
+ with value in $Q$!
+
+
+
+
+
+ $$ $$
+\centerline {\bf 3.2 Projective module of Mobius band global sections}
+
+   \bigskip
+
+ Let $C$ be an algebra of continuous functions on $[0,2\pi]$.
+  Consider the following two subalgebras of $C$
+                          $$
+             \Lambda=\{f\colon\,\, f\in C, f(0)=f(2\pi)\}\,
+                                     \eqno (1)
+                           $$
+ and
+                           $$
+              P=\{f\colon\,\, f\in C, f(0)=-f(2\pi)\}\,
+                                     \eqno (2)
+                           $$
+ $P$ can be considered as module over $\Lambda$
+ This module is projective and it is not free. More precisely:
+                               $$
+                           P\oplus P=\Lambda\oplus \Lambda
+                                         \eqno (3)
+                               $$
+We give a proof of (3) below. Equation (3) menas that $P$ is
+projective (by definition). From (3) it follows that $P$ is not
+free. Indeed suppose that it is free then from embedding (3) it follows
+ that it has one generator $f_0$. From (2) it follows that
+  $f_0$ vanishes in some point $x_0$. Hence $f_0$ generates
+  submodule of $P$. Contradiction.
+
+  Before proving (3) we note that $P$ is nothing but
+  module of global continuous sections on Mobius band.
+ Condition (3) corresponds to condition that
+ Whithney sum of two Mobius bundles is trivial bundle:
+                      $$
+           M\oplus M=R^2\times S^1
+                          \eqno (4)
+                      $$
+The proof follows from the following geometrical realization
+ of (4). Consider in $R^4$ two Mobius bands, bundles
+ over circle:
+                         $$
+                          M_1\colon
+                          \cases
+                          {
+                          x=cos\varphi \cr
+                          y=sin\varphi\cr
+                          z=tcos {\varphi\over 2}\cr
+                          u=tsin {\varphi\over 2}
+                           }\,,\qquad
+                            M_1\colon
+                          \cases
+                          {
+                          x=cos\varphi \cr
+                          y=sin\varphi\cr
+                          z=-\tau sin {\varphi\over 2}\cr
+                          u=\tau cos {\varphi\over 2}
+                           }\,,\quad
+                           0\leq\varphi \leq 2\pi, -\infty<t<\infty,
+                           -\infty<\tau<\infty
+                            \eqno (5)
+                          $$
+   It is evident that this embedding leads to (4). Now from (5)
+   it follows the proof of (3).
+   The isomorphism (3) is given by the formula
+                     $$
+                  \rho \pmatrix {t(\varphi)\cr \tau(\varphi)\cr}=
+                  \hat T_{\varphi\over 2}
+                  \pmatrix {z(\varphi)\cr u(\varphi)\cr}\,,
+                  $$
+       where $\hat T$ is operator of rotation:
+                      $$
+                      \hat T_\varphi
+                        =
+                        \pmatrix
+                          {
+                          cos \varphi,sin \varphi\cr
+                          -sin \varphi,cos \varphi\cr
+                          }
+                          $$
+        To isomorphism (3) corresponds the following projector
+        in $R^2\times S^1$ on M:
+                         $$
+         \Pi (z,u,\varphi)=\hat T_{\varphi\over 2}\circ
+                \pmatrix
+                          {
+                          1\quad 0\cr
+                          0\quad 0\cr
+                          }\circ
+                          \hat T_{-\varphi\over 2}\,,\quad
+                          1-\Pi (z,u,\varphi)=\hat T_{\varphi\over 2}\circ
+                \pmatrix
+                          {
+                          0\quad 0\cr
+                          0\quad 1\cr
+                          }\circ
+                          \hat T_{-\varphi\over 2}\,
+                          $$
+
+   Zabavno otmetitj shto etot proektor imejet vneshne bezobidnyj vid:
+                            $$
+                  \Pi={1\over 2}\left(
+                     1+\pmatrix
+                          {
+                          1\quad 0\cr
+                          0\quad -1\cr
+                          }\hat T_\varphi
+                  \right)
+                      $$
+
+Eto v tochnosti Fedosovskoje opisanije rasslojenij!
+
+
+
+\bye

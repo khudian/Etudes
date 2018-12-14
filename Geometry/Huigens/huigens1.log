@@ -1,0 +1,38 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdftex 2016.8.6)  16 AUG 2016 09:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**huigens1.tex
+(./huigens1.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pd
+ftex.map}]
+Overfull \hbox (125.77519pt too wide) detected at line 154
+\teni u\tenrm (\teni t; \tenbf x\tenrm ) = \teni C[] [] e[] [] d[]\tenbf k\teni
+ d[]\tenbf y \teni : \tenrm = [] \teni F[]\tenrm (\teni k\tensy j\tenbf x \tens
+y ^^@ \tenbf y\tensy j\tenrm ) [] \teni k[]dkd[]\tenbf y \tenrm =|
+
+\hbox(14.5001+9.50012)x391.46176, glue set - 1.0
+.\teni u
+.\tenrm (
+.\teni t
+.\teni ;
+.\glue(\thinmuskip) 1.66663
+.etc.
+
+[2] )</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on huigens1.pdf (2 pages, 115947 bytes).
+PDF statistics:
+ 55 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

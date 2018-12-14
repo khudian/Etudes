@@ -1,0 +1,2263 @@
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+
+\theoremstyle{theorem}
+\newtheorem{thm}{Khimera}
+
+\numberwithin{equation}{section}
+
+
+%\title{Riemannian Geometry}
+%\date{}
+\begin{document}
+%\maketitle
+
+
+\tableofcontents
+
+
+
+
+
+
+
+\section {Surfaces in $\E^3$}
+
+ Now equipped by the knowledge of Riemannian geometry we consider surfaces in $\E^3$. We
+  reconsider again conceptions of Shape (Weingarten) operator, Gaussian and mean curvatures,
+  focusing attention on the the fact what properties are internal and what properties are external.
+
+
+.
+ \subsection{ Induced metric on surfaces.}
+
+   Recall here again induced metric (see for detail subsection 1.4)
+
+  If surface $M\colon\,\, \r=\r(u,v)$is embedded in $\E^3$ then induced Riemannian metric
+  $G_M$ is defined by the formulae
+  \begin{equation}\label{scalarproduct2}
+    \langle\X,\Y\rangle=G_M(\X,\Y)=G(\X,\Y)\,,
+  \end{equation}
+  where $G$ is Euclidean metric in $\E^3$:
+           $$
+        G_M=dx^2+dy^2+dz^2\big\vert_{\r=\r(u,v)}=
+        \sum_{i=1}^3(dx^i)^2\big\vert_{\r=\r(u,v)}=\sum_{i=1}^3\left({\p x^i\over \p u^\a}du^\a\right)^2
+                $$
+                $$=
+        {\p x^i\over \p u^\a} {\p x^i\over\p  u^\beta}du^\a du^\beta\,,
+           $$
+        i.e.
+            $$
+      G_M=g_{\a\beta}du^\a ,\,\, {\rm where}\,\, g_{\a\beta}=
+      {\p x^i\over \p u^\a} {\p x^i\over \p u^\beta}du^\a du^\beta\,.
+           $$
+ We use notations $x,y,z$ or $x^i$ ($i=1,2,3$) for Cartesian coordinates in $\E^3$,
+ $u,v$ or $u^\a$ ($\a=1,2$) for coordinates on the surface. We usually   omit summation symbol
+ over  dummy indices.    For coordinate tangent vectors
+           $$
+ \underbrace{\p\over \p u_\a}_{\hbox{Internal observer}} =
+ \underbrace{\r_\a={\p x^i\over \p u^\a}{\p\over \p x^i}}_{\hbox{External observer}}
+           $$
+We have already plenty examples in the subsection 1.4. In particular for scalar product
+\begin{equation}\label{scalarproduct4}
+  g_{\a\beta}=\left\langle{\p\over u_\a},{\p\over u_\beta}\right\rangle=x^i\a x^i\beta\,.
+  \langle \r_\a,\r_\beta\rangle\,.
+\end{equation}
+
+
+
+  \subsection {Induced connection}
+
+  We already studied before induced connection on manifolds embedded in $\E^n$ (see the subsection 2.2).
+
+  We do it again in a more detail for  surfaces in $\E^3$.
+
+Let $\nabla^{\rm can.flat}$ be a canonical flat connection in Euclidean space $\E^3$, i.e. a connection such
+that its  Christoffel symbols vanish in cartesian coordinates, i.e.
+\begin{equation}\label{canonicalflatconnection}
+    \nabla^{\rm can.flat}_\X \Y= \p_\X \Y= \X^m(x){\p \over x^m}Y^i(x){\p\over \p x^i}
+\end{equation}
+in  Cartesian coordinates. (Of course in arbitrary curvilinear coordinates Christoffel symbols
+of canonical flat connection may have non-zero components, but in Cartesian coordinates Christoffel symbols vanish.
+It is why we sometimes use notation  $\p_\X$ instead $\nabla^{\rm can.flat}_\X \Y$.)
+
+
+   Induced connection $\nabla$ on the surface can be defined by the relation
+             \begin{equation}\label{inducedconnection4}
+             {\nabla}_\X\Y=\left( \nabla^{\rm can.flat}_\X \Y\right)_{\rm tangent}
+             \end{equation}
+          (See also the subsection (2.2))
+One can show that this formula indeed defines the connection on $M$.
+
+
+Calculate Christoffel symbols of this connection using the formulae above and the expressions
+for basic vectors $\p_\a={\p\over \p u^\a}$,  $\p_\beta={\p\over \p u^\beta}$ for external observer.
+
+We have
+\begin{equation}\label{christoffelsymbols1forinducedconnection}
+\nabla_\a\p_\beta=\Gamma^\gamma_{\a\beta}\p_\gamma=
+\left( \nabla^{\rm can.flat}_{\p_\a} {\p_\beta}\right)_{\rm tangent}=
+\left( \nabla^{\rm can.flat}_{\p_\a} {\r_\beta}\right)_{\rm tangent}
+\end{equation}
+i.e.
+\begin{equation}\label{christoffelsymbols1forinducedconnection2}
+ \Gamma^\gamma_{\a\beta}\r_\gamma=\left({\p^2\r \over \p u^\a\p u^\beta}\right)_{\rm tangent},
+\end{equation}
+Before continuing calculations note that we see already that the induced connection is {\it symmetric} one.
+
+Now continue to calculate. Any vector attached at the surface can be decomposed as a sum of tangent vector and the vector orthogonal to the surface:
+               $$
+           {\p^2\r \over \p u^\a\p u^\beta}=\left({\p^2\r \over \p u^\a\p u^\beta}\right)_{\rm tangent}+\N
+               $$
+ Hence
+ \begin{equation}\label{christoffelsymbols1forinducedconnection4}
+ \Gamma^\gamma_{\a\beta}\r_\gamma=\left({\p^2\r \over \p u^\a\p u^\beta}\right)_{\rm tangent}=
+ {\p^2\r \over \p u^\a\p u^\beta}-\N= \r_{\a\beta}-\N
+\end{equation}
+Take scalar product of  both parts of this equation on the tangent vector vector $\r_\pi$, we come to:
+            $$
+         \Gamma^\gamma_{\a\beta}\langle\r_\gamma, \r_\pi\rangle=
+         \langle\r_{\a\beta},\r_\pi\rangle+\langle\N,\r_\pi\rangle\,.
+            $$
+We have that $\N\bot \r_\pi$, hence $\langle\N,\r_\pi\rangle=0$. Using the fact that
+$\langle\r_\gamma, \r_\pi\rangle=g_{\gamma\pi}$ are entries of the matrix $||G_M||$ of the induced Riemannian metric
+(see the equation \eqref{scalarproduct4}) we come to
+               $$
+\Gamma^\gamma_{\a\beta}g_{\gamma\pi}=\langle\r_{\a\beta},\r_\pi\rangle=x^i_{\a\beta}x^i_\pi\,.
+               $$
+Multiplying both sides of this equation on inverse matrix we come to :
+               $$
+\Gamma^\gamma_{\a\beta}g_{\gamma\pi}g^{\pi\rho}=\Gamma^\gamma_{\a\beta}\delta_\gamma^\rho=
+\Gamma^\rho_{\a\beta}=x^i_{\a\beta}x^i_\pi g^{\pi\rho}\,.
+               $$
+
+We come to the explicit formula for the Christoffel symbols of the induced connection in terms of
+parametric equations $x^i(u^\a)$ and induced metric $g_{\a\beta}$:
+\begin{equation}\label{connectionintermsofinducedmetric}
+\Gamma^\gamma_{\a\beta}=x^i_{\a\beta}x^i_\pi g^{\pi\gamma}\,.
+\end{equation}
+
+\subsubsection{Induced connection---the Levi Civita connection of induced metric.}
+
+ Now you may ask a question: is there another  way to obtain induced connection (may be different one )
+ on the manifold  $x^i=x^i(u^\a)$. Recall that one can consider Levi-Civita connection of
+ Riemannian metric $G_M=g_{\a\beta}du^\a du^\beta$ with Christoffel symbols:
+                   \begin{equation}\label{levi-civita12}
+      \Gamma^\gamma_{\a\beta}={1\over 2}g^{\gamma\pi}
+      \left({\p g_{\pi \a}\over \p u^\beta}+{\p g_{\pi \beta}\over \p u^\a}-
+      {\p g_{\a\beta}\over \p u^\pi}\right)
+                   \end{equation}
+ (see the subsection about Levi-Civita connection)
+
+ {\sl Natural question arises: may be these connections are the same?}----Yes, it is
+
+              \m
+
+    {\bf Proposition} {\it The connection $\nabla$ induced through the flat canonical connection on the surface
+    $M$  coincides with Levi-Civita connection. In other words Christoffel symbols \eqref{scalarproduct4}
+    coincide with Christoffel symbols \eqref{levi-civita12}.}.
+    The proof of this Proposition follows from the  following claim
+
+              \m
+       {\bf Claim} The induced connection $\nabla$ is symmetric connection which is compatible with metric.
+
+
+     Indeed we proved that Levi-Civita connection \eqref{levi-civita12} is a unique symmetric connection which is compatible with metric.
+     Hence every connection which is compatible wit metric equals to Levi-Civita connection \eqref{levi-civita12}.
+
+
+     It remains to prove the Claim.  When calculating Christoffel symbols of induced connection we already
+     noted that its Christoffel symbols are symmetric. It remains to prove that induced connection is compatible
+     with induced metric, i.e. covariant derivative preserves scalar product of tangent vectors.
+     To prove this note that covariant derivative with respect to flat canonical metric preserves
+ metric in Euclidean space:
+                              $$
+    \p_\X\langle \Y,\Z\rangle=\langle \nabla^{\rm can.flat}_\X\Y,\Z\rangle+\langle \Y,\nabla^{\rm can.flat}_\X\Z\rangle
+                              $$
+                 On the other hand for an arbitrary tangent vector $\R$
+                 $$
+   \nabla^{\rm can.flat}_\X \R= \left(\nabla^{\rm can.flat}_\X \R\right)_{\rm tangent}+\hbox {vector orthogonal to the surface}
+                $$
+    and $\left(\nabla^{\rm can.flat}_\X \R\right)_{\rm tangent}=\nabla_\X\R$, where $\nabla$ is the induced connection. Hence
+                             $$
+     \p_\X\langle \Y,\Z\rangle=\langle \nabla_\X\Y+\dots,\Z\rangle+\langle \Y,\nabla_\X\Z+\dots\rangle=
+     \langle \nabla_\X\Y,\Z\rangle+\langle \Y,\nabla_\X\Z\rangle,
+                             $$
+ where we denote by $\dots$ vectors orthogonal to the surface.  Thus
+ $\nabla$ preserves induced metric. The claim is proved.
+
+
+ Note that we come to two different definitions for induced connections and prove that they same.
+ The second connection is totally described in terms of metric on the surface, i.e. in terms of {\it Internal Observer}.
+  The first connection
+ is explicitly depended on the embedding functions. It is described in terms of {\it External Observer.}
+
+ We continue to consider different geometrical structures form the point of view of External and Internal Observers.
+
+ We will try to prove the remarkable theorem Gau\ss's {\it Theorema Egregium} that the Gaussian  curvature
+ of the surface (which you already learned in the course of geometry)  in fact depends only on induced metric...
+
+ \subsection {Weingarten (shape) operator and second quadratic form}
+
+   \subsubsection {Recalling Weingarten operator}
+
+ Continue to play with formulae \footnote{In some sense differential geometry it is when we write down
+ the formulae expressing the geometrical facts, differentiate these formulae then reveal the geometrical meaning
+  of the new obtained formulae e.t.c.}.
+
+
+Recall the Weingarten (shape) operator which acts on tangent vectors:
+
+  \begin{equation}\label{weingoperator1}
+    S\X=-\p_\X \n\,,
+  \end{equation}
+ where we denote by $\n$-unit normal vector field at the points of the surface $M$: $\langle\n,\r_\a\rangle=0$,
+ $\langle\n,\r_\a\rangle=1$.
+
+\m
+
+ Now we realise that the derivative $\p_\X \R$ of vector field with respect to another vector field
+ is not a well-defined object: we need a connection.
+ The formula $\p_\X \R$ in Cartesian coordinates,
+ is nothing but the derivative with respect to flat canonical connection:
+ If we work only in Cartesian coordinates we do not need to distinguish between
+ $\p_\X \R$ and $\nabla^{\rm can.flat}_\X\R $. Sometimes with some abuse of notations we will use
+ $\p_\X \R$ instead $\nabla^{\rm can.flat}_\X\R $, but never forget: this can be done only in Cartesian coordinates
+ where Christoffel symbols of flat canonical connection vanish:
+              $$
+      \p_\X \R=\nabla^{\rm can.flat}_\X\R  \quad \hbox{in Cartesian coordinates}\,.
+         $$
+
+ So  the rigorous definition of Weingarten operator is
+\begin{equation}\label{weingoperator2}
+    S\X=-\nabla^{\rm can.flat}_\X \n\,,
+  \end{equation}
+  but we often use the former one (equation \eqref{weingoperator1})
+   just remembering that this can be done only in Cartesian coordinates.
+
+  Recall that the fact that Weingarten operator $S$ maps tangent vectors to tangent vectors follows from the property:
+  $\langle\n,\X\rangle=0\Rightarrow \X$ is tangent to the surface.
+
+  Indeed:
+     $$
+ 0= \p_\X\langle\n,\n\rangle=2\langle\p_\X\n,\n\rangle=-2\langle S\X,\n\rangle=0\Rightarrow S\X\,\,
+ \hbox {is tangent to the surface}
+     $$
+     \m
+Recall also that normal unit vector is defined up to a sign, $\n\to -\n$. On the other hand if $\n$
+is chosen then $\S$ is defined uniquely.
+
+
+\subsubsection {Second quadratic form}
+
+We define now the new object: {\it second quadratic form}
+
+{\bf Definition}. For two tangent vectors $\X, \Y$
+$A(\X,\Y)$ is defined such that
+\begin{equation}\label{secondquadraticform1}
+    \left(\nabla^{\rm can.flat}_\X \Y\right)_\bot=A(\X,\Y)\n
+\end{equation}
+i.e. we take orthogonal component of the derivative of $\Y$ with respect to $\X$.
+
+This definition seems to be very vague: to evaluate covariant derivative we have to consider not a
+vector $\Y$ at a given point
+but  the vector field.
+In fact one can see that  $A(\X,\Y)$ does depend only on the value of $\Y$ at the given point.
+
+Indeed it follows from the definition of second quadratic form and from the properties of Weingarten operator that
+        $$
+         A(\X,\Y)=\left\langle\left(\nabla^{\rm can.flat}_\X \Y\right)_\bot,\n\right\rangle=
+    \left\langle\nabla^{\rm can.flat}_\X \Y,\n\right\rangle=
+        $$
+\begin{equation}\label{properofsecquadrform4}
+    \p_\X \langle\Y,\n\rangle-\left\langle \Y,\nabla^{\rm can.flat}_\X\n\right\rangle=\langle S(\X), \Y\rangle
+\end{equation}
+
+
+
+We proved that second quadratic form depends only on value of vector field $\Y$ at the given poit and we established
+the relation between second quadratic form and Weingarten operator.
+
+\m
+
+{\bf Proposition} {\it The second quadratic form $A(\X,\Y)$ is symmetric bilinear form on tangent vectors $\X,\Y$
+in a given point.}
+
+       \begin{equation}\label{symmetricityofsecquadrform}
+A\colon T_\pt M\otimes T_\pt M\to \R,\quad A(\X,\Y)=A(\Y,\X)=\langle S\X,\Y\rangle\,.
+       \end{equation}
+
+ In components
+ \begin{equation}\label{compexpressforscquadrform}
+    A=A_{\a\beta}du^\a du^\beta=\langle \r_{\a\beta}, \n\rangle={\p^2 x^i\over \p u^\a \p u^\beta}n^i\,.
+ \end{equation}
+and
+\begin{equation}\label{compexpressforweingarten}
+    S^\a_\beta=g^{\a\pi}A_{\pi\beta}=g^{\a\pi}x^i_{\pi\beta}n^i\,,
+     \end{equation}
+i.e.
+            $$
+         A=GS, S=G^{-1}A\,.
+            $$
+
+ {\bf Remark} The normal unit vector field is defined up to a sign.
+
+
+\subsubsection {Gaussian and mean curvatures}
+
+   Recall that Gaussian curvature
+            $$
+          K=\det S
+            $$
+and mean curvature
+           $$
+         H={\rm Tr \,}S
+           $$
+It is easy to see that  for Gaussian curvature
+           $$
+         K=\det S=\det(G^{-1}A)={\det A\over \det G}.
+           $$
+
+We know already the geometrical meaning of Gaussian and mean curvatures from the point of view of the External Observer:
+
+Gaussian curvature $K$ equals to the product of principal curvatures, and mean curvartures equals to the sum of principal curvatures.
+
+Now we ask a principal question: what bout internal observer, "aunt" living on the surface?
+
+We will show that Gaussian curvature can be expressed in terms of induced Riemannian metric, i.e. it is an
+ internal characteristic of the surface, invariant of isometries.
+
+  It is not the case with mean curvature: cylinder is isometric to the plane but it have
+   non-zero mean curvature.
+
+\subsubsection {Examples of calculation of Weingarten operator,
+Second quadratic forms, curvatures for cylinder, cone and sphere.}
+
+\m
+
+{\it Cylinder}
+
+\m
+
+  We already calculated induced Riemannian metric on the cylinder (see \eqref {formula forfirstformcyl}).
+
+ Cylinder is given by the equation $x^2+y^2=R^2$. One can consider the following
+parameterisation
+ of this surface:
+\begin{equation}\label{surface11}
+  \r(h,\varphi)\colon\quad
+  \begin{cases}
+  x=R\cos\varphi\\
+  y=R\sin\varphi\\
+  z=h\\
+  \end{cases}\,,\quad   \r_h=
+  \begin{pmatrix}
+        0\\
+        0\\
+        1\\
+   \end{pmatrix}\,,
+\quad
+  \r_\varphi=\begin{pmatrix}
+        -R\sin\varphi\\
+        R\cos\varphi\\
+          0\\
+   \end{pmatrix}\,,
+\end{equation}
+$G_{cylinder}=\left(dx^2+dy^2+dz^2\right)\big\vert_{x=a\cos\varphi,y=a\sin\varphi,z=h}=$
+        \begin{equation*}\label{firtsquadraticformcylinder(diff)11}
+               =(-a\sin\varphi d\varphi)^2+(a\cos\varphi d\varphi)^2+dh^2=a^2d\varphi^2+dh^2\,,\quad
+               ||g_{\a\beta}||=
+  \begin{pmatrix}
+   1 & 0 \\
+   0& R^2 \\
+   \end{pmatrix}\,.
+        \end{equation*}
+
+   Normal unit vector $\n=\pm \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}$. Choose $\n=\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}$. Weingarten operator
+     \begin{equation*}\label{weingrartenforcylinder}
+        S\p_h=-\nabla^{\rm can.flat}_{\r_h}\n=-\p_{\r_h} \n=-\p_h\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}=0\,,
+     \end{equation*}
+\begin{equation*}\label{weingrartenforcylinder}
+        S\p_\varphi=-\nabla^{\rm can.flat}_{\r_\varphi}\n=-\p_{\r_\varphi} \n=-{\p_\varphi}
+        \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}=\begin{pmatrix}
+        \sin\varphi \cr
+        -\cos\varphi\cr
+        0\cr
+   \end{pmatrix}=-{\p_\varphi\over R}.
+    \end{equation*}
+\begin{equation}\label{weingrartenforcylinder2}
+           S
+   \begin{pmatrix}
+        \p_h \cr
+        \p_\varphi\cr
+   \end{pmatrix}=
+   \begin{pmatrix}
+         0\cr
+        {-\p_\varphi\over R}\cr
+   \end{pmatrix},\quad S=\begin{pmatrix}0&0\cr 0 &{-1\over R}\end{pmatrix}\,.
+    \end{equation}
+Calculate   second quadratic form:  $\r_{hh}=\p_h\r_h=
+  \begin{pmatrix}
+        0\\
+        0\\
+        0\\
+   \end{pmatrix}\,$, $\r_{h\varphi}=\r_{\varphi h}=$
+             $$
+             \p_h
+       \begin{pmatrix}
+        -R\sin\varphi\\
+        R\cos\varphi\\
+          0\\
+   \end{pmatrix}=0,\,\,
+   \r_{\varphi \varphi}=\p_\varphi
+       \begin{pmatrix}
+        -R\sin\varphi\\
+        R\cos\varphi\\
+          0\\
+   \end{pmatrix}=\begin{pmatrix}
+        -R\cos\varphi\\
+        -R\sin\varphi\\
+          0\\
+   \end{pmatrix}=-R\n\,.
+                      $$
+We have
+                    \begin{equation}\label{secquadrformforcylinder}
+            A_{\a\beta}=\langle\r_{\a\beta},\n\rangle,\,
+              A=\begin{pmatrix}\langle\r_{hh},\n\rangle&\langle\r_{h\varphi},\n\rangle\cr
+                               \langle\r_{\varphi h},\n\rangle &\langle\r_{\varphi\varphi},\n\rangle\cr
+                                   \end{pmatrix}=
+                                   \begin{pmatrix}0&0\cr
+                                0&-R\cr
+                                   \end{pmatrix},
+                    \end{equation}
+                    $$
+       A=GS=\begin{pmatrix}1&0\cr
+                                0&R^2\cr
+                                   \end{pmatrix}
+                                   \begin{pmatrix}0&0\cr
+                                0&-{1\over R}\cr
+                                   \end{pmatrix}=
+                                   \begin{pmatrix}0&0\cr
+                                0&-R\cr
+                                   \end{pmatrix},
+                    $$
+For Gaussian and mean curvatures we have
+     \begin{equation}\label{Gaussianforcylinder}
+        K=\det S={\det A\over \det G}=\det
+                              \begin{pmatrix}0&0\cr
+                                0&-{1\over R}\cr
+                                   \end{pmatrix}=0\,,
+     \end{equation}
+     and mean curvature
+      \begin{equation}\label{meanianforcylinder}
+        H={\rm Tr\,} S={\rm Tr\,}
+                              \begin{pmatrix}0&0\cr
+                                0&-{1\over R}\cr
+                                   \end{pmatrix}=-{1\over R}\,.
+     \end{equation}
+Mean curvature is define up to a sign. If we change $\n\to-\n$ mean curvature $H\to {1\over R}$ and Gaussian curvature
+will not change.
+
+
+\bigskip
+
+{\it Cone}
+
+  We already calculated induced Riemannian metric on the cone (see \eqref{firtsquadraticformforconus(diff)}.
+
+ Cone is given by the equation $x^2+y^2-k^2z^2=0$. One can consider the following
+parameterisation
+ of this surface:
+\begin{equation}\label{surface111}
+  \r(h,\varphi)\colon\quad
+  \begin{cases}
+  x=kh\cos\varphi\\
+  y=kh\sin\varphi\\
+  z=h\\
+  \end{cases}\,,\quad   \r_h=
+  \begin{pmatrix}
+        k\cos\varphi\\
+        k\sin\varphi\\
+        1\\
+   \end{pmatrix}\,,
+\quad
+  \r_\varphi=\begin{pmatrix}
+        -kh\sin\varphi\\
+        kh\cos\varphi\\
+          0\\
+   \end{pmatrix}\,,
+\end{equation}
+$G_{cone}=\left(dx^2+dy^2+dz^2\right)\big\vert_{x=kh\cos\varphi,y=kh\sin\varphi,z=h}=$
+        \begin{equation*}\label{firtsquadraticformcylinder(diff)11}
+               =(-kh\sin\varphi d\varphi+k\cos\varphi dh)^2+
+               (kh\cos\varphi d\varphi+k\sin\varphi dh)^2+dh^2=
+                      \end{equation*}
+             $$
+              k^2h^2d\varphi^2+(k^2+1)dh^2,\quad
+               ||g_{\a\beta}||=
+  \begin{pmatrix}
+   k^2+1 & 0 \\
+   0& k^2h^2 \\
+   \end{pmatrix}\,.
+          $$
+
+  One can see that  $\N=
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}$ is orthogonal to the surface: $\N\bot \r_h,\r_\varphi$. Hence
+   normal unit vector $\n=\pm
+     {1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}$. Choose $\n=
+   {1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}$.
+     Weingarten operator
+     \begin{equation*}\label{weingrartenforcylinder}
+        S\p_h=-\nabla^{\rm can.flat}_{\r_h}\n=-\p_{\r_h} \n=
+        -\p_h
+        \left(
+        {1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}
+   \right)
+        =0\,,
+     \end{equation*}
+\begin{equation*}\label{weingrartenforcylinder}
+        S\p_\varphi=-\nabla^{\rm can.flat}_{\r_\varphi}\n=-\p_{\r_\varphi} \n=
+        -\p_\varphi
+        \left(
+{1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}
+   \right)
+       =
+       \end{equation*}
+       \begin{equation*}
+       {1\over {\sqrt {1+k^2}}}
+       \begin{pmatrix}
+        \sin\varphi \cr
+        -\cos\varphi\cr
+        0\cr
+   \end{pmatrix}=-{\p_\varphi\over kh\sqrt {k^2+1}}.
+    \end{equation*}
+\begin{equation}\label{weingrartenforcylinder2}
+           S
+   \begin{pmatrix}
+        \p_h \cr
+        \p_\varphi\cr
+   \end{pmatrix}=
+   \begin{pmatrix}
+         0\cr
+        -{\p_\varphi\over kh\sqrt {k^2+1}}\cr
+   \end{pmatrix},\quad S=\begin{pmatrix}0&0\cr 0 &{-1\over kh\sqrt {k^2+1}}\end{pmatrix}\,.
+    \end{equation}
+Calculate   second quadratic form:  $\r_{hh}=\p_h\r_h=
+  \begin{pmatrix}
+        0\\
+        0\\
+        0\\
+   \end{pmatrix}\,$, $\r_{h\varphi}=\r_{\varphi h}=$
+             $$
+             \p_h
+       \begin{pmatrix}
+        -kh\sin\varphi\\
+        kh\cos\varphi\\
+          0\\
+   \end{pmatrix}=\begin{pmatrix}
+        -k\sin\varphi\\
+        k\cos\varphi\\
+          0\\
+   \end{pmatrix},\,\,
+   \r_{\varphi \varphi}=\p_\varphi
+       \begin{pmatrix}
+        -kh\sin\varphi\\
+        kh\cos\varphi\\
+          0\\
+   \end{pmatrix}=\begin{pmatrix}
+        -kh\cos\varphi\\
+        -kh\sin\varphi\\
+          0\\
+   \end{pmatrix}\,.
+                      $$
+We have
+                    \begin{equation}\label{secquadrformforcylinder}
+            A_{\a\beta}=\langle\r_{\a\beta},\n\rangle,\,
+              A=\begin{pmatrix}\langle\r_{hh},\n\rangle&\langle\r_{h\varphi},\n\rangle\cr
+                               \langle\r_{\varphi h},\n\rangle &\langle\r_{\varphi\varphi},\n\rangle\cr
+                                   \end{pmatrix}=
+                                   \begin{pmatrix}0&0\cr
+                                0&-{kh\over {\sqrt {1+k^2}}}\cr
+                                   \end{pmatrix},
+                    \end{equation}
+                    $$
+       A=GS=\begin{pmatrix}k^2+1&0\cr
+                                0&k^2h^2\cr
+                                   \end{pmatrix}
+                                   \begin{pmatrix}0&0\cr
+                                0&{-1\over kh\sqrt {k^2+1}}\cr
+                                   \end{pmatrix}=
+                                   \begin{pmatrix}0&0\cr
+                                0&{-kh\over \sqrt {k^2+1}}\cr
+                                   \end{pmatrix},
+                    $$
+For Gaussian and mean curvatures we have
+     \begin{equation}\label{Gaussianforcylinder}
+        K=\det S={\det A\over \det G}=\det
+                              \begin{pmatrix}0&0\cr
+                                0&{-1\over kh\sqrt {k^2+1}}\cr
+                                   \end{pmatrix}=0\,,
+     \end{equation}
+     and mean curvature
+      \begin{equation}\label{meanianforcylinder}
+        H={\rm Tr\,} S={\rm Tr\,}
+                              \begin{pmatrix}0&0\cr
+                                0&{-1\over kh\sqrt {k^2+1}}\cr
+                                   \end{pmatrix}={-1\over kh\sqrt {k^2+1}}\,.
+     \end{equation}
+Mean curvature is define up to a sign. If we change $\n\to-\n$ mean curvature $H\to {1\over R}$ and Gaussian curvature
+will not change.
+
+
+\bigskip
+
+
+
+
+{\it Sphere}
+
+
+\medskip
+
+
+  Sphere is given by the equation $x^2+y^2+z^2=a^2$. Consider the  parameterisation
+ of sphere in spherical coordinates
+\begin{equation}\label{surfacesphere11}
+  \r(\theta,\varphi)\colon\quad
+  \begin{cases}
+  x=R\sin\theta\cos\varphi\\
+  y=R\sin\theta\sin\varphi\\
+  z=R\cos\theta\\
+  \end{cases}
+\end{equation}
+
+\medskip
+
+We already calculated induced Riemannian metric on the sphere (see \eqref{firtsquadraticformforsphere(diff)}).
+ Recall that
+    $$
+  \r_\theta=\begin{pmatrix}
+        R\cos\theta\cos\varphi\\
+        R\cos\theta\sin\varphi\\
+        -R\sin\theta\\
+   \end{pmatrix}\,,
+\quad
+  \r_\varphi=\begin{pmatrix}
+        -R\sin\theta\sin\varphi\\
+        R\sin\theta\cos\varphi\\
+          0\\
+   \end{pmatrix}
+  $$
+ and
+            $$
+              G_{S^2}=\left(dx^2+dy^2+dz^2\right)\big\vert_{x=R\sin\theta\cos\varphi,y=R\sin\theta\sin\varphi,
+              z=R\cos\theta}=
+                      $$
+                      $$
+                      (R\cos\theta\cos\varphi d\theta-R\sin\theta\sin\varphi d\varphi)^2+
+                      (R\cos\theta\sin\varphi d\theta+R\sin\theta\cos\varphi d\varphi)^2+
+                      $$
+                      $$
+                      (-R\sin\theta d\theta)^2=
+          R^2\cos^2\theta d\theta^2+R^2\sin^2\theta d\varphi^2+R^2\sin^2\theta d\theta^2=
+                      $$
+        \begin{equation*}\label{firtsquadraticformforsphere(diff)}
+           \qquad
+             =R^2d\theta^2+R^2\sin^2\theta d\varphi^2\,,\qquad
+                        ||g_{\a\beta}||=
+   \begin{pmatrix}
+   R^2 & 0 \\
+   0&  R^2\sin^2\theta \\
+   \end{pmatrix}\,.
+                       \end{equation*}
+
+For the sphere $\r(\theta,\varphi)$ is orthogonal to the surface.
+       Hence
+   normal unit vector
+   $   \n(\theta,\varphi)=\pm {\r(\theta,\varphi)\over R}=\pm
+   \begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}$.
+           Choose $\n= {\r\over R}=
+   \begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}.
+     $
+     Weingarten operator
+     \begin{equation*}\label{weingrartenforcylinder}
+        S\p_\theta=-\nabla^{\rm can.flat}_{\r_\theta}\n=-\p_\theta \n=
+          -\p_\theta\left({\r\over R}\right)=-{\r_\theta\over R}\,,
+       \end{equation*}
+       \begin{equation*}\label{weingrartenforcylinder}
+       S\p_\varphi=-\nabla^{\rm can.flat}_{\r_\varphi}\n=-\p_\varphi \n=
+          -\p_\varphi\left({\r\over R}\right)=-{\r_\varphi\over R}\,.
+    \end{equation*}
+\begin{equation}\label{weingrartenforcylinder2}
+           S
+   \begin{pmatrix}
+        \p_\theta \cr
+        \p_\varphi\cr
+   \end{pmatrix}=
+   \begin{pmatrix}
+         -{\p_\theta\over R}\cr
+        -{\p_\varphi\over R}\cr
+   \end{pmatrix},\quad S=
+        -
+   \begin{pmatrix}{1\over R}&0\cr 0 &{1\over R}\end{pmatrix}\,.
+    \end{equation}
+For second quadratic form:  $\r_{\theta\theta}=\p_\theta\r_\theta=
+  \begin{pmatrix}
+        -R\sin\theta\cos\varphi\\
+        -R\sin\theta\sin\varphi\\
+        -R\cos\theta\\
+   \end{pmatrix}\,$, $\r_{\theta\varphi}=\r_{\varphi \theta}=$
+             $$
+             \p_\theta
+       \begin{pmatrix}
+        -R\sin\theta\sin\varphi\\
+        R\sin\theta\cos\varphi\\
+          0\\
+   \end{pmatrix}=\begin{pmatrix}
+        -R\cos\theta\sin\varphi\\
+        R\cos\theta\cos\varphi\\
+          0\\
+   \end{pmatrix},\,\,
+   \r_{\varphi \varphi}=\p_\varphi
+       \begin{pmatrix}
+        -R\sin\theta\sin\varphi\\
+          R\sin\theta\cos\varphi\\
+          0\\
+   \end{pmatrix}=\begin{pmatrix}
+        -R\sin\theta\cos\varphi\\
+        -R\sin\theta\sin\varphi\\
+          0\\
+   \end{pmatrix}\,.
+                      $$
+We have
+                    \begin{equation}\label{secquadrformforcylinder}
+            A_{\a\beta}=\langle\r_{\a\beta},\n\rangle,\,
+              A=\begin{pmatrix}\langle\r_{\theta\theta},\n\rangle&\langle\r_{\theta\varphi},\n\rangle\cr
+                               \langle\r_{\varphi \theta},\n\rangle &\langle\r_{\varphi\varphi},\n\rangle\cr
+                                   \end{pmatrix}=
+                                   \begin{pmatrix}-R&0\cr
+                                0&-R\sin^2\theta\cr
+                                   \end{pmatrix},
+                    \end{equation}
+                    $$
+       A=GS=\begin{pmatrix}R^2&0\cr
+                                0&R^2\sin^2\theta\cr
+                                   \end{pmatrix}
+                                   \begin{pmatrix}{-1\over R}&0\cr
+                                0&{-1\over R}\cr
+                                   \end{pmatrix}=
+                                       -R
+                                  \begin{pmatrix}1&0\cr
+                                0&\sin^2\theta\cr
+                                   \end{pmatrix},
+                    $$
+For Gaussian and mean curvatures we have
+     \begin{equation}\label{Gaussianforcylinder}
+        K=\det S={\det A\over \det G}=\det
+                              \begin{pmatrix}-{1\over R}&0\cr
+                                0&-{1\over R}\cr
+                                   \end{pmatrix}={1\over R^2}\,,
+     \end{equation}
+     and mean curvature
+      \begin{equation}\label{meanianforcylinder}
+        H={\rm Tr\,} S={\rm Tr\,}
+                              \begin{pmatrix}-{1\over R}&0\cr
+                                0&-{1\over R}\cr
+                                   \end{pmatrix}=-{2\over R}\,,
+     \end{equation}
+Mean curvature is define up to a sign. If we change $\n\to-\n$ mean curvature $H\to {1\over R}$ and Gaussian curvature
+will not change.
+
+
+We see that for the sphere  Gaussian curvature is not equal to zero, whilst for cylinder and cone Gaussian curvature
+equals to zero.
+
+
+\subsection {Parallel transport along closed curves on surfaces. Derivation formulae and {\it Theorema Egregium} }
+
+\subsubsection {Formulation of the main result}
+
+Let $M$ be a surface in  Euclidean space $\E^3$.
+  Consider a closed curve $C$ on $M$,
+  $M\colon \r=\r(u,v)$, $C\colon \r=\r(u(t,v(t)), 0\leq t\leq t_1, \, \x(0)=\x(t_1)$.
+  ($u(t), v(t)$ are internal coordinates of the curve $C$.)
+
+Consider the parallel transport of an arbitrary tangent $\X$ vector along the closed curve $C$:
+          \begin{equation*}\label{paraltransportalongclosedcurve1}
+\X(t)= \underbrace {X^\a(t){\p\over \p u_\a}\big\vert_{u^\a(t)}}_{\hbox{Internal observer}} =
+ \underbrace{X^\a(t)\r_\a\big\vert_{\r(u(t),v(t))}}_{\hbox{External observer}}\,\,,\left(
+ \r_\a={\p x^i\over \p u^\a}{\p\over \p x^i}\right)\,.
+          \end{equation*}
+          \begin{equation*}\label{paraltransportalongclosedcurve2}
+\X(t)\colon\,\, {\nabla \X(t)\over dt}=0,\,\, 0\leq t\leq t_1\,,
+          \end{equation*}
+i.e.
+                \begin{equation}\label{paraltransportalongclosedcurve3}
+{d X^\a(t)\over dt}+
+X^\beta(t)\Gamma^\a_{\beta\gamma}(u(t))
+{du^\gamma(t)\over dt}=0,\,\, 0\leq t\leq t_1\,,
+          \end{equation}
+where $\nabla$ is the connection induced on the surface $M$ by canonical flat connection
+(see \eqref{christoffelsymbols1forinducedconnection}), i.e.
+the Levi-Civita connection of the induced Riemannian metric on the surface $M$
+ and $\Gamma^\a_{\beta\gamma}$ its Christoffel symbols:
+\begin{equation}\label{connectioninduced12}
+          \Gamma^\gamma_{\a\beta}={1\over 2}g^{\gamma\pi}
+      \left({\p g_{\pi \a}\over \p u^\beta}+{\p g_{\pi \beta}\over \p u^\a}-
+      {\p g_{\a\beta}\over \p u^\pi}\right)\,,{\rm where}\,
+      g_{\a\beta}=\langle\r_\a,\r_\beta\rangle={\p x^i\over \p u^\a} {\p x^i\over \p u^\beta}
+     \end{equation}
+ are components of induced Riemannian metric
+ $G_M=g_{\a\beta}du^\a$    (see the subsection 4.2.1)
+
+
+Let $\r(0)=\pt$ be a starting (and ending) point of the curve $C$: $\r(0)=\r(t_1)=\pt$.
+The differential equation \eqref{paraltransportalongclosedcurve3} defines the linear operator
+            \begin{equation}\label{linearoperatoroverclosedcurve}
+            R_C\colon T_{\pt}M\longrightarrow T_{\pt}M
+            \end{equation}
+For any vector $\X\in T_{\pt}M$, its image the vector $R_C\X$ as the solution of the differential equation
+\eqref{paraltransportalongclosedcurve3} with initial condition $\X(t)\big\vert_{t=0}=\X$.
+
+On the other hand we know that parallel transport of the vector does not change its length (see
+\eqref{lengthdoesnotchangeduringparalleltransport} in the subsection 3.2.1):
+       \begin{equation}\label{linearoperatoroverclosedcurvescalarproduct}
+            \langle\X,\X\rangle=\langle R_C\X,R_C\X\rangle
+            \end{equation}
+We see that $\R_C$ is an orthogonal operator in the $2$-dimensional vector space $T_{\pt}M$.
+We know that orthogonal operator preserving orientation is the operator of rotation on some angle $\Phi$.
+
+We see that if $\R_C$ preserves orientation\footnote{We consider the case if the operator $R_C$ preserves orientation.
+In our considerations we consider only the case if the closed curve $C$ is a boundary of
+a compact oriented domain $D\subset M$. In this case one can see that operator $R_C$ preserves an orientation.}
+ then the action of operator $\R_C$ on vectors is rotation on the angle,
+i.e. the result of parallel transport along closed curve is rotation on the angle
+                               \begin{equation}\label{rotationontheangle}
+                               \Delta\Phi=\Delta\Phi(C)
+                               \end{equation}
+ which depends on the curve.
+
+
+The very beautiful question arises:  How to calculate this angle $\Delta\Phi(C)$
+
+
+\m
+
+{\bf Theorem}
+{\it  Let $M$ be a surface in  Euclidean space $\E^3$.
+  Let $C$ be a closed curve $C$ on $M$ such that $C$ is a boundary of a compact oriented domain $D\subset M$.
+Consider the parallel transport of an arbitrary tangent vector along the closed curve $C$.
+As a result of parallel transport along this closed curve any  tangent vector rotates through the angle
+
+\begin{equation}\label{theoremofrotationonangle}
+\Delta\Phi=\angle\left({\X, \R_C\X}\right)=\int_D K d\sigma\,,
+             \end{equation}
+where $K$ is the Gaussian curvature and $d\sigma=\sqrt {\det g}dudv$ is the area element induced by the
+Riemannian metric on the surface $M$, i.e.  $d\sigma=\sqrt {\det g}dudv$.
+
+
+
+}
+
+\m
+{\bf Remark} One can show that the angle of rotation does not depend on initial point of the curve.
+
+
+\m
+
+
+{\bf Example} Consider the closed curve, "latitude" $C_{\theta_0}\theta=\theta_0$ on the sphere of the radius $R$.
+Calculations show that
+               \begin{equation}\label{rotationforlatitude}
+                \Delta\Phi(C_{\theta_0})=2\pi(1-\cos\theta_0)
+               \end{equation}
+
+(see the Homework 6). On the other hand the latitude $C_{\theta_0}$ is the boundary of the segment  $D$
+ with area $2\pi RH$ where $H=R(1-\cos \theta_0)$. Hence
+           $$
+   \angle\left({\X, \R_C\X}\right)={2\pi RH\over R^2}={1\over R^2}\cdot \hbox{area of the segment}=\int_D  Kd\sigma
+           $$
+since Gaussian curvature is equal to $1\over R^2$
+
+The  proof of this Theorem is the content of the subsections above.
+
+Before show one of the remarkable corollaries of this Theorem.
+
+Let  $D$ be a small domain around  a given point $\pt$, let $C$ its boundary and
+$\Delta \Phi(D)$ the angle of rotation.   Denote by $S(D)$ an area of this domain.
+Applying the Theorem for the case when area of the domain $D$ tends to zero we  we come to the statement that
+            $$
+      \hbox{if $S(D)\to 0$ then \,} \Delta\Phi(D)=\int_D Kd\sigma\to K(\pt)S(D),\,{\rm i.e.}
+            $$
+
+\begin{equation}\label{egregium1}
+K(\pt)=\lim_{S(D)\to 0}{\Delta\Phi(D)\over S(D)},\,{\rm i.e.}
+\end{equation}
+
+Now notice that  left hand side od this equation defining Gaussian curvature $K(\pt)$ depends only on Riemannian
+metric on the surface $C$. Indeed numerator of LHS is defined by the solution of differential equation
+$\eqref{paraltransportalongclosedcurve3}$ which depends on Levi-Civita connection depending on
+the induced Riemannian metric, and denominator is an area depending on Riemannian metric too.
+
+Thus we come to very important
+
+{\bf Corollary} {\it Gau\ss \,\, Egregium Theorema}
+
+Gaussian curvature of the surface is invariant of isometries.
+
+
+\bigskip
+
+
+In next subsections we develop the technique which  itself is very interesting. One of the applications of this
+technique is the proof of the Theorem \eqref{theoremofrotationonangle}.
+This we will prove Theorema Egregium too.
+
+Later in the fifth section we will give another proof of the Theorema  Egregium.
+
+\subsubsection{ Derivation formulae}
+
+Let $M$ be a surface embedded in  Euclidean space $\E^3$,
+$M\colon \r=\r(u,v)$.
+
+   Let ${\e,\f,\n}$ be three vector fields defined on the points of this surface
+   such that they form an orthonormal basis at any point, so that the vectors $\e,\f$ are tangent to the surface
+   and  the vector $\n$ is orthogonal to the surface\footnote{
+   One can say that $\{\e,\f,\n\}$ is an orthonormal basis in $T_{\pt}\E^3$ at every point of surface  $\pt\in M$
+such that $\{\e,\f\}$ is an orthonormal basis in $T_{\pt}\E^3$ at every point of surface  $\pt\in M$.}.
+   Vector fields $\e,\f,\n$ are functions on the surface $M$:
+                   $$
+          \e=\e(u,v),\,\, \f=\f(u,v)\,, \n=\n(u,v)\,.
+                   $$
+ Consider $1$-forms $d\e,d\f,d\n$:
+              $$
+       d\e={\p \e\over \p u}du+{\p \e\over \p v}dv,\,
+       d\f={\p \f\over \p u}du+{\p \f\over \p v}dv\,,
+       d\n={\p \n\over \p u}du+{\p \n\over \p v}dv
+              $$
+ These $1$-forms take values in the vectors in $\E^3$, i.e. they are {\it vector valued} $1$-forms.
+ Any vector in $\E^3$ attached at an arbitrary point of the surface
+ can be expanded over the basis  $\{\e,\f,\n\}$. Thus vector valued $1$-forms $d\e,d\f,d\n$ can be expanded
+ in a sum of $1$-forms with values in basic vectors  $\e,\f,\n$. E.g.
+ for $d\e={\p \e\over \p u}du+{\p \e\over \p v}dv$ expanding   vectors
+ ${\p \e\over \p u}$ and ${\p \e\over \p v}$ over basis vectors we come to
+            $$
+      {\p \e\over \p u}=A_1(u,v)\e+B_1(u,v)\f+C_1(u,v)\n,\,\,
+      {\p \e\over \p v}=A_2(u,v)\e+B_2(u,v)\f+C_2(u,v)\n
+            $$
+ thus
+          $$
+   d\e={\p \e\over \p u}du+{\p \e\over \p v}dv=\left(A_1\e+B_1\f+C_1\n\right)du+\left(A_2\e+B_2\f+C_2\n\right)dv=
+          $$
+           \begin{equation}\label{one-forms4}
+ =\underbrace{(A_1du+A_2dv)}_{M_{11}}\e+
+ \underbrace{(B_1du+B_2dv)}_{M_{12}}\f+\underbrace{(C_1du+C_2dv)}_{M_{11}}\e,
+           \end{equation}
+ i.e.
+            $$
+       d\e=M_{11}\e+M_{12}\f+M_{13}\n,
+            $$
+where $M_{11}, M_{12}$ and $M_{13}$ are $1$-forms on the surface $M$ defined by the relation \eqref{one-forms4}.
+
+In the same way we do the expansions of vector-valued $1$-forms $d\f$ and $d\n$ we come to
+                 \begin{equation*}
+                \begin{matrix}
+                d\e=M_{11}\e+M_{12}\f+M_{13}\n\cr
+                d\f=M_{21}\e+M_{22}\f+M_{23}\n\cr
+                d\n=M_{31}\e+M_{32}\f+M_{33}\n\cr
+                \end{matrix}
+                    \end{equation*}
+   This equation can be rewritten in the following way:
+                  \begin{equation}\label{matrixequation1}
+                       d
+                  \begin{pmatrix}
+                \e\cr
+                \f\cr
+                \n\cr
+                \end{pmatrix}
+                    =
+                \begin{pmatrix}
+                M_{11} &M_{12} &M_{13}\cr
+                M_{21} &M_{22} &M_{23}\cr
+                M_{31} &M_{32} &M_{33}\cr
+                \end{pmatrix}
+                      \begin{pmatrix}
+                \e\cr
+                \f\cr
+                \n\cr
+                \end{pmatrix}
+                    \end{equation}
+
+       \m
+
+  {\it Proposition} {\it The matrix $M$ in the equation \eqref{matrixequation1} is antisymmetrical matrix, i.e.
+                     \begin{equation}
+                       \begin{matrix}
+                    M_{11}=M_{22}=M_{33}=0\cr
+                       M_{12}=-M_{21}=a\cr
+                       M_{13}=-M_{31}= b\cr
+                       M_{23}=-M_{32}=-b\cr
+                       \end{matrix}
+                       \end{equation}
+i.e.
+
+
+
+                      \begin{equation}\label{derivationformulae1}
+                    d\begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                    \begin{pmatrix}
+                    0&a&b\cr -a&0&c\cr -b&-c&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}\,,
+                       \end{equation}
+ where $a,b,c$ are $1$-forms on the surface $M$.}
+
+
+ \m
+Formulae \eqref{derivationformulae1} are called {\it derivation formulae}.
+
+
+ Prove this Proposition. Recall that $\{\e,\f,\n\}$ is orthonormal basis, i.e. at every point of the surface
+                  $$
+  \langle\e,\e\rangle=\langle\f,\f\rangle=\langle\n,\n\rangle=1, \,{\rm and}\,\,
+   \langle\e,\f\rangle=\langle\e,\n\rangle=\langle\f,\n\rangle=0
+         $$
+ Now using \eqref{matrixequation1} we have
+         $$
+  \langle\e,\e\rangle=1\Rightarrow d\langle\e,\e\rangle=0=2\langle\e,d\e\rangle
+  =\langle\e,M_{11}\e+M_{12}\f+M_{13}\n\rangle=
+               $$
+               $$
+               M_{11}\langle\e,\e\rangle+M_{12}\langle\e,\f\rangle+
+  M_{13}\langle\e,\n\rangle=M_{11}\Rightarrow M_{11}=0\,.
+              $$
+ Analogously
+           $$
+     \langle\f,\f\rangle=1\Rightarrow d\langle\f,\f\rangle=0=2\langle\f,d\f\rangle
+  =\langle\f,M_{21}\e+M_{22}\f+M_{23}\n\rangle=M_{22}\Rightarrow M_{22}=0\,,
+           $$
+            $$
+             \langle\n,\n\rangle=1\Rightarrow d\langle\n,\n\rangle=0=2\langle\n,d\n\rangle
+  =\langle\n,M_{31}\e+M_{32}\f+M_{33}\n\rangle=M_{33}. \Rightarrow M_{33}=0\,.
+            $$
+ We proved already that $M_{11}=M_{22}=M_{33}=0$. Now prove that
+ $M_{12}=-M_{21}$, $M_{13}=-M_{31}$ and $M_{13}=-M_{31}$.
+                       $$
+  \langle\e,\f\rangle=0\Rightarrow d\langle\e,\f\rangle=0=\langle\e,d\f\rangle+\langle d\e,\f\rangle=
+             $$
+             $$
+  \langle\e,M_{21}\e+M_{22}\f+M_{23}\n\rangle+\langle M_{11}\e+M_{12}\f+M_{13}\n,\f\rangle=
+  M_{21}+M_{12}=0.
+          $$
+ Analogously
+       $$
+       \langle\e,\n\rangle=0\Rightarrow d\langle\e,\n\rangle=0=\langle\e,d\n\rangle+\langle d\e,\n\rangle=
+             $$
+             $$
+  \langle\e,M_{31}\e+M_{32}\f+M_{33}\n\rangle+\langle M_{11}\e+M_{12}\f+M_{13}\n,\n\rangle=
+  M_{31}+M_{13}=0
+       $$
+ and
+          $$
+          \langle\f,\n\rangle=0\Rightarrow d\langle\f,\n\rangle=0=\langle\f,d\n\rangle+\langle d\f,\n\rangle=
+             $$
+             $$
+  \langle\f,M_{31}\e+M_{32}\f+M_{33}\n\rangle+\langle M_{21}\e+M_{22}\f+M_{23}\n,\n\rangle=
+  M_{32}+M_{23}=0.
+          $$
+
+       {\bf Remark} This proof could be performed much more shortly in condensed notations. Derivation formulae
+       \eqref{derivationformulae1} in condensed notations are
+          \begin{equation}\label{derivationcondensed}
+          d\e_i=M_{ik}\e_k
+          \end{equation}
+     Orthonormality condition means that $\langle\e_i,\e_k\rangle=\delta_{ik}$. Hence
+        \begin{equation}
+   d\langle\e_i,\e_k\rangle=0=\langle d\e_i,\e_k\rangle+\langle\e_i,d\e_k\rangle=
+   \langle  M_{im}\e_m,\e_k\rangle+\langle\e_i,M_{kn}\e_n\rangle=M_{ik}+M_{ki}=0\hbox{\finish}
+        \end{equation}
+    Much shorter, is not it?
+
+
+ \subsubsection  {Gauss condition (structure equations)}
+    Derive the relations between $1$-forms $a,b$ and $c$ in derivation formulae.
+
+    Recall that $a,b,c$ are $1$-forms, $\e,f,\n$ are vector valued functions ($0$-forms)
+    and  $d\e,d\f,d\n$ are vector valued $1$-forms.
+    (We use the simple identity that $ddf=0$ and the fact that for $1$-form $\w\wedge \w=0$.)
+     We have from derivation formulae \eqref{derivationformulae1} that
+         $$
+     d^2\e=0= d(a\f+b\n)=da\f-a\wedge d\f+db\n-b\wedge d\n=
+        $$
+        $$
+        da\, \f-a\wedge (-a \e+c\n)+db\,\n-b\wedge(-b\e-c\f)=
+                       $$
+                       $$
+          (da+b\wedge c)\f+(a\wedge a+b\wedge b)\e+(db-a\wedge c)\n=
+          (da+b\wedge c)\f+(db+c\wedge a)\n=0\,.
+                      $$
+We see that
+                \begin{equation}\label{gausscondition1}
+                    (da+b\wedge c)\f+(db+c\wedge a)\n=0
+                \end{equation}
+                Hence components of the left hand side equal to zero:
+\begin{equation}\label{gausscondition2}
+                    (da+b\wedge c)=0\,\,(db+c\wedge a)=0\,.
+                \end{equation}
+Analogously
+              $$
+                       d^2\f=0= d(-a\e+c\n)=-da\e+a\wedge d\e+dc\n-c\wedge d\n=
+        $$
+        $$
+        -da\e+a\wedge (a \f+b\n)+dc\,\n-c\wedge(-b\e-c\f)=
+                       $$
+                       $$
+          (-da+c\wedge b)\e+(dc+a\wedge b)\n=0\,.
+              $$
+
+
+ Hence we come to structure equations:
+
+               \begin{equation}\label{firststructureformula}
+               \begin{matrix}
+                da+b\wedge c=0\cr
+                 db+c\wedge a=0\cr
+                 dc+a\wedge a=0\cr
+                 \end{matrix}
+               \end{equation}
+
+
+          \subsubsection {Geometrical meaning of derivation formulae.
+         Weingarten operator and second quadratic form in terms of derivation formulae. }
+
+
+
+
+   Let $M$ be a surface in $\E^3$.
+
+          Let ${\e,\f,\n}$ be three vector fields defined on the points of this surface
+   such that they form an orthonormal basis at any point, so that the vectors $\e,\f$ are tangent to the surface
+   and  the vector $\n$ is orthogonal to the surface.
+   Note that in generally these vectors are not coordinate vectors.
+
+     Describe  Riemannian geometry on the surface
+     $M$ in terms of this basis and derivation formulae \eqref{derivationformulae1}.
+
+
+
+
+    \m
+
+
+
+    {\it Induced Riemannian metric}
+
+    If $G$ is the Riemannian metric induced on the surface $M$ then since $\e,\f$ is orthonormal basis
+    at every tangent space $T_\pt M$ then
+        \begin{equation}\label{inducriemmetricinnonholonombasis}
+        G(\e,\e)=G(\f,\f)=1,\,\,\,G(\e,\f)=G(\f,\e)=0
+        \end{equation}
+       The matrix of the Riemannian metric in the basis $\{\e,\f\}$ is
+     \begin{equation}\label{inducedriemmetricinnonholonombasis2}
+        G=
+        \begin{pmatrix}
+        1& 0\cr
+        0& 1\cr
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+        b(\e)&  b(\f)\cr
+        c(\e)& c(\f)\cr
+        \end{pmatrix}
+     \end{equation}
+
+
+      \m
+
+
+    {\it Induced connection}
+    Let $\nabla$ be the connection induced by the canonical flat connection on the surface $M$.
+
+    Then according equations \eqref{inducedconnection4} and derivation formulae \eqref{derivationformulae1}
+    for every tangent vector $\X$
+        \begin{equation}\label{inducedconnectionintermsofnonholonombasis1}
+        \nabla_\X \e=\left(\p_\X\e\right)_{\rm tangent}=\left(d\e(\X)\right)_{\rm tangent}=
+        \left(a(\X)\f+b(\X)\n\right)_{\rm tangent}=a(\X)\f\,.
+        \end{equation}
+and
+    \begin{equation}\label{inducedconnectionintermsofnonholonombasis2}
+        \nabla_\X \f=\left(\p_\X\f\right)_{\rm tangent}=\left(d\f(\X)\right)_{\rm tangent}=
+        \left(-a(\X)\e+c(\X)\n\right)_{\rm tangent}=-a(\X)\e\,.
+        \end{equation}
+ In particular
+              \begin{equation}\label{inducedconnectionintermsofnonholonombasis3}
+              \begin{matrix}
+        \nabla_\e \e=a(\e)\f  &   \nabla_\f \e=a(\f)\f\cr
+        \nabla_\e \f=-a(\e)\e  &   \nabla_\f \f=-a(\f)\e\cr
+        \end{matrix}
+        \end{equation}
+We know that the connection $\nabla$ is Levi-Civita connection of the induced Riemannian metric
+\eqref{inducedconnectionintermsofnonholonombasis1} (see the subsection 4.2.1)\footnote{In
+particular this implies that this is symmetric connection, i.e.
+\begin{equation}\label{commutatorofvectorfields}
+    \nabla\f\e-\nabla_\e\f-[\f,\e]=a(\f)\f+a(\e)\e-[\f,\e]=0\,.
+\end{equation}
+}.
+
+\m
+{\it Second Quadratic form}
+  Let $A(\X,\Y)$ be second quadratic form. Then according to
+  to \eqref{secondquadraticform1} and derivation formulae \eqref{derivationformulae1} we have
+               $$
+  A(\e,\e)=\langle\p_\e\e,\n\rangle=\langle d\e(\e),\n\rangle=\langle a(\e)\f+b(\e)\n,\n\rangle=b(\e)\,,
+               $$
+         $$
+   A(\f,\e)=\langle\p_\f\e,\n\rangle=\langle d\e(\f),\n\rangle=\langle a(\f)\f+b(\f)\n,\n\rangle=b(\f)\,,
+         $$
+         $$
+     A(\e,\f)=\langle\p_\e\f,\n\rangle=\langle d\f(\e),\n\rangle=\langle -a(\e)\f+c(\e)\n,\n\rangle=c(\e)\,,
+           $$
+           $$
+           A(\f,\f)=\langle\p_\f\f,\n\rangle=\langle d\f(\f),\n\rangle=\langle -a(\f)\f+c(\f)\n,\n\rangle=c(\f)\,,
+           $$
+     The matrix of the second quadratic form in the basis $\{\e,\f\}$ is
+     \begin{equation}\label{inducedquadrforminnonholonombasis}
+        A=
+        \begin{pmatrix}
+        A(\e,\e)& A(\f,\e)\cr
+        A(\e,\f)& A(\f,\f)\cr
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+        b(\e)&  b(\f)\cr
+        c(\e)& c(\f)\cr
+        \end{pmatrix}
+     \end{equation}
+ This is symmetrical matrix (see the subsection 4.3.2):
+            \begin{equation}\label{symmericinnonholonom}
+ A(\f,\e)=b(\f)=A(\e,\f)=c(\e)\,.
+            \end{equation}
+
+\m
+{\it Weingarten operator}
+
+Let $S$ be Weingarten operator: $S\X=-\p_\X\n$ (see the subsection 4.3.1). Then
+it follows from derivation formulae that
+                  $$
+     S\X=-\p_\X\n=-d\n(\X)=-\left(-b(X)\e-c(\X)\f\right)=b(\X)\e+c(\X)f
+                  $$
+In particular
+ \begin{equation*}\label{inducedweingartenoperator}
+    S(\e)=b(\e)\e+c(\e)\f\,, S(\f)=b(\f)\e+c(\f)\f
+\end{equation*}
+and the matrix of the Weingarten operator in the basis $\{\e,\f\}$ is
+\begin{equation}\label{inducedweingartenoperator}
+S=
+\begin{pmatrix}
+b(\e)  &c(\e)\cr
+b(\f)  &c(\f)\cr
+\end{pmatrix}
+\end{equation}
+
+According to the condition \eqref{symmericinnonholonom}  the matrix $S$ is symmetrical.
+
+The relations $A=GS, S=G^{-1}A$ for Weingarten operator, Riemannian metric and second quadratic form
+are evidently obeyed for matrices of these operators in the basis ${\e,\f}$ where $G=1$, $A=S$.
+
+\subsubsection{Gaussian and mean curvature in terms of derivation formulae}
+Now we are equipped to express Gaussian and mean curvatures (see the subsection 4.3.3) in terms of derivation formulae.
+  Using \eqref{inducedweingartenoperator} we have for Gaussian curvature
+           \begin{equation}\label{gaussiancurvintermsofderformulae}
+            K=\det S=b(\e)c(\f)-c(\e)b(\f)=(b\wedge c)(\e,\f)
+           \end{equation}
+ and for mean curvature
+   \begin{equation}\label{meancurvintermsofderformulae}
+            H={\rm Tr\,} S=b(\e)+c(\f)
+           \end{equation}
+ What next? We will  study in more detail formula \eqref{gaussiancurvintermsofderformulae} later.
+
+ Now consider some examples of calculation derivation formulae, Weingarten operator, e.t..c. for
+ some examples using derivation formulae.
+
+ \subsubsection {Examples of calculations of derivation formulae for cylinder, cone and sphere }
+
+ In the subsection 4.3.4 we calculated Weingarten oeprator, second quadratic form and curvatures
+ for cylinder, cone and sphere.
+ Now we do the same but in terms of derivation formulae.
+\m
+
+ {\it Cylinder}
+
+\m
+
+
+
+We have to define three vector fields
+${\e,\f,\n}$ on the points of the cylinder $\r(h,\varphi)\colon\quad
+  \begin{cases}
+  x=R\cos\varphi\\
+  y=R\sin\varphi\\
+  z=h\\
+  \end{cases}$
+such that they form an orthonormal basis at any point, so that the vectors $\e,\f$ are tangent to the surface
+   and  the vector $\n$ is orthogonal to the surface.
+
+ We already calculated coordinate vector fields $\r_h,\r_\varphi$ and normal unit vector field
+$\n$ (see \eqref{surface11} ):
+ \begin{equation}\label{surface115}
+    \r_h=
+  \begin{pmatrix}
+        0\\
+        0\\
+        1\\
+   \end{pmatrix}\,,
+\quad
+  \r_\varphi=\begin{pmatrix}
+        -R\sin\varphi\\
+        R\cos\varphi\\
+          0\\
+   \end{pmatrix}\,,\quad
+      \n=\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}\,.
+\end{equation}
+
+Vectors $\r_h,\r_\varphi$ and $\n$ are orthogonal to each other but not all of them have unit length. One can choose
+           \begin{equation}\label{nonholonombasisfor cylinder}
+        \e=\r_h=  \begin{pmatrix}
+        0\cr
+        0\cr
+        1\cr
+   \end{pmatrix},
+   \f={\r_\varphi\over R}=\begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix},\,\n=\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}
+           \end{equation}
+   These vectors form an orthonormal basis and $\e,\f$  form an orthonormal basis in tangent space.
+
+   Derive for this basis derivation formulae \eqref{derivationformulae1}. For vector fields $\e,\f,\n$
+   in \eqref{nonholonombasisfor cylinder} we have
+                   $$
+             d\e=0, d\f=d\begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix}=\begin{pmatrix}
+        -\cos\varphi\cr
+        -\sin\varphi\cr
+          0\cr
+   \end{pmatrix}d\varphi=-\n d\varphi,
+          $$
+          $$
+   d\n=d\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        0\cr
+   \end{pmatrix}=
+   \begin{pmatrix}
+        -\sin\varphi \cr
+        \cos\varphi\cr
+        0\cr
+   \end{pmatrix}=\f d\varphi,
+                   $$
+   i.e.
+   \begin{equation}\label{derivationformulaefor cylinder}
+                    d\begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                    \begin{pmatrix}
+                    0&a&b\cr -a&0&c\cr -b&-c&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                     \begin{pmatrix}
+                    0&0&0\cr 0&0&-d\varphi\cr 0&d\varphi&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}\,,
+                   \end{equation}
+  i.e. in derivation formulae $a=b=0$, $c=-d\varphi$.
+
+  The matrix of Weingarten operator in the basis  $\{\e,\f\}$ is
+             $$
+     S=
+\begin{pmatrix}
+b(\e)  &c(\e)\cr
+b(\f)  &c(\f)\cr
+\end{pmatrix}=
+\begin{pmatrix}
+0  &-d\varphi(\e)\cr
+0  &-d\varphi(\f)\cr
+\end{pmatrix}=
+\begin{pmatrix}
+0  &0\cr
+0  &-{1\over R}\cr
+\end{pmatrix}
+       $$
+    According to  \eqref{gaussiancurvintermsofderformulae}  and\eqref{meancurvintermsofderformulae}
+                Gaussian curvature $K=b(\e)c(\f)-b(\e)c(\f)=0$ and
+                mean curvature
+                 $$
+    H=b(\e)+c(\f)=-d\varphi(\f)=-d\varphi\left({\r_\varphi\over R}\right)=-{1\over R}
+                 $$
+  (Compare with calculations in the subsection 4.3.4)
+
+
+\bigskip
+
+{\it Cone}
+
+
+For  cone:
+          $$
+  \r(h,\varphi)\colon\quad
+  \begin{cases}
+  x=kh\cos\varphi\\
+  y=kh\sin\varphi\\
+  z=h\\
+  \end{cases}\,   \,,
+   $$
+        $$
+        \r_h=
+  \begin{pmatrix}
+        k\cos\varphi\cr
+        k\sin\varphi\cr
+        1\cr
+   \end{pmatrix},\quad
+  \r_\varphi=\begin{pmatrix}
+        -kh\sin\varphi\cr
+        kh\cos\varphi\cr
+          0\cr
+   \end{pmatrix}\,,\quad
+   \n=
+   {1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}
+            $$
+Tangent vectors  $\r_h,\r_\varphi$ are orthogonal to each other.
+The length of the vector $\r_h$ equals to $\sqrt {1+k^2}$ and  the length of the vector $\r_\varphi$
+equals to $kh$.
+Hence we can choose orthonormal basis $\{\e,\f,\n\}$ such that vectors $\e,\f$ are unit vectors in the
+directions of the vectors  $\r_h,\r_\varphi$:
+               $$
+               \e= {\r_h\over \sqrt {1+k^2}}=
+               {1\over \sqrt {1+k^2}}
+  \begin{pmatrix}
+        k\cos\varphi\cr
+        k\sin\varphi\cr
+        1\cr
+   \end{pmatrix},\,
+  \f={\r_\varphi\over hk}=\begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix},\,
+   \n=
+   {1\over {\sqrt {1+k^2}}}
+      \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}
+               $$
+Calculate $d\e,d\f$ and $d\n$:
+           $$
+      d\e=d\begin{pmatrix}
+        k\cos\varphi\cr
+        k\sin\varphi\cr
+        1\cr
+   \end{pmatrix}={kd\varphi\over \sqrt{1+k^2}}\begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+        0\cr
+   \end{pmatrix}={ kd\varphi\over \sqrt{1+k^2}}\f,
+           $$
+           $$
+   d\f=d\begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix}=
+     \begin{pmatrix}
+        -\cos\varphi\cr
+        -\sin\varphi\cr
+          0\cr
+   \end{pmatrix}d\varphi=
+        $$
+        $$
+   {-k\over 1+k^2}\begin{pmatrix}
+        k\cos\varphi\cr
+        k\sin\varphi\cr
+        1\cr
+   \end{pmatrix}d\varphi-{d\varphi\over 1+k^2}
+             \begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}={-kd\varphi\over \sqrt{1+k^2}}\e-{d\varphi\over \sqrt {1+k^2}}\n\,,
+     $$
+and
+       $$
+   d\n={1\over \sqrt {1+k^2}}d\begin{pmatrix}
+        \cos \varphi\cr
+        \sin\varphi\cr
+        -k\cr
+   \end{pmatrix}=
+   {d\varphi\over \sqrt {1+k^2}}
+   \begin{pmatrix}
+        -\sin \varphi\cr
+        \cos\varphi\cr
+        0\cr
+   \end{pmatrix}\,.
+       $$
+We come to
+   \begin{equation}\label{derivationformulaefor cone}
+                    d\begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                    \begin{pmatrix}
+                    0&a&b\cr -a&0&c\cr -b&-c&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                     \begin{pmatrix}
+                    0&{kd\varphi\over \sqrt {1+k^2}}&0\cr
+                     -{kd\varphi\over \sqrt {1+k^2}}&0&{-d\varphi\over \sqrt {1+k^2}}\cr
+                      0&{d\varphi\over \sqrt {1+k^2}}&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}\,,
+                   \end{equation}
+  i.e. in derivation formulae for $1$-forms $a={kd\varphi\over \sqrt {1+k^2}}$, $b=0$ and
+  and $c=-{-d\varphi\over \sqrt {1+k^2}}$.
+
+  The matrix of Weingarten operator in the basis  $\{\e,\f\}$ is
+             $$
+     S=
+\begin{pmatrix}
+b(\e)  &c(\e)\cr
+b(\f)  &c(\f)\cr
+\end{pmatrix}=
+S=
+\begin{pmatrix}
+0  &{-d\varphi (\e)\over \sqrt {1+k^2}}\cr
+0  &{-d\varphi (\f)\over \sqrt {1+k^2}}\cr
+\end{pmatrix}=
+\begin{pmatrix}
+0  &0\cr
+0  &{-1\over kh \sqrt {1+k^2}}\cr
+\end{pmatrix}\,.
+       $$
+since $d\varphi(\f)=d\varphi\left({\r_\varphi\over kh}\right)={1\over kh}d\varphi(\p_\varphi)={1\over kh}$.
+
+
+According to \eqref{gaussiancurvintermsofderformulae}, \eqref{meancurvintermsofderformulae}
+                Gaussian curvature  $$
+                K=b(\e)c(\f)-b(\e)c(\f)=0
+                $$
+and
+                mean curvature
+                 $$
+    H=b(\e)+c(\f)=-d\varphi(\f)=-d\varphi\left({\r_\varphi\over R}\right)=-{1\over R}
+                 $$
+  (Compare with calculations in the subsection 4.3.4)
+
+
+
+\bigskip
+
+
+
+
+{\it Sphere}
+
+
+\medskip
+
+
+For sphere
+\begin{equation}\label{surfacesphere11}
+  \r(\theta,\varphi)\colon\quad
+  \begin{cases}
+  x=R\sin\theta\cos\varphi\\
+  y=R\sin\theta\sin\varphi\\
+  z=R\cos\theta\\
+  \end{cases}
+\end{equation}
+    $$
+  \r_\theta(\theta,\varphi)={\p \r\over \p \theta}=
+  \begin{pmatrix}
+        R\cos\theta\cos\varphi\cr
+        R\cos\theta\sin\varphi\cr
+        -R\sin\theta\cr
+   \end{pmatrix}\,,
+\quad
+  \r_\varphi(\theta,\varphi)={\p \r\over \p \varphi}=
+         \begin{pmatrix}
+        -R\sin\theta\sin\varphi\cr
+        R\sin\theta\cos\varphi\cr
+          0\cr
+   \end{pmatrix},
+     $$
+     $$
+   \n(\theta,\varphi)={\r\over R}=
+   \begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}.
+  $$
+Tangent vectors  $\r_\theta,\r_\varphi$ are orthogonal to each other.
+The length of the vector $\r_\theta$ equals to $R$ and the
+length of the vector $\r_\varphi$ equals to $R\sin\theta$.
+Hence we can choose orthonormal basis $\{\e,\f,\n\}$ such that vectors $\e,\f$ are unit vectors in the
+directions of the vectors  $\r_\theta,\r_\varphi$:
+         $$
+    \e(\theta,\varphi)={\r_\theta\over R}=
+         \begin{pmatrix}
+        \cos\theta\cos\varphi\cr
+        \cos\theta\sin\varphi\cr
+        -\sin\theta\cr
+   \end{pmatrix},\,
+   \f(\theta,\varphi)={\r_\varphi\over R\sin\theta}=
+        \begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix},\,
+     \n(\theta,\varphi)={\r\over R}=
+   \begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}.
+         $$
+Calculate $d\e, d\f$ and $d\n$:
+            $$
+        d\e=d
+        \begin{pmatrix}
+        \cos\theta\cos\varphi\cr
+        \cos\theta\sin\varphi\cr
+        -\sin\theta\cr
+   \end{pmatrix}=
+           $$
+           $$
+\begin{pmatrix}
+        -\cos\theta\sin\varphi\cr
+        \cos\theta\cos\varphi\cr
+           0\cr
+   \end{pmatrix}d\varphi-\begin{pmatrix}
+        \cos\theta\cos\varphi\cr
+        \cos\theta\sin\varphi\cr
+        -\sin\theta\cr
+   \end{pmatrix}=\cos\theta d\varphi \f-d\theta \n,
+            $$
+             $$
+            d\f=d
+            \begin{pmatrix}
+        -\sin\varphi\cr
+        \cos\varphi\cr
+          0\cr
+   \end{pmatrix}=
+              -
+   \begin{pmatrix}
+        \cos\varphi\cr
+        \sin\varphi\cr
+          0\cr
+   \end{pmatrix}d\varphi=
+            $$
+            $$
+       -\cos\theta d\varphi \begin{pmatrix}
+        \cos\theta\cos\varphi\cr
+        \cos\theta\sin\varphi\cr
+        -\sin\theta\cr
+   \end{pmatrix}-\sin\theta d\varphi
+   \begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}=
+   -\cos\theta d\varphi \e-\sin\theta d\varphi \n\,,
+            $$
+             $$
+             d\n=
+   d\begin{pmatrix}
+    \sin\theta\cos\varphi\cr
+     \sin\theta\sin\varphi\cr
+      \cos\theta\cr
+   \end{pmatrix}=
+   \begin{pmatrix}
+    \cos\theta\cos\varphi\cr
+     \cos\theta\sin\varphi\cr
+      -\sin\theta\cr
+   \end{pmatrix}d\theta+
+   \begin{pmatrix}
+    -\sin\theta\sin\varphi\cr
+     \sin\theta\cos\varphi\cr
+        0\cr
+   \end{pmatrix}d\varphi
+        $$
+        $$
+   =d\theta \e+\sin\theta d\varphi \f\,.
+        $$
+   i.e.
+   \begin{equation}\label{derivationformulaefor cylinder}
+                    d\begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                    \begin{pmatrix}
+                    0&a&b\cr -a&0&c\cr -b&-c&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                     \begin{pmatrix}
+                    0&\cos\theta d\varphi& -d\theta\cr
+                    -\cos\theta d\varphi&0&-\sin\theta d\varphi\cr
+                     d\theta&\sin\theta d\varphi&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}\,,
+                   \end{equation}
+  i.e. in derivation formulae $a=\cos\theta d\varphi$,
+  $b=-d\theta$, $c=-\sin\theta d\varphi$.
+
+  The matrix of Weingarten operator in the basis  $\{\e,\f\}$ is
+             $$
+     S=
+\begin{pmatrix}
+b(\e)  &c(\e)\cr
+b(\f)  &c(\f)\cr
+\end{pmatrix}=
+\begin{pmatrix}
+-d\theta (\e) &-\sin\theta d\varphi (\e)\cr
+-d\theta (\f)  &-\sin\theta d\varphi(\f)\cr
+\end{pmatrix}=
+\begin{pmatrix}
+{-1\over R}  &0\cr
+0  &-{1\over R}\cr
+\end{pmatrix}
+       $$
+       since $d\theta(\e)=d\theta\left({\p_\theta\over R}\right)={1\over R}d\theta(\p_\theta)={1\over R}$,
+       $\,d\varphi(\e)=d\varphi\left({\p_\theta\over R}\right)={1\over R}d\varphi(\p_\theta)=0$.
+
+    According to  \eqref{gaussiancurvintermsofderformulae}  and\eqref{meancurvintermsofderformulae}
+                Gaussian curvature $$
+                K=b(\e)c(\f)-b(\e)c(\f)={1\over R^2}
+                                    $$
+                                    and
+                mean curvature
+                 $$
+    H=b(\e)+c(\f)=-{2\over R}
+                 $$
+    Notice that for calculation of Weingarten operator and curvatures we used only
+    $1$-forms $b$ and $c$, i.e. the derivation equation for $d\n$, ($d\n=d\theta \e+\sin\theta d\varphi \f$).
+  (Compare with calculations in the subsection 4.3.4)
+
+
+
+
+
+ Mean curvature is define up to a sign. If we change $\n\to-\n$ mean curvature $H\to {1\over R}$ and Gaussian curvature
+will not change.
+
+
+We see that for the sphere  Gaussian curvature is not equal to zero, whilst for cylinder and cone Gaussian curvature
+equals to zero.
+
+
+\subsubsection { Proof of the Theorem of parallel transport along closed curve.}
+
+We are ready now to prove the Theorem.  Recall that the Theorem states following:
+
+If $C$ is a closed curve on a surface $M$ such that $C$ is a boundary of a compact oriented domain $D\subset M$,
+then during the  parallel transport of an arbitrary tangent vector  along the closed curve $C$
+the vector rotates through the angle
+\begin{equation}\label{theoremofrotationonangle4}
+\Delta\Phi=\angle\left({\X, \R_C\X}\right)=\int_D K d\sigma\,,
+             \end{equation}
+where $K$ is the Gaussian curvature and $d\sigma=\sqrt {\det g}dudv$ is the area element induced by the
+Riemannian metric on the surface $M$, i.e.  $d\sigma=\sqrt {\det g}dudv$.
+
+(see \eqref{theoremofrotationonangle}.
+
+
+Recall that for derivation formulae
+\eqref{derivationformulae1} we obtained structure equations
+                  \begin{equation}\label{firststructureformula4}
+               \begin{matrix}
+                da+b\wedge c=0\cr
+                 db+c\wedge a=0\cr
+                 dc+a\wedge a=0\cr
+                 \end{matrix}
+               \end{equation}
+
+We need to use only one of these equations, the equation
+             \begin{equation}\label{gausscondition}
+                da+b\wedge c=0\,.
+             \end{equation}
+This condition sometimes is called {\it Gau\ss \,\,condition}.
+
+
+
+Let as always  $\{\e,\f,\n\}$ be an orthonormal basis in $T_{\pt}\E^3$ at every point of surface  $\pt\in M$
+such that $\{\e,\f\}$ is an orthonormal basis in $T_{\pt}\E^3$ at every point of surface  $\pt\in M$.
+Then the  Gau\ss\, condition \eqref{gausscondition} and equation \eqref{gaussiancurvintermsofderformulae} mean
+ that  for Gaussian curvature on the surface $M$ can be expressed through the $2$-form $da$ and base vectors $\{\e,\f\}$:
+              \begin{equation}\label{gaussiancurvatureintermsof form a}
+                K=b\wedge c(\e,\f)=-da(\e,\f)
+              \end{equation}
+  We use this formula to prove the Theorem.
+
+
+
+             Now calculate the parallel transport of an arbitrary tangent vector over the closed curve $C$
+             on the surface $M$.
+
+
+
+ Let $\r=\r(u,v)=\r(u\a)$ ($\a=1,2$, $(u,v)=(u^1,v^1)$) be an equation of the surface $M$.
+
+Let $u^\a=u^\a(t)$ ($\a=1,2$) be the equation of the curve $C$.
+Let $\X(t)$ be the parallel transport of vector field along the closed curve $C$,
+i.e. $\X(t)$ is tangent to the surface $M$ at the point $u(t)$ of the curve $C$ and
+vector field $\X(t)$ is covariantly constant along the curve:
+      $$
+    {\nabla \X(t)\over dt}=0
+      $$
+     To write this equation in components we usually  expanded the vector field
+in the coordinate basis $\{\r_u=\p_u,\r_v=\p_v\}$ and used Christoffel symbols of the connection
+  $\Gamma^\a_{\beta\gamma}\colon \nabla_\beta\p_\gamma=\Gamma^\a_{\beta\gamma}\p_\a$.
+
+  Now we will do it in different way: {\it instead coordinate basis $\{\r_u=\p_u,\r_v=\p_v\}$ we will use
+  the basis $\{\e,\f\}$.}   In the subsection 3.4.4 we obtained that the connection $\nabla$ has the following appearance
+  in this basis
+  \begin{equation}\label{indconforrotation}
+    \nabla_\v\e=a(\v)\f,\,, \nabla_\v\f=-a(\v)\e
+  \end{equation}
+  (see the equations \eqref{inducedconnectionintermsofnonholonombasis1} and \eqref{inducedconnectionintermsofnonholonombasis2})
+
+Let        $$
+\X=\X(u(t))=X^1(t)\e(u(t))+X^2(t)\f(u(t))
+           $$
+Lbe an expansion of tangent vector field $\X(t)$ over basis $\{\e,\f\}$.
+Let $\v$ be velocity vector of the curve $C$.
+  Then the equation of parallel transport ${\nabla \X(t)\over dt}=0$
+                 will have the following appearance:
+                      $$
+              {\nabla \X(t)\over dt}=0=\nabla_\v \left(X^1(t)\e(u(t))+X^2(t)\f(u(t))\right)=
+                      $$
+                      $$
+                      {dX^1(t)\over dt}\e(u(t))+X^1(t)\nabla_\v\e(u(t))+
+                      {dX^2(t)\over dt}\f(u(t))+X^2(t)\nabla_\v\f(u(t))=
+                      $$
+                      $$
+                      {dX^1(t)\over dt}\e(u(t))+X^1(t)a(\v)\f(u(t))+
+                      {dX^2(t)\over dt}\f(u(t))-X^2(t)a(\v)\e(u(t))=
+                      $$
+              $$
+          \left({dX^1(t)\over dt}-X^2(t)a(\v)\right)\e(u(t))+
+           \left({dX^2(t)\over dt}+X^1(t)a(\v)\right)\f(u(t))=0.
+              $$
+Thus we come to equation:
+              $$
+             \begin{cases}
+             \dot X^1(t)-a(\v(t))X^2=0\cr
+             \dot X^2(t)+a(\v(t))X^1=0\cr
+             \end{cases}
+              $$
+There are many ways to solve this equation. It is very convenient to consider complex variable
+             $$
+           Z(t)=X^1(t)+iX^2(t)
+             $$
+We see that
+             $$
+         \dot Z(t)=\dot X^1(t)+i\dot X^2(t)=a(\v(t))X^2-ia(\v(t)X^1=-ia(\v)Z(t),
+                 $$
+i.e.
+   \begin{equation}\label{complexrotation}
+    {dZ(t)\over dt}=-ia(\v(t))Z(t)
+   \end{equation}
+The solution of this equation is:
+           \begin{equation}\label{complexrotation}
+      Z(t)=Z(0)e^{-i\int_0^t a(\v(\tau))d\tau}
+   \end{equation}
+   Calculate $\int_0^{t_1} a(\v(\tau))d\tau$ for closed curve $u(0)=u(t_1)$. Due to Stokes Theorem:
+            $$
+            \int_0^{t_1} a(\v(t))dt=\int_C a=\int_D da
+            $$
+   Hence using Gauss condition \eqref{gausscondition} we see that
+      $$
+      \int_0^{t_1} a(\v(t))dt=\int_C a=\int_D da=-\int_D b\wedge c
+      $$
+
+{\bf Claim}
+            \begin{equation}\label{claimoncurvature}
+            \int_D b\wedge c=-\int_D da=\int K d\sigma\,.
+            \end{equation}
+
+Theorem follows from this claim:
+           \begin{equation}\label{complexrotation2}
+      Z(t_1)=Z(0)e^{-i\int_C a}=Z(0)e^{i\int_D b\wedge C}
+   \end{equation}
+Denote the integral ${i\int_D b\wedge C}$ by $\Delta \Phi\colon \Delta \Phi={i\int_D b\wedge C}$. We have
+           \begin{equation}\label{complexrotation2}
+      Z(t_1)=X^1(t_1)+iX^2(t_1)=\left(X^1(0)+iX^2(0)\right)e^{i\Delta\Phi}=
+   \end{equation}
+
+\medskip
+
+ It remains to prove the claim.  The induced volume form $d\sigma$ is $2$-form. Its value
+ on two orthogonal unit vector $\e,\f$ equals to $1$:
+              \begin{equation}\label{valueonorthonormalvectors}
+                d\sigma (\e,\f)=1
+              \end{equation}
+(In coordinates $u,v$ volume form $d\sigma=\sqrt{\det g}du\wedge dv$).
+
+The value of the form $b\wedge c$ on vectors $\{\e,\f\}$ equals to Gaussian curvature according to \eqref{gaussiancurvatureintermsof form a}.
+We see that
+             $$
+        b\wedge c(\e,\f)=-da(\e,\f)=K d\sigma (\e,\f)
+             $$
+Hence $2$-forms $b\wedge c$, $-da$ and volume form $d\sigma$ coincide. Thus we prove \eqref{claimoncurvature}.
+
+
+\section {Curvtature tensor}
+
+\subsection {Definition}
+
+Let $\X,\Y,\Z$ be an arbitrary vector fields on the manifold equipped with affine connection  $\nabla$.
+
+Consider the following operation which assings to the vector fields $\X,\Y$ and $\Z$ the new vector field.
+\begin{equation}\label{operationdefinig the tensor}
+   {\cal R}(\X,\Y)\Z=
+    \left(
+    \nabla_\X\nabla_\Y-\nabla_\Y\nabla_\X-
+   \nabla_{[\X,\Y]}
+    \right)\Z
+\end{equation}
+This operation is obviously linear over the scalar coefficients and it is $C^{\infty}(M)$
+with respect to vector fields $\X,\Y\,\Z$, i.e. for an arbitrary functions
+$f,g,h$
+        \begin{equation}\label{propertiesoflienarity}
+            {\cal R}(f\X,g\Y)(h\Z)=fgh{\cal R}(\X,\Y)\Z,
+        \end{equation}
+        i.e. it defines
+the tensor field of the type $\begin{pmatrix}1\cr 3\end{pmatrix}$: If $\X=X^i\p_i, \X=X^i\p_i,\X=X^i\p_i$
+then according to \eqref{propertiesoflienarity}
+           $$
+        {\cal R}(\X,\Y)\Z={\cal R}(X^m\p_m,Y^n\p_n)(Z^r\p_r)=Z^rR^i_{rmn}X^mY^n
+           $$
+where we denote by $R^i_{rmn}$ the components of the tensor $\cal R$ in the coordinate basis ${\p_i}$
+\begin{equation}\label{componentsofcurvaturetensor}
+    R^i_{rmn}\p_i={\cal R}(\p_m,\p_n)\p_r
+\end{equation}
+Express components of the curvature tensor in terms of Christoffel symbols of the connection.
+If $\nabla_m\p_n=\Gamma_{mn}^r\p_r$ then according to the \eqref{operationdefinig the tensor} we have:
+                $$
+        R^i_{rmn}\p_i={\cal R}(\p_m,\p_n)\p_r=\nabla_{\p_m}\nabla_{\p_n}\p_r-\nabla_{\p_n}\nabla_{\p_m}\p_r=
+                    $$
+                    $$
+              \nabla_{\p_m}\left(\Gamma_{nr}^p\p_p\right)-\nabla_{\p_n}\left(\Gamma_{mr}^p\p_p\right)=
+                $$
+                \begin{equation}\label{curvatureincomponents}
+                \p_m\Gamma_{nr}^i+\Gamma_{mp}^i\Gamma_{nr}^p-\left(m\leftrightarrow n\right)
+                \end{equation}
+
+ The proof of the property \eqref{propertiesoflienarity} can be given just  by straightforward calculations:
+     Consider e.g. the case $f=g=1$, then
+
+        $$
+         {\cal R}(\X,\Y)(h\Z)=
+    \nabla_{\X}\nabla_\Y(h\Z)-\nabla_{\Y}\nabla_\X(h\Z)-
+   \nabla_{[\X,\Y]}(h\Z)=
+        $$
+        $$
+     \nabla_\X\left(\p_\Y h\Z+h\nabla_\Y\Z\right)-\nabla_\Y\left(\p_\X h\Z+h\nabla_\X\Z\right)-
+     \p_{[\X,\Y]}h \Z-h\nabla_{[\X,\Y]}\Z=
+        $$
+        $$
+    \p_\X\p_\Y h\Z+\p_\Y h\nabla_\X\Z+
+    \p_\X h\nabla_\Y\Z+
+    h\nabla_\X\nabla_\Y \Z-
+        $$
+        $$
+        \p_\Y\p_\X h\Z-\p_\X h\nabla_\Y\Z-
+    \p_\Y h\nabla_\X\Z+
+    h\nabla_\Y\nabla_\X \Z-
+        $$
+        $$
+      \p_{[\X,\Y]}h \Z-h\nabla_{[\X,\Y]}\Z=
+        $$
+        $$
+    h\left[\nabla_{\X}\nabla_\Y\Z-\nabla_{\Y}\nabla_\X\Z)-
+   \nabla_{[\X,\Y]}\Z\right]+\left[\p_\X\p_\Y h-\p_\Y\p_\X h-\p_{[\X,\Y]h}\right]\Z=
+        $$
+        $$
+h\nabla_{\X}\nabla_\Y\Z-\nabla_{\Y}\nabla_\X\Z)-
+   \nabla_{[\X,\Y]}\Z=h{\cal R}(\X,\Y)\Z\,,
+        $$
+   since $\p_\X\p_\Y h-\p_\Y\p_\X h-\p_{[\X,\Y]}h=0$.
+
+
+
+
+\subsection {Curvature of surfaces in $\E^3$.. {\it Theorema Egregium} egain}
+
+  Express Riemannian curvature of surfaces in $\E^3$ in terms of derivation formulae \eqref{derivationformulae1}.
+
+   Consider derivation formulae for the orthonormal basis $\{\e,\f,\n,\}$ adjusted to the surface $M$:
+                      \begin{equation}\label{derivationformulae1}
+                    d\begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}=
+                    \begin{pmatrix}
+                    0&a&b\cr -a&0&c\cr -b&-c&0\cr
+                    \end{pmatrix}
+                 \begin{pmatrix}
+                    \e\cr\f\cr\n\cr
+                    \end{pmatrix}\,,
+                       \end{equation}
+
+where as usual $\e,\f,\n$ vector fields of unit length which are  orthogonal
+to each other and $\n$ is orthogonal to the surface $M$.  As we know the induced
+connection on the surface $M$ is defined by the formulae \eqref{inducedconnectionintermsofnonholonombasis1}
+and \eqref{inducedconnectionintermsofnonholonombasis2}:
+   \begin{equation}\label{inducedconnectionintermsofnonholonombasis11}
+        \nabla_\Y \e=\left(d\e(\Y)\right)_{\rm tangent}=a(\X)\f\,,
+        \nabla_\Y \f=\left(d\f(\Y)\right)_{\rm tangent}=-a(\X)\e\,,
+        \end{equation}
+
+ According to the definition of curvature calculate
+         $$
+ R(\e,\f)\e=\nabla_{\e}\nabla_{\f}\e-\nabla_{\f}\nabla_{\e}\e-\nabla_{[\e,\f]}\e\,.
+         $$
+Note that since the induced connection is symmetrical connection then:
+        \begin{equation}\label{commutatorofnonholonombasis}
+ \nabla_\e \f-\nabla_\f \e- [\e,\f]=0\,.
+\end{equation}
+hence due to \eqref{inducedconnectionintermsofnonholonombasis11}
+
+       \begin{equation}\label{commutatorofnonholonombasis}
+ [\e,\f]=\nabla_\e \f-\nabla_\f \e=a(\e)\e+a(\f)\f
+\end{equation}
+Thus we see that  $R(\e,\f)\e=$
+       $$
+ \nabla_{\e}\nabla_{\f}\e-\nabla_{\f}\nabla_{\e}\e-\nabla_{[\e,\f]}\e=
+       \nabla_\e\left(a(\f)\f\right)-\nabla_\f\left(a(\e)\f\right)-\nabla_{a(\e)\e+a(\f)\f}\e=
+       $$
+       $$
+  \p_{\e}a(\f)\f+a(\f)\nabla_\e\f-\p_{\f}a(\e)\f-a(\e)\nabla_\f\f-a(\e)\nabla_\e\e-a(\f)\nabla_\f\e=
+       $$
+       $$
+  \p_{\e}a(\f)\f-a(\f)a(\e)\e-\p_{\f}a(\e)\f+a(\e)a(\f)\e-a(\e)a(\e)\f-a(\f)a(\f)\f=
+       $$
+       $$
+       \left[\p_{\e}a(\f)\f-\p_{\f}a(\e)\f-a\left((\e)\e-a(\f)\f\right)\right]\f=
+       da(\e,\f)\f\,.
+       $$
+  Recall that we established in \ref{gaussiancurvatureintermsof form a} that for Gaussian curvature $K$
+          $$
+       K=b\wedge c(\e,\f)=-da(\e,\f)
+          $$
+       Hence we come to the relation:
+       \begin{equation}\label{relationbetweengausscurvatureand riemtensor}
+        R(\e,\f)\e=da(\e,\f)=-K\f\,.
+       \end{equation}
+       This means that
+       $$
+         R^2_{112}=-K
+       $$
+(in the basis ${\e,\f}$), i.e.
+ the scalar curvature
+   $$
+R=2R_{1212}=2K
+   $$
+ We come to fundamental relation which claims that the Gaussian curvature  (the magnitude defined in terms of
+ External observer) equals to the scalar curvature, the magnitude defined in terms of Internal observer.
+   This gives us the straightforward proof of Theorema Egregium.
+
+
+
+
+
+\section {Appendices}
+
+
+ \subsection {Bianci identities}
+
+Recall that the curvature is defines the linear operator depending
+on the pair of vector fields: given vector fields $\X,\Y$ and $\Z$
+\begin{equation}\label{operationdefinig the tensor1A}
+   {\cal R}(\X,\Y)\Z=
+    \left(
+    \nabla_\X\nabla_\Y-\nabla_\Y\nabla_\X-
+   \nabla_{[\X,\Y]}
+    \right)\Z
+\end{equation}
+(see \eqref{operationdefinig the tensor})
+
+
+   Consider
+    ${\cal R}(\X,\Y)\Z+{\rm cycl.permutation}$:
+    \begin{equation}\label{biancifirst}
+{\cal R}(\X,\Y)\Z+{\rm
+cycl.permutation}=\left(\nabla_\X\nabla_\Y-\nabla_\Y\nabla_\X-
+   \nabla_{[\X,\Y]}\right)\Z+
+\end{equation}
+     $$
+\left(\nabla_\Y\nabla_\Z-\nabla_\Z\nabla_\Y-
+   \nabla_{[\Y,\Z]}\right)\X+\left(\nabla_\Z\nabla_\X-\nabla_\X\nabla_\Z-
+   \nabla_{[\Z,\X]}\right)\Y=
+     $$
+     $$
+     \nabla_\X\left(\nabla_\Y \Z-\nabla_\Z \Y-[\Y,\Z]\right)+
+      \nabla_\Y\left(\nabla_\Z\X-\nabla_\X \Z-[\Z,\X]\right)+
+       \nabla_\Z\left(\nabla_\X \Y-\nabla_\Y \X-[\X,\Y]\right)+
+        $$
+        $$
+       \nabla_\X[\Y,\Z]+\nabla_\Y[\Z,\X]+\nabla_\Z[\X,\Y]-
+       \nabla_{[\X,\Y]}\Z-\nabla_{[\Y,\Z]}\X-\nabla_{[\Z,\X]}\Y=
+          $$
+       $$
+        \begin{matrix}
+        \nabla_\X\left(\nabla_\Y \Z-\nabla_\Z \Y-[\Y,\Z]\right)+\cr
+      \nabla_\Y\left(\nabla_\Z\X-\nabla_\X \Z-[\Z,\X]\right)+\cr
+       \nabla_\Z\left(\nabla_\X \Y-\nabla_\Y \X-[\X,\Y]\right)+\cr
+\left(\nabla_\X[\Y,\Z]-\nabla_{[\Y,\Z]\X}-\left[\X,\left[\Y,\Z\right]\right]\right)+\cr
+\left(\nabla_\Y[\Z,\X]-\nabla_{[\Z,\X]\Y}-\left[\Y,\left[\Z,\X\right]\right]\right)+\cr
+\left(\nabla_\Z[\X,\Y]-\nabla_{[\X,\Y]\Z}-\left[\Z,\left[\X,\Y\right]\right]\right)+\cr
+\left[\X,\left[\Y,\Z\right]\right]+\left[\Y,\left[\Z,\X\right]\right]+\left[\Z,\left[\X,\Y\right]\right]=\cr
+\end{matrix}
+       $$
+\begin{equation}\label{torsioncyclicpermutation}
+    \left(\nabla_\X\left(T\left(\Y,\Z\right)\right)+{\rm cycl.permutation}\right)+
+    \left(T\left(\X,[\Y,\Z]\right)+{\rm cycl.permutation}\right)
+\end{equation}
+
+One can deduce that right hand side equals to $\left(\nabla_\X
+T\right)(\Y,\Z)+T(T,...)+{\rm cycl.permutation}$
+
+In particular if torsion equals to zero then
+     $$
+     {\cal R}(\X,\Y)\Z+{\rm cycl.permutation}=0\,.
+     $$
+
+
+ \end{document}

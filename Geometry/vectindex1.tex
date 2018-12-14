@@ -1,0 +1,244 @@
+
+   \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+\def\b {{\beta}}
+\def\CP {{\bf CP}}
+\def\vare{\varepsilon}
+    {\bf On the index of vector field.}
+
+First of all  two-three exercises on calculation of index:
+
+Ex. 1 Show the vector field of index $n$ at zero. ($n\geq 1$)
+
+  Answer:  $z^n\p_z$. If $n=1,2$ then this field has zero at infinity and
+   an index $2-n=1,0$ at infinity:
+
+
+Ex.2   What happens if $n=0$. The field $\p_z$ has not zero at zero and has index $2$
+at infinity. How to construct the field of index zero?
+
+Non-analytically: $(e^{-{1\over r^2}})\p_z$??
+
+But there is another answer:
+
+Ex.3 Calculate an index of the field
+$X^m=A^m_{ik}x^ix^k+\dots$.
+
+
+Let a field $X$ is equal to zero at the point zero. Then one can consider
+the linear operator:
+                  $$
+          \hat X u=[u,X]
+                   $$
+If this operator is non-degenerate then t
+ the sign of determinant of this operator is an index.
+If it is degenerate then to calculate an index is more difficult.
+Consider the case where the linear operator $\hat X\equiv 0$. Then one can consider bilinear
+form with values in tangent vector
+                   $$
+       \hat X(u,v)=\left[\left[X,u\right],v\right]
+                   $$
+In components it means that we consider $A^m_{ik}$ if $X=X^m=A^m_{ik}x^ix^k+\dots$
+It is degenerate point. To calculate the index we remove the degeneracy.
+Then this instead this point will appear $2,4,\dots,...$ points....
+
+Instead field $X=X^m=A^m_{ik}x^ix^k+\dots$  consider the field
+$X=X^m-\vare^m$ where $\vare^m=A^m_{ik}x_0^ix_0^k$ Then instead degenerate
+point $0$ will appear the points which are the solution of equation
+                   $$
+                  A^m_{ik}x^ix^k=\vare^m=A^m_{ik}x^i_0x^k_0
+                     $$
+   E.g. in two-dimensional case this equation has 2 or 4 solutions.
+
+
+   The index at every solution will be the sign of correspoindg determinant. We come to the answer
+                        $$
+        {\rm index} X=\sum {\rm sgn}\det\left(A^m_{ik}x^k\right)
+                  $$
+where summation goes over all points $x^k$ which obey the equation
+$A^m_{ik}x^ix^k=\vare^m=A^m_{ik}x^i_0x^k_0$.
+(If all operators are non-degenerate)
+
+It is evident from the last formula that in odd dimensional case we come to the index
+zero, because if $x^k$ is solution then $-x^k$ is solution too.
+In even dimensional case the answer depends in particularly on the number of
+real solutions.
+
+
+E.g. consider two cases
+
+1.   $X=(x^2-y^2)\p_x+2xy\p_y$ (it is just $z^2\p_z$) Then equations
+     $x^2-y^2=x_0^2-y_0^2,2xy=2x_0y_0$ has two real solutions $(x,y)$
+     ,$(-x,-y)$. Both give contribution $+1$ to index.
+
+ 2. $X=x^2\p_x+y_2\p_y$. In this case the equations $x^2=x^2_0,y^2=y^2_0$
+ has four real solutions  $(x=x_0,y=y_0),(x=-x_0,y=-y_0)(x=x_0,y=-y_0)(x=-x_0,y=y_0)$
+The solutions $(x=x_0,y=y_0),(x=-x_0,y=-y_0)$ give contribution $+1$,
+the  solutions $(x=-x_0,y=y_0),(x=x_0,y=-y_0)$ give contribution $-1$
+
+
+                $$ $$
+
+
+
+
+    Thinking about Riemann-Horwitz formula I decided
+ to do the following simple
+    exercise:
+
+
+   Consider the vector field
+                $$
+                A=(y-\b y^3)\p_x-x\p_y
+                $$
+and its image under the map   $z\to z^2\colon\,\,\, \CP\to \CP$.
+The push-forward of the field $A$ is well defined under this map because
+$A$ is invariant under transformation $z\to -z$. If $\b=0$ then the special points of the field
+are just ramification points and sum of the indices preserves.
+If $\beta\not=0$ then there are degenerate points $\pm 1/\b$. What is their contribution?
+ I think thee calculations are useful, because they contain the part when one
+ have to calculate an index in so called degenerate case (If vector field is equal zero and
+ linear part is nothing but the sign of determinant of this linear operator)
+
+  Second: Calculation of index will reveal the relation with Riemann-Hourwitz formula...
+
+
+   So begin. The map  $z\to z^2$ is $u=x^2-y^2,v=2xy$. Its jacobian:
+        $$
+        \pmatrix
+        {2x  &-2y\cr
+         2y   &2x\cr
+        }
+    $$
+        We see that
+              $$
+               \pmatrix
+               {2x  &-2y\cr
+         2y   &2x\cr
+               }
+         \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }
+        =
+         \pmatrix
+        {4xy-2\b xy^3\cr
+         2y^2-2x^2-2\b y^4 &2x
+        }
+              $$
+
+The vector
+                 $$
+(y-\b y^3)\p_x-x\p_y\,\,\hbox{ at the point $(x,y)$}
+                 $$
+goes to the vector
+               $$
+               (4xy-2\b xy^3)\p_u-\left(2y^2-2x^2-2\b y^4\right)\p_y\,\,
+               \hbox{ at the point $(u=x^2-y^2,v=2xy)$}
+               $$
+Pay attention on the fact that it is well defined: the transformation
+$(x,y)\to (-x,-y)$ which does not change the point    $(u=x^2-y^2,v=2xy$
+it does not change the vector too.
+
+
+\bigskip
+
+  {The index of initial vector field}
+
+  The initial vector field is equal to zero in three points
+  $(0,0)$, $(0,{1\over \sqrt \b})$ and $(0,-{1\over \sqrt \b})$
+The indices of the initial vector in these points is equal
+to $=1,-1,-1$ (It is just calculation of sign of determinant)
+Now calculate the index at infinity. Perform coordinate transformation
+corresponding to $z\to 1/z$:
+                        $$
+     x'={x\over x^2+y^2},y'=-{y\over x^2+y^2}\,,
+     $$
+     $$
+       \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }=
+\pmatrix
+        { {y^2-x^2\over (x^2+y^2)^2} &{-2xy\over (x^2+y^2)^2}\cr
+          {2xy\over (x^2+y^2)^2}  &{y^2-x^2\over (x^2+y^2)^2}\cr
+        },\quad
+        \det
+        \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }={1\over (x^2+y^2)^2}
+     $$
+  We see that
+          $$
+                  \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }
+        \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }=
+        {1\over \left({x^2+y^2}\right)^2}
+\pmatrix
+        { y^2-x^2 &-2xy\cr
+          2xy  &y^2-x^2\cr
+        }
+        \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }=
+          $$
+          $$
+        {1\over \left({x^2+y^2}\right)^2}
+          \pmatrix
+        { y(x^2+y^2)-\b y^3(y^2-x^2)\cr
+        x(x^2+y^2)-2\b y^3\cdot xy  \cr
+        }
+             $$
+          Thus
+the vector
+                 $$
+(y-\b y^3)\p_x-x\p_y\,\,\hbox{ at the point $(x,y)$}
+                 $$
+goes to the vector
+               $$
+               \left[{y\over x^2+y^2}-\b y^3 {y^2-x^2\over (x^2+y^2)^2}\right]\p_{x'}+
+               \left[{x\over x^2+y^2}-\b y^3 {2xy\over (x^2+y^2)^2}\right]\p_{y'}\,\,
+               $$
+
+           $$\hbox{ at the point $\,\,x'={x\over x^2+y^2},y'={y\over x^2+y^2})$}$$
+
+It means that in coordinates $x',y'$  the vector field has appearance
+                     $$
+                     d
+                     $$
+        Here I stop. In the case $\b=0$ we see that sum of the indices is equal
+        t0 $1+1=2$. I would like to show that index at infinity is equal to $3$.
+        (because sum at the other points was equal to $1+(-1)+(-1)=-1$)
+        but our field is not equal to zero at infinity.
+\bye

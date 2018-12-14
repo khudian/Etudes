@@ -1,0 +1,203 @@
+  \magnification=1200
+  \def \sint {\int_1^\infty {\exp(-at)\over t}dt}
+                    $$ $$
+            \centerline{\bf One method of Calculating
+       Integral   $\int_1^\infty {\exp(-at)\over t}dt$
+                 for small $a$}
+
+            \centerline{\bf and Seeley Formulae}
+                        \bigskip
+            \centerline{\bf O.M. Khudaverdian}
+                     \medskip
+  We consider calculating of the integral $\sint$
+ using ideas inspired by Seeley formulae.
+  First the calculation. For estimating the behaviour
+of $\sint$ for large $a$ one can consider integration by parts
+                      $$
+     \sint={e^{-a}\over a}\sum_{n=0}^N{n!(-1)^n \over a^n }
+         +{(-1)^N N!\over a^{N+1}}\int_1^\infty e^{-at}t^{N+1}
+                                             \eqno (1)
+                        $$
+{\bf Remark} One can see that this formula does not give
+convergent power series. On the other hand for every fixed $N$
+ the reminder term is $e^{-a}o(1\over a^{N})$.
+
+ \bigskip
+
+
+ For small $a$ the Eq.(1) is helpless.
+
+  We consdider the trivial identity
+                     $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+       {\int_0^\infty t^{s-1}\exp(-at)dt}
+                \quad {\rm for} \quad s>0
+                                        \eqno (2)
+                    $$
+
+     One can rewrite the l.h.s. of (2) in the way
+  to consider its analytical continuation for
+neibourhood of $s=0$
+                     $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+       {\int_0^\infty t^{s-1}\exp(-at)dt}
+                   =
+                   $$
+                  $$
+              {1\over \Gamma(s)}
+            \left(
+       {\int_0^1 t^{s-1}\left(\exp(-at)-1\right)dt}+
+       {\int_0^1 t^{s-1}dt}+
+       {\int_1^\infty t^{s-1}\exp(-at)dt}
+                     \right)
+                    $$
+                     $$ =
+              {1\over \Gamma(s)}
+                         \left(B(s)+
+              {1\over s}\right)
+                                    \eqno (3)
+                    $$
+               where we denote
+                          $$
+                 B(s) =
+            \left(
+       \int_0^1 t^{s-1}\left(\exp(-at)-1\right)dt+
+         \int_1^\infty t^{s-1}\exp(-at)dt
+                     \right)
+                        $$
+
+       Hence
+                         $$
+         a^{-s}=
+              {1\over \Gamma(s)}
+                          \left(
+                         B(s)+
+              {1\over \Gamma(s+1)}\right)
+                                         \eqno (4)
+                      $$
+   The both parts of (3) are defined and can be differentiate
+ in the neibourhood of $s=0$.
+           Using that
+                     $$
+              {1\over \Gamma(s)}\big\vert_{s=0}=0
+                \quad {\rm and}\quad
+           \left({d\over ds}
+              {1\over \Gamma(s)}\right)\Big\vert_{s=0}=
+                    \left(
+                    {d\over ds}
+                    \left(
+              {s\over \Gamma(s+1)}\right)\right)\Big\vert_{s=0}=1
+                                                \eqno (5)
+                       $$
+
+    we come from (4) to
+                  $$
+         {d\over ds}a^{-s}\big\vert_{s=0}= -\log a=
+              B(0)- \Gamma^\prime (1)
+                                    \eqno (6)
+                      $$
+ the derivative  $\Gamma^\prime (1)$  is the famous
+  Euler constant
+                         $$
+            \Gamma^\prime (1)=
+                          \lim_{n\rightarrow\infty}
+                      \left(
+                      1+{1\over 2}
+                         +{1\over 3}+
+                          {1\over 4}+\dots+
+                          {1\over n}-\log n
+                      \right)
+                                     \eqno (7)
+                              $$
+
+             We see from (2---6) that
+
+                    $$
+            B(0)=
+       \int_0^1 {\exp(-at)-1\over t}dt+
+       \int_1^\infty {\exp(-at)\over t}dt=
+       \Gamma^\prime(1)-\log a
+                                       \eqno (8)
+                   $$
+        This gives representation for $\sint$
+  which is  convenient for small $a$
+                      $$
+      \int_1^\infty {\exp(-at)\over t}dt=
+       \Gamma^\prime(1)-\log a-
+       \int_0^1 {\exp(-at)-1\over t}dt=
+                  $$
+              $$
+       \Gamma^\prime(1)-\log a-
+          \sum_{n=1}^\infty {(-1)^na^n\over n!n}=
+                           \eqno (9)
+                     $$
+                     $$
+     -\log a+\Gamma^\prime(1)+a-{a^2\over 2\cdot 2!}+
+       {a^3\over 3\cdot 3!}-{a^4\over 4\cdot 4!}+\dots
+                     $$
+   (where $\Gamma^\prime(1)$ is nothing but Euler constant $C$:
+
+   \noindent $\Gamma^\prime(1)=C=
+   \lim_{n\rightarrow \infty}
+   (1+{1\over 2}+{1\over 3}+\dots+{1\over n}-\log n)$)
+   Empirically $B(0)$ in (8) can be considered as
+  renormalized value of the integral
+         $$
+         \int_1^\infty t^{s-1}\exp(-at)dt=\dots
+                         \eqno (10)
+              $$
+
+      And naively (which happens often in Quantum Field Theory)
+      one can calculate it using
+   Frullany formula:
+
+                       $$
+                \int {f(at)-f(bt)\over t}dt=f(0)\cdot\log{b\over a}
+                             $$
+
+  The exact result
+  differs  from naive expectation on the Euler constant !!!.
+
+   In fact all this stuff is the reduction of the Seeley formulae
+
+
+
+
+   \bigskip
+
+   I think this very trivial exercise is useful
+
+   shtoby vvesti
+populjarno ideologiju perenormirovok v formulakh Sili (Seleey)
+
+
+
+
+{\bf Remark 2}
+
+Denote $I(a)=\sint$ and
+$K(a)=\sum_{n=1}^\infty {(-1)^na^n\over
+n!n}$
+
+ We note that
+                $$
+            \Gamma^\prime(1)=\int_0^\infty \log t e^{-t}dt=
+\int_0^1 \log t e^{-1}dt+\int_1^\infty \log t e^{-1}dt=
+         K(1)+I(1)
+           $$
+ hence we come to
+ the identity at $a=1$. Helas our formula does not give
+ series for $a=1$...
+
+ {\bf Remark 3} Tut vsjo zatsepleno: Naprimer
+                       $$
+                       \int_0^1 {e^{-at}-1\over at}dt=
+                       \int_0^1 \log t e^{-at}dt
+                       $$
+            The second integral is related with $\Gamma^\prime(1)$.
+
+            
+
+ \bye

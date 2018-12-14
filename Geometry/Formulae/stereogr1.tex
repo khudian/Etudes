@@ -1,0 +1,178 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+\centerline  {\bf  Stereographic projection and around}
+
+\bigskip
+            \centerline {$\cal x$ Twisted stereographic projection}
+
+  Let $S^1$ be a circle $x^2+y^2=1$ and $l$ be $x$-axis, a line $y=0$ in $\E^2$.
+
+   Let $\ac=(a_x,a_y)$ be an arbitrary point on $\S^1$ ($a_x^2+a_y^2=0$), such that $a_x\not=0$.
+
+   For an arbitrary $t$, consider the line $[(t,0),(a,b)]$,
+   i.e. the line which passes through the points  $(t,0)$ on the $x$-axis and the points $\ac=(a_x,a_y)$.
+   This line intersects the circle in general in two points--the point $\ac=(a_x,a_y)$ and the point
+           $S_\ac(t)$ with coordinates $(x_\ac(t),y_\ac(t))$, where
+                    $$
+  S_\ac(t)\colon\quad           x_\ac(t)={2t-a_xt^2-a\over 1-2a_xt+t^2},\qquad  y_\ac(t)={a_y(t^2-1)\over 1-2a_xt+t^2}
+                             \eqno (1)
+                     $$
+
+To derive this formula is a good exercise for students: The coordinates of intersection points $\S-\ac(t)$
+and $\ac$ of circle with line are roots of quadratic equation. Hence applying Vieta Theorem we come to (1).
+
+
+ In the case if $\ac=(0,1)$ or $\ac=(0,-1)$ the map (1) is nothing but stereographic projection:
+              $$
+              x_0(t)={2t\over 1+t^2},\qquad  y_0(t)={t^2-1\over 1+t^2},\quad \hbox{(for the
+              north pole $\ac=(0,1)$)}
+                             \eqno (1a)
+               $$
+
+ Of course it can be considered as "twisted" stereographic projection in the general case (1).
+
+   Curious student notes that the map (1a), as well as (1)
+ is a bijection of projective line $\R P^1$ on the circle $S^1$. In the general case (1)
+ the image of the $\infty$ point is the point $(-a_x,a_y)$ on the circle.
+
+  The more curious student will note that the map (1) establishes one-one correspondence between
+  rational points on the line\footnote{$^1$}{we consider $\infty$ as rational point too} and points on the
+  circle $S^1$ with rational coordinates in the case if coordinates of point $\ac$ are rational:
+   $a_x,a_y\in \Q$. The inverse map to $(1)$ is:
+                          $$
+               t=\S_{\ac'}^{-1}(x,y)={a_xy-a_yx\over y-a_y}
+                     \eqno (2)
+                          $$
+   One can rewrite this map in the following way:
+                     $$
+                      t=\S_{\ac'}^{-1}(x,y)={1+a_xx+a_yy\over x+a_x}
+                            \eqno (2a)
+                     $$
+   {\it What is the difference between these two representations?  Good question}
+
+  The map (2a) has only essential singularity--at the point $(-a_x,a_y)$. The map (2) has non-essential
+  singularity too at the point $(a_x,a_y)$ where line $[(t,0), (x,y)]$ becomes tangent to the circle.
+  (See in details the next section)
+
+
+ Of course the fact that the maps (1),(2) establish one-one correspondence between points of line and circle
+  is not just the consequence of occaisonal beauty of formulae (1,2). The reason of this phenomenon and of the fact
+  that maps (1), (2) are rational is that quadratic polynomial with rational coefficients has both rational roots
+  if one root is rational.
+
+
+
+Now using the map (1) and (2) consider the map:
+                $$
+          \S_{\ac}^{-1}\S_{\ac'}\colon\quad \R P^1\to \R P^1
+                $$
+for two different $\ac',\ac$.
+
+E.g. consider $\ac'=(0,1)$ (usual stereographic projection). Then one can see that
+            $$
+            u(t)=
+   \S_{\ac}^{-1}\S_{\ac'}(t)=\S_{\ac}^{-1}
+          \left(
+          x_0(t),y_0(t)
+          \right)=
+          \S_{\ac}^{-1}
+          \left(
+          {2t\over 1+t^2},  {t^2-1\over 1+t^2}
+          \right)\,.
+          \eqno (3)
+            $$
+    ($\S_{\ac'}=S_0$ is given by equation (1a))
+ Using (2) we come to
+           $$
+   u(t)=
+   \S_{\ac}^{-1}\S_{\ac'}(t)=\S_{\ac}^{-1}\S_{0}(t)={a_xt^2-2a_yt-a_x\over (1-a_y)t^2-(1+a_y)}
+   \eqno (4)
+           $$
+In the case if $a_x,a_y$ are rational ($a_x^2+a_y^2=1$) the map (3a) establishes one-one correspondence between
+rational points of $\R P^1$.
+
+{\it Stop! How comes. Something is wrong: here is ratio of quadratic polynomials. }.
+
+We see that these polynomials must have common divisor. Apply geometry to find it.
+
+  Consider the point of intersection of the line $(\ac,\ac')$ and $x$-axis. Denote this point
+  as $\bf\Delta$.  We have that  $\S_\ac({\bf\Delta})=\ac'$ and vice versa  $\S_\ac'({\bf\Delta})=\ac$
+
+  What about the value of the map $\S_{\ac'}^{-1}$ at the point $\S_\ac({\bf\Delta})=\ac'$, respectively
+
+  what about the value of the map $\S_{\ac}^{-1}$ at the point $\S_\ac({\bf\Delta})=\ac$
+
+
+{\it Answer: Numerator and denominator of the fraction (4) have common divisor $t-\bf\Delta$, where
+  $\ac=\S({\bf\Delta})$}
+$$|$$
+  \centerline{Avoiding not-essential singularities}
+
+
+  Consider a curve $P(x,y)=0$ and a point $(a,b)$ on it. Consider the function
+                  $$
+                F(x,y)={y-b\over x-a}
+                  $$
+
+   The point $(a,b)$ is not-essential singularity for the function $F$,
+   if $P_y(x,y)\not=0$ at the point $(a,b)$ ($F$ is equal to the derivative of the implicit function
+   $y(x)\colon\, P(x,y(x))=0$ at the point $x=a$).
+
+   Due to the Theorem one can find a fraction (polynomial) such that denominator is not zero at $a$
+   (More precisely denominators vanish only at essential singularities. ) E.g. if $P(x,y)=y-x^2$
+   and $b=a^2$ then
+                  $$
+            F(x,y)={y-b\over x-a}={(y-b)(x+a)\over (x-a)(x+a)}={(y-b)(x+a)\over x^2-a^2}=x+a
+                  $$
+This is in accordance with Theorem that the function is defined on the whole algebraic curve,
+hence it is equivalent to the polynomial.
+
+
+Another example:  $F(x,y)=x^2+y^2-1$, $a=0,b=1$. Then
+                    $$
+            F(x,y)={y-a\over x-b}={y-1\over x}={(y-1)x\over  x^2}={(y-1)x\over 1-y^2}={-x\over 1+y}
+                    $$
+This function has only essential singularity at the point $(0,-1)$
+
+\bye

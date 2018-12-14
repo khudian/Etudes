@@ -1,0 +1,171 @@
+
+   \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t  {\tilde}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+
+
+    \centerline {\bf On canonical isomorphisms $TT^*M=T^*TM=T^*T^*M$ }
+
+
+  Let $M$ be manifold. Establish and study canonical isomorphisms $TT^*M=T^*TM=T^*T^*M$
+
+                        Calculations in coordinates
+
+
+It may sounds surprising but calculations in coordinates are transparent and illuminating.
+
+
+ First consider local coordinates on $TM$ and $T^*M$ corresponding to
+local coordinates $(x^i)$ on $M$.
+
+  Local coordinates for $TM$ are $(x^i,t^j)$: every vector $\r\in TM$ is a vector
+  $t^i{\p\over \p x^i}$, $t^i(\r)=dx^i(\r)$.
+         If   $\tilde x^\mu=\tilde x^\mu(x^i)$  are new local coordinates  on $M$
+then
+                  $$
+            d\t x^\mu\left(t^i{\p\over \p x^i}\right)={\p \tilde x^\mu(x^i)\over \p x^i}dx^i
+            \left(t^i{\p\over \p x^i}\right)={\p \tilde x^\mu(x^i)\over \p x^i}t^i\,.
+                  $$
+Hence changing of local coordinates in $TM$ is
+                    $$
+                    (x^i,t^j)\mapsto (\t x^\mu, \t t^\nu),\quad \t x^\mu=\t x^\mu(x^i),\,\,
+                 \tilde t^\mu=\pmatrix{\mu\cr i\cr}t^i,
+                 \eqno (1)
+                    $$
+where we denote ${\p \tilde x^\mu(x^i)\over \p x^i}$ by  $\pmatrix{\mu\cr i\cr}$.
+
+
+
+  Respectively local coordinates for $T^*M$ are $(x^i,p_j)$. For every $1$-form $w\in T^*M$
+  $p_i=w\left({\p\over \p x^i}\right)$. Under changing of local coordinates on $M$
+             $\tilde x^\mu=\tilde x^\mu(x^i)$, coordinates $(p_i)$ change to new coordinates $(p_\mu)$:
+                           $$
+p_\mu=w\left({\p\over \p \t x^\mu}\right)=
+w\left({\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }
+{\p\over \p  x^i}\right)={\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }p_i
+                           $$
+Hence changing of local coordinates in $T^*M$ is
+                        $$
+                        (x^i,p_k)\mapsto (\tilde x^\mu,\tilde p_\nu),
+                        \quad \t x^\mu=\t x^\mu(x^i),\,\,
+                           p_\mu=\pmatrix{i\cr \mu\cr}p_i,
+                           \eqno (2)
+                        $$
+where we denote ${\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }$ by  $\pmatrix{i\cr \mu\cr}$
+
+
+  Now using (1),(2) we define coordinates on the spaces
+$TT^*M$, $T^*TM$ and $T^*T^*M$.
+
+
+The space  $TT^*M$ is tangent space to the space $T^*M$. The local coordinates on $TT^*M$
+corresponding to local coordinates $(x^i,p_j)$
+on $T^*M$ are coordinates $(x^i,p_j;\xi^k,\rho_m)$; $\xi^k=dx^i(\r),\rho_m=dp_m(\r)$.
+Under changing of local coordinates  $(x^i)$ to coordinates $\t x^\mu=\tilde x^\mu(x^i)$
+coordinates $(\xi^i)$ and $(\rho_m)$ transform to new coordinates $(\t \xi^\mu)$ and $(\t \rho_\nu)$ respectively.
+It follows from (1) that
+                       $$
+                    \t\xi^\mu={\p \t x^\mu\over \p x^i}\xi^i+{\p \t x^\mu\over \p p_i}\rho_i=\pmatrix{\mu\cr i\cr}\xi^i
+                    \eqno (3)
+                       $$
+  because  ${\p \t x^\mu\over \p p_i}=0$.
+  For transformation of coordinates $(\rho_m)$ calculations are longer:
+            $$
+  \t\rho_\mu={\p \t p_\mu\over \p x^i}\xi^i+{\p \t p_\mu\over \p p_i}\rho_i
+            $$
+We see that   ${\p \t p_\mu\over \p p_i}={\p\over \p p_i}
+\left(\t p_\mu=\pmatrix {k\cr \mu\cr}p_k\right)=\pmatrix {i\cr \mu\cr}$ and
+                           $$
+{\p \t p_\mu\over \p x^i}={\p\over \p x^i}\left(\t p_\mu=\pmatrix {k\cr \mu\cr}p_k\right)=
+ \pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k,
+                           $$
+where we denote as always by  $\pmatrix {\nu\cr i\cr}$ the partial derivative ${\p \t x^\mu\over \p x^i}$
+and by $\pmatrix {k\cr\nu \mu\cr}$ the partial derivative ${\p^2 x^k\over \p \t x^\nu \p \t x^\mu}$.
+The summation over repeated indices is assumed.  Finally we come to
+                  $$
+  \t\rho_\mu={\p \t p_\mu\over \p x^i}\xi^i+{\p \t p_\mu\over \p p_i}\rho_i=
+  \xi^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k+\pmatrix {i\cr \mu\cr}\rho_i
+  \eqno (4)
+                  $$
+
+
+     Summarising:
+
+    {\bf Proposition 1} {\it To local coordinates $(x^i)$ on $M$
+    one can naturally assign local coordinates on $TT^*M$  $(x^i,p_j;\xi^k,\rho_m)$ such that
+    under changing of coordinates $(x^i)\mapsto (\t x^\mu)$ on $M$ these coordinates transform in the following way}
+                                $$
+            \t p_\mu=\pmatrix{j\cr\mu\cr}p_j, \quad
+            \t\xi^\mu=\pmatrix{\mu\cr i\cr}\xi^i,\quad
+            \t\rho_\mu=
+            \xi^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k+\pmatrix {i\cr \mu\cr}\rho_i
+            \eqno (*)
+                                $$
+\bigskip
+Now consider coordinates  on $T^*TM$ and their transformation rules.
+ If $(x,t)$ coordinates on $TM$ (see (1)) and $(x,t,\pi,\tau)$ corresponding coordinates on $T^*TM$
+ ($\pi_k=w\left({\p\over \p x^k}\right)$,
+ $\tau_m=w\left({\p\over \p t^m}\right)$) then according to (2)
+ under changing of coordinates $(x^i)\mapsto (\t x^\mu)$, the coordinates $(\pi_m)$ transform to coordinates
+ $(\t \pi_\mu)$, the coordinates $(\tau_k)$ transform to coordinates
+ $(\t \tau_\nu)$ such that
+                  $$
+\t\pi_\mu={\p x^i\over \p \t x^\mu}\pi_i+{\p t^k\over \p \t x^\mu}\tau_k,\,\,\,\,
+\t\tau_\nu={\p x^i\over \p \t t^\nu}\pi_i+{\p t^k\over \p \t t^\nu}\tau_k
+                  $$
+Since ${\p x^i\over \p \t t^\nu}=0$
+and  ${\p t^k\over \p \t t^\nu}={\p x^k\over \p \t x^\mu}$
+then $$\t\tau_\nu=\pmatrix {k\cr\nu}\tau_k$$.  For $\t\pi_\mu$ we have
+                  $$
+\t\pi_\mu=\pmatrix {i\cr\mu}\pi_i+{\p\over \p \t x^\mu}\left({\p x^k\over \p\t x^\nu}t^\nu\right)\tau_k=
+\pmatrix {i\cr\mu}\pi_i+\pmatrix {k\cr\mu\nu}\pmatrix {\nu\cr i}t^i\tau_k\,.
+                  $$
+
+     Summarising:
+
+    {\bf Proposition 2} {\it To local coordinates $(x^i)$ on $M$
+    one can naturally assign local coordinates on $T^*TM$  $(x^i,t^j;\pi_k,\tau_j)$ such that
+    under changing of coordinates $(x^i)\mapsto (\t x^\mu)$ on $M$ these coordinates transform in the following way}
+                                $$
+            \t \tau_\mu=\pmatrix{j\cr\mu\cr}\tau_j, \quad
+            \t t^\mu=\pmatrix{\mu\cr i\cr}t^i,\quad
+            \t\pi_\mu=
+            t^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}\tau_k+\pmatrix {i\cr \mu\cr}\pi_i
+            \eqno (**)
+                                $$
+
+
+Comparing  Propositions 1 and 2 we see that
+  the map
+                         $$
+           t^i=\xi^i,\,\,\, \tau_j=p_j,\,\,\, \pi_k=\rho_k
+                      $$
+             establishes isomorphism between the spaces $T^*TM$ and $TT^*M$ which does not depend on
+             the choice of local coordinates.
+In fact one can consider the set of maps
+
+
+\bye

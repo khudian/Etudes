@@ -1,0 +1,696 @@
+
+   \magnification=1200
+   \baselineskip=17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\M {{\bf M}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+%\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\g{{\bf g}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def\A{{\bf A}}
+\def\B{{\bf B}}
+\def\pt{{\bf p}}
+
+\centerline {\bf Conic sections and Kepler law. 
+Newton---Lagrange----A.Giventale}
+
+
+\m
+
+ 
+{\it  This etude is written on the base of
+my conversations with Alexander Giventale in
+   May 2014, and his letters to me,  
+  in April 2017
+}
+      
+\m
+
+\centerline {${\cal x}1$ \bf Introduction}
+
+Conic section is an intersection of 
+plane with surface of cone.
+Let $M\colon k^2x^2+k^2y^2=z^2$ be 
+conic surface, and let $\pi\colon Ax+By+Cz=1$
+be a plane\footnote{$^{3}$}{we do not 
+conisder degenerate case when plane 
+intersects origin.}
+
+Conic section
+        $$
+C\colon \cases
+     {
+        k^2x^2+k^2y^2=z^2\cr
+         Ax+By+Cz=1\cr
+       }
+     \eqno (1.0)
+        $$ 
+          $$
+\hbox {{\it 1.  Conic sections are ellipses or parabolas or hyperbolas}}\,,
+       \eqno (1.1)
+       $$
+Kepler Law: 
+         $$
+    \matrix
+     {
+\hbox {trajectories of particle in
+gravitational field are conic section}\cr
+    \hbox{ In particular
+oribits of planets are ellipses}\cr
+          }
+           \eqno (1.2)
+       $$
+These two statements  are common place for everybody.
+
+   Almost everybody who has learnt a bit of higher
+mathematics knows how to prove statement (1.1) 
+(exercise in Analytical Geometry).
+Everybody who learnt little bit calculus knows
+that using the gravitational law, that 
+              $$
+F=\gamma{mM_{\rm sun}\over R^2}\,
+  \eqno (1.3)
+              $$   
+one can prove statement (1.2), showing that  
+ the solution of differential equation
+      $$
+  {d^2\over dt^2}\R={{\bf F}\over m}=
+     -\gamma{M_{\rm sun}\R\over R^3}\,,
+      \eqno (1.3a)
+           $$
+is a conic section($m$ is a mass of planet, 
+and $M_{\rm sun}$ is Solar mass).
+Standard proofs
+are based on calculus: solving equation
+(1.3a) in polar coordinates   
+and calculating the
+integral  we come to  conic section
+\footnote{$^{1)}$}
+{Usually equation (1.3) is called Newton Graviational
+Law, and equation (3a) Newton Second law. 
+There is an alternative point of view that
+Robert Hook formulated statement (1.3) 
+in the letter to Newton,
+and Newton who invented Calculus, 
+deduced the Kepler law, statement (2),
+solving differential equation (1.3a).}
+(see any book in Theoretical Mechanics or Appendix 1
+in the end of this text).
+
+
+  Here we discuss how to come to the statement
+(1.2) avoiding caclulations of integras.
+
+Instead conic section (1.0) one can consider
+its orthogonal projection on the plane
+   $z=0$. For example if
+        $$
+C\colon \cases
+     {
+        k^2x^2+k^2y^2=z^2\cr
+         Ax+By+z=1\cr
+       } 
+\hbox {then its orthogonal projection}\,\,
+C_{proj}\colon \cases
+     {
+        k^2x^2+k^2y^2=(1-Ax-By)^2\cr
+         z=0\cr
+       } 
+         \eqno (1.0)
+         $$ 
+
+The following statement which is almost 
+evident plays cruciar role in this etude:
+        $$
+\hbox{{\it orthogonal projections of conic sections
+on the plane is also a conic sections.}}
+\eqno (4)
+        $$
+  In fact orbits of planets are these projections.... 
+
+\bigskip
+
+
+
+\centerline {${\cal x}$2}
+
+
+
+{
+  This etude has the following history.
+Few months ago I was preparing the new lecture for 
+Geometry students about conic sections.  
+I had a task to explain
+that sections of conic surface with plane are conic sections
+  (ellipses, parabolas or hyperbolas).    
+The problem was 
+ that I could not  find a beautiful and 
+short explanation
+of the statement (1) without using extracurricular 
+material.  Another trouble was that at that time I had
+ serious problems with eyes,
+and my  access to books was very restricted.
+Finally I prepared the following  explanation:
+Instead statement (1) I proved to students
+the statement (4), then I deduced  
+statement (1) as the corollary of the statement (4).
+Honeslty  considerations looked very bulky, 
+I did not like them, but I had no choice.   
+ 
+   I never forget early morning 30 March.  
+ In five  hours the lecture will begin, 
+where I have to explain to students the statement
+(1) on conic sections.
+I feel me very unhappy and unsatisfied with  
+the way how I want to deliver the lecture, 
+since the geometry of my considerations on the lecture
+look very vague.
+ Suddenly I ask me a question:  
+  where are the foci of the projected conic section? 
+(The foci of initial conic sections are at 
+the points  where
+ Dandellen spheres touch the plane which sects the conic surface.)  
+   When the question was put, 
+the answer come almost immediately:
+  It is the vertex of the cone 
+that is one of  the foci of projected
+  conic section. This was crucial:
+I immediately remembered, the May 2014.  
+
+
+{\tt I am in the  
+ Davis University
+on 80 years celebration of my teacher 
+
+ Albert S. Schwarz.
+I meet there Alexander Givental. Alexander 
+
+Givental is famous mathematician, 
+but he is also
+very much  engaged  in 
+
+teaching mathematics to keeds
+(see his homepage in Berkeley University).
+
+During conference 
+dinner we are sharing the same table, and Alexander
+
+is explaining me some beautiful 
+properties of conic section.
+
+In  particular he is telling  
+me  the sentence: 
+
+ if you consider  a projection of
+ellipse on the horisontal plane, 
+
+you come naturally to
+Kepler law...
+}
+ 
+  {\sl Recalling this phraze in 
+the morning 30 March 2017,
+ I immediately realised the geometrical meaning
+of my construction (1.4), which I made preparing the lecture, and I understood what Alexander Givental wanted
+to tell me three years ago.   
+} 
+
+
+   Next day  I contacted
+Alexander iby e-mail. He immediately sent me  
+the detailed answer 
+%on my question,
+%article [3], and the 
+%letter about Lagrange considerations; all the material
+%that this etude is based on.
+
+   First, Alexander sent me the article [3]. 
+In this article he  gives detailed
+geometrical explanation why trajectories
+of planets are conic section, and he does not use
+the caclulus. You can find this article 
+on the homepage
+of  A.Givental. Thirty years ago, an abstract of this 
+article was included by V. I. Arnold into 
+his joint with V. V. Kozlov and A. I. Neishtadt 
+survey of classical mechanics [2]. 
+
+   In this letter  A. Givental also told me that
+Alain Chensiner noted him that his (A.G.) 
+considerations are very close to Lagrange's proof
+(see the paper [1]), and Alexander sent me the 
+Lagrange article [1], and the letter
+where he explained this. 
+
+I do not want here to retell the work [3]
+of A.Givental. I just 
+try based on the letter of A.Givental
+to  retell the simple proof of
+statement (1.2) avoiding calculus.
+This construction can be traced to the work [1]
+of Lagrange.  Of course the work [3]
+contains complete picture of these considerations.
+
+
+
+
+My modest contribution to this etude 
+is related with the fact that trying
+to find a  simple proof of classical statement
+(1.1), I realised the importance
+of the statement (4),a nd on the base of
+it I try to retell the constuctions
+of the papers [1] and [3].
+ 
+\bigskip
+
+\centerline {${\cal x}3$ \bf  Simple exlanation of
+  Kepler Law.}
+
+
+
+
+
+Consider differential equation (1.3a)
+of particle in gravitational field
+                    $$
+              {\buildrel ..\over \R}=
+            -{k\R\over R^3}\,.
+                      \eqno (3.1)
+                        $$
+let $\R=\R(t)$ be a solution of this equation.
+In Appendix we explicitly solved the equation
+and showed that it is conic section.
+Now we will do something much simpler.
+Without calculating explicitly integrals 
+(see (App1.9), (App1.9a)) we just will show that
+   $\R(t)$ is a conic section, that is it obeys
+   equation (App1.10).
+Further we will use considerations from Appendix which has nothing to do with calculus
+(equations (App1.1)---(App1.8))
+
+
+The preservation of angular momentum
+implies that the solution $\R=\R(t)$ is a curve in 
+the plane. Choose Cartesian coordinates
+$x,y,z$ such that
+   $$
+ \R(t)=x(t)\e_x+y(t)\e_z
+\eqno (3.2)
+    $$, and 
+angular momentum
+      $$
+\M=(x(t)\dot y(t)-y(t)\dot x(t))\e_z=\mu\e_z\,.
+    \eqno (3.3)
+      $$
+(see for details Appendix).
+
+Choose an arbitrary solution of equation (3.1)
+Let  $x_{_0}(t)$, $y=y_{_0}(t)$ be components (3.2) 
+of this solution of equation (3.1):
+           $$
+  \pmatrix{{\buildrel ..\over x_{_0}(t)}\cr 
+  {\buildrel ..\over y_{_{0}}(t)}\cr}=
+      -{k\over\left(x^2_{_0}(t)+
+     y^2_{_0}(t)\right)^{3\over 2}}
+\pmatrix{x_{_0}(t)\cr y_{_0}(t)\cr}\,.
+     \eqno (3.4) 
+      $$
+Now consider the pair of differential equationts
+on function $f=f(t)$
+
+1) homogeneous linear differential equation
+     $$
+{d^2 f\over dt^2}=-k{f\over r^3_{_0}(t)}\,,
+\eqno (3.5)
+     $$ 
+and  non-homogeneous linear differential equation
+             $$
+{d^2 f\over dt^2}=-k{f\over r^3_{_0}(t)}+
+    {\mu^2\over r^3_{_0}(t)}\,,
+    \eqno (3.5a)
+             $$
+where function $\r_{_0}(t)$ is defined by
+solutions $x_{_0}(t)$, $y_{_0}(t)$ (3.4):
+           $$
+r_{_0}(t)=\sqrt{x^2_{_0}(t)+y^2_{_0}(t)}\,.
+           $$
+
+We see that $x_{_0}(t)$, $y_{_0}(t)$
+are two independent solutions of second
+order homogeneous equation
+(we suppose that angular momentum 
+$\mu=x\dot y-y\dot x$ does not vanish).
+
+Let $g=g_0(t)$ be 
+an  arbiitrary solution of linear 
+not homogeneous equation (3.5a).
+Then  the space of all  solutions
+of  equation (3.5a) is
+         $$
+f(t)=Ax_{_0}(t)+By_{_0}(t)+g_0(t)
+     \eqno (3.6)
+         $$
+
+
+also that differential equation (3.1) implies 
+that the functio
+                   $$
+             r_0(t)=\sqrt{x_0^2(t)+y_0^2(t)}
+                   $$
+also obeys the differential equation
+                    $$
+    {d^2 r\over dt^2}=-{k\over }+{\mu\over r^3}\,.
+                     \eqno (3.5)
+                    $$
+(see formulae )
+We consider the solution  $x_0(t), y_0(t)$
+of the equation (1)
+Consider the function 
+            $$
+   F\colon\,, F(t)=\left(x_0^2(t)+y_0^2(t)\right)^{-{3\over 2}}\,.
+            $$
+This function is defined by the solution of the equation (1).
+$r(t)=\sqrt{x^2(t)+y^2(t)}$.
+
+Consider also the following two linear differential equations
+(homogeneous and non-homogeneous)
+                 $$
+  {\buildrel ..\over u}=-kF_0 u\,,\qquad
+     {\buildrel ..\over u}=-kF_0 u+CF_0\,.
+                 $$
+ Solutions of the first equation form $2$-dimensional linear space,
+solutions of the second equation form $2$-dimensional
+ affine space.  The improtant observation is that
+
+
+  One can see that equation (1) implies that
+for the function $r(t)$ 
+         $$
+{d^2r(t)\over dt^2}=
+          {d^2\over dt^2}
+      \left(\sqrt{x^2(t)+y^2(t)}\right)
+         = {d\over dt}
+      \left(
+    x(t){dx(t)\over dt}+
+    y(t){dy(t)\over dt}
+         \over 
+\sqrt{x^2(t)+y^2(t)}
+      \right)=
+         $$
+           $$
+         {
+    x(t){d^2x(t)\over dt^2}+
+    y(t){d^2y(t)\over dt^2}
+         \over 
+\sqrt{x^2(t)+y^2(t)}
+            }+
+       \left(
+    \left({dx(t)\over dt}\right)^2+
+    \left({dy(t)\over dt}\right)^2
+         \over 
+\sqrt{x^2(t)+y^2(t)}
+      \right)-
+         \left(
+    x(t){dx(t)\over dt}+
+    y(t){dy(t)\over dt}
+         \over 
+\sqrt{x^2(t)+y^2(t)}
+      \right)
+           $$
+
+\bigskip
+
+   \centerline {\bf Appenidix 1}
+
+
+{\it In this Appnedix we will give
+the standard proof based on the calculus, that
+ trajectory of particle in gravitational filed is
+a conic section}
+
+  Let $\R=\R(t)$ is a solution of differential equation
+(1.3a):
+      $$
+  {d^2\over dt^2}\R={{\bf F}\over m}=
+     -\gamma{M_{\rm sun}\R\over R^3}\,,
+      \eqno (Ap1.1)
+           $$
+ This implies that angular momentum
+      $$
+\M=m\dot \R\times\R
+      \eqno (App1.2)
+        $$
+is conserved: 
+$\dot M=m\dot\R\times \dot \R+
+m{\buildrel ..\over\R }\times\R=
+0+\left( 
+ -\gamma{mM_{\rm sun}\R\over R^3}
+\right)\times\R=0$.
+Thus vector $\R(t)$ is orthogonal to the vector
+$\M$.
+Consider Cartesian coordinates $x,y,z$
+such that $\M$ is directed along axis $OZ$,
+and $\R(t)=x(t)\e_x+y(t)\e_y$ belongs to the plane
+$OXY$:
+          $$
+\R(t)=x(t)\e_x+y(t)\e_y\,,\quad
+ \M(t)=\mu\e_z\,, (\mu\,\, \hbox{is constant})\,.
+           \eqno (App1.5)
+           $$  
+Let $\varphi,r$ be polar coordinates
+in the plane $OXY$, $x=r\cos\varphi,y=r\sin\varphi$.
+Then equation (1.3a) and (1.5) imply that
+        $$
+\mu=m(x\dot y-y\dot x)=
+r\cos\varphi(\dot r\sin\varphi+r\dot\varphi\cos\varphi)-
+r\sin\varphi(\dot r\cos\varphi-r\dot\varphi\sin\varphi)=
+  mr^2\dot\varphi\,,
+        (App1.6a)
+        $$
+and
+       $$
+ {\buildrel ..\over r}={d\over dt}\dot r=
+  {d\over dt}\left({x\dot x+y\dot y\over r}\right)=
+{x{\buildrel ..\over x}+y{\buildrel ..\over y}\over r}+
+    {\dot x^2+\dot y^2\over r}-
+    {\left(x\dot x+y\dot y\right)^2\over r^3}=
+       $$
+      $$
+{x\left(-\gamma{M_{\rm sun}x\over r^3}\right)+
+y\left(-\gamma{M_{\rm sun}y\over r^3}\right)\over r}+
+{(\dot x^2+\dot y^2)(x^2+y^2)-
+ (x\dot x+y\dot y)^2\over r^3}
+        =
+        $$
+       $$
+-\gamma{M_{\rm sun}\over r^2}+
+{(x\dot y-y\dot x)^2\over r^3}=
+-\gamma{M_{sun}\over r^2}+{\mu^2\over m^2r^3}\,,
+\eqno(App1.7a)          
+       $$
+i.e.
+      $$
+{d\over dt}\left({\dot r^2\over 2}\right)=
+\dot r{\buildrel ..\over r}=
+-\gamma{M_{\rm sun}\over r^2}\dot r+
+{\mu^2\over m^2 r^3}\dot r=
+   {d\over dt}\left(\gamma{M\over r}-
+        {\mu^2\over 2m^2r^2}\right)\,.
+      $$
+Thus we come to integral of motion:
+     $$
+{d\over dt}\left({m\dot r^2\over 2}-
+\gamma{mM_{\rm sun}\over r}+
+{\mu^2\over 2mr^2}\right)=0
+ \Rightarrow
+{m\dot r^2\over 2}-
+\gamma{mM_{\rm sun}\over r}+
+{\mu^2\over 2mr^2}=E\,.
+\eqno (App1.8) 
+     $$
+We come to first order differential equations
+\footnote{$^{2)}$}{
+     $E={m\dot r^2\over 2}-
+\gamma{mM_{\rm sun}\over r}+
+{\mu^2\over 2mr^2}$ is energy, 
+${m\dot r^2\over 2}$ is kinetik enery, and
+  $U_{\rm eff}=-
+\gamma{mM_{\rm sun}\over r}+
+{\mu^2\over 2mr^2}$ is effective potential energy}:
+            $$
+\cases
+               {
+ {dr(t)\over dt}=\sqrt {2\over m}\sqrt{
+  E+\gamma{mM_{\rm}\over r}-{\mu^2\over 2mr^2}}\cr
+   {d\varphi(t)\over dt}={\mu\over mr^2}\cr   
+              }\Rightarrow
+   {d\varphi\over dr}=
+        {
+{\mu\over r^2}\over
+\sqrt{
+  2mE+\gamma{2mM_{\rm sun}\over r}-{\mu^2\over r^2}}
+       }
+        \eqno (App1.8a)
+            $$
+thus
+        $$
+\varphi=\int
+           {
+{\mu dr\over r^2}\over
+\sqrt{
+  2mE+\gamma{2m^2M_{\rm sun}\over r}-{\mu^2\over r^2}}
+       }
+         \eqno (App1.9)
+        $$
+Integrating we come to 
+$$\int
+           {
+{\mu dr\over r^2}\over
+\sqrt{
+  2mE+\gamma{2m^2M_{\rm sun}\over r}-{\mu^2\over r^2}}\,,
+       }=
+       -\int 
+         {\mu  d\left({1\over r}\right)\over
+\sqrt{
+  \gamma^2{m^2M^2_{\rm sun}\over \mu^2}+2mE-
+\mu^2\left({1\over r}-
+    \gamma{m^2M_{\rm sun}\over \mu^2}\right)^2
+             }
+       }=
+$$
+      $$
+{\rm arcsin\,}
+   \left(
+     {\mu\over 
+         \sqrt{
+   \gamma^2{m^2M^2_{\rm sun}\over \mu^2}+2mE}
+           }
+       \right)
+    \left({1\over r}-
+    \gamma{m^2M_{\rm sun}\over \mu^2}\right)\,
+          \eqno (App1.9a)
+      $$ 
+i.e.
+     $$
+\sin\varphi=
+     {\mu\over 
+         \sqrt{
+   \gamma^2{m^2M^2_{\rm sun}\over \mu^2}+2mE}
+           }
+    \left({1\over r}-
+    \gamma{m^2M_{\rm sun}\over \mu^2}\right)=
+{1\over \sqrt{1+{2E\mu^2\over \gamma^2M^2_{\rm sun}m^3}}}
+        \left(
+          {\mu^2\over\gamma m^2 M_{\rm sun}}
+             {1\over r}-1
+        \right)
+\eqno (App1.9b)
+     $$
+Introduce notations:
+         $$
+e=\sqrt{1+{2E\mu^2\over \gamma^2M^2_{\rm sun}m^3}}\,,
+   k={\mu^2\over\gamma m^2 M_{\rm sun}}\,,
+          $$
+then (App1.9b) has appearance:
+        $$
+e\sin\varphi={k\over r}-1
+  \eqno (App1.10)
+        $$
+This is conic section with excentricet $\vare$,
+and one of the foci at the origin.
+
+{\bf Remark} {\tt in fact it has to be $\cos\varphi$,
+not $\sin\varphi$}
+
+
+
+
+[1] Lagrange  {\it DES PERTURBATIONS DES COMETES.}---
+            SECTION DDEUXIEME.  Integrations des equations differentielles
+de l'orbite non-altere. pp.419---430,  1785
+
+
+[2] V. I. Arnold, V. V. Kozlov, A. I. Neishtadt
+{\it  Mathematical aspects of classical 
+and celestial mechanics.}
+ Dynamical systems – III 
+(Encyclopaedia of Mathematical Sciences), 
+Springer, 1987.
+
+
+
+[3] Alexander Givental 
+{\it Kepler’s Laws and Conic Sections}
+  Arnold Mathematical Journal March 2016, 
+Volume 2, Issue 1, pp 139–148
+
+see in homepage of the author:
+math.berkeley.edu$\backslash$
+$~$
+giventh$\backslash$
+kepler$\_$091615.pdf
+
+
+\bye
+
+://math.berkeley.edu/~giventh/kepler_091615.pdf
+

@@ -1,0 +1,629 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+           \centerline {\bf Geometry of differential operators on $\R$}
+
+Let
+        $$
+    A=t^\delta
+           \underbrace{
+           \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+b\hat w^2 {\p^{n-1}\over \p x^{n-1}}
+          \right)}_
+          {\hbox{terms of the order $n+1$}}+
+          $$
+          $$
+          +
+          \underbrace{\left(
+    p{\p^{n}\over \p x^{n}}
+        +c\hat w {\p^{n-1}\over \p x^{n-1}}
+          +\dots\right)}_{{\hbox{terms of the order $n$}}}+
+         \underbrace{
+                \left(
+    q{\p ^{n}\over \p x^{n-1}}
+        +\dots\right)
+        }_{{\hbox{terms of the order $n-1$}}}+\dots
+        $$
+be differential operator of the order $n+1$ and of the weight $\delta$ on the algebra $\cal F$
+of densities on $\R$.  Here $\hat w =t{\p\over \p t}$, $a=a(x),\dots$
+
+E.g. if $\Psi(x,t)=\varphi(x)t^5$ is a density $\varphi(x)|dx|^5$ of the weight $5$,
+and
+
+\noindent $A=t^{-3}\left({\p^3\over \p x^3}+
+    p(x){\p^2\over \p x^2}
+        +b(x)\hat w
+        {\p\over \p x}\right)$
+then
+$$
+ A\Psi=t^{-3}\left(
+ {\p^3\Psi\over \p x^3}+ p(t){\p^2\Psi\over \p x^2}+
+ b(x)t{\p\over \p t}
+ {\p\over \p x}
+ \right)=
+ \left({d^3\varphi\over dx^3}+p(t){d^2\varphi\over dx^2}+
+ 4b(x){d\varphi\over dx}\right)|dx|^2\,.
+ $$
+The canonical scalar product in the space $\cal F$ is defined by condition that
+for densities $\Psi=\Psi(x)t^\lambda$ and $\Phi=\Phi(x)t^\mu$
+            $$
+          \langle \Psi, \Phi
+          \rangle=\cases
+          {0\,\,\hbox {if $\lambda+\mu\not=1$}\cr
+ \int\Psi(x)\Phi(x)dx \,\,\,\,\hbox {if $\lambda+\mu\not=1$}\cr
+          }\,.
+            $$
+
+ Thus we have the conjugation of derivatives:
+           $$
+     x^\dagger=x,  \left({\p\over \p x}\right)^\dagger=-{\p\over \p x}, t^\dagger=t,
+    \left({\p\over \p t}\right)^\dagger={2\over t}-{\p\over \p t},
+           $$
+In particular:
+            $$
+   \hat w^\dagger=\left(t{\over d\p }\right)^\dagger=1-\left(t{\p\over \p t}\right)^\dagger=1-\hat w^+
+            $$
+            and
+            $$
+        \hat w^\dagger
+         (t^\sigma \Psi)=
+         t^\sigma
+         (1-\sigma-\hat w)
+         \Psi\,.
+            $$
+
+ {$\cal x$1. \sl Subprincipal symbol}
+
+\medskip
+
+Now we find the restrictions on operator $A$ posed by the condition that it is self conjugate operator (up to  sign),
+i.e. $$
+A^\dagger=(-1)^{n+1} A
+   $$,
+Then we discuss the geometrical nature of coefficients.
+
+\noindent We check the condition of self-conjugality  step by step for lower and lower derivatives
+\footnote{$^1$}{All that we will do here could be compared with our calculations with T.Voronov for second order operators. The motto is that we descend from higher derivatives to lower: for $n$-th order operators
+ the terms of $n$-th order behave like the term of second order of Laplacian,
+ the terms of $n-1$-th order behave like the term of first order of Laplacian,
+ the terms of $n-2$-th order behave like the term of zeroth order of Laplacian.}.
+
+In this paragraph we consider only the terms which are proportional to derivatives of the order $n+1$ and $n$
+ with respect to $x$:
+           $$
+       A=t^\delta\
+          \left(
+    s{\p^{n+1}\over p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+
+    p{\p^{n}\over \p x^{n}}
+               +
+            \dots
+          \right)\,,
+           $$
+             $$
+           A^\dagger=
+             \left[
+            t^\delta\
+          \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+
+    p{\p^{n}\over \p x^{n}}
+               +
+            \dots
+          \right)
+          \right]^\dagger=
+             $$
+        $$
+        (-1)^{n+1}
+    t^\delta {\p^{n+1}\over \p x^{n+1}}
+    \left(s(x) \,\cdot\,\right)+
+    \hat w^\dagger\left[t^\delta (-1)^n{\p^{n}\over \p x^{n}} \left(a(x) \,\cdot\,\right)\right]+
+    t^\delta (-1)^n{\p^{n}\over \p x^{n}} \left(p(x) \,\cdot\,\right)+\dots=
+        $$
+        $$
+=   (-1)^{n+1}
+            t^\delta s{\p^{n+1}\over \p x^{n+1}}
+    +
+            (-1)^nt^\delta
+            \left(-a\hat w
+            -(n+1) {ds\over dx}
+            +(1-\delta) a+
+             p\right){\p^{n}\over \p x^{n}}
+        +\dots
+                $$
+Hence
+                  $$
+      0=  (-1)^{n+1}A^\dagger-A=
+                   $$
+                   $$
+       t^\delta s{\p ^{n+1}\over \p x^{n+1}}
+                  +
+            t^\delta
+            \left(a\hat w
+            +(n+1) {ds\over dx}
+            -(1-\delta) a-
+             p\right){d^{n}\over dx^{n}}
+             -t^\delta\
+          \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+
+    p{\p^{n}\over \p x^{n}}
+               +
+            \dots
+          \right)
+                  $$
+                  $$
+      =t^\delta
+            \left((n+1) {ds\over dx}
+            +(\delta-1) a-2p
+               \right){\p^{n}\over \p x^{n}}+\dots\,.
+                  $$
+Hence we come to the condition:
+               $$
+               {n+1\over 2}{ds\over dx}
+            +(\delta-1) a-2p=0\,,,\,{\rm i.e.}\,\, p={n+1\over 2}\left({ds\over dx}\right)+
+{1\over 2}(1-\delta)\,.
+               $$
+We see that self-conjugate operator $A$ in the terms proportional to the order $n+1$ and $n$ looks like
+
+         $$
+       A=t^\delta
+          \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+
+    p{\p^{n}\over \p x^{n}}
+               +
+            \dots
+          \right)=
+          $$
+          $$
+          A=t^\delta
+    s{\p^{n+1}\over \p x^{n+1}}
+        +{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+1-\delta)a(x)
+               \right) {\p^{n}\over \p x^{n}}
+            \dots
+          $$
+Now we study how transform $s$ and $a$ under coordinate transformation.
+
+\medskip
+
+
+{$\cal x$2. \sl Geometric meaning of Subprincipal symbol}
+
+\medskip
+
+  We consider how $a$ transforms with respect to an arbitrary coordinate transformation.
+
+
+
+Consider arbitrary coordinate transformation: $(x,t)\mapsto (y,\tau)$\footnote{$^1$}
+{it would be enough to fix the weight of the densities, i.e.
+consider the action of the operator on the subspace
+${\cal F}_\lambda$ of the densitites of the fixed weight $\lambda$ and consider only coordinate transformations $y=y(x)$ but we prefer to consider the general case.}.
+         :
+                $$
+\cases {x=x(y)\cr t=x_y\tau}\,,\, \cases {y=y(x)\cr \tau=y_xt}
+              $$
+
+Then to calculate how operator $A$ will transform we note that $t=x_y\tau$,
+         $$
+      \hat w_{(t)}=t{\p\over \p t}=t=x_y\tau {\p \tau\over \p t}{\p\over \p\tau}=
+      x_y\tau y_x {\p\over \p\tau}=\tau {\p\over \p\tau}=\hat w_{(\tau)}
+         $$
+and
+             $$
+       {\p\over \p x}=y_x{\p \over \p y}+{\p\tau\over \p x}{\p \over \p \tau}=
+         y_x{\p \over \p y}+ty_{xx}{\p \over \p \tau}=
+         y_x{\p \over \p y}+{y_{xx}\over y_x}w_{(\tau)}
+             $$
+Little bit work and we come to the following formula:
+                   $$
+   {\p^k\over \p x^k}=\left(y_x{\p \over \p y}+{y_{xx}\over y_x}\hat w_{(\tau)}\right)^k=
+             $$
+             $$
+             y_x^k{\p^k\over \p y^k}+
+   \left((1+2+\dots+(k-1))y_x^{k-2}y_{xx}+k\left({y_{xx}\over y_x}\right)y_x^{k-2}y_{xx}\hat w\right)
+   {\p^{k-1}\over \p y^{k-1}}+\dots=
+                   $$
+                   $$
+                   y_x^k{\p^{k}\over \p y^{k}}+
+               \left({k(k-1)\over 2}+k\hat w\right)y_x^{k-2}y_{xx}
+               {\p^{k-1}\over \p y^{k-1}}+\dots\,.
+                   $$
+ (This can be easily calculated by induction.)
+
+           Now we are ready to calculate transformation of coefficients:
+                  $$
+                  A=t^\delta
+    s{\p ^{n+1}\over \p x^{n+1}}
+        +t^\delta{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right) {\p^{n}\over \p x^{n}}+
+            \dots=
+                  $$
+                  $$
+                  \tau^\delta x_y^\delta
+                           s
+    \left(y_x {\p\over \p y}+{y_{xx}\over y_x}\hat w\right)^{n+1}
+        +{1\over 2}
+        \tau^\delta x_y^\delta
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right) \left(y_x {\p\over \p y}+{y_{xx}\over y_x}\hat w\right)^n+
+            \dots=
+                  $$
+                  $$
+                 \tau^\delta y_x^{-\delta}
+                           s
+                          \left(
+                          y_x^{n+1}{\p ^{n+1}\over \p y^{n+1}}+
+                          \left({n(n+1)\over 2}+(n+1)\hat w\right)y_{xx}y^{n-1}_x
+                          {\p ^{n}\over \p y^{n}}
+                          \right)
+        +
+        $$
+        $$
+        +{1\over 2}
+        \tau^\delta y_x^{-\delta}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right)
+               y^n_x {\p^n\over \p y^n}+
+            \dots
+                  $$
+Dots means terms which are of the order $\leq n-1$ with respect to variables $x,y$
+
+Denote by $\tilde s=y_x^{n+1-\delta}s$ (principal symbol in new coordinates).
+We come to 
+              $$
+    A=                 \tau^\delta
+                          \left(
+                          \tilde s{\p ^{n+1}\over \p y^{n+1}}+
+                          \left({n(n+1)\over 2}+(n+1)\hat w\right)\tilde sy_{xx}y^{-2}_x
+                          {\p ^{n}\over \p y^{n}}
+                          \right)+
+                        $$
+                         $$
+                                                {1\over 2}
+        \tau^\delta
+        \left(
+        (n+1){ds\over dy}+
+        (n+1)(\delta-n-1)y_{xx}y_x^{-2}\tilde s+
+        (2\hat w+\delta-1)a(x)y_x^{n-\delta}
+               \right)
+         {\p^n\over \p y^n}
+                 +\dots=
+                         $$
+                         $$
+                         \tau^\delta
+                          \tilde s{\p ^{n+1}\over \p y^{n+1}}+
+        \tau^\delta {n+1\over 2}{ds\over dy}{\p^n\over \p y^n}+
+                         $$
+                         $$
+                         {1\over 2}
+        \tau^\delta
+        (2\hat w+\delta-1)
+        \left(
+        a(x)y_x^{n-\delta}+(n+1)\tilde s{y_{xx}\over y_x^2}
+        \right)
+         {\p^n\over \p y^n}
+                 +\dots=
+                         $$
+{\bf Claim}  We see that if in coordinates $x,t$
+                 $$
+A=t^\delta
+    s{d^{n+1}\over dx^{n+1}}
+        +t^\delta{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right) {d^{n}\over dx^{n}}+
+            \dots=
+                 $$
+then in new coordinates  $y=y(x)$, $\tau=y_xt$ ($t\sim |dx|, \tau\sim |dy|$)
+              $$
+          A=\tau^\delta
+    \tilde s{d^{n+1}\over dy^{n+1}}
+        +\tau^\delta{1\over 2}
+        \left(
+        (n+1){ds\over dy}+
+        (2\hat w+\delta-1)\tilde a(x)
+               \right) {d^{n}\over dy^{n}}+
+            \dots=
+              $$
+  where
+             $$
+         \tilde s=sy_x^{n+1-\delta}\,,\,
+               \tilde a=a(x)y_x^{n-\delta}+(n+1)\tilde s{y_{xx}\over y_x^2}=
+               y_x^{-\delta}\left(a+(n+1)s{\p \log y_x\over \p x}\right)y_x^n\,.
+                   $$
+
+{\bf Remark} In the case $n=2$ this is just the connection on the volume forms. (Principal symbol equals to $2s$)
+
+\medskip
+
+{\bf Resum\'e }
+
+
+In the general case $2a\over n+1$ is a "connection"\footnote{$^3$}{It transforms as upper connection. Here
+ may be a coefficient $n+1\over 2$ is chosen wrong}. We denote
+              $$
+            \gamma={2a\over n+1}, a={(n+1)\gamma\over 2}
+              $$
+Then we can rewrite the operator
+            $$
+        A=t^\delta
+    s{d^{n+1}\over dx^{n+1}}
+        +t^\delta{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right) {d^{n}\over dx^{n}}+
+            \dots=
+            $$
+            $$
+            t^\delta
+      {d^{n+1}\over dx^{n+1}}
+        +t^\delta{n+1\over 4}
+        \left(
+        2{ds\over dx}+
+        (2\hat w+\delta-1)\gamma(x)
+               \right) {d^{n}\over dx^{n}}+
+            \dots=
+                $$
+\medskip
+
+
+
+One can consider the canonical pencil of $n$-th order operators of the degree $\delta$
+which send the density of the weight $\lambda$ to the density of the weight $\lambda+\delta$
+               $$
+          \Psi(x)|dx|^\lambda\mapsto
+           \left(
+    s{d^{n+1}\Psi(x)\over dx^{n+1}}+
+        {n+1\over 4}\left(
+        2{ds\over dx}+
+        (2\lambda+\delta-1)\gamma(x)
+               \right) {d^{n}\Psi\over dx^{n}}+
+            \dots\right)|dx|^{\lambda+\delta}=
+                          $$
+where $\gamma$ is a connection
+
+
+{\bf Exercise} Consider the previous construction for the case $n=1$ ("laplacian") and $n=0$ (vector field)
+
+The next step is to consider the subsubprincipal symbol, which is of highly interest\footnote{$^4$}
+{We have also to construct the operator globally, but this we can do defining a connection.}
+
+ Before going to the next step note that for the canonical pencil above if we put:
+                 $$
+        \cases{\delta=n+1\cr 2\gamma+\delta=1}\leftrightarrow \cases {\lambda=-{n\over 2}\cr \delta=2}         
+                 $$
+then we come to the constructions of the book Ovsienko=Tabachnikov.
+
+\medskip
+
+{$\cal x$3. \sl Subsubprincipal symbol}
+
+
+Now we check the condition of self-conjugancy ($A=(-1)^{n+1}A^\dagger$) up to the order $n-1$ with respect to $x$:
+
+From previous considerations it follows that the operator
+          $$
+  A=t^\delta
+           \underbrace{
+           \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+b\hat w^2 {\p^{n-1}\over \p x^{n-1}}
+          \right)}_
+          {\hbox{terms of the order $n+1$}}+
+          \underbrace{\left(
+    p{\p^{n}\over \p x^{n}}
+        +c\hat w {\p^{n-1}\over \p x^{n-1}}
+          +\dots\right)}_{{\hbox{terms of the order $n$}}}+
+         \underbrace{
+                \left(
+    q{\p ^{n}\over \p x^{n-1}}
+        +\dots\right)
+        }_{{\hbox{terms of the order $n-1$}}}+\dots=
+          $$
+
+         $$
+         =t^\delta
+          \left(
+    s{\p^{n+1}\over \p x^{n+1}}
+        +a\hat w {\p^{n}\over \p x^{n}}+
+    p{\p^{n}\over \p x^{n}}
+               +
+            \dots
+          \right)=
+          $$
+          $$
+          A=t^\delta
+    s{\p^{n+1}\over \p x^{n+1}}
+        +{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+1-\delta)a(x)
+               \right) {\p^{n}\over \p x^{n}}+
+               (b\hat w^2+c \hat w+q){\p^{n-1}\over \p x^{n-1}}+\dots
+            \dots
+                 $$
+
+Now find the restrictions which are imposed by the condition $A=(-1)^{n+1}A^\dagger$:
+       We have that
+         $$
+    (-1)^{n+1}A^\dagger\Psi=
+    {\p^{n+1}\over \p x^{n+1}}(t^\delta s\Psi)-
+    {n+1\over 2}{\p^{n}\over \p x^{n}}\left(t^\delta {ds\over dx}\Psi\right)-
+             $$
+             $$
+    {n+1\over 2}{\p^{n}\over \p x^{n}}\left(t^\delta \left(\hat w+{\delta-1\over 2}\right)\gamma\Psi\right)+
+    {\p^{n-1}\over \p x^{n-1}}\left(t^\delta (\hat w^2 b+\hat w c+q)\psi\right)=
+         $$
+         $$
+     t^\delta
+    s{\p^{n+1}\over \p x^{n+1}}
+        +{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+1-\delta)a(x)
+               \right) {\p^{n}\over \p x^{n}}+
+               $$
+               $$
+        {n(n+1)\over 2}t^\delta \left(\hat w+{\delta-1\over 2}\right){d\gamma\over dx}{\p ^{n-1}\Psi\over \p x^{n-1}}+
+        t^\delta\left[b(1-\delta-\hat w)^2+c(1-\delta-\hat w)+q\right]{\p ^{n-1}\Psi\over \p x^{n-1}}+\dots
+            \dots
+         $$
+         Comparing with operator $A$ we see that the condition $A=(-1)^{n+1}A^\dagger$ implies that
+                     $$
+                     {n(n+1)\over 2}\left(\hat w+{\delta-1\over 2}\right){d\gamma\over dx}+
+                     b(1-\delta-\hat w)^2+c(1-\delta-\hat w)+q=
+                     b \hat w^2+c\hat w+q
+                     $$
+Thus
+                $$
+             c={n(n+1)\over 2}
+             {d \gamma\over dx}+b(\delta-1)
+                $$
+
+We denote $b={\theta\over 2}$. (To compare with second order operators.)
+
+We come to the following statement:
+
+  {\bf Theorem} The self-conjugate operator of the order $n+1$ on the algebra of densitites has the following appearance:
+                    $$
+            A=t^\delta
+    s{\p^{n+1}\over \p x^{n+1}}
+        +{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\hat w+\delta-1)a(x)
+               \right) {\p^{n}\over \p x^{n}}+
+               $$
+               $$
+               {1\over 2}\left[
+               \theta\hat w^2+\left(n(n+1){d\gamma\over dx}+\theta(\delta-1)\right) \hat w+q
+               \right]{\p^{n-1}\over \p x^{n-1}}+\dots
+            \dots
+                                      $$
+
+Here $s$ is the density of the weight $\delta-n-1$, $\gamma$ is connection
+and Brans-Dicke scalar is related to Schwarzian.
+
+Considering the restriction of this operator on the space  $\cal F_\lambda$
+we come to the following pencil of operators.
+Any density of the weight $\lambda$  $\Psi|dx|^\lambda$ is transformed to the density
+of the weight $\mu\lambda+\delta$:
+              $$
+ \Psi|dx|^\lambda\mapsto \Phi(x)|dx|^{\lambda+\delta}
+    $$
+    where
+              $$
+              \Phi=
+    s{d^{n+1}\Psi\over d x^{n+1}}
+        +{1\over 2}
+        \left(
+        (n+1){ds\over dx}+
+        (2\lambda+\delta-1)a(x)
+               \right) {d^{n}\Psi\over d x^{n}}+
+               $$
+               $$
+               {1\over 2}\left[
+               \theta \lambda^2+\left(n(n+1){d\gamma\over dx}+\theta(\delta-1)\right) \lambda+q
+               \right]{d^{n-1}\over d x^{n-1}}+\dots
+              $$
+
+\medskip
+
+
+{$\cal x$4. \sl Special case}
+
+
+
+Consider operator of the weight $\delta$ on the densitites o the weight $\lambda$ such that
+             $$
+             \cases
+             {
+           \delta-n-1=0\cr\,2\lambda+\delta-1=0\,.\cr }
+             $$
+i.e.
+            $$
+          \cases
+             {
+           \delta=1+n\cr\,\,\,\lambda=-{n\over 2} }
+            $$
+The principal symbol $s$ becomes the scalar we put it $s=1$, subprincipal symbol vanishes. We come to the operator
+               $$
+ \Psi|dx|^{-{n\over 2}}\mapsto \Phi(x)|dx|^{1+{n\over 2}}
+    $$
+    where
+              $$
+              \Phi(x)=
+     {d^{n+1}\Psi\over d x^{n+1}}
+        +
+               {1\over 2}\left[
+               \theta {n^2\over 4}+\left(n(n+1){d\gamma\over dx}+\theta n\right) \left({-n\over 2}\right)+q
+               \right]{d^{n-1}\over d x^{n-1}}+\dots=
+                             $$
+
+                             $$
+                             {d^{n+1}\Psi\over d x^{n+1}}+
+                             \dots \theta
+                             {d^{n-1}\Psi\over d x^{n+1}}+
+                             \dots {d\gamma\over dx}
+                             $$
+
+
+The next step is to consider how $\theta$ transform under coordinate transformations.,,
+
+
+\bye

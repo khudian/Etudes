@@ -1,0 +1,351 @@
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf Bernoulli numbers, Bernoulli polynomials...}
+
+\m
+
+{\it We know that Bernoulli numbers appear everywhere in mathematics.  I will consider here
+ two topics: basic formulae for integrals leading to Euler-Maclaurin  type formulae
+  and Fourier transformations formulae for calculations
+ of $\zeta$ function at even points. In both cases naturally appear the same series of polynomials...
+
+ Shortly:  Bernoulli Polynomials are polynomials $\{B_n\}$ of the degree $n$ which are convenient for
+  integration by part as well as polynomials $\{x^n\}$. They also are orthogonal to constant function. 
+  Bernoulli numbers are values of Bernoulli polynomials in boundary points.
+}
+
+
+\bigskip
+
+   \centerline {\bf ${\cal  x} 1$ Integral and area of trapezium }
+   \m
+   Everybody who heard about integral knows that $\int_a^bf(t)dt$ equals approximately to the area of trapezoid
+   with altitude $(b-a)$ and parallel sides equal to the values of the function $f$ at the points
+   $a,b$:
+                         $$
+                         \int_a^bf(t)dt\,\approx\,(b-a)\cdot {f(a)+f(b)\over 2}
+                         \eqno (1)
+                         $$
+   Very simple question: How this formula follows from the formula of integration by parts
+     ($\int f(x)dx=xf(x)-\dots$)?
+     (I was surprised realising that I never asked myself this simple question before.)
+     \m
+
+     {\sl Answer}:  Instead $\int f(x)dx=xf(x)-\int xf'(x)dx$ take
+     $\int f(x)dx=(x+c)f(x)-\int (x+c)f'(x)dx$ putting $x+c$ instead $x$, where $c$ is an arbitrary constant.
+     Thus we come to
+                        $$
+                       \int_a^b f(t)dt=(x+c)f(x)\big\vert^b_a-\int^b_a (t+c)f'(t)dt
+                        \eqno (2)
+                        $$
+    Now if we choose $c=-{a+b\over 2}$ we come to (1).
+                      $$
+                \int_a^b f(t)dt=\left(x-{a+b\over 2}\right)f(x)\big\vert^b_a-\int^b_a \left(x-{a+b\over 2}\right)f'(t)dt={b-a\over 2}(f(a)+f(b))+\dots
+                \eqno (2a)
+                      $$
+    One can go further performing integration by part.  Keeping in mind formula (2a)
+    instead  an expansion
+                 $$
+                 \int f(x)dx=xf(x)-{x^2\over 2\,\,}f'(x)+{x^3\over 3!}f''(x)-{x^4\over 4!}f'''(x)+\dots
+                 \eqno (3)
+                 $$
+     we  consider  an expansion
+                   $$
+             \int f(x)dx=B_1(x)f(x)-{B_2(x)\over 2\,\,}f'(x)+{B_3(x)\over 3!}f''(x)-{B_4(x)\over 4!}f'''(x)
+             +\dots\,,       \eqno (3a)
+                   $$
+where polynomials $\{B_1(x), B_2(x),B_3(x),\dots\}$ are defined by the relations ${dB_{k+1}(x)\over dx}=kB_k(x)$:
+                            $$
+    B_1(x)=x+c_1,\, B_2(x)=2\left({x^2\over 2}+c_1x+c_2\right),\,
+   B_3(x)=6\left({x^3\over 6}+c_1{x^2\over 2}+c_2x+c_3\right),
+                            $$
+                               $$
+           B_4(x)=24\left({x^4\over 24}+c_1{x^3\over 6}+c_2{x^2\over 2}+c_3x+c_4\right), \,\,
+           \hbox {and so on}\,,
+           \eqno (3b)
+                               $$
+  where $c_1,c_2,c_3,\dots$ are an arbitrary constants.
+  We have for an interval $(a,b)$ that
+                       $$
+     \int_a^b f(t)dt=\sum_{n=1}^N(-1)^{n-1}{B_n(x)\over n!}f^{(n-1)}(x)\vert^b_a+
+     {(-1)^N\over N!}\int_a^bB_N(t)f^{(N)}(t)dt=
+                           $$
+                           $$
+                   B_1(b)f(b)-B_1(a)f(a)-{B_2(b)f'(b)-B_2(a)f'(a)\over 2}+
+                   {B_3(b)f''(b)-B_3(a)f''(a)\over 6}+\dots
+                                                 \eqno (4)
+                       $$
+Now encouraged by the trapezoid formula
+ choose  $c_1=-{a+b\over 2}$.
+ Then
+                   $$
+                   B_2(a)=B_2(b)\,.
+                   \eqno (5)
+                   $$
+                   since $B_1(a)=B_1(b)$ if $c_1=-{a+b\over 2}$.
+ We want to keep the relation (5) for all $B_k(x)$ for $k\geq 2$:
+              $$
+                                B_k(a)=B_k(b)\quad  \hbox{for all $k\geq 2$}
+                   \eqno (5a)
+              $$
+ In this case the formula
+ (4) becomes:
+                $$
+                \int_a^b f(t)dt=(b-a)\cdot {f(a)+f(b)\over 2}+
+            \sum_{n\geq 2}{(-1)^{n-1}\over n!}B_n(a)\left(f^{(n-1)}(b)-f^{(n-1)}(a)\right)
+            \eqno (6)
+                    $$
+
+
+   \centerline {\bf ${\cal  x} 2$  Bernoulli polynomials and numbers}
+
+ The condition (5a) fixes uniquely all constants $c_2,c_3,\dots,c_4,\dots$ in (3).
+ We come to recurrent formula for polynomials $B_n(x)$:
+                      $$
+                      B_0(x)\equiv 1,\quad
+                      \cases
+                           {
+       B_{k}(x)\colon \quad {dB_{k}(x)\over dx}=kB_{k-1}(x)\cr
+                         \int_a^bB_k(x)dx=0,\,\,{\rm i.e.} \,  B_{k+1}(a)=B_{k+1}(b)
+                        }
+                        \quad (k=1,2,3,\dots)
+                        \eqno (2.1)
+                      $$
+ {\it One can say roughly that polynomials $B_n(x)=x^n+\dots$ are "deformations" of polynomials $x^n$
+  suitable for integration by part.}
+ \m
+
+
+ These polynomials are:
+                        $$
+                        \matrix
+                           {
+                       &B_0(x)=1\cr
+                       &B_1(x)=x-{a+b\over 2}\cr
+                       &B_2(x)=(x-a)(x-b)+{1\over 6}(b-a)^2\cr
+                       &B_3(x)=(x-a)^3-{3\over 2}(x-a)^2(b-a)+{1\over 2}(x-a)(b-a)^2\cr
+                       &B_4(x)=(x-a)^4-2(x-a)^3(b-a)+(x-a)^2(b-a)^2-{1\over 30}(b-a)^4\cr
+                                  &....
+                               }
+                               \eqno (2.1a)
+                           $$
+    Consider {\it normalised } polynomials choosing  $a=0,b=1$:
+                 $$
+         B_0(x)=1,\,\,  B_n'(x)=nB_{n-1},
+         \int_0^1 B_n(x)dx=0,\, {\rm i.e.}\, B_{n+1}(0)=B_{n+1}(0),
+         n=1,2,\dots \colon
+                      $$
+                      $$
+                      \matrix
+                           {
+                       &B_0(x)=1\cr
+                       &B_1(x)=x-{1\over 2}\cr
+                       &B_2(x)=x^2-x+{1\over 6}\cr
+                       &B_3(x)=x^3-{3\over 2}x^2+{1\over 2}x\cr
+                       &B_4(x)=x^4-2x^3+x^2-{1\over 30}\cr
+                       &B_5(x)=x^5-{5\over 2}x^4+{5\over 3}x^3-{x\over 6}\cr
+                       &B_6(x)=x^6-3x^5+{5\over 2}x^4-{1\over 3}x^2+{1\over 42}\cr
+                       &B_7(x)=x^7-{7\over 2}x^6+{7\over 2}x^5-{7\over 6}x^3+{1\over 6}x\cr
+                           &\dots \cr
+                              }
+                              \eqno (2.2)
+                        $$
+          {\bf Exercise 1} Show that relation  between normalised polynomials $B^{[0,1]}_n$ in (7) and
+           polynomials $B^{[a,b]}_n$ is
+                             $$
+                             B^{[a,b]}_n(x)=(a-b)^nB^{[0,1]}_n\left(x-a\over b-a\right)
+                             \eqno (2.3)
+                             $$
+  This formula controls the behaviour of Bernoulli polynomials under changing of $a,b$.
+
+
+          We define {\it Bernoulli number} $b_n$ as a value of polynomial (2.2) at the points $0$ or $1$
+          (or polynomial (2.1a) divided by a coefficient $(b-a)^n$)
+                            $$
+                        b_n=B_n(0)=B_n(1).
+                            $$
+        We have
+                               $$
+   b_0=1, b_1=-{1\over 2}, b_2={1\over 6}, b_3=0, b_4=-{1\over 30}, b_5=0, b_6={1\over 42},b_7=0,\dots
+                               $$
+           Interesting observation:
+
+          \m
+
+          {\bf Proposition 1}  {\it Bernoulli numbers $b_n$ are equal to zero  if $n$
+          is an odd number bigger than 1.}
+
+          \m
+
+
+          This proposition follows from the following very beautiful property of Bernoulli polynomials:
+
+
+
+          \m
+
+          {\bf Proposition 2}  {\it Let $\{B_n(x)\}$ be a set of Bernoulli polynomials
+          corresponding to the interval $(a,b)$  (see eq. (7)). Let $P$ be a reflection with respect
+          to the middle point  ${a+b\over 2}$ of the interval $(a,b)$:
+                               $$
+                           P\colon\,\, x\mapsto  a+b-x
+                           \eqno (2.4)
+                               $$
+            Then all Bernoulli polynomials (except $B_1$) are eigenvectors of this transformation:
+                             $$
+                        B_n(Px)=B_n(x) \,\,\hbox{for all even $n$, $n=0,2,4,\dots$}
+                        \eqno (2.5a)
+                                 $$
+and}                           $$
+B_n(Px)=-B_n(x) \,\,\hbox{for all odd $n\geq 3$, $n=3,5,7,\dots$}
+\eqno (2.5b)
+                               $$
+                   \m
+
+Indeed it follows from (2.5b)
+                   that $b_n=B_n(a)=-B_n(b)=-b_n$ for odd $n\geq 3$. Thus $b_n=0$ for $n=3,5,7,\dots$.
+
+                   \m
+
+           The statement of this Proposition 2 is irrelevant to the choice of $a,b$.
+          To prove the Proposition  it is suffice to consider the special case $a=-b$.
+             In this case the transformation $P$ in (2.4) is just $x\mapsto-x$.
+           Thus in this case  the statement of Proposition is that
+           Bernoulli polynomials  $B_n(x)$ are even polynomials ($B_n(x)=B_n(-x)$) if $n$ is even,
+            and they are odd polynomials
+           if $n$ is an odd number greater than 1 ($B_n(x)=-B_n(-x)$).
+
+
+           Prove it by induction. Suppose that for $n\leq 2N$ this is true.
+           Then consider polynomial $B_{2N}(x)$.
+           We have that $\int_{-a}^a B_{2N}(x)dx=0$, hence $\int_0^a B_{2N}(x)dx=0$ since
+           by induction hypothesis this is an even polynomial.  Hence
+            $$
+            B_{2N+1}(x)=(2N+1)\int_0^x  B_{2N}(t)dt\,.
+            $$
+     Indeed this polynomial obeys the differential equation $B'_{2N+1}(x)=(2N+1)B_{2N}(x)$
+     This polynomial is also an odd polynomial. Hence it obeys the boundary condition
+            $\int_{-a}^aB_{2N+1}(x)dx=0$.  It remains to prove that $B_{2N+2}$ is an even polynomial.
+            We have that  $B_{2N+2}(x)=\int_0^x    B_{2N+1}(t)dt+c_{2N+2}$, where $c_{2N+2}$
+            is a constant chosen by the boundary condition  $\int_a^aB_{2N+2}(x)dx=0$.
+            We see that  $B_{2N+2}$ is even since $B_{2N+1}$ is an odd polynomial and constant is an even polynomial.
+\m
+
+
+   \centerline {\bf ${\cal  x} 3$ Integral and area of trapezium (revisited)---Euler-Maclaurin formula }
+
+\m
+
+     Now equipped by the knowledge of formulae
+     return to the last formula from the first paragraph:
+                     $$
+        \int_a^b f(t)dt=(b-a)\cdot {f(a)+f(b)\over 2}+
+            \sum_{n\geq 2}{(-1)^{n-1}\over n!}B_n(a)\left(f^{(n-1)}(b)-f^{(n-1)}(a)\right)=
+            \eqno (3.1)
+                                     $$
+                       $$
+                       (b-a)\cdot {f(a)+f(b)\over 2}+
+            \sum_{n\geq 2}{(-1)^{n-1}\over n!}b_n(b-a)^n\left(f^{(n-1)}(b)-f^{(n-1)}(a)\right)=
+            \eqno (3.1a)
+                     $$
+                     $$
+                       (b-a)\cdot {f(a)+f(b)\over 2}+
+            \sum_{k\geq 1}{(-1)^{2k-1}\over (2k)!}b_{2k}(b-a)^{2k}\left(f^{(2k-1)}(b)-f^{(2k-1)}(a)\right)=
+            \eqno (3.1a)
+                                $$
+                                $$
+  (b-a)\cdot {f(a)+f(b)\over 2}+{1\over 6}(b-a)^{2}\left(f'(b)-f'(a)\right)
+  -{1\over 30}(b-a)^{4}\left(f'''(b)-f'''(a)\right)+\dots
+                                                              $$
+
+     We are ready to write down asymptotic formula for series:
+      Dividing the interval $[0,1]$ on $N+1$ parts consider the formula above for any interval
+      $\left[{k\over N}, {k+1\over N}\right]$ , then making summation we come to:
+                         $$
+     \int_0^1f(x)dx=
+     {1\over 2N}f(0)+
+     \left(
+            f
+            \left({1\over N}\right)+f\left({2\over N}\right)+\dots+
+            f\left({N-1\over N}\right)
+            \right)+
+                         {1\over 2N}f(0)+
+                           $$
+                           $$
+                           +
+\sum_{k\geq 1}{(-1)^{2k-1}\over (2k)!}{b_{2k}\over N^{2k}}\left(f^{(2k-1)}(1)-f^{(2k-1)}(0)\right)
+                         $$
+      it is well-known Euler-Macklourin asymptotic formula.
+                         
+{\bf Remark} Our notation for bernoulli numbers is not standard. Bernoulli numbers are
+$B_n=b_{2n}$. 
+
+              {\bf Exercise} Use this formula for the functions $f=x^r$ to express sums
+              $\sum_{i=1}^N i^r$ via Bernoulli numbers.
+
+                      \m
+
+    \centerline {\bf ${\cal  x} 4$ Fourier image of Bernoulli polynomials and $\zeta$-function }
+
+                   \m
+
+               Bernoulli polynomials are deformations of $x^n$ which are convenient for integration by part.
+               Function $e^x$ is eigenvalue of derivation operator. This means that Bernoulli polynomials
+               have "good" Fourier transform. Do calculations. Consider Fourier polynomials for the interval $[0,1]$
+               (see 2.2) and  an orthonormal basis $c_k\{e^{2\pi ikx}\}$ where ....   Indeed
+                          $$
+                \left<B_n(x),e^{2\pi ik}\right>=\int_0^1B_n(x),e^{2\pi ikx}\sim {1\over k^{n}}
+                        $$
+    Hence
+
+             $$
+             \left<B_n(x),e^{2\pi ik}\right>\sim \sum {1\over k^{2n}}=\zeta(2n)
+             $$
+    Notice that square of the norms of Bernoulli polynomials can be expressed via Bernoulli numbers
+    due to their properties...
+
+
+                      \bye   

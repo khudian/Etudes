@@ -1,0 +1,271 @@
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+% I began this file on 12 August 2018
+
+
+\centerline {\bf Hilbert Theorem of non-embedding of hyperbolic space, sine-Gorodon, e.t.c.}
+
+{\it  Here I try to give some ideas of proof of the theorem, that Lobachevsky plane as a whole
+cannot be immersed in $\E^3$.   I knew  this statement long time, 
+  considering it as very important statement, which just has to be known.
+
+I did not realise  how much it is related with such ``working''  questions
+as assymptotic directions, Chebyshev net  and ...  sine-Gordon equation:
+                 $$
+      {\p^2F\over \p x \p y}=\sin F
+         \eqno (01)
+                 $$
+
+}
+
+
+
+   Suppose that $M\colon\quad \r=\r(u,v)$ is immersion of 
+Lobachevsky plane in $\E^3$.
+     Let  $\Pi(\x,\y)$  be second quadratic form.  
+Since Gaussian curvture is equal to $-1$, hence in arbitrary point
+  $\pt \in M$ there exist two directions $\ll_1, \ll_2$  such that
+     the second quadratic form vanishes on every vector which is in one
+of these directions.
+
+    These directions define a net at least locally.
+We may choose local coordinates $u,v$  such that second quadratic form
+is equal to 
+               $$
+   \Pi= \Pi(u,v)dudv
+           \eqno (1.a)
+               $$            
+in these local coordinates.
+
+   {\bf Proposition}  One may choose local coordinates $u,v$
+such that second quadratic form has appearance (1a)  and
+the first quadratic form has appearnace
+                    $$
+         G=du^2+2\cos \Theta (u,v)dudv+dv^2\,.
+                         \eqno (1b)
+                    $$
+
+
+To prove it consider basic coordinate vectors $\e_\a={\p \r\over \p u^\a}$.
+
+We have  that
+                    $$
+     {\p \e_\pi\over \ \p u^a}=
+(\p_\a \e_\pi)_{||}+
+(\p_\a \e_\pi)_{\perp}=
+\nabla_\a \e_\pi+\Pi (\e_\pi, \e_\a)\n=
+\Gamma_{\a\pi}^\rho\e_\rho+\Pi_{\a\pi}\n\,.
+                     $$      
+(Here as usual $\n$ is normal unit vector).
+
+We have that
+                     $$
+     {\p^2 \e_\pi\over \ \p u^a\p u^\beta}=
+              {\p\over \p u^\beta}
+         \left(
+\Gamma_{\a\pi}^\rho\e_\rho+\Pi_{\a\pi}\n
+        \right)=
+    \p_\beta\Gamma_{\a\pi}^\rho\e_\rho+
+    \Gamma_{\a\pi}^\rho\p_\beta\e_\rho+
+      \p_\beta\Pi_{\a\pi}\n+\Pi_{\a\pi}\p_\beta \n=
+                  $$
+                  $$
+    \p_\beta\Gamma_{\a\pi}^\rho\e_\rho+
+         \Gamma_{\a\pi}^\rho
+                \left(
+\Gamma_{\beta\rho}^\sigma\e_\sigma+\Pi_{\beta\rho}\n
+                  \right)+
+ \p_\beta\Pi_{\a\pi}\n-\Pi_{\a\pi}\Pi_\beta^\rho\e_\rho\,.
+                     $$
+(We use equation  for  Shape operator:  $\p_\beta\n=-S_\beta^\rho\e_\rho$,
+$\Pi_\beta^\rho=S_\beta^\rho=\Pi_{\beta\a}g^{\a\rho}$. )
+
+
+We have that 
+               $$
+     {\p^2 \e_\pi\over  \p u^a\p u^\beta}=
+     {\p^2 \e_\pi\over  \p u^\beta\p u^\alpha}=
+                      $$
+(so called Peterson-Codazzi integrability conditions)
+
+give as that
+           $$
+     \p_\beta\Gamma_{\a\pi}^\rho\e_\rho+
+         \Gamma_{\a\pi}^\rho
+                \left(
+\Gamma_{\beta\rho}^\sigma\e_\sigma+\Pi_{\beta\rho}\n
+                  \right)+
+ \p_\beta\Pi_{\a\pi}\n-\Pi_{\a\pi}\Pi_\beta^\rho\e_\rho
+             =
+                         $$
+                         $$
+      \p_\a\Gamma_{\beta\pi}^\rho\e_\rho+
+         \Gamma_{\beta\pi}^\rho
+                \left(
+\Gamma_{\alpha\rho}^\sigma\e_\sigma+\Pi_{\alpha\rho}\n
+                  \right)+
+ \p_\alpha\Pi_{\beta\pi}\n-\Pi_{\beta\pi}\Pi_\alpha^\rho\e_\rho
+           $$
+Comparing the terms at $\e_\rho$ and $\n$ we come to:
+
+             $$
+   \p_\beta\Gamma_{\a     \pi}^\rho
+   -\p_\a   \Gamma_{\beta \pi}^\rho
+      +\Gamma_{\beta \sigma}^\rho\Gamma_{\a\pi}^\sigma
+      -\Gamma_{\a \sigma}^\rho\Gamma_{\beta\pi}^\sigma
+             =
+             \Pi_\beta^\rho\Pi_{\a\pi}-
+             \Pi_\a^\rho\Pi_{\beta\pi}\,,
+             $$
+i.e.
+                     $$
+                 R^\rho_{\, \pi\beta\a}=
+            \Pi_\beta^\rho\Pi_{\a\pi}-
+             \Pi_\a^\rho\Pi_{\beta\pi}\,,\,
+            (\hbox {Gau\'ss conditions})
+                     $$
+and
+                 $$
+\p_\a\Pi_{\beta\pi}-\Gamma_{\a\pi}^\rho\Pi_{\rho\beta}=
+\p_\beta\Pi_{\a\pi}-\Gamma_{\beta\pi}^\rho\Pi_{\rho\a}\,,
+  \hbox {(Peterson Kodazzi conditions)}
+                 $$ 
+Taking traces of Gauss conditions we come to
+the stadnard realtion between Gaussian and scalar curvature: 
+                      $$
+    R=R^\beta_{\, \pi\beta\a}g^{\pi\a}=
+ \left[{\rm Tr\,}\Pi\right]^2-
+ {\rm Tr\,}\Pi^2=2\det S=2K=2{\det \Pi\over \det g}
+                      $$
+(Here we are abusing little bit lower and upper indices, e.g.
+   $S^\a_\rho=-\Pi_{\a\beta}g^{\beta\rho}$).
+
+Consider Peterson Codazzi relations:
+
+ for indices    $\a\beta\pi=1\, 1\, 1$ empty conditions 
+(as well as for$\a\beta\pi=2\, 2\, 2$)
+ 
+for indices    $\a\beta\pi=1\, 1\, 2$ empty conditions 
+(as well as for$\a\beta\pi=2\, 2\, 1$) 
+
+
+for indices    $\a\beta\pi=1\, 2\, 2$ we have:
+             $$
+\p_1 P=P(\Gamma^1_{11}-\Gamma^2_{21})
+             $$
+
+as well as for indices    $\a\beta\pi=2\, 1\, 1$ we have:
+             $$
+\p_2 P=P(\Gamma^2_{22}-\Gamma^1_{12})
+             $$
+
+Here   $\Pi= \pmatrix{0 & P\cr P & 0}$.
+
+
+  These conditions do not look nice, but we are in dimension 2.
+
+
+  Note that Gaussian curvature is constant. Choose it $1$:
+   We see that
+              $$
+ \det \Pi=-P^2\cdot \det g=-1\Rightarrow   P=\sqrt {\det g}\,.
+              $$ 
+
+Note that 
+           $$
+  \delta \sqrt {\det g}={1\over 2}\sqrt {\det g} g^{ik}\delta g_{ik}\,,
+           $$
+ i.e.
+                  $$
+ {\p P\over \p u^\a}=\sqrt {\det g}{\p \sqrt {\det g}\over \p u^\a}=
+  P\Gamma_{\a\pi}^\pi\,.
+                  $$
+We see that Petrson Codazzi conditions mean that
+              $$
+  \Gamma_{11}^1+\Gamma_{12}^2=
+  \Gamma_{11}^1-\Gamma_{12}^2\Rightarrow\Gamma_{12}^2=0\,,\quad
+  \Gamma_{21}^1+\Gamma_{22}^2=
+  \Gamma_{22}^2-\Gamma_{12}^2\Rightarrow\Gamma_{12}^1=0\,,\quad
+            $$
+Thus we see that Peterson-Codazzi conditions with constant curvature
+imply that
+           $$
+      \Gamma_{12}^1=\Gamma_{12}^2=0\Rightarrow
+      \Gamma_{12;1}=\Gamma_{12;2}=0\Rightarrow
+     {\p g_{11}\over \p u^2}=
+     {\p g_{22}\over \p u^1}=0\,.
+           $$
+
+We see that first quadratic form is
+              $$
+G=A(u)du^2+2B(u,v)dudv+C(v)dv^2
+               $$
+Taking antiderivatives 
+ $\tilde u=\int \sqrt {A(u)}du$
+and 
+ $\tilde v=\int \sqrt {C(v)}dv$
+
+We come to coordinates $u=\tilde u,v=\tilde v$ such that in these coordinates
+                $$
+G=du^2+2\cos\Theta(u,v)dudv+dv^2
+                $$
+and second quadratic form in these coordinates
+is equal to
+                  $$
+\Pi=2\sin\Theta (u,v)dudv 
+                  $$
+
+(On this metric see the blog in August 2018)
+
+
+\bye
+
+

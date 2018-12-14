@@ -1,0 +1,222 @@
+
+
+   Privet Davidik!
+
+   %Eto obychnyj Tex-file,. Mozheshj chitatj  s ekrana
+   % a mozheshj i kompilirovatj
+
+
+     Pustj   $B(x,y)$ bilinejnaja symmetricheskaja forma na linejnom prostranstve $V$
+     (razmerrnostj konechnaja).
+
+     Ej sootvetstvujet
+           kvadratichnaja forma
+                        $$
+                 Q_B(x)=B(x,x)
+                   \eqno (1)
+                        $$
+  kotoraja kak legko ponjatj udovletvorjajet pravilu
+  parallelogramma:
+                $$
+                Q(x+y)+Q(x-y)=2Q(x)+2Q(y)
+                        \eqno (2)
+                 $$
+i odnorodna:
+              $$
+              Q(kx)=k^2Q(x)
+              \eqno (3)
+              $$
+
+  Esli $B(x,y)$ polozhiteljno opredelena to legko proveritj (legko?)
+  forma $Q(x)$ opredeljajet normu:
+                   $$
+                   ||x||=\sqrt {Q(x)}
+                   \eqno (4)
+                   $$
+Eta norma kak i sledujet ozhidatj udovletvorjajet vsem uslovijam
+normy: $||x||\geq 0$ i $||x||=0$ iff $x=0$  v silu polozhiteljnoj
+opredeljonnosti $B$. V silu neravenstva Cauchy-bunyakovskogo
+vypooljanejtsa i neravenstvo treugoljnika:
+               $$
+||x+y||\leq ||x||+||y|| \eqno (5)
+               $$
+To estj ponjatjije rasstojanija ne protivorechit nashej
+intujitsiji.
+
+
+A teperj vopros:  Kakim uslovijam dolhzna udovletvorjajt $Q(x)$
+shtoby ej sootvetstvovala bilinejnaja forma.
+
+ Legko ponjatj shto uslovija  (3) i (2) neobkhodimy:
+ Esli $B$ sootvetstvujushjee $Q$ (to estj (1) imejet mesto bytj)
+ sushestvujet to nikuda ne deneshsja,  $B(x,y)$ dolzhno
+ opredeljajtjs po sledujushej formule:
+              $$
+              B(x,y)={1\over 2}\left(Q(x+y)-Q(x)-Q(y)\right)
+              \eqno (6)
+               $$
+ili mozhno takoj formuloj:
+             $$
+              B(x,y)={1\over 4}\left(Q(x+y)-Q(x-y)\right)
+              \eqno (7)
+             $$
+
+  A dostatochny li oni?  Vot v chom vopross... Ili po drugomu:
+  a pravda li shto formula (6) ili (7)
+  vydajut na gora bilinejnuju simmetricheskuju formulu.
+
+  To shto (6) i (7) vydajut simmetricheskij objekt--ochevidno.
+  To shto oni vydajut odin i tot zhe objekt: eto tozhe ochevidno
+  (is pravila parallelogramma)
+
+
+Nemnogo pomuchivshisj (ja vsegda zabyvaju kak, eto golovnaja bolj
+no mozhno ) mozhno pokazatj (po-mojemu ispoljzuja lishj praivlo
+parallelogramma bez uslovija odnorodnosti (3)) shto $B(x,y)$
+opredeljonnoje cherez udovletvojrjajet tak nazyvajemu usloviju
+additivnosti:
+               $$
+B(x+x',y)=B(x,y)+B(x',y) \eqno (8)
+               $$
+Kazalosj by eto pochti uzhe vsjo: Vedj iz  (8) i izhe  vytekajet
+shto dlja ljubogo tselogo $m$
+           $$
+   B(mx,y)=mB(x,y)
+           $$
+Zametim tut tozhe odnorodnostj ne ispoljzujetjsa.
+
+A teperj legko ponjatj shto dljaljubogo ratsionaljnogo $a$
+       $$
+       B(ax,y)=aB(x,y)
+       \eqno (9)
+       $$
+My prishli k vyvodu: shto ljubaja forma $Q(x)$ udovletvorjajusja lishj
+pravilu paralellogramma  sootvetstvujet objektu $B(x,y)$
+kotoryj linejej nad ratsionaljnymi chislami, to estj:
+                   $$
+ B(ax+bx',y)=aB(x,y)+bB(x',y)
+ \eqno (10)
+                   $$
+                   \medskip
+  (Kontroljnyuj vopros v storonu: Mnohestvo dejstviteljnykh chissel javljajetjsa
+  beskonechno-mernym prostranstvom nad mnozhestvom ratsionaljnykh chissel.)
+\medskip
+
+  A teperj: kakoje usovije nuzhno nalozhitj na formu $Q(x)$
+  shtob $B(x,y)$ v (6,7) bylo by linejnym nad ljubymi dejstviteljnymi.
+
+  Otvet? Praivlo treugoljnika: esli funtksija $Q(x)$ indutsirujet normu,
+  (udovletvojrjaet praivlam odnorodnosti polozhiteljnoj opredeljonnosti
+  i pravilu treugoljnika)
+  i udovletvorjajet praivlu prallelogramma to $B$ v (9) linenjno.
+
+  Dokazateljstvo: Esli $Q$ dejstviteljno opredeljajet normu, to functsija
+         $f(x)=B(x,y)$ gde $B$ (oppredeljajetjs (9))
+         nepreryvna po otnosheniju k etoj norme, a znachit ravenstvo
+         (9) vypolnjajetsja dlja vsekh dejstviteljnykh chissle
+         kolj skoro ono vypolnjajetjsa dlja ratsionaljnykh. Vsjo!!!!
+
+         Strannoje oshushenije ostajotsja posle etogo dokazateljstva?
+
+         A prichom tut nepreryvnostj. MY zhe dokazyvajem linejnostj.
+
+          Na samom dele slovo nepreryvnostj ochenj sootvetstvujet nashej intuiitsjii
+          i zashifrovyvajet soboju kuchu ponjatij.
+
+  Mozhno formaljno ne govoritj slovo nepreryvnostj
+  i pritvorjajsja shto ego ne znajeshj chestno i tupo otsenivatj
+dlja ljubogo dejstviteljnogo $a$ rasstojanije mezhdu $B(ax,y)$
+i $B(a_nx,y)$, gde $\{a_n\}$ posledovateljnostjh ratsionaljnykh chissel
+kotorajaj stremitsja (opredeljajet???) dejstviteljnoje chislo $a$.
+Da eto tak..
+
+Kazalosj by vysheprivedjonnoje rassuzhdenije velikolepnoje podtverzhdenije tezisa:
+         ""Mavr sdelal svojo delo, mavr mozhet umeretj"
+My vospoljzovalisj lsovom nepreryvnostj a potom vybrossili.
+
+
+
+No tut zhe voznikajet drugoj vopros? A naskoljko vsjotaki nuzhno uslovje normy?
+Mogli by my bez nego obojtisj?
+
+Ja nikak ne mogu pridumatj kontrpirmera, to estj primera posledovateljnosti
+kotorjaja udovletvorjajet uslovijam parallelogramma i odnorodnosti,
+no ne privodit k norme potomu shto ne udovletvorjajet usloviju treugoljnika
+(Mozhet bytj dlaj kontrpirmera nuzhno rassmotretj objekt kotoryj udovletvojrjaet
+lishj pravilu parallelgoramma, ne znaju....)
+
+I esho vopros: Nepreryvnostj kotooj my poljzovalisj
+vkljcuhajet v sebja kuchu trebovanij v tom chisle i trebovanije
+na polozhiteljnuju opredeljnoostj formy.
+Kazalosj by dlja svjazi (1) eto ne nuzhno.
+
+
+V zakljuchenijii dva dopolnenija:
+
+  $$ $$
+
+  Istorija voprosa: Vopros voznik tri goda tomu nazad u mojego druga.
+  Togda my byli pomolozhe i ponaivnejee. Ochenj bystro my dokazali
+  svojstvo  (10) i vrode by togda ja lego dokazal shto dlja konechnomernykh
+  prostranstv vsjo prosto i vsja eta bodjaga s neraventsvom treugoljnika ne nuzhna.
+  Problemy voznikajut v beskonechnomeriji. No ja nikak ne mogu eto vosstanovitj.
+  Mozhet ja ne prav byl, a mozhet bytj sejchas psotarel...
+
+
+
+  No sdrugoj storony my togda zastrjali na (10) i daljehse ne poshli.
+  Nam uslovije nepreryvnosti kazalosj vneshnim doponiteljnym trebovanije.
+
+  Potom na menja svet prolilsja (eto bylo dva goda tomu nazad)
+  kogda ja ponjal shto nepreryvnostj opredeljajetsja v terminakh
+  samoj formy!!!!
+  No ja nikak ne mogu privesti kontrpirmer.
+
+  Shob ponjatj shto ne vsjo gladko v datskom korolevstve.
+
+  Predlagaju sledujushee kazalosj by bezobidnoje uprazheninie:
+  uprazhnenije
+
+
+   $$ $$
+
+   Zadacha: Privesti primer funcktsiji $F(x)$ gde $x$ proizovljnoje dejstviteljnoje chislo
+   tak shto $F(x)$ udovlet\-vo\-rjajet usloviju additivnosti:
+                     $$
+                     F(x+x')=F(x)+F(x')
+                   $$
+     no linejnoj ne javljajetjsa !!!!
+
+     Okazyvajejtsja eto ne ochenj legko. V kakom-to smysle reshenije
+     nevozmozhno bez aksiomy vybora:
+
+      Reshenije: Rassmotrim $R$ kak linejnoje porstranostvo
+      nad $Q$ i vvedjom v njom basis $\{e_i\}$ tak shto pervyj element $e_1=1$
+       (zametim shto indeks $i$
+      probegajet neschotnoje mnozhestvo znachenij.) (Takoj bazis nazyvajetjsa
+      bazis Gamelja????)
+
+   Teperj jasno shto ljuboje chislo odnoznachno mozheno predstavitj vvide
+   summy ratsionaljnogo i irratsionaljnogo:
+                    $$
+                    x=x^1+x'
+                    \eqno (11)
+                    $$
+                    Imenno dlja etogo nuzhen bazis Gamelja!
+
+Zametim shto bez basia Gamelja razlozhenije (11) ne poluchitsja,
+a dlja basisa Gamelja nuzhna transfinitnaja induktsija, to estj aksioma vybora!!!!
+
+A teperj s uchotmo (11) stroim: $F(x)=x^1$
+
+Jasno stho eta funtsija udovletvorjajet usloviju additivnosti
+  Na ratsionaljnykh ona ravna $x$
+i na mnogikh irratsionaljnykh chislkah (no ne na vsekh!)
+ona ravna nulju.
+
+
+Vidno shto eto uzhasnyj objekt....
+
+Nu ladno...
+
+  \bye

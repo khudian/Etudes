@@ -1,0 +1,130 @@
+\magnification=1200
+
+\baselineskip=14pt
+
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf Orthogonal matrices with rational coefficients...}
+
+{\it 06 April 2016}
+
+
+  The best is to use Cayley transfromation
+     $$
+  g=(1-X)^{-1}(1+X)
+     $$
+where
+    $$
+  X=\pmatrix {
+      0 &a &b\cr
+      -a &0 &c\cr
+      -b &-c &0\cr}
+    $$
+is an element in $so(3)$. We have
+    $$
+(1+X)^{-1}=\pmatrix {
+      1 &a &b\cr
+      -a &1 &c\cr
+      -b &-c &1\cr}
+   =
+  {1\over\det (1+X)}
+        \pmatrix {
+      1+c^2& -a-bc& ac-b\cr
+      a-bc & 1+b^2&-c-ab\cr
+   ac+b & c-ab&1+a^2\cr}
+     =
+    $$
+   $$
+{1\over 1+a^2+b^2+c^2} \pmatrix {
+      1+c^2& -a-bc& ac-b\cr
+      a-bc & 1+b^2&-c-ab\cr
+   ac+b & c-ab&1+a^2\cr}\,.
+    $$
+Hence
+     $$
+SO(3)\ni g={1\over 1+a^2+b^2+c^2} \pmatrix {
+      1+c^2& -a-bc& ac-b\cr
+      a-bc & 1+b^2&-c-ab\cr
+   ac+b & c-ab&1+a^2\cr}
+\pmatrix {
+      1 &-a &-b\cr
+      a &1 &-c\cr
+      b &c &1\cr}=
+     $$
+     $$
+     {1\over 1+a^2+b^2+c^2} 
+       \pmatrix 
+           {
+     1+c^2-a^2-b^2& -2a-2bc& 2ac-2b\cr
+     2a-2bc & 1+b^2-a^2-c^2&-2c-2ab    \cr
+   2ac+2b&2c-2ab&  1+a^2-b^2-c^2 \cr}
+       $$
+\medskip
+
+  The funny fact (Sasha Karabegov told me about it `hundred years' ago):
+  If $||a_{ik}||$ $i,k=1,2,3$ is orthogonal $3\times 3$ matrix, 
+and all entries
+are not equal to zero then for matrix $||b_{ik||}$ such that 
+$b_{ik}={1\over a_{ik}}$ then 
+                 $$
+       \det ||b_{ik}||=0
+                 $$   
+In particular
+
+              $$
+        \det
+              \pmatrix 
+           {
+     {1\over 1+c^2-a^2-b^2}& {1\over -2a-2bc}& {1\over 2ac-2b}\cr
+     {1\over 2a-2bc} & {1\over 1+b^2-a^2-c^2}&{1\over -2c-2ab}    \cr
+   {1\over 2ac+2b}&{1\over 2c-2ab}&  {1\over 1+a^2-b^2-c^2} \cr}
+              =0\,.???!!!
+                 $$
+(if all denominators do not vanish)
+
+
+
+\bye

@@ -1,0 +1,379 @@
+
+   \magnification=1200
+   \baselineskip 14 pt
+%  21 November 2012.
+%I began this file on the base of the previous file caonisomorph1.tex
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\w {\omega}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t  {\tilde}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline {\bf On canonical isomorphisms $T^*E=T^*E^*$ for vector bundle $E$}
+
+
+
+  Kirill Mackenzie told and explained many many times the construction of
+remarkable isomorphism between cotangent bundles of 
+vector bundle and its dual: for an arbitrary vector bundle $E$
+ $T^*E=T^*E^*$,
+where $E^*$ is a bundle dula to $E$.
+
+The first thing that you try to apply this construction to it is to consider
+  tangent bundle: $E=TM$ or cotangent bundle $E=T^*M$ and consider  
+  isomorphism $T^*TM=T^*T^*M$.
+On the other hand in this special case
+the canonical symplectic structure on the cotangent bundle $T^*M$ implies
+the canonical isomorphism between tangent and cotangent bundles of
+the manifold $T^*M$:
+              $T^*T^*M=TT^*M$.
+Hence in the special case of $E=TM$ the ''Mackenzie'' isomorphism 
+combined with isomorphism  induced by cnonical symplectic structure 
+implies the canonical isomorphisms $T^*TM=TT^*M$.
+
+In this etude we would like to reconstruct 
+the ''Mackenzie'' isomorphism $T^*E=T^*E^*$ 
+and its special case, the isomorphism
+  $TT^*M=T^*TM$ using pedestrian's arguments.  
+ In the first section we conisder the special case
+$E=TM$ and establish the isomorphism$TT^*M=T^*TM$.
+In the second question we will establish  
+the ''Mackenzie'' isomorphism $T^*E=T^*E^*$.
+
+Our notations are little bit inconsistent: in the first paragraph we
+denote coordintes by $x^i,....$ and new ones by
+ $\tilde x^\mu,...$.
+  In the second paragraph our notations are much more traditional:
+indices of new coordinates are denoted by the same letters with ''prime'' indices($x^i\to x^{i'}$). 
+
+\medskip
+
+\centerline{ \bf Canonical isomorphism $TT^*M=T^*TM$}
+
+  Let $M$ be manifold. Establish and study canonical isomorphisms $TT^*M=T^*TM=T^*T^*M$.
+
+   Perform calculations in local coordinates.
+It may sounds surprising but calculations in local coordinates are transparent and illuminating.
+
+
+ First consider local coordinates on $TM$ and $T^*M$ corresponding to
+local coordinates $(x^i)$ on $M$.
+ Local coordinates for $TM$ are $(x^i,t^j)$: every vector $\r\in TM$ is a vector
+  $t^i{\p\over \p x^i}$, $t^i(\r)=dx^i(\r)$.
+         If   $\tilde x^\mu=\tilde x^\mu(x^i)$  are new local coordinates  on $M$
+then
+                  $$
+            d\t x^\mu\left(t^i{\p\over \p x^i}\right)={\p \tilde x^\mu(x^i)\over \p x^i}dx^i
+            \left(t^i{\p\over \p x^i}\right)={\p \tilde x^\mu(x^i)\over \p x^i}t^i\,.
+              \eqno(1.1)
+                  $$
+Hence changing of local coordinates in $TM$ is
+                    $$
+                    (x^i,t^j)\mapsto (\t x^\mu, \t t^\nu),\quad \t x^\mu=\t x^\mu(x^i),\,\,
+                 \tilde t^\mu=\pmatrix{\mu\cr i\cr}t^i,
+                 \eqno(1.2)
+                    $$
+where we denote ${\p \tilde x^\mu(x^i)\over \p x^i}$ by  $\pmatrix{\mu\cr i\cr}$.
+
+
+
+  Respectively local coordinates for $T^*M$ are $(x^i,p_j)$. For every $1$-form $\w\in T^*M$
+  $p_i=\w\left({\p\over \p x^i}\right)$. Under changing of local coordinates on $M$
+             $\tilde x^\mu=\tilde x^\mu(x^i)$, coordinates $(p_i)$ change to new coordinates $(p_\mu)$:
+                           $$
+p_\mu=w\left({\p\over \p \t x^\mu}\right)=
+\w\left({\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }
+{\p\over \p  x^i}\right)={\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }p_i
+                           $$
+Hence changing of local coordinates in $T^*M$ is
+                        $$
+                        (x^i,p_k)\mapsto (\tilde x^\mu,\tilde p_\nu),
+                        \quad \t x^\mu=\t x^\mu(x^i),\,\,
+                           p_\mu=\pmatrix{i\cr \mu\cr}p_i,
+                           \eqno (1.3)
+                        $$
+where we denote ${\p x^i(\tilde x^\mu)\over \p \tilde x^\mu }$ by  $\pmatrix{i\cr \mu\cr}$
+
+   The space  $TT^*M$ is tangent space to the space $T^*M$. 
+The local coordinates on $TT^*M$
+corresponding to local coordinates $(x^i,p_j)$
+on $T^*M$ are coordinates $(x^i,p_j;\xi^k,\rho_m)$; $\xi^k=dx^i(\r),\rho_m=dp_m(\r)$.
+Under changing of local coordinates  $(x^i)$ to coordinates 
+$\t x^\mu=\tilde x^\mu(x^i)$
+coordinates $(\xi^i)$ and $(\rho_m)$ transform to new coordinates 
+$(\t \xi^\mu)$ and $(\t \rho_\nu)$ respectively.
+It follows from (1.1) that
+                       $$
+                    \t\xi^\mu={\p \t x^\mu\over \p x^i}\xi^i+{\p \t x^\mu\over \p p_i}\rho_i=\pmatrix{\mu\cr i\cr}\xi^i\,.
+                       $$
+  because  ${\p \t x^\mu\over \p p_i}=0$.
+  For transformation of coordinates $(\rho_m)$ calculations are longer:
+            $$
+  \t\rho_\mu={\p \t p_\mu\over \p x^i}\xi^i+
+   {\p \t p_\mu\over \p p_i}\rho_i\,.
+            $$
+We see that   ${\p \t p_\mu\over \p p_i}={\p\over \p p_i}
+\left(\t p_\mu=\pmatrix {k\cr \mu\cr}p_k\right)=\pmatrix {i\cr \mu\cr}$ and
+                           $$
+{\p \t p_\mu\over \p x^i}={\p\over \p x^i}\left(\t p_\mu=\pmatrix {k\cr \mu\cr}p_k\right)=
+ \pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k,
+                           $$
+where we denote as always by  $\pmatrix {\nu\cr i\cr}$ the partial derivative ${\p \t x^\mu\over \p x^i}$
+and by $\pmatrix {k\cr\nu \mu\cr}$ the partial derivative ${\p^2 x^k\over \p \t x^\nu \p \t x^\mu}$.
+The summation over repeated indices is assumed.  Finally we come to
+                  $$
+  \t\rho_\mu={\p \t p_\mu\over \p x^i}\xi^i+{\p \t p_\mu\over \p p_i}\rho_i=
+  \xi^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k+\pmatrix {i\cr \mu\cr}\rho_i\,.
+                  $$
+
+
+     Summarising:
+
+    {\bf Proposition 1} {\it  Let $(x^i,p_j;\xi^k,\rho_m)$ be local coordiantes
+on $TT^*M$ described above.  
+    Under changing of coordinates $(x^i)\mapsto (\t x^\mu)$ on $M$ 
+these coordinates transform in the following way}
+                                $$
+            \t p_\mu=\pmatrix{j\cr\mu\cr}p_j, \quad
+            \t\xi^\mu=\pmatrix{\mu\cr i\cr}\xi^i,\quad
+            \t\rho_\mu=
+            \xi^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}p_k+
+\pmatrix {i\cr \mu\cr}\rho_i\,.
+\eqno (*)
+                                $$
+\bigskip
+Now consider analogously coordinates  on $T^*TM$ and their 
+transformation rules.
+ If $(x,t)$ coordinates on $TM$ (see (1)) and $(x,t,\pi,\tau)$ corresponding coordinates on $T^*TM$
+ ($\pi_k=\w\left({\p\over \p x^k}\right)$,
+ $\tau_m=\w\left({\p\over \p t^m}\right)$) then according to (2)
+ under changing of coordinates $(x^i)\mapsto (\t x^\mu)$, the coordinates $(\pi_m)$ transform to coordinates
+ $(\t \pi_\mu)$, the coordinates $(\tau_k)$ transform to coordinates
+ $(\t \tau_\nu)$ such that
+                  $$
+\t\pi_\mu={\p x^i\over \p \t x^\mu}\pi_i+{\p t^k\over \p \t x^\mu}\tau_k,\,\,\,\,
+\t\tau_\nu={\p x^i\over \p \t t^\nu}\pi_i+{\p t^k\over \p \t t^\nu}\tau_k
+                  $$
+Since ${\p x^i\over \p \t t^\nu}=0$
+and  ${\p t^k\over \p \t t^\nu}={\p x^k\over \p \t x^\mu}$
+then $$\t\tau_\nu=\pmatrix {k\cr\nu}\tau_k$$.  For $\t\pi_\mu$ we have
+                  $$
+\t\pi_\mu=\pmatrix {i\cr\mu}\pi_i+{\p\over \p \t x^\mu}\left({\p x^k\over \p\t x^\nu}t^\nu\right)\tau_k=
+\pmatrix {i\cr\mu}\pi_i+
+\pmatrix {k\cr\mu\nu}\pmatrix {\nu\cr i}t^i\tau_k\,.
+                  $$
+
+     Summarising:
+
+    {\bf Proposition 2} {\it Let $(x^i,t^j;\pi^k,\tau^m)$ be 
+     local coordinates
+on $T^*TM$ described above.  
+ Under changing of coordinates $(x^i)\mapsto (\t x^\mu)$ on $M$ 
+these coordinates transform in the following way}
+                                $$
+            \t \tau_\mu=\pmatrix{j\cr\mu\cr}\tau_j, \quad
+            \t t^\mu=\pmatrix{\mu\cr i\cr}t^i,\quad
+            \t\pi_\mu=
+            t^i\pmatrix {\nu\cr i\cr} \pmatrix {k\cr\nu \mu\cr}\tau_k+\pmatrix {i\cr \mu\cr}\pi_i
+            \eqno (**)
+                                $$
+
+
+Comparing  Propositions 1 and 2 we come to 
+
+{\bf Observation }
+
+  As it was described above  
+assign to local coordiantes $x^i$ on a manifold $M$ local coordinates
+$(x^i,t^j;\pi_k,\tau_j)$ on $T^*TM$ and local coordiantes
+ $(x^i,p_i;\xi^k,\rho_m)$ on $T^*TM$  
+ which are described above. The map
+                         $$
+           t^i=\xi^i,\,\,\, \tau_j=p_j,\,\,\, \pi_k=\rho_k
+                      \eqno (1.***)
+                      $$
+ establishes the isomorphism between the spaces $T^*TM$ and $TT^*M$ 
+which does not depend on
+             the choice of local coordinates $x^i$ on $M$\footnote{$^*$}
+{In fact one can consider the {\it pencil}  of maps 
+          $
+ t^i={\ac}\xi^i,\,\,\, \tau_j={\bf b}p_j,\,\,\, \pi_k={\bf ab}\rho_k
+           $
+where ${\bf a,b}\not=0$.}.
+
+
+   Note that canonical symplectic structure
+$\Omega=dp_i\wedge dx^i$ establishes canonical 
+isomorphism  between spaces $TT^*M$ and $T^*T^*M$:
+                     $$
+  dx^i\leftrightarrow {\p\over \p p_i}\,,\quad
+dp_i\leftrightarrow -{\p \over \p x^i }
+                    $$ 
+Combining this isomorphism with isomorphism (1.$***$) we come to the  
+isomoprphism $T^*TM=T^*T^*M$ which looks like
+                            $$
+            (x^i,t^i,\pi_k,-p_i)\leftrightarrow (x^i,p_i;\pi_k,t^i)
+                            $$ 
+Of course there is two-parametric freedom (see the footnote).
+
+\medskip
+
+\centerline  {${\cal x}2 $ \bf 
+ Canoncial isomorphism in general case: $T^*E=T^*E^*$ }
+
+
+ In the previous paragraph we constructed canonical isomorphism 
+$T^*E=T^*E^*$ in the case where vector bundle $E$ is tangent (cotangent bundle).
+
+  Now consdier general case. Let $(x^\mu,s^i)$ be local coordiantes on 
+bundle $E$.  Let under changing of coordinates
+   $x^{\mu'}=x^{\mu'}(x)$  fibre coordiantes $s^i$ 
+transform in the following way: $s^{i'}=\Psi^{i'}_k(x)s^k$. Then
+Respectively coordinates $s_k$ of dual fibre will transform as
+                       $s_{k'}=\Phi_{k'}^is_i$,
+  where transition matrices $\Psi$ and $\Phi$ are inverse to each other: 
+ $\Psi^{i'}_k\Phi^k_{j'}=\delta^{i'}_{j'}$.
+
+ Let $(x^\mu,s^i; \rho_\mu,\pi_i)$ be local coordinates in $T^*E$ and respectively let $(x^\mu,s_i; \zeta_\mu,t^i)$ be local coordinates in $T^*E^*$. 
+  Reccall that as usual we suppose that 
+$1$-form  $\w\in T^*E$ has local coordinates 
+$(x^\mu,s^i;\rho_\mu,\pi_i)$ if it is the function
+on vectors tangent to the manifold $E$ at the point $(x^\mu, s^i)$ such that
+              $$
+     \w\left({\p\over \p x^\mu}\right) =\rho_\mu,\quad 
+        \w\left({\p\over \p s^i}\right)=\pi_i
+             $$
+  Respectively we suppose that $1$-form 
+$\w\in T^*E^*$ has local
+coordinates $(x^\mu,s_i;\zeta_\mu,t_i)$ if it is the function
+on vectors tangent to the manifold $E^*$ at the point 
+$(x^\mu, s_i)$ such that
+              $$
+     \w\left({\p\over \p x^\mu}\right)=\zeta_\mu, 
+\quad \w\left({\p\over \p s_i}\right)=t_i\,.
+             $$
+
+ Write down transformation for fields under coordiante trasnformation $x^{\mu'}=x^{\mu'}(x^\mu)$. We have
+                    $$
+                    \cases
+                    {
+               s^{i'}=\Psi^{i'}_k(x)s^k\cr
+            \rho_{\mu'}={\p x^\mu\over \p x^{\mu'}}\rho_\mu+
+            {\p s^i\over\p x^{\mu'}}\pi_i\cr
+                   \pi_{i'}={\p x^\mu\over \p s^{i'}}\rho_\mu+
+          {\p s^i\over \p s^{i'}}\pi_i\cr
+                      },\qquad
+                    \cases
+                    {
+               s_{i'}=\Phi_{i'}^k(x)s_k\cr
+            \zeta_{\mu'}={\p x^\mu\over \p x^{\mu'}}\zeta_\mu+
+           {\p s_i\over\p x^{\mu'}}t^i \cr
+                   t^{i'}={\p x^\mu\over \p s_{i'}}\zeta_\mu+
+         {\p s_i\over \p s_{i'}}t^i\cr
+                      }
+                      $$
+Note that
+
+                     $$
+    {\p x^\mu\over \p s^{i'}}={\p x^\mu\over \p s_{i'}}=0,\,\,  
+      {\p s^i\over \p s^{i'}}=\Phi^i_{i'},\,\,
+    {\p s_i\over \p s_{i'}}=\Psi^{i'}_i\,,     
+                     $$
+and
+                    $$
+{\p s^i\over \p x^{\mu'}}\pi_i={\p \Phi^i_{i'}\over \p x^{\mu'}}s^{i'}\pi_i=
+   {\p x^\mu\over \p x^{\mu'}}{\p \Phi^i_{i'}\over \p x^{\mu}}s^{i'}\pi_i=
+   {\p x^\mu\over \p x^{\mu'}}
+     {\p \Phi^i_{i'}\over \p x^{\mu}}
+        \Psi^{i'}_ks^{k}\pi_i\,,
+             \eqno (2.2a)
+                   $$
+                  $$
+{\p s_i\over \p x^{\mu'}}t^i=
+ {\p \Psi_i^{i'}\over \p x^{\mu'}}s_{i'}t^i=
+   {\p x^\mu\over \p x^{\mu'}}{\p \Psi_i^{i'}\over \p x^{\mu}}
+         s_{i'}t^i=
+   {\p x^\mu\over \p x^{\mu}}{\p \Psi_i^{i'}\over \p x^{\mu}}
+        \Phi_{i'}^ks_{k}t^i\,.
+             \eqno (2.2b)
+                   $$
+Introducing  $L_{\mu k}^i$ such that
+                 $$
+         L_{\mu k}^i=
+       {\p \Psi_k^{i'}\over \p x^{\mu}}
+        \Phi_{i'}^i=
+            -
+       {\p \Phi^i_{i'}\over \p x^{\mu}}
+        \Psi^{i'}_k
+             ,\,\, (\Psi\circ \Phi=1)
+                 $$
+we see that the 
+transformations (2.1) have the following nice appearance:
+                   $$
+                   \cases
+                    {
+               s^{i'}=\Psi^{i'}_k(x)s^k\cr
+            \rho_{\mu'}={\p x^\mu\over \p x^{\mu'}}
+                     \left(
+                      \rho_\mu-
+                     L_{\mu k}^is^k\pi_i
+                      \right)
+                      \cr
+                   \pi_{i'}=\Phi^i_{i'}\pi_i\cr
+                      },
+                    \qquad
+                    \cases
+                    {
+               s_{i'}=\Phi_{i'}^k(x)s_k\cr
+ \zeta_{\mu'}={\p x^\mu\over \p x^{\mu'}}
+        \left(
+           \zeta_\mu+
+               L_{\mu k}^it^k s_i
+               \right)\cr
+    t^{i'}=\Psi^{i'}_it^i\cr
+                      }
+\eqno (2.3)
+                      $$
+Put
+         $$
+       \cases
+         {
+      \pi_i=\alpha s_i\cr
+      t^i=\beta s^i\cr
+      \zeta_\mu=\gamma \rho_\mu\cr
+        }
+         $$
+  We see that this map is invariant with respect to changing of coordinates
+if $\beta=-\gamma\alpha$. In particular we can put $\alpha=-1$, $\beta=\gamma=1$
+We come to isomorphism $T^*E=T^*E^*$ defined in local coordinates by condition
+that
+             $$
+    (x^\mu,s^i;\rho_\mu,\pi_i)\leftrightarrow(x^\mu,s_i;\zeta_\mu,t^i),
+   \quad\hbox{such that}\,\,\rho_\mu=\zeta_\mu,
+      \pi_i=-s_i,t^i=s^i
+             $$ 
+(Compare with (1.***))
+
+We constructed the isomorphism \finish
+\bye

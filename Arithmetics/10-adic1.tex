@@ -1,0 +1,271 @@
+
+\magnification=1200
+
+\def\Z {{\bf Z}}
+\def\A {{\bf A}}
+\def \mod {{\rm mod\,}}
+\def\a{{\alpha}}
+\def\t{\tilde}
+\def\F{\bf F}
+
+\centerline {\bf $\t\Z_{10}=\Z_2\oplus \Z_5$}
+
+
+\medskip
+
+\def\m{\medskip}
+
+   It is very natural to consider $10$-adic numbers in spite of the fact
+   that $10$ is not prime.
+
+ The simplest way to define the ring $\tilde\Z_{10}$ is the following:
+            The set  $\t\Z_{10}$ is the set of formal series $\sum_{n=0}^\infty a_n 10^n$
+             where $a_n$ are numbers $\{0,1,2,3,4,5,6,7,8,9\}$.
+One can naturally introduce ring structure
+mimicking addition and multiplication rules, so called
+''slozhenije i umnozhenije stolbikom''. E.g.
+If $x=\sum_{n=0}^\infty a_n10^n$, $y=\sum_{n=0}^\infty b_n10^n$ then
+  $x+y=\sum_{n=0}^\infty c_n10^n$, where $c_n$ are defined by
+              $$
+  c_n=
+                  \cases
+                  {
+  a_n+b_n+r_n \,\,\hbox {if $a_n+b_n+r_n<10$}\cr
+a_n+b_n+r_n-10 \,\,\hbox {if $a_n+b_n+r_n \geq 10$}\cr
+             }
+             \,\,\,
+  n=0,1,2,\dots
+              $$
+   and
+                 $$
+   r_0=0,\,\,             r_{k+1}=
+  \cases
+                  {
+  0\,\,\hbox {if $a_n+b_n+r_k<10$}\cr
+  1 \,\,\hbox {if $a_n+b_n+r_n \geq 10$}\cr
+             }
+             \,\,{\rm for}\,\, k\geq 0
+                 $$
+To be more precise consider presentation of $p$-adic numbers by infinite sequence:
+$x=(x_0,x_1,x_2,\dots, x_n)$ where
+                     $\,x_0=a_0, x_1=a_0+10a_1,\dots, x_k=\sum_{n=0}^{k} a_n 10^n$, $\dots$
+if $x=\sum_{n=0}^\infty a_n 10^n$. The natural projection
+$P_k\colon \sum_{n=0}^\infty a_n 10^n\to \sum_{n=0}^{k} a_n 10^n$
+projects $x_{k+1}$ on $x_k$.
+One can see that if $x=\sum_{n=0}^\infty a_n 10^n=(x_0,x_1,x_2,x_3,\dots)$,
+$y=\sum_{n=0}^\infty b_n 10^n=(y_0,y_1,y_2,y_3,\dots)$ then
+               $$
+  x+y=z=\left(z_0,z_1,z_2,z_3,\dots\right)
+               $$
+where $z_k=P_k(x_k+y_k)$ and
+            $$
+  xy=w=\left(w_0,w_1,w_2,w_3,\dots\right)
+               $$
+where $w_k=P_k(x_ky_k)$
+       This ring is not integral domain:
+  (see examples below).
+
+\m
+
+It is well=known that If integer $N$ is product of different primes
+then $\Z\slash N\Z$ is direct sum of fields. In particular
+$\Z/10\Z=\F_2+\F_5$, (here as always $\F_p=\Z\slash pz$ prime field
+of characteristic $p$ for prime $p$)--- The China`s algorithm
+establish the isomorphism between $\F_{p_1}\oplus \F_{p_2}$ and
+$\Z\slash p_1p_2\Z$ if $p_1\not=p_2$.
+
+This can be be prolonged:
+
+
+
+\smallskip
+
+  {\bf Proposition}  {\it The ring $\t\Z_{10}$ is isomorphic to the direct sum of the rings $\Z_2$ and $\Z_5$.}
+
+\medskip
+
+  Present explicitly the maps $\phi\colon \Z_{10}\to \Z_2\oplus \Z_5$ and inverse map $\psi\colon \Z_2\oplus \Z_5\to \Z_{10}$
+  which establish this isomorphism.
+  If $x=\sum_{n=0}^\infty a_n 10^n\in \Z_{10}$ then
+                   $$
+    \psi(x)=\left(\sum_{n=0}^\infty \left(5^n a_n\right) 2^n,\sum_{n=0}^\infty \left(2^n a_n\right) 5^n\right)
+    \in \Z_2\oplus \Z_{5}
+                   $$
+Note that this map sends rational integrals on the diagonal: Image of $\phi$ on $\Z$ is diagonal in $\Z\oplus \Z$.
+
+  The inverse map is little bit not so obvious:
+
+ Let $(x,y)\in \Z_2\oplus \Z_{5}$ where $x=(x_0,x_1,x_2,\dots,)$ with $x_k=\sum_{n=0}^k a_n 2^n$
+ and $y=(y_0,y_1,y_2,\dots,)$ with $y_k=\sum_{n=0}^k b_n 5^n$. Show that there exists
+  $z=(x_0,x_1,x_2,\dots,)$ with $z_k=\sum_{n=0}^k c_n 10^n$ which obeys the conditions:
+                                    $$
+              z_k=x_k (\mod 2^{k+1}),\,\,\,z_k=y_k (\mod 5^{k+1}), k=0,1,2,3,\dots
+                                    $$
+ and $z_k$ are uniquely defined by these conditions. It follows from this statement that map $\psi=\phi^{-1}$
+ is defined by equation $\psi(x,y)=z$
+
+For $k=0$ this is obvious. Suppose we proved it for $k\leq l$.
+ For $k=l+1$ we have equations
+                $$
+       z_{l+1}=z_l+c_{l+1}10^{l+1}=x_{l+1}=x_l+a_{l+1}2^{l+1}(\mod 2^{l+2})
+                 $$
+and
+                $$
+             z_{l+1}=z_l+c_{l+1}10^{l+1}=y_{l+1}=y_l+b_{l+1}5^{l+1}(\mod 5^{l+2})
+                $$
+on unknowns $a_{l+1}, b_{l+1}\in \{0,1,2,3,4,5,6,7,8,9\}$.
+These equations have solutions and these solution is unique because due to inductive hypothesis
+for $k=l$ $z_l=x_l+\delta^{(2)}2^{l+1}$ and $z_l=x_l+\delta^{(5)}5^{l+1}$.
+
+{\bf Remark} The maps $\phi,\psi$ are ''lifting'' of the maps establishing isomorphism between
+ring $\Z\slash 10\Z$ and direct sum of the fields $\F_2$ and $\F_5$.
+
+\medskip
+
+ {\bf Example}. Consider an elements $(1,0)\in \Z_2\oplus \Z_5$.
+   Find an element $z=\sum_{n=0}^\infty c_n10^n$ such that $\phi (z)=(1,0)$.
+   If $z=(z_0,z_1,z_2,z_3,\dots)$ then one can see that
+                   $$
+         z_0=5, z_1=25, z_2=625,...
+                   $$
+we come to.... Yes! you are right we come to the sequence which know very well being innocent pupil in the school:
+ sequence ${5,25,625,\dots}$---sequence of numbers such that finialdigits of their squares coicide with these numbers:
+   $5^2=2{\bf 5}$,  $25^2=6{\bf 25}$,..  In the language of $10$-adic numbers $z=\psi(1.0)$ is $10$-adic number
+   $(5,25,625,\dots)$ such that $x^2=x$. It is because
+                   $$
+       x^2=(1,0)^2=(1,0)=x
+                   $$
+Now we see that the second non-trivial solution of the equation $x^2=x$ in the ring $\Z_2\oplus \Z_{5}$ is
+$w=(0,1)$. One can see that
+                   $$
+       \psi(0,1)=(6,76,376,\dots)
+                   $$
+
+\m
+
+{\bf Remark} Note that it follows immediately from proposition that $\Z_{10}$ is not an integral domain;
+e.g. $(a,0)(0,b)=(0,0)=0$.
+ $(1,0)(0,1)=0$.
+
+
+\bigskip
+
+\centerline {\it PseudoTeichmullers for $\Z_{10}$\it }
+\m
+\def\F{\bf F}
+ Recall standard facts about Teichmuller map.
+If $p$ is prime then  the
+ring $\Z_p$ possesses all roots of degree $p-1$ of unity, i.e. there exist a map
+$T\colon \F_p\to \Z_p$ (Teihmuller map) such that
+                $$
+                T^p(\bar a)=T(a),
+                    $$
+One can see that $T(\bar a\bar b)=T(\bar a)T(\bar b)$ and $T(\bar +a\bar b)=T(\bar a)+T(\bar b)=p\Z_p$
+Here $\F_p=\{\bar 0,\bar 1,\bar 2,\dots\}$ is a prime field of characteristic $p$.
+
+ Roughly speaking for any $a\in {1,2,\dots,p-1}$ there is $p$-adic number, i.e.  a sequence $\{x_0,x_1,x_2\}$
+ such that $x_{k+1}=x_k (mod p^k)$ and $x_k^p=x_k+\dots$.
+ One can see that
+                 $$
+         T(\bar a)=\lim_{n\to\infty}a^{p^n}=(a,a^p,a^{p^2},\dots,a^{p^n},\dots)
+                 $$
+because $a^{p^{n+1}}=a^{p^{n+1}-p^n}a^{p^n}$ and $a^{p^{n+1}-p^n}=a^{\varphi(p^n)}=1+...p^{n+1}$
+
+
+What happens in  $\tilde\Z_{10}$ ?  We already know that for $\bar a=5,6\in \Z\slash 10\Z$
+$\t T(\bar 5)=(5,25,\dots)$ and $\t T(6)=(6,76,\dots)$
+the order of these elements is equal to $2$.
+
+
+Now look for all elements
+
+  $\bar a=1$  $\t T(\bar 1)=1$. Order is equal to $2$ ($1^2=1$)
+
+\m
+
+
+  $\bar a=\bar 2$. We have that   $\bar 2=(\bar 0,\bar 2)$ in $\F_2\oplus F_{5}$.
+     We see that $\t T(\bar 2)=(0,T_5(\bar 2)=\left(0,2^{5^\infty}\right)$.
+        $2^{5^\infty}=(2,32,)$
+  Its image in $\t\Z_{10}$ is equal to $2^{5^\infty}$
+
+In the pedestrians language we come to the sequence:
+
+  $(2,32,432,\dots)$ such that  $2^5=3\bf 2$, $32^5=...4\bf 32$, $432^5=...4\bf 432$
+
+\m
+
+
+
+  $\bar a=\bar 3$. We have that   $\bar 3=(\bar 1,\bar 3)$ in $\F_2\oplus F_{5}$.
+     We see that $\t T(\bar 3)=(1,T_5(\bar 2)=\left(0,3^{5^\infty}\right)$. ($T_2(1)=1$).
+        $3^{5^\infty}=(3,\dots 43, \dots 443,\dots)$, $3^5=...43$, $43^5=...443$
+
+
+  Now we have to calculate the image of $(1,3^{5^\infty})$  in $\t\Z_{10}$. Is it equal to $3^{5^\infty}$? Yes
+
+
+
+In the pedestrians languange we come to the sequence:
+
+  $(3,43,443,\dots)$ such that  $3^5=4\bf 3$, $43^5=...4\bf 43$, $443^5=...\bf 443$
+
+
+\m
+
+$\bar a=\bar 4$. We have that   $\bar 4=(\bar 0,\bar 4)$ in $\F_2\oplus F_{5}$.
+Note that order of $\bar 4$ in $\F_5$ is equal to $2$.
+     We see that $\t T(\bar 4)=(0,T_5(\bar 4)=\left(0,4^{5^\infty}\right)$.
+        $4^{5^\infty}=(4,\dots 24, \dots624 ,\dots)$, $4^5=...2\bf 4$, $24^5=...6\bf 24$, $624^5=\dots \bf 624$...
+In fact cubes not only fifth orders have the same end:
+  $4^3=...\bf 4$, $24^5=...\bf 24$, $624^5=\dots \bf 624$...
+
+The image of $(0,4^{5^\infty})$  in $\t\Z_{10}$. Is it equal to $4^{5^\infty}$? Yes
+
+In the pedestrians languange we come to the sequence:
+
+  $(4,24,624,\dots)$ such that
+   $4^3=...4$, $24^3=...24$,... and
+
+  $4^5=4\bf 24$, $24^5=...6\bf 243$,
+
+
+  \m
+
+
+    $\bar a=\bar 5$. We have that   $\bar 5=(\bar 1,\bar 0)$ in $\F_2\oplus F_{5}$
+    We know already  that $\t T(5)=(5,25,625,\dots)$.
+   $10$-adic number $x=5^{2^\infty}=(5,25,625,\dots)$
+    obeys the equation $x^2=x$
+
+\m
+  $\bar a=\bar 6$. We have that   $\bar 6=(\bar 0,\bar 1)$ in $\F_2\oplus F_{5}$
+We know already  that $\t T(6)=(6,76,376,\dots)$.
+   $10$-adic number $y=6^{5^\infty}=(6,76,376,\dots)$
+    obeys the equation $x^2=x$
+
+\m
+
+$\bar a=\bar 7$. We have that   $\bar 6=(\bar 1,\bar 2)$ in $\F_2\oplus F_{5}$
+    $10$-adic number $x=7^{5^\infty}$ obeys the equation $x^5=x$.
+
+
+\m
+
+$\bar a=\bar 8$. We have that   $\bar 6=(\bar 0,\bar 3)$ in $\F_2\oplus F_{5}$
+    $10$-adic number $x=8^{5^\infty}$ obeys the equation $x^5=x$.
+
+
+\m
+
+$\bar a=\bar 9$. We have that   $\bar 9=(\bar 1,\bar 4)$ in $\F_2\oplus F_{5}$
+    $10$-adic number $x=9^{5^\infty}$ obeys the equation $x^3=x$ (and $x^5=x$).
+
+
+
+
+
+\m
+
+
+  \bye

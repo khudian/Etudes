@@ -1,0 +1,215 @@
+
+\magnification=1200 \baselineskip=14pt
+
+\font\magnifiedfiverm=cmr10 at 10 pt
+
+\centerline{Irreducible components of third rank tensors}
+
+\def\vare{\varepsilon}
+\def\a{\alpha}
+
+
+  
+
+  Let $T^i_{km}$ be a tensor in $E^3$
+   such that $T^i_{km}=T^i_{mk}$, i.e. $T^i(x)=T^i_{km}x^kx^m$. 
+What are its irreducible components\footnote{$^1$}
+{(We need it considering analogues of quadropole expansion for
+current $J^i(x)$)}(with respect to $SO(3)$)?
+
+        $$
+   T_{ikm}=T^n_{i(km)}+T^s_{(ikm)}\,,\qquad (18=10+8)
+        $$
+where $T^s$ is totally symmetric and $T^n$ is normal:
+        $$
+    T^s_{ikm}={1\over 3}(T_{ikm}+T_{kim}+T_{mki})\,,
+    T^n_{ikm}={2\over 3}T_{ikm}-{1\over 3}T_{kim}-{1\over 3}T_{mki})\,,
+         $$
+        $$ 
+T^n_{ikm}x^ix^kx^m=0\,, {\rm i.e.}\,\,   
+T^n_{ikm}+T^n_{kim}+T^n_{mki}=0, \,\, (T^n_{ikm}=T^n_{imk})\,.
+        \eqno (1.1c)
+        $$  
+Now consider restriction on the group $SO(3)$.
+
+ Space of tensors $T^s_{(ikm)}$ is irreducible with respect to the group
+$GL(3)$, but it is reducible with respect to $SO(3)$.
+Tensor $T^s_{ikm}$ is a sum of $l=3$ (symmetric traceless tensor) 
+and of $l=1$:
+          $$
+   T^s_{imk}=T^{l=2}_{(imk)}+\left(a_i\delta_{mk}+
+      a_m\delta_{ik}+a_k\delta_{mi}\right)\,, \quad (10=7+3)\,,
+          \eqno (1.2)
+          $$
+where  $T^{l=2}_{imk}$ is symmetric traceless tensor and
+         $
+  a_i={1\over 5}T^s_{irr}
+         $,
+
+  Little bit more care about the $8$-dimensional
+ space of tensors $T^n_{i(mk)}$, obeying conditions (1.1c) It is one of
+equivalent irreducible spaces with respect to $GL(3)$
+($27=10+8+8+1$), and with respect
+to $SO(3)$ it is a sum of $l=2$ and $l=1$ subspaces ($8=5+3$):
+ Indeed 
+tensor $T^n_{i(km)}$ is the following sum
+          $$
+   T^n_{i(mk)}=T^{l=2}_{i(mk)}+\left(2b_i\delta_{mk}-
+      b_m\delta_{ik}-b_k\delta_{mi}\right)\,,
+            (1.3a)
+          $$
+where $b_i={1\over 4}T_{irr}$
+and tensor $T^{l=2}_{ikm}$ obeys conditions:
+             $$
+    T^{l=2}_{irr}=0\,,\quad
+             T^{l=2}_{ikm}=T^{l=2}_{imk}\,,\quad
+          T^{l=2}_{ikm}x^ix^kx^m=0\,,\quad
+             (1.3b)
+                      $$
+One can see that it is pseudotensor of angular momentum  $l=2$
+          $$
+T^{l=2}_{ikm}=\vare_{ikr}t_{rm}+\vare_{imr}t_{rk}\,,\quad 
+ t_{mn}={1\over 3}\vare_{ikm}T^{l=2}_{ikn} 
+          $$
+where $t_{rk}$ is traceless symmetric tensor ($l=2$).
+
+{\bf Exrcise} Analyze these maps in detail.
+Show that map above is one-one correspondence.
+
+  Finally collecting these formulae
+we see that tensor $T_{imk}$ which is symmetric with 
+second and third index possesses one field of $l=3$, 
+one field of $l=2$ and two vector fields:
+                $$
+   T_{ikm}=\underbrace {t_{ikm}}_{l=3}+
+          \underbrace{\vare_{ikr}t_{rm}+\vare_{imr}t_{rk}}_{l=2}+
+            \underbrace {a_i\delta_{mk}+
+      a_m\delta_{ik}+a_k\delta_{mi}}_{l=1}+
+        \underbrace{2b_i\delta_{mk}-
+      b_m\delta_{ik}-b_k\delta_{mi}}_{l=1}
+            \eqno (1.4)
+                $$
+
+{\bf Remark} Notice that one can consider instead decomposition
+(1.3) the decomposition:
+          $$
+   T^n_{i(mk)}=T^{l=2}_{i(mk)}+\left(2b_i\delta_{mk}-
+      b_m\delta_{ik}-b_k\delta_{mi}\right)\,,
+            (1.3'a)
+          $$
+where instead conditions (1.3b) we have  
+for  the tensor $T^{l=2}_{ikm}$ the  conditions:
+             $$
+    T^{l=2}_{rri}=0\,,\quad
+             T^{l=2}_{ikm}=T^{l=2}_{imk}\,,\quad
+          T^{l=2}_{ikm}x^ix^kx^m=0\,,\quad
+             (1.3'b)
+                      $$
+In this case  condition 
+$b_i={1\over 4}T_{irr}$ for (1.3a) transforms to condition
+`$b_i=-{1\over 2}T_{rri}$.
+
+iBoth conditions define the same subsapces. This follows from
+the uniqueness of decomposition of space on irreducible components.
+Onwe can see it by brute force: $T^{rri}=0\leftrightarrow T_{iir}=0$
+for tensors obeu=ying condition (1.1c).
+
+
+  \bigskip 
+
+
+
+  What happens in the case of general tensor. In this case
+first two words about decomposition on irreducible subspaces
+with respect to group $GL(n)$ (We temporarlly consider arbitrary dimension)
+
+Consider first decompostion  on tensors
+symmetric and antisymmetric with respect to $k,m$:
+          $$
+   T_{ikm}=T_{i(km)}+T_{i[km]}
+          $$ 
+
+We decompose $T_{i(km)}$ on the sum of symmetric and normal tensor
+as in (1.1) and $T_{i[mk]}$ on a sum of antisymmetric and normal
+   
+
+
+
+Then for general symmetric group we will have
+         $$
+T_{ikm}=\underbrace{t_{ikm}}_{\hbox{symmetric}}+
+              \underbrace{ u^n_{i(km)}+v^n_{i[km]}}_
+        {\hbox {two equival. irreduc. repres.}}+
+    \underbrace{s_{[ikm]}}_{\hbox{antisymmetric}}\,,
+         $$
+where $u^n_{(ikm)}=v^n_{[ikm]}=0$:
+      $$
+t_{ikm}={1\over 6}(T_{ikm}+T_{imk}+T_{kmi}+T_{kim}+T_{mik}+T_{mki})\,,
+      $$
+      $$
+u^n_{ikm}={1\over 6}(2T_{ikm}+2T_{imk}-T_{kmi}-T_{kim}-T_{mik}-T_{mki})\,,
+      $$
+($u^n_{ikm}=u^n_{imk},  u^n_{ikm}x^i x^m x^k=0)$.)
+ 
+    $$
+s_{ikm}={1\over 6}(T_{ikm}-T_{imk}+T_{kmi}-T_{kim}+T_{mik}-T_{mki})\,,
+      $$
+      $$
+v^n_{ikm}={1\over 6}(2T_{ikm}+2T_{imk}-T_{kmi}+T_{kim}-T_{mik}+T_{mki})\,,
+      $$
+($v^n_{ikm}=-v^n_{imk},  v^n_{ikm}\xi^i\xi^m\xi^k=0)$,
+$\xi$ is odd variable)).
+
+     For dimensions we have
+             $$
+n^3=\underbrace{{n(n+1)(n+2)\over 6}}_{\hbox{symmetric}}+
+              \underbrace{2\times {n(n+1)(n-1)\over 3}}_
+        {\hbox {two equival. irreduc. repres.}}+
+    \underbrace{{n(n-1)(n-2)\over 6}}_{\hbox{antisymmetric}}\,,
+             $$
+In particular for $n=3$    
+     $$
+   27=10+8+8+1
+         $$
+
+Restrict on the group $SO(3)$. We already did  for symmetric part
+  $T_{i(mk)}=t_{imk}+u^n_{imk}$ (see (1.4))  Analogously we do for
+for antisymmetric part. 
+For $n=3$ $s_{imk}=s\vare_{imk}$ defines pseudoscalar.
+For tensor $v^n_{imk}$:
+      $$
+v^n_{imk}=-v^n_{ikm}, \quad v^n_{imk}\xi^i\xi^m\xi^k=0),\qquad {\rm i.e.}\,
+\vare_{imk}v_{imk}=0
+     $$
+we come to decomposition like in (1.3'a):
+           $$
+v^n_{imk}=\tau_{ij}\vare_{imk}+(\delta_{im}\beta_k-\delta_{ik}\beta_m)\,.
+           $$
+            
+where $\tau_{ij}$ is symmetric traceless tensor ($l=2$) and $\beta_i$
+is a vector ($l=1$)
+We come to decomposition:
+  $$
+        T_{ikm}=\underbrace {t_{ikm}}_{l=3}+
+              \underbrace {a_i\delta_{mk}+
+      \a_m\delta_{ik}+\a_k\delta_{mi}}_{l=1}+
+\underbrace{\vare_{ikr}t_{rm}+\vare_{imr}t_{rk}}_{l=2}+
+        \underbrace{2b_i\delta_{mk}-
+      b_m\delta_{ik}-b_k\delta_{mi}}_{l=1}+
+              $$
+                 $$
+        \underbrace{\tau_{ij}\vare_{jkm}}_{l=2}+
+        \underbrace{2\beta_i\delta_{mk}-
+      \beta_m\delta_{ik}-\beta_k\delta_{mi}}_{l=1}+
+     \underbrace{v\vare_{ikm}}_{l=0}
+                 $$
+
+We will have one particle with $l=3$, two with $l=2$, three vector
+fields, $l=1$
+and one pseudoscalar: 
+              $$
+27=10+8+8+1=(7+3)+(5+3)+(5+3)+1\,
+              $$
+
+\bye
+

@@ -1,0 +1,267 @@
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+\def \wt {\widetilde}
+
+
+\centerline {\bf Theory of invatriants}
+
+\m
+
+ {\it I am reading the book of D. Hilbert: Lecture course "Theory of algebraic invariants"
+   Summer semester 1897.  I try to expose here the main ideas of this course
+   as I understand it.}
+
+   \m
+
+          Consider binary form of the order $n$
+                    $$
+         f=a_0x^n+na_1x^{n-1}+{n(n-1)\over 2}a_2x^{n-2}y^2+\dots+a_ny^n=\sum_{k=0}^n C^k_nx^{n-k}y^k
+                    $$
+    The action of group $GL(2,\R)$ and of its subgroup $SL(2,\R)$ on $(x,y)$ induces the action of this group
+    and its subgroup on $n+1$-dimensional space of coefficients.
+   We say that polynomial $\cal I (a_0,\dots,a_n)$ is invariant if it is $SL(2,R)$-invariant.
+
+   There are natural weights and degrees. We say that degree of any coefficient $a_i$ is equal to $1$.
+   One can consider invariants of given degree $g$. Degree of
+ $(a_0^{m_0} a_1^{m_1}...)$ equals $m_0+m_1+\dots$.
+
+   We say that invariant ${\cal I}(a_i)$ has {\it weight} $p$ if
+                $$
+                {\cal I}(a^g_i)=(\det g)^p{\cal I}(a_i)\,.
+                $$
+   Consider fundamental vector fields of the action of the group $GL(2.\R)$ on $(x,y)$
+                $$
+D_x=x{\p\over \p x},\,\,D_y=y{\p\over \p y}, \,\,T_x=y{\p\over \p x},\,\,T_y=x{\p\over \p y}\,.
+                $$
+
+These vector fields form a basis of  representation of the Lie algebra $gl (2,\R)$ with commutator relations:
+                 $$
+   [D_x,D_y]=0, [D_x,T_x]=-T_x, [D_x,T_y]=T_y\,, [D_y,T_x]=T_x, [D_y, T_y]=-T_y, [T_x,T_y]=D_y-D_x\,.
+                 $$
+   The generators  $\{D_x-D_y, T_x, T_y\}$ are generators of representation of the Lie algebra $sl (2,\R)$
+
+Consider the induced presentation of these vector fields on the space $\{a_0,a_1,a_2,\dots,a_n\}$. We have:
+                    $$
+     \widetilde D_x=na_{_0}{\p\over \p a_{_0}}+(n-1)a_{_1}{\p\over \p a_{_1}}+(n-2)na_{_2}{\p\over \p a_{_2}}+\dots+
+        a_{_{n-1}}{\p\over \p a_{_{n-1}}}=
+              \sum_{k=0}^{k=n}(n-k)na_{_k}{\p\over \p a_{_k}}
+                    $$
+                    $$
+      \widetilde D_y=a_{_1}{\p\over \p a_{_1}}+2a_{_2}{\p\over \p a_{_2}}+\dots+na_{_n}{\p\over \p a_{_n}}=
+              \sum_{k=0}^{k=n}ka_{_k}{\p\over \p a_{_k}}
+                    $$
+                $$
+   \widetilde T_x=a_0{\p \over \p a_1}+2a_1{\p \over \p a_2}+\dots+(n-1)a_{n-1}{\p \over \p a_n}
+                $$
+and
+               $$
+\widetilde T_y=a_n{\p \over \p a_{n-1}}+2a_{n-1}{\p \over \p a_{n-2}}+\dots+a_1{\p \over \p a_0}
+               $$
+(We come to these formulae considering infinitesimal transformations of $x,y$ for binary form
+
+ The action of vector fields $\widetilde D_x, \widetilde D_y, \widetilde T_x, \widetilde T_y$
+ on the space of coefficients are defined by the  condition that binary form (1) remains unchanged).
+ (Il faut expliquer plus...)
+
+The commutator relations will be:
+                    $$
+[\widetilde D_x,\widetilde D_y]=0, [\widetilde D_x,\widetilde T_x]=+\widetilde T_x,
+[\widetilde D_x,\widetilde T_y]=-\widetilde T_y\,,
+[\widetilde D_y,\widetilde T_x]=-\widetilde T_x,
+[\widetilde D_y, \widetilde T_y]=+\widetilde T_y,
+[\widetilde T_x,\widetilde T_y]=-\widetilde D_y+\widetilde D_x\
+                    $$
+{\bf Attention: the "mysterious" changing of signs because of changing of representation!}
+
+\m
+
+  Later we often omit the sign $\,\,\widetilde {}\,\,$ if this will not lead to confusion.
+
+  \m
+
+   Polynomial ${\cal I}(a_0,a_1,a_2,\dots,a_n)$ is $SL(2,\R)$-invariant
+   if the following conditions hold:
+                        $$
+          (\widetilde D_x-\widetilde  D_y)  {\cal I}(a_0,a_1,a_2,\dots,a_n)=0\,,
+               \eqno (I{\rm dilatation \,\,condition \,\,})
+                   $$
+   and
+                   $$
+                      \widetilde T_x {\cal I}(a_0,a_1,a_2,\dots,a_n)=0\,\,
+                      \eqno (II)
+                   $$
+                   $$
+                      \widetilde T_y {\cal I}(a_0,a_1,a_2,\dots,a_n)=0\,.
+                      (III)
+                   $$
+i.e. if polynomial is invariant under the action of $sl(2,\R)$ algebra of vector fields.
+
+
+  One can easy se that every $SL(2,R)$ polynomial is the sum of invariant polynomials
+    with different weights.
+since the filtration by degree is compatible
+   with invariance.  To put it in a more formal way consider
+   in the universal envelopping algebra the element
+                $$
+   D= {D_x+D_y\over n}
+                $$
+One can see that
+
+1)  $D$ defines the degree of polynomial:
+               $$
+      DP_g=gP_g\,\,,\,\,\,  D(a_0^{m_0} a_1^{m_1}...)=m_0+m_1+\dots
+               $$
+ and  all operators $D_x,D_y, T_x,T_y$ commute with $D$. This means that to find
+invariants we can consider only homogeneous polynomial of the degree $g$.
+
+\m
+
+Consider polynomial $P_g$ of the  degree $g$.
+
+{\bf Definition} We say that polynomial $P$ has weight $p$ if $\tilde D_y P=pP$.
+         $$
+    p(a_0^{m_0} a_1^{m_1}...a_n^{m_n})=a_1+2a_2+3a_3+\dots+na_n
+         $$
+
+
+         $$
+   (\widetilde D_x+\widetilde D_y)P_g=n DP_g=ngP_g\,.
+          $$
+On the other hand if this polynomial is $SL(2,R)$-invariant then
+$(\widetilde D_x-\widetilde  D_y)P_g=0$.  Hence we have that
+      for $SL(2,R)$-invariant polynomial of the order $g$
+       $$
+    D_yP=D_xP={ng\over 2}
+       $$
+i.e. the weight of the invariant polynomial of degree $g$ equals to $p={ng\over 2}$.
+
+
+{\sl Exercise }   Show that invariant polynomial is invariant with respect to
+the transformation $a_k\leftrightarrow a_{n-k}$.
+
+\m
+
+\m
+
+
+
+
+
+We come to
+
+    {\bf Proposition}  Let  ${\cal I}(a_0,a_1,a_2,\dots,a_n)$ be a polynomial of  degree $g$.
+
+    Then it is invariant polynomial of the order $p$ if and only if
+
+    1) its weight equals to  $p={2g\over n}$ and
+                   $$
+                      \widetilde T_x {\cal I}(a_0,a_1,a_2,\dots,a_n)=
+                      \widetilde T_y {\cal I}(a_0,a_1,a_2,\dots,a_n)=0\,.
+                   $$
+
+\m
+\m
+Technically it is much easier to calculate the action of generators $D_x, D_y$
+on polynomial, than the action of $T_x,T_y$.
+
+Later analyzing invariant polynomials we consider polynomials of fixed degree $g$
+(homogeneous polynomials.)
+
+To be invariant they have to be isobaric (have the fixed weight $p$) and $p$ equals to $ng/2$.
+
+In fact one can prove the following useful statement
+
+{\bf Lemma}  Let $P$ be homogeneous isobaric polynomial of the degree $g$ and the weight $p=ng/2$.
+Then the condition $T_x P=0$ implies the condition $T_y P=0$.  
+
+This is very useful lemma. To find invariant polynomials we just have to 
+consider isobaric polynomials of the
+definite weight $p=ng/2$ which obey differential equation $T_xP=0$.
+
+
+{\bf Example} Find invariants of the degree $g=1,2$ for the form $f=a_0x^2+2a_1xy+a_2y^2$.
+
+For $g=1$, $p=ng/2=1$. $P=Ma_1$. This is not invariant: $T_xa_1=a_0\not=0$.
+
+
+For $g=2$ $p=2$.   $p(a_0^{m_0} a_1^{m_1}a_2^{m_2})=m_1+2m_2=2$. Hence
+  $P=Ma_0a_2+Na_1^2$, The equation  $T_x(Ma_0a_2+Na_1^2)=0$ means
+               $$
+  0=T_x(Ma_0a_2+Na_1^2)=(a_0\p_1+a_1\p_2)(Ma_0a_2+Na_1^2)=2Na_1a_0+Ma_1a_0\Rightarrow M=N
+               $$
+We see that for $g=2$ there is one invariant $P=a_0a_2-a_1^2$ (discriminant)
+
+
+ {\bf Example} the form $f=f=a_0x^3+3a_1x^2y+3a_2xy^2+a_3y^3$.
+ 
+
+
+ \m
+
+ {\sl Proof of the lemma}.  Let $P$ be polynomial of the degree $g$ and of the weight $p$ such that
+ $2p=ng$ and $T_xP=0$. One can see that
+ the operator $\wt T_x$ decreases the weight on $1$ and the operator $\wt T_y$ increases the weight on $1$
+ since $[\wt D_y,\wt T_x]=-\wt T_x$ and $[\wt D_y,\wt T_y]=+\wt T_y$. Both operators do not change the degree $g$.
+  Consider the sequence of polynomials
+   $P_r=\wt T_x^r$. We have that the weight of the polynomial $P_r$ equals to $p+r$. On the other hand
+   its degree is always $g$. But evidently for arbitrary polynomial $p\leq ng$. Hence there exists $k\geq 1$
+   such that
+            $$
+     T_x^{k}=0, \,\, T_x^{k-1}       
+            $$
+We show that $k=1$.
+
+
+
+
+ \m
+
+
+
+\bye 
+
+
+
+
+
+http://www.maths.manchester.ac.uk/undergraduate/ugstudies/timetables/index.htm

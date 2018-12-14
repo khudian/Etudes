@@ -1,0 +1,417 @@
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\f {{\bf f}}
+\def\pt {{\bf pt}}
+
+
+
+   \centerline {\bf Differential geometry of surfaces embedded in Euclidean space}
+
+\bigskip
+
+\centerline {\it General stuff}
+
+\m
+
+({\tt This paragraph is almost the same as from the file "egregium1.tex}")
+\m
+ In this paragraph we consider relations between curvatures of tangent and normal bundle for an arbitrary
+ $k$-dimensional surface in $n$-dimensional Euclidean space $\E^n$.
+
+  Let $x^i(\xi^\a)$ ($i=1,\dots,n,\a=1,\dots,k$) be a
+  parameterisation of the given surface $M$. The trivial
+  (canonical) connection in $\E^n$ induces connection on surface and
+  on normal bundle to the surface.
+   Consider an orthonormal (in general non-holonomic) basis $\{\e_a,\n_p\}$, $a=1,\dots,k,p=1,\dots,n-k$
+   on the points of the surface $M$ such that vectors $\e_1,\dots,\e_k$ are tangent to the surface
+   and vectors $\n_1,\dots,\n_{n-k}$ are normal vectors:
+          $$
+        \e_a(\xi)=e_a^\a x^i_\a {\p\over \p x^i}\big\vert_{x^i_\a={\p x^i(\xi)\over \p \xi^\a}}
+        ,\,\, (a=1,\dots,k),\,\,
+        (\e_a,\e_b)=\delta_{ab},(\e_a,\n_p)=0,(\n_p,\n_q)=\delta_{pq}
+          $$
+  One  can consider  basis vectors $\{\e_a,\n_p\}$ as functions, $0$-forms on the points of the manifold $M$
+  with values in the vectors of $\E^n$,
+  $\{\e_a(\xi)=\e_a(x(\xi)),\n_p(\xi)=\n_p\left(x\left(\xi\right)\right)\}$.
+
+ Consider $1$-forms $d\e_a$, $d\n_p$ on $M$ with values in vectors in $\E^n$. Expanding them over the basis
+$\{\e_a,\n_p\}$ we come to the equations:
+              $$
+              d
+              \pmatrix{\e_a\cr\n_p\cr}=
+              \pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}
+              \pmatrix{\e_b\cr\n_q\cr}
+              $$
+            $$
+            d\e_a=A_{ab}d\e_b+L_{aq}\n_q,\,\,\qquad d\n_p=S_{pb}\e_b+T_{pq}\n_q,
+            \eqno (1.1)
+            $$
+where $(A_{ab},L_{aq},S_{pb},R_{pq})$ are one-forms.
+The matrix  $\pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}$ is antisymmetric since $(\e_a,\n_p)$ is an arthonormal
+ basis at any point of $M$:
+               $$
+            A_{ab}=-A_{ba},\,\,   L_{ap}=-S_{pa},\,\,\, T_{pq}=-T_{qp}
+            \eqno (1.2)
+               $$
+
+ The condition that $d^2\e_a=0, d^2 \n_b=0$ leads to identities:
+                $$
+        0=d^2 \pmatrix{\e_a\cr\n_p\cr}=
+        \pmatrix {dA_{ab} &dL_{aq}\cr dS_{pb} &dT_{pq}}\pmatrix{\e_b\cr\n_q\cr}-
+        \pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}\pmatrix{d\e_b\cr d\n_q\cr}=
+                $$
+                $$
+               \left(
+        \pmatrix {dA_{ab} &dL_{aq}\cr dS_{pb} &dT_{pq}}-
+        \pmatrix {A_{ac} &L_{ar}\cr S_{pc} &T_{pr}}
+        \pmatrix {A_{cb} &L_{cq}\cr S_{rb} &T_{rq}}
+        \right)
+        \pmatrix{\e_b\cr\n_q\cr}
+        \eqno (1.3)
+                $$
+Hence we have four conditions (structure equations)
+             $$
+             \matrix
+             {
+         dA_{ab}-A_{ac}\wedge A_{cb}-L_{ar}\wedge S_{rb}=0\cr
+         d L_{aq}-A_{ac}\wedge L_{cq}-L_{ar}\wedge T_{rq}=0\cr
+          dS_{pb}-S_{pc}\wedge A_{cb}-T_{pr}\wedge S_{rb}=0\cr
+          dT_{pq}-S_{pc}\wedge L_{cq}-T_{pr}\wedge T_{rq}\cr=0
+               }
+               \eqno (1.4)
+             $$
+In a view of (2) we come to the following three conditions on one-forms $A_{ab}, S_{pb}, T_{pq}$ :
+                    $$
+                     \matrix
+             {
+         dA_{ab}-A_{ac}\wedge A_{cb}+S_{ra}\wedge S_{rb}=0\qquad\qquad &(*)\cr
+          dS_{pb}-S_{pc}\wedge A_{cb}-T_{pr}\wedge S_{rb}=0\qquad\qquad &(**)\cr
+          dT_{pq}+S_{pc}\wedge S_{qc}-T_{pr}\wedge T_{rq}=0\qquad\qquad &(***)\cr
+               }
+               \eqno (1.4a)
+                    $$
+Clarify geometric meaning of these conditions.
+
+1. One-forms $\{A_{ab}\}$ in (1) define parallel transport of tangent vectors and
+connection in the tangent bundle such that $\e_b$-component of covariant derivative of
+vector field $\e_a(x(\xi))$
+along tangent vector $\X$ is equal to  $A_{ab}(\X)$.
+   For any section $u^a\e_a$  the one-form  with values in tangent vectors to $M$
+                $$
+                D(u^a\e_a)=du^a\e_a+u^aD\e_a=du^a\e_a+u^aA_{ab}\e_b,
+                \eqno (1.5a)
+                  $$
+  where $D$ is covariant differential.  Respectively
+                  $$
+            \nabla_\X \left({u^a\e_a}\right)=D(u^a\e_a)\left(\X\right)=
+            du^a\left(\X\right)\e_a+u^aD\e_a\left(\X\right)=
+            \p_\X u^a \e_a+u^aA_{ab}(\X)\e_b\,.
+            \eqno (1.5b)
+                $$
+
+
+ One can show that this is Levi-Chivita connection of the metrics $g_{\a\b}$ ($\e g\e^+=1$) ({\tt Show it!}).
+       The action of $D^2$ defines curvature operator:
+                $$
+         D^2(u^a\e_a)=D\left(du^a\e_a+u^aA_{ab}\e_b\right)=-du^aD\e_a+d(u^aA_{ab})\e_b-u^aA_{ab}D\e_b=
+            u^a{\cal R}^{\rm tang}_{ab}\e_b
+               $$
+where for curvature-form  ${\cal R}^{\rm tang}_{ab}$
+             $$
+{\cal R}^{\rm tang}_{ab}=dA_{ab}-A_{ac}\wedge A_{cb}
+                      \eqno (1.6)
+             $$
+Hence the first condition in (3) means
+           $$
+   {\cal R}^{\rm tang}_{ab}=-S_{ra}\wedge S_{rb}
+   \eqno (1.7a)
+           $$
+
+
+
+ Analogously we can consider connection and curvature of normal bundle.
+ In particular we see that for curvature ${\cal R}^{\rm norm}_{pq}$ of normal bundle
+            $$
+            {\cal R}^{\rm norm}_{ab}=dT_{pq}-T_{pr}\wedge T_{rq}
+            \eqno (1.7b)
+            $$
+and third condition means
+          $$
+  {\cal R}^{\rm norm}_{ab}=--S_{pc}\wedge S_{qc}
+         \eqno (1.7c)
+            $$
+            We see that both curvatures of normal and tangent bundle are defined via the one forms
+  $S_{pr}$.
+
+
+
+
+\bigskip
+
+\centerline {\bf Examples}
+
+\m
+
+
+First  very simple example
+
+\m
+
+{\bf Example}  Consider a sphere $S^2$ in $\E^3$:
+                 $$
+  \r(\theta,\varphi)\colon\qquad\cases{x=a\sin\theta\cos\varphi\cr
+               y=a\sin\theta\sin\varphi\cr
+               x=a\cos\theta\cr}
+               \eqno (ex1.1)
+                 $$
+Tangent vectors are
+           $$
+          \r_\theta=a\pmatrix{\cos\theta\cos\varphi\cr
+                   \cos\theta\sin\varphi\cr
+               -\sin\theta\cr},\,\,\,
+                \r_\varphi=a\pmatrix{-\sin\theta\sin\varphi\cr
+                   \sin\theta\cos\varphi\cr
+                        0\cr}
+                        \eqno (ex1.2)
+           $$
+and unit normal vector is $\n=\pmatrix{\sin\theta\cos\varphi\cr
+               \sin\theta\sin\varphi\cr
+               \cos\theta\cr}$
+
+Hence one can consider orthonormal moving frame  $\{\e_\theta,\e_\varphi,\n\}$, where
+              $$
+     \e_\theta=\r_\theta=\pmatrix{\cos\theta\cos\varphi\cr
+                   \cos\theta\sin\varphi\cr
+               -\sin\theta\cr},\quad
+       \e_\varphi={\r_\varphi\over \sin\theta}=
+       \pmatrix{-\sin\varphi\cr
+                   \cos\varphi\cr
+                        0\cr},\quad
+                        \n=\pmatrix{\sin\theta\cos\varphi\cr
+               \sin\theta\sin\varphi\cr
+               \cos\theta\cr}\,.
+              $$
+We have
+               $$
+d\e_\theta=d\pmatrix{\cos\theta\cos\varphi\cr
+                   \cos\theta\sin\varphi\cr
+               -\sin\theta\cr}=\pmatrix{-\sin\theta\cos\varphi\cr
+                   -\sin\theta\sin\varphi\cr
+               -\cos\theta\cr}d\theta+\pmatrix{-\cos\theta\sin\varphi\cr
+                   \cos\theta\cos\varphi\cr
+                    0\cr}d\varphi=-d\theta\n+\cos\theta d\varphi \e_\varphi\,,
+                              $$
+                              $$
+    d\e_\varphi=d\pmatrix{-\sin\varphi\cr
+                   \cos\varphi\cr
+                        0\cr}=\pmatrix{-\cos\varphi\cr
+                   -\sin\varphi\cr
+                        0\cr}d\varphi=\left(-\cos\theta\pmatrix{\cos\theta\cos\varphi\cr
+                   \cos\theta\sin\varphi\cr
+               -\sin\theta\cr}-\sin\theta
+               \pmatrix{\sin\theta\cos\varphi\cr
+               \sin\theta\sin\varphi\cr
+               \cos\theta\cr}\right)d\varphi
+                            $$
+                            $$
+                    =-\cos\theta d\varphi \e_\theta-\sin\theta d\varphi \n\,,
+                            $$
+  and
+                           $$
+  d\n=d\pmatrix{\sin\theta\cos\varphi\cr
+               \sin\theta\sin\varphi\cr
+               \cos\theta\cr}=\pmatrix{\cos\theta\cos\varphi\cr
+               \cos\theta\sin\varphi\cr
+               -\sin\theta\cr}d\theta+\pmatrix{-\sin\theta\sin\varphi\cr
+               \sin\theta\cos\varphi\cr
+               0\cr}d\varphi= d\theta \e_\theta+\sin\theta d\varphi \e_\varphi
+                           $$
+i.e.
+                   $$
+      d\pmatrix{\e_\theta\cr
+               \e_\varphi\cr
+               \n\cr}=
+               \pmatrix
+                  {
+       &0 &\cos\theta d\varphi    &-d\theta\cr
+       &-\cos\theta d\varphi &0   &-\sin\theta d\varphi\cr
+      &d\theta   &\sin\theta d\varphi &0\cr         }
+      \pmatrix{\e_\theta\cr
+               \e_\varphi\cr
+               \n\cr}\,,
+                   $$
+                   $$
+         \pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}=
+          \pmatrix
+                  {
+       &0 &\cos\theta d\varphi    &-d\theta\cr
+       &-\cos\theta d\varphi &0   &-\sin\theta d\varphi\cr
+      &d\theta   &\sin\theta d\varphi &0\cr }
+                                           $$
+
+  One can see that $A=\sin\theta d\varphi$ defines connection. Curvature of this connection
+   $R=dA=\sin\theta d\theta\wedge d\varphi$. These formulae are written in h=non-holonomic coordinates
+   $\{\e,\f\}$  Rewriting them in holonomic coordinates $\{\r_\theta,\r_\varphi\}$ we come to connection
+   and curvature defined my first quadratic form (riemanian inducd metric)....
+
+
+   \bigskip
+
+
+      \centerline {\bf Parallel transport of tangent vector along closed curve on two-dimensional surface in $\E^3$}.
+
+      Let $M$ be two-dimensional surface $\r=\r(\xi^1,\xi^2)$ in $\E^3$ and let $C\colon \r=\r(t)$,
+        $t_1\leq t\leq t_2, \r(t_1)=\r(t_2)$ be a closed curve on it.
+        Let $\X(t)$ be a parallel transport of the vector $\X$ along this curve
+  Then the angle between the initial vector $\X(t_1)$ and $\X(t_2)$ equals to
+                          $$
+                        \varphi=\int_D K d\sigma\,,
+                        \eqno (3.1)
+                          $$
+           in the case if $C$ is a boundary of the domain $D$. Here
+        $d\sigma$ is an area form on $M$ compatible with induced metric:
+         $d\sigma=\sqrt{\det g}d\xi^1d\xi^2$, and $K$- is scalar curvature of the
+         induced metrics  which is equal
+          to Gaussian curvature\footnote{$^*$} {The fact that these external and internal cuyrvatures coincide is
+          the famous Gau\ss's {\ it Theorema Egregium}.}.
+
+\m
+
+  Prove this theorem.
+
+\m
+
+
+    Consider moving orthonormal frame $\{\e_1,\e_2,\n\}$ on the surface $M$, where
+    vector field $\n$ is normal to the surface. Thus vectors $\{\e_1,\e_2\}$  is non-holonomic basis
+    of tangent spaces to  $M$. Act by differential on these vectors.   We have
+                   $$
+                   d
+               \pmatrix{
+        \e_1\cr \e_2\cr \n\cr
+                   }=
+               \pmatrix
+                  {
+       &0 &  A&  S_1\cr
+       &-A &0   &S_2\cr
+      &-S_1&-S_2&0\cr         }
+      \pmatrix{\e_1\cr\e_2\cr\n\cr}\,,
+      \eqno (3.2)
+                   $$
+where $A,S_1,S_2$ are $1$-forms. The condition $d^2=0$ implies
+                              $$
+                              \matrix
+                                 {
+    0=d^2\e_1=d(A\e_2+S_1\n)=dA \e_2-A\wedge(-A\e_1+S_2\n)+dS_1\n-S_1\wedge (-S_1\e_1-S_2\e_2)\cr
+    0=d^2\e_2=d(-A\e_1+S_2\n)=-dA \e_1+A\wedge(A\e_2+S_1\n)+dS_2\n-S_2\wedge (-S_1\e_1-S_2\e_2)\cr
+    0=d^2\n=d(-S_1\e_1-S_2\e_2)=-dS_1\e_1+S_1\wedge(A\e_2+S_1\n)-dS_2\e_2+S_2\wedge (-A\e_1+S_2\n)\cr
+                                }
+                                \eqno (3.3)
+                              $$
+                              i.e.,
+                              $$
+             dA+S_1\wedge S_2=0
+                \eqno (3.4a)
+                              $$
+                              $$
+                           \matrix
+                                {
+                              &dS_1&-&A\wedge S_2=&0\cr
+                              &dS_2&+&A\wedge S_1=&0\cr
+                                }
+                                \eqno (3.4b)
+                              $$
+ Look carefully, very carefully on the equation (3.4a).
+ Basis is not holonomic.  Due to this fact all formulae become more transparent.
+
+ On the left hand side of the formula (3.4a) we have  two-form---curvature of the Levi-Civita connection
+  on the right  hand we have determinant of shape operator. The formula (3.4a)
+  {\bf states that curvature calculated by the internal observer on the surface
+  $R=R(\Gamma(g))$ equals to Gaussian curvature.}
+
+  Now calculate the angle of rotation during parallel transport. It is the same for all the vectors.
+   Consider on the points of the curve $C$ the orthonormal basis $\{\ac(t),{\bf b}(t)\}$,
+   $t_1\leq t<t_2$  which is a parallel transport of the basis $\{\e_1(t),\e_2(t)\}$
+   at the initial point $t=t_1$
+                   $$
+    \ac(t_1)=\e_1(t_1),
+    {\bf b}(t_1)=\e_2(t_1),\,\,
+    D\ac(t)=D{\bf b}(t)\equiv 0 \,\,\hbox {along vectors $\v(t)={d\r(t)\over dt}$}\,,
+                   $$
+  where $\v(t)={d\r(t)\over dt}$ is velocity vector of the curve $C$
+
+   The basis $\{\ac(t), {\bf b}(t)\}$ remains orthonormal basis during parallel transport, i.e.
+                $$
+                \{\ac(t), {\bf b}(t)\}=\{\e_1(t), \e_2(t)\}
+                \pmatrix
+                {&\cos\phi (t)  &\sin\phi(t)\cr
+                -&\sin\phi (t)  &\cos\phi(t)\cr }
+                $$
+In particular
+                 $$
+           \ac(t)=\e_1(t)\cos\phi(t)+\e_2(t)\sin\phi(t), \hbox {with $\phi(t_1)=0$}
+                 $$
+Il faut calculer $\phi(t_2)$.
+
+Now remember formulae (1.5)   (3.3) we come to
+       $$
+    0=\nabla_{\v(t)} \ac(t)=
+    \nabla_{\v(t)}\left(\e_1(t)\cos\phi(t)+\e_2(t)\sin\phi(t)\right)=
+         $$
+         $$
+    \left(D\e_1(t)(\v(t))\cos\phi(t)+\e_1(t){d\cos\phi(t)\over dt}\right)+
+        \left(D\e_2(t)(\v(t))\sin\phi(t)+\e_2(t){d\sin\phi(t)\over dt}\right)=
+       $$
+       $$
+  \left((A(\v(t))\e_2(t)\cos\phi(t)-\e_1(t)\sin\phi(t)\dot\phi(t)\right)+
+  \left((-A(\v(t))\e_1(t)\sin\phi(t)+\e_2(t)\cos\phi(t)\dot\phi(t)\right)
+       $$
+  since $D\e_1=A\e_2, De_2=-A\e_1$.
+       It follows from this relation that
+                  $$
+           \dot\phi(t)+A(\v(t))=0\,,
+                 \eqno ()
+                 $$
+ We did it:
+                  $$
+         \phi(t_2)=\int_{t_1}^{t_2}\dot\phi(t)dt=-\int_C A=-\int_{\p D} A=-\int_D dA
+                  $$
+({\tt It has to be explained that $dA=K\sqrt {det g}$})
+\bye

@@ -1,0 +1,195 @@
+
+
+   INterpoljatsionnyj mnogochlen Lezhandra,
+
+   Kitajskaja Teorme ob ostatkakh
+     i vsjo takoje.
+
+\def\deltapolynomial           {2}
+\def \defofderivativespecfial {4}
+\def \defofderivativeforpirmes {5}
+\def \defofderivativeforprimes {6}
+
+   Let ${\bf x}=\{x_1,x_2,\dots,x_n\}$
+   be a sequence of $n$ points on $[0,1]$
+   ($x_1<x_2<\dots<x_n$)
+
+
+
+     Our first aim is to construct a sequence of polynomials
+      which interpolate a  (continuous) function on $[0,1]$.
+
+
+    Let $f$ be a (continuous) function on $[0,1]$.
+   Try to find a polynomial $P$ such that
+it coincides with a function $f$ in $n$ points
+$\{x_1,\dots,x_n\}$:
+             $$
+      P(x)\colon\qquad      P(x_i)=f(x_i),
+\qquad i=1,\dots,n
+              \eqno (1)
+              $$
+  It is easy to see that if $n=2$ then one can construct
+   linear polynomial obeying the condition (1), if $n=3$ then one can construct
+   quadratic  polynomial obeying the condition (1).
+
+ One can see that equation (1) has a unique solution in the space
+ of polynomials of degree less or equal than $n-1$. Indeed
+  if polynomials $P(x)$ and $\tilde P(x)$ obey (1), then polynomial
+  $P-\tilde P$ is equal zero in $n$ points. On the other hand its
+   degree $\leq n-1$. Hence $P(x)-\tilde P(x)\equiv 0$.
+   It remains to construct it.
+
+    For a given sequence of distinct points $\{x_1,\dots,x_n\}$ consider
+    a polynomial  $Q(x)=(x-x_1)(x-x_2)\dots(x-x_n)$. Consider polynomial
+               $$
+         K_{i}(x)={Q(x)\over Q^\prime (x_i)(x-x_i)}
+            \eqno(\deltapolynomial)
+                  $$
+           It is evident that this polynomial has a degree $n-1$
+           and it is equal zero in all points ${x_1,\dots,x_n}$
+           except the point $x_i$ where it is equal to one.
+  Hence a polynomial
+                       $$
+ P_f(x)=\sum_{k=1}^n  f(x_i){Q(x)\over Q^\prime (x_i)(x-x_i)}
+             \eqno (2)
+                       $$
+   coincides with function $f(x)$ in all points $\{x_1,\dots,x_n\}$.
+
+ One come to remarkable identity: Suppose a function $f$ itself is a polynomial
+ of degree $k$. Then if $n>k$ then a polynomial (2) {\bf coincides}
+ with $f$ (because it coincides with $f$ in $n>k$ points).
+E.g.  let polynomial $P(x)$ has degree less than polynomial $Q(x)$. Considering
+ interpolation of $P$ in zeros of polynomial $Q$ we come to the following
+ identity:
+         $$
+  {P(x)\over Q(x)}\equiv\sum_{k=1}^n  {P(x_i)\over Q^\prime (x_i)(x-x_i)}
+         $$
+   Note that on the other hand:
+              $$
+   {P(x)\over Q(x)}\equiv\sum_{k=1}^n  {P(x_i)\over Q^\prime (x)(x-x_i)}
+              $$
+These two formulae produce a nice bunch of examples!!!
+
+These examples look very optimistical. Of course not every function
+coincides with interpolating polynomial. Contrary:
+situation is very very bad if $f$ is a function
+like $|x|$: In this case interpolating polynomials
+{\bf do not tend to function}
+
+
+       $$ $$
+Now in full analogy with Lagarange polynomials
+we consider China residual Theorem:
+
+Let $N$ be integer. Consider set of primes as set of "points".
+
+
+\def \Z {\bf Z}
+
+\def \mod {{\rm mod\,\,}}
+  A "value" of the "function" $N$ at the "point" $p$
+          will be defined as residue of $N$ when dividing by $p$
+          (More formally it takes value in the field $\Z/ p\Z$)
+
+For example consider value of "function" $N=10000$
+in the "points" $p=2,3,5,7,11,13,17,19$:
+                     $$
+    N(2)=0 (\mod 2),\,\,
+    N(3)=1 (\mod 3),\,\,
+    N(5)=0 (\mod 5),\,\,
+    N(7)=4 (\mod 7),\,\,
+    N(11)=1 (\mod 11),\,\,
+         $$
+         $$
+    N(13)=3(\mod 13),\,\,
+    N(17)=4 (\mod 17),\,\,
+    N(19)=6 (\mod 19),\,\,
+    N(23)=(\mod 23),\,\,
+    N(29)=6 (\mod 29)
+                     $$
+
+What about "derivative" of "function" in the "point"?
+
+Note that in the case if polynomial $P$ is equal to zero in the point $x_i$, then
+its derivative is equal to
+the value of the function
+\def \defofderivativespecial {4}
+\def \defofderivativegeneral {5}
+            $$
+            {P(x)\over x-x_i}
+            \eqno {\defofderivativespecial}
+             $$
+             in the point $x_i$.
+
+ In general case the  derivative of polynomial in the given point $x_i$
+is equal to the value of the function
+            $$
+            {P(x)-P(x_i)\over x-x_i}
+            \eqno (\defofderivativegeneral)
+             $$
+             in the point $x_i$.
+
+          Now we define the "derivative" of $N$
+          in the "point" $p$:
+
+ Unfortunately a number $N$ ("function" N)
+and "value of function" $N$ "at the point"
+$p$ take value in different rings:
+
+The number $N$ take values in the ring $\Z$.
+The "value of function" $N$ "at the point"
+$p$ takes value in the field $\Z/p\Z$.
+
+So the operation analogous to operation (\defofderivativegeneral)
+is ill-defined in general case. But it is alright if we consider the case
+analogous to (\defofderivativespecial):
+
+
+           Let $p$ divides $N$, i.e. "function" $N$ is equal to zero
+           at the "point" $p$. Then we define the "derivative" of $N$
+          at the "point" $p$ as the residue of the number
+          $N\over p$ when divided on $p$, i.e. the "value" of the
+          "function" $N\over p$ at the "point" $p$:
+             $$
+   N(p_i)=0\Rightarrow N^\prime (p_i)={N\over p_i}(\mod p_i)
+                 \eqno (\defofderivativeforpirmes)
+              $$
+          E.g. for number $N=924=3\cdot 4\cdot 7\cdot 11$
+          derivative is defined at the "points" ${2,3,7,11}$:
+               $$
+     N^\prime(2)=\left(N\over 2\right)(\mod 2)=0 (\mod 2)\,,\quad
+     N^\prime(3)=\left(N\over 3\right)(\mod 3)= 4\cdot 7\cdot 11(\mod 3)=
+                 2(\mod 3)\,,\quad
+               $$
+               $$
+   N^\prime(7)=\left(N\over 7\right)(\mod 7)= 3\cdot 4\cdot 11(\mod 7)=
+                 6(\mod 7)\,\quad
+N^\prime(11)=\left(N\over 11\right)(\mod 11)= 3\cdot 4\cdot 7(\mod 11)=
+                 5(\mod 11)\,.
+               $$
+
+Now we are ready for rewriting Lagrange interpolation formula
+for integers:
+
+  Fix a finite set $\{p_1,p_2,\dots,p_n\}$ of prime numbers
+
+ First write the analogue of the polynomial (\deltapolynomial):
+ i.e. we have write a "function" $N_i$ such that its
+ "value" at all the "points" $\{p_1,\dots,p_n\}$ except the "point"
+ $p_i$ is equal to $0$ and its
+ "value" at the "point"
+ $p_i$ is equal to $1$, i.e.
+ we have to find a number $N$ such that
+ all the primes $\{p_1,\dots,p_n\}$ except the prime
+ $p_i$ divide $N$ and $N$ has remainder $1$ when divided on
+ prime $p_i$. In analogy with (\deltapolynomial) using
+ (\defofderivativeforprimes) we come to
+           $$
+   N_i=\left(\right)\left(p_1\cdot p_2\cdot\dots\cdot p_{i-1}\cdot p_{i+1}\cdot\dots\cdot p_n\right)
+        $$
+
+
+%   \footnote{$*$}{Note that Lagrange polynomials do not tend}
+
+   \bye

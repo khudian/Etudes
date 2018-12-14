@@ -1,0 +1,110 @@
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\f {{\bf f}}
+\def\pt {{\bf pt}}
+\def\w {\omega}
+\centerline  {\bf  Mayer-Vietoris sequence}
+
+
+
+
+
+
+Let $M$ be a manifold covered by two open sets
+         $$
+ M= V_1\cup V_2=\cup V_\a \quad \alpha=1,2,.
+     $$
+Denote by $N$ intersection of these open sets: $N=V_1\cap V_2$.
+
+  Consider the sequence:
+          $$
+0{\buildrel \delta\over \longrightarrow}\,H^0(M)\,\,{\buildrel p_1\oplus p_2\over \longrightarrow}\,\, 
+H^0(V_1)\oplus H_0(V_2){\buildrel l_1-l_2\over \longrightarrow}\, 
+H^0(N) {\buildrel \delta\over \longrightarrow}\,
+           $$
+           $$
+           {\buildrel \delta\over \longrightarrow}\,
+            H^1(M)
+ {\buildrel p_1\oplus p_2\over \longrightarrow} H^1(V_1)\oplus H^1(V_2)
+ {\buildrel l_1-l_2\over \longrightarrow} H^1(N){\buildrel \delta\over \longrightarrow}
+          $$
+          $$
+          {\buildrel \delta\over \longrightarrow}\
+ H^2(M)\,\,{\buildrel p_1\oplus p_2\over \longrightarrow}\,\,
+H^2(V_1)\oplus H_0(V_2){\buildrel l_1-l_2\over \longrightarrow}\,
+H^2(N) {\buildrel \delta\over \longrightarrow}\, 
+            $$
+            $$
+            {\buildrel \delta\over \longrightarrow}\
+            H^3(M)
+ {\buildrel p_1\oplus p_2\over \longrightarrow} H^3(V_1)\oplus H^3(V_2)
+ {\buildrel l_1-l_2\over \longrightarrow} H^3(N){\buildrel \delta\over \longrightarrow}\ldots\to 0
+          $$
+
+
+
+
+In this sequence all maps are obvious except the map $\delta\colon H^k(N)\to H^{k+1}(M)$
+
+
+(In this sequence we have $0$ and $1$ Chech cochaines. E.g. $1$-cochain $\{c_{\a\beta}\}$
+such that $c_{12}=-c_{21}=1$ is close and exact cochain. )
+
+I will write this map in such a form that it will be easy to udnerstand how to generalise it on the case
+if $M$ is covering by more than 2 open sets.
+
+Let $\{\rho_\a\}=\{\rho_1,\rho_2\}$ be partition of unity which is subordinated to the covering $M=V_1\cup V_2$, i.e.
+  $supp \r_\a \subset V_\a$, $\rho_1,\rho_2\geq 0$ and $\rho_1+\rho_2=1$ 
+  (For covering by two sets it is very easy to construct)
+  
+  
+  Now consider closed $k$-form $\omega$ such that $[\w]\in H^k(N)$. Then
+  $k$-form $\w$ can be consider as Chech $1$-cochain with values in $k$-forms since it is defined
+  on the intersection of open sets:
+              $$
+           c_{12}=\w, c_{21}=-\w   
+              $$ 
+  Now define
+           $$
+          \delta [\w]=\left[\sum \rho_\a d\rho_\beta c_{\a\beta}\right] 
+           $$
+For this special case $d\rho_2=-d\rho_1$ since $\rho-2+\rho_1=1$                     
+                     
+\bye

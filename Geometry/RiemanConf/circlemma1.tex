@@ -1,0 +1,128 @@
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+ I began this file on 16 June 2017
+
+   The following lemma is useful.
+
+
+{\it     Let $C$ be a small circle in Riemannian manifold. Then
+it is orthogonal to geodesics starting at the centre of this circle. 
+ }
+
+
+  Let $M$ be $n$-dimensional Riemannian manifold.
+  Consider the spray of the geodesics $x^i=
+x^i(t,\n)$, (%|\n|=1$) which are solutions of 
+differential equation:
+                      $$
+x^i(t,\tau)\colon\quad
+           \cases
+             {
+           x^i{tt}+\Gamma^i_{km}x^k_tx^m_t=0\cr
+             x^i(t)\big\vert_{t=0}=0\cr
+             x^i(t,\n)\big\vert{t=0}=
+        \n\,.
+               }
+\hbox {$\n$ is unit vector }
+                      $$
+Thus we have the exponential map which assigns
+to every unit vector $\n\in T_\pt M$, the geodesics.
+
+    The natural question can be asked.
+Consider the disc of the radius $R$, i.e. 
+ the set of the points
+  $x^i(t,\n)\colon t\in [0,R]$. Does the boundary
+of thedisc  is perpendicular to the geodesics, i.e.
+is it true that
+                 $$
+\langle x_t(t,\n), \delta x\rangle=0
+                 $$
+
+Let $\tau_\a$ ($\a=1,\dots,n-1$) be cooridnates
+on unit sphere $\n=\n(\tau_\a)$.
+
+Denote
+              $$
+   L=\langle \x_t,\x_\tau\rangle=g_{ij}x^i_t x^j_\tau\,.
+               $$
+It is evident that $L(t,\tau)\big\vert_{t=0}=0$
+since this is scalar product of unit 
+vector on the tangent vector to the unit sphere.
+Prove that it vanishes for all $t$.
+
+Let $E={1\over 2}|x^i_t|^2$. This is equal to constant. Hence
+                 $$
+0=\left({1\over 2}g_{mn}x^m_t x^n_t\right)_\tau=
+ {1\over 2}x^p_\tau \p_p g_{mn}x^m_t x^n_t+g_{mn}x^m_{t\tau}x^n_t=
+ {1\over 2}x^p_\tau \p_p g_{mn}x^m_t x^n_t+
+\left(g_{mn}x^m_{\tau}x^n_t\right)_t=
+                            $$
+                             $$
+= {1\over 2}x^p_\tau \p_p g_{mn}x^m_t x^n_t+
+L_t-x^r_t\p_r g_{mn}x^m_{\tau}x^n_t-g_{mn}x^m_{\tau}x^n_{tt}=
+                          $$
+                           $$
+ L_t-{1\over 2}\left(\p_mg_{np}+\p_n g_{mp}-\p_p g_{mn}\right)
+          x^p_\tau x^m_t x^n_t-g_{mn}x^m_{\tau}x^n_{tt}=
+L_t-g_{mn}x^m_{\tau}\left(x^n_{tt}+\Gamma^i_{mn}x^m_tx^n_t\right)=L_t=0\,.
+                 $$
+
+Invariant proof.
+
+  Consider two vector fields $\v,\Y$ which commute
+     Then 
+   We have
+                 $$
+0=\p_\Y\left({1\over 2}\langle\v,\v\rangle\right)=
+  \langle\nabla\Y\v],\v\rangle=\langle\nabla_\v\Y,\v\rangle=
+\p_\v\langle\Y,\v\rangle-\langle\Y,\nabla_\v\v\rangle\,.
+                 $$
+
+
+
+\bye

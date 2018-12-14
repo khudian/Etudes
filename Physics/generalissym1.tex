@@ -1,0 +1,192 @@
+
+
+
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\d {\delta}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\hM {{\hat M}}
+\def\Z {{\bf Z}}
+\def\L  {{\cal L}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+   Let $L=L(q,\dot q)$ be a Lagrangian on $\E^3$ which is invariant
+with respect to rotations up to derivatives:
+                   $$
+\delta_i L=d\a_i, \quad \hbox {i.e.}\,,\L_{\hM_i}L=
+               {d\over dt}\a_i(q)={\p \a_i(q)\over \p q^k}\dot q^k\,,
+                     \eqno (1)
+                   $$ 
+where
+                      $$
+\hM_i=\vare_{imk}q^m\p_k,\quad \cases{
+                      \hM_1=y\p_z-z\p_y\cr
+                      \hM_2=z\p_x-x\p_z\cr
+                      \hM_1=x\p_y-y\p_x\cr
+                               }, \quad
+        [\hM_i,\hM_k]=\vare_{ikm}\hM_m\,.
+                          \eqno (2)
+                      $$
+Show that this generalised symmetry is not essentially generalised,
+i.e. one can redefine Lagrangian $\tilde L=L-F$ 
+such that for new Lagrangian $\d_i\tilde L=0$, i,e, we can 
+  find a function $F=F(q)$ such that
+                       $$
+        \d_i F=\a_i,\,\,{i.e.}\,\,\,
+             \L_{M_i} \left({dF\over dt}\right)=
+             \L_{M_i} \left({\p F(q)\over \p q^k}\dot q^k\right)=
+               {d\over dt}\a_i(q)={\p \a_i(q)\over \p q^k}\dot q^k\,,
+                       \eqno (3)
+                      $$  
+
+i.e. for the new Lagrangian $\tilde L=L-F$,
+                $$
+\delta_i \tilde L=\delta_i\left(L-F\right)=0\,.
+           \eqno(4)
+                $$
+
+To show the existence of `coboundary' $F$ which transform generalised symmetry
+to usual one, recall that it follows from equation (1) that
+                   $$
+ d\left(\left(\delta\a\right)_{ij}\right)=
+\left(\delta\left(d\a\right)\right)_{ij}=(\delta^2 L)_{ij}=0\Rightarrow
+     (\delta\a)_{ij}=\w_{ij}\,\,\hbox {are constants}
+              \eqno (5)
+           $$
+i.e.
+                 $$
+(\d\a)_{ij}=
+\d_i\a_j-\d_j\a_i-\vare_{ijm}\a_m=\hM_i(\a_j)-\hM_j(\a_i)-
+     \vare_{ijm}\a_m=\w_{ij}
+            \eqno (5a) 
+                   $$
+is a cocycle in constants. On the other hand 
+                $$
+\w_{ij}=\vare_{ijm}t_m\,,\quad (t_m={1\over 2}\vare_{mpq}\w_{pq}).
+               \eqno (6)
+                $$
+(This simple relation means that $H^2(so(3),\R)=0$)
+
+If we redefine $\a_i\mapsto \a_i+t_i$ then for new $\a_i$ we have
+            $$
+  (\delta\a)_{ij}=\w_{ij}\mapsto (\delta\a)_{ij}=0\,.
+            $$
+So from now on we will consider that cocyclw in equation (5) 
+vanishes: $\w_{ij}=0$:
+              $$
+\d_i\a_j-\d_j\a_i-\vare_{ijm}\a_m=
+\hM_i(\a_j)-\hM_j(\a_i)-\vare_{ijm}\a_m=0\,.
+          \eqno (5c)
+            $$
+      Now we solve equation (3) using condition (5c).
+Applying  operator $\hM_i$ to (5c) we come to
+          $$
+0=\hM_i\left(\hM_i(\a_j)-\hM_j(\a_i)-\vare_{ijm}\a_m\right)=
+\hM^2\a_j-\left[\hM_i\hM_j\right]\a_i-\hM_j\left(\hM_i\a_i\right)
+-\vare_{ijm}\hM_i\a_m=
+           $$
+          $$
+\hM^2\a_j-\vare_{ijm}\hM_m\a_i-\hM_j\left(\hM_i\a_i\right)
+-\vare_{ijm}\hM_i\a_m=
+\hM^2\a_j-\hM_j\left(\hM_i\a_i\right)=0
+          $$
+Thus we come to the equation
+            $$
+\hM^2\a_j=\hM_j\left(\hM_i\a_i\right)\,.
+      \eqno (7)
+            $$
+Consider the expansion of $\a_i(q)$
+over harmonics:
+         $$
+\a_i(q)=\sum_l\a_i^{(l)}(q)\,,
+        \eqno (8)
+         $$
+where we denote by $F^{(l)}$ the function which is eigenfunction of
+operator $M^2$ with eigenvalue $l(l+1)$\footnote{$^*$}
+{In spherical coordinates
+     $$
+        F^{(l)}(q)=\sum_{m=-l}^lc_m(r)\Y_{lm}(\theta,\varphi)\,,\quad
+             \Y_{lm}(\theta,\varphi)=P_{lm}(\theta)e^{im\varphi}
+      $$
+where $P_{lm}$ are adjoint Legendre polynomials.
+In Cartesian coordinates  $\Y_{lm}$ is restriction on the sphere
+of harmonic polynomial ($\Delta P(x,y,z)=0$) of the weight $l$  
+    }
+      
+ $$
+   \hM^2 F^{(l)}=l(l+1)F^{(l)}\,.
+        $$
+
+\smallskip
+
+{\bf Observation}  Condition (5c) implies that zeorth harmonic in
+(8) vanishes:
+           $$  
+\a_i(q)=\sum_{l\geq 1}\a_i^{(l)}(q)
+           $$     
+Indeed $l=0$ harmonics does not depend on
+$\theta,\varphi$, $\a_i^{(0)}(q)=\a_i^{(0)}(r)$, hence
+   $\delta_i\a_j^{(0)}=0$. This implies that $\vare_{ijm}\a_m^{(0)}=0$,
+ i.e. $\a_m^{(0)}=0$.
+
+\medskip
+
+Now using this Observation, put expansion 
+(8) in (7). We come to
+          $$
+\hM^2\a_i^{(l)}=l(l+1)\a_i^{(l)}=\hM_i(\hM_k\a_k^{(l)})\,,\quad l=1,2,3,\dots
+          $$
+i.e.
+           $$
+\a_i=\sum_{l\geq 1}\a_i^{(l)}=\hM_i\left(
+       \sum_{l\geq 1} {\hM_k \a_k^{(l)}\over l(l+1)}
+             \right)
+           $$
+We see that
+             $$
+\a_i=\d_i F\,\, {\rm where}
+        F=\sum_{l\geq 1} {\hM_k \a_k^{(l)}\over l(l+1)}
+             $$
+Thus we solved equation (3).
+
+\bye

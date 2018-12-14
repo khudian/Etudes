@@ -1,0 +1,499 @@
+%From j.montaldi@manchester.ac.uk Fri Jun 30 14:13:11 2006
+%Date: Fri, 30 Jun 2006 14:13:23 +0100
+%From: James Montaldi <j.montaldi@manchester.ac.uk>
+%To: Oganes Khudaverdian <khudian@ma.umist.ac.uk>
+%Subject: pythagoras
+
+%Voila!
+
+%James
+
+
+
+\documentclass[12pt]{article}
+\usepackage{a4}
+\usepackage{pslatex}
+
+\parindent=0pt
+\parskip=6pt
+\def\G {G}%{\Gamma}}
+\def\m{\medskip}
+\def\b{\bigskip}
+\def\RMS{\textsc{rms}}
+\def\note#1{\noindent\framebox{\parbox{0.9\textwidth}{#1}}}
+\def\problem#1{\medskip\noindent\textbf{Problem #1 }}
+
+
+%%%%%%%%%%%%%%%%%%5
+
+\begin{document}
+
+\hfill\fbox{\large\sf MM@M, 2006}
+
+\vskip1cm
+
+ \centerline {\Large\bf Pythagorean Means}
+\m
+   \centerline {Hovik Khudaverdian}
+
+\b
+
+\centerline{\textbf{Introduction}}
+
+\centerline{\textbf{Means of two numbers}}
+
+\m
+
+Let $a$ and $b$ be two non-negative (real) numbers.
+
+There are many different \emph{means} that can be associated to
+them:
+
+
+\begin{description}
+
+\item[\textit{Arithmetic Mean}:] $A = \displaystyle \frac{a+b}2$.
+
+\item[\textit{Geometric Mean}:] $\G = \sqrt{ab}$.
+
+\item[\textit{Harmonic Mean}:] $H$ is defined by $\displaystyle \frac1H =
+\frac12\left(\frac1a + \frac1b\right).$
+
+\end{description}
+
+These three are called the \emph{Pythagorean means}.
+
+Then there are some others that are used in various applications,
+the most famous of which is the root-mean-square (or \textsc{rms})
+(used a lot in the physics of power), which is
+
+\begin{description}
+\item[\textit{Root-mean-square}:] $\displaystyle \RMS = \sqrt{\frac{a^2 + b^2}2}$.
+\end{description}
+
+
+And more generally, the \emph{power-mean} of power $p$,
+
+$$M_p = \left(\frac{a^p + b^p}2\right)^{1/p}.$$
+
+Notice that $A=M_1$. What are $M_{-1}$ and $M_2$ ?
+
+This expression is not defined if $p=0$, but interesting things
+happen as $p\to 0$.
+
+\bigskip
+
+\textbf{Explore:}\quad  For given numbers $a,b$, how do these
+different means compare?  Especially the Pythagorean ones.
+
+
+\newpage
+
+
+  Let $a_1,\dots,a_n$ be non-negative real numbers.
+One can consider the following two means:
+
+\noindent\textit{Arithmetic Mean}:
+                 $$
+            A=A(a_1,\dots,a_n)={a_1+\dots+a_n\over n}
+                 $$
+\noindent\textit{Geometric Mean}:
+              $$
+        \Gamma=  \sqrt[n]{a_1\cdot a_2 \cdots a_n}
+              $$
+
+   One of the famous inequalities is
+   that
+         $$
+          A\geq \Gamma,\quad\mbox{and moreover}\quad A=\G \iff  a_1=\dots=a_n
+          \eqno (*)
+         $$
+
+
+         \bigskip
+
+          \centerline   {\S 1 \textbf{The case of two numbers}}
+
+\medskip
+This is most elementary case.
+
+  \problem{1.1.1} Prove the identity
+                 $$
+             (x-y)^2=(x+y)^2-4xy
+             \eqno (1.1a)
+                 $$
+
+
+   \problem{1.1.2} Deduce that:
+            $$
+           (x+y)^2\geq 4xy
+           \eqno (1.1b)
+            $$
+
+\m
+
+   \problem{1.1.3} Prove the inequality $(*)$ for $n=2$, i.e. for $a_1,a_2\geq 0$
+                $$
+             {a_1+a_2\over 2}\geq \sqrt{a_1a_2},\quad\mbox{and}\quad  {a_1+a_2\over 2}= \sqrt {a_1a_2}  \iff a_1=a_2
+             \eqno (1.1c)
+                $$
+
+
+
+  Another proof:
+
+
+   Let $a_1,a_2$ be arbitrary non-negative numbers, $A={a_1+a_2\over 2}$ its arithmetic mean
+   and $\G=\sqrt {a_1a_2}$ its geometric mean.
+
+       Consider system of equations  (simultaneous equations)
+            $$
+            \cases
+              {
+     x+y=A,\cr xy=\G
+          }
+          \eqno (1.2a)
+            $$
+
+\m
+
+   \problem{1.2.1}
+   Suppose that system (1.2a) has a solution.
+    Write down the quadratic polynomial $x^2+px+q$ such that
+    roots of this polynomial are numbers $x,y$ which are
+    the solution of the system (1.2a) (if they exist)
+
+\m
+
+   \problem{1.2.2}  Consider the discriminant of this quadratic polynomial ($``D=b^2-4ac$''). %p2-4q$)
+      What is the relation between the discriminant of this quadratic polynomial and
+        the inequality $A\geq \G$~?
+
+       \note{({\it Discriminant is just equal to $p^2-4q=4A^2-4\G$. It is greater or equal to zero iff two roots are
+       real,i.e.\
+       if the system (1.2a) has a solution in real numbers. We see that $D\geq 0$ is just inequality $(*)$ for two
+       numbers.)}}
+
+
+   \m
+
+     \problem{1.2.3}
+  Let the numbers $x,y$ satisfy the equations.
+            $$
+            \cases
+              {
+     x+y=2,\cr xy=2500
+          }
+          \eqno (1.2a)
+            $$
+Hence their arithmetic mean is equal to $A={x+y\over 2}=1$ and their
+geometric mean is equal to $\sqrt {xy}=\sqrt 2500=50 $. We see that
+the geometric mean is {\it bigger} than the arithmetic mean. Find a
+mistake.
+
+
+\bigskip
+
+  \centerline {\it  Geometric meaning}
+\m
+
+
+Consider a segment $AB$. Let $D$ be a point in this segment, such
+that $|AD|=a, |DB|=b$. Let $O$ be the centre of the segment $AB$.
+Consider the circle with centre at the point $O$ and radius
+$R={a+b\over 2}$.
+
+The segment $AB$ is a diameter of this circle. Take a perpendicular
+to the segment $AB$ at the point $D$.
+ Denote by $C$ a point of the intersection of the perpendicular with circle.
+
+   Consider the triangle
+$ACB$. $\angle ACB=90^\circ$. $CD$ is the height of this triangle.
+
+  \problem{1.3.1}
+
+    Consider $\triangle ADC$ and $\triangle BDC$. Show that they are similar.
+
+\m
+
+   \problem{1.3.2}  Deduce that the height is the geometric mean of the segments $AD$ and
+   $DB$: that is,  $DC=\sqrt {AD \cdot DC} = \sqrt ab$
+
+\m
+   \problem{1.3.2}  Show that height is smaller than or equal to the radius  $R={a+b\over
+   2}$. When can they be equal?
+
+
+    Thus we come to  geometrical proof and interpretation of the inequality $(*)$:
+                           $$
+             \hbox{Radius of the circle $\geq $ Height on the hypothenuse}
+                           $$
+
+
+ \newpage
+
+          \centerline   {\S 2 \textbf{  Attempts to generalise: $n=3,4$}}
+
+\m
+
+Try to generalise.
+
+Case $n=3$
+
+\problem{2.1.1}  Prove the identity
+                 $$
+               a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-ac-bc)
+                 $$
+
+\problem{2.1.2}
+ Using $(*)$ for $n=2$ or otherwise prove that  $a^2+b^2+c^2-ab-ac-bc\geq 0$.
+  ({\it Hint: consider $a^2+b^2\geq 2ab$, and similar expressions involving $a,c$ and $b,c$ })
+  % and add these relations})
+
+
+\m
+
+ \problem{ 2.1.3}  Prove the inequality $(*)$ for $n=3$
+
+
+ Alright but it's like pulling a rabbit out of a hat. It doesn't help
+ us understand how to prove the general case.
+
+\m
+
+Consider the case $n=4$. Surprisingly it is easier.
+
+Let $a_1,a_2,a_3,a_4$ be four non-negative integers.
+
+  Consider numbers $A_1,A_2$ such that $A_1$ is arithmetic mean of $a_1,a_2$ and
+  $A_2$ is arithmetic mean of $a_3,a_4$:
+               $$
+              A_1={a_1+a_2\over 2},\quad   A_2={a_3+a_4\over 2}
+              \eqno (2.1.1)
+               $$
+Recall inequality $(*)$ for two numbers:
+               $$
+               {x+y\over 2}\geq \sqrt {x y}
+               \eqno (2.1.2)
+               $$
+Using (2.1.1) and few time this inequality we come to the following
+chain of inequalities:
+                $$
+      A= {a_1+a_2+a_3+a_4\over 4}=
+      {A_1+A_2\over 2}\geq \sqrt {A_1 A_2}=
+     \sqrt {\left({a_1+a_2\over 2}\right)}\sqrt {\left({a_3+a_4\over 2}\right)}\geq
+                $$
+          $$
+      \geq\sqrt {\sqrt {a_1a_2}}\sqrt {\sqrt {a_3a_4}}=\root 4\of {a_1a_2a_3a_4}=\G
+          $$
+Thus we prove $(*)$ for $n=4$
+
+  \problem{2.2.1} Perform the considerations above.
+
+  We see that case $n=4$ is essentially easier than $n=3$
+
+
+
+ \newpage
+
+          \centerline   {\S 3 \textbf{Inequality for  $n=2^k$}}
+
+\m
+
+Using results of \S2 for $n=4$ one can step by step (i.e. by
+induction) prove it for $n=2^k$
+
+ \problem{3.1.1}  Do it.
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 4$  General case}
+
+
+\m
+
+ Let $a_1,\dots,a_n$ be a set of non-negative numbers.
+
+We call the set of these numbers a `normal set' if the inequality
+$(*)$ holds  ($A\geq \G$), i.e.\ the set of positive numbers
+$\{a_1,\dots,a_n\}$  is a `normal set' if
+                            $$
+                   {a_1+a_2+\dots+a_n\over n} \  \geq \ \sqrt[n]{a_1a_2\dots a_n}
+                            $$
+Do there exist normal sets?
+
+   \problem{4.1.1}  Show that any set of equal numbers is a normal set.
+
+\m
+
+\problem{4.1.2} Show that the set which contains at least one naught
+is a normal set.
+
+\m
+
+ Now to a more serious problem:
+
+
+\m
+
+\problem{4.2.1}   Let $\{a_1,\dots,a_n\}$ be any set of positive
+integers and $c$ any positive constant.
+
+    Prove that in this case the set  of numbers
+             $$
+             \left\{{a_1\over c},\dots,{a_n\over c}\right\}
+             $$
+is normal if and only if the initial set is normal too.
+
+\m
+
+
+Why we are interested in these exercises?  Because we want to reduce
+our problem to the special case  when the geometric mean is equal to
+$1$
+
+ We come to a very important exercise:
+
+
+ \m
+\problem{4.2.2} Let $\{a_1,\dots,a_n\}$ be any set of positive
+integers and let
+    $$c=\G=\sqrt {a_1 a_2\dots a_n}$$
+be the geometric mean of these numbers Consider the set of numbers
+             $$
+%\left \{{a_1\over c},\dots,{a_n\over c}\right\}=
+ \left\{{a_1\over \G},\dots,{a_n\over \G}\right\}
+             $$
+  Prove that the geometric mean of this new set is equal to 1.
+
+\m
+
+
+\problem{4.2.3} It follows from these two exercises that to prove
+inequality $A\geq \G$ in general case it is enough to prove it for
+the case when geometric mean is equal to $1$.  Show this!
+
+
+
+
+\newpage
+
+          \centerline   {\bf ${\cal x} 5$  General case, final attack}
+
+\m
+
+Everything now is ready for the final attack. In paragraphs 2 and 3
+we proved the inequality $(*)$ for $n=2^k$. On the other hand in the
+previous paragraph we reduced this problem to the case when
+geometric mean is equal to $1$.
+
+   Now let $x_1,\dots,x_n$ be a set of $n$ non-negative real numbers such that their geometric mean is equal to 1.
+   (By the way this means that all these numbers have to  be positive if they are non-negative)
+
+   We call this set a `nice set'.
+
+ We have to prove that their arithmetic mean  is greater or equal to 1:
+                          $$
+                   x_1+\dots+x_n\geq n, \quad\mbox{and}\quad x_1+\dots+x_n=n \iff x_1=\dots=x_n=1
+                   \eqno (5.1)
+                          $$
+
+In other words we have to prove that a nice set is normal too.
+
+ If $n=2^k$ then we already proved it in paragraph 3.
+
+
+ Suppose $n\not=2^k$. Consider any $k$ such that $n\leq 2^k$. (E.g. if $n=1000$ we can take any $k \geq 10$ )
+
+   Consider the set of numbers which contains numbers $\{x_1,\dots,x_n\}$ and which contain number $1$, $2^k-n$ times:
+               $$
+ A= \{x_1,\dots,x_n,\underbrace{1,1,\dots,1}_{\hbox{ $2^k-n$ times}}\}
+               $$
+
+     \problem{5.1.1} Show that the set $A$ is a nice set.
+
+
+      \m
+
+      But this nice set contains already $2^k$ elements. Hence this nice set is normal, i.e. its arithmetic mean
+      is greater than or equal to 1. \marginpar{equal to ?}
+
+      \m
+\problem{5.1.2} Using results of  ${\cal x} 3$ show that  for the
+nice normal set $A$
+             $$
+       x_1+\dots+x_n+\underbrace{1+\dots+1}_{\hbox{ $2^k-n$ times}}\geq 2^k
+             $$\marginpar{\vskip-18mm$= 2^k$??}
+Deduce from this fact (5.1)
+
+Thus we proved the inequality $(*)$
+
+\bigskip
+
+
+\problem{5.1.2}  In the proof of (5.1) we fixed the value of
+geometric mean. Now try to make an analogous proof keeping the
+arithmetic mean to be 1, instead of the geometric mean.
+
+
+
+ \bigskip
+ \bigskip
+\newpage
+
+          \centerline   {\bf ${\cal x} 6$  Another proof which seems to be very simple}
+
+\m
+
+How did we prove $(*)$? First we proved it for $n=2$, then for
+$n=4,8,16,32,\dots$ and then for arbitrary $n$ we reduced the
+problem to the case where $\G=1$ and proved it for this case.
+
+ Here is another ``proof'' of the statement $(*)$
+
+ Let $a_1,\dots,a_n$ be a set of $n$ arbitrary non-negative numbers. Fix their arithmetic mean $A$,
+ i.e. consider all the sets of positive numbers $\{a_1,\dots,a_n\}$ such that
+                    $$
+                   {a_1+\dots+a_n\over n}=A
+                   \eqno (6.1)
+                    $$
+To prove that for an arbitrary set which satisfies
+ (6.1) its geometric mean is less than or equal to $A$, begin by supposing it is not true. Hence
+ there exist a point where the geometric mean is greater than $A$.
+
+Note that at the point $a_1=a_2=\dots=a_n=A$ the geometric mean is
+equal to $A$.
+
+Consider arbitrary set $\{a_1,\dots,a_n\}$ obeying (6.1). Suppose
+the geometric mean is greater than $A$. Then at least two numbers
+$a_i,a_j$ are not equal, because if all the numbers are equal then
+geometric mean is equal to $A$.  Change the numbers $a_i,a_j$ to the
+numbers $a_i'=a_j'= {a_i+a_j\over 2}$. We do not destroy the
+condition (6.1) but the geometric mean is increased! because
+$a_ia_j<\left({a_i+a_j\over 2}\right)^2$.
+
+ Now choose a set where the geometric mean is greatest. We arrive at a contradiction because
+  by equalising non-equal numbers we can make the geometric mean greater.
+
+This proof looks deceptively simple. However, here we assume by
+default that there is a point where the maximum is attained. (Sure
+it is true because (6.1) defines a compact domain and the geometric
+mean is a continuous function, but this needs hard stuff from
+mathematical analysis)
+
+\newpage
+\centerline{\S 7 \textbf{More inequalities}}
+
+Given positive numbers $a_1,\dots, a_n$ in addition to the geometric
+and arithmetic mean, there is the \emph{harmonic mean} $H$ defined
+by
+$$ \frac1H = \frac1n \left(\frac1{a_1} + \frac1{a_2}+\cdots +
+\frac1{a_n}.\right).$$
+
+Furthermore, let $M=\max\{a_1\dots,a_n\}$ and
+$m=\min\{a_1,\dots,a_n\}$.
+
+\problem{7.1} Find inequalities relating $m,M,\Gamma,A$ and $H$.
+
+\end{document}

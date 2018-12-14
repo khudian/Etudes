@@ -1,0 +1,156 @@
+
+
+
+ \def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf On one integral}
+
+
+ Let $A(t)$ be a function on $\R$ such that
+        $$
+   A(t)=\sum_{k\geq l}\Psi_k t^k
+      \eqno(1)
+        $$
+in a vicinity of $0$ and  $\int t^n A(t)dt$ converges at infinity for 
+any $n$.
+
+ Consider a function 
+               $$
+\zeta_A(s)={1\over G(s)}\int_0^\infty t^{s-1}A(t)dt,
+           $$
+where $\G(s)$ is the usual Gamma-function.
+  This integral is well-defined for enough big $s$.
+
+  Perform analytical prolongation and
+calculate the derivative of the function $\zeta_A$ at the point $s=0$:
+         $$
+\zeta'_A(0)={d\over ds}\zeta_A(s)\big\vert_{s=0}=
+   \sum_{k\not=0}{\Psi_k\over k}+
+C\Psi_0+\int_1^\infty A(t){dt\over t}\,,
+{\rm where}\,\,
+    C=-\G'(1)\,.
+       $$
+  Statement:
+        $$
+   \zeta'_A(0)=
+\int_0^\infty
+     \left(
+     A(t)-\sum_{k<0}\Psi_kt^k-e^{-t}\Psi_0
+      \right)
+     {dt\over t}\,.
+     \eqno (2)
+       $$
+{\sl Proof}. Calculate straightforwardly this integral as a sum of the 
+integral over $[0,1]$ and the integral over $[1,\infty$:
+        Using  equation {1} we come to 
+          $$
+       \int_0^1
+     \left(
+     A(t)-\sum_{k<0}\Psi_kt^k-e^{-t}\Psi_0
+      \right)
+     {dt\over t}= 
+       \int_0^1
+     \left(
+     \sum_{k\geq 0}\Psi_kt^k-e^{-t}\Psi_0
+      \right)
+     {dt\over t}=
+     \sum_{k>0}{\Psi_k\over k}+C_1\Psi_0\,,
+       {\rm where}\,\,     
+    C_1=\int_0^1(1-e^{-t}){dt\over t}\,,
+        $$
+and    $$
+    \int_1^\infty
+     \left(
+     A(t)-\sum_{k<0}\Psi_kt^k-e^{-t}\Psi_0
+      \right)
+     {dt\over t}=
+    \int_1^\infty
+     A(t){dt\over t}-\sum_{k<0}
+    \Psi_k\int_1^\infty t^{k-1}dt-\Psi_0\int_1^\infty e^{-t}{dt\over t}=
+     $$
+     $$
+     \int_1^\infty
+     A(t){dt\over t}+\sum_{k<0}
+  {\Psi_k\over k}+C_2\Psi_0\,,
+  {\rm where}\,\, C_2=-\int_1^\infty e^{-t}{dt\over t}\,.
+     $$
+Adding these two integrals and subtracting integral (2) we
+come to:
+       $$
+\int_0^\infty
+      \left(
+     A(t)-\sum_{k<0}\Psi_kt^k-e^{-t}\Psi_0
+      \right){dt\over t}
+      -
+\zeta_A'(0)=
+\left(C_1+C_2-C\right)\Psi_0\,.
+    \eqno (3)
+       $$
+  It remains to prove that    $C_1+C_2=C$. 
+The nice way to show it is the following:
+   Consider
+ the function $A(t)=e^{-t}$. Then $\Psi_0=1$ and in equation (4)
+ the left hand side is obviously vanished. 
+Hence 
+          $$
+  C_1+C_2-C=0\,,{\rm i.e.}
+    \int{(1-e^{-t})dt\over t}-
+    \int{e^{-t} dt\over t}=\G'(1)\,.
+          $$     
+We come to this result without calculations. 
+
+
+One can formulate the result of the statement as the following identity:
+    For an arbitrary function $A(t)$
+               $$
+{d\over ds}\left({1\over \G(s)}\int_0^\infty t^{s-1}A(t)dt\right)
+              \big\vert_{s=0}=
+   \int_0^\infty {A(t)-A_-(t)-A_0e^{-t}\over t}dt\,.
+               $$
+(Left hand side is analytical continuation )
+  This formula can be used for  many interesting calculations.
+  
+\bye 

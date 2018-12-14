@@ -1,0 +1,232 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+           \centerline {\bf Geometry of differential operators on $\R$. II}
+
+
+   {\bf Example of operator}
+
+(All notations from the previous file)
+
+
+We already know the canonical pencil of $n+1$-th order operators on
+$\R$.
+
+Now we will write down an example of $n+1$-th order operator on $\R$
+provided with volume form $\rho\in \F_{1}$.
+
+
+
+
+
+
+
+
+   Consider the operator:
+              $$
+              D\colon \qquad   \Psi |dx|^\s \mapsto
+              D_\sigma\Psi=|dx|^{\s+1}\rho^\s{d\over dx}\left({\Psi\over \rho^\s}\right)=
+              |dx|^{\s+1}\left({d\Psi\over dx}+\gb\Psi\right)
+              $$
+           which sends $\F_\sigma$ to $\F_{\sigma+1}$.
+
+      (Here $\gb=-{d\over dx}\log \rho$ is a flat connection corresponding to the volume form $\rho$.)
+
+One can assign to this operator the operator
+              $$
+              \hat D=t\left({\p\over \p x}+\gb\hat w\right)
+              $$
+on the whole space $\F$ of all the densities.
+
+Operator $\hat D$ is self-adjoint operator.
+
+
+Then we come to the following operator which sends $\F_\lambda$ to $\F_{\lambda+n+1}$:
+
+
+ Consider $n$-th order operator
+          $$
+      L_n=\hat D^n=\left[t\left({d\over dx}+\gb\hat w\right)\right]^n=
+      t^n\left({\p^n\over \p x^n}+A_n{\p^{n-1}\over \p x^{n-1}}+B_n{\p^{n-2}\over \p x^{n-2}}+\dots\right)
+          $$
+       One can see that
+            $$
+L_{n+1}=\hat D L_n=t\left({\p\over \p x}+\gb\hat w\right)t^n
+\left({\p^n\over \p x^n}+A_n{\p^{n-1}\over \p x^{n-1}}+B_n{\p^{n-2}\over \p x^{n-2}}+\dots\right)=
+            $$
+            $$
+            t^{n+1}\left({\p\over \p x}+\gb(n+\hat w)\right)
+\left({\p^n\over \p x^n}+A_n{\p^{n-1}\over \p x^{n-1}}+B_n{\p^{n-2}\over \p x^{n-2}}+\dots\right)=
+            $$
+            $$
+            t^{n+1}\left({\p^{n+1}\over \p x^{n+1}}+A_{n+1}{\p^{n}\over \p x^{n}}+
+            B_{n+1}{\p^{n-1}\over \p x^{n-1}}+\dots\right)
+            $$
+Thus we come to recurrent relations. For ${A_n}$,
+            $A_1=\gb \hat w,\,\, A_{n+1}=A_n+\gb(n+\hat w)$, i.e.
+           $$
+        A_n=n\gb \hat w+(1+2+\dots+n-1)\gb={n\over 2}\left(2\hat w+n-1\right)\gb
+            $$
+For $B_n$: $B_1=0$, $$B_{n+1}=B_n+\left(\p_x+(n+\hat w)\gb\right)A_n,
+           =B_n+\left(\p_x+(n+\hat w)\gb\right){n+1\over 2}\left(2\hat w+n\right)\gb,\,\,{\rm i.e.}$$,
+           $$
+   B_{n+1}=B_n+{(n+1)(n+2\hat w)\over 2}\p_x\gb+{(n+1)(n+\hat w)(n+2\hat w)\over 2}\gb^2\,.
+           $$
+One can see (this  is long calculations) that
+            $$
+            B_{n}={n(n-1)\over 6}
+            \left[
+            \left(
+            3\hat w+n-2
+            \right)
+            \gb^\prime+
+           \left(
+           3\hat w^2+3(n-1)\hat w+
+            {(n-2)(3n-1)\over 4}
+           \right)\gb^2
+           \right]
+            $$
+({\it Tu a calculer ca...})
+
+We see
+         $$
+   L_{n+1}= t^{n+1}\left[{\p^{n+1}\over \p x^{n+1}}+
+          {n+1\over 2}\left(2\hat w+n\right)\gb{\p^{n}\over \p x^{n}}+
+                B_{n+1}
+            {\p^{n-1}\over \p x^{n-1}}+\dots\right]
+         $$
+({\it Coefficient $A_n$ is right here? ...})
+
+ This operator defines the pencil:  It transforms the density $\Psi|dx|^\l$ of the weight $\l$ into the density
+ $\Phi(x)|dx|^{\l+n-1}$ of the weight $\l+n-1$, where
+          $$
+   \Phi(x)={\p^{n+1}\Psi\over \p x^{n+1}}+
+   {n+1\over 2}\left(2\l+n\right)\gb {\p^{n}\Psi\over \p x^{n}}+
+              B_{n+1}
+            {\p^{n-1}\Psi\over \p x^{n-1}}+\dots
+          $$
+If $\l=-{n\over 2}$ then
+            $$
+            \Phi(x)={\p^{n+1}\Psi\over \p x^{n+1}}+B_{n+1}
+            {\p^{n-1}\Psi\over \p x^{n-1}}+\dots
+            $$
+One can see that it is $\sim$ to Schwarzian...
+           $$
+         B_{n+1}=c_{n+1}B_2
+           $$
+({\it Nous avons calculer hier})
+\bigskip
+
+     {\bf Second example}
+
+     Go further. One can see that for $D=t(\p_x+\hat w\gb)$
+             $$
+             \hat wD-D\hat w=D
+             $$
+     This commutation relation implies that $n+1$-th order operator
+            $$
+         K_{n}=
+         D^n\hat w+(-1)^{n+1}\hat w^\dagger
+         \left(D^\dagger\right)^n=
+         D^n\hat w+(-1)^{n+1}(1-\hat w)
+         \left((-1)^nD\right)^=
+            $$
+            $$
+         D^n(2\hat w+n-1)=t^n(2\hat w+n-1)\left(\p_x^n+\dots\right)
+            $$
+     is self-conjugate operator.
+
+     Let $r=r(x)t$ be a density of the weight $1$. it is useful to consider also the  operator
+     which is anticommutator:
+          $$
+       {\cal K}_{n}={1\over 2}\left(K_n\circ tr(x)+tr(x)\circ K_n \right)=
+            {1\over 2}\left(D^n(2\hat w+n-1)\circ tr(x)+tr(x)\circ D^n(2\hat w+n-1) \right)
+        $$
+        $$
+       =t^{n+1}(2\hat w+n)r(x)\left(\p_x^n+\dots\right)
+          $$
+
+{\bf Proposition }           Let $\Delta_{n+1}=t^{n+1}\p_x^{n+1}+\dots$ be an arbitrary
+self-adjoint operator. It has the following
+appearance:
+                        $$
+                    \Delta_{n+1}=t^{n+1}
+                    \left(
+                   \p_x^{n+1}
+        +{n+1\over 2}
+        (2\hat w+n)\ggb\p_x^{n}
+                      +
+                 \beta_{n+1}\p_x^{n-1}+\dots
+            \dots
+            \right)\,,
+                        $$
+                        where
+                        $$
+                     \beta_{n+1}={1\over 2}\left[
+               \theta\hat w^2+\left(n(n+1)\ggb^\prime+n\theta\right) \hat w+q
+               \right]
+                        $$
+(see the previous file. {\it I am not sure about the term $\beta_n$, recalculate it, please.})
+
+We come to decomposition:
+            $$
+ \Delta_{n+1}=D^{n+1}+t^{n+1}{n+1\over 2}(2\hat w+n)r\p_x^n+\dots
+            $$
+           where $r=\ggb-\gb$.  On the other hand
+                   $$
+   t^{n+1}{n+1\over 2}(2\hat w+n)r\p_x^n+\dots=...{\cal K}_n+...\hbox{operator of the order $\leq n-1$ w.r.s. to $x$}
+                   $$
+where $\cal K$ is self-adjoint operator defined above.
+
+\bigskip
+
+     \centerline {Useful formulae}
+
+  It is useful to rewrite self-conjugality conditions in terms of the corresponding pencil.
+  Let $A$ be an operator on $\cal F$ of the weight $\delta$ and $A_\l$ 
+
+
+\bye

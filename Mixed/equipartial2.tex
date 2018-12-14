@@ -1,0 +1,304 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+\centerline {\bf Cube and tetrahedron are not equipartial.}
+
+  \bigskip
+
+   {\bf Theorem 1} Two polygons of equal area
+   are equipartial.
+
+    This means that if polygons $\Pi_1$ and $\Pi_2$ have the same area then one can cut
+     the polygon $\Pi_1$ on polygons $\pi_1,\dots,\pi_k$ and
+     polygon  $\Pi_2$ on polygons $\pi'_1,\dots,\pi'_k$ such that polygons $\pi_k$
+     are equal to polygons $\pi'_k$: $\pi_1=\pi'_1$,  $\pi_2=\pi'_2$, $\pi_3=\pi'_3,\dots, \pi_k=\pi'_k$.
+
+
+
+
+
+  The proof is simple.   I give two hints to prove it.
+
+\m
+
+   {\it Hint 1. This was proved by amateur mathematician in XIX century.   This means
+    that you can prove it! (Ja v svojo vremia  sdelal eto s udovoljstvijem!)}
+
+    Hint 2. The proof immediately follows from the lemma.
+
+\m
+
+   {\bf Lemma}  Let $S_1$ be a triangle (with acute angles), and $S_2$ be an rectangtle
+   such that they have the same area
+      and one of the sides of triangle $S_1$ coincides with one of the sides of the rectangle  $S_2$.
+     Then the triangle $S_1$ is equipartial with the rectangle $S_2$.
+
+     {\it Proof}: Let $S_1$ be a $\triangle ABC$ with $a=BC$ and $S_2$ be rectangle with a side $a$.
+      Consider the segment $MN$ joining midpoints $M,N$ of the sides $AB$ and $AC$,
+      and the altitude (height) $AP$ of the triangle $AMN$. Then cut triangle $ABC$
+      on $\triangle AMP$, $\triangle ANP$ and trapezoid $BMNC$. Puting triangles
+      $ABC$, $AMP$ to the trapezoid we come to the rectangle.
+
+\m
+ Now it is easy to prove the Theorem. To see how the lemma helps consider
+
+
+{\bf Example}. Show that rectangle $\Pi_1$ with sides $\{1,2\}$ and square $\Pi_2$ with sides
+$\{\sqrt 2, \sqrt 2\}$ are equipartial.
+
+{\it Solution:}  It follows from lemma that rectangle  $\Pi_1$ with sides $\{1,2\}$ and triangle
+  with sides $\{2,2,2\sqrt 2\}$ are equipartial. Again applying lemma we see that triangle
+  with sides $\{2,2,2\sqrt 2\}$ and rectangle $\Pi_3$ with sides  $\{2\sqrt 2,{\sqrt 2\over 2}\}$
+  are equiaprtial. On the other hand rectangle $\Pi_3$ with sides  $\{2\sqrt 2,{\sqrt 2\over 2}\}$
+  and square  $\Pi_2$ with sides $\{\sqrt 2, \sqrt 2\}$ are equipartial. Hence rectangle $\Pi_1$
+  and square $\Pi_2$ are equiaprtial.
+
+
+
+
+
+  \bigskip
+
+{\it Now the most interesting part:}
+
+\bigskip
+
+   {\bf Theorem 2} The cub and tetrahedron of the same volume are not equipartial.
+
+  It is one of the Hilbert's problem.
+
+  The meaning of this theorems is following:  we know that area of the triangle is equal to
+  $S={ah\over 2}$,
+  where $h$--is the length of the altitude on the side $a$; and  the volume  of tetrahedron
+   is equal to ${SH\over 3}$,
+   where $S$ is the area of the base and
+    $h$ is the length of the altitude on the base.
+  The Theorem 2  means that one {\it cannot escape the Analysis} (consider integration) to define
+  the volume of tetrahedron\footnote{$^*$}
+ {The Theorem 1 claims that one comes to the formula for an area of triangle
+ just by cutting rectangle
+ and {\it without using Analysis}, i.e. without integration}.
+
+
+
+   Few weeks ago I heard about wonderful proof of the second Theorem.
+   (Davidik rasskazal mne eto dokazateljstvo, kogda ja vstretilsja s nim na Ukrajine.
+   On priivjoz eto iz Moskvy)
+    Here it is:
+
+\m
+
+
+  Consider cube with edge $1$ and regular tetrahedron of the same volume.
+  Let $\theta$  be an angle between sides of the tetrahedron.
+  One can see that $\theta\over \pi$ is irrational number.
+(I think this follows easy from the fact that $\cos \theta=1/3$).
+
+  For every polyhedron $C$ consider the function
+              $$
+           P_C=\sum_i |l_i| F(\varphi_i),\eqno (1)
+              $$
+where $\{l_i\}$ are edges of the polyhedron, $\varphi_i$ is 
+the angle between sides adjusted
+to the edge $l_i$ and $F(\varphi)$--a real valued function (v etoj funktsiji i vsja solj!).
+The summation goes over all edges $l_i$.
+
+Now the most interesting part:
+ Consider an additive function $F$ on $\R$:
+$F(a+b)=F(a)+F(b)$, i.e. the linear function on the real numbers,
+considered as a vector space over rational numbers, such that
+               $$
+             F(\pi/2)=0\,, 
+             \eqno (2)
+               $$
+and
+               $$
+            F(\theta)=1.
+             \eqno (3)
+               $$
+One can see that condition (2) implies that function  (1) 
+is not changed under cuttings.
+
+ This function exists because $\theta\over \pi$ is irrational number, but
+ this function is not linear in common sense, 
+i.e. it is not {\it continuous} function.!
+  To construct this function we need Hamel basis
+  \footnote{$^{**}$}{The space $\R$ of real 
+numbers is a vector space over rational numbers. The basis in this space
+  is the set $\{e_\a\}$ of numbers such 
+that for an  arbitrary  real number $\b$,
+  $\b=\sum\gamma_\a e_\a$ where all $\{\gamma_\a\}$ 
+are equal to zero except the finite set.
+  The set $\{\gamma_\a\}$ is defined uniquely. The problem is that this vector space is "worse" than infinite-dimensional---
+   its dimension is uncountable. To find a basis $\{\e_\a\}$ one needs to use transfinite induction, i.e.
+    essentially use of Choice Axiom. A basis $\{e_\a\}$ is called {\it Hamel basis}}. Now the proof is in one line:
+
+The function $P_C=\sum_i |l_i| F(\varphi_i)$ defined by relations (1),(2)
+and (3)
+is equal to $0$ if $C$ is the cube of volume $1$
+and it is equal to $z=6l$ if $C$ is regular tetrahedron, 
+where $l$ is a length of the teathredon.
+On the other hand the function  $P_C$ does not change under 
+cutting of polyhedron because
+the function $F$ is additive function of the angles,
+and the condition $F(\pi)=0$ is obeyed.
+ Contradiction.\finish
+
+
+
+  I enjoyed so much this proof, but something is worrying:
+  we use Choice Axiom for constructing additive not continuous function $F$ on all real numbers.
+    Do we really need it?
+
+  \bigskip
+
+  I think one can escape the using of choice axiom.
+
+\m
+
+
+ Indeed  suppose one can cut cube on polyhedra $\gamma_1,\dots,\gamma_k$
+  such that after putting with each other we come to tetrahedron.
+   Consider the finite set of angles $\{\varphi_1,\dots,\varphi_N\}$
+   which arise during cuttings.
+
+   Let $V$ be the linear space spanned by the numbers $\{\varphi_1,\dots,\varphi_N\}$ with rational coefficients:
+              $$
+      V=\{a_1\varphi_1+\dots+a_N\varphi_N,\,\,\,{\rm where}\,\,\, a_1,\dots,a_n\in \Q\}
+              $$
+ Let $F$ be a linear function on $V$ which obeys the condition (2). One does not need Choice Axiom to
+ construct this function (in spite of the fact that a function $F$ is not defined uniquely),
+ since  $V$ is finite-dimensional vector space.
+It  suffices to consider this function to come to contradiction.
+
+   Krassivo nepravda li?
+
+
+\medskip
+
+{\bf Remark} (28.12.2013).
+  The proof of this Theorem is founded on the function
+  $I=\sum |l_i|F(\varphi_i)$ where $F(\varphi_i)$ is a function which is
+linear on a finite sequence of angles $\varphi_\alpha$, where
+$\varphi_\alpha$ are all the angles which arise during cuttings of cube.
+
+  Then the restriction $F(\pi)=0$ implies that $I$ is invariant of cuttings...
+
+  I would like to mention that if we take the genuine linear function 
+$F(\varphi)=\varphi$ then these considerations will fail (cutting around faces
+will change the invarance) but we will come to...
+                 $$
+     I(M)=\sum |l_i|F(\varphi_i)=\int_M H
+                 $$
+where $H$ is mean curvature of closed surface $M$. It is interesting the
+interplay of this formula with tube formula
+       $$
+  V_h=V_0+S_mh+h^2\int_M H+{4\over 3}\pi h^3\,
+       $$
+where $M=\p D$ is a boundary of convex domain, and $V_h(D)$ is a 
+volume of all the body which contains all the points of $D$ $+$ points
+which are on the distance from $M$ less or equal to $h$,
+and $h$ is enough small.
+
+
+
+    \bye
+
+          jonathan.bagley@manchester.ac.uk,
+          Georgi.Boshnakov@manchester.ac.uk,
+          David.Broomhead@manchester.ac.uk,
+          victor.buchstaber@manchester.ac.uk,
+          mark.coleman@manchester.ac.uk,
+          francis.coghlan@manchester.ac.uk,
+          carolyne.dean@manchester.ac.uk,
+          kit.dodson@manchester.ac.uk,
+          john.dold@manchester.ac.uk,
+          peter.eccles@manchester.ac.uk,
+          paul.glendinning@manchester.ac.uk,
+          jerry.huke@manchester.ac.uk,
+          gabor.megyesi@manchester.ac.uk,
+          james.montaldi@manchester.ac.uk
+          mark.muldoon@manchester.ac.uk,
+          john.parkinson@manchester.ac.uk,
+          mike.prest@manchester.ac.uk,
+          nikita.sidorov@manchester.ac.uk,
+          toby.stafford@manchester.ac.uk,
+          peter.symonds@manchester.ac.uk,
+          martin.taylor@manchester.ac.uk,
+          markus.tressl@manchester.ac.uk,
+          david.bell@manchester.ac.uk,
+          alexandre.borovik@manchester.ac.uk,
+          sergey.fedotov@manchester.ac.uk,
+          theodore.voronov@manchester.ac.uk,
+          grant.walker@manchester.ac.uk,
+          reg.wood@manchester.ac.uk
+
+
+         jonathan.bagley@manchester.ac.uk,
+          Georgi.Boshnakov@manchester.ac.uk,
+          David.Broomhead@manchester.ac.uk,
+          victor.buchstaber@manchester.ac.uk,
+          mark.coleman@manchester.ac.uk,
+          francis.coghlan@manchester.ac.uk,
+          carolyne.dean@manchester.ac.uk,
+          kit.dodson@manchester.ac.uk,
+          john.dold@manchester.ac.uk,
+          peter.eccles@manchester.ac.uk,
+          paul.glendinning@manchester.ac.uk,
+          jerry.huke@manchester.ac.uk,
+          gabor.megyesi@manchester.ac.uk,
+          james.montaldi@manchester.ac.uk
+          mark.muldoon@manchester.ac.uk,
+          john.parkinson@manchester.ac.uk,
+          mike.prest@manchester.ac.uk,
+          nikita.sidorov@manchester.ac.uk,
+          toby.stafford@manchester.ac.uk,
+          peter.symonds@manchester.ac.uk,
+          martin.taylor@manchester.ac.uk,
+          markus.tressl@manchester.ac.uk,
+          david.bell@manchester.ac.uk,
+          alexandre.borovik@manchester.ac.uk,
+          sergey.fedotov@manchester.ac.uk,
+          theodore.voronov@manchester.ac.uk,
+          grant.walker@manchester.ac.uk,
+          reg.wood@manchester.ac.uk

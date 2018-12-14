@@ -1,0 +1,332 @@
+\def\m {\smallskip}
+\def \G {{\cal G}}
+\def \p {\partial}
+\def \t {\tilde}
+\def \a  {\alpha}
+\def \d  {\delta}
+\def \L {\Lambda}
+\def \drightarrow {\buildrel{\der}\over\longrightarrow}
+\def \der {d_{_{E.L}}}
+\def \C   {{\cal C}}
+\def \B   {\overline}
+\def \V {{\cal V}}
+\def \vsubs {\cap\phantom{\vrule height2mm depth0mm width0.4pt}
+                  \vrule height2mm depth0mm width0.4pt}
+\def\interv{\phantom{\vrule height6mm depth0mm width0.4pt}}
+\def\intervs{\phantom{\vrule height4mm depth0mm width0.4pt}}
+
+\def \U {{\cal U}}
+\def \P {{\cal P}}
+\def \Ga {\Gamma}
+\def \min {{\cal n}}
+\def \dR  {{\bf R}}
+\def \R  {{\bf R}}
+\def \vare {\varepsilon}
+\def \Hs {H^1(\G,\L^0(M))}
+
+
+\def\Postn{16}
+
+     \centerline {\bf
+  Double complex and its spectral sequences 1}
+                  \medskip
+ Now we give a brief sketch on the topic how
+ to apply spectral sequences technique
+for calculations of cohomology of double complexes.
+ (See for the details for example [\Postn].)
+
+Let $E^{**}=\{E^{p.q}\}$ $(p,q=0,1,2,...)$ be a
+ family of abelian groups
+(modules, vector spaces) on which are defined two differentials
+$\p_1$ and $\p_2$ which define complexes in rows and in columns of
+ $E^{*.*}$ and which commute with each other:
+                            $$
+          \p_1\colon E^{p.q}\rightarrow E^{p.q+1}\,,\p_1^2=0,\,
+          \p_2\colon E^{p.q}\rightarrow E^{p+1.q}\,,\p_2^2=0,\,
+                    \p_1\p_2=\p_2\p_1\,.
+                                       \eqno (A2.1)
+                            $$
+   $\{E^{**},\p_1,\p_2\}$ is called double complex.
+
+  ( It is convenient to consider $E^{p.q}$ for all
+integers $p$ and $q$ fixing that $E^{p.q}=0$ if $p<0$ or $q<0$.)
+
+ One can consider  "antidiagonals":
+   ${\cal D}^m=\{E^{p.m-p}\}$ ($p=0,1,...,m$)
+  which form complex with differential
+                             $$
+                        Q=(-1)^q\p_2+\p_1
+                                                  \eqno (A2.2)
+                             $$
+ which evidently obeys to condition $Q^2=0$.
+                               $$
+       0\rightarrow{\cal D}^0{\buildrel Q\over\rightarrow}
+          {\cal D}^1{\buildrel Q\over\rightarrow}{\cal D}^2
+                   \rightarrow\dots\,.
+                                                 \eqno (A2.3)
+                               $$
+            The cohomologies $H^m(Q)$ of this complex
+are called  the cohomologies of double complex $(E^{**},\p_1,\p_2)$.
+
+ The rows and the columns complexes define the cohomologies
+  $H(\p_1)$ and  $H(\p_2)$ of $E^{**}$.
+
+One can consider the filtration corresponding to the double complex
+$\{E^{*.*},\p_1,\p_2\}$
+                          $$
+    \dots\subseteq X^m\subseteq
+  X^{m+1}\subseteq\dots\subseteq X^1\subseteq X^0
+                                              \eqno (A2.4)
+                           $$
+
+                     $$
+  {\rm where}\qquad\quad
+     X^k= \bigoplus_{q\geq 0,p\geq k} E^{p.q}
+                                      \eqno (A2.5)
+                    $$
+
+ and sequence of the spaces  $\{E^{p.q}_r\}$
+ $(r=0,1,2,\dots$ corresponding to this filtration
+                           $$
+             E^{p.q}_r =Z^{p.q}_r\big/B^{p.q}_r\quad
+                  (E^{p.q}_0=E^{p.q})\,.
+                                                \eqno(A2.6)
+                             $$
+In (A2.6) $Z^{p.q}_r$ ("$r$-th order cocycles")
+ is the space of the elements in $E^{p.q}$
+ which are leader terms of
+ cocycles of the differential $Q$ up to $r$--th order
+w.r.t. the filtration (A2.4), i.e.
+                          $$
+       \{Z^{p.q}_r\}=\{E^{p.q}_r\ni c\colon\quad
+       \exists {\t c}= c
+           (mod\, X_{p+1}) \,{\rm such\,that}\,
+             Q{\t c}=0(mod\,X_{p+r})\}\,.
+                                                \eqno(A2.7)
+                          $$
+   It means that there exists ${\t c}=(c,c_1,c_2,\dots,c_{r-1})$
+where $c_i\in E^{p+i.q-i}$  such that
+
+\noindent$Q (c,c_1,c_2,\dots,c_{r-1})\subseteq X_{p+r}\,$:
+                          $$
+     \p_1 c=0,\p_2 c=\p_1 c_1,\p_2 c_1=\p_1 c_2,\dots,
+    \p_2 c_{r-2}=\p_1 c_{r-1},\,{\rm so}\,
+     Q {\t c}=\p_2 c_{r-1}\in X_{p+r}\,.
+                           $$
+ Correspondingly $B^{p.q}_r$ is the space
+of up to $r$--th order borders:
+                          $$
+       \{B^{p.q}_r\}=\{E^{p.q}_r\ni c\colon\quad
+       {\cal 9} {\t b}\in X_{p-r+1}\,{\rm such}\quad{\rm that}\,
+             Q{\t b}=c\,.
+                                                \eqno(A2.8)
+                          $$
+   It means that there exist ${\t c}=(b_0,b_1,b_2,\dots,b_{r-1})$
+where $b_i\in E^{p-i.q+i}$  and
+
+\noindent $ Q (b_0,b_1,b_2,\dots,b_{r-1})=c$:
+                          $$
+     \p_1 b_0+\p_2 b_1=c,\p_1 b_1+\p_2 b_2=0,
+       \p_1 b_2+\p_2 b_3=0,\dots,
+                \p_1 b_{r-1}=0\,.
+                                 \eqno (A2.9)
+                           $$
+  For example $E^{p.q}_1=H(\p_1,E^{p.q})$.
+
+ We denote by $[c]_r$ the equivalence class of the
+ element $c$ in the $E^{p.q}_r$ if $c\in Z^{p.q}_r$.
+
+ It is easy to see that the sequence $\{E^{p.q}_r\}$
+   $r=0,1,2,\dots$ is stabilized after finite number of the steps:
+($E^{p.q}_{r_0}=E^{p.q}_{r_0+1}=\dots=E^{p.q}_\infty$,
+ where $r_0=max\{p+1,q+1\}$.
+
+  Let $H^m(Q, X_p)$
+ be cohomologies groups of double complex truncated by
+ filtration (A2.4) (we come to $H^m(Q, X_p)$   considering
+  $\{{\cal D}\cap X^p,Q\}$
+ as subcomplex of (A2.3), $H^m(Q)=H^m(Q,X^0)$.
+ We denote by  $_{(p)}H^m(Q)$ the image of
+$H^m(Q, X_p)$ in $H(Q)$   under
+ the  homomorphism
+ induced by the embedding ${\cal D}\cup X_p\rightarrow {\cal D}$.
+  The spaces $_{(p)}H^m(Q)$    are embedded in each other
+                      $$
+   0\subseteq \,_{(m)}H^m(Q)\subseteq \,_{(m-1)}H^m(Q)\subseteq
+        \dots\,_{(1)}H^m(Q)\subseteq
+                 \,_{(0)}H^m(Q)=H^m(Q)\,.
+                                                \eqno(A2.10)
+                     $$
+
+ The spaces $E^{p.q.}_\infty$ considered above
+ are related with (A2.10) by
+ the following relations:
+                              $$
+         E^{p.m-p}_\infty=_{(p)}H^m(Q)
+                         \big/
+                    _{(p+1)}H^m(Q)   \,.
+                                             \eqno (A2.11)
+                               $$
+ In particular  $E^{0.m}_\infty$ is canonically embedded
+ in $H^m(Q)$.
+
+  The formula (A2.11) is the basic formula which expresses
+ the cohomology
+$H(Q)$ of the double complex $\{E^{p.q},\p_1,\p_2\}$ in terms of
+$\{E^{p.q}_\infty\}$.
+ From (A2.10, A2.11) it follows that
+                             $$
+           H^m(Q)\simeq\bigoplus_{i=0}^{m} E^{p-i.i}\,.
+                                                \eqno (A2.12)
+                            $$
+The essential difference of (A2.12) from  (A2.11) is that
+ in (A2.12) the isomorphism of l.h.s. and of r.h.s.
+{\it is not canonical}.
+
+ The importance of the sequence $\{E^{*.*}_r\}$ ($r=0,1,2,\dots$)
+is explained by the fact that its terms (and so
+$\{E^{*.*}_\infty\}$) can be calculated in a recurrent way. Namely
+one can consider differentials (See for details [\Postn.])
+  $d_r\colon\, E^{p.q}_r\rightarrow E^{p+r.q+1-r}_r$
+ such that  $\{E^{*.*}_r, d_r\}$ form spectral sequence, i.e.
+                            $$
+              E^{*.*}_{r+1}=H(d_r,E^{*.*}_r).
+                                           \eqno (A2.13)
+                            $$
+The differentials $d_r$ are constructed in the following way:
+   $d_0=\p_1\colon\, E^{p.q}=E^{p.q}_0
+\rightarrow E^{p.q+1}=E^{p.q+1}_0$.
+
+   \noindent
+If $c\in E^{p.q}$ and $\p_1 c=0\leftrightarrow
+ [c]_1\in E^{p.q}_1$ then
+ $d_1[c]=[\p_2c],\,d_1\colon\,E^{p.q}_1
+      \rightarrow E^{p+1.q}_1$.
+
+\noindent  In general case for $[c]_r\in E^{p.q}_r$
+  $d_r[c]_r=[Q{\t c}]_r\,\,d_r\colon\,
+ E^{p.q}_r\rightarrow E^{p+r.q+1-r}_1$,
+
+ where $\t c\colon\, c-\t c\in X^{p+r}$ (see the definition (A2.7)
+ of $Z^{p.q}_r$).
+
+ One can show that definition of $d_r$ is correct, $d_r^2=0$ and
+ (A2.13) is obeyed [\Postn].
+
+Using (A2.13) one come after finite number of steps to
+    $E^{p.q}_\infty$ calculating each $E^{p.q}_r$  as
+the cohomology group of the $E^{p.q}_{r-1}$:
+ $E^{p.q}_1=H(d_0,E^{p.q})$,
+    $E^{p.q}_2=H(d_1,E^{p.q}_1$ and so on.
+
+    The spaces $E^{p.q}_r$  can be considered intuitively as
+$r$--th order (with respect to differential $\p_2$)
+ cohomologies of differential $Q$ .
+The operator $\p_1$ is zeroth order approximation for differential
+$Q$.
+  The calculations of
+ $E^{p.q}_\infty$ via (A2.13) can be considered as
+perturbational calculations.
+\smallskip
+One can develop this scheme considering in perturbative calculations
+not the operator $\p_1$, but $\p_2$ as zeroth order approximation.
+
+
+Instead filtration (A2.4) one has consider the "transposed"
+filtration
+                          $$
+    \dots\subseteq\, ^t X^m\subseteq\,
+  ^t X^{m+1}\subseteq\dots\subseteq\, ^t X^1\subseteq X^0
+                                              \eqno (A2.14)
+                           $$
+                     $$
+   {\rm where}\qquad\quad
+ \,^t X^k= \bigoplus_{p\geq 0,q\geq k} E^{p.q}
+                    $$
+   and corresponding transposed
+  spaces $\{\,^t E^{p.q}_r\}$. For example
+                      $$
+                  E^{p.q}_1=H(\p_1, E^{p.q}),\quad
+                   ^t E^{p.q}_r=H(\p_2, E^{p.q})\,.
+                       $$
+Instead spectral sequence $\{E^{*.*}_r,d_r\}$ one has to consider
+ transposed spectral sequence $\{^tE^{*.*}_r,\,^td_r\}$:
+                             $$
+               d_0=\p_1,\rightarrow \,^td_0=\p_2\,;
+               d_1[c]_1=[\p_2 c]_1,\rightarrow \,
+              ^td_1 [c]_1= [\p_1 c]_1\,,
+                         $$
+and so on.
+
+  The relations between spaces
+ $\{E^{p.q}_\infty\}$ and $\{^t E^{p.q}_\infty\}$
+ which express in different ways
+the cohomology $H(Q)$ is one of the applications of the method
+described here.
+
+ {\bf Example.} Let ${\bf c}=(c_0,c_1.c_2)$ where
+ $c_0\in E^{0.2}, c_1\in E^{1.1}, c_2\in E^{2.0}$ be cocycle
+ of the differential $Q$:
+$Q(c_0,c_1.c_2)=0$ i.e. $\p_1 c_0=0,\p_2 c_0=-\p_1 c_1,
+                        \p_2 c_1=\p_1 c_2$.
+ To the leading term $c_0$ of this cocycle w.r.t. the
+filtration (A2.4) corresponds the element
+ $[c_0]_\infty$ in $E^{0.2}_\infty$
+which  represents the cohomology class
+ of the cocycle ${\bf c}$ in
+   $E^{0.2}_\infty$.
+
+In the case if the equation
+$(c_0,c_1.c_2)+Q(b_0,b_1)=(0,c_1^\prime,c_2^\prime)$
+ has a solution, i.e. the leading term $c_0$
+ of the cocycle ${\bf c}$  can be cancelled
+  by changing of this cocycle on a coboundary, then
+the element   $[c_1^\prime]_\infty\in E^{1.1}_\infty$
+ represents the cohomology class of the cocycle ${\bf c}$ in
+   $E^{1.1}_\infty$.
+
+ In the case if the equation
+$(c_0,c_1.c_2)+Q(b_0,b_1)=(0,0,\t c_2)$ have a solution, i.e. the
+leading term and next one both can be cancelled, by redefinition on
+a coboundary, then
+  $[{\t c_2}]_\infty\in E^{2.0}_\infty$
+ represents the cohomology class of the cocycle ${\bf c}$ in
+   $E^{2.0}_\infty$.
+
+  To put correspondences between
+  the cohomology class of the cocycle ${\bf c}$
+ and corresponding elements from
+ transposed spaces
+$^tE^{0.2}_\infty,\,^t E^{1.1}_\infty\,^tE^{1.1}_\infty$ we have to
+do the same, changing only the definition of leading terms, which we
+have to consider now w.r.t. the filtration (A2.14).
+
+ To the leading term $c_2$ of this cocycle w.r.t. the
+filtration (A2.14) corresponds the element
+ $[c_2]_\infty$ in $\,^tE^{2.0}_\infty$
+which  represents the cohomology class
+ of the cocycle ${\bf c}$ in
+   $\,^tE^{2.0}_\infty$.
+In the case if the equation
+$(c_0,c_1.c_2)+Q(b_0,b_1)=(c_0^\prime,c_1^\prime,0)$
+ has a solution, i.e. the leading term $c_0$
+ of the cocycle ${\bf c}$  can be cancelled
+  by changing of on a coboundary, then
+the element $[c_1^\prime]_\infty$
+ represents the cohomology class of the cocycle ${\bf c}$ in
+   $\,^tE^{1.1}_\infty$.
+ In the case if the equation
+ $(c_0,c_1.c_2)+Q(b_0,b_1)=(\t c_0,0,0)$
+ has a solution, then $[{\t c_0}]$
+ represents the cohomology class of the cocycle ${\bf c}$ in
+   $\,^tE^{0.2}_\infty$.
+
+
+
+ [\Postn]  Postnikov,M.M.: Lectures on Geometry,
+  {\it Semestre III, Lecture \#19,
+ Semestre V, Lecture \#23}
+  Moscow, Nauka, (1987).
+
+
+\bye

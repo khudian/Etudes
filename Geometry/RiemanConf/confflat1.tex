@@ -1,0 +1,165 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+           \centerline {\bf ${\cal x}1$ Conformally flat manifolds, and conformal class of metric}
+
+\m
+
+  We say that manifold $M$ is provided with conformal flat structure
+  if it is provided by atlas $\{x^i_{(\alpha)}\}$ (which is compatible with smooth structure)
+  such that transition functions $\Psi_{\a\beta}$ are conformal transformations.
+
+   Conformal transformations are:
+
+   i)  translation
+                $$
+                x^i_{(\beta)}=x^i_{(\a)}+a^i
+                \eqno ({\rm Conf. trans. 1})
+                 $$
+   ii) Orthogonal transformations
+            $$
+          x^i_{(\beta)}=P^i_k x^i_{(\a)},\,\,\,\hbox {where $P^i_k$ is an orhogonal matrix}\,,
+             \eqno ({\rm Conf. trans. 2})
+            $$
+ iii) Inversion
+                $$
+                x^i_{(\beta)}={x^i_{(\a)}\over \sum_i x^i_{(\a)}x^i_{(\a)}}
+                \eqno ({\rm Conf. trans. 3})
+                $$
+
+   and any composition of these transformations.
+
+
+   We say that Riemannian metric is conformally flat if in a vicinity of an arbitrary point there
+   exist coordinates $x^i$ such that in these coordinates $g_{ik}=e^\sigma(x)\delta_{ik}$.
+
+   Very important exercise:
+
+   {\bf Proposition}
+
+  Let metric be flat in coordinates $x^i$, i.e. it has an appearance $g_{ik}=\delta_{ik}$ in this coordinates.
+    Then
+
+   1) This metric has an an appearance $g_{ik}=e^\sigma(x)\delta_{i'k'}$ in new coordinates
+   $x^{i'}$ if and only if changing of coordinates is conformal, i.e. it is a composition of transformations
+   $ ({\rm Conf. trans. })$.
+
+In other words transformations of local cartesian coordinates (Conf.trans.1---Conf.trans.3) and only these transformations
+and their compositions preserve the angles.
+
+   2)  The following statement {\it is not true}:
+
+     Let metric has an appearance $g_{ik}=e^\sigma(x)\delta_{ik}$ in coordinates $x^i$ where
+     $\sigma(x)$ is an arbitrary smooth function. Then there exist new coordinates
+     such that in these new coordinates  metric is flat, i.e. it has an appearance $g_{ik}=e^\sigma(x)\delta_{ik}$
+
+
+   Show counterexample.
+
+ \medskip
+
+
+
+
+  {\bf Theorem}   A manifold $M$ can be endowed with flat conformal structure if and only if
+   there exist conformally flat metric on this manifold.
+
+
+\medskip
+
+
+   Sketch of the proof.
+
+   Let atlas $\{x^i_{(\a)}\}$ provides $M$ with flat conformal structure, i.e. all transition functions are
+   conformal (See equations (Conf.trans.)). Consider  locally defined Riemannian metrics
+   $g_{ik}^{(\a)}=\delta_{ik}$ and $0$-cochain $\{\sigma_{(\a)}\}$ such that
+                $$
+             \sigma_{(\a)}-\sigma_{(\beta)}=t_{\a\beta}\,,
+                $$
+where $t_{\a\beta}$ is logarifm of Jacobian of conformal transformations from coordinates $x^i_{(\a)}$
+to coordinates $x^i_{(\beta)}$. One can see that the right hand side defined closed $1$-cochain, hence
+$0$-cochain $\sigma_{(\a)}$ is a coboundary. Using partition we see that
+                 $$
+               \sigma_{(\a)}=\dots ?? \sum_\gamma t_{\a\gamma}\varphi_\gamma
+                 $$
+and $g_{ik}=\e^{\sigma_(\a)}\delta_{ik}$ defines globally conformally flat Riemannian metric on $M$.
+
+ Exercise:  Reconstruct exactly the right hand side of  the right hand side of the lasst expression.
+
+\medskip
+
+
+Now prove the converse implication
+
+  Let $\{x^i_{\a}\}$ be an atlas such that in this atlas Riemannian metric has an appearance
+              $$
+              g_{ik}^{(\a)}=\e^{\sigma_{(\a)}}\delta_{ik}
+              $$
+Under change of coordinates $x^i_{(\beta)}=x^i_{(\beta)}(x^i_{(\alpha)})$
+metric is changed on the scalar function, i.e. angles do not change. Thus this follows from
+Proposition 1 that transition functions are conformal \finish
+
+
+
+
+\centerline {\bf ${\cal x}2$ Conformally flat metrics , and Weil tensor}
+
+
+
+   {\bf 1Exercise} Calculate variation of curvature tensor $R^i_{klm}$ under conformal variation of metrics.
+
+{\bf 1Exercise}   Write down the tensor (linear combination of $R^i_{klm}$, $R^i_k$ and $R$ with coefficients
+ formed by the tensor $g_{ik}$ such that this tensor is invariant with respect to conformal transformations.
+
+
+  Thus we will write Weyl tensor:
+                           $$
+                C^i_{klm}=R^i_{klm}+\dots
+                           $$
+
+
+  Theorem: Weyl curvature vanishes if and only if the metric is conformally flat, i.e. flat conformal structure exists.
+
+
+
+\bye

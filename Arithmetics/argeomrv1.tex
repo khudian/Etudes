@@ -1,0 +1,356 @@
+%n this version on 20 january 2007
+% I write this on april 2012 on the base of the former text
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def \sn {{\rm sn\,}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+\centerline  {\bf The arithmetico-geometrical mean, }
+
+\centerline {\bf the potential of circle and elliptic functions.}
+
+\centerline {\it $\cal x $0 The arithmetico-geometrical mean. What is it.}
+
+
+ Let $M(a,b)$ be the arithmetico-geometrical mean of two positive
+ numbers $a,b$, i.e. for
+                $$
+   M(a,b)=\lim_{n\to \infty} a_n=\lim_{n\to \infty}b_n,
+                $$
+ where $a_0=a,b_0=b$ and  $a_{n+1}={a_n+b_n\over 2}$ (arithmetic mean) and
+ $b_{n+1}=\sqrt {a_nb_n}$ (geometric mean.   Since geometric mean is less or equal to arithemtic mean
+ this limit is well defined.
+
+
+{\bf Examples}
+     $$
+    \matrix
+       {
+        &a       &b\cr
+	&10	&1\cr
+	&5,5	&3,16227766\cr
+	&4,33113883	&4,170434885\cr
+	&4,250786858	&4,250027349\cr
+	&4,250407103	&4,250407086\cr
+	&4,250407095	&4,250407095\cr
+	&4,250407095	&4,250407095\cr
+        &\dots &\dots
+          }\quad
+                 \matrix
+           {
+	&a	&b\cr
+	&100	&10\cr
+	&55	&31,6227766\cr
+	&43,3113883	&41,70434885\cr
+	&42,50786858	&42,50027349\cr
+	&42,50407103	&42,50407086\cr
+	&42,50407095	&42,50407095\cr
+	&42,50407095	&42,50407095\cr
+	&42,50407095	&42,50407095\cr
+       &\dots &\dots\cr
+            }
+          \qquad
+                 \matrix
+         {
+         &a      &b\cr
+	&18	&8\cr
+	&13	&12\cr
+	&12,5	&12,489996\cr
+	&12,494998	&12,494997\cr
+	&12,4949975	&12,4949975\cr
+	&12,4949975	&12,4949975\cr
+           &\dots &\dots\cr
+          }
+          \eqno (0)
+         $$
+We see that after four-five iterations we come to an answer up to $10^{-8}$.
+
+\centerline {\it $\cal x $1 Integral representation of the arithmetico-geometrical mean}
+
+For the arithmetico-geometric mean there is a beautiful representation through the integral:
+Consider the following integral
+                      $$
+                    S(a,b)=\int_0^{\pi\over 2}{1\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt\,.  
+                       \eqno (1)
+                       $$
+ {\bf Lemma}(Gau\ss $\,$)  The integral  $S(a,b)$
+does not change if $(a,b)\to (a_1,b_1)$ where $a_1$ is arithmetic mean of
+$a,b$ and $b_1$ is geometric mean of $a,b$:
+                        $$
+                    S(a,b)=S\left({a+b\over 2}, \sqrt {ab}\right) \,,\quad (a,b\geq 0)
+                       \eqno (1a)
+                        $$
+Thus this lemma implies that
+             $$
+      S(a,b)=\lim S(a_n,b_n)=S(M(a,b). M(a,b))={\pi\over 2 M(a,b)}\,.
+             $$
+ We come to the following formula
+                  $$
+   {\pi\over 2 M(a,b)}=S(a,b)=  \int_0^{\pi\over 2}{1\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt
+                  $$
+ or
+                 $$
+ M(a,b)={2\over \pi \int_0^{\pi\over 2}{1\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt }\,.
+ \eqno (1c)
+                 $$
+    We see that the formula (1c) gives the nice and short way to calculate
+numerically the integral (1) since calculation of $M(a,b)$  is very convergent  (see example (0) above).
+     This is why Gau\ss $\,$ came to this notion.
+
+ \m
+ 
+ {\bf Example} Calculate   {\it potential of the circle.}\footnote{$^*$}
+{Calculation of this integral was the reason why Gau\ss $\,$
+introduced this notion (?)}.
+Consider circle of the radius $R$ with charge $Q$ in the plane.
+Then potential on the distance $\rho$ (in the plane) from the centre equals
+ to
+           $$
+ U(\rho)=   {Q\over 2\pi }
+      \int_0^{2\pi}{dt\over \sqrt {\rho^2+R^2-2R\rho \cos t}}
+           $$
+ One can see that
+ \footnote{$^{**}$}{canonical way of calculating potential it is an expansion on Legendre polynomials.}
+         $$
+         \rho^2+R^2-2R\rho \cos t=\rho^2+R^2-2R\rho \left(2\cos^2 {t\over 2}-1\right)=
+         (\rho+R)^2\sin^2 {t\over 2}+(\rho-R)^2\cos^2 {t\over 2}
+         $$
+and
+         $$
+      U(\rho)=   {Q\over 2\pi }
+      \int_0^{2\pi}{dt\over \sqrt {\rho^2+R^2-2R\rho \cos t}}=
+                 $$
+           $$
+            {Q\over \pi }\int_0^{\pi}{dt\over \sqrt {((\rho+R)^2\cos^2 t+(\rho-R)^2\sin^2 t)}}=
+       {2Q\over \pi }S(\rho+R,\rho-R)={Q\over M(R+\rho,R-\rho)}\,.
+         $$
+We come to very beautiful
+
+{\bf Fact}({\bf Gau\ss}) $\,$ Let the charge $Q$ is homogeneously distributed on the circle of the radius $R$ on the plane.
+Then the potential at the point of the plane on the distance $\rho$ is equal to
+           $$
+       U(\rho)={Q\over M(\rho+R,\rho-R)}
+           $$
+
+
+\centerline {\it $\cal x $2 Proof of Gauss lemma}.
+
+
+
+Now prove the Gau\ss $\,$ lemma (1a).
+
+
+
+
+First note that under substitution $x=\sin t$ we come to
+         $$
+         S(a,b)=
+     \int_0^{\pi\over 2}{ab\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt=
+     {1\over a}\int_0^1{dx\over \sqrt{1-x^2}\sqrt {1-{a^2-b^2\over a^2}x^2}}\,.
+     \eqno (2)
+         $$
+Here we see so called complete elliptic integral of the first kind:
+          $$
+      K(k)=\int_0^1{dx\over \sqrt{1-x^2}\sqrt {1-k^2x^2}}
+      \eqno (2a)
+           $$
+and we have that
+        $$
+        S(a,b)={1\over a}K\left({\sqrt{a^2-b^2}\over a}\right)\,.
+        \eqno (2b)
+        $$
+
+{\bf Remark} Sure we need only complete elliptic integral for calculating
+(1) but to understand deeper the symmetries which imply these properties
+we need also also the function, so called Jacobi first kind elliptic integral:
+           $$
+       u=\int_0^X{dt\over \sqrt{1-x^2}\sqrt {1-k^2x^2}}
+         \,,\quad {\rm where}\,\,  X={\rm sn\,} (u;k)\,.
+     \eqno (2c)
+                $$
+ Thus we come to elliptic function, ``elliptic sinus''
+
+\m
+
+   Rewrite the statement of lemma $S(a,b)=S({a+b\over 2},\sqrt {ab})$ in terms of function $K(k)$:
+            $$
+            {1\over a}K\left({\sqrt{a^2-b^2}\over a}\right)
+ =S(a,b)=S\left({a+b\over 2}\right)={2\over a+b}K\left(
+ \sqrt {\left({a+b\over 2}\right)^2-\left(\sqrt {ab}\right)^2}\over {a+b\over 2}\right)=
+            {2\over a+b}K\left({a-b\over a+b}\right)
+            $$
+If we put $k={a-b\over a+b}$ then $b={1-k\over 1+k}a$ and ${\sqrt {a^2-b^2}\over a}={2\sqrt k\over 1+k}$.
+Thus  the relation $S(a,b)=S\left({a+b\over 2},\sqrt {ab}\right)$ is equivalent to the relation
+                     $$
+  K(k)=K\left({a-b\over a+b}\right)= {a+b\over 2a}K\left({\sqrt{a^2-b^2}\over a}\right)=
+  {1\over 1+k}K\left({2\sqrt k\over 1+k}\right)
+                     $$
+Now we will proof the relation
+             $$
+             K(k)={1\over 1+k}K\left({2\sqrt k\over 1+k}\right)\
+             \eqno (3)
+             $$
+which is equivalent to the relation  $S(a,b)=S\left({a+b\over 2},\sqrt {ab}\right)$.
+
+Left and right hand sides are integrals:  We have to prove that
+          $$
+          \int_0^1{dx\over \sqrt {(1-x^2)(1-k^2x^2)}}={1\over 1+k}
+          \int_0^1{dy\over \sqrt {(1-y^2)(1-k'^2y^2)}}
+          \eqno (3a)
+          $$
+We will prove it if we will find the anzats  $y=F(x)$ such that
+              $$
+                 {dx\over \sqrt {(1-x^2)(1-k^2x^2)}}={1\over 1+k}{dy\over \sqrt {(1-y^2)(1-k'^2y^2)}},
+                 \quad\left(k'={2\sqrt k\over 1+k}\right)
+        \eqno (3b)
+              $$
+and $F(0)=0, F(1)=1$\footnote{$^*$}
+{ The proof that it is equal to elliptic integral is very good demonstration of so called
+  Zagier-Kontsevitch periods
+( Kontsevitch and Zagier conjectured that  two periods (integrals) are equal if
+it can be checked by standard operations.).}
+In this case we will immediately will come to the relation (3a).
+
+
+{\bf Observation}   The following fraction
+          $$
+        y={(1+k)x\over 1+kx^2}
+        \eqno (3c)
+          $$
+is the suitable anzats.
+(In other words the ansatz (3a) is the integral of differential equation (3b) with initial condition $y(0)=0$).
+
+{\sl Proof}. $\,$ Direct calculations:
+We have that
+$dy={(k+1)(1-k t^2)\over (1+k x^2)^2}dx$
+and   $$
+   1-y^2=1-{(1+k)^2x^2\over (1+k x^2)^2}={(1+k x^2)^2-(1+k)^2x^2\over (1+k x^2)^2}=
+       {(1-x^2)(1-k^2 x^2)\over (1+k x^2)^2}
+      $$
+Then
+         $$
+         {dx\over \sqrt{1-x^2}\sqrt {1-k^2x^2}}=
+         \left({dx\over dy}dy\right)
+         \left({1\over (1+k^2x^2)\sqrt{1-y^2}}\right)=
+         $$
+         $$
+         \left({(1+k x^2)^2\over (k+1)(1-k x^2)}dy\right)
+         \left({1\over (1+k^2x^2)\sqrt{1-y^2}}\right)=
+      {dy\over y\sqrt {1-y^2}}{x\over 1-kx^2}
+         $$
+We have that ${x\over 1-kx^2}={y\over \sqrt {(1+k)^2-4ky^2}}$
+(To see it note that $z=\left({x\over 1-kx^2}\right)^2$
+is rational function on $y$:
+$z=\left({t\over 1-kx^2}\right)^2={x^2\over (1+kx^2)^2-4kx^2}=
+{1\over (1+k)^2y-4ky})$).  This leads to the relation  (3b).
+
+\m
+
+Sure this is ``rabbit from the hat'' proof.
+The mistery , the ``raison d`etre'' of the anzats (3a)
+can be explained by the theory of elliptic functions
+\footnote{$^\dagger$}{There is one beautiful anzats:
+ $\varphi\colon \tan \varphi={b\over a}\tan t$. Then one can easy check that
+ ${dt\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}={d\varphi\over \sqrt {(b^2\cos^2 \varphi+a^2\sin^2 \varphi)}}$,
+ i.e. integrand is invariant under changing $t\mapsto \varphi$, $a\to b$, $b\to a$. But this is "zamechanije v bok"}.
+
+  We try to explain the phenomenon on the following toy example:
+
+ \centerline  {\it $\cal x$4  Toy example: trigonometric functions instead elliptic.}
+  
+  Consider the following toy -analogue of the Observation (3):
+
+   {\bf Toy-observation} Consider differential equation:
+                 $$
+             {dx\over \sqrt{1-x^2}}=M{dy\over \sqrt{1-y^2}}
+                 $$
+                 where $M$ is a parameter.
+           Try to find integrals for this equation.
+
+     E.g. for $M=2$ $x=2y\sqrt{1-y^2}$. For $M=3$ $x=3y-4y^3$,...
+
+     We cannot find non-trivial integral of motion 
+     for $M=\sqrt 2$. Here the reason is obvious:
+       The differential equation ${dx\over \sqrt{1-x^2}}=M{dy\over \sqrt{1-y^2}}$ means
+         that
+                $$
+           \arcsin x=M\arccos y+C
+                $$
+       Function $\arcsin x$ is multi-valued function which is defined up to $\pm 2\pi k$
+       and function $M\arccos y$ is defined up to  $\pm 2\pi Mk$
+
+             We see that the differential equation
+             ${dx\over \sqrt{1-x^2}}=M{dy\over \sqrt{1-y^2}}$ is integrable if $M$
+             is rational.
+
+
+             In the case of elliptif functions (3b)-like differential equation
+                 $$
+                 {dx\over \sqrt {(1-x^2)(1-k^2x^2)}}=...{dy\over \sqrt {(1-y^2)(1-k'^2y^2)}},
+                 $$
+                if parallelograms of periods for elliptic are related with rational transformations.
+
+                In particular Gau\ss $\,$ transformation   corresponds to transformatioon
+                $(\omega_1,\omega_2)\to (\omega_1,2\omega_2)$. The correspondi
+    In the case of elliptic functions the Gau\ss $\,$ anzats leads  to the follwoing relation
+    between elliptic functions:
+                      $$
+   u=\int_0^X{dx\over \sqrt {(1-x^2)(1-k^2x^2)}}=
+   {1\over 1+k}\int_0^{Y(X)}{dy\over \sqrt {(1-y^2)(1-k'^2y^2)}}\,,
+                      $$
+                      with
+                      $$
+   Y(X)={(1+k)X\over 1+kX^2}, {\rm and}\,\,\, k'={2\sqrt k\over 1+k}
+                       $$
+ (If $X=1$ then $Y=1$ and we come to the relation (3)).
+
+ Now we have that for elliptic function ${\rm sn\,}(x;k)$ (see 2(c)) the following identity:
+                  $$
+  {sn\left((k+1)u;k'\right)\over k+1}=
+  {sn\left(u;k\right)\over 1+k\sn^2 (u;k)}
+                  $$
+ This is the relation between elliptic functions  with periods $(K,iK')$ and $(K,2iK')$.
+
+
+
+
+        $\qquad$                      Hovhannes Khudaverdian   (2006---April 2012)
+
+\bye 

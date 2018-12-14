@@ -1,0 +1,147 @@
+\magnification=1200
+
+
+\def\a{\alpha}
+\def\x{{\bf x}}
+\def\y{{\bf y}}
+\def\R {{\bf R}}
+    Questions.
+
+
+1. Can we represent $\R^3$ as a union of skew lines.
+
+
+2. Can we represent $\R P^3$ as a union of lines
+
+
+3. How look space of all lines in $\R^3$?
+
+4.  How look space of all lines in $\R P^3$
+
+5. How look submanifold of lines which knite $P^3$
+in the manifold of all lines.
+
+
+   Discuss these quesions. Some of them look
+ like `olimpiad-like'
+
+
+  The second question has a much more clever answer, that the first one, 
+at least I do not know not articficial answer on the first question which does 
+not use it. Here the construction which belongs to Plucker 
+(Julius Plucker, teacher of Felix Klein.)
+
+
+  Represent $\R P^3$ as a set of non-intersecting 
+lines $=$  Represent $\R ^4$ as a set of $2$-dimensional subspaces
+ which intersect only  at origin.
+
+\smallskip
+
+Let $I$ be a linear operator in $\R^4$ such that $I^2=-1$, e.g. 
+$I\colon \quad(x^0,x^1, x^2,x^3)<mapsto (x^2,-x^1, x^3,-x^2)$\footnote{$^*$}{In fact $I$ 
+defines complex structure in $\R^4$.}
+
+
+   Now assign to any point $\x\in \R^4$ the plane
+                           $$
+                  \a(\x)=\{u\x+v I(\x)\}, \quad {\rm where}\,\, u,v \hbox {are arbitrary numbers}
+                           $$
+This is easy to see that for two arbitrary point $\x,\y$,
+ planes $\a(\x)$ and $\a(\y)$ coincide
+or interesect only at origin.
+
+   Indeed suppose a point $\y\not=0$ belongs to the plane $\a(\x)$, 
+($\x\not=0$). Show that in this case planes $\a(\x)$ and $\a(\y)$ 
+coincide.
+   If $\y\in \a(\x)$ then
+  $\y=u_0\x+v_0 I(\x)$ for some coefficients $u_0,v_0$. Then
+  a point $I(\y)$ belongs also to this plane, since
+                                  $$
+  I(\y)=I(u_0\x+v_0 I(\x))=-v_0\x+u_0 I(\x).
+                                  $$
+These two points $\y$ and $I(\y)$ are distinct points in $\R^4$ 
+since $I^2=-1$.  We see that planes $\a(\x), \a(\y)$ 
+coincide in two non-zero distinct points $\x,\y$ and at the origin. Hence
+these tow planes coincide. 
+
+
+ Thus we presented $\R^4$ as a union of $2$-dimensional subspaces such that
+any two subspaces or coincide, or intersect only at origin,
+i,e. we  presented $\R P^3$ as a union of projective lines  such that
+any two two lines or coincide, or intersect only at origin,
+
+It is a complex structure $I$ which defines this ``knitting''.
+  Any complex strucutre in $\R P^3$ defines knitting of $\R^4$ on lines.
+
+
+\bigskip \centerline {${\cal x} 2$}. Set of all lines in $\R P^3$.
+
+   Now what about the set of all lines in $\R P^3$. The set of all lines in $\R P^3$
+it is a Grassmanian $G^2_4$---a set of all $2$-dimensional subspaces in $\R^4$.
+
+Let $l$ be an arbitrary line in $\R P^3$, i.e., a $2$-dimensional 
+subspace $\a_l$ in $\R^4$.
+
+  Take an arbitrary two points $\x,\y\in\a_l$ and consider its so called plucker coordinates
+                  $$
+         p^{ik}(\x,\y)=x^iy^k-x^ky^i
+                  $$ 
+ It is obvious that changing a pair of  points $\x,\y$ on another pair points on the plane
+changes all $p^{ik}$ on a number (which is equal to determinant of  
+corresponding $2\times 2$ matrix).
+
+
+Hence one can assign to $2$-dimensional subspace in $\R^4$ (line in $\R P^3$)
+  $6$ numbers  $\{p_{01},p_{02},p_{03},p_{12},p_{13},p_{23},\}$ defined up to a coeffciient,
+i.e.  we define a map  from $G^2_4$ to $G^1_6$---set of $1$-dimensional subspaces in
+$R^6$, i.e. a point in $\R P^5$. This map is evidently injection, but is it bijection? No!!!!
+  Plucker coordinates $\{p^{ik}\}$   
+of projective line in $\R P^3$ cannot be entries  
+of an arbitrary anisymmetrical matrix.  The matrix  $p^{ik}(\x,\y)=x^iy^k-x^ky^i$ has rank $2$
+(or less). Antisymmetric matrix may have rank $4$ or $2$ or $0$. Hence  one can see that
+ $\{p^{ik}\}$ are Plucker coordiantes of projective line if and only if
+                        $$
+ det ||p^{ik}||=(p^{01}p_{23}-p^{02}p^{13}-p^{03}p^{12})^2=0\,
+                        $$
+{\bf Remark}  This relation between Plucker coordiantes
+can be viewed  a la Ptolemey-theorem:
+Consider rectangle $ABCD$ inscribed in circle with vertices at the points 
+$A=\{0\},B=\{1\}, C=\{2\}, D=\{3\}$.   Assign to edges and diagonales
+plucker coordinates:  $AB\mapsto p^{01}$, etc.  Then
+               $$
+   {AB\cdot CD+BC\cdot DA=AC\cdot BD }_{\hbox {Ptolemey Theorem}}
+        \Rightarrow              p^{01}p^{23}+p^{12}p^{30}=p^{02}p^{13}
+               $$
+Alek Weinstein explained me that this is a sourse of cluster algebras
+\footnote{$^*$}
+{Consider Plucker coordinates of Grassmanian $G^2_n$. We have
+ $n(n-1)\over 2$ coordinates $\{p_{ik}\}$, $1<i<k<leq n$.
+To choose between the full set of coordinates
+}
+           
+
+
+
+
+
+Thus we see that the set of all lines in $<R P^3$ it is the quadric hypersurface
+                                $$
+p_{01}p_{23}-p_{02}p_{13}-p_{03}p_{12}=0\,.
+                                $$
+in $<R P^5$. This quadric in suitable (homogenous ) coordinates has a form
+                   $$
+   x^2+y^2+z^2-t^2-u^2-v^2=0
+                   $$
+this is like one-sheeted hyperboloid: it contains planes.
+
+
+Two-dimensional...
+
+
+
+   What about lagrangian surfaces  on thsi hyperboloid.
+   They correspond to surfaces in $<R P^3$.....
+
+
+\bye

@@ -1,0 +1,83 @@
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {\omega}
+
+\def\pt {{\bf pt}}
+\def \exer {{\sl Exercise$\,\,$}}
+
+ \centerline   {\bf Determinant and Berezinian. Their homological interpretation.}
+
+
+\bigskip
+
+
+
+   Let   $\O(x^a,\theta_b,\xi^c,y_d)$ be an algebra of pseudodifferential forms
+on $\Pi T^*M$ ($x^a,\theta_b$ are coordinates on $\Pi T^*M$, 
+$\xi^b\approx dx^a, y$ are odd and $y_b\approx d\theta_b$ are even)
+
+   The symplecti form is just $\w=xi^m y_m$.
+
+   Consider the spectral sequence (Severra spectral sequence)
+                     $$
+               (E_r,d_r)
+                     $$
+where $E_0=C(\Pi(\Pi T^*M))$ is an algebra of pseudodifferential forms
+  $F(x,\theta,\xi,y)$, and $d_0=d+\x^m y_m$
+
+
+To calculate $E_1$, consider homotpy oeprator 
+$\Delta={\p^2\over \ p y_m\p \xi^m}$ and notice that
+                   $$
+      (d_0\Delta+\Delta d_0) F=(N-l_\xi+l_y)F
+                   $$
+where $l_\xi$ and $l_y$ is an order of $\xi$ and $y$ in $F$
+(more accurately one have to write down integrals.)
+   Since $l_\xi\leq N$
+The Right hand side has chance  to vanish only if $l_\xi=n,l_y=0$, i.e. only
+                   $$
+    F(x,\theta, \xi,y)=s(x,\theta)\xi^1\xi^2\dots\xi^n
+                   $$ 
+has chance to be not coboundary of  $d_0$. One can see that this object
+is really non-trivial cocycle and its class transforms as half-density.
+
+
+
+\bye

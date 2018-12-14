@@ -1,0 +1,81 @@
+\magnification=1200
+
+
+\def \t{\tilde}
+
+
+  Denote by $S^k_n$ a dimension of the space of symmetric tensors of the rank $k$
+  in $n$-dimensional space $V^n$
+It is well-known that
+                          $$
+             S^k_n=C^k_{n+k-1}
+                          $$
+    This
+   formula has many different proofs. I like the following.
+ Let $\bf K$ be a symmetric tensor of rank $k$ in $n$-dimensional space $V$  and
+    $K_{i_1i_2\dots i_k}$ be set of components of this tensor
+    ($i_1\leq i_2\leq \dots\leq i_{k-1} \leq i_k$).
+
+Consider {\it antisymmetric} tensor $\bf K'$ in $n+k-1$-dimensional
+space $V'$ with components $K_{i_1i_2\dots i_k}$
+    ($i'_1< i'_2< \dots<i'_{k-1}<i'_k\leq n+k-1$
+such that
+      $$
+i'_1=i_1\,,\quad  i'_2=i_2+1, ,\quad i'_3=i_2+2,\dots,,i'_k=i_2+k-1,
+\eqno (1)
+      $$
+
+Thus we establish isomorphism betweens space of symmetric tensors of rank $k$ with the space of antisymmetric tensors
+ of rank $k$ in $n+k-1$ dimensional space which has dimension $C^k_{n+k-1}$...
+
+
+
+ Now another formula:
+       $$
+      1+ S^1_n+S^2_n+\dots+S^k_n=C^k_{n+k}
+      \eqno (3)
+       $$
+Again this formula has many proofs. One of the proofs is based on consideration of polynomials.
+Another very elementary proof:
+
+ Consider $n+k$-dimensional vector space $\tilde V$.
+
+ Let $\bf \tilde K$ with components
+ $K_{i_1i_2\dots i_k}$
+    ($ i'_1< i'_2< \dots<i'_{k-1} < i'_k\leq n+k$ be antisymmetric tensor in $V$.
+
+Now we assign to the tensor  $\tilde  K$ the following tensor:
+
+  Note that $i'_1\leq n+1$, $i'_2\leq 2$, $i'_3\leq n+3,\dots, i'_k\leq n+k $ because
+  $ i'_1< i'_2< \dots<i'_{k-1} < i'_k\leq n+k$.
+
+  If $i'_1=n+1$, then we assign to  $\bf \tilde K$  the tensor with no indices.
+
+
+   If $i'_1\leq n$ but $i'_2=n+2$, then we assign to  $\bf \tilde K$ the tensor of the rank $1$
+             $$
+            K_{i_1}=\t K_{i_1;\,n+2;\,n+3;\,\dots;\, n+k}
+             $$
+
+  If $i'_1\leq n$ and $i'_2\leq n+1$ $i'_3=n+3$, then
+  we assign to  $\bf \tilde K$ the symmetric tensor of the rank $2$
+  in $n$-dimensional space such that
+             $$
+            K_{i_1 i_2}=\t K_{i_1\,i_2-1\,n+2\,n+3\,\dots\, n+k}
+             $$
+If   $i'_1\leq n$, $i'_2\leq n+1$, $i'_3\leq n+2$  and
+   $i'_4=n+3$, then we assign to  $\bf \tilde K$ the symmetric tensor of the rank $3$
+in the $n$-dimensional space such that
+             $$
+            K_{i_1\, i_2\, i_3}=\t K_{i_1\,i_2-1\,i_3-2\,n+3\,n+4\,\dots\, n+k}
+             $$
+ for $i_1\leq i_2\leq i_3$
+and so on. Hence we establish isomorphism which leads to the relation (3).
+
+  Of course all these isomorphisms are highly non-canonical, mais they lead to identities (2,3).
+
+
+
+
+
+ \bye

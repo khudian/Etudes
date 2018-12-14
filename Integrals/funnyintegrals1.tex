@@ -1,0 +1,294 @@
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+
+\centerline  {\bf Funny integrals (Borwein integrals)}
+
+{\it Yesterday my son David showed me the funny integrals 
+on the web-blog  of Steven Lundsburg
+(professor of Economics, Rochester University), cite:
+
+http://www.thebigquestions.com/2012/03/26/loose-ends/.
+
+I enjoyed them so much! Hope you will enjoy too}
+
+
+\bigskip
+   Consider integrals:
+         $$
+     A_n=\int_0^\infty \prod_{k=1}^n
+ {\sin {x\over 2k-1}\over {x\over 2k-1}}dx,   
+         $$
+         i.e.
+        $$
+   A_1=     \int_0^\infty {\sin {x }\over {x }}dx\,,\quad
+  A_2=\int_0^\infty {\sin {x }\over {x }}
+  {\sin {x\over 3}\over {x\over 3}}dx\,,\quad
+  A_3=\int_0^\infty {\sin {x }\over {x }}
+  {\sin {x\over 3}\over {x\over 3}}
+   {\sin {x\over 5}\over {x\over 5}}dx\,,\dots
+\eqno (1)   
+        $$
+It really looks surprising but the sequence  $\{A_1,A_2,A_3,\dots\}$ looks in the following way:
+                  $$
+            \left\{{\pi\over 2},{\pi\over 2},{\pi\over 2},{\pi\over 2},
+            {\pi\over 2},{\pi\over 2},{\pi\over 2},...\right\}
+                  $$         
+     Yes, the eighth term is not equal to ${\pi\over 2}$. 
+  As author of the blog claims it is equal to
+                      $$
+         A_8={467807924713440738696537864469\over 935615849440640907310521750000}\pi\quad (???!!!)         
+                      $$
+
+This is based on the paper [1].
+
+Shortly the idea of calculating integrals 
+(as it was explained in the article [1]) is based on the remark
+ that Fourier image
+of the function ${\sin ax \over x}$ 
+ is characteristic function of the interval $[-a,a]$:
+          $$
+    {1\over \sqrt 2\pi}\int_{-\infty}^{\infty}e^{ix\xi} {\sin ax \over x}dx=
+       \cases{1\,\,\hbox {if $|\xi|<a$}\cr 0 \,\,\hbox {if $|\xi|>a$}\cr}.
+          $$
+ Now using the fact that
+ Fourier image of product is convolution one can reduce the problem of calculating these integrals to calculating integrals of functions related with
+ convolutions of characteristic functions of intervals.
+
+
+\centerline {${\cal x}$ \bf Calculations without Fourier transformation}
+
+
+
+
+
+At the end of the article [1] authors consider 
+ another I much more elementary method which 
+is found on the following identity:  
+           $$
+     \int_0^\infty
+   \prod_{k=1}^n{\sin a_k x\over x}
+   \prod_{i=1}^m\cos c_i x 
+      {\sin x\over x}dx=
+    {\pi\over 2}\prod_{k=1}^n a_k\,.
+        \eqno (2)
+           $$
+in the case if
+       $$
+   \sum |a_k|+\sum |c_i|\leq 1.
+            \eqno (2a)
+       $$
+
+This identity goes to the work [2] of C. Stormer in 1885 
+(see the detailes in [1].)
+
+This identity implies why the first seven terms in (1)
+are equal to ${\pi\over 2}$.
+Indeed one may read the identity in the following way:
+for positive integers ${a_1,a_2,\dots,a_k}$
+            $$
+     \int_0^\infty
+   \prod_{k=1}^n{\sin a_k x\over a_k x}
+      {\sin x\over x}dx=
+    {\pi\over 2}\,\,
+     \hbox{in the case if
+       $
+   \sum a_k\leq 1
+         $}
+      \eqno (3)
+            $$
+
+ Now we see that integral for (1) 
+           $$
+     A_n=\int_0^\infty \prod_{k=1}^n
+ {\sin {x\over 2k-1}\over {x\over 2k-1}}dx={\pi\over 2}
+              \eqno (4)
+            $$
+            $$ 
+{\rm if}\,\, {1\over 3}+{1\over 5}+\dots+{1\over 2n-1}\leq 1
+           \eqno (4a)
+           $$
+This is the case for first seven integrals in (1), but this is not the case
+for the integral $A_8$.
+Indeed 
+    $$
+ {1\over 3}+{1\over 5}+{1\over 7}+{1\over 9}+{1\over 11}+{1\over 13}=
+     $$
+       $$
+\left({1\over 3}+{1\over 5}+{1\over 9}\right)+
+\left({1\over 7}+{1\over 11}+{1\over 13}\right)=
+ {15+9+5\over 45}+{143+77+91\over 1001}=
+    {29\over 45}+{311\over 1001}={43024\over 45045}<1
+        $$
+but
+${1\over 3}+{1\over 5}+{1\over 7}+{1\over 9}+{1\over 11}+{1\over 13}+
+{1\over 15}=$
+       $$
+{43024\over 45045}+{1\over 15}={43024+3003\over 45045}=
+     {46027\over 45045}>1.
+      $$
+
+Nevertheless we still can calculate $A_8$ an come to monstrous answer
+above using integrals below.  
+
+\m
+
+  A proof of indentity (2) and calculations below are
+ founded on the following 
+basic identities\footnote{$^*$}{See [1] for details.The proof below 
+  is a variation on...}:
+       $$
+   {\sin a_k x\over x}\cos c_i x={1\over 2}{\sin(a_k+c_i)x\over x}+
+     {1\over 2}{\sin(a_k-c_i)x\over x}\,,
+       $$
+and
+      $$
+    {\sin a_k x\over x}=\int_0^{a_k}\cos t x dt.
+      $$
+It follows from these identities that   
+the integrand in relation (4) can be represented by the following
+ integral:
+           $$
+   \prod_{k=1}^n{\sin a_k x\over x}
+   \prod_{i=1}^m\cos c_i x 
+      {\sin x\over x}=
+         $$
+         $$
+       \int\dots\int_{
+       \matrix 
+          {
+         0\leq t_i\leq a_i, \cr
+           (i=1,\dots,k)\cr
+           }
+          }
+       {\sum_{\pm}
+  \sin (x\pm t_1x\pm\dots\pm t_nx\pm c_1x\pm\dots+c_mx)\over 2^{n+m}}
+         dt_1\dots dt_n\,.
+          \eqno (5)
+           $$
+(Here the summation goes over all combinations of sings $\pm$.)
+
+Hence due to the fact that
+        $$
+    \int_0^\infty{\sin ax\over x}dx=
+        \cases{
+ 1\,\,{\rm if}\,\, a>0\cr -1\,\,{\rm if}\,\, a<0\cr
+              }\,.
+        $$
+we see that if condition (2a) is obeyed then the integral (2)
+equals to the integral of constant $\pi\over 2$ over rectangular
+polyhedron with volume $a_1\dots a_m$. This implies the identity (2). 
+
+
+
+\m
+
+For example calculate  
+$\int_0^\infty {\sin ax\over x}{\sin x\over x}dx$.
+    We have that
+                $$
+    \int_0^\infty \cos ax{\sin x\over x}dx=
+    {1\over 2} \int_0^\infty {\sin (1+a)x+\sin (1-a)x\over x}dx={\pi\over 2}
+     \,\,{\rm if}\,\, |a|\leq 1.
+          $$
+ Thus
+               $$
+\int_0^\infty {\sin ax\over x}{\sin x\over x}dx=
+ \int_0^a dt\int \int_0^\infty \cos tx {\sin x\over x}dx=
+ \int_0^a dt {\pi\over 2}dx=a{\pi\over 2}\,.
+         $$
+We see that $\int_0^\infty {\sin ax\over ax}{\sin x\over x}dx={\pi\over 2}$
+if $|a|\leq 1$ (It is equal to ${\pi\over 2a}$) for $|a|\geq 1$.
+
+In the similar way we may calculate  
+$\int_0^\infty{\sin a_1 x \sin a_2 x\sin x\over x^3}dx$
+for positive $a_1,a_2$ such that $a_1+a_2\leq 1$
+          $$
+\int_0^\infty{\sin a_1x \sin a_2 x\sin x\over x^3}dx=
+\int\in\int_{
+                    \matrix 
+                      { 
+          0\leq t_1\leq a_1    \cr 
+          0\leq t_2\leq a_2   \cr 
+          0\leq x  \leq \infty \cr
+                      }
+                     }
+     \left(
+   {\sum_{\pm} sin(x\pm t_1x\pm t_2x)\over 8}
+      \right) 
+       dt_1 dt_2dx\,.
+          $$
+The integral of integrand over $x$ equals to ${\pi\over 2}$ since
+$1\pm t_1\pm t_1\geq 0$. Hence integral equals to $a_1a_2{\pi\over 2}$.
+
+In the case if condition (2a) is not obeyed we still may use these methods.
+
+\bigskip
+{\bf Remark}  When I wrote this text I knew that
+in Wikipedia these integrals are called Borwein integrals.....
+
+
+
+\centerline       {\bf References}
+
+[1] David Borwein and   Jonathan Borwein.
+ {\it Some remarkable properties of  sinc and related integrals.} 
+ The Ramanujan Journal 5(2001), no, 1, pp.73---89
+
+See also 
+    http://www.thebigquestions.com/borweinintegrals.pdf.
+(1991)
+
+\m
+
+[2a]C. Stormer, {\it Sur generalisation de la formulae 
+ ${\phi\over 2}={\sin \phi\over 1}-{\sin \phi\over 2}+
+{\sin 3\phi\over 3}-\dots$}, Acta Math. {\bf 19} (1885), pp. 341-350
+
+
+
+\bigskip
+
+
+ $\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$           (11.04.12)
+ \bye       
+ 
+   

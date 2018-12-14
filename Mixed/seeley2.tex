@@ -1,0 +1,183 @@
+\magnification=1200
+
+\def\vare {\varepsilon}
+\def\G {\Gamma}
+                    $$ $$
+26 July 2014
+
+
+            \centerline{\bf Sum $1+2+3+\dots=-{1\over 12}$}
+\medskip
+
+{\it Yesterday David showed me the file in 'Youtube'
+ where it is given very elegant `proof' of
+this relation (see http://goo.gl/bYh4DL)
+  I decided to write down here the standard calculations which lead to this
+result. Here they are} 
+
+\medskip
+{\sl We present here calculation of analytical continuation 
+of Riemann $\zeta$-function. In particular we come to Euler formula
+of calculation of $\zeta$-function 
+at negative integers. The title of this \'etude $=$ 
+value of $\zeta$-function at $s=-1$.}
+
+Recall that for $\G$-function
+             $$
+\G(s)=\int_0^\infty t^{s-1}e^{-t}dt\,.
+   \eqno (1a)
+             $$
+It obeys the relation 
+          $$
+ \G(s+1)=s\G(s)\,.
+    \eqno (1b)
+          $$
+These relations define $\G$-function  for all complex plane. 
+Since $\G(1)=1$ hence due to (1b) $\G(n+1)=n!$. One can see that
+that $\G$-function has poles at all non-positive integers. Indeed
+             $$
+\G(s)={s(s+1)(s+2)...(s+n)\G(s)\over s(s+1)...(s+n)}=
+ {\G(s+n+1)\over s(s+1)\dots (s+n)}\,.
+             $$
+Hence in a vicinity of an arbitrary  point $s$, for  $s=-n+\vare$
+($n=0,-1,-2,\dots$) 
+                $$
+\G(s)=\G(-n+\vare)=
+ {\G(1+\vare)\over (-n+\vare)(-n+1+\vare)\dots (-1+\vare)\vare}=
+{(-1)^n\over n!}\left({1\over \vare}+\dots\right)\,.
+            \eqno (1c)
+                $$
+
+
+Express $\zeta$-function, $\zeta(s)=\sum_{n=1}^\infty {1\over n^s}$  
+in terms of $\G$-function.
+
+It follows from (1a) that
+             $$
+\zeta(s)=\sum_{n=1}^\infty {1\over n^s}=
+  \sum_{n=1}^\infty\left({1\over \G(s)}\int_0^\infty t^{s-1}e^{-nt}dt\right) 
+  ={1\over \G(s)}\int_0^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}} 
+             \eqno (2)
+                     $$
+Consider an expansion of function $e^{-t}\over 1-e^{-t}$ 
+in a vicinity of point $t=0$:
+           $$
+   {e^{-t}\over 1-e^{-t}}=
+   \sum_{k=-1}^{\infty}\Psi_k t^k={1\over t}-{1\over 2}+
+{t\over 12}-{t^3\over 720}+\dots\,.
+        \eqno (3) 
+           $$              
+{\bf Remark} Notice that all coefficients $\Psi_{2k}$
+in this expansion vanish for $k\geq 1$ since
+                 $$
+{e^{-t}\over 1-e^{-t}}=-{1\over 2}+
+\underbrace{{1\over 2}{\rm cotan\,}{t\over 2}}
+ _{\hbox{even function}}\,.
+              \eqno (3b)
+                 $$ 
+Now using expansion (3) we see that
+right hand side in  (2) is convergent for $\Re s>2$:
+           $$
+\zeta(s)=
+  {1\over \G(s)}\int_0^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}} 
+  ={1\over \G(s)}\int_0^1 t^{s-1}{e^{-t}dt\over 1-e^{-t}} 
+  +{1\over \G(s)}\int_1^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}}= 
+         $$
+         $$
+  ={1\over \G(s)}\sum_{k\geq -1}\int_0^1 
+      \Psi_k t^{s+k-1}dt 
+  +{1\over \G(s)}\int_1^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}}\,. 
+         $$      
+For $\Re s>2$\footnote{$^*$}{  \noindent
+To calculate analytical continuation we
+  represented the integral  $\int_0^\infty$
+as a sum of integrals $\int_0^1$ and $\int_1^\infty$. 
+One can show that 
+the function ${e^{-t}\over 1-e^{-t}}$
+can be replaced under integral $\int_0^1$
+by series $\sum \Psi_k t^k$ in spite of the fact
+that there is no convergence at the point  $t=1$.
+To avoid this additional work one may
+ take an arbitrary $a\colon 0<a<1$ and 
+  represent the integral
+as a sum of integrals $\int_0^a$ and $\int_a^\infty$.
+In this case we have no any problem with series convergence: 
+$\zeta(s)={1\over \G(s)}\int_0^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}} =$
+           $$
+={1\over \G(s)}\int_0^a t^{s-1}{e^{-t}dt\over 1-e^{-t}} 
+  +{1\over \G(s)}\int_a^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}}= 
+        \sum_{k=-1}^\infty {\Psi_k a^{k+s}\over (k+s)\G(s)} 
+     +{1\over \G(s)}\int_a^\infty {t^{s-1}e^{-t}dt\over 1-e^{-t}} 
+           $$
+One can see that we again come to (5) since 
+only the term which possesses $a^{0}=1$
+gives contribution to the integral.
+(Intersting remark for curious reader that the answer
+does not depend on a choice of $a$).
+
+                  
+}
+         $$
+\zeta(s)=\sum{1\over n^s}=
+   \sum_{k=-1}^\infty {\Psi_k\over (k+s)\G(s)} 
+     +{1\over \G(s)}\int_1^\infty t^{s-1}{e^{-t}dt\over 1-e^{-t}}\,. 
+           \eqno (4)
+           $$
+Now note that the integral in this expression is analytical function
+for all $s$. Hence equation (4) defines analytical continuation,
+meromorphic $\zeta$-function for all $s$. 
+
+ We focus at the values of $\zeta (s)$ at non-positive integers.
+Non-positive integers are poles of $\G$-function (see 1(c)). 
+Hence the 
+second integral vanishes at these points.
+  Due to  relation (1c) we have that all terms which are proportional
+to $1\over \G(s)(k+s)$ for $k\not=m$ vanish too at the point $s=-m$. 
+We have from (1c) that
+              $$
+\zeta(-m)=
+ \sum_{k=1}^{-\infty} {\Psi_k\over \G(s)(s+k)}\big\vert_{s=-m}=
+   {\Psi_{m}\over \G(s)(s+m)}\big\vert_{s=-m}\,.
+              $$
+Now recall the behaviour of $\G$-function in a vicinity of the pole
+$s=-m$. Due to (1c) $\G(s)=\G(-m+\vare)=
+ {(-1)^m\over m!}\left({1\over \vare}+O(1)\right)$ and
+           $$
+   \zeta(-m)=
+   {\Psi_{m}\over \G(s)(s+m)}\big\vert_{s=-m}=
+    \lim_{\vare\to 0}{\Psi_m\over \G(-m+\vare)\vare}=(-1)^mm!\Psi_m\,.
+       \eqno (5)
+           $$
+ This is the answer. 
+In particular due to (3b) 
+       $$
+\zeta(-2m)=0\,,\quad \hbox{for $m\geq 1$}
+    \eqno (5b)
+      $$
+We have
+         $$
+      \zeta(0)=\Psi_{0}=-{1\over 2}\,,
+   \quad \zeta(-1)=-\Psi_{1}=-{1\over 12}\,,\quad
+      \zeta(-2)=0\,,\quad
+    \zeta(-3)=-6\Psi(3)={1\over 120}\,,\zeta(-4)=0,
+         $$
+and so on,
+
+
+
+ One can say that in Pickwickian sense 
+        $$
+1^m+2^m+3^m+\dots+k^m+\dots`='m!(-1)^m\Psi_{-m}\,,
+        $$
+in particular we come to very famous in string theory paradox:
+        $$
+1+2+3+\dots+k+\dots`='-\Psi_{-1}=-{1\over 12}\,.
+        $$
+
+
+Note that relation (5b) describes all so called {\it trivial zeros of 
+$\zeta$} function.
+
+
+
+\bye

@@ -1,0 +1,85 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdftex 2015.9.21)  17 DEC 2015 13:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**barnessin1.tex
+(./barnessin1.tex
+Overfull \hbox (11.74805pt too wide) detected at line 67
+\tenrm 	(\teni z\tensy j\teni a[]; [] ; a[]\tenrm ) = []\teni ^^P\tenrm (\teni 
+s; z\tensy j\teni a[]; [] ; a[]\tenrm )[][] = [][]|
+
+\hbox(17.50014+16.48335)x391.46176
+.\tenrm 	
+.\tenrm (
+.\teni z
+.\kern0.4398
+.\tensy j
+.etc.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (9.11325pt too wide) detected at line 192
+[][] \tenrm = \teni A[]|
+
+\hbox(20.50017+16.00015)x391.46176
+.\hbox(20.50017+15.50017)x360.85628
+..\vbox(0.39998+35.60036)x6.66669, shifted -20.10019
+...\hbox(0.39998+17.60019)x6.66669 []
+...\hbox(0.39998+17.60019)x6.66669 []
+..\vbox(10.50006+14.3261)x14.65631
+...\hbox(10.50006+5.50006)x14.65631, glue set 0.10593fil []
+...\kern1.66666
+...\hbox(4.8611+1.29828)x14.65631 []
+...\kern1.0
+..\glue(\thinmuskip) 1.66663
+..\hbox(13.59839+9.35951)x51.3236
+...\hbox(13.59839+9.35951)x51.3236 []
+..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+..etc.
+.\hbox(4.51111+0.0)x14.39937, shifted 16.00015
+..\seveni s
+..\sevenrm =
+..\sevenrm 0
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.\tenrm =
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.etc.
+
+[2]
+Overfull \hbox (46.6382pt too wide) detected at line 242
+[][] \teni A\tenrm (\teni t\tenrm )[] = [][] [] [] = 2 [][] \teni A[]\tenrm (\t
+eni t\tenrm )[] + + [][] \teni A[]\tenrm (\teni z\tenrm )[] =|
+
+\hbox(14.15291+10.86122)x391.46176, glue set - 1.0
+.\hbox(0.0+22.22246)x5.55557, shifted -13.61122
+..\tenex Z
+.\vbox(23.26413+0.83334)x14.72226, shifted 9.11122
+..\hbox(3.01389+0.0)x8.47224, shifted 4.44444
+...\sevensy 1
+..\kern15.9169
+..\hbox(4.33334+0.83334)x14.72226
+...\sevensy ^^@
+...\sevensy 1
+.\glue(\thinmuskip) 1.66663
+.\teni A
+.\tenrm (
+.etc.
+
+[3] )</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb>
+Output written on barnessin1.pdf (3 pages, 134613 bytes).
+PDF statistics:
+ 62 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

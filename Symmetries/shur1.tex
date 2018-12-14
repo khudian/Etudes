@@ -1,0 +1,108 @@
+
+\magnification=1200
+
+\baselineskip=14pt
+
+\def\l {\lambda}
+
+       {\sl Dear Tian, yesterday we have  so interesting talk,
+I absolutelyu forgot to speak little bit about Shur lemma.}
+
+     \centerline {\bf Shur Lemma}
+ 
+  It is the powerful tool in representation theory. The statement
+and proof is very short and beautiful.
+
+  Consider an arbitrary group $G$. We say
+  that $T$ is linear representation of 
+  the group $G$ in a vector space $V$ if
+                     $$
+  g\in G\mapsto T_g\colon\quad  V\to V \,\hbox {is linear map}\,\,
+ {\rm and}\,\,     T_{g_1}\circ T_{g_2}=T_{g_1 g_2}\,.
+                     $$
+  We say that $U$ is invariant subspace of $V$
+  if $T_g U\to U$ for every $g$.
+   Sure, zero subspace and space $V$ itself are invariant subspaces.
+  We call them trivial subspaces.
+
+  We say that representation $[G,V]$ is {\it irreducible}
+  if vector space $V$ does not possess non-trivial 
+   invariant subspaces.
+  
+  Let $[G,M]$ and $[G,N]$ are two linear representations 
+of a given group $G$ in vector spaces $M$ and $N$.
+
+  We say that linear operator $F\colon M\to N$
+is an interwinning operator if it commutes with an action
+of group $G$:
+                    $$
+\forall g\in G\,, T_g\circ F=F\circ {\tilde T}_g\,. 
+                    $$
+   We say that two  representations are equivalent
+   if there exist interwinning operator $F: M\to N$.
+
+
+   
+
+  {\bf Lemma} (Shur)
+ 
+  Let ${G,M}$ be $[G,N]$ two {\it irreducible}
+ linear representations  of a given group $G$ in finite-dimensional
+vector spaces $M$ and $N$.  Then
+  
+1. These representations are not equivalent if  
+$\dim M\not =\dim N$.   
+
+2. If $M=N$ and basic field is algebraically closed
+ then interwinning operator is identity operator
+ (up to a scalar multiplier).
+
+\medskip
+
+   Shur lemma says that equivalent representations have the
+same dimension, and intewinning operator is defined up to
+a scalar operator.
+
+\medskip
+
+{\sl Proof}.  Let $[G,M]$ be $[G,N]$ two 
+ linear representations  of a given group $G$ in vector 
+spaces $M$ and $N$, and let $F\colon M\to N$ be an 
+interwinning operator between these spaces.
+  Then evidently kernel of $F$ and image
+of $F$ are invariant subspaces.  This means
+that kernel of $F$ is zero subspace in $M$ and 
+image of $F$ is $N$, since these representations are
+irreducible. Thus  $F$ is isomorphism of $M$ on $N$.
+
+  Let $M=N$ and basic field be closed. 
+     Suppose $F\colon M\to M$ is an interwinning operator.
+  If $F\not 0$ then
+   it  has at least one non-zero eigenvector
+(with eigenvalue $\l$ which is a root of polynomial 
+$\det (F-\l I)$).    Consider invariant 
+subspace of $M$ which is a kernel
+of interwinning operator $F-\l I$. 
+It is not zero, since it contains the eigenvector.
+ Hence it has to coincide with $M$, since representation 
+is irreducible. Hence $F=\l I$. 
+   
+
+
+   $$ $$
+
+   This lemma is a basis of representation theory.
+
+   I just would like to give you one problem related with this lemma.
+
+   {\bf Question}  Show that for an arbitrary $N$ there exist
+ two $N\times N$ matrices $A,B$ such that for an arbitrary
+     $N\times N$ matrix $C$, the condition
+             $$
+ [C,A]=CA-AC=[C,B]=CB-BC=0
+             $$ 
+  implies that $C$ is equal to scalar matrix $\l I$.
+
+
+
+\bye

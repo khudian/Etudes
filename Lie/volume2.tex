@@ -1,0 +1,473 @@
+\magnification=1200
+\baselineskip-14pt
+
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\y{{\bf y}}
+\def\p{\partial}
+\def\a{\alpha}
+\def\t{\tilde}
+\def\G {{\cal G}}
+\def\C {{\bf C}}
+\def\vare{\varepsilon}
+\def\t {{\bf t}}
+\def\Tr {{\rm Tr\,}}
+\def\G {{\cal G}}
+
+   \centerline {\bf On Kac Peterson Formula; calculation of volumes of groups
+   corresponding to algebras $sl(n)$}
+
+\medskip
+
+   Let $\G$ be simple Lie algebra. Then
+Kac Peterson formula tells that
+        volume $V(G)$ of compact connected simple connected group  
+$G(\G)$ is defined by the formula,
+      $$
+V^2(G)=(8\pi)^2J(4\pi i\rho)\,,
+       $$
+where $\rho={1\over 2}\sum_{\a\in\triangle_+}\a$
+is Weyl vector,and $J$ Jacobian of the map $\G\to G$:
+      $$
+J(x)=\det\left(1-e^{-ad_x}\over ad_x\right)
+      $$
+
+(We suppose that covectors and vectors are identified
+via  Killing Cartan metric
+       $$
+ \phi(x,y)=-{\rm Tr}\left(ad_x ad_y\right)
+       $$ 
+$\phi=\langle\,,\,\rangle$)
+
+ This implies that
+
+          $$
+V=(2\pi\sqrt 2)^{{ dim\,}\G}
+\prod_{\a\in\triangle_+}
+f(2\pi\phi(\rho,\a))
+\,,\qquad {\rm where}\,\quad f(x)={\sin x\over x}\,. 
+          $$
+(See equation (4.32.1) in
+ V.Kac, D.Peterson ``Infinite-dimensioanal Lie algebras, Theta functions
+and modular forms'', Advances in Math,. {\bf 13}, pp.125---264 (1984))
+
+
+Let us apply this formula to the most simple case $su(2)$,
+then to $sl(n,C)$ (we mean calculate volume of corresponding simple
+simply connected Lie groups.
+
+
+     \centerline {volume of $SU(2)$})
+
+Consider generators $\e_1,\e_2,\e_3$:
+          $$
+   [\e_i,\e_k]=\vare_{ikm}\e_m\,.
+          $$
+One can see that
+         $$
+   {\rm Tr}(ad_{e_i}ad_{e_k})=-2\delta_{ik}\,,\hbox
+{this means that $\phi(\e_i,\e_k)=2\delta_{ik}$}
+        $$
+ Consider  Cartan algebra $h$ spanned by vector $\e_3$.
+    We have that
+         $$
+  [i\e_3,\e_\pm]=\pm \e_\pm\,,\quad {\rm where}\,\, \e_\pm=\e_1\pm i\e_2\,. 
+         $$
+Thus we have two roots  $\a_+,\a_-$:
+            $$
+     \a_\pm\in h^*\,\colon \a_\pm(\e_1)=\pm {1\over i}\, 
+        \, {\rm i.e.}\,\,                
+\cases
+             {
+\a_+\in h^*\,,\quad \hbox{such that $\a_+(\e_1)= -i$}\cr 
+\a_-\in h^*\,,\quad \hbox{such that $\a_+(\e_1)=i$}\cr
+          }\,.
+         $$
+  We see vectors $\e_1,\e_2,\e_3$ have length $\sqrt 2$ 
+and  covectors $\a_+, \a_-$ have length $1\over \sqrt 2$
+(matrix of the Cartan-Killing metric in the basis 
+  ${\e_1,\e_2,\e_3}$ is $\pmatrix{2 &0 & 0\cr 0&2 &0\cr 0 &0 &2 }$,)
+Weyl vector $\rho={\a\over 2}$. Hence
+        $$
+  2\pi \phi(\rho,\a_+)=\pi|\a_+|^2 ={\pi\over 2}\,.
+        $$ 
+We come to
+         $$
+Vol(su(2))=(2\pi\sqrt 2)^{{ dim\,}\G}
+\prod_{\a\in\triangle_+}
+{\sin (2\pi\phi(\rho,\a))
+      \over
+2\pi\phi(\rho,\a)
+       }=
+        $$
+        $$
+=(2\pi\sqrt 2)^3
+{\sin (2\pi\phi(\rho,\a))
+      \over
+2\pi\phi(\rho,\a)
+       }=(2\pi\sqrt 2)^3
+{\sin {\pi\over 2}
+      \over
+    {\pi\over 2}
+           }=32\sqrt 2\pi^2
+        $$
+Notice that $su(2)$ is three-dimensional sphere
+and volume of three-dimensional sphere is proportional to
+  $\pi^2$: volume of sphere of radius $R$ is equal
+to $2\pi R^3$: volume of $3$-dimensional sphere of radius $1$ is equal to
+          $$
+    Vol(S^3)={2\pi^{k+1\over 2}\over \Gamma\left(k+1\over2\right)}
+\big\vert_{k=3}=2\pi^2
+          $$ 
+One can say that  volume of $su(2)$ is equal to the volume of $S^3$ with
+radius $R=2\sqrt 2$. (it has to be clarified.)
+
+
+  \bigskip
+
+  First  we will study roots of algebra $sl(n,C)$.
+
+            \centerline   Lie algebras $sl(n,C)$
+
+  Denote by  $E_{ij}$ $n\times n$ matrix such that its all entries vanish except
+ the intry in $i$-th column  amd $j$-th row which is equal to $1$.
+   These matrices span over $C$ $gl(n,\C)$ Lie algebra.
+Traceless matrices span Lie algebra $sl(n,\C)$.
+   Denote by $\t H$  Cartan algebra of diagonal matrices in $gl(n,C)$
+and respectively  by $H$ Cartan algebra of traceless diagonal
+matrices in $sl(n,C)$.  
+  Denote by $\a^{ij}, (i\not=j)$
+linear functions on Lie algebra $\t H$ (i.e. elements of $\t H^*$)
+such that 
+                     $$
+        \a^{ij}(t^m E_{mm}a=t^i-t^j\,.
+                     $$
+
+One can see  $\{\a^{ij}\}$ are roots --- they are equal to values of
+observables (Cartan subalgebra $\t H$) on root vectors  $\{E_{ij}\}$:
+                          $$
+\forall \t\in  H, \t=t^mE_{mm}, \,\, \hat \t E_{ik}=[\t, E_{ik}]=
+            (t^i-t^k)E_{ik}
+                          $$
+               $$
+             \pmatrix
+                   {
+ \hbox{matrices $E_{ij}, (i>j)$ are positive weight vectors}\cr
+ \hbox{matrices $E_{ij}, (i<j)$ are negative weight vectors}\cr
+                  }
+              $$ 
+Teperj poschitajem metriku Cartana Killinga na algebre $gl(n,\C)$
+ad its subalgebra $sl(n,\C)$.
+                 $$
+    \phi(X,Y)=\Tr (\hat X\circ \hat Y)
+                 $$
+where $\hat X=ad_X\colon \hat X Y=[X,Y]$.
+           Notice that for every matrix $X$ for
+coefficients of expansion we have:
+                     $$
+                X=X^{\pi\rho}E_{\pi\rho}\Rightarrow X^{\pi\rho}=
+\Tr(XE_{\rho\pi})\,.
+                     $$
+   Hence for metric coefficients we have
+                       $$
+g_{ik|pq}=\Tr(\hat E_{ik}\circ \hat E_{pq})=
+\Tr                   \left(
+                      \left(
+                      \left[E_{ik},
+                      \left[E_{pq},E_{\a\beta}
+                      \right]
+                      \right]      
+                      \right)E_{\beta\a}
+                     \right)=
+                       $$
+               $$
+        Tr
+                 \left(
+           E_{ik}E_{pq}E_{\a\beta}E_{\beta_\alpha}-
+           E_{ik}E_{\a\beta}E_{pq}E_{\beta_\alpha}-
+           E_{pq}E_{\a\beta}E_{ik}E_{\beta_\alpha}+
+           E_{\a\beta}E_{pq}E_{ik}E_{\beta_\alpha}
+                     \right)=
+               $$
+                $$
+    2N\delta_{iq}\delta_{kp}-2\delta_{ik}\delta_{pq}\,.
+                $$
+
+We see that this metric is degenerate: identity matrix is zeroeigenvector,
+in other words algebra $gl(n,\C)$ is not semisimple, it possesses
+the centre. The corank of the metric is just one---the algebra
+  $sl(n,\C)$ is semisimple.  Calculate Kartan-Killing on $sl(n,\C)$.
+  For every $X\in sl(n,\C)$
+                  $$
+    \Tr X\big\vert_{gl(N,\C)}=\Tr X\big\vert_{sl(N,\C)}
+                  $$
+since $\hat X I=[X,I]=0$. Hence
+metric is defined by the same formula. 
+
+  Choose the basis in $gl(n,\C)$:
+                  $$
+        E_{pq}, p\not=q\,\, T_i=E_{ii}-E_{nn}, (i=1,\dots,n-1)\,.
+                  $$
+  Our next step to calculate scalar products of roots.
+        We see from previous calculations that
+non-zero metric entries are only the following:
+       $$
+\hbox {for every two indices $p,q$ such that $p\not=q$, 
+$\phi(E_{pq},E_{qp})=2n$}\,
+       $$
+        $$
+\hbox {for every two indices $i,j$}
+\cases { 
+\hbox {$\phi(T_i,T_j)=2n$ if $i\not=j$}\cr
+\hbox {$\phi(T_i,T_j)=4n$ if $i=j$}\cr
+       }
+       $$
+and all other entries vanish.
+
+Choose the ordering 
+              $$
+  \{E_{21}, E_{31},E_{32},\dots,E_{n1},\dots,E_{n\, n-1},|
+          T_1,T_2,\dots, T_{n-1}, 
+      E_{12},\dots,E_{1n},E_{23},\dots,E_{2n},\dots, E_{n-1\, n}\}
+                   $$
+of basic vectors.
+Then    we see that $(n^2-1)\times (n^2-1)$ matrix of
+    Cartan-Killing metric has the following appearance 
+                       $$
+||G||\vert_{sl(n,\C)}=2n\pmatrix {0 & 0 & I\cr 
+                               0 &K & 0\cr 
+                              I & 0& 0}\,,
+                       $$
+where $I$ is ${n^2-n\over 2}\times {n^2-n\over 2}$
+ unity matrix,a and
+ $K$ is $n-1\times n-1$ matrix such that 
+                   $$
+             K=\pmatrix {
+              2 &1 &1\dots &1 &1\cr
+              1 &2 &1\dots &1 &1\cr
+                \dots\cr
+    1&1 &1 \dots    &1 &2\cr
+                      }
+                   $$
+The inverse matrix (we need it to calculate  the scalar product of 
+covectors (roots)) has the appearance                       
+                     $$
+||G^{-1}||\vert_{sl(n,\C)}={1\over 2n}
+                 \pmatrix {0 & 0 & I\cr 
+                               0 &K^{-1} & 0\cr 
+                              I & 0& 0}\,,
+                       $$
+where $n-1\times n-1$ matrix $K^{-1}$ has the appearance: 
+                   $$
+             K^{-1}={1\over n}\pmatrix {
+              n-1 &-1 
+            &-1\dots &-1 &-1\cr
+              -1 &n-1 &-1\dots 
+             &-1 &-1\cr
+                \dots\cr
+    -1&-1 &-1 \dots  &-1
+                     &n-1\cr
+                      }
+                   $$
+Thus we will be able to calculate scalar producst of roots.
+
+
+\bigskip
+
+
+  \centerline    {\bf Roots, coroots}
+
+  Calculate the components of roots $\a^{ik}$ in the basis $T_i$
+(Recall that $T_i=E_{ii}-E_{nn}$).
+Calculating $\a^{ik}(T_i)$ we come to components of roots, covectors:
+               $$
+\a^{12}=\pmatrix{\a^{ik}(T_1)\cr\a^{ik}(T_2)\cr
+                       \a^{ik}(T_3\cr
+                       \a^{ik}(T_4)\cr
+                          \dots\cr
+        \a^{ik}(T_{n-1})\cr\a^{ik}(T_n)\cr}=
+             \pmatrix{1\cr-1\cr 0\cr 0\cr
+                   \dots\cr
+        0\cr0\cr}\,,
+        $$
+  For example for simple roots $\a^{ i,i+1}$ we have:
+          $$
+                     \a^{23}=
+             \pmatrix{0\cr 1\cr-1\cr 0\cr
+                   \dots\cr
+                    0\cr0\cr}\,,
+              \dots,
+                \a^{n-2,n-1}=
+             \pmatrix{0\cr 0\cr \dots \cr 0\cr
+                   1\cr
+                    -1 \cr 0\cr}\,,
+               \a^{n-1,n}=
+             \pmatrix{1\cr 1
+\cr \dots\cr 1\cr
+                   1\cr
+        1 \cr 2\cr}\,,
+              $$
+Every positive (negative) root is combination of simple roots 
+with positive (negative )integers, e.g.
+                     $$
+   \a^{36}=\a^{34}+\a^{45}+\a^{56}\,.
+                     $$   
+Cartan-Killing metric defines isomorphism between vectors and covectrs:
+To every covector $f\in \G^*$ corresponds the vector $\xi_f\in \G$
+such that
+          $$
+   \phi\left(\xi_f,x\right)=f(x)\,,\quad
+\hbox{for every vector $x$}\,.
+          $$ 
+In particular define coroots $\a_{pq}$ dula to roots.
+From the explicit expression for Cartan-Killing metric in the basis
+   $\{E_{21},\dots,E_{n,n-1} T_{1}\dots T_{n-1},E_{12},\dots E_{n-1,n} \}$
+we have that  
+            $$
+       \a_{pq}={1\over 2n}K^{-1}\a^{pq}\,.
+            $$
+In particular for simple roots we have
+            $$
+\a_{12}={1\over 2n^2}\pmatrix {
+              n-1 &-1 
+            &-1\dots &-1 &-1\cr
+              -1 &n-1 &-1\dots 
+             &-1 &-1\cr
+                \dots\cr
+    -1&-1&-1 \dots    &-1
+                     &n-1\cr
+                      }
+             \pmatrix{1\cr -1\cr 0\cr 0\cr
+                   \dots\cr
+                    0\cr0\cr}=
+{1\over 2n}\pmatrix{1, -1, 0, \dots, 0}\,..
+            $$
+     $$
+\a_{23}={1\over 2n^2}\pmatrix {
+              n-1 &-1 
+            &-1\dots &-1 &-1\cr
+              -1 &n-1 &-1\dots 
+             &-1 &-1\cr
+                \dots\cr
+    -1&-1&-1 \dots    &-1
+                     &n-1\cr
+                      }
+                         \pmatrix{0\cr 1\cr -1\cr 0\cr
+                   \dots\cr
+                    0\cr0\cr}=
+{1\over 2n}\pmatrix{0,1, -1, 0, \dots, 0}\,..
+            $$
+and so on
+  $$
+\a_{n-2 n-1}={1\over 2n^2}\pmatrix {
+              n-1 &-1 
+            &-1\dots &-1 &-1\cr
+              -1 &n-1 &-1\dots 
+             &-1 &-1\cr
+                \dots\cr
+    -1&-1&-1 \dots    &-1
+                     &n-1\cr
+                      }
+             \pmatrix{0\cr 0\cr \dots\cr 0\cr
+                   1\cr
+                    -1 \cr0\cr}=
+{1\over 2n}\pmatrix{0,\dots, 0, 1, -1}\,..
+            $$
+and
+  $$
+\a_{n-1 n2}={1\over 2n^2}\pmatrix {
+              n-1 &-1 
+            &-1\dots &-1 &-1\cr
+              -1 &n-1 &-1\dots 
+             &-1 &-1\cr
+                \dots\cr
+    -1&-1&-1 \dots    &-1
+                     &n-1\cr
+                      }
+             \pmatrix{1\cr 1\cr 1\cr 1\cr
+                   \dots\cr
+                    1 \cr 2\cr}=
+{1\over 2n}\pmatrix{0, 0, \dots, 0, 1}\,..
+            $$
+Now we can calulate all scalar products and all lengths.
+
+For example:
+
+It is useful to calculate coroots $\a_{pq}$ which are 
+Now we can perfoirm calculations, for example
+                 $$
+|\a^{12}|^2==\langle\a^{12},\a^{12}\rangle_{CK}=
+\phi(\a^{12},\a^{12})=\a^{12}(\a_{12})=
+   {1\over 2n}\pmatrix {1, -1,0,0\dots,0,0}
+             \pmatrix{1\cr -1\cr 0\cr 0\cr
+                   \dots\cr
+                    0\cr0\cr}={1\over n}\,,        
+                     $$ 
+                      $$
+\langle\a^{12},\a^{23}\rangle_{CK}=\phi(\a^{12},\a^{23})=
+   {1\over 2n}\pmatrix {1, -1,0,0\dots,0,0}
+             \pmatrix{0\cr 1\cr 0\cr 0\cr
+                   \dots\cr
+                    0\cr0\cr}=-{1\over 2n}         
+                     $$
+%i.e, root $\a^{12}$ has the length ${1\over \sqrt n}$ 
+and angle between roots is eqaul to ${2\pi\over 3}$.
+              
+One can see that all the simple roots have the same length
+   $1\over \sqrt n$.
+
+
+Now caculate the Weyl covector  $\rho$ which is equal to halph of the
+sum of positive roots:
+                $$
+\rho={1\over 2}\sum_{p<q}\a^{pq}={1\over 2}\sum_{p<q}
+\left(\sum_{i=p}^{q-1}\a^{i,i+1}\right)=\sum_{k=1}^{n-1} k(n-k)\a_{k,k+1}\,.
+                $$
+    The vector $\rho'$ which is dual to covector  $\rho$
+is given by the formula                 
+                $$
+\rho'={1\over 2}
+\left((n-1)\a_{12}+2(n-2)\a_{23}+3(n-3)\a_{34}+\dots+(n-2)2\a_{n-2,n-1}+
+              (n-1)\a_{n-1,n}\right)=
+                 $$
+                 $$
+    {1\over 4n} \pmatrix{n-1, n-3,n-5,\dots,-n+3}
+                $$
+Now we are able to caclulate the volume.
+
+Later Cartan-Killing scalar product we will denote just by 
+$\langle\,\,,\,\,\rangle$.
+
+We have
+             $$
+\langle\rho,\a^{12}\rangle=\a^{12}(\rho')=
+\pmatrix{1\cr -1\cr 0\cr\dots\cr 0\cr}
+    {1\over 4n} \pmatrix{n-1, n-3,n-5,\dots,-n+3}={1\over 2n}
+             $$
+The same is for all other simple roots including the root $\a^{n-1,n}$:
+       $$
+\langle\rho,\a^{12}\rangle=
+\langle\rho,\a^{23}\rangle=\dots
+\langle\rho,\a^{n-1,n}\rangle={1\over n}
+       $$
+Hence  we have that for an arbitrary root $\a^{pq}$
+                $$
+\langle\rho,\a_{pq}\rangle=
+\langle\rho,\a^{p,p+1}+\dots +\a^{q-1,q}={q-p\over 2n}\,.
+                $$
+Now return to the formula for volume of the group
+$G_n$ which is compact connected simply connected Lie group
+such that complexification of its Lie algebra is equal to $gl(n,\C)$. 
+
+Kac-Peterson formula and our caculationn give
+        $$
+   Vol(G_n)=(2\pi\sqrt 2)^{dim G_n}\prod_{\a^{pq}\colon p<q}
+      {\sin\left(2\pi \langle\rho,\a^{pq}\rangle\right)\over
+        2\pi \langle\rho,\a^{pq}\rangle}
+        $$
+            $$
+Vol G=(2\pi\sqrt 2)^{n^2-1}\prod_{k=1}^{n-1}
+    \left({\sin\left(k\pi\over n\right)\over {k\pi\over n}}\right)^{n-k}\,.
+            $$
+
+\bye

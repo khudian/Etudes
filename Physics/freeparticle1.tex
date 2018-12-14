@@ -1,0 +1,248 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in October  2018
+
+{\tt 28 October 2018}
+
+{\it Here I will try to caclulate the continual integral for free aprticle using  some linear algebra stuff}
+
+
+ {\tt     To calculate the continual integral for free function we deal with
+exponent of the polynomial
+       $$
+F=
+(x_{0}-x_{1})^2
++(x_{1}-x_{2})^2
++(x_{2}-x_{3})^2
++(x_{3}-x_{2})^2+\dots+
+(x_{N-1}-x_{N})^2\,,
+   \eqno (0.1)
+       $$
+where initial and final points are fixed
+    $$
+x_0=a,x_N=b
+    $$
+One has to calculate the gaussian integral $e^{iCF}$:
+             $$
+ \int \exp(icF) dx_1dx_2\dots dx_{N-1}
+             $$
+In the classical  book of Feynman the author caclculates the integral,
+ step by step
+performing the trick: every next integration over $dx_{i+1}$ 
+gives the same answer as the previous 
+up to the coefficient depending on $i$.
+
+   We will present here the straightforward  calculation
+which is based on the linear algebra.
+}
+
+
+\bigskip
+
+
+   $F$ in equation (0.1)  is quadratic polynomial over
+$N-1$ variables $x_1,\dots,x_{N-1}$. We perform affine
+transformation to the new cooridnates such that
+in these coordinates $F$ will have only quadratic and zero order terms.
+
+Moreover we will try to consider transfromations with unity Jacobian.
+
+
+ Consider first affine  transformation
+     $$
+       \cases
+     {
+\xi_1=x_1-x_0=x_1-a\cr
+\xi_2=x_2-x_1\cr
+\xi_3=x_3-x_2\cr
+   \dots\cr
+\xi_{N-1}=x_{N-1}-x_N\cr
+    }
+  \Leftrightarrow
+   \cases
+       {
+x_1=\xi_1+a\cr
+x_2=\xi_2+\xi_1+a\cr
+x_3=\xi_3+\xi_2+\xi_1+a\cr
+   \dots\cr
+x_{N-1}=\xi_{N-1}+\dots+\xi_1+a\cr
+       }\,
+     $$
+The ``linear''  part iof this transfromation is not 
+orthogonal transformation, but it is unimodular 
+transformation. In the new coordinates
+      $$
+F=\sum_{i,k=1}^{N-1}M_{ik}x^ix^k+\sum_{i=1}^{N-1}L_ix^i+N=
+    \xi_1^2+\xi_2^2+\xi_3^2+\dots+\xi_{N-1}^2+
+   (b-a-\xi_1-\xi_2-\dots-\xi_{N-1})^2\,.
+                   \eqno (1.1)
+      $$
+ Now consider new coordinates
+              $$
+\xi_i=\eta_i+{b-a\over N}\,, \qquad i=1,\dots,N-1
+              $$
+One can see that in these coordinates linear terms in (1.1) will be killed:
+         $$
+F=\sum_{i,k=1}^{N-1}M_{ik}x^ix^k+\sum_{i=1}^{N-1}L_ix^i+N=
+    \xi_1^2+\xi_2^2+\xi_3^2+\dots+\xi_{N-1}^2+
+   \left(a-b-\xi_1-\xi_2-\dots-\xi_{N-1}\right)^2=
+            $$
+     $$
+     \left(\eta_1^2+\eta_2^2++\dots+\eta_{N-1}^2\right)+
+     2\left(\eta_1+\dots+\eta_{N-1}\right){b-a\over N}+
+     {(N-1)(b-a)^2\over N^2}+
+             $$
+             $$
+            +
+  \left({a-b\over N}-\eta_1-\eta_2-\dots-\eta_{N-1}\right)^2=
+     $$
+     $$= 
+   2\left(\eta_1^2+\eta_2^2+\dots+\eta_{N-1}^2\right)+
+   2\sum_{i<j}\eta_i\eta_j+
+      {(b-a)^2\over N}\,.
+       $$
+The linear temrs are cancelled, and we have that
+      $$
+F=\tilde M_{ik}u^iu^k+
+      {(b-a)^2\over N}\,,
+     $$
+where
+       $$
+  \tilde M_{ik}=\delta_{ik}+t_it_k\,,\qquad
+   (t_i=(1,\dots,1))\,.
+       $$
+
+Now we can calculate the integral:    
+ $$
+I=
+\int e^{-cF}dx^1dx^2\dots dx^{N-1}=
+\int e^{-c\left(M_{ik}x^ix^k+L_ix^i+N\right)}dx^1dx^2\dots dx^{N-1}=       $$
+    $$
+\int e^{-c\left(
+\sum_{k=1}^{N-1}\xi_k^2+\left(b-a-\sum_{m=1}^{N-1}\xi_m^2 
+\right)^2\right)}
+    \underbrace
+    {
+  \left(\p(x_1,\dots,x_{N-1}\over \p\xi_1,\dots,\xi_{N-1})\right)
+        }_{\hbox {equals to $1$}}
+d\xi_1d\xi_2\dots d\xi_{N-1}=      
+    $$
+      $$
+\int e^{-c\left(
+2\sum_{k=1}^{N-1}\xi_k^2+\left(b-a-\sum_{m=1}^{N-1}\xi_m^2 
+\right)^2\right)}
+d\xi_1d\xi_2\dots d\xi_{N-1}=      
+    $$
+      $$
+\int e^{
+      -c\left(
+2\sum_{i,k=1}^{N-1}\eta_i\eta_k+{(b-a)^2\over N}
+        \right)
+            }
+    \underbrace
+    {
+  \left(
+ \p(\xi_1,\dots,\xi_{N-1}\over \p\eta_1,\dots,\eta_{N-1})
+\right)
+        }_{\hbox {equals to $1$}}
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\int e^{
+      -c\left(
+N_{ik}\eta^i\eta^k+{(b-a)^2\over N}
+        \right)
+            }
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\left(\pi\over c\right)^{N-1\over 2}
+\sqrt {1\over \det (\tilde M)}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }\,.
+        $$
+Notice that  the matrix $\tilde M$ has eigenvector $\bf t$
+with eigenvalue $N$, and all other $N-2$ eigenvectors
+wchih are orthogonal to the vector $\bf t$
+with the eigenvalue $1$. Hence
+   $$
+\det {\tilde M}=N\,,
+  $$
+and we have for integral:
+      $$
+I=\int e^{
+      -c\left(
+N_{ik}\eta^i\eta^k+{(b-a)^2\over N}
+        \right)
+            }
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\sqrt {\pi\over \det (c\tilde M)}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }=
+ \left(\pi\over c\right)^{N-1\over 2}
+   {1\over \sqrt N}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }\,.
+        $$
+
+
+\bye

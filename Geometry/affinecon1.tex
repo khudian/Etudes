@@ -1,0 +1,162 @@
+% I commenced  this version on 22 February 2009
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+\centerline  {\bf  Afiine and linear connections}
+
+%"Vek zhivi vek uchish---durakom pomrjoshj"---how often I need to
+%remember this Russian expression learning mathematics.
+  Linear connection are known to everybody in theoretical
+  physics under the name of so called "Christofells symbols". Here I will try to explain what is it  affine connection and its relations to
+  linear  connections.  Respectively we will try to consider relations between
+   Euclidean connection and Levi-Chivita connection.
+
+  \bigskip
+         \centerline {${\cal x} 0\,\,$\bf  Some standard stuff}
+
+
+ Let $(P,\pi,M, G)$ be a principal bundle over manifold $M$  with structure group $G$.
+ $M$ is a base, $\pi$ is a projection on the base
+ $M$, Lie group $G$ is a structure group.  Structure group $G$ acts on the right transitively and free on all fibres
+ $\pi^{-1}(x)$. The base can be covered by open sets $\{V_\a\}$ $M=\cup_\a V_\a$ such that
+ all $\pi^{-1}V_\a$ are homeomorphic to $V_\a\times G$:
+                            $$
+                          \pi^{-1}(V_\a)\,
+                          \longleftrightarrow\, V_\a\times G  \eqno (0.1)
+                            $$
+Let $\{p_\a(x)\}$ ($p_\a(x)\colon V_\a\rightarrow P$ such that $\pi\circ p_\a={\bf id}\vert_{V_\a}$)
+  be the collection of local sections \footnote{$^*$}{One can define local section over $V_\a$ by formulae $p_\a(x)=\psi_\a(x,g_\a(x))$ where $\psi_\a$
+establish homeomorphism (0.1) and $g_\a(x)$ are arbitrary (smooth) functions, e.g. $g_\a(x)\equiv 1$.}.
+  Thus we come to local coordinates $\{(x^\mu_{(\a)},g_{(\a)})\}$ on the domains $\{\pi^{-1}(V_\a)\}$ of the bundle:
+                         $$
+              (x^\mu_{(\a)},g_{(\a)}){\buildrel\varphi_\a\over \longmapsto} p_\a(x)\circ g
+              \eqno (0.2)
+                         $$
+where
+$x^\mu_{(\a)}$ are local coordinates of points in $V_\a$ (in some
+atlas on $M$), $\mu=1,2,\dots,n$, where $n$ is a dimension of $M$
+and $g_{(\a)}\in G$, (index $\a$ later will be often omitted)\footnote{$^{**}$}{the homeomorphisms $\{\psi_\a\}$
+in (0.1) provide coordinatisation for the choice of local sections $p_\a(x)=\psi(x,e)$ (see the first footnote)}.
+With some abuse of notations
+we often identify points $\bf x$ in $V_\a$ with there local coordinates $x^\mu_{(\a)}$.
+
+
+Consider local transition functions
+$\Psi_{\a\beta}\colon \,\,(V_\a\cap V_\beta)\times G\rightarrow (V_\a\cap V_\beta)\times G$:
+$\Psi_{\a\beta}=\varphi^{-1}_\a\circ \varphi_\beta$.
+      One can see that they following:
+                   $$
+               \Psi_{\a\beta}(x,g)=(x,h_{\a\beta}(x)\circ g),
+               \quad \hbox {where $h_{\a\beta}(x)\colon\,\, p_\beta(x)=p_\a(x)\circ h_{\a\beta}$}
+               \eqno (0.3)
+                   $$
+Indeed
+                  $$
+   \Psi_{\a\beta}(x,g)=\varphi^{-1}_\a\circ \varphi_\beta(x,g)=\varphi^{-1}_\a(p_\beta(x)g)=
+        \varphi^{-1}_\a(p_\a(x)h_{\a\beta}(x)g)=(x,h_{\a\beta}(x)g)
+                      \eqno (0,3)
+                            $$
+
+{\bf Remark} Please note that in the equation (0.3) the action of group on fibre coordinates is
+left multiplication.---
+It is passive action of changing coordinates of the fibre.
+ In the definition of the fibre bundle there is right action of the group: it is an active action-- the point
+ is changed.
+
+              \centerline {\it Connection in the principal bundle}
+
+  One can define a connection---one-form
+  $\Omega$
+  on $P$ with values in the Lie algebra $\G(G)$ of the group $G$
+  such that
+
+
+  \item {1.} $\Omega(\tilde \xi)=\xi$ if the vertical vector $\tilde \xi$ is tangent to the curve
+                    $p\circ (1+t\xi+\dots)$ at the point $t=0$
+
+  \item{2.} It is invariant with respect to the action of group $G$:   $R^*_g\Omega=Ad_{g^{-1}}\Omega$
+
+
+    We say that the vector ${\bf X}\in TP$ is {\it horisontal} vector if $\Omega({\bf X})=0$.
+
+
+
+      The tangent space $T_pP$ for an arbitrary point $p$ in the bundle $P$
+      is a direct sum of vertical subspace and horisontal subspace:
+                     $$
+            T_pP=T^{^{\cal c}}_pP\oplus T^{^{||}}_pP\qquad {\rm and}\,\,\, R_g T^{^{||}}_p=T^{^{||}}_{pg}
+                     $$
+
+ In local coordinates
+                       $$
+              \Omega=g^{-1}dg-g^{-1}A^{(\a)}_{\mu}dx^ug
+                       $$
+where $A^{(\a)}_{\mu}dx^u$ is local one-form with values in the Lie algebra $\G(G)$.
+($A^{(\a)}_{\mu}(x)$ is sometimes called  Yang Mills field.)
+
+
+         \centerline {${\cal x} 1\,\,$\bf  Linear connection on the linear frames bundle }
+
+
+  Let $M$ be a manifold and $P(M)$ the principal bundle of linear frames, i.e.
+        $$
+     \e^\mu_{_{i}}(x(t))=e^\mu_{0_{i}}g(t)
+        $$
+be a parallel transport along a curve $x(t)$ on the base, where $g(t)$ obeys the differential equation:
+           $$
+      {d\over dt}g(x(t))={dx^\mu(t)\over d t}A_\nu(x(t))g
+           $$
+(We mean that group is matrix group, thus $A_\nu(x(t))g=A^i_{\nu k}(x(t))gk_m$)
+
+    The solution of this equation is
+            $$
+        g(t)=P\exp \left(\int_0^t {dx^\mu(t)\over d t}A_\nu(x(t))dt)\right)
+            $$
+(Explain what it means.)
+
+    Now
+
+
+\bigskip
+
+
+\bye

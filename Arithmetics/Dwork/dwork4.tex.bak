@@ -1,0 +1,105 @@
+\def\A {\bf A}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\F {{\bf F}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+% This file I begin on 17 September 2007. I would like to understand Dwork Theorem
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+\theoremstyle{theorem}
+%\newtheorem{thm}{Khimera}
+
+
+
+
+
+
+\begin{document}
+
+
+  \centerline {\bf Dwork theorem}
+
+  \centerline {attempts to understand its proof based on works of Dwork, paper of Candelas and my ideas }
+
+
+
+\tableofcontents
+
+\section*{Preliminaries}
+
+Let $P(x_1,\dots,x_n)$ be a polynomial with coefficients in prime
+finite field $\F_p$. This polynomial defines variety $M_P$ in
+$n$-dimensional affine space over the field $\F_p$ or over an algebraic
+extensions $\F_{p^r}$ of this field. Denote by $\nu_r$ the number of distinct
+solutions of equation $P(x_1,\dots,x_n)=0$ considered over the field $\F_{p^r}$
+($r=1,2,3,\dots $), i.e. the number of points of the variety  $M_P$ considered
+in affine space over the field $\F_{p^r}$ and consider the following generating
+function
+          \begin{equation}\label{zetafunctionasgenfunctionofsolut}
+         Z_P(t)=\exp\left(\sum_{r=1}^\infty {\nu_rt^r\over r}\right)
+          \end{equation}
+
+{\bf Example 0.1} Let $P(x,y)=x-y$. Then evidently $\nu_r=p^r$ and
+\begin{equation}\label{trivialxampleofzetafunction}
+         Z_P(t)=\exp\left(\sum_{r=1}^\infty {p^rt^r\over r}\right)=
+          \exp\left(\log{1\over 1-pt}\right)={1\over 1-pt}
+          \end{equation}
+
+{\bf Example 0.2} Let $P(x,y)=x^2+y^2-1$ defines circle.
+   To calculate $\nu_r$ consider the  following map
+            $$
+         \tau[u:v]=[1-u^2: 2u: 1+u^2]
+            $$
+which establishes one-one correspondence between
+points of  projective plan and the conic $x^2+y^2=z^2$ in two-dimensional projective space.
+
+This conic has one point more than circle $x^2+y^2=1$ if and only if the equation
+$x^2+y^2=0$ has not-trivial solution in $\F_{p^r}$, i.e. if $\sqrt {-1}\in \F_{p^r}$.
+
+
+
+
+The number of points on projective line (over $\F_{p^r}$) is equal to $p^r+1$.
+Hence we see that  for the variety $x^2+y^2=1$
+         \begin{equation}\label{numberofpointoncircle}
+    \nu_r=
+     \begin{cases}
+        p^r\,\, \hbox {if $p=4k+1$}\\
+         \begin{cases}
+        p^r\,\, \hbox {if $r$ is even}\\
+         p^r+1\,\, \hbox {if $r$ is odd}\\
+     \end{cases}\hbox {if $p=4k+3$}
+     \end{cases}
+\end{equation}
+  Hence $Z(t)={1\over 1-pt}$ for the circle (the same as for the line)  if $p=4k+1$
+  and for $p=4k+3$
+\begin{equation}\label{zetafunctionforcircle}
+Z(t)=\exp
+\end{equation}
+
+
+
+\subsection{}
+\end{document}

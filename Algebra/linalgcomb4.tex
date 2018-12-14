@@ -1,0 +1,215 @@
+
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+
+
+{\tt 16 November 2018.}
+
+
+\centerline {On one linear algebra problem}
+
+ {\it Two weeks ago, David (my son) suggested me the following problem:
+  There are 101 coins. For every coin you can divide the
+rest of the coins on two sets on  50 coins such that these two sets have
+the same weight. Prove that all the coins have the same
+weight.  Occasionally I came to the solution, it was highly unexpected
+(I used one combinatorial result)
+and  very beautiful. I totally changed
+my opinion about this problem  (at first I consider it as a boring
+exercise in linear algebra).
+I would like to add also, that
+   David was informed about this problem  from mathematician,
+Vladimir Dotsenko, and I never forget the  beautiful proof of
+Nullstelenzats which was suggested by Vladimir (see e.g. the etude
+"On a simple proof of Nullstelensatz" in my homepage
+ "www.maths.manchester.ac.uk/khudian": (the subsection
+   /Etudes/Algebra/)).
+
+I what follows, there is my solution of this problem.
+In Appendix 1, I put the solution of this problem suggested by 
+James Montaldi, and in Appendix 2 some statement related with my proof.
+}
+
+
+\medskip
+
+Here is my solution:
+
+\smallskip
+
+    Denote the weights of the coins
+    by $\{x_1,x_2,\dots,x_{101}\}$.  The problem evidently is reduced
+to the following: Consider the matrix of the size $101\times 101$,
+$M=||M_{ik}||$, $i,k=1,\dots,101$),
+such that all diagonal elements of this matrix are equal to
+zero and in every row some  50 non-diagonal entries are equal to $+1$
+and another fifty non-diagonal entries are equal to $-1$.
+
+   Then it is evident that the vector
+     $$
+\e=\{1,1,\dots,1\}
+      \eqno (1)
+     $$
+is the eigenvector of the matrix $M$ with eigenvalue $0$. 
+We have to prove that this is all: the space of zero eigenvectors
+is $1$-dimensional, or in other words,
+the vector $\e$ says that rank of the matirx $M$ is less than $101$.
+We have to prove that it is just equal to $100$.
+
+
+Consider the characterisitic polynomial
+     $$
+  P(\lambda)=\det (\lambda-M)=\sum_{k=0}^{101} 
+a_k\lambda^{101-k}\,.
+     $$
+We have that $a_0=1$, the existence of 
+eigenvector with zero eigenvalue
+meams that $a_{101}=\det M=0$. To prove that
+the zero eigenvalue subspace is one-dimensional, i.e.
+all the coins have the same weihgt, we have to prove
+that $$
+   a_{100}\not=0\,.
+     $$ 
+Now write the formula 
+ for  $a_{100}$:
+    $$
+a_{100}=\sum_{} \sigma_{k_1 k_2\dots k_{101}} M_{1k_1}M_{2k_2}\dots 
+ M_{100 k_{100}}
+ M_{101 k_{101}}\,,
+      \eqno (3)
+    $$
+where $\sigma_{k_1k_2\dots k_{101}}$ is the sign of permutation, and
+  in every monom for all $\{i\}$
+except just one $i_0$,  $k_i\not=i$, and
+  $M_{ik_i}=\pm 1$.
+ The number of these monoms is equal to $101\times S_{100}$,
+where $S_{100}$ is the number of permutations
+of $100$ numbers such that all the elements change the place,
+and the point is that number $S_{100}$ is ODD!!!!
+Hence the number of monoms
+in the expression  (3) is odd, and all the monoms are equal to
+$\pm 1$, i.e. $a_{100}\not=0$.  In other words
+ if we will write the expression
+for $a_{100}$ over the field $Z_2=Z\backslash 2Z$ we come to
+                    $$
+a_{100}=\sum_{i=1}^{101}\left(\sum_{r\not=i, k_r\not=r} 
+M_{rk_r}\right)=101\cdot S_{100}=1\cdot 1=1\not=0 (mod 2)\,.
+                      $$
+The central point of the proof is the
+fact that $S_{100}$ is an odd number.
+In fact one can see that the number $S_k$ of permutations of $k$ elements
+which displace all the elements is odd if $k$ is even, and vice versa,
+  $S_k$ is even if $k$ is odd; see also
+the etude 
+ "On number of permutations wich displace all the elements"
+in my homepage
+ "www.maths.manchester.ac.uk/khudian": (the subsection
+   /Etudes/Arithmetics))
+
+\m
+
+         {\bf Appendix 1}
+
+The solution above indicates that the field $Z_2=Z\backslash 2Z$
+  is the crucial. 
+James Montaldi presented the solution which is just based on the concept
+of this field.  His solution is the following:
+
+
+
+
+for the matrix $M$ which has to be considered (
+it vanishes on diagonal and
+ it is equal to $+1$ or $-1$ at all non-diagonal entries)
+one can just immediately calculate all eigenvectors and eigenvalues,
+but over the filed $Z_2$!
+Indeed consider the matrix $A=M+I$, where $I$ is identity matrix.
+ The  $A$ is the
+matrix such that all  the entries
+of this matrix are equal to $+1$ or $-1$. The vector
+  $e={1,1,1,\dots,1}$ which corresponds to the coins of the same weights
+is  the eigenvector of the matrix $A$
+with eigenvalue $n$, and ANY VECTOR WHICH IS ORTHOGONAL TO THE VECTOR
+$e$ is the eigenvector of $A$ with eigenvalue $0$, OVER FIELD $Z_2$.
+Thus we see that the matrix $M=A-I$ has one eigenvector with eigenvalue
+$n-1$ and $n-1$ vectors with eigenvalue $0$ over the field
+$Z_2$. Hence this matrix   $M$
+  has rank $n-1$ over the field $Z_2$.
+Thus for matrix  $M$
+  if $Mx=0$ then $x$ is proportional to $e$, i.e. rank
+of $M$ is equal to $n-1$ if $n$ is odd.
+
+I think that the main step is to change the field $R\to Z_2$.
+James works just over field $Z_2$ and his solution
+is of course more natural.
+    I could not overcome the psichological barriers, and my solution
+is in terms of even and odd numbers.
+    In fact we have be surprised that
+the problem about real numbers, the field $Z_2$ plays the major role in
+\footnote{$^*$}{comment of Yuri Bazlov}!
+ 
+
+
+\m
+
+         {\bf Appendix 2}
+
+Of course one can prove using this fact more general statement:
+  Let $M$ be $n\times n$ matrix, such that alldiagonal entries
+vanish, and all non-diagonal entries are equal to $\pm 1$.
+Then for the characteristic polynomial
+             $
+     \det (\lambda-M) =a_k\lambda^{n-k}
+             $,
+for every coefficient $a_k$,
+                $$
+a_k=C^k_n S_k={n!\over k!(n-k)!}(k+1) \,,(mod 2)
+                   $$
+and in particular
+              $$
+a_rkK\not=0\,, \hbox {if $C^k_n$ and $k+1$ are odd numbers}.
+            $$
+
+           
+ 
+\bye

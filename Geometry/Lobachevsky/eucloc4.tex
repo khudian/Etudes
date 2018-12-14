@@ -1,0 +1,677 @@
+
+  %\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\bs {{\bf s}}
+\def\a {\alpha}
+\def\d {\delta}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\B {{\cal B}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\F {{\cal F}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def \grad {{\rm grad\,}}
+\def\e {{\bf e}}
+\def\f {{\bf f}}
+\def\g {{\bf g}}
+% I began this file on  13 September  2017
+
+%\newcommand{\bs}{{\boldsymbol{s}}}
+
+\newcommand{\rh}{{\boldsymbol{\rho}}}
+\newcommand{\Ps}{{\boldsymbol{\Psi}}}
+
+\newcommand{\der}[2]{{\frac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\lder}[2]{{\partial {#1}/\partial {#2}}}
+\newcommand{\dder}[3]{{\frac{\partial^2 {#1}}{\partial {#2}\partial {#3}}}}
+%\newcommand{\R}[1]{{\mathbb R}^{#1}}
+\newcommand{\RR}{\mathbb R}
+%\newcommand{\Z}{{\mathbb Z_{2}}}
+\newcommand{\ZZ}{{\mathbb Z}}
+
+\newcommand{\CC}{\mathbb C}
+\newcommand{\NN}{{\mathbb N}}
+
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+
+\theoremstyle{theorem}
+\newtheorem{thm}{Theorem}
+
+\theoremstyle{lemma}
+\newtheorem{lm}{Lemma}
+
+
+%\theoremstyle{remark}
+%\newtheorem{rm}{Remark}
+
+%\theoremstyle{Lemma}
+%\newtheorem{lm}{Lemma}
+
+\numberwithin{equation}{section}
+
+
+\title{Geometry of Differential operators}
+\date{}
+
+
+
+\begin{document}
+\maketitle
+
+ \centerline {H.M. Khudaverdian}
+
+
+
+ {\it Following the book of Nikulin-Schafarevitch
+ ``Geometries and groups''  we will present here
+ the classification of 
+  locally Euclidean $2$-dimensional Riemannian manifold.   
+The answer is:
+
+   0)
+ 1)  Cylindre,
+
+  2)   Twisted cylindre, 
+
+ 2) Lobachevsky plane of tori
+
+ 3)  Klein bottle  
+
+
+
+  }
+
+\section {Locally Eucldean Geometry}
+\label{localeuclidgeometry}
+
+ Let $(M,G)$ be a Riemannian manifold.
+
+  We say that it is locally Euclidean if 
+in a vicinity of every point there are 
+local coordinates  $u_i$ such that
+      \begin{equation*}
+     G(u,v)=du_1^2+\dots+du_n^2\,,
+        \end{equation*}
+where $n$  is dimension of manifold. We mostly consider here
+  the case $n=2$.
+
+The condition above means that
+for every point $\D\in M$ there exists small
+neighboorhoud $O_\vare(\D)$  such that $O_\vare(D)$
+is isometric to the interior of the disc $O_\vare(D)$,
+where $D$ is an arbitrary point of Euclidean plane $\E^2$. 
+
+  The radius $\vare$ of the neighborhood depends on a point.
+Suppose that the following additional condition is fixed:
+there exists poisitive constant $r\geq 0$ such that
+radius of all neighborhoods is bigger or equal to $r$.
+(This condition automatically holds for compact manifolds.)
+We see that  for every point  $\D$ there exist local
+coordinates
+  $(u_{_\D},v_{_\D})$\footnote{now and later we will consider only 
+$2$-dimensional case.  Sure these and many considerations can
+be easily generalised for an arbitrary $n$.} such that
+      \begin{equation}\label{loceuclid}
+     G(u,v)=du_{_\D}^2+dv_{_\D}^2\,,\quad
+    u_\D(\D)=v_\D(\D)=0\,,\quad
+         \end{equation}
+and the following additional condition is obeyed:
+         \begin{equation}\label{stronglyloceuclid}
+\hbox {local coordinates $u_{_\D},v_{_\D}$ run 
+in the disc $0\leq u_{_\D}^2+v_{_\D}^2<r $ }\,,   
+        \end{equation}
+where radius $r$ does not depend on
+a choice of a point $D$.
+
+In our consideration we will call the Riemannian manifold
+locally Euclidean if not only condition \eqref{loceuclid}
+but condition \eqref{stronglyloceuclid} is also obeyed. 
+
+Sometimes if we want to differ between these cases we will call
+Riemannian manifold strongly locally Euclidean if both conditions
+are obeyed.
+
+
+In the case if $M$ is compact manifold, then  condition
+\eqref{loceuclid} implies condition \eqref{stronglyloceuclid}
+(under the suitable choice of $r$). In general this is not true.
+E.g. the sheet
+   $-1<x<1$ of $\E^2$ is evidently locally Euclidean in the sense
+of definition \eqref{loceuclid} but it is not locally Euclidean
+in the sense of \eqref{stronglyloceuclid} (the radius $r$
+becomes smaller and smaller when $x\to 1$).
+
+We will call coordinates $(u_\D,v_\D)$
+Euclidean coordinates on $M$ adjusted to the point $\D$.
+
+
+
+
+
+\section {Equivalence on $E^2$ and discontinuous action of group}
+
+
+
+
+   Let $r$ be an equivalence realtion of points on $\E^2$,
+and  there exists $\delta>0$ such that
+for every two $r$-equivalen distinct  points $A,B$ 
+ the distance between these points
+is greater than $\delta$: $d(A,B)>\delta$ if $ArB$
+but $A\not=B$.
+
+   We say that  an isometry $g$ is an $r$- isometry,
+if it preserves $r$-equivalence:
+              $$
+    ARB\Leftrightarrow  A^gRB^g\,.
+              $$
+\begin{lm}
+Let  $\G=\G_r$ be a set of isometries of $\E^2$
+such that
+       \begin{equation*}
+      ArB \Leftrightarrow \hbox{there exist $g\in \G$
+such that $B=A^g$}\,,
+\end{equation*}
+
+\end{lm}
+
+
+  WLOG  choose an arbitrary point $A\in \E^2$,
+since $ArA$ then there exists $F\in \G$ such that
+$F(A)=A$. Hence $F$ is identity.  This follows from the lemma:
+
+
+  \begin{lm}
+If $F$ is an isometry with a fixed point
+such that
+sends any point to the equivalent point,
+then  $F={\rm identity}$.
+ \end{lm}
+
+ Let $F$ be an arbitrary isometry such that
+       \begin{equation*}
+\hbox{for an arbitrary point $D$}\,\,
+      DrF(D)\,.
+\end{equation*}
+
+
+
+One can prove that $F\in\G_r$. Indeed 
+choose an arbitrary point $D$.
+Since $DrF(D)$, thus there exists an isometry
+$g\in \G$ such that $F(D)=g(D)$. 
+ Due to the lemma $g^{-1}\circ Fi=identity$, i.e. $F=g$.
+
+Thus we see that the set $\G$ is a group.
+
+ It remains to  prove the lemma.
+Let $A$ be a fixed point of the isometry $F$,
+and $BrF(B)$ for every point $B$. Consider
+the domain $O_{\delta\over 2}(A)$. 
+For an arbitrary
+point $X$ in this  domain $F(X)$ belongs to the domain too,
+since $F$ is isometry, and $F(A)=A$. Let $Y=F(X)$.
+Then $YrX$, but the distance between these points is less than 
+$\delta$. Hence $F(X)=X$.  We proved that $F$ is identity in
+the interior of the disc.  Show that this is true for an arbotrary
+point $X$. Conisder on the ray $AX$ an arbitrary point $B$
+which is insider the disc $O_{\delta\over 2}(A)$.
+Isometry sends line to the line, and rays to the rays, and
+points $A$ and $B$ remain intact under the action of isometry
+  $F$.  Hence $F(X)=X$.
+
+\subsection{Properly discontinuous and uniformly 
+discontinuous action}
+   We say that group $\G$ acts on manifold $M$ {\it properly discontinuous}
+if for arbitrary compact $K\subset M$, if the equation
+           \begin{equation*}
+     g\colon   K\cap g(K)\not=\empty                
+           \end{equation*}
+has only finite number of solutions.
+
+\smallskip
+
+  In the case if $M$ is provided with metric,
+    we say that group $\G$ acts on manifold $M$ {\it uniformly 
+discontinuous} if there exists $\delta$ such that $\delta>0$
+and for every point $A\in M$,
+           \begin{equation*}
+        d(A, g(A))\leq \delta \Rightarrow g={\rm identity}
+            \end{equation*}
+
+
+\begin{thm}
+For manifold with metric these two definitions are equivalent.
+  Metric is iniformly discontinuos if and only if it is properly
+discontinous
+\end{thm}
+
+\begin{proof}
+ Let group $\G$ acts on manifold $M$ with metric properly discontinous.
+  Show that its action is iniformly discontinuous.
+  Pick an arbitrary point $A\in M$
+\end{proof}
+
+
+\begin{lm} Let $\G$ be uniformly discontinuous
+subgroup of isometries, then
+an  isometry $F\in \G$ is identity if it
+has at least one fixed point    
+\end{lm}
+
+
+ \begin{lm}(Chasles' lemma)
+Let $F$ be an isometry of $\E^2$.
+  Then  the following dichotomy is obeyed:
+
+ $F$ preserves orientation, and
+ $F$ is rotation, i.e. there exists a point $O$ such that
+   for an arbitrary point $B$
+         $$
+     F(B)=A+{\rm Rot}_\varphi(AB)
+         $$             
+or
+
+  $F$ changes the orientation, and there exist a line $\bf l$,
+and a vector $\N$ directed along this line 
+         such that for arbitrary point $B$
+           $$
+F(B)={\rm Reflect}_{\bf l}(B)+\N
+           $$
+
+\end{lm}
+
+These two lemmas imply the Theorem:
+
+  \begin{thm}
+   \end{thm}
+We say that the subgroup $\G$ of isometries
+is {\it properly discontinuous} if for an arbitrary
+compact set $K$ 
+the equation
+       $$
+F\colon\,\, F\in\G, K\cup F(K)\not=\empty
+       $$
+
+there exist only finite number of
+isometries in $\G$ such that 
+\begin{lm} If $F$ belongs to 
+\end{lm}
+
+
+These definitions are equivalent.
+Indeed let $\G$ be properly discontinuous.
+
+
+ lee d $g\in \G$
+such that $g(F(D))=D$, i.e. $F=g^{-1}$.
+Due to the lemma $g\circ F={\rm identity}$, i.e. 
+
+it follows from this lemma that the set $\G$ contains all 
+isometries which send 
+isometries which preserve relation $r$ Indeed let $H$ be an arbitrary $r$-isometry,
+ 
+
+
+ 
+One can see that $\G_r$ is subroup of isometries.
+
+
+
+
+
+  We define the action of group $\G=\G_R$ on $\E^2$
+in the following way.
+
+
+
+ Let $\G$ be a set of isometries of $\E^2$ such that
+for arbitrary two points $A,B\in \E^2$
+      \begin{equation*}
+      ARB \Leftrightarrow 
+      \hbox{there exist $g\in \G$ such that $B=A^g$}\,,
+\end{equation*}
+i.e. 
+
+\subsection {Uniformly discontinuous groups on plane}
+
+  Let $\G$ be properly discontinbuous group acting on  $\E^2$.
+
+First suppose that
+ $\G$ does not possess transformations changing orientation.
+
+If $\G$ possesses at least one non-identity element, hence
+this element is a translation $T=T_\ac$ since rotations
+(presence of fixed points) and Chasles' transformation
+ (it changes  orinetation)
+are forbidden.   Choose a translation such that vector $\ac$
+has minimal length. It can be maximum two elements of minimal
+length\footnote{if there are three vectors in general position,
+then equivalent points will be very close to each other}. 
+Thus we come to groups
+
+  \begin{itemize}
+     \item
+   $\Z$ group of translation $\{T_{m\ac}\}$:
+           \begin{equation*}
+           \G\ni A\colon A(\x)=\x+m\ac\,, m=0,1,2,3,\dots
+           \end{equation*}
+     \item
+   $\Z\times \Z$ group of translation $\{T_{m\ac+n\b}\}$:
+           \begin{equation*}
+           \G\ni A\colon A(\x)=\x+m\ac+n\b\,,\,\, m,n=0,1,2,3,
+\dots
+           \end{equation*}
+\end{itemize}
+
+Now suppose that the group $\G$ possesses at least one
+element which does not preserve orientation, i.e.  Chales' e
+lement
+           \begin{equation}\label{chasles1}
+           \G\ni S\colon S(\x)=\x_{||}+\x_\perp+\c
+           \end{equation}
+where vector $\c=\c_{||}$. We have $S^2=T_{2\c}$,
+i.e. our grop possess subgroup $\{T_{n\ac\}}$
+or subgroup $\{T_{m\ac+m\b}\}$, where $\ac,\b$
+are linearly independent.
+
+  I-case. Group $\G$ is generated by trasnformations
+$S$ in \eqref{chasles1}  and translation $T_{\ac}$,
+i.e.  
+       $$
+  S^2=T_{2\c}=T_{m\ac}, m=0,1,2,3,4,\dots
+       $$    
+If $m$ is even, $m=2k$, then $ST_{-k\ac}$ is reflection,
+and it possess fixed points,
+Hence $m$ is odd, and we see that $\c={2k+1\over 2}\ac$.
+One can consider $\c={\ac\over 2}$ changing $S\mapsto ST_{k\ac}$.
+
+If we choose the basis ${\e,\f}$ such that
+  $\e$ is parallel to the axis of Chasles' reflection, and
+$\f$ is orthogonal to the axis of Chasles' reflection, then
+we come to
+
+Thus we see that
+       group $G$ is equal to
+       \begin{equation*}
+ \G \ni A\colon\,\, A(x\e+y\f)=\left(x+{m\over 2}\right)\e+
+           (-1)^my\f
+      \end{equation*}
+
+
+  Now we consider the second case when
+  group $\G$ possesses subgroup $\{T_{m\ac+n\b}\}$.
+
+  Show that in this case $\ac$ and $\b$ have to be orthogonal
+to each other. In the same way like above we conclude that
+Chasles' element is reflection with respecto to axis directed
+along $\ac$ and translation on the vector $\ac\over 2$.
+
+Now notice that
+        \begin{equation*}
+         S\circ T_{m\b}=T_{m\b'}\circ S\,,\quad
+   {\rm where}\,\, \b'=\b_{||}-\b_\perp
+         \end{equation*}
+and
+        \begin{equation*}
+         S\circ T_{m\b}\circ S=T_{m\b'}\circ T_{\ac}
+         \end{equation*}
+This implies that vector $\b$ has to be parallel to $\ac$
+or orthogonal (not to priduce too dense lattice of 
+equivalent points.)
+
+  
+
+\section{Main statement}
+
+\begin{thm}
+Let  $(M,G)$ be locally Euclidean $2$-dimensional manifold
+in stronger sense, i.e. both conditions
+\eqref{loceuclid} and \eqref{stronglyloceuclid} are obeyed.
+
+
+Then  
+\end{thm}
+
+  We prove this Theorem in three steps.
+
+  I-st step. We will construct surjection  $\pi\colon \E^2\to M$
+which is isometry for small distances (less than $r$)
+
+
+ \medskip
+
+   II-step On the base of this surjection we will 
+consider the subroup
+of isometries which preserve $\pi$
+              $$
+\G_\pi=\{F\colon \,\, F\,\, 
+ \hbox{is isometry and }\,\,\pi\circ F=\pi \}
+              $$ 
+and will prove that this group is uniformly discontinuous.
+
+\begin{proof}
+
+Then we will prove that the Riemannian manifold $M$ is isometric
+to the factor of $\E^2$ with respect to the gropu $\G_\pi$,
+i.e. $M$ is  plane $\E^2$ or cylindre, or  twisted cylinder,
+or torus, or Klein bottle.
+
+
+Choose two arbitrary points $D$ on $\E^2$
+and $\D$ on $M$ and conisder the covering 
+$\pi\colon\E^2\to M$
+such that $\pi(D)=\D$ and for every point $X\in \E^2$
+ $\pi(X)$ is defined in the following way
+   
+Consider the vector $\X=OX$.
+
+Choose points $D=X_0,X_1,X_2,dots X_n=X$
+on the segment  $DX$ such that 
+the distance between these points is less than $r$,
+recurrently  define $F(X_i)$ for $i=0,1,2,\dots,n$.
+
+First define $\pi(X_1)$ as a point on manifold $M$
+with coordinates $u_\D=(X_1)_1, v_\D=(X_1)_2$
+where  $(u_\D,v_\D)$ are Euclidean coordinates
+adjusted to the point $\pi(D)=\pi(X_0)=\D$
+(see section\label{localeuclidgeometry}) , and 
+$\left((X_1)_1, (X_1)_2\right)$ are components
+of the vector $DX_1$, then recurrently:
+if we already have  defined $\pi(X_i)$ for point $X_i$
+($i=1,2,\dots,n-1$)
+we define $\pi(X_{i+1})$ as a point on manifold $M$
+with coordinates 
+          $$
+ u_{X_i}=(X_{i+1})_1-(X_{i})_1, 
+v_{X_i}=(X_{i+1})_2-(X_{i})_2\,,
+              $$
+where  $(u_{X_i},v_{X_i})$ are Euclidean coordinates
+adjusted to the point $X_i$ and 
+$\left((X_{i+1})_1-(X_{i})_1, (X_{i+1})_2-(X_{i})_2\right)$ 
+are components
+of the vector $X_i X_{i+1}$.
+
+One can see that function $\pi$ is well defined
+on all the plane, its value does not depend on
+on a choice of partition 
+$O=X_0,X_1,X_2,dots X_n=X$.
+\end{proof}
+
+
+One can show that the map $\pi\colon \E^2\to M$
+preserves small distances:
+                \begin{equation*}
+        d(\varphi(A),\varphi(B))=d(A,B)\,,\quad
+    {\rm if}\,\, d(A,B)<r
+              \end{equation*}
+(here as always $r$ is parameter which defines locality
+of geometry on $M$ (see \eqref{stronglyloceuclid}))
+
+This is evident for points which are at the distance
+$<r$ from initial pointi $D$, and one can prove this recurrently
+for arbitrary close point $A,B$ considering partitions
+  $D=A_0,A_1,\dots,A_n=A$ and
+  $D=B_0,B_1,\dots,B_n=B$  and `small' trapecies
+ $A_iB_iB_{i+1}A_{i+1}$. 
+
+(see details in {Shaf})
+One can see that the map $\pi$ is surjection.               
+
+Prove it. Let $\B$ be an arbitrary point on $M$.
+Consider the set of points  $\B_0\B_1\B_2\dots\B_n$
+such that $\B_n=\B$ and the distance between points
+is less tham $r$. Thus we will see recurrently that all 
+these points  are covered by $\pi$.
+
+
+  Choose an arbitrary point $\B\in M$.
+
+Now we will conisder a group $\G$ and will show
+that 
+        $$
+   M=\E^2\backslash \G
+        $$
+We define this group as a group of isometries
+which preserve the covering map $\pi$, i.e.
+Consider an arbitrary isometry $F$ of $\E^2$.
+We say that isometry $F$ belongs to group $\G$
+for arbotrary point $D\in \E^2$
+
+     \begin{equation*}
+	\pi\left(F\left(D\right)\right)=     
+\pi\left(D\right)\,,
+     \end{equation*}
+i.e.     
+\begin{equation*}
+\G=\{\hbox {isometries $F$ of $\E^2$  such that}\,\, 
+\pi\circ F\equiv\pi\}
+     \end{equation*}
+One can see that this is a group.
+We still now nothing about the group $\G$,
+except that it possesses identity element.
+Hovever we can easy to prove that
+this group is
+uniformly discontinuous.
+
+Let  $F\in \G$ be an arbitrry non-identical element in $\G$
+\footnote{notice that we still know nothing
+does this element exist or no.},
+i.e  there exists $B\in \E^2$ such that $B'=F(B)\not=B$.
+
+      Suppose that  $d(B,B')<r$. Consider on manifold
+ $M$ points $\B=\pi(B)$ and $\B'=\pi(B')$.
+ Then due to the properties of surjection
+  $\pi$, $d(\B,\B')<r$ also, i.e. the point
+  $\B'$ belongs to the chart $(u_\B,v_\B)$. 
+$\pi$ is local bijection, hence $\B\not=\B'$.
+On the other hand $\B=\B'$ since $F\in \G$.
+  Contradiction. 
+
+\begin{thm}
+The surjection $\pi$ is a covering. The group
+$\G$ acts freely on the preimages $\pi^{-1}(\D)$.
+\end{thm}
+
+ 
+
+ Consider preimages of the  point $\B\in M$.
+
+
+
+
+  Let $\{B_i\}$ be a set of the points such that
+            $$
+  \hbox{for every $B_i$}\,\,   \pi(B_i)=\B
+            $$
+This set possesses at least one point. 
+
+{\bf Exercise}
+
+Consider 
+
+\end{document}
+
+
+
+
+
+
+\begin{thm}  $\G$ is subgroup of transformations.
+\end{thm}
+
+\begin{lm}ioo
+\end{lm}
+
+\begin{lm}ioo
+\end{lm}
+
+
+  {\bf Exercise}  Let $H$ be an isometry such that
+      it sends equivalent points to the
+
+          
+     \centerline {Covering  $M\to \E^2$ }
+
+Pick an arbitrary point $D$ of $\E^2$ and an arbitrary point
+  $\cal D$ on $M$ and define a map  
+$\Phi_0\colon \,,D_\vare\leftrightarrow {\cal D}_\vare$.
+
+  Now for an arbitrary point $K$ on $\E^2$ we  define $\Phi(K)$
+considering the continuaqy
+tion of the map  
+
+
+%\end{document}
+
+
+
+
+
+\bye

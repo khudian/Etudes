@@ -1,0 +1,52 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdftex 2017.1.17)  18 JUL 2017 17:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lagrgivental4.tex
+(./lagrgivental4.tex [1{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex
+.map}] [2] [3] [4] [5] [6]
+Overfull \hbox (36.43944pt too wide) detected at line 666
+\teni r[]\tenrm (\teni t\tenrm ) = \teni k \tenrm + \teni Ar[]\tenrm (\teni t\t
+enrm ) [] \teni '[]\tenrm (\teni t\tenrm ) + \teni Br[]\tenrm (\teni t\tenrm ) 
+[] \teni '[]\tenrm (\teni t\tenrm ) = \teni k \tenrm + \teni er[]\tenrm (\teni 
+t\tenrm ) [](\teni '[]\tenrm (\teni t\tenrm ) + \teni ^^N\tenrm ) \teni ;  e \t
+enrm = [] \teni ; [] ^^N \tenrm = []|
+
+\hbox(13.59839+6.85951)x391.46176, glue set - 1.0
+.\teni r
+.\hbox(2.22221+1.0)x4.40283, shifted 1.49998
+..\hbox(3.22221+0.0)x3.90283, shifted 1.0
+...\fiverm 0
+.\tenrm (
+.\teni t
+.\tenrm )
+.etc.
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmti10!
+Missing character: There is no € in font cmti10!
+Missing character: There is no ™ in font cmti10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+[7] )</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb>
+Output written on lagrgivental4.pdf (7 pages, 179384 bytes).
+PDF statistics:
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

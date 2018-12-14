@@ -1,0 +1,134 @@
+
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+{\tt Letter of Sasha Borovik, 24 November 2018}
+
+{\tt on problem of 101 coins}
+
+\m
+
+
+  So everything boils down to a statement about
+natural numbers:
+ 
+{\it
+
+
+
+
+We are given 101 natural numbers, and after removal of any one of them
+from the list the remaining numbers can be redistributed in two groups of 50
+numbers each in such a way that the sum of numbers in each group is the
+same. Prove that  all  numbers are equal.
+
+}
+
+{\sl Here is a re-write of the solution suitable for junior
+school kids.}
+
+
+
+After removal of any of numbers the sum of the remaining
+numbers is
+even. Hence all numbers have the same parity: either they
+are all
+even, or they are all odd. In the first case, divide all
+numbers by 2.
+In the second case, subtract 1 from all numbers. In both
+cases we get
+the same problem, but with smaller numbers, and this
+continues until
+one of the numbers is 0. If numbers are all zero, we are
+done. Assume
+that there is a non-zero number left. Notice that we can
+no longer
+make further subtractions of 1, but only divisions by 2,
+and we
+continue them until some other number becomes odd. At this
+point,
+either removal of 0, or removal of that odd number creates
+100 numbers
+with the odd sum, a contradiction.
+
+
+{\sl Ideologically this is a hidden calculation in base 2
+arithmetic (this
+is why 2-adic numbers appeared  in  Karabegov's
+arithmetic (this
+is why 2-adic numbers appeared in  Karabegov's
+ beautiful  solution),
+alike the Russian Peasants' Multiplication or  Russian
+Peasants'
+Greatest Common Divisor.
+ 
+ Pedagogically, this is a nice example of the use of
+ abstraction: in
+ the original formulation with coins, the problem is next
+ to imposible
+ for a schoolchild -- you cannot subtract 1 from the value
+ of a coin,
+ it is called debasement of the coinage and, I am afraid,
+ is likely to
+ remain a criminal offence in this country. It helps to
+ show  to a
+ child that he/she can forget about coins 
+ and get freedom of action --
+ the child will be likely to look for this freedom in other
+ problems as well.
+ 
+  Historically, in my previous incarnation I had a chance to
+see, and
+participate in, creation of mathematical olympiad problems
+-- this was
+the same kind of process as the one demonstrated to us by
+Hovik. Thanks to Hovik, I had a chance to revive sweet memories
+of my younger
+years.
+Alas, nostalgia is not what it used to be ...
+ 
+
+}
+
+
+Best wishes -- Sasha
+\bye

@@ -1,0 +1,141 @@
+
+   \magnification=1200
+   \baselineskip 17 pt
+% 18 November 2012.
+%I began this file two years ago, Now I add the pencil...
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t  {\tilde}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+\def\vare{\varepsilon}
+
+    \centerline {\bf Brackets on $T^*M$ and $\Pi T^*M$ for pedestricans. }
+  I would like to deduce formulae for Poisson brackets odd and even using
+  mainly their invariance.
+  
+  Let $M$ be a manifold with local coordinates $x^i$.
+  It is illuminating from very beginning suppose that coordinates have an arbitrary parity
+  $p(x^i)=p(i)=0,1$, i.e. $M$ is a supermanifold. Let $x^*_i$ be coordinates
+  in the fibre. Cooridnates $x^*_i$ have the same parity as $x^i$ for cotangent bundle $T^*M$
+  and they have opposite parity for $\Pi T^*M$,
+                      $$
+                      p(x_i^*)=p(x^i)+\vare\,,
+                      $$ 
+ where $\vare=0$ for $T^*M$ and $\vare=1$ for $\Pi T^*M$.
+                                            Under changing of coordinates $x^i=x^i(x^{i'})$
+                 $$
+      x^*_i={\p x^{i'}(x)\over \p x^i}x^*_{i}=x^{i'}_{i}x^*_{i'}           
+                 $$
+  
+  Write down bracket $[F,G]$ of two functions, bilinear combination of first derivatives.
+    This is invariant at least for linear transformations at least in the case when all coordinates are even. Hence:
+                         $$
+                     \left[F(x,x^*), G(x,x^*)\right]=
+                     (-1)^{A(F,G,i)}{\p F(x,x^*)\over \p x^i} 
+                     {\p G(x,x^*)\over \p x^*_i}
+                             +   
+                             (-1)^{B(F,G,i)}{\p F(x,x^*)\over \p x^*_i}
+                     {\p G(x,x^*)\over \p x^i}\,,
+                     \eqno (1.2)
+                         $$
+                         where $A=A(F,G,i)$, $B=B(F,G,i)$ are functions on parity of
+                         $F,G$ and $i$.
+We will find conditions on sign factors $(-1)^A, (-1)^b$
+which are put by invariance of this expression under coordinate transformation (1).
+
+Under arbitrary coordinate transformation (1.1) we have that
+               $$
+    {\p \over \p x^{i'}}={\p x^{i}(x)\over \p x^{i'}}{\p \over \p x^{i}}+
+    {\p x_i^*\over \p x^{i'}}{\p\over \p x^*_i}=
+            x^{i}_{i'}{\p \over \p x^{i}}+{\p\over \p x^{i'}}
+            \left(x^{k'}_i x^*_{k'}\right){\p\over \p x^*_i}=
+                    $$
+                    $$
+            x^{i}_{i'}{\p \over \p x^{i}}+
+            x^m_{i'}x^{k'}_{mi} x^d_{k'}x^*_d{\p\over \p x^*_i} 
+               $$
+and
+                $$
+{\p \over \p x^*_{i'}}=
+{\p x^*_{i}(x,x^*)\over \p x^*_{i'}}{\p \over \p x^*_{i}}=
+{\p \over \p x^*_{i'}}\left(x^{m'}_{i}x^*_{m'}\right){\p \over \p x^*_{i}}
+=(-1)^{(p(i)+p(i'))p(i')}x^{i'}_i{\p \over \p x^*_{i}}\,.
+                $$
+
+  We apply these formulae to equation (2). What is a condition that (2) does not change 
+  under an arbitrary transformation.
+  
+  First note that an arbitrary transformation is a combination of linear transformation and a transformation
+  which has identical differential (i a given point). 
+  We first study restrictions which follows from the fact that equation (2) does not change under 
+  linear transformation then we study special transformation.
+  
+Calculations imply the following answer:
+  
+  
+  1.  Invariance under linear transformation implies that sign functions $A,B$ obey the following conditions:
+                 $$
+                 \cases
+                 {
+                 A(F,G,i)=A_0(F,G)+p(i)\left(p(F)+\varepsilon \right)\cr
+                 B(F,G,i)=B_0(F,G)+p(i)\left(p(F)+1 \right)\cr
+                 }
+                 $$
+and invariance under special  transformations implies that
+               $$
+               B_0(F,G)=
+               \cases
+               {A_0(F,G)+1\,,\hbox {if $\varepsilon=0$, i.e. in the case of $T^*M$}
+                \cr
+                A_0(F,G)+F \,,\hbox {if $\varepsilon=1$, i.e. in the case of $\Pi T^*M$}
+               }
+                 $$
+We see that even Poisson bracket has the appearance:
+               $$
+                     \left[F(x,x^*), G(x,x^*)\right]_0=
+                      (-1)^{A_0(F,G)+iF}
+                     \left(
+                     {\p F(x,x^*)\over \p x^i}
+                     {\p G(x,x^*)\over \p x^*_i}
+                     -{\p F(x,x^*)\over \p x^*_i}
+                     {\p G(x,x^*)\over \p x^i}
+                           \right)\,,
+                     \eqno (1.4)
+               $$               
+and odd Poisson bracket (Schouten-Butin-antibracket,,,,) hast eh appearance:
+        $$
+            \left[F(x,x^*), G(x,x^*)\right]_1=
+                      (-1)^{A_0(F,G)+iF+i}
+                     \left(
+                     {\p F(x,x^*)\over \p x^i}
+                     {\p G(x,x^*)\over \p x^*_i}
+                     +(-1)^F{\p F(x,x^*)\over \p x^*_i}
+                     {\p G(x,x^*)\over \p x^i}
+                           \right)\,,
+                     \eqno (1.5)
+        $$
+Expression (1.4) is well-defined on $T^*M$ and expression $\Pi T^*M$ is well-defined
+on $\Pi T^*M$.
+  
+Further restriction on sign function $A_0(F,G)$  follow from derivations....antisymm. 
+  \bye

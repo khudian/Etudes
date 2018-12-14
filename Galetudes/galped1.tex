@@ -1,0 +1,272 @@
+
+
+
+
+\magnification=1200 \baselineskip=14pt
+
+
+\def\p {\partial}
+\def \D {\Delta_{d{\bf v}}}
+\def \Ds  {\Delta^{\#}}
+\def\t{\tilde}
+\def\s {\sigma}
+\def\vare {\varepsilon}
+\def\L {\Lambda}
+\def\Darboux {$z^A=$  $x^1,\dots,x^n$, $\theta_1,\dots,\theta_n$}
+\def\a{\alpha}
+\def\O{\Omega}
+\def\d{\delta}
+\def\dv  {{d{\bf{v}}}}
+\def\A {{\cal A}}
+\def\R {I\!R}
+\def\t {\tilde}
+
+
+             \centerline {Cubic and quadric equations; Galois theory for pedestrians.}
+
+{\it This text is written on the base of the book of A. Khovansky}
+
+ We suppose that Galois group exists. THis is not trivial.... 
+
+   We suppose that the main field is a field of characteristic
+   $0$ which possesses all roots of unity.
+which possesses all roots of unity.
+
+ {\bf Proposition} Let $A$ be an algebra over field $K$,
+and let $G$ be a finite 
+commutative group acting on this algebra.
+
+  Then every element $x$ of the algebra $A$
+can be represented as a sum of elements $w_1,\dots,w_k$
+such that for every $w$
+
+Then there exist 
+ basis 
+
+
+
+
+
+
+
+
+
+
+
+\centerline {Calculations for cubic equation}
+
+It is conveniuent to consider the equation
+   $x^3+px+q=0$ with
+       $$
+     \matrix
+        {
+x_1+x_2+x_3=0\cr
+x_1x_2+x_2x_3+x_3x_1=p\cr
+ x_1x_2x_3=-q\cr
+        }
+       $$
+We introduce Lagrange variables
+       $$
+     \matrix
+        {
+w_0=x_1+x_2+x_3\cr
+w_I=x_1+\vare x_2+\vare^2 x_3\cr
+w_{II}=x_2+\vare x_1+\vare^2 x_3\cr
+        }\qquad (\vare=e^{2\pi i\over 3})\,.
+       $$
+$w_0=0$. We have
+  $$
+     \matrix
+        {
+w_0^3=0\cr
+u=w_I^3=x_1^3+x_2^3+x_3^3+3\vare(x_1^2x_2+x_2^2x_3+x_3^2x_1)+
+              3\vare^2(x_1x_2^2+x_2x_3^2+x_3 x_1^2)+6x_1x_2x_3\cr
+v=w_{II}=x_1^3+x_2^3+x_3^3+3\vare^2(x_1^2x_2+x_2^2x_3+x_3^2x_1)+
+              3\vare(x_1x_2^2+x_2x_3^2+x_3 x_1^2)+6x_1x_2x_3\cr
+       }
+       $$
+Hence
+      $$
+u+v=2(x_1^3+x_2^3+x_3^3)+3\vare(1+\vare)(x_1^2x_2+\dots)+12x_1x_2x_3
+      $$
+$\dots$ means all permutations.Since
+   $$
+a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-ac-bc)\,,
+   \eqno (*)
+   $$
+$w_0=0$ and $\vare(1+\vare)=-1$, hence 
+        $$
+u+v=6x_1x_2x_3
+-3\left(
+  x_1x_2(-x_3)+x_1x_3(-x_2)+x_2x_3(-x_1)
+  \right)+12x_1x_2x_3=27x_1x_2x_3=-27q\,,
+        $$
+       $$
+u-v=3(\vare-\vare^2)(x_1^2x_2+x_2^2x_3+x_3^2x_2)+
+    3(\vare^2-\vare)(x_1x_2^2+x_2x_3^2+x_3x_2^2)=
+       $$
+       $$
+   3(\vare-\vare)^2
+             \left(
+      x_1x_2(x_1-x_2)+x_2x_3(x_2-x_3)+x_3x_1(x_3-x_1)\,.
+           \right)
+       $$
+and
+     $$
+(u-v)^2=9(\vare-\vare^2)^2\left[x_1x_2(x_1-x_2)+x_2x_3(x_2-x_3)+
+x_3x_1(x_3-x_1)\right]^2=
+     -27\left[K+L\right]\,,
+     $$
+where
+    $$
+K=x_1^2x_2^2(x_1-x_2)^2+x_2^2x_3^2(x_2-x_3)^2+x_3^2x_1^2(x_3-x_1)^2\,,
+     $$
+     $$
+  L=2x_1x_2x_3\left[x_1(x_1-x_2)(x_3-x_1)+x_2(x_1-x_2)(x_2-x_3)+
+    x_3(x_2-x_3)(x_3-x_1)\right]\,.
+    $$
+using  equation (*) and  fact that $x_1+x_2+x_3=0$ we see that
+    $$
+K=x_1^2x_2^2(x_1+x_2)^2+x_2^2x_3^2(x_2+x_3)^2+x_3^2x_1^2(x_3+x_1)^2-
+             4(x_1^3x_2^3+x_2^3x_3^3+x_3^3x_1^3)=\,,
+    $$
+  $$
+3x_1^2x_2^2x_3^2-4(x_1x_2+x_2x_3+x_3x_1)
+(x_1^2x_2^2+x_2^2x_3^2+x_3^2x_1^2-x_1^2x_2x_3-x_1x_2^2x_3-x_1x_2x_3^2)-
+12x_1^2x_2^2x_3^2
+  $$
+    $$
+-9x_1^2x_2^2x_3^2-4(x_1x_2+x_2x_3+x_3x_1)
+      \left[(x_1x_2+x_2x_3+x_3x_1)^2-3(x_1^2x_2x_3+x_1x_2^2x_3+x_1x_2x_3^2)
+      \right]=
+        $$
+        $$
+   =-9x_1^2x_2^2x_3^2-4(x_1x_2+x_2x_3+x_3x_1)^3=-9q^2-4p^3\,.
+    $$
+and 
+    $$
+L=2x_1x_2x_3\left[x_1(x_1-x_2)(x_3-x_1)+x_2(x_1-x_2)(x_2-x_3)+
+    x_3(x_2-x_3)(x_3-x_1)\right]=2x_1x_2x_3M\,.
+    $$ 
+with
+    $$
+M=x_1(x_1-x_2)(x_3-x_1)+x_2(x_1-x_2)(x_2-x_3)+
+    x_3(x_2-x_3)(x_3-x_1)=
+    $$
+      $$
+   \left(-x_1^3+x_1(x_2+x_3)-x_1x_2x_3\right)+
+   \left(-x_2^3+x_2(x_1+x_3)-x_1x_2x_3\right)+
+   \left(-x_3^3+x_3(x_1+x_2)-x_1x_2x_3\right)=
+      $$
+    $$
+-2(x_1^3+x_2^3+x_3^3)-3x_1x_2x_3=-9x_1x_2x_3
+    $$
+since $x_1+x_2+x_3=0$. Hence
+    $$
+L=2x_1x_2x_3M=-18x_1^2x_2^2x_3^2=-18q^2\,.
+    $$
+We come to
+     $$
+(u-v)^2=-27(K+L)=-27(-9q^2-4p^3-18q^2)=27(27q^2+4p^3)\,.
+     $$
+Finally we have
+          $$
+    \cases
+      {u+v=w_I^3+w_{II}^3=-27q\cr
+        u-v=w_I^3-w_{II}^3=\pm 27\sqrt {q^2+{4p^3\over 27}}
+         }
+          $$
+  or:
+      $$    \cases
+        {
+w_0=x_1+x_2+x_3\cr
+w_I=x_1+\vare x_2+\vare^2 x_3\cr
+w_{II}=x_2+\vare x_1+\vare^2 x_3\cr
+        }\qquad (\vare=e^{2\pi i\over 3})\,,\qquad
+{\rm with}\,\,  
+           \cases
+      {
+       w_I^3+w_{II}^3=-27q\cr
+       w_I^3-w_{II}^3=\pm 27\sqrt {q^2+{4p^3\over 27}}
+         }
+      $$
+One can easy to solve the system of linear equations. 
+E.g. adding first equation mulitplied by $\vare^2$ with second and third
+we come to the answer for $x_3$ and so on:
+        $$
+    \matrix
+        {
+w_{I}+\vare ^2 w_{II}+w_0=3x_1\cr
+w_{II}+\vare^2 w_{I}+w_0=3x_2 
+\vare ^2 w_0+w_1+w_2=3x_3\cr
+}
+        $$
+  On the other hand we have first to answer at what extend of uncertainty
+the numbers $w_I,w_II$ are defined by the equation above?
+
+
+Hence
+               $$
+   \cases
+       {
+   x_1={w_I+\vare^2 w_{II}\over 3}\cr
+   x_2={w_{II}+\vare^2 w_I\over 3}\cr
+   x_3={(w_I+w_{II})\vare  \over 3}\cr
+        }\,,\quad {\rm with}\quad
+         \cases
+      {
+       w_I^3+w_{II}^3=-27q\cr
+       w_I^3-w_{II}^3=\pm 27\sqrt {q^2+{4p^3\over 27}}
+         }
+         $$
+i.e.
+             $$
+       \cases
+            {
+          w_I^3=27\left(-{q\over 2}+ 
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+          w_{II}^3=27\left(-{q\over 2}- 
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+             }\,\,{\rm or}\,\, 
+                \cases
+            {
+          w_I^3=27\left(-{q\over 2}+ 
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+          w_{II}^3=27\left(-{q\over 2}- 
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+             }
+               $$
+(We suppose that the branch of function $\sqrt {}$ is chosen)
+These equations define $w_I,w_{II}$ not uniquely. There are six solutions:
+                  $$
+                   \matrix
+                  {
+    w_I=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+    w_I=3\vare\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+    w_I=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+    w_I=3\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+    w_I=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+    w_I=3\left(-{q\over 2}-
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\,,\,
+    w_{II}=3\left(-{q\over 2}+
+       \sqrt {{q^2\over 4}+{p^3\over 27}}\right)\cr
+                     }
+                  $$ 
+
+
+\bye 

@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Reduced zeta-function}{3}
+\contentsline {section}{\numberline {2}How to calculate number of zeros.}{4}
+\contentsline {subsection}{\numberline {2.1}Representations of formulae \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 0.3\hbox {}\unskip \@@italiccorr )}} in $p$-adic numbers}{5}
+\contentsline {section}{\numberline {3}Teichmuller embedding of $F_{p^r}$ in unramified extension}{7}

@@ -1,0 +1,110 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \GG{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def\o {\omega}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+\def\pt{{\bf }}
+
+\centerline{    {\bf Linear projective and... connections}}
+
+\medskip
+
+
+    {\sl   When I was young I liked so much general constructions.
+    Now I realize that special ("singular") cases are often most important. More:
+     When we try to construct an object that describes a "general stuff" it is very useful to fix everything
+     that could be fixed \it {\bf canonically.}
+ \m
+
+     Here after explaining general nonsense we will consider one example of the application of this motto.
+   We try to define affine connection then after "tiding it up" we will come to linear connection, which is
+   expressed in terms of Chrsitoffel symbols.}
+
+
+\bigskip
+\centerline {${\cal x} 0$ \bf General definitions.}
+
+    First of all general non-sense. Let $P\to M$ be a principal fibre bundle over $M$
+    with structure group $G$. (We suppose that group $G$ has a right action.)   $G$-invariant connection is defined by the $G$-invariant distribution
+    of $n$-planes (horizontal planes) which are transversal to fibres.
+
+    $G$-invariant connection  defines global $1$-form $\Omega$. This $1$-form  by the following relations:
+
+   $\bullet$  it vanishes on horizontal plane:
+                        $$
+                      \Omega (p, \X)=0
+                      \eqno (0.1a)
+                        $$
+if  $\X$ is a horisontal vector.
+
+
+  $\bullet$
+    Let $\X\in \GG$ be an element of Lie algebra of the group $G$ and
+     let $\hat\X(p)$ be a vertical vector which is tangent to the curve $\gamma(t)=\pt (1+tX+dots)$
+    starting at the point $p$. Then
+                     $$
+               \Omega(p ,\hat\X)=\X\,.
+                   \eqno (0.1b)
+                    $$
+In other words it means that the value of the $1$-form $\Omega$ on the fundamental vector field $\hat \X(p)$ corresponding to vector $X\in \GG$ equals to the vector $X$.
+
+This $\GG$-valued $1$-form is ${\rm Ad\,}\G$-invariant since connection is $G$-invariant.
+                       $$
+                  \Omega(pg, R_g\X)=g\Omega(p,\X)g^{-1}\,.
+                       $$
+ We say that $p(t)$ is lifting of the curve  $x(t)$ if $\pi p(t)=x(t)$ and tangent vectors $\dot p(t)$
+are horizontal liftings of the tangent vectors $x(t)$.
+
+  How this looks in local coordinates:
+
+  Let $p_\a(t)$ be a local section of the fibre bundle $P\to M$ over domain $U_\a$
+  It defines trivialisiation, local coordinates
+                       $$
+  \varphi_\a\, U_\a\times G\to P\colon(x,g)\mapsto p_\a(x)g\,.
+                        $$
+  One can consider $\GG$ valued local $1$-form on the base $M$ corresponding to this coordinatisation: the section $p_\a(x)$ induces $1$-form 
+  $\omega_\a(x,\X)=dp^*a(x)\Omega$. If $X=X_{||}+X_\perp$
+
+\bye

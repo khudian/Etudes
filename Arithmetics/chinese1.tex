@@ -1,0 +1,92 @@
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+   If $(p_1,p_2\dots,p_n)$ are prime numbers then
+for every integers $(a_1,a_2,\dots,a_n)$ there exists $N$ such that
+   $N\equiv a_i (mod\, p_i)$, ($i=1,2,\dots n$).  
+This is famous Chinese residual Theorem.
+
+  If $(x_1,x_2,\dots x_n)$ are $n$ points on the line $\R$ then
+for every real numbers $(y_1,y_2,\dots,y_n)$ there exists polynomial
+   $P(x)$ such that $P(x_i)=y_i$, ($i=1,\dots,n$).
+In fact one can choose unique polynomial of order $\leq n$ obeying these
+conditions.  This polynomial is:
+                     $$
+P(x)=\sum_{i=1}^n 
+  {\prod_{m\not=i}(x-x_m)\over\prod_{m\not=i}(x_i-x_m) }y_i
+                     $$
+(We suppose that the points $x_1,\dots,x_n$ are distinct)
+
+E.g. for sets $(x_1,x_2,x_3)$ and $(y_1,y_2,y_3)$
+                     $$
+P(x)=
+ {(x-x_2)(x-x_3)\over (x_1-x_2)(x_1-x_3)}y_1+
+ {(x-x_1)(x-x_3)\over (x_2-x_1)(x_2-x_3)}y_2
+ {(x-x_1)(x-x_2)\over (x_3-x_1)(x_3-x_2)}y_3
+                     $$
+(we suppose that $x_1,x_2,x_3$ are distinct points
+
+{\it what happens if they are not dinstinct?})
+
+
+  One can see the striking resemblance between these two formulae
+  considering the following idea which revolutionased the mathematics
+of XX century. 
+  A commutative algebra (ring) can be considered as 
+algebra (ring)of functions on some set. An arbitrary integer $N$
+can be considered as a function on prime numbers with values in reminders.
+  Using this idea one can see the striking resemblance
+between the Chinese formula and Lagrange polynomial approximation formula
+
+  In the same way we can write:
+
+Let $N$ be ionteger. We consider a function
+ $N(p_i)=\hbox{remainder when divided on $p_i$}$
+ For example the number $N=124$ defines a function
+                     $$
+N(2)=0\,(mod\, 2)\,,
+\quad N(3)=1\,(mod\, 3)\,,
+N(5)=4\,(mod\, 5)\,,
+N(7)=5\,(mod\, 7)\,,
+N(11)=3\,(mod\, 7)\,,
+                     $$             
+  \bye

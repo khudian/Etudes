@@ -1,0 +1,30 @@
+This is TeX, Version 3.1415926 (TeX Live 2011) (format=tex 2011.7.3)  2 NOV 2013 15:15
+**dhl3.tex
+(./dhl3.tex [1] [2] [3] [4] [5] [6]
+Overfull \hbox (9.93716pt too wide) in paragraph at lines 639--642
+[]\tenrm [1] A. Ners-es-sian \tenit An-tibrack-ets and lo-cal-i-sa-tion of (pat
+h) in-te-grals  \tenrm arXix: hep-th/9305181,|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm [
+.\tenrm 1
+.\tenrm ]
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (19.46965pt too wide) in paragraph at lines 660--663
+[]\tenrm [4] home-page: maths.manchester.ac.uk/khudian/Etudes/Geometry/Dusterma
+at-Heckman|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm [
+.\tenrm 4
+.\tenrm ]
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+[7] )
+Output written on dhl3.dvi (7 pages, 28656 bytes).

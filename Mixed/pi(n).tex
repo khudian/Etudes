@@ -1,0 +1,72 @@
+
+ {\bf Theorem}
+
+           $\pi(n)\approx {n\over \log n}$
+
+
+
+Two years ago I obtained  empirical proof of this Theorem
+ considering $N!$ for large $N$ and using the fact that
+ for every primary $p$ $N!$ is divisible on $p^r$
+ where
+   $$
+  r\approx \left[N\over p\right]+\left[N\over p^2\right]+\dots
+  \approx {Np\over p-1}
+         $$
+Then considering integrals instead series we come to the "proof".
+It is very rough but I guess that the classic proof is founded on
+this remark.
+
+\smallskip
+
+Few days ago in the article about Erdos (The Mathematical Intelligence,
+{\bf 19}, 2, pp.38---48) I found the marvelous proof that blongs to Erdos.
+
+I will try to write here about his proof.
+
+  Denote by $\Pi (m,n)$ the product of primary numbers
+  that belong to the segment $[m,n]$ ($m<n$):
+                      $$
+                      \Pi(m,n)=\prod_{m\leq p\leq n} p
+                      \quad \hbox {where $p$ are prime numbers}
+                      $$
+
+  {\bf Lemma 0}.   $C^m_n\leq 2^{n-1}$ (at least for odd n)
+
+\medskip
+
+  {\bf Lemma 1}. If $2m>n-1$ then $\Pi(m,n)\leq C^m_n$.
+
+\medskip
+
+  {\bf Lemma 2}. $\Pi (1,n)<4^n$!!!.
+
+ From this Lemma it obviously follows that
+               $$
+          \pi(n)<{n\over \log_4 n}
+          $$
+
+\medskip
+
+  Lemma 2 belongs to Erdos and
+  {\it a brilliant idea, a suprising step
+     to prove it is} (from Math. Intell.) is the  content of Lemma 1.
+
+ the statement of Lemma 0 is trivial. If $n$ is odd then
+                  $$
+   C^m_n={1\over 2}(C^m_n+C^{n-m}_n)<{1\over 2}\sum C^k_n=
+         {1\over 2}2^n=2^{n-1}
+                   $$
+ The statement of lemma 2 is obvious as soon as it is formulated!
+
+ Now prove Lemma 2 by induction. For n=2 it is valid.
+
+ Let $\Pi (1,k)<4^k$ for all $k<n$. Prove for $k=n$.
+ If $n$ is even then $\Pi(1,n)=\Pi(1,n-1)$.
+ If $n=2q+1$ is odd then using inductive hypothesis and Lemma 1
+  we come to
+ $$
+ \Pi(1,n)=\Pi(1,q+1)\cdot\Pi(q+2,2q-1)<4^{q+1}C^{q+2}_{2q-1}<
+     4^{q+1}2^{2q-2}=4^{2q}\,.$$
+
+ \bye

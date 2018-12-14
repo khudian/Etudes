@@ -1,0 +1,117 @@
+\magnification=1200
+
+\def\r {\bf r}   \centerline {\bf Elementary Geometry and differential equations}
+\def\a{\alpha}
+   Consider the particle $P$ which moves along the circle
+   of the radius $R$ with constant angular velocity $w$:
+                        $$
+         x=R\cos (wt+C),\quad y=y_0\sin (wt+C)
+         \eqno (1)
+                         $$
+   The particle starts motion at the initial point  $A$ with coordinates
+                 $$
+   x=x_0=R\cos \a,\quad y=y_0=R\sin \a \eqno (2)
+   $$
+   and moves with constant speed
+                         $$
+                         v=wR
+                         \eqno (3)
+                         $$
+   Does there exist another trajectory  for the point $P$
+   starting  at the initial point $A$ such that
+   such that angular velocity  around the
+  initial point $O$ with coordinates $x=y=0$ is constant and
+  speed is constant too?
+
+   Yes there exists. To study this question apply differential equations.
+   It is convenient to use polar coordinates $r,\varphi$.
+   If $\bf r$ is the radius-vector with polar coordinates $r,\varphi$
+   then $x=r\cos\varphi, y=y\sin\varphi$.
+
+   Let $\r=\r(t)=(r(t),\varphi(t))$ be the trajectory of the particle $P$:
+   $\r(0)=(R,C)$.  Express anglular and linear velocities in polar coordinates:
+                    $$
+                    w=\dot\varphi,\quad
+                    v=\sqrt {\dot x^2+\dot y^2}=\dot r^2+r^2\dot\varphi^2
+                        $$
+  The condition that particle moves with constant angular velocity means that
+  $w=\dot\varphi^2$ is constant. Hence the condition that linear velocity is constant
+  too implies the differential equation:
+                         $$
+            \left({dr(t)\over dt}\right)+w^2r^2(t)=v^2
+                           $$
+We have to solve this differential equation with initial conditions (2)
+
+  Using the standard technique one can solve this differential equation:
+                            $$
+              {dr\over dt}=\sqrt {v^2-wr^2 }
+              \eqno ()
+                            $$
+                        $$
+              \int {dr\over \sqrt {v^2-wr^2 }}=\int dt,\quad
+                      {1\over w}\arcsin {wr\over v}=t+C
+                           $$
+                           $$
+                    r(t)={v\over w}\sin (wt+C_1),\quad
+                    \varphi(t)=wt+C_2,
+                        $$
+ where constants $C_1,C_2$ are defined by the initial conditions (2).
+             $$
+             \varphi(t)\big\vert_{t=0}=C_2=\a,\quad
+               r(t)\big\vert_{t=0}={v\over w}\sin C_1=R
+                        $$
+Returning to cartesian coordinates we see that
+               $$
+      x(t)=r(t)\cos \varphi(t)={v\over w}\sin (wt+C_1)\cos (wt+C_2)
+              $$
+               $$
+      y(t)=r(t)\sin \varphi(t)={v\over w}\sin (wt+C)\sin (wt+C_2)
+      $$
+Using the trigonometric formulae $2\sin x\cos y=\sin(x+y)+\sin(x-y)$,
+$2\sin x\sin y=\cos(x-y)-\cos(x+y)$ we can rewrite these formulae in the following way:
+           $$
+x(t)=r(t)\cos \varphi(t)={v\over w}\sin (wt+C_1)\cos (wt+C_2)={v\over 2w}
+          \left(2wt+C_1+C_2\right),
+               $$
+               $$
+      y(t)=r(t)\sin \varphi(t)={v\over w}\sin (wt+C)\sin (wt+C_2)
+           $$
+
+
+Surprisingly we come to solution which is different from ()
+
+
+
+  {\it Find the trajectory of  the point of the point $P$ which moves in the plane
+  with constant angular velocity $w$ around the point $O$with constant
+  pace $v$ and constant angular velocity $w$ around a fixed point
+  $O$on the plane which moves with
+   and with
+  constant velocity $v$. What will be its trajectory?)=}
+
+  \smallskip
+
+  The trivial answer is: it will be the circle with centre $O$
+  and with radius $R$ such that
+                        $$
+                                   v=wR\,.
+                         $$
+ But there is exactly one another case!!!
+ The circle with radius ${R\over 2}$
+ with centre in the point $O$.
+ In fact trivial solution is "ogibajushaja" of these solutions!
+
+ From the point of view of differential equations it is
+ following:
+ The diff.equation
+                    $$
+                      \cases
+                       {
+                       \dot x=\sqrt {1-x^2}\cr
+                          x(0)=1,\quad o\leq t\leq {\pi\over 2}\cr
+                          }
+                          $$
+               has exactly two solutions:
+            the first one $x(t)=1$,
+            the second one: $x(t)=sin t$.
+            \bye

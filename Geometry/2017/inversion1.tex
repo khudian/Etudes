@@ -1,0 +1,136 @@
+% I begin this version on 29 january 2017
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+{29 January 2017}
+
+\centerline  {\bf  Inversion and stereographic projection}
+
+
+
+\noindent {\it Vek zhivi, vek uchisj,}
+
+\noindent { \it durakom pomrjoshj}   
+
+\medskip
+
+      You know how I like stereoraphic projection, it has so 
+much beautiful properties, in particular 
+the property of transforming of rational points
+to rational ones. Today I learned that stereographic projection 
+is just the restriction of inversion!
+
+   In a more details:
+
+  Let $\varphi\colon S^n\backslash N\leftrightarrow \R^{n}$
+be a stereographic projection of unit sphere 
+without North pole $N=(0,.\dots,0,1)$,
+              $$
+     S^n\backslash N=\left\{x^i\colon\quad
+     \sum_{i=0}^n x^ix^i=1, x^0\not=1\right\}
+             $$
+ on the hyperplane 
+       $$
+   \R^n=\left\{x^i=u^i, i=1,\dots,n;\,\, x^0=0   \right\}\,.
+       $$ 
+  A point $\varphi(A)\in \R^n$ is stereopgraphic image of the point
+$A\in S^n$ if three points $N,A,\varphi(A)$ are incident 
+(belong to the same line).
+
+   This is remarkable map, in particular it has the property:
+               $$
+\hbox{point $\varphi(A)$ has rational coordinates if and only if
+the point $A$ has rational coordinates}
+          \eqno (\dagger)
+               $$
+\medskip
+
+
+
+Now consider the inversion  $\hat\varphi$ 
+of $\R^{n+1}$ with respect to the sphere
+$\tilde S$, such that the centre of this sphere is
+the north pole $N$ and 
+     equatorial circle  $S^{n-1}_{\rm equator}$
+   (points $x^0=0$ on $S^n$) belongs
+to this sphere:
+    One can see that the sphere $\tilde S$  is defined 
+by the equation
+             $$
+   (x^0-1)^2+\sum_{i=1}^n x^i x^i=2\,.
+\eqno (*)
+        $$
+The map $\hat \varphi$ has the following appearance:
+            $$
+\R^{n+1}\backslash \n\ni \x\,\,\,  
+    \hat\varphi(\x)=\n+{2\x-2\n\over |\x-\n|^2}\,,     
+           $$
+where $\n$ is a vector attaching origin to the North pole.
+The image of $S^n$ under inversion $\hat\varphi$
+is hyperplane, since
+$\hat\varphi$ is not define at vector $\n$.
+It is easy to check also that equatorial circle remains invariant.
+Using properties of inversion\footnote{$^{1)}$}
+{inversion maps circles and planes to circles
+and planes}  we come to the 
+
+  {\bf Fact}{\it
+             $$
+\hat\varphi_{_{S^n\backslash N}}=\varphi\,,
+             $$
+i.e. the restriction of  inversion  with respect 
+to the sphere (*) is stereographic
+projection $\varphi$}.
+
+
+Notice that for inversion $\hat\varphi$ condition ($\dagger$) holds.
+
+\bigskip
+
+
+
+  {\sl I always was little bit unhappy  that
+  there is always a problem when we consider
+stereographic map  $\varphi$ in Cartesian coordinates of embedding space.
+ The embedding of $\varphi$
+in inversion, $\hat \varphi$ makes us little bit happier.
+
+}
+\bye

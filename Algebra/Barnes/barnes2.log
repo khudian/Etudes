@@ -1,0 +1,75 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdftex 2011.7.3)  11 DEC 2015 20:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**barnes2.tex
+(./barnes2.tex
+Overfull \hbox (2.97281pt too wide) detected at line 82
+\teni ^^[[] \tensy ^^@ \teni ^^[[]\tenrm (\teni ^^[[] \tenrm + \teni ^^[[]\tenr
+m ) + \teni ^^[[]^^[[] ;  ^^[[] \tensy ^^@ \teni ^^[[] [] \tensy ^^@ \teni ^^[[
+]^^[[]^^[[]|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\teni ^^[
+.\hbox(4.8611+0.83334)x14.49323, shifted 1.49998
+..\seveni a
+..\sevenrm +
+..\seveni b
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tensy ^^@
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.etc.
+
+
+Overfull \hbox (50.39793pt too wide) detected at line 92
+[] [] |
+
+\hbox(13.5+8.5)x391.46176
+.\hbox(0.0+0.0)x0.0
+.\glue 1.66663
+.\vbox(13.5+8.5)x438.52644
+..\hbox(7.5+2.5)x438.52644
+...\glue(\tabskip) 0.0
+...\hbox(7.5+2.5)x438.52644, glue set 219.26323fil []
+...\glue(\tabskip) 0.0
+..\kern -12.0
+..\glue(\baselineskip) 2.0
+..\hbox(7.5+2.5)x438.52644
+...\glue(\tabskip) 0.0
+...\hbox(7.5+2.5)x438.52644, glue set 115.4644fil []
+...\glue(\tabskip) 0.0
+..\glue(\baselineskip) 2.0
+..etc.
+.\glue 1.66663
+.\rule(*+*)x5.0
+
+
+Overfull \hbox (50.25272pt too wide) detected at line 136
+\teni B\tenrm (\teni z\tensy j\teni a; b; c\tenrm ) = [] []  \teni :|
+
+\hbox(14.72734+9.50012)x391.46176
+.\teni B
+.\kern0.50172
+.\tenrm (
+.\teni z
+.\kern0.4398
+.etc.
+
+[1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )</us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
+/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on barnes2.pdf (1 page, 99599 bytes).
+PDF statistics:
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

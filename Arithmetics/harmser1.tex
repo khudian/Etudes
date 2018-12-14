@@ -1,0 +1,132 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+
+
+\centerline{\bf Harmonic series diverge. Concequences.}
+
+
+We mention here two problems for pupils, which are related
+strictly with the fact that harmonic series $s_n=1+{1\over
+2}+{1\over 3}+\dots+{1\over n}$ diverge, (more precisely
+$1+{1\over 2}+{1\over 3}+\dots+{1\over n}\approx \log n $).
+
+
+
+
+{\bf Problem 1} Put without a glue $N$ equal bricks on each other
+ such that the construction have maximum length  $L_N$.  Estimate
+ $L_N$.
+
+  Answer is little bit counter-intuitive:
+  $L_N$ tends to infinity if $N\to \infty$ (More precisely $L_N\approx \log N$). Show it.
+
+
+  \medskip
+
+ Suppose all the bricks have length $2$.
+ Consider series $\{x_1,x_2,x_3,\dots,x_N\}$, where
+where $x_k$ is $x$ coordinate of the $k$-th brick counting from
+the top.  The brick on the top does not fall, hence:
+                  $$
+              x_2-1\leq x_1\leq x_2+1
+                   $$
+The brick on the top and the next brick does not fall, hence:
+             $$
+             x_3-1\leq {x_1+x_2\over 2}\leq x_3+1
+             $$
+and so on:
+             $$
+       x_4-1\leq {x_1+x_2+x_3\over 3}\leq x_4+1,\,\,\,x_5-1\leq {x_1+x_2+x_3+x_4\over 4}\leq
+       x_5+1,\dots
+             $$
+            $$
+x_{k+1}-1\leq {x_1+x_2+x_3+\dots+x_k\over k}\leq
+x_{k+1}+1,\,\,\hbox{for every $1\leq k\leq N-1$}
+            $$
+We see that the construction has maximum length $L_N=x_N+1$ if:
+                $$
+x_2=1+x_1, x_3=1+{x_1+x_2\over 2},x_4=1+{x_1+x_2+x_3\over
+3},\dots, x_{N}=1+{x_1+x_2+x_3+\dots+x_N\over N}
+                $$
+Suppose $x_1=0$, then we one can see that
+           $$
+  x_2=1,x_3=1+{1\over 2},x_4=1+{1\over 2}+{1\over 3},\dots,
+  x_N=1+{1\over 2}+{1\over 3}+\dots+{1\over
+              N-1}
+           $$
+We see that the length of the construction is defined by harmonic series and it tends to $\infty$!
+
+{\bf Remark} By the way we come to identity which is not
+absolutely trivial:
+             $$
+ 1+{1+\left(1+{1\over 2}\right)+\left(1+{1\over 2}+{1\over 3}\right)+
+    \dots+\left(1+{1\over 2}+{1\over 3}+\dots+{1\over k}\right)\over
+    k}=1+{1\over 2}+{1\over 3}+\dots+{1\over k+1}
+             $$
+
+
+{\bf Problem 2}.  The ant is at the  the point $A$ on ribbon $AB$. Length of the ribbon is equal to
+$1km$.  Every second ant travels $1cm$ over the ribbon, then at the end of the second the length of the ribbon
+is increased on $1km$.  Show that ant will reach the point $B$. Estimate the time\footnote{$^*$}{On dit that
+this problem was suggested by A.D. Sakharov}
+
+ Here harmonic series interfere too!
+
+  Denote by $h_n$ the length of the ribbon which ant already passed.
+  (The length of the ribbon is increasing homogenously hence $h_n>n$).
+   After $k$ seconds the length of the ribbon becomes $(k+1)\Delta$ (where $\Delta=10^5$).
+   Denote by $\delta_n={h_n\over (n+1)\Delta}$.
+   The ant reaches the point $B$ on the ribbon when $\delta_N=1$.
+       One can see that
+                $$
+   \delta_{n+1}=\left(h_n+1\right)\cdot {(n+2)\over \Delta(n+1)}={h_n(n+2)\over \Delta(n+1)}=
+   \delta_n+{1\over\Delta( n+2)}
+                $$
+We see that
+                $$
+  1\approx \delta_N={1\over \Delta}\left(1+{1\over 2}+{1\over 3}+\dots+{1\over N+1}\right)\Rightarrow
+  N\approx e^{\Delta}
+                $$
+ So ant reaches the point $B$ after $e^\Delta$ seconds (it is much more than Universe time $10^{43}$)
+
+ \bye

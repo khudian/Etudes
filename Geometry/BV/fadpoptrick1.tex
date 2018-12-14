@@ -1,0 +1,244 @@
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\A {{\bf A}}
+\def\B {{\bf B}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\H {{\bf H}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\hl {{\hat \lambda}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\grad {{\rm grad\,}}
+\def\div {{\rm div\,}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+
+\def\s{\sigma}
+\def\vare{\varepsilon}
+\def\O{\Omega}
+\def\G {\Gamma}
+\def\GG {{\cal G}}
+\def\A  {{\bf A}}
+\def\o{\omega}
+\def\F {{\cal F}}
+\def\L {{\cal L}}
+\def\D {{\cal D}}
+\def\S {{\mathbf S}}
+\renewcommand{\SS}{{\Sigma}}
+%\renewcommand{\r}{{\rho}}
+\renewcommand{\l}{{\lambda}}
+%\newcommand{\x}{{\xi}}
+\def\d{\delta}
+\def\t{\theta}
+\def\pr {\prime}
+\def\hl{{\widehat\lambda}}
+\def\ad {{\rm ad}}
+
+\def\diff {{\rm diff}}
+\def\proj {{\rm proj}}
+\def\affin {{\rm proj}}
+\def\vertL {{\hat L^{\rm vert}}}
+\def\C {{\widehat C}}
+
+\newcommand{\bs}{{\boldsymbol{s}}}
+
+\newcommand{\rh}{{\boldsymbol{\rho}}}
+\newcommand{\Ps}{{\boldsymbol{\Psi}}}
+
+\newcommand{\der}[2]{{\frac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\lder}[2]{{\partial {#1}/\partial {#2}}}
+\newcommand{\dder}[3]{{\frac{\partial^2 {#1}}{\partial {#2}\partial {#3}}}}
+%\newcommand{\R}[1]{{\mathbb R}^{#1}}
+\newcommand{\RR}{\mathbb R}
+%\newcommand{\Z}{{\mathbb Z_{2}}}
+\newcommand{\ZZ}{{\mathbb Z}}
+
+\newcommand{\CC}{\mathbb C}
+\newcommand{\NN}{{\mathbb N}}
+
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+
+\theoremstyle{theorem}
+\newtheorem{thm}{Khimera}
+
+\numberwithin{equation}{section}
+
+
+\title{Geometry of Fadeev-Popov trick and BV formalism}
+\date{}
+
+
+
+\begin{document}
+\maketitle
+
+ \centerline {H.M. Khudaverdian}
+
+\centerline {\it The University of Manchester. School of Mathematics.}
+
+\bigskip
+
+  \centerline {Manhester  February 2018---2 }
+
+\bigskip
+
+\begin{abstract}
+{
+ I try to return to considerations in
+papers \cite{KhNers}, \cite{Khcmp2}... 
+
+  
+}
+
+\end{abstract}
+\bigskip
+   
+\tableofcontents
+
+
+\section {\bf Lecture I.  Elements of Fadeev -Popov trick}
+
+
+\subsection {Very elementary example}
+
+
+   Let $\rho(\r)$ be a function on $\E^2$ such that
+
+\begin{itemize}
+
+\item it is invariant with respect to rotation:
+             $$
+                \rho(\r)=f(r)\,.
+                 $$
+
+\item it increases rapidly:
+                  $$
+\int\rho(x,y)dx\wedge dy=2\pi\int_0^\infty f(t)tdt<\infty\,.
+                  $$
+\end{itemize}
+
+
+   Let $C$ be a curve beginning at origin, and
+going to infinity such that  for arbitrary positive number
+  $R$, every circle $x^2+y^2=R^2$ intersects the curve $C$
+exactly at one point.
+
+    Suppose the curve $C$ is defined by equation $F(x,y)=0$.
+We say that function $F$ is a gauge function.
+
+             Define function $B(x,y)$ such that
+                     \begin{equation*}
+         B(x,y)
+         \int_0^{2\pi}
+  \delta \left(\left(F(x^\varphi,y^\varphi)\right)\right)d\varphi=1\,.
+                     \end{equation*}
+ where
+               $$
+ \begin{pmatrix}
+         x^\varphi\cr
+         y^\varphi\cr
+ \end{pmatrix}
+         =
+ \begin{pmatrix}
+         \cos\varphi &-\sin\varphi\cr
+         \cos\varphi &\cos\varphi\cr
+ \end{pmatrix}
+ \begin{pmatrix}
+         x\cr
+         y\cr
+ \end{pmatrix}
+       =
+ \begin{pmatrix}
+     x\cos\varphi-y\sin\varphi\cr
+     x\sin\varphi+y\sin\varphi\cr
+ \end{pmatrix}
+               $$
+We see that function $B(x,y)$ is invariant with respect to rotation:
+          \begin{equation*}
+          B(x^\varphi,y^\varphi)=B(x,y)\,,\quad {\rm i.e.}\,\,
+      B(x,y)=B(r)
+          \end{equation*}
+Thus we have:
+              $$
+\int_{\bf E^2} \rho(x,y)dx\wedge dy=
+\int_{\bf E^2} 1\cdot  \rho(x,y)dx dy=
+\int_{-\infty}^{\infty}
+\int_{-\infty}^\infty 
+B(x,y) \rho(x,y)dx dy=
+                 $$
+                 $$
+         \int_0^{2\pi}
+\int_{-\infty}^{\infty}
+\int_{-\infty}^\infty d\varphi dx dy
+       \rho(x,y)
+             B(x,y) 
+  \delta \left(\left(F(x^\varphi,y^\varphi)\right)\right)d\varphi=
+              $$ $$
+         \int_0^{2\pi}
+\int_{-\infty}^{\infty}
+\int_{-\infty}^\infty d\varphi dx^\varphi dy^\varphi
+       \rho(x^\varphi,y^\varphi)
+             B(x^\varphi,y^\varphi) 
+  \delta \left(\left(F(x^\varphi,y^\varphi)\right)\right)=
+              $$
+              $$
+         \int_0^{2\pi}
+\int_{-\infty}^{\infty}
+\int_{-\infty}^\infty d\varphi dx dy
+       \rho(x,y)
+             B(x,y) 
+  \delta \left(\left(F(x,y)\right)\right)=
+              $$
+               $$
+         2\pi
+\int_{-\infty}^{\infty}
+\int_{-\infty}^\infty  dx dy
+       \rho(x,y)
+             B(x,y) 
+  \delta \left(\left(F(x,y)\right)\right)=
+              $$
+
+
+  here we have to recognise the density since
+it depends on function.......
+
+\end{document}

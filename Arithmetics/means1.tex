@@ -1,0 +1,402 @@
+
+\magnification=1200
+
+\def\G {{\Gamma}}
+\def\m{\medskip}
+
+\m
+ \centerline {\bf Mean arithmetic and mean geometric}
+\m
+   \centerline {Hovik Khudaverdian}
+
+\m
+
+  Let $a_1,\dots,a_n$ be non-negative real numbers.
+
+
+  Then one can consider the following two means:
+
+  Mean arithmetic:
+                 $$
+            A=A(a_1,\dots,a_n)={a_1+\dots+a_n\over n}
+                 $$
+and  mean geometric
+              $$
+        \Gamma=\root n\of {a_1\cdot a_2\cdot\dots\cdot a_n}
+              $$
+
+   One of the famous inequalities is
+   that
+         $$
+          A\geq \Gamma,\quad A=\G \iff  a_1=\dots=a_n
+          \eqno (0.1)
+         $$
+
+
+         \bigskip
+
+          \centerline   {\bf ${\cal x} 1$  The case of two numbers}
+
+\medskip
+It is most elementary case.
+
+  {\bf Problem 1.1.1} Prove the identity
+                 $$
+             (x-y)^2=(x+y)^2-4xy
+             \eqno (1.1a)
+                 $$
+\m
+
+   {\bf Problem 1.1.2} Show that it follows from this identity:
+            $$
+           (x+y)^2\geq 4xy
+           \eqno (1.1b)
+            $$
+
+\m
+
+   {\bf Problem 1.1.3} Prove the inequality (0.1) for $n=2$, i.e. for $a_1,a_2\geq 0$
+                $$
+             {a_1+a_2\over 2}\geq \sqrt a_1a_2,\quad  {a_1+a_2\over 2}= \sqrt a_1a_2  \iff a_1=a_2
+             \eqno (1.1c)
+                $$
+
+
+
+  Another proof:
+
+
+   Let $a_1,a_2$ be arbitrary non-negative numbers, $A={a_1+a_2\over 2}$ its mean arithmetic
+   and $\G=\sqrt {a_1a_2}$ its mean geometric.
+
+       Consider system of equations  (simultaneous equations)
+            $$
+            \cases
+              {
+     x+y=A,\cr xy=\G
+          }
+          \eqno (1.2a)
+            $$
+
+\m
+
+   {\bf Problem 1.2.1}
+   Suppose that system (1.2a) has a solution.
+    Write down quadratic polynomial $x^2+px+q$ such that
+    roots of this polynomial are numbers $x,y$ which are
+    the solution of the system (1.2a) (if they exist)
+
+\m
+
+   {\bf Problem 1.2.2}  Consider discriminant of this quadratic polynomial ($D=p^2-4q$)
+      Find relation between discriminant of this quadratic polynomial and
+        inequality $A\geq \G$
+
+       ({\it Discriminant is just equal to $p^2-4q=4A^2-4\G$ It is greater or equal to zero iff two roots are real,i.e.
+       if the system (1.2a)has a solution in real numbers. We see that $D\geq 0$ is just inequality (0.1) for two numbers.)}
+
+
+   \m
+
+     {\bf Problem 1.2.3}
+  Let numbers $x,y$ satisfy the equations.
+            $$
+            \cases
+              {
+     x+y=2,\cr xy=2500
+          }
+          \eqno (1.2a)
+            $$
+Hence their mean arithmetic is equal to $A={x+y\over 2}=1$ and  their mean geometric is equal
+to $\sqrt {xy}=\sqrt 2500=50 $. We see that mean geometric is {\it bigger} than mean arithmetic.
+Find a mistake.
+
+
+\bigskip
+
+  \centerline {\it  Geometric meaning}
+\m
+
+
+Consider a segment $AB$. Let $D$ be a point in this segment, such that $|AD|=a, |DB|=b$. Let a point $O$
+be a centre of the segment $AB$. Consider a circle with a centre at the point $O$ and with radius $R={a+b\over 2}$.
+
+The segment $AB$ is a diameter of this circle. Take a perpendicular to the seqment $AB$ at the point $D$.
+ Denote by $C$ a point of the intersection of the perpendicular with circle.
+
+   Consider a triangle
+$ACB$. $\angle ACB=90^\circ$. $CD$ is the height of this triangle.
+
+  {\bf Problem 1.3.1}
+
+    Consider $\triangle ADC$ and $\triangle BDC$. Show that they are similar.
+
+\m
+
+   {\bf Problem 1.3.2}  Deduce that height is mean geometric of the segments $AD,DB$,
+   $DC=\sqrt {AD \cdot DC}=\sqrt ab$
+
+\m
+   {\bf Problem 1.3.2}  Show that height is smaller or equal than the radius  $R={a+b\over 2}$.
+
+
+    Thus we come to  geometrical proof and interpretation of the inequality (0.1):
+                           $$
+             \hbox{Radius of the circle $\geq $ Height on the hypothenuse}
+                           $$
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 2$  Attempts to generalise, $n=3,4$}
+
+\m
+
+Try to generalise.
+
+Case $n=3$
+
+{\bf Problem 2.1.1}  Prove the identity
+                 $$
+               a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-ac-bc)
+                 $$
+\m
+
+{\bf Problem 2.1.2}
+ Using (0.1) for $n=2$ or otherwise prove that  $a^2+b^2+c^2-ab-ac-bc\geq 0$.
+  {\it Consider $a^2+b^2\geq 2ab$, $a^2+c^2\geq 2ac$, $c^2+b^2\geq 2cb$ and add these relations}
+
+
+\m
+
+ {\bf Problem  2.1.3}  Prove the inequality (0.1) for $n=3$
+
+
+ Alright but it "rabbit of the hat"
+
+
+Consider case $n=4$. Surprisingly it is easier
+
+Let $a_1,a_2,a_3,a_4$ are four non-negative integers.
+
+  Consider numbers $A_1,A_2$ such that $A_1$ is mean arithmetic of $a_1,a_2$ and
+  $A_2$ is mean arithmetic of $a_3,a_4$:
+               $$
+              A_1={a_1+a_2\over 2},\quad   A_2={a_3+a_4\over 2}
+              \eqno (2.1.1)
+               $$
+Recall inequality (0.1) for two numbers:
+               $$
+               {x+y\over 2}\geq \sqrt {x y}
+               \eqno (2.1.2)
+               $$
+Using (2.1.1) and few time this inequality we come to the following chain of inequalities:
+                $$
+      A= {a_1+a_2+a_3+a_4\over 4}=
+      {A_1+A_2\over 2}\geq \sqrt {A_1 A_2}=
+     \sqrt {\left({a_1+a_2\over 2}\right)}\sqrt {\left({a_3+a_4\over 2}\right)}\geq
+                $$
+          $$
+      \geq\sqrt {\sqrt {a_1a_2}}\sqrt {\sqrt {a_3a_4}}=\root 4\of {a_1a_2a_3a_4}=\G
+          $$
+Thus we prove (0.1) for $n=4$
+
+  {\bf Problem 2.2.1} Perform the considerations above.
+
+  We see that case $n=4$ is essentially easier than $n=3$
+
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 3$  Inequality for  $n=2^k$}
+
+\m
+
+Using results of the  ${\cal x} 2$ for $n=4$ one can step by step (i.e. by induction) prove it
+for $n=2^k$
+
+ {\bf Problem 3.1.1}  Do it.
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 4$  General case}
+
+
+\m
+
+ Let $a_1,\dots,a_n$ be a set of non-negative numbers.
+
+We call the set of these numbers 'normal' set if the inequality (0.1) holds  ($A\geq \G$), i.e.
+we call the set of positive numbers $\{a_1,\dots,a_n\}$  'normal set' if
+                            $$
+                   {a_1+a_2+\dots+a_n\over n} \geq \root n\of {a_1a_2\dots a_n}
+                            $$
+Do there exist normal sets?
+
+   {\bf Problem 4.1.1}  Show that the set of equal numbers is normal set.
+
+\m
+
+{\bf Problem 4.1.1} Show that the set which contains at least one naught is  'normal' set
+
+\m
+
+ Now more serious problem:
+
+
+\m
+
+{\bf Problem 4.2.1}   Let $\{a_1,\dots,a_n\}$ be any set of positive integers and $c$ any positive constant.
+
+    Prove that in this case the set  of numbers
+             $$
+             \left\{{a_1\over c},\dots,{a_n\over c}\right\}
+             $$
+is normal if and only if the initial set is
+normal too.
+
+\m
+
+
+Why we are interesting in these exercises?  Because we want to reduce our problem to the special
+case  {\it when} mean geometric is equal to $1$
+
+ We come to very important exercise:
+
+
+ \m
+{\bf Problem 4.2.2}
+ Let $\{a_1,\dots,a_n\}$ be any set of positive integers and $$c=\G=\sqrt {a_1 a_2\dots a_n}$$ be
+ mean geometric of these numbers
+Consider the set of numbers
+             $$
+\left \{{a_1\over c},\dots,{a_n\over c}\right\}= \left\{{a_1\over \G},\dots,{a_n\over \G}\right\}
+             $$
+  Prove that the mean geometric of this new set is equal to 1.
+
+\m
+
+
+{\bf Problem 4.2.3} It follows from these two exercises that to prove inequality $A\geq \G$ in general case
+it is enough to prove it for the case when mean geometric is equal to $1$.  Show it!
+
+
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 5$  General case, final attack}
+
+\m
+
+Everything now is ready for the final attack. In the paragraphs 2 and 3   we proved the inequality
+(0.1) for $n=2^k$. On the other hand in the previous paragraph we reduced this problem to the case
+when mean geometric is equal to $1$.
+
+   Now let $x_1,\dots,x_n$ be a set of $n$ non-negative real numbers such that their mean geometric is equal to 1.
+   (By the way this means that all these numbers have to  be positive if they are non-negative)
+
+   We call this set 'nice' set
+
+ We have to prove that their mean arithemtic is greater or equal to 1:
+                          $$
+                   x_1+\dots+x_n\geq n, x_1+\dots+x_n=n \iff x_1=\dots=x_n=1
+                   \eqno (5.1)
+                          $$
+
+In other words we have to prove that nice set is normal set too.
+
+ If $n=2^k$ then we already proved it in the paragraph 3.
+
+
+ Suppose $n\not=2^k$. Consider any $k$ such that $n\leq 2^k$. (E.g. if $n=1000$ we can take any $k \geq 10$ )
+
+   Consider a set of numbers which contain numbers $\{x_1,\dots,x_n\}$ and which contain number $1$, $2^k-n$ times:
+               $$
+ A= \{x_1,\dots,x_n,\underbrace{1,1,\dots,1}_{\hbox{ $2^k-n$ times}}\}
+               $$
+
+     {\bf Problem 5.1.1} Show that the set $A$ is nice set.
+
+
+      \m
+
+      But this nice set contains already $2^k$ elements. Hence this nice set is normal, i.e. its mean arithemtic
+      is equal to 1.
+
+      \m
+{\bf Problem 5.1.2} Using results of  ${\cal x} 3$ show that  for the nice normal set $A$
+             $$
+       x_1+\dots+x_n+\underbrace{1+\dots+1}_{\hbox{ $2^k-n$ times}}=2^k
+             $$
+Deduce from this fact (5.1
+
+Thus we proved the inequality (0.1)
+
+\bigskip
+
+
+{\bf Problem 5.1.2}  In the proof of (5.1) we fix the value of mean geometric.
+
+  Try to make analogous proof keeping mean arithmetic to be 1.
+
+
+\m
+
+How we proved (0.1). First we proved for $n=2$, then for $n=4,8,16,32,\dots$
+then we reduced this problem then for arbitrary $n$ we reduced problem
+for the case if $\G=1$ and proved for this case.  We climb up and climb down by the
+ladder of induction.
+
+
+ \bigskip
+
+          \centerline   {\bf ${\cal x} 6$  Another proof which seems to be very simple}
+
+\m
+
+How we proved (0.1). First we proved for $n=2$, then for $n=4,8,16,32,\dots$
+then we reduced this problem then for arbitrary $n$ we reduced problem
+for the case if $\G=1$ and proved for this case.
+
+ Consider another "proof" of the statement (0.1)
+
+ Let $a_1,\dots,a_n$ is a set of $n$ arbitrary non-negative numbers. Fix their mean arithemtic $A$,
+ i.e. consider all the sets of positive numbers $\{a_1,\dots,a_n\}$ such that
+                    $$
+                   {a_1+\dots+a_n\over n}=A
+                   \eqno (6.1)
+                    $$
+Prove that for an arbitrary set which satisfies
+ (6.1) mean geometric is less or equal to $A$. Suppose it is not true. Hence
+ there exist a point where mean geometric is greater than $A$.
+
+Note that at the point $a_1=a_2=\dots=a_n=A$ mean geometric is equal to $A$.
+
+Consider arbitrary set $\{a_1,\dots,a_n\}$ obeying (6.1). Suppose mean geometric
+is greater than $A$. Then at least two numbers $a_i,a_j$ are not equal, because
+if all the numbers are equal then mean geometric is equal to $A$.
+Change numbers $a_i,a_j$ on the numbers $a_i'=a_j'={a_i+a_j\over 2}$. We do not destroy
+the condition (6.1) but mean geometric is increased! because $a_ia_j<\left({a_i+a_j\over 2}\right)^2$.
+
+ Now choose a set where mean geometric is greatest. We come to contradiction because
+  by equalising non-equal numbers we make mean geometric greater.
+
+   This proof looks deceptively simple. Indeed here we assume by default that
+   the maximum attaints. (Sure it is true because (6.1) defines compact domain and
+   mean geometric is continuous function, but this need hard stuff from mathematical analysis)
+
+
+
+
+
+
+
+
+
+
+
+
+\bye

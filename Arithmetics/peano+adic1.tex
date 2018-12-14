@@ -1,0 +1,83 @@
+
+
+\magnification=1200
+
+\def\Z{{\bf Z}}
+\def\m {\medskip}
+
+\centerline  {\bf $p$-adic numbers and Peano curve}
+\bigskip
+
+I learned few days ago how $p$-adic numbers help to  construct Peano
+curve. We use ring of $2$-adic integers $\Z_2$ in intermediate step.
+In the final construction $p$-adic numbers dissapear. This is a good
+example of their   real value
+ (the construction belongs to Shindiapin)
+
+
+ \m
+
+Let $I$ be closed segment $[0,1]$ and $C$ be Cantor set in $I$:
+                $$
+       C=\left\{x\in I\colon \,\, x=\sum_{k=1}^\infty{a_k\over 3^k},\quad a_k=0,2\right\}
+                $$
+
+ Consider the following map from Cantor set $C$ to the square $I\times I$ defined as composition of the maps:
+               $$
+      C{\buildrel f\over \longrightarrow }C\times C
+      {\buildrel F\times F\over \longrightarrow
+      }\Z_2\times \Z_2
+      {\buildrel G\times G\over \longrightarrow}
+          I\times I
+          \eqno (1)
+               $$
+Here
+
+\m
+
+  1) Map $f$ is a map defined as
+                 $$
+              f\left(\sum_{k=1}^\infty{a_k\over 3^k}\right)=
+              \left(\sum_{k=1}^\infty{a_{2k}\over 3^k},\,\,\sum_{k=1}^\infty{a_{2k-1}\over 3^k}\right)
+              \eqno (3)
+                 $$
+i.e. $f(0.a_1a_2a_3a_4)=(0.a_2a_4a_6...;0,\,\,a_1a_3a_5...)$ (all $a_i$ are $0$ or $2$).
+
+  2)  Map $F\colon\,\, C\to \Z_2$ is defined as
+                    $$
+                 F\left(\sum_{k=1}^\infty{a_k\over 3^k}\right)=
+                 \sum_{k=0}^\infty {a_{k+1}\over 2} 2^{k}, \qquad \hbox {all $a_i$ are $0$ or $2$}.
+                    \eqno (4)
+                    $$
+and map $G$ is defined as
+             $$
+         G\left(\sum_{k=0}^\infty a_{k} 2^{k}\right)=\sum_{k=0}^\infty {a_{k}\over  2^{k}}
+         \eqno (5)
+             $$
+One can prove that all these maps are continuous maps, the map (4) is homeomorphism,
+and the map (5) is surjection.
+Hence the composition (1) is continuous surjection of the Cantor set $C$ on the square $I\times I$.
+One can expand this map by linearity on the all  set $I$.
+
+Thus we come to continuous map from $I$ on $I\times I$. This map is
+continuous in usual topology on real numbers. We come to Peano
+curve.
+
+\m
+
+{\sl Mavr sdelal svojo delo, mavr mozhet umeretj!}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bye

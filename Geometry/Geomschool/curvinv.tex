@@ -1,0 +1,336 @@
+\magnification=1200
+
+   \centerline {One approach to higher order invariants}
+
+ We consider curves---  $x^i=x^i(t)$ in $d$-dimensional
+eucledian space. Our goal is to construct local integrands
+ over these curves which are
+
+1) reparametrization invariant
+
+2) invariant under global translation  and rotation of curves
+
+3) are full divergence!---i.e. their Euler Lagrange equations are trivial
+
+ If we omit condition (3) the answer is invariant densities--
+length: $\sqrt {{dx^i\over dt}{dx^i\over dt}}$,...
+
+But how to construct at least one invariant closed density?
+In fact in $d$-dimensional case we restrict ourself by densities
+whose rank (the order of derivatives) is not higher than $d$
+
+
+1) $d=1$ . Answer is trivial:
+
+               $$
+        A=  x_t
+                         \eqno (1)
+                $$
+
+2) $d=2$ Less trivial but I think you know it:
+                 $$
+ A= {x_ty_{tt}-y_tx_{tt}\over x_t^2+y_t^2}
+                               \eqno (2)
+                   $$
+  One can see easily that (2) is total divergence
+ (it is evident in polar coordinates).
+
+
+3) Now I present you the closed density in $3$-dimensional space:
+                      $$
+                      A=
+                      {
+                    \det
+                   \pmatrix
+                      {
+           &x_t &y_t & z_t \cr
+           &x_{tt} &y_{tt} &z_{tt} \cr
+           &x_{ttt} &y_{ttt} &z_{ttt} \cr
+                      }
+                      \over
+            (x_ty_{tt}-y_{t}x_{tt})^2+
+            (y_tz_{tt}-z_{t}y_{tt})^2+
+            (z_tx_{tt}-x_{t}z_{tt})^2
+                      }
+                      \cdot
+                \sqrt
+              {x_t^2+y_t^2+z_t^2}
+                                             \eqno (3)
+                        $$
+
+  Do you want to check by straightforward calculation
+that (3) is total divergence?
+Note please that "razmernostj" in (3) and (2) is $[{1\over sec}]$
+I came to (3) using (2)...
+
+In fact I think that in $d$-dimensional space all invariant densities
+can be expressed in terms of determinant as in (3) and its
+first minors.
+For example:
+
+  Let we denote by $x^i_{(n)}$ the $n$-th derivative by $t$ of the
+ coordinate $x^i$  in $I\!E^d$  $(i=1,...,d)$.
+  We consider  the matrix
+                        $$
+          \pmatrix
+                        {
+             &x^1_{(1)}, &x^2_{(1)},  &x^3_{(1)}, ...,&x^d_{(1)} \cr
+             &x^1_{(2)}, &x^2_{(2)},  &x^3_{(2)}, ...,&x^d_{(2)} \cr
+             &x^1_{(3)}, &x^2_{(3)},  &x^3_{(3)}, ...,&x^d_{(3)} \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+             &..., &...,  &..., ...,&... \cr
+           &x^1_{(d)}, &x^2_{(d)},  &x^3_{(d)}, ...,&x^d_{(d)} \cr
+                   }
+                          \eqno (4)
+                      $$
+ We denote
+                  $$
+ \Delta_1= \sqrt {(x^1_{(1)})^2+(x^2_{(1)})^2+(x^3_{(1)})^2+
+      (x^d_{(1)})^2}\,,
+                    $$
+                    $$
+    \Delta_2=\sqrt
+                        {
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^1_{(1)}, &x^2_{(1)}\cr
+                       &x^1_{(2)}, &x^2_{(2)} \cr
+                                        }
+                                  \right)^2
+                               +
+                 \dots+
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^{d-1}_{(1)}, &x^d_{(1)}\cr
+                       &x^{d-1}_{(2)}, &x^d_{(2)} \cr
+                                        }
+                                  \right)^2
+                     }
+                              $$
+
+                    $$
+    \Delta_3=\sqrt
+                        {
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                       &x^1_{(1)}, &x^2_{(1)},&x^3_{(1)}\cr
+                       &x^1_{(2)}, &x^2_{(2)},&x^3_{(2)} \cr
+                       &x^1_{(3)}, &x^2_{(3)},&x^3_{(3)} \cr
+                                         }
+                                  \right)^2
+                               +
+                 \dots+
+              \left(
+                 \det
+                             \pmatrix
+                                    {
+                    &x^{d-2}_{(1)}, &x^{d-1}_{(1)}, &x^d_{(1)}\cr
+                 &x^{d-2}_{(2)}, &x^{d-1}_{(2)}, &x^d_{(2)} \cr
+                 &x^{d-2}_{(3)}, &x^{d-1}_{(3)}, &x^d_{(3)} \cr
+                                      }
+                                  \right)^2
+                     }
+                              $$
+ e.t.c. $\Delta_d$ is nothing that the determinant of the matrix (4).
+
+We consider in $d$-dimensional space the following invariant densities
+ the densities
+               $$
+ A_1=\Delta_1,\quad  A_2={\Delta_2\over\Delta_1^2},  \quad
+         A_3={\Delta_3\cdot\Delta_1\over\Delta_2^2},\dots
+           \eqno (5)
+            $$
+It is easy to see that $A_1$ is nothing but the lenghth of the curve,
+and it is divergence in the case $d=1$, $A_2$ is the density of
+second rank which coincides with (2)
+if $d=2$, $A_3$ is the density of third rank which
+coincides with (3) if $d=3$.
+Sure one can continue this sequence:
+In $d$-dimensional case one can consider
+ther sequence of the invariant densities
+   $\{A_1,...,A_d\}$ such that
+the last one is total divergence...
+
+  Do you like it?
+Do you know how I come for example to (3)?
+                  \bigskip
+         \centerline {\bf Section2 continuation}
+                     \medskip
+  How one can come to the expression (3)
+
+
+ We recall at first the essence of the formula (2).
+If $L$ is the curve in $I\!E^2$ then the tangent unit
+ vector to this curve maps the curve $L$ to the curve in $S^1$:
+            $$
+             \varphi={\rm arctg}{y_t\over x_t}
+              \eqno (2.1)
+                $$
+ and (2) corresponds to the pull back of the volume form $d\varphi$
+  on the $S^1$. In the other word the density (2) is constructed via
+ the canonical density on the $S^1$ and the density (2.1)
+  {\bf which takes values in the unit vectors}---it is
+ the composition of the densities.
+                  $$
+     A_2={d\over dt} {\rm arctg}{y_t\over x_t}
+                $$
+ Now bearing in mind this interpretation for (2)
+we consider for the curve $L$ in the three-dimensional
+space the map analogous to (2.1).---Considering
+the unit vector to the every point of the curve
+ $L$ we transform this curve to the curve
+ on the sphere $S^2$:
+                         $$
+               \theta=
+       {\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}},\quad
+                 \varphi={\rm arctg}{y_t\over x_t}
+           \eqno (2.2)
+                    $$
+ We come to the curve on the $2$-dimensional sphere and we apply
+ the formula (2) for this curve. Of course the sphere is not
+ euclidean but physical intuition say us that in this case
+      for the curves on the $S^2$ the analog of (2) will be something like
+                $$
+      {d\over dt} {\rm arctg}{\sin\theta \cdot\varphi_t\over \theta_t}
+                  $$
+Combining this density with previous one we come to
+ the "answer"
+                $$
+  A_3 ={d\over dt} {\rm arctg}{\sin\theta \cdot\varphi_t\over \theta_t}=
+     {d\over dt}\left (
+        {\rm arctg}{\sin
+                 \left(
+{\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}}
+           \right)
+                       \cdot
+        \left(
+              {\rm arctg}{y_t\over x_t}
+                     \right)_t
+                 \over
+                  \left(
+         {\rm arccos}{z_t\over\sqrt{x_t^2+y_t^2+z_t^2}}
+             \right)_t}
+                 \right)
+            \eqno (2.3)
+                      $$
+
+ Can you calcule this? I cannot. It is here where I began to think.
+ (All previous constructions, you understand,
+ do no need paper in spite of
+their "artificiel" complicatness...)
+
+ For considering this tremendous expression I consider first the case
+ where  in the given point
+                 $$
+               z_t\big\vert_{t=t_0}=y_t\big\vert_{t=t_0}=0
+               $$
+ hence in the monstre (2.3)
+                    $$
+            \theta(t) \big\vert_{t=t_0}={\pi\over 2},\quad
+            \varphi\big\vert_{t=t_0}=0
+            $$
+  Using the multiple time the fact known in school that
+               $$
+            \left(f(x)x\right)^\prime_{x=0}=f(0)
+                    $$
+one comes in 15 minutes to the result
+                        $$
+       A_2= {y_{tt}z_{ttt}-y_{ttt}z_{tt}\over y_{tt}^2+z_{tt}^2}\quad
+                {\rm if}\quad
+               z_t\big\vert_{t=t_0}=y_t\big\vert_{t=t_0}=0
+                     $$
+ Now I began to do beautiful tricks  considering
+ the global rotations
+\def\a{\alpha}
+\def\b{\beta}
+
+                $$
+         \cases
+          {
+          x\rightarrow  x\cos\a+z\sin\a\cr
+          z\rightarrow -x\sin\a+z\cos\a\cr
+                      }\qquad
+         \cases
+          {
+          x\rightarrow  x\cos\b+y\sin\b\cr
+          y\rightarrow -x\sin\b+z\cos\b\cr
+                      }\qquad
+             $$
+
+Where the angles $\a,\b$ are defined by the values
+ of $z_t,y_t$ and I came to the (3).
+ITo be fair I have to tell you that from the very beginning
+ I noticed that determinant of the matrix (4) is the density
+ and invariant density and I couldnot see nothing more--
+ and everything have to be combined via this determinant?.
+but I did not understand how the invariant combinations of minors arise.
+
+ {\bf Conjecture.} Looking on the sequence (5)  I did the following
+  conjecture:
+     In the $d$-dimensional space one can consider the sequence
+       $\{A_1,A_2,\dots,A_d\}$ where
+                  $$
+   A_1=\Delta_1,  A_2={\Delta_2\over A_1^2},
+          A_3={\Delta_3\over A_2^2\cdot A_1^3},
+          A_4={\Delta_4\over A_3^2\cdot A_2^3\cdot A_1^4},
+                       \dots
+         A_d={\Delta_d\over A_{d-1}^2\cdot A_{d-2}^3\cdot
+              A_{d-3}^4\dots A_1^d}
+                         $$
+   In general the recurrent formula maybe is
+                                $$
+                        A_{n+1}=
+      {\Delta_{n+1}\over\prod_{k=1}^{k=n} A_k^{n+2-k}}
+              $$
+ I have not any proof yet. Of course
+   in the way how I constructed the (3)
+  I can consider the sequence of the maps
+     from the curve $L$ on the $S^{d-1}$ using the unit vectors
+ but I affraid now to consider this after my calculations
+for $S^2$...
+
+There are the fo following hints that
+    this sequence may be is true:
+
+  1) in the first three terms this is right
+
+  2) the dimension is always the same $[{1\over sec}]$
+
+ Sure this has to come from 19 century. Indeed in classical mathematics
+ for the curve in $d$-dimensional space there are the sequence of Frenet
+  curvatures $\{k_1,...,k_{d-1}\}$. The curvature $k_1$ is proportional
+ to $A_2$:
+               $$
+    k_1={\Delta_2\over\Delta_1^3}={A_2\over\Delta_1}
+                $$
+  it meausures in $[{1\over cm}]$.
+My sequence have to be strictly connected with the sequence
+ of curvatures but my goal was to come to divergence-like
+ lagrangians. In some sence this means that the last
+curvature is proportional to the divergence-like Lagrangian.
+
+  One can consider the $d$-basis in every point of the curve.
+The first vector is tangent vector, the first two-dimensional plane
+is the plane spanned by the tangent vector and its acceleration
+during the motion, e.t.c.--- Hence the movement on the
+  $SO(d)$ of the solid particle can be considered.-- I think
+it is just what people call rigid particle motion,
+ (Armen considered Lagrangians depended on higher curvatures.)
+  I think that all these formulaes may be in the other
+ interpretation have to be revealed in rigid particle physics.
+   In fact I sent the beginning of this text to Armen,
+  and still do not know his reaction.
+  Do you want to know why and how I spent yesterday
+ morning and day on this calculations?
+          S Vas butylka!---Togda skazhu!
+
+            Do svidanija O.M.
+\bye

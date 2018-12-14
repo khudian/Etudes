@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Locally Euclidean surfaces}{2}
+\contentsline {subsection}{\numberline {1.1} (Uniformly) locally Eucldean surfaces}{2}
+\contentsline {subsection}{\numberline {1.2}Examples of locally Euclidean surfaces and subgroups of ${\bf E}(2)$.}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}Subgroups of group ${\bf E}(2)$ and surfaces}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Uniformly discontinuous subgroups of ${\bf E}(2)$}{4}
+\contentsline {subsubsection}{\numberline {1.2.3}Classiication of all uniformly discontinuous subgroups of ${\bf E}(2)$}{5}
+\contentsline {subsection}{\numberline {1.3}The final classification}{8}
+\contentsline {section}{\numberline {2}Space of locally Eucldean geometries}{8}
+\contentsline {subsection}{\numberline {2.1}Lattices--- Geometries on tori---unimodular group }{9}
+\contentsline {subsection}{\numberline {2.2}Geodesics and Metric of hyperbolic geometry}{11}
+\contentsline {subsubsection}{\numberline {2.2.1}Hyperbolic isometries}{11}
+\contentsline {subsubsection}{\numberline {2.2.2}Geodesics as locus of fixed points}{11}
+\contentsline {subsubsection}{\numberline {2.2.3}Formula for distance}{12}

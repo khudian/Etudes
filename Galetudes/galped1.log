@@ -1,0 +1,98 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdftex 2011.7.3)  5 FEB 2016 10:03
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**galped1.tex
+(./galped1.tex
+Overfull \hbox (4.02786pt too wide) detected at line 103
+\teni u \tenrm + \teni v \tenrm = 6\teni x[]x[]x[] \tensy ^^@ \tenrm 3 [] + 12\
+teni x[]x[]x[] \tenrm = 27\teni x[]x[]x[] \tenrm = \tensy ^^@\tenrm 27\teni q ;
+|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\teni u
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tenrm +
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\teni v
+.etc.
+
+[1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (8.96884pt too wide) detected at line 142
+\tensy ^^@\tenrm 9\teni x[]x[]x[] \tensy ^^@ \tenrm 4(\teni x[]x[] \tenrm + \te
+ni x[]x[] \tenrm + \teni x[]x[]\tenrm ) [] =|
+
+\hbox(8.64003+3.50006)x391.46176, glue set - 1.0
+.\tensy ^^@
+.\tenrm 9
+.\teni x
+.\vbox(11.1122+0.0)x4.48613, shifted 2.47217
+..\hbox(4.51111+0.0)x4.48613
+...\sevenrm 2
+..\kern2.08998
+..\hbox(4.51111+0.0)x4.48613
+...\sevenrm 1
+.\teni x
+.etc.
+
+
+Overfull \hbox (33.14188pt too wide) detected at line 150
+\teni L \tenrm = 2\teni x[]x[]x[] [] \tenrm = 2\teni x[]x[]x[]M :|
+
+\hbox(7.5+2.5)x391.46176
+.\teni L
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.\tenrm =
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.\tenrm 2
+.etc.
+
+
+Overfull \hbox (33.04497pt too wide) detected at line 160
+[] \tenrm + [] + [] =|
+
+\hbox(8.64003+3.50006)x391.46176, glue set - 1.0
+.\hbox(8.64003+3.50006)x132.79854
+..\hbox(0.39998+11.60013)x4.58336, shifted -8.10007
+...\tenex ^^@
+..\tensy ^^@
+..\teni x
+..\vbox(11.1122+0.0)x4.48613, shifted 2.47217
+...\hbox(4.51111+0.0)x4.48613 []
+...\kern2.08998
+...\hbox(4.51111+0.0)x4.48613 []
+..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+..etc.
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tenrm +
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\hbox(8.64003+3.50006)x132.79854
+..\hbox(0.39998+11.60013)x4.58336, shifted -8.10007
+...\tenex ^^@
+..\tensy ^^@
+..\teni x
+..\vbox(11.1122+0.0)x4.48613, shifted 2.47217
+...\hbox(4.51111+0.0)x4.48613 []
+...\kern2.08998
+...\hbox(4.51111+0.0)x4.48613 []
+..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+..etc.
+.etc.
+
+[2] [3] )</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
+pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on galped1.pdf (3 pages, 111470 bytes).
+PDF statistics:
+ 54 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

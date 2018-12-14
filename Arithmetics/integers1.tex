@@ -1,0 +1,77 @@
+
+\magnification=1200 \baselineskip 17 pt
+\def\Q{{\bf Q}}
+\def\Z{{\bf Z}}
+   \centerline {\bf  Integers and "Integers"}
+
+\medskip
+ \copyright Homepage of Math Department Sheffield University
+ \smallskip
+
+
+   Consider field $\Q({\sqrt {-n}})$
+   (where $n$ is not divisible on any square except $1$)
+   and consider the ring $K_n$
+   of integers in this field, where the set
+   $K_n$ is defined as set of elements of $\Q({\sqrt {-n}})$
+   such that these elements are roots of a quadratic polynomial
+   with integer coefficients and the numbers $2p$ and $p^2+nq^2$ are
+   integers:
+               $$
+      K_n=\{a=p+q{\sqrt {-n}}\colon\,\,p,q\in\Q,\,\, 2p,p^2+nq^2\in\Z\},.
+                $$
+
+  One can easily to see that
+         $K_n$ is the ring such that
+      $$
+      K_n=\{a=p+qp_n\}
+      $$
+
+      where $p$ and $q$ are integers  and
+                      $$
+                         p_n=
+                      \cases
+                        {
+                       \sqrt {-n}\qquad {\rm if\,\, n=1,2 (mod 4)}\cr
+                       {1+\sqrt {-n}\over 2}\qquad
+                       {\rm if\,\, n=3(mod 4)}\cr
+                       }\,.
+                            $$
+
+  {\bf Theorem 1.} The ring $K_n$ has unique factorization only
+  for
+
+   $n=1,2,3,7,11,19,43,67,163$.
+
+{\bf Theorem 2.} If $K_n$ has unique factorization and $n=3(mod 4)$
+ then the value of modular function $j$ on $p_n$ is integer!!!
+  $j(p_n)\in\Z$
+ Modular function $j(z)$ is the function of zero weight?
+              $$
+              j(z)={1\over q}+744+196884q=21493760q^2+864299970q^3+\dots,
+                $$
+       where $q=\exp{2\pi\sqrt{-1}z}$.
+
+
+  Now use these Theorems and expansion of modular function for $n=43,67,167$:
+
+                $$
+ \Z\ni j(p_n)=\exp({-2\pi\sqrt{-1}p_n})+744+\dots=
+ \exp\left({-2\pi\sqrt{-1}\left({1+\sqrt {-n}\over 2}\right)}\right)+744+\dots=
+             $$
+                $$
+-\exp(\pi\sqrt n)+744+\dots
+                $$
+where we denote by dots something very small.
+
+
+We see that $\exp(\pi\sqrt n)$ is very close to integer, e.g.
+            $$
+            \exp(\pi\sqrt 167)=262537412640768743.9999999999992501...\approx
+262537412640768744
+           $$
+ up $10^{-12}$!!!
+
+
+
+                            \bye

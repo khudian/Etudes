@@ -1,0 +1,74 @@
+\magnification=1200
+\def\variables#1#2 {#1=1,\dots,#2}
+
+   \centerline {n-points on the plane}
+
+   (Etu zadachu mne zadal Senja Rubanovitch v 1971 godu)
+
+
+                     $$ $$
+   \item{I} There are $n$-points on the plane. For every 2 points there exist
+ the third which is on the same line.
+ Prove that all the points are on the same line.
+
+                   \smallskip
+        \centerline{The main idea of solution.}
+                  \smallskip
+   We can always choose coordinates $(x,y)$ on the plane
+   and the numeration of the points in the following way:
+    If $(x_i, y_i)$ are coordinates of the $i$-th point
+   ($\variables{i}{n}$)   then
+             $$
+   x_1\leq x_2\leq x_3\leq\dots\leq x_n,\quad
+   y_1\leq y_2\leq y_3\leq\dots\leq y_n\,.
+             $$
+We consider the equivalent problem
+
+  \item{II} From the every point $x_1$ the "point" with constant velocity
+     $v_i=y_i$ begins to move.  All the intersections are not binar!
+ (it corresponds that for every 2 points there exist
+ the third one on the same line).
+  Prove that all the lines intersect simultaneously!
+
+
+ This second formulation admits combinatoril reformulation.
+ Every collision is the rearrangement of the points.
+
+
+ There are $n$  symbols on the line-- $a_1,\dots,a_n$.
+ The rules of the game are following:...
+
+ This third reformulation is solved by me.
+
+
+   Daniel informed me about very elegant solution (belongonging to Silvester):
+   Suppose that points are not on the one line.  Then choose the
+   line $l$ formed by points $A,B$ and point $C\not\in L$ such that the distance
+   between the point $C$ and the line $l$ is the smallest possible (not-zero).
+
+   Then considering lines $AC,BC$ we come to the smaller distance. Contradiction.
+
+   \medskip  Now my solution:  We have $N$ points $\{1,\dots,N\}$
+   moving with different velocities along the line.
+
+\def\s {\sigma}
+   Consider the set of states: In every state the $k$-th point
+   occupies the place $\s(k)$, $a_{\s(k)}=k$.
+    We say that the state belong to the set $\cal B$
+   if there exist numero $i$ such that
+                    $$
+          i>\sigma (N)\,,\qquad {\rm and}\quad a_i<a_{i+1}\,,
+                 $$
+i.e. the last point $N$ is not on the last place and there exist a
+pair $(a_i,a_{i+1})$ such that this pair is standing on the right????
+
+E.g.  $(1,2,7,5,3,4,6)\in \cal B$,
+$(1,7,6,5,4)\in \cal B$,
+$(1,4,5,3,2,6,7)\in \cal B$,
+$(1,4,5,3,2,7,6)\in \cal B$
+{\it Lemma} Any transformation cannot take the state out the $\cal B$.
+Theorema follows from this lemma.
+
+
+
+\bye

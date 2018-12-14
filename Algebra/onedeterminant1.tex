@@ -1,0 +1,101 @@
+\magnification=1200
+\def\vare{\varepsilon}
+
+{\it 18 January 2017}
+
+\centerline {\bf On calculation of one determinant}
+
+
+Let $A=||a_{ik}||$ be $n\times n$ matrix.
+   Calculate determinant of the $n+1\times n+1$ matrix
+                          $$
+ \pmatrix
+ {
+   a_{ik} &u_k\cr
+        v_i   & 0
+              }
+                          $$
+
+  Try to use the Frobenius formula:
+                   $$
+\det\pmatrix{A &B\cr C &D}=\det(A-BD^{-1}C)\det D\,.
+                   $$
+It does not work straightforwardly since $D=0$.           
+We will use it in the following way:
+                        $$ 
+            \det
+              \pmatrix
+               {
+   a_{ik} &u_k\cr
+        v_i   & 0
+              }=\lim_{\vare\to 0}
+               \left[
+            \det\pmatrix
+               {
+   a_{ik} &u_k\cr
+        v_i   & \vare
+                  }\right]=
+     \lim_{\vare\to 0}
+           \left[\det
+   \left(a_{ik}-{u_iv_k\over \vare}\right)
+            \vare\right]=
+                  $$
+                   $$
+\lim_{\vare\to 0}
+   \left[\det A \det
+       \left(1-{a^{im}u_mv_k\over \vare}
+        \right)\vare\right]=
+            \lim_{\vare\to 0}
+   \left[\det A 
+       \left(1+\sum_{k\geq 1}{L_k\over \vare^k}\right)\vare\right]=
+                  $$
+                   $$
+          \lim_{\vare\to 0}
+   \left[\det A 
+       \left[1-{\rm Tr\,}\left({a^{im}u_mv_k\over \vare}\right)+
+       \sum_{k\geq 2}{L_k\over \vare^k}
+        \right]\vare\right]= 
+                   $$
+                  $$
+          \lim_{\vare\to 0}
+   \left(\det A \vare
+     - \det A\,a^{im}u_mv_i+
+       \det A\sum_{k\geq 2}{L_k\over \vare^{k-1}}
+        \right)=-\det A a^{im}u_mv_i\,, 
+                   $$
+since the limit exists.
+Here  $A^{-1}=||a^{im}||$ is the matrix inverse to the matrix $A=||a_{ik}||$.
+  We see that in particular all $L_k=0$ for
+$k\geq 2$\footnote{$^{1)}$}{In fact $L_k={\rm Tr\,}\wedge^k K$,
+where $K^i_m=a^{im}u_mv_k$, and it can be shown straightforwardly
+that all $L_k$ vanish for $k\geq 2$.
+ The trick is that we do not need to do it.}. Hence
+
+    Note that $\det A\, a^{im} =\tilde a_{im}$ is 
+cofactor of matrix $||a_{ik}||$,
+all elements of this matrix are polynomials 
+on entries of matrix $||a_{ik}||$.
+
+\medskip
+
+{\bf Geometrical meaning} Let $A=||a_{ik}||$ be symmetric
+$n\times n$ matrix. Consider 
+quadric $C_A\colon\, a_ikx^ix^k=0$ in $P^{n-1}$.
+One can see that the equation
+        $$
+        \det
+              \pmatrix
+               {
+   a_{ik} &u_k\cr
+        u_i   & 0
+              }=0
+        $$
+defines the  pencil $C^*$ of lines $u_mx^m=0$ 
+which are tangent to quadric $C$.
+
+Thus we see that pencil $C^*$ dual to the quadric $C$ is defined
+by the matrix which is cofactor of matrix $A$.
+
+
+
+\bye

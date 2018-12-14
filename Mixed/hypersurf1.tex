@@ -1,0 +1,214 @@
+
+
+\magnification=1200 \baselineskip=14pt
+
+
+\def\p {\partial}
+\def \D {\Delta_{d{\bf v}}}
+\def \Ds  {\Delta^{\#}}
+\def\t{\tilde}
+\def\s {\sigma}
+\def\L {\Lambda}
+\def\Darboux {$z^A=$  $x^1,\dots,x^n$, $\theta_1,\dots,\theta_n$}
+\def\a{\alpha}
+\def\O{\Omega}
+\def\d{\delta}
+\def\dv  {{d{\bf{v}}}}
+\def\A {{\cal A}}
+\def\R {I\!R}
+\def\t {\tilde}
+\centerline {\bf Invariants of Hypersurfaces in Euclidean Space}
+
+
+   Recently Nikita Sidorov (l`homme Nikita) gave me the following
+   school problem: Let $L$ be a closed (convex) curve and a curve $L_{h}$
+   is set of points which are on the distance $h$ from $L$
+   ($\forall x\in L_h$ $\min_{y\in L}d(x,y)=h$). How to calculate
+    the surface of the domain between these curves?
+    There is a "school" solutions if we consider curve $L$ as a
+    limit of "nogougoljnikov". But I solved in more complicated way
+    and my solution can be generalized on $n$-dimensional case.
+
+    Let $(x,y)$ be Cartesian coordinates on $I\!R^2$ and $t$ be any coordinate
+    on $L$. Then we consider
+   new coordinates $(\rho,t)$ in a tubular neighborhood
+    of $L$ such that for every point $A\in I\!R$
+                        $$
+    \rho(A)=\hbox {distance between $A$ and $L$}=\min_{y\in L}d(A,y)
+                                          \eqno (2)
+                      $$
+ and $t(A)$ be $t$ coordinate of the point $y_0$ such that
+      $d(A,y_0)=\rho(A)$.
+
+      One can see that a function $\rho(x,y)$ obeys to equation
+                          $$
+                       \rho_x^2+\rho_y^2=1,\quad \rho\big\vert_L=0
+                                 \eqno (2)
+                                 $$
+  Moreover if ${\bf r}_0(t)=(x_0(t),y_0(t))$ is an equation of $L$
+  then in a vicinity of $L$
+                      $$
+  {\bf r}(t)={\bf r}_0(t)+\rho{\bf n}(t)\,,
+                                 \eqno (3)
+                       $$
+  where ${\bf n}(t)$ is unit vector normal to $L$ at the point ${\bf r}_0(t)$.
+                   $$
+             {\bf n}(t)=
+             \left\{-{x_t\over\sqrt{x_t^2+y_t^2}},
+             {y_t\over\sqrt{x_t^2+y_t^2}} \right\}
+             \eqno (4)
+            $$
+ Calculate Jacobian of coordinate transformaton from Cartesian coordinates
+ $(x,y)$ to these new coordinates.
+ According to (3,4)
+                        $$
+                        \cases
+                        {
+           x(\rho,t)=x_0(t)-\rho{x_t\over\sqrt{x_t^2+y_t^2}}\cr
+           y(\rho,t)=y_0(t)+\rho{y_t\over\sqrt{x_t^2+y_t^2}}\cr
+                             }
+                             \eqno (5)
+                             $$
+Straightforward calculations (here straightforward still dimension is $2$!)
+  give that
+                        $$
+          \det\left({\p(x,y)\over\p(\rho,t)}\right)=
+          \sqrt {x_t^2+y_t^2}+\rho{x_t y_{tt}-y_t x_{tt}\over x_t^2+y_t^2}=
+           \sqrt {x_t^2+y_t^2}+\rho {d\over dt}{\rm arctg}{y_t\over x_t}
+                   $$
+  the first term is an element of the length of $L$.
+  The second term is Frenet curvature and it is full derivative.
+
+Now solution follows from the last formula:
+The surface of the domain between curves is equal to the
+                   $$
+                  \int_{L,L_h} dx dy=
+                  \int  \det\left({\p(x,y)\over\p(\rho,t)}\right)
+                              d\rho dt=
+                       $$
+                       $$
+             \int_{0}^h d\rho
+             \int_L dt\left(
+\sqrt {x_t^2+y_t^2}+\rho {d\over dt}{\rm arctg}{y_t\over x_t}
+             \right)=
+              h|L|+\pi h^2
+               $$
+  Now we try to generalize this result.
+  Of course the main problem will be to calculate jacobian
+  and we are not so naive to hope that everything will be
+ exhausted by total derivatives.
+
+ So go on...
+
+ Let $M^n\hookrightarrow \R^{n+1}$.
+Let $x^\mu$ $\mu=0,1,...,n$ be cartesian coordinates on $I\!R^{n+1}$.
+  and $f^\mu=f^\mu(t^1,\dots,t^n)$ be local parameterization of hypersurface
+   $M^n$. Conisder $\rho({\bf r})=\min d({\bf r}, M)$.
+   ${\rm grad} \rho^2=0$ and $\rho_M=0$. It is ray.
+ In the same way as before consider transformation
+            $$
+    x^\mu(\rho,t)=f^\mu(t^1,\dots,t^n)+\rho n^\mu
+   $$
+  where ${bf n}$ is normal unit vector.
+Consider any point $\lambda_0$ on $M^n$ with coordinates $t^1_0,\dots,t^n_0$,
+ $x^\mu_0=f^\mu(t^1_0,\dots,t^n_0)$.
+
+Conisder cartesian coordinates $\tilde x^\mu$ and parametrization $\tilde t^i$
+ {\rm adjusted to the point $\lambda_0$},
+ i.e. such that in a vicinity of $\lambda_0$
+           $$
+           \cases
+            {
+            \tilde x^0=A_{ik}t^it^k+o(t^2),\cr
+            \tilde x^i=t^i \cr
+               }
+               $$
+  $A_{ik}$ corresponds to bilinear symmetric form on hypersurfaces
+  which is defined on tangent vectors and takes values
+  in normal vectors.
+
+        It is not awfull to calculate Jacobian
+        of transformation from $\rho,tilde t$ to $\tilde x$
+        in the point $\lambda_0$. Answer is
+                         $$
+        \det\left({\p(\t x^0,\t x^i)\over\p(\rho,\t t)}\right)=
+                     \det\left(\delta_{ik}+\rho A_{ik}\right)
+                         $$
+  We note that jacobian of transformation from cartesian coordinates
+  to another is equal to one, and jacobian of transformations from
+   parameters $t$ to another parameters is proportional to
+   the surface density. Hence
+                      $$
+             \int dx^0\dots dx^n=
+             \int \det \left(
+               1+\rho A
+             \right)dsd\rho
+              $$
+Expanding determinant by powers of $\rho$ we come to series
+of densities on $M$:
+               $$
+             \int \det \left(
+               1+ A
+             \right)ds=
+             \int ds+\int TrA ds+....+\int\det A ds
+               $$
+
+ The first density is surface density , next one is a mean curvature,
+ the last density is a total derivative-it is nothing but pull-back of
+ volume form on unit sphere $S^{n}$ under the Gauss map of $M^n$
+ embedding in $\R^{n+1}$
+ in $S^n$ (to every point on $M^n$ corresponds point on $S^n$ via
+ unit normal vector ${\bf n}$).
+
+Now we rewrite it in dual notations.
+let surface $M$ is given by equation:
+            $$
+            \Phi=0
+             $$
+During calculations I received the following answer dual
+to previous:
+                     $$
+                 \int
+                 \det
+                 \left[
+                    \delta_{ik}+
+                    \Pi^\mu_i
+                 {\p^2 \Phi\over \p x^\mu\p x^\nu}
+                     \Pi^\nu_k
+                     \right]
+                     \cdot
+                     |{\rm grad}\Phi|
+                      \delta(\Phi)
+                    d^{n+1}x\,,
+                     $$
+where
+                      $$
+ |{\rm grad}\Phi|=\sqrt
+                       {
+          {\p\Phi\over \p x^\mu}
+            {\p\Phi\over \p x^\mu}
+                   }
+                    $$
+But one can write the following answer too:
+
+ Density of the weight zero:
+                $$
+                                \det
+                 \left[
+                    \delta_{ik}+
+                      {1\over |{\rm grad}\Phi|^d}
+                    \Pi^\mu_i
+                 {\p^2 \Phi\over \p x^\mu\p x^\nu}
+                     \Pi^\nu_k
+                     \right]
+                     $$
+          I do not understand this answer.
+          I forget how I receive all these dual objects
+          I forget what is it exactly $\Pi^\mu_i$
+       (Immediately after these calculations we loosed lagguage
+        of my son).
+        But I have to remember it!
+        
+
+
+            \bye

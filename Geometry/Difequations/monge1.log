@@ -1,0 +1,34 @@
+This is TeX, Version 3.1415926 (TeX Live 2011) (format=tex 2011.7.3)  20 JUL 2016 13:56
+**monge1.tex
+(./monge1.tex
+Overfull \hbox (21.72511pt too wide) detected at line 125
+[] [] \tenrm = 0 \tensy ) [] \tenrm = [] = []  \teni :|
+
+\hbox(20.50017+15.50017)x391.46176
+.\vbox(6.94444+0.0)x13.88892
+..\hbox(6.94444+0.0)x13.88892
+...\tenrm d
+...\tenrm e
+...\tenrm t
+.\glue(\thinmuskip) 1.66663
+.\hbox(20.50017+15.50017)x94.72575
+..\vbox(0.39998+35.60036)x8.75002, shifted -20.10019
+...\hbox(0.39998+17.60019)x8.75002 []
+...\hbox(0.39998+17.60019)x8.75002 []
+..\hbox(0.0+0.0)x0.0
+..\glue 1.66663
+..\vbox(19.5+14.5)x73.89247
+...\hbox(7.5+2.5)x73.89247 []
+...\kern -12.0
+...\glue(\baselineskip) 2.0
+...\hbox(7.5+2.5)x73.89247 []
+...\glue(\baselineskip) 2.0
+...etc.
+..\glue 1.66663
+..etc.
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.\tenrm =
+.etc.
+
+[1] [2] [3] )
+Output written on monge1.dvi (3 pages, 9300 bytes).

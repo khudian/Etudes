@@ -1,0 +1,82 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdftex 2012.2.23)  22 AUG 2016 12:02
+entering extended mode
+ %&-line parsing enabled.
+**huigens2.tex
+(./huigens2.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (34.92238pt too wide) detected at line 311
+[] [][] [] \teni kt k[]dk \tenrm = [] [][] [] \teni kt k[]dk|
+
+\hbox(17.50014+12.50015)x391.46176
+.\hbox(17.50014+12.50015)x117.49303
+..\hbox(0.39998+29.60031)x7.91669, shifted -17.10016
+...\tenex  
+..\hbox(0.0+22.22246)x5.55557, shifted -13.61122
+...\tenex Z
+..\vbox(25.09033+0.0)x11.67955, shifted 9.11122
+...\hbox(4.84009+2.4095)x7.2351, shifted 4.44444 []
+...\kern13.32964
+...\hbox(4.51111+0.0)x4.48613 []
+..\glue(\thinmuskip) 1.66663
+..\teni e
+..etc.
+.\glue(\thinmuskip) 1.66663
+.\hbox(8.50006+3.50006)x3.33333
+..\mathon
+..\hbox(8.50006+3.50006)x3.33333
+...\vbox(0.0+12.00012)x3.33333, shifted -8.50006 []
+...\vbox(8.5+0.0)x0.0
+...\hbox(0.0+0.0)x0.0, shifted -2.5
+..\mathoff
+.\hbox(4.8611+0.0)x20.32187, shifted 4.00005
+..\seveni u
+..\sevenrm =
+..\seveni k
+..\kern0.16898
+..\seveni x
+.\glue(\thinmuskip) 1.66663
+.etc.
+
+
+Overfull \hbox (64.89288pt too wide) detected at line 318
+\tenrm = [] [][] [] \teni kt k[]dk \tenrm == [] [][] [] \teni kt k[]dk|
+
+\hbox(20.50017+15.50017)x391.46176
+.\tenrm =
+.\glue(\thickmuskip) 2.77771 plus 2.77771
+.\hbox(15.65013+9.94456)x112.23317
+..\hbox(0.39998+23.60025)x7.36115, shifted -14.10013
+...\tenex ^^R
+..\hbox(0.0+22.22246)x5.55557, shifted -13.61122
+...\tenex Z
+..\vbox(24.76135+0.83334)x10.73615, shifted 9.11122
+...\hbox(4.51111+0.0)x4.48613, shifted 4.44444 []
+...\kern15.73914
+...\hbox(4.51111+0.83334)x10.73615 []
+..\glue(\thinmuskip) 1.66663
+..\teni e
+..etc.
+.\glue(\thinmuskip) 1.66663
+.\hbox(8.50006+3.50006)x3.33333
+..\mathon
+..\hbox(8.50006+3.50006)x3.33333
+...\vbox(0.0+12.00012)x3.33333, shifted -8.50006 []
+...\vbox(8.5+0.0)x0.0
+...\hbox(0.0+0.0)x0.0, shifted -2.5
+..\mathoff
+.etc.
+
+[3] [4] )</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/
+fonts/type1/bluesky/cm/cmbx7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex1
+0.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmmi5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmsy5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy7.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmti10.pfb>
+Output written on huigens2.pdf (4 pages, 91036 bytes).
+PDF statistics:
+ 67 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

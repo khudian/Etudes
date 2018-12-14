@@ -1,0 +1,166 @@
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+
+\centerline  {\bf Integer points on the ellipse}
+
+\bigskip
+
+Consider on $\R^2$ an ellipse
+             $$
+   ax^2+2bxy+cy^2=1,\quad (ac-b^2>0, a>0)
+   \eqno (1)
+             $$
+and its interior, the domain $\Delta$: $\Delta\colon\quad
+ax^2+2bxy+cy^2\leq 1$.
+
+   Assume that
+                $$
+       ac-b^2=1,\,\,a,c,b\in \Z,
+                $$
+   i.e. quadratic form  $ax^2+2bxy+cy^2$ is defined by symmetric
+   matrix in $SL(2,\Z)$\footnote{$^*$}{A group $SL(2,\Z)$ is a group of $2\times 2$ matrices with integer entries.}.
+\medskip
+
+What about integer points (points with integer coordinates) in this ellipse?
+
+{\it {\bf Fact 1} The interior of the ellipse (2) possesses $4$ points with integer coordinates (except the origin $(0,0)$ ).
+All these points are on the ellipse (1).}
+
+
+{\bf Remark } It is well-known that any domain $M$ of the area $1$
+possesses at least two points $\r_1,\r_2$ such that vector $\r_2-\r_1$ has integer coordinates (Minkovsky lemma).
+
+  This implies the following
+
+{\it {\bf Fact 2} Any central-symmetric convex domain $M$ of the area $S(M)=4$ possesses at least one
+point with integer coordinates except the point $(0,0)$}.
+
+It is evident that for an arbitrary $\varepsilon>0$, there exists
+central-symmetric convex domain $M_\varepsilon$ of the area $S(M)=4-\varepsilon$ which does not possess
+ any point with integer coordinates except the point $(0,0)$.
+On the other hand it follows from the {Fact 1} that the ellipse
+(2) is a central-symmetric convex domain of the area
+$S(\Delta)=\pi<4$ which possesses 4 integer points.
+
+\medskip
+
+   {\sl Proof of the Fact 1}.
+
+  This is evident in the case if $a=b=1$ and $b=0$. Ellipse becomes circle which possesses exactly four
+   integer points $(1,0)$,  $(1,1)$, $(-1,0)$ and $(1,1)$.
+
+  Hence the Fact 1 follows from the following Proposition
+
+\m
+
+  {\bf Proposition}  {\it A matrix equation
+                     $$
+                     X^+X=B\,,
+                     \eqno (3)
+                     $$
+          has a solution $X\in SL(2,\Z)$  if $B$ is symmetric matrix in
+          $SL(2,\Z)$.}
+
+
+
+\m
+
+Indeed let $X=\pmatrix {\a &\beta\cr \gamma &\delta}$, ($\a,
+\beta\,\gamma, \delta\in \Z$) be a solution of the equation (3)
+where $B$ is a matrix of quadratic form $ax^2+2bxy+cy^2$, which
+defines an ellipse (1): $B=\pmatrix {a &b\cr b&c}$. Then linear
+transformation
+             $$
+         \pmatrix {x\cr y\cr}\rightarrow  \pmatrix {\a &\beta\cr \gamma &\delta}\pmatrix {x\cr y\cr}=
+         \pmatrix {\alpha x+\beta y\cr \gamma x+\delta y\cr}
+         \eqno (4)
+             $$
+transforms circle $x^2+y^2=1$ onto the ellipse (1). This linear
+transformation  establishes one-one map of lattice of points with
+integer coordinates onto itself, since $\det X=1$. Points with
+integer coordinates on the ellipse (1) are images of the points
+  $(1,0)$,  $(1,1)$, $(-1,0)$ and $(1,1)$. They are 4 points
+  $(\alpha,\gamma)$, $(\beta,\delta)$,  $(-\alpha,-\gamma)$ and $(\beta,\delta)$.
+
+  It remains to prove the Proposition.
+
+  {\it Proof}    The proof  is similar to the proof of the fact that the generators of the group
+  $PSL(2,\bf Z)$ are matrices:
+  Consider matrices
+                $$
+              S=\pmatrix {0 & 1\cr -1 &0},\,\,\, T=\pmatrix {1 &1\cr -1 &0}
+                $$
+ in $SL(2,\Z)$. One can see that $S^2=1, T^3=1$.
+
+
+   Analyze the action of matrices $T$ and $S$ on the quadratic form $ax^2+2bxy+cy^2$:
+                             $$
+B=\pmatrix {a &b\cr b &c}\to S^+BS=\pmatrix {0 & -1\cr 1 &0}\pmatrix {a &b\cr b &c}\pmatrix {0 & 1\cr -1 &0}=
+                  \pmatrix {c &-b\cr -b &a}
+                  \eqno (6a)
+                             $$
+and
+                           $$
+B=\pmatrix {a &b\cr b &c}\to T^+BT=\pmatrix {1 & -1\cr 1 &0}\pmatrix {a &b\cr b &c}\pmatrix {1 & 1\cr -1 &0}=
+                  \pmatrix {a+c-2b &a-b\cr a -b &a}\,.
+                  \eqno (6b)
+                           $$
+It suffices to show that under the actions of transformations (6a, 6b) a
+matrix $B=\pmatrix {a &b\cr b &c}$ can be transformed
+to unity matrix $E=\pmatrix {1 &0\cr 0 &1}$ or ???
+
+   Consider an arbitrary $B=\pmatrix {a &b\cr b &c}$ ($a,b,c,\in \Z, ac-b^2=1$). Suppose that $b\geq 0$.
+   (If $b<0$ we apply transformation (6a)).  If
+
+   {\it Claim The application of transformation (6a) once or twice decreases a number $b$ in the case if $b>0$}
+
+  It follows from this claim that if $b\not=0$ then applying subsequently transformations
+  $S$ (which changes $b\to -b$) and $T$ or $T^2$ we decrease $b$, and eventually we come to $b=0$.
+  If $b=0$, then $a=c=1$ and $B=\pmatrix {1 &0\cr 0 &1}$.
+
+   The claim follows from the fact that under the action of $T$
+                     $$
+ b{\buildrel T\over \longrightarrow a-b}\to {\buildrel T\over \longrightarrow c-b}
+ \eqno (7)
+                     $$
+If $|a-b|<b$ then claim is proved. If
+
+\bye

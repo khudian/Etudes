@@ -1,0 +1,75 @@
+\def\p{\varphi}
+
+  \centerline {\bf The equation of the curve whose curvature is
+  proporional to its length}
+
+     Let $x(t), y(t)$ be equation of this curve. Then
+ the curvature
+          $$
+         K(t)={1\over\sqrt{x_t^2+y_t^2}}
+                     {d\over dt}
+                            \left(
+                     {1\over\sqrt{x_t^2+y_t^2}}
+                                {\rm arctg}
+                                   {y_t\over x_t}
+        \right)\,.
+                       $$
+                   And the equation:
+                         $$
+                         \cases
+                         {
+                       {d\over dt}K(t)=\sqrt{x_t^2+y_t^2},\cr
+                           K(0)=0\cr
+                           }
+                           $$
+
+The curve can be rotated and translated so we choose additional
+initial conditions:
+                        $$
+                     x(0)=y(0)=y_t(0)=0
+                               $$
+
+
+   One can see that it is useful to choose as parameter $t$ the
+   angle
+                     $$
+                     \varphi={\rm arctg}{y_t\over x_t}
+                      $$
+   This immediately leads us to the answer.
+   Choosing this parameter we rewrite the equation as
+
+                              $$
+                       {d\over d\varphi}\left(
+       {1\over\sqrt{x_\p^2+y_\p^2}}
+                       \right)=\sqrt{x_\p^2+y_\p^2}
+                           $$
+so
+                    $$
+       {1\over\sqrt{x_\p^2+y_\p^2}}=\sqrt{2\p}
+                     $$
+                and
+           $$
+           x_\p={\cos\p\over \sqrt{2\p}},\quad y_\phi=x_\p={\sin\p\over \sqrt{2\p}}
+           $$
+       hence
+                   $$
+              x(\p)+iy(\p)=\int_0^\p{\exp(i\p)\over\sqrt{2\p}}d\p
+                               $$
+
+ In particular the limit point is:
+                                      $$
+              x(\infty)+iy(\infty)=\int_0^\infty{\exp(i\p)\over\sqrt{2\p}}d\p=
+                {1\over \sqrt i}\Gamma{1\over 2}\quad
+                ({\rm up\quad to\quad some\quad coefficient})
+                                     $$
+                \bye
+
+
+
+
+
+
+
+
+                             $$
+                             \varphi=

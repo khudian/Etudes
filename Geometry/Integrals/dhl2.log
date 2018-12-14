@@ -1,0 +1,17 @@
+This is TeX, Version 3.1415926 (TeX Live 2011) (format=tex 2011.7.3)  2 NOV 2013 08:04
+**dhl2.tex
+(./dhl2.tex [1] [2] [3]
+Overfull \hbox (19.46965pt too wide) in paragraph at lines 362--365
+[]\tenrm [4] home-page: maths.manchester.ac.uk/khudian/Etudes/Geometry/Dusterma
+at-Heckman|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm [
+.\tenrm 4
+.\tenrm ]
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+[4] )
+Output written on dhl2.dvi (4 pages, 15620 bytes).

@@ -1,0 +1,529 @@
+\magnification=1200
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf p}}
+\def \exer {{\sl Exercise$\,\,$}}
+
+ \centerline   {\bf Normal coordinates}
+  \bigskip
+
+ {\it I was badly surprised when googling I could not find real information about normal coordinates. The level of contemporary information is very low.  in particularly
+ the quotation of the fact that if local coordinates $\{x^i\}$
+ are normal coordinates in a vicinity of the point in Riemannian manifold then
+              $$
+           g_{ik}(x)x^i=x^k
+           \eqno (0.1)
+              $$
+Sure that this fact implies very beautiful features of Taylor series expansion for metric.
+
+Thirty years ago when I was unexperienced student I red these and many other facts in the Appendices to the famous article of Atia Bott and Pathody about the index of elliptic operator and in the book of Petrov.
+I will try in this text after many many years to reconstruct old constructions....}
+
+\medskip
+
+
+
+\centerline {\bf $\cal x$0. Preliminaries. Normal gauging for
+Electromagnetic and Yang-Mills field.}
+
+We say that $A_\mu(x)$ is in normal gauge ($A_\mu\to A_\mu+ \p_\mu F$) if
+
+           $$
+           A_\mu(x) x^\mu=0
+           $$
+One can do it in hundred different ways and it is obvious that Taylor expansion coefficients are
+curvature and its derivatives. The most elegant way I know from the preprint of Fateyev-Tyupkin-Schwarz:
+Consider the identity
+                         $$
+                    A_\mu(x)=\int_{0}^1 F_{\mu\nu}(tx)tx^\nu dt+\p_\mu \int_0^1 A_\nu(tx)x^\nu dt
+                         $$
+Sure this is related with Poincare lemma and the  fact that
+radial vector field $E=x^i{\p\over \p x^i}$ contracts Euclidean space to the point.
+We see that in normal gauge
+        $$
+A_\mu(x)=\int_{0}^1 F_{\mu\nu}(tx)tx^\nu
+  \eqno (0.1)
+  $$
+Comparing the terms of the order $n$ in the left and right hand sides we see that Taylor series for $A_\mu$
+are curvature and its derivatives:
+         $$
+      A_\mu^{(n)}=...F_{\mu\nu}^{n-1}x^\nu
+         $$
+        where we denoted by $f^{(n)}$ the terms of the order $n$: $f=\sum f^{n}$.
+We can look on the expression (0.1) applying integration by part. We come to:
+           $$
+       A_\mu(x)=\int_{0}^1 F_{\mu\nu}(tx)tx^\nu dt={1\over 2}F_{\mu\nu}(x)x^\nu+\dots
+           $$
+        This can be applied to yang-Mills field too.
+
+  {\bf Exercises}
+
+
+  \exer   Consider the equation on the function $f$
+           $$
+x^\mu \p_\mu f= F(x)
+           $$
+Show that it has the unique solution.
+
+
+Compare Taylor series.
+
+\exer Wright down the explicit expression for the solution,
+ for smooth functions.
+
+ $$ $$
+
+\centerline {\bf $\cal x$1. Normal coordinates for Riemannian manifold. Coordinate approach.}
+
+\m
+
+{\bf Definition of normal coordinates}
+ Let $\Gamma$ be Christoffel symbols of Levi-Civita connection $\nabla$.
+
+ We say that $\{x^i\}$ are normal coordinates in a vicinity of $p$ if lines $x^i(t)=a^it$ are geodesics.
+
+Recall the equation of geodesics:
+     $$
+\nabla_t \v_t={d^2x^i(t)\over dt^2}+{d x^k(t)\over dt}\Gamma_{km}^i(x(t)){d x^k(t)\over dt}=0\,.     
+     $$
+ Consider an arbitrary vector $\v\in T_\pt M$. Assign to this vector the geodesic $\x_\v (t)$ such that
+ $\v$ is its tangent vector at the point $\pt$.  Consider the point $\x_\v (1)$ of this curve we come to the map
+ which maps a vicinity of zero of $T_\pt M$ on manifold $M$. Choosing an arbitrary coordinates
+ in $M$ we come to normal coordinates.
+
+\exer.  Using equation of geodesics show that for normal coordinates
+
+          $$
+      \Gamma^i_{mn}(x)x^mx^n\equiv 0
+      \eqno (1.1)
+          $$
+ \exer.
+ Normal coordinates are defined up to linear transformation.
+
+
+\exer Show that the condition (1.1) implies that coordinates are normal.
+\m
+\m
+
+We rewrite the condition (0.1) in a more wise way:
+           $$
+        g_{ik}(x)x^k=g_{ik}(\pt)x^k
+        \eqno (1.2)
+           $$
+In the case if metric in origin is defined by Kronecker symbol we come to (0.1).
+
+\exer Show that the condition (1.2) implies the condition (1.1)
+(We suppose that the connection is Levi-Civita connection)
+
+We choose coordinates in the tangent space such that $g_{ik}{_\pt}$ is Kronecker delta-Symbol:
+      $g_{ik}{_\pt}=\delta_{ik}$
+
+Now study the formula (1) for these normal  coordinates
+
+
+
+For any point $\x=a^it$ consider covector
+          $$
+       a_i(t)=g_{ik}(ta^1,\dots,ta^n)a^k
+       \eqno (3)
+          $$
+We have to prove that
+    $$
+   {da_i(t)\over dt}\equiv 0
+    $$
+ This implies that in arbitrary normal coordinates
+                $$
+           g_{ik}(x)x^k=g_{ik}(x)\big\vert_{x=\pt}x^k
+           \eqno (4)
+                $$
+          and in particularly we come to (1) if metric at the origin is Euclidean.
+
+How to prove it?
+
+
+             \centerline {{$\cal x $2}}
+
+
+One way (not the best) is the following: Let ${x^i}$ be normal coordinates in a vicinity of the given point $\pt$
+and $T(x)$ an arbitrary tensor field considered as formal power series. Then one can prove that
+for Taylor series expansion
+          $$
+T(x)=T(\p)+{\p T\over \p x^i}\big\vert_{x=\pt}x^i+{1\over 2}{\p^2 T\over \p x^k\p x^i}\big\vert_{x=\pt}x^kx^i+
+{1\over 6}{\p^2 T\over \p x^k\p x^i\p x^m}\big\vert_{x=\pt}x^kx^ix^m+\dots
+          $$
+one can replace usual derivatives on covariant ones compensating this changing by adding curvature tensor and its
+covariant derivatives:
+             $$
+      T^i(x)=T^i(\p)+\left(\nabla_k T^i\right)\big\vert_{x=\pt}x^k+
+      {1\over 2}\left(\nabla_m\nabla_k T^i\pm {1\over 3} R^i_{mkp}T^p\right)\big\vert_{x=\pt}x^mx^k+
+                    $$
+                    $$
+{1\over 6}\left(\nabla_m\nabla_n\nabla_k T+\dots R^i_{mnp}\nabla_kT^p+
+\dots \nabla_kR^i_{mnp}T^p\right)\big\vert_{x=\pt}x^mx^nx^k+\dots
+                    $$
+Then one can apply this formula for tensor field $g_{ik}(x)$. Noting that covariant derivatives of metric
+tensor vanish we come to:
+               $$
+     g_{ik}(x)=g_{ik}\big\vert_{x=\pt}-{1\over 3}R_{imkn}\big\vert_{x=\pt}x^mx^n-
+     {1\over 3!}\nabla_kR_{imkn}\big\vert_{x=\pt}x^mx^nx^k+
+                $$
+                $$
+        +{1\over 5!}\left(-6\nabla_p\nabla_kR_{imkn}\big\vert_{x=\pt}+
+          {16\over 3} R_{mkn}^r\big\vert_{x=\pt}R_{kipr}\big\vert_{x=\pt}+\dots
+        \right)x^mx^nx^kx^p
+               $$
+One can note that all terms in this expansion except the first one vanish when contracting with $x^k$. This implies
+(1.2). (see the book of  Petrov). I am not satisfied by this "curled" proof.
+
+Nevertheless go further
+
+\bigskip
+
+\centerline {$\cal x$3 \bf Normal gauge for connection in the vector bundle: general picture}
+
+\m
+
+In this paragraph we consider more general situation:
+Let $E\to M$ be vector bundle equipped with connection. We will consider the "normal gauge" for
+the connection such that in the normal gauge coefficients of Taylor expansion for connection are
+curvature and its derivatives.
+
+
+
+Let $E\to M$ be fibre bundle over manifold $M$ with connection $D$. (The dimension of the fibre--$n$).
+
+The connection $D$ is the operation which maps local sections to the local 1-forms:
+$D(fr)=dfr+fDr$ for an arbitrary function $f$ and local section $s$.
+
+
+ Let $\{s_i(x)\}$ be the set of $n$-independent local sections in the vicinity of the point $\pt$
+ and $\{\theta^k_i\}$ ($i.k=1,\dots,n$) the set of $n^2$ 1-forms which define the connection in this local basis (in this trivialisation):
+              $$
+         Ds_i=\theta^k_is_k, \nabla_\Y s_i=Ds_i(\Y)=\theta^k_i(\Y)s_i
+              $$
+If $\theta^k_i=\theta^k_i\nu dx^\nu$, $r(x)=r^i(x)s_i(x)$ be an arbitrary local section and vector field $\Y=Y^\mu\p_\mu$ then
+              $$
+   \nabla_\Y r(x)=\p_\Y r^i(x)s_i(x)+r^i(x)\theta_i^k(x)s_k(x)=
+   Y^\mu\left(\p_\mu r^k(x)+\theta^k_i\mu(x)\right)s_k(x)\,.
+              $$
+The curvature two form $K$--is linear operator valued $2$- form. $K=D^2\theta$. In the basis of local sections $\{s_i(x)\}$
+     $$
+  D^2(r^is_i)=D\left(dr^is_i+r^iDs_i\right)=d^2r^is_i-dr^i\wedge Ds_i+dr^i\wedge Ds_i+r^iD^2s_i=
+     $$
+   $$
+ r^iD(\theta_i^k s_k)=r^i(d\theta_i^k -\theta_i^p\wedge\theta_p^k )s_k,
+   $$
+i.e. curvature 2-form equals to
+           $$
+        K^i_k=d\theta_i^k -\theta_i^p\wedge\theta_p^k ,  \,\,\,
+        K^i_{k\mu\nu}dx^\mu \wedge dx^\nu=
+          \left(\p_\mu\theta^k_{i\nu}-\theta_{i\mu}^p\wedge \theta_{p\nu}^k\right)dx^\mu \wedge dx^\nu\,.
+           $$
+
+
+
+Now we will define very important notion of the
+trivialisation which is  synchronised with the given coordinates.
+
+
+
+Let $\{x^\mu\}$ be local coordinates in  vicinity of the point $\pt$.
+We suppose that $x^i(\pt)=0$. The curve $x^i=a^it$ starting at the point $\pt$ is ray.
+
+{\bf Definition}.
+ We say that the trivialisation $\{s_i(x)\}$ is synchronised with the  coordinates  $\{x^\mu\}$
+ if for an arbitrary point with coordinates $x^\mu=a^\mu$ any vector  $s_i(x)$ ($i=1,2,\dots,n$) is the parallel transport of the vector st the origin
+  $s_i(\pt)$ along the  the ray $x^\mu(t)=a^\mu t$.
+
+
+\exer {\it Consider one-dimensional vector bundle. Its connection ("electromagnetic field") is $1$-form $A_\mu dx^\mu$. Show exactly
+how to find the trivialisation synchornised with the given coordinates.
+
+Show that for this trivialisation we come to normal gauge: $A_\mu x^\mu=0$.
+}
+
+
+\exer {\it Show exactly the existence of synchronised trivialisation}
+
+  Let  ${s_i(x)}$ be  trivialisation synchronised with coordinates $\{x^\mu\}$.
+
+Consider radial vector field  $\R=x^\mu\p_\mu$. Since the bases $\{s_i\}$ are synchronized with coordinate systems
+then $$
+\theta_i^k(\R)= \theta^k_{i\mu}(x) x^\mu=0\,.
+        $$
+
+
+This is condition of parallel transport along the rays )
+
+\exer {Show this}.
+
+
+       \def \L {{\cal L}}
+Using this identity and applying  Lie derivative $\L_\R$ to connection 1-forms  $\theta_i^k$ we come to
+        $$
+\L_\R \theta_i^k=d\theta^k_i\rfloor \R+d\theta(\R)=
+d\theta^k_i\rfloor \R=\left(d\theta^k_i-\theta_i^m\wedge \theta_m^k\right)\rfloor \R=
+      K_i^k\rfloor \R
+        $$
+Thus we come to the relation between connection forms and curvature.
+
+Write down it in components:
+      $$
+ \L_\R (\theta_{i\mu}^kdx^\mu)=
+ x^\nu\p_\nu\theta_{i\mu}^kdx^\mu+\theta_{i\mu}^kdx^\mu=x^\nu K^k_{i\nu\mu}dx^\mu
+      $$
+This gives us an explicit relation for Taylor series of $\theta$ and $K$.
+
+{\bf Remark} very simple but important remark: $\L_\R dx^\mu=dx^\mu$.
+
+The operator $x^\nu\p_\nu$ multiplies the monom of the order $n$ on the number $n$. Thus
+       $$
+       x^\nu\p_\nu\theta_{i\mu}^k+\theta_{i\mu}^k=x^\nu K^k_{i\nu\mu}
+       \eqno (3.4)
+       $$
+ and
+             $$
+        (n+1){\theta^k_{i\mu}}^{(n)}=x^\nu {K^k_{i\nu\mu}}^{(n-1)}\,,
+        \eqno (3.4a)
+             $$
+where we denote by $f^{(n)}$ the monom of $n$-th order in the expansion.
+
+We have:
+          $$
+     \theta^k_{i\mu}\big\vert_\pt+2\p_\nu\theta^k_{i\mu}\big\vert_{\pt}x^\nu+
+     {3\over 2}
+     \p_\sigma\p_\nu\theta^k_{i\mu}\big\vert_{\pt}x^\nu x^\sigma
+  +{4\over 3!}
+     \p_\lambda\p_\sigma\p_\nu\theta^k_{i\mu}\big\vert_{\pt}x^\nu x^\sigma x^\lambda
+      +{5\over 4!}
+     \p_\rho\p_\lambda\p_\sigma\p_\nu\theta^k_{i\mu}\big\vert_{\pt}x^\nu x^\sigma x^\lambda x^\rho
+     \dots
+          $$
+          $$
+= K^k_{i\nu\mu}\big\vert_\pt x^\nu+\p_\sigma K^k_{i\nu\mu}\big\vert_\pt x^\nu x^\sigma+
+    {1\over 2}\p_\lambda \p_\sigma K^k_{i\nu\mu}\big\vert_\pt x^\nu x^\sigma x^\lambda+
+    {1\over 3!}\p_\lambda \p_\sigma K^k_{i\nu\mu}\big\vert_\pt x^\nu x^\sigma x^\lambda\p_\rho x^\rho+\dots
+    \eqno (3.5)
+          $$
+
+We see that
+          $$
+          \matrix
+          {
+          \theta^k_{i\mu}\big\vert_\pt=0\cr
+           \p_\nu\theta^k_{i\mu}\big\vert_{\pt}={1\over 2}K^k_{i\nu\mu}\big\vert_\pt\cr
+           \p_\sigma\p_\nu\theta^k_{i\mu}\big\vert_{\pt}={2\over 3}\p_\sigma K^k_{i\nu\mu}\big\vert_\pt
+           \dots
+          }
+          $$
+1. Je croire que usual derivatives coudl be replaced by covariant derivatives (rightly understood), in the same way like in the previous paragraph.
+
+\def\D {{\cal D\,}}
+2. The equation (3.4) is valid for smooth fuinctions. The rest is for anbalytic functions. On the other hand oine can
+solve the equation (3.4) in integrals:
+    $$
+   \D\theta_{i\mu}^k+\theta_{i\mu}^k=x^\nu K^k_{i\nu\mu},\,\, {\rm i.e.}\,\, \theta_{i\mu}^k=\int_0^1 tx^\nu K^k_{i\nu\mu}(tx)dt
+    $$
+
+(In general $\D F=G$, then $F=\D^{-1}G=\int_{0}^1{G(tx)\over t}dt$. This is Adamart lemma.
+If $\D F+cF=G$, then $F=(\D+c)^{-1}G=\int_{0}^1 t^{c-1}G(tx)dt$).
+
+
+All this stuff could be applied for  vector bundle which is just tangent space. Thus trivialsiation will be just
+
+
+
+\centerline {Non-holonomial basis in affine space}
+
+
+
+
+Let $M$ be space equipped with connection. The considerations of previous paragraph could be applied in this case.
+
+ Trivialisation  synchronised with coordinate systems $\{x^\mu\}$ is non holonomic bases $\{\e_i(x)\}$
+ which is obtained from the basis in the tangent space $T_\pt M$ thorugh the parallel transport along the rays.
+
+
+
+Let $\theta^k_i=\theta^k_{i\mu}dx^\mu$ are connections forms of the connection $\nabla$ in non-holonomic synchronised basis $\{\e_i\}$
+ and $\Gamma^\mu_{\nu\rho}$ are Christoffel symbols of this connection:
+      $$
+   \nabla_\mu \e_i=\theta^k_{i\mu}\e_k, \nabla_\mu\p_\nu=\Gamma_{\mu\nu}^\rho\p_\rho
+      $$
+and
+        $$
+D\e_i=dx^\nu\nabla_\nu(e_i^\mu\p_\mu)=dx^\nu\left(\p_\nu e_i^\mu+\Gamma^\mu_{\nu\sigma} e_i^\sigma\right)\p_\mu=
+        dx^\nu\left(\p_\nu e_i^\mu+\Gamma^\mu_{\nu\sigma} e_i^\sigma\right)E^k_\mu\e_k\,,
+        $$
+where $\e_i=e_i^\mu\p_\mu$ and ${\bf E}^k=E^k_\mu dx^\mu$ are dual ${\bf E}^k(\e_i)=\delta^k_i$,
+i.e. $Ee=I$.
+Thus 1-forms $\{\theta_i^k\}$ are related with Christopher symbols by the relations:
+          $$
+      \theta_i^k=\theta^k_{i\nu} dx^\nu= dx^\nu\left(\p_\nu e_i^\mu+\Gamma^\mu_{\nu\sigma} e_i^\sigma\right)E^k_\mu
+          $$
+
+\bigskip
+
+\centerline {\bf $\cal x$4 Normal coordinates on Riemannian   manifold and Tetrad formalism.}
+
+\m
+
+Let $(M,G)$ be Riemannian manifold. Define normal coordinates in vicinity of a given point $\pt$.
+
+Let $\nabla$ be Levi-Civita connection on $M$.
+
+  Consider normal coordinates of the Levi-Civita connection, i.e. coordinates such that the rays $x^i=a^it$ are geodesics.
+  (See the paragraph 1.)   Consider the bases $\{\e_i(x)\}$ synchronised with these normal coordinates and the dual $1$-forms
+  $\E^i$. (Basis vectors $\e_i$ at the point $x$ are the  parallel transport of the basis vector
+  $\p_\i\big\vert_\pt$ along the ray and dual $1$-forms $E^i$. Dual forms are also the result of parallel transport along the rays.).
+  As usual denote by  $\R=x^\mu\p_\mu$ the  radial vector field and denote by $\{\theta^k_i\}$ connection forms for this basis.
+
+
+               $$
+               \E^i(\R)\big\vert_x=x^i
+               $$
+        since dual forms are the result of parallel transport along the rays,
+        $$
+       \theta^k_i(\R)=0
+        $$
+since basis is syncronised with connection and for the metric $G$
+       $$
+   G=\E^i\otimes \E^i, i.e.      g_{\mu\nu}(x)=\sum_i E^i(x)\mu E^i\nu(x)
+       $$
+since metric is preserved via the parallel transport.
+where as usual $\R=x^\mu\p_\mu$ is radial vector field. As usual denote connection components in the basis
+
+   The condition that $\nabla$ is Levi-Civita condition means also that this is symmetric, i.e. it s torsion equals to zero:
+                   We have for torsion
+                     $$
+             T(\e_i,\e_k)=\nabla_{\e_i}\e_k-\nabla_{\e_k}\e_i-[\e_i,\e_k]=\theta_k^r(\e_i)\e_r-\theta_i^r(\e_k)\e_r-[\e_i,\e_k]=
+                     $$
+                 $$
+             \theta^r_p\wedge \theta^p(\e_i,\e_k)\e_r+?d\E^r(\e_i,\e_k)\e_r
+                 $$
+Hence for Levi-Civita connection
+           $$
+         d\E^r=-\theta^r_p\wedge \E^p
+           $$
+Now apply $\L_\R$. According the previous formulae we have:
+               $$
+ \L_\R \E^r=d(\E^r\rfloor \R)+d\E^r\rfloor \R=dx^i+d\E^r\rfloor \R=dx^i-\left(\theta^r_p\wedge \E^p\right)\rfloor \R=
+               $$
+               $$
+    dx^i-\theta^r_p(\R)\E^p+\theta^r_p\E^p(\R)=dx^i+x^p\theta^r_p
+               $$
+
+Again:  Consider $r^2=x^1x^1+\dots+x^nx^n$. Then
+           $$
+r\circ\L_\R\circ {1\over r}\L_\R \E^r=r\circ\L_\R\circ {1\over r}\left(dx^i+x^p\theta^r_p\right)
+           $$
+Note that $\L_\R dx^\nu=dx^\nu$, $\L_\R f=nf$ if it has weight $f$. In particular $\L_\R{1\over r}=-{1\over r}$. Hence
+                            $$
+     \L_\R\left(dx^i\over r\right)=0,\,\,\,\,\,\L_\R\left(x^i\over r\right)=0
+              $$
+               and using the formula ()
+              $$
+ r\circ\L_\R\circ {1\over r}\L_\R \E^r=r\circ\L_\R\circ {1\over r}\left(dx^i+x^p\theta^r_p\right)=
+ x^p\L_\R \theta^r_p.
+              $$
+On the other hand we already know that $\L_\R\theta^r_p$ is related with curvature:
+              $$
+      \L_\R \theta^r_p=d\theta^r_p\rfloor \R=
+           \left(d\theta^r_p-\theta^r_q\wedge \theta^q_p\right)\rfloor \R=K^r_p\rfloor \R
+              $$
+where $K^r_p$ is curvature two-form, since $\theta^r_p\rfloor \R=0$. Hence we have that
+                $$
+                 r\circ\L_\R\circ {1\over r}\L_\R \E^r=
+ x^p\L_\R \theta^r_p=x^pK^r_p\rfloor \R=x^\sigma K^r_{\sigma\nu\mu}x^\nu dx^\mu\,.
+                $$
+In the curvature tensor all indices are world indices except the index $r$.
+Now calculate left hand side using the properties of $\L_\R dx^\mu=dx^\mu$:
+      $$
+r\circ\L_\R\circ {1\over r}\L_\R \E^r=r\circ\L_\R\circ {1\over r}\L_\R (E^r_\mu dx^\mu)=
+r\circ\L_\R\circ {1\over r}\left(\p_\R E^r_\mu dx^\mu+E^r_\mu dx^\mu\right)=
+      $$
+      $$
+r\circ\L_\R\circ \left(\p_\R E^r_\mu {dx^\mu\over r}+E^r_\mu {dx^\mu\over r}\right)=
+r\circ\L_\R\circ \left(\left(\p_\R E^r_\mu +E^r_\mu \right){dx^\mu\over r}\right)=
+(\p_\R^2E^r_\mu+\p_\R E^r_\mu)dx^\mu
+      $$
+We finally come to
+         $$
+         (\p_\R^2E^r_\mu+\p_\R E^r_\mu)dx^\mu=x^\sigma K^r_{\sigma\nu\mu}x^\nu dx^\mu\
+         $$
+The operator $\p_\R=x^\nu\p_\nu$ multiplies monom of the order $n$ on the number $n$. Hence
+             $$
+             (n^2+n){E^r_\mu}^{(n)}={K^r_{\sigma\nu\mu}}^{(n-2)}x^\sigma x^\nu
+             $$
+Before going further notice that because of anti-symmetricity of curvature tensor
+for  $E^r_\mu x^\mu$ all higher orders terms vanish since
+
+         $$
+       E^r_\mu x^\mu
+         $$
+all higher order derivatives vanish! Thus we come to the formula 0.
+
+We return to this later. Now
+$K$ is nothing but Riemannian curvature tensor.  Thus we come to expansion formulae for tetrads:
+(compare with (3.5))
+  We have for the expansion of tetrad
+          $$
+2 \p_\nu E^r_\mu\big\vert_\p x^\nu+{6\over 2}\p_\sigma \p_\nu E^r_\mu\big\vert_\p x^\nu x^\sigma+
+{12\over 3!}\p_\lambda \p_\sigma \p_\nu E^r_\mu\big\vert_\p x^\nu x^\sigma x^\lambda+
+{20\over 4!}\p_\rho \p_\lambda \p_\sigma \p_\nu E^r_\mu\big\vert_\p x^\nu x^\sigma x^\lambda x^\rho+\dots=
+          $$
+          $$
+R^r_{\sigma\nu\mu}\big\vert_\pt
+          $$
+
+
+ {\bf Remark} Purists told that the result is for analytic functions. On the other hand in the same way as for
+ general case one can deduce the integral relation from the equation ()
+
+{\bf Remark} Note that by the way we gave the proof that every connection has its metric locally
+(we choose any basis in $T+\pt M$ and make its chosen parallel transport along some curves.)
+
+One can see that connection with vanishing torsion is
+Levi-Civita connection. One has to prove that the answer does not depend on gauging. (coordinate system. Est-ce que c'est vrai?).
+
+
+          \bye

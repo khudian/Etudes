@@ -1,0 +1,96 @@
+\magnification=1200
+
+\baselineskip=14pt
+
+        \centerline {Galois theory for pedestrians}
+
+Short abstract:
+
+  {\it We demonstrate some basic ideas of Galois Theory
+   considering quadratic cubic and quartic equations.}
+
+
+
+  {\sl Detailed abstract}
+
+  It is well-known that roots $x_1,x_2$ of
+quadratic  polynomial $P(x)=x^2+px+q$ obey condition
+  $x_1+x_2=-p,x_1 x_2=q$i (Vieta's  formula) . 
+  Conisder another functions on roots.  E.g. one can see that
+           $$
+    x_1^4+x_2^4=p^4-4p^2q+2q^2\,,
+           $$ 
+but
+          $$
+    x_1^4-x_2^4=\pm (2pq-p^3\sqrt{p^2-4q}\,.
+          $$
+   The reason why the first expression is polynomial of roots,
+and second expression is proportional to a  square root,
+is the following:
+  the first expression is invariant with respect to the
+permutation $x_1\leftrightarrow x_2$, or more
+formally with respect to the action of  group $S_2$ 
+of permutation on roots, and the second expression changes
+the sign under action of permutation $x_1\to x_2$.
+  This statement can be generalised. Let
+    $x_1,\dots,x_n$ be roots of $n$-th order polynomial
+             $$
+    P(x)=x^n+a_1x^{n-1}+a_2x^{n-2}+\dots+a_{n-1}x+a_n\,,
+          \eqno (1)
+             $$
+where $a_1,\dots,a_n$ are parameters.
+One can consider the group of permutations of  the roots
+which preserve the coefficients of the polynomnial---Galois group.
+ In the case of 
+ polynomial (1) it is just a group $S_n$
+of permutations of roots.
+
+\noindent It turns out that  properties of roots of polynomial
+such as
+
+{\it 
+
+
+    expressability in radicals (problem of solution)
+
+   Does given expression is a polynomial on parameters $a_1,\dots,a_n$ or not?
+   
+  Does given expression is expressed via
+square root operation?
+
+}
+
+\noindent and many others
+
+
+can be expressed in answered in terms of the Galois group
+of the polynomial.
+
+
+
+  For example if $x_1,x_2,x_3$ are roots of cubic polynomial
+                $$
+           x^3+px+q=0\,,
+                $$
+then the expression
+              $$
+    A=A(x_1,x_2,x_3)=(x_1^5+x_2^5)(x_2^5+x_3^5)(x_3^5+x_1^5)\,,
+              $$
+is a polynomial on parameters $p,q$ since this expression is invariant
+under all permutations of roots, and the expression
+            
+              $$
+    B=B(x_1,x_2,x_3)(x_1^5-x_2^5)(x_2^5-x_3^5)(x_3^5-x_1^5)
+              $$
+is expressed via coefficients $p,q$ and square root operation,
+since this expression takes two values
+under the action of group $S_3$ of all permutations of roots.
+
+  We answer these questions studying  the action of group $S_3$
+of permutations of roots on LHS of these expressions.
+
+  In this talk we try to explain these ideas and on the base
+of these considerations we will come to the formulae
+for solutions of cubic and quartic equations
+
+\bye

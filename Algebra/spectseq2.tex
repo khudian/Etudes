@@ -1,0 +1,74 @@
+\def\m {\smallskip}
+\def \G {{\cal G}}
+\def \p {\partial}
+\def \t {\tilde}
+\def \a  {\alpha}
+\def \d  {\delta}
+\def \L {\Lambda}
+\def \drightarrow {\buildrel{\der}\over\longrightarrow}
+\def \der {d_{_{E.L}}}
+\def \C   {{\cal C}}
+\def \B   {\overline}
+\def \V {{\cal V}}
+\def \vsubs {\cap\phantom{\vrule height2mm depth0mm width0.4pt}
+                  \vrule height2mm depth0mm width0.4pt}
+\def\interv{\phantom{\vrule height6mm depth0mm width0.4pt}}
+\def\intervs{\phantom{\vrule height4mm depth0mm width0.4pt}}
+
+\def \U {{\cal U}}
+\def \P {{\cal P}}
+\def \Ga {\Gamma}
+\def \min {{\cal n}}
+\def \dR  {{\bf R}}
+\def \R  {{\bf R}}
+\def \vare {\varepsilon}
+\def \Hs {H^1(\G,\L^0(M))}
+
+
+\def\Postn{16}
+
+     \centerline {\bf Spectral sequences 2}
+
+  Spectral sequence. What is it ? --- it is a sequence $(E_r,d_r)$
+  of complexes such that every subsequent space is cohomology of the
+  previous one:
+                 $$
+              E_{r+1}=H(E_r,d_r)
+                 $$
+They naturally arise if we calculate cohomology of complex using
+perturbation theory.  It is powerful tool to compare two cohomologies.
+
+ We consider here spectral sequence which arises if we consider linear relations.
+
+  \centerline {Image, kernel, Indeterminancy and }
+  Let $R$ be a relation on the linear space $V$. We say that this relation is {\it linear}
+  if $R$ is a linear subspace of $V\times V$.
+ Consider the following fours subspaces in $V$:
+
+ Kernel of relation  $R$
+          $$
+  \ker R=\{x\in V\colon \,\,\, (x,0)\in R\}\,.
+          $$
+ Indeterminacy of relation $R$
+          $$
+  {\rm Ind\,}R=\{y\in V\colon\,\,\, (0,y)\in R\}\,.
+          $$
+  Domain of definition of relation $R$
+          $$
+  {\rm  Def\,\,} R=\{x\in V\colon\,\,\exists y, (x,y)\in R\}
+           $$
+      and an image of the relation $R$:
+           $$
+         {\rm  Im\,\,} R=\{y\in V\colon\,\,\exists x, (x,y)\in R\}
+           $$
+
+{\bf Example} Let $A$ be linear operator on $M$, then consider a linear relation
+        $$
+   R=R_A=\{(x,Ax)\}
+        $$
+ It is easy to see that $\ker R_A=\ker A$, ${\rm Ind} R_A=0$, ${\rm Def} R_A=V$ and ${\rm Im} R_A={\rm Im} A$.
+
+ Let $\p_r$ a sequence of linear relations such that
+
+
+\bye

@@ -1,0 +1,42 @@
+ \centerline {\bf On one very beautiful formula for $\sum {1\over n^2}$}
+
+\magnification=1200
+\medskip
+\def\a{\alpha}
+
+  {\it Written under impression of the article
+  "How to compute $\sum 1/n^2$ by solving triangles"
+    Author: Mikael Passare, math.GM/0701039})
+
+\medskip
+
+  Let $AB$ be a segment of unit length. For any point $C$ on the
+  plane one can consider coordinates $(u,v)$ or $(\a,\beta)$ where
+  $|CA|=e^{-u}, |CA|=e^{-v}$
+ and respectively $\a=\angle CAB,\quad \beta=\angle CBA$
+It turns out that transformation
+      $$
+  u=u(\a,\beta), v=v(\a,\beta)
+      $$
+has jacobian equal to unity!, i.e. it is area preserving transformation!.
+
+\medskip
+
+Set of coordinates $\a,\beta$ is:$\a,\beta\colon \a+\beta< \pi, \a,\beta\geq 0$.
+Evidently it is triangle of the area $\pi^2/2$.
+One third of this triangle transforms to the domain:$D=\{u,v,\colon u,v>0, e^{-u}+e^{-v}\leq 1\}$.
+It is easy to calculate area of this domain:
+         $$
+     \hbox{Area of $D$}=\int_0^\infty \log{1\over 1-e^{-x}}=\int_0^\infty\sum {e^{-nx}\over n}=\sum {1\over n^2}
+         $$
+
+Because map $u=u(\a,\beta), v=v(\a,\beta)$ is area preserving, then
+  we see that
+          $$
+   \sum {1\over n^2}={\pi^2\over 2}:3={\pi^2\over 6}
+          $$
+
+\bye
+
+The set $(u,v)$ spans domain which is naturally related
+ with sum $\sum {1\over n^2}$.

@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Lie algebroids. Definition of all its manifestations.}{1}
+\contentsline {subsection}{\numberline {1.1}Lie algebroid}{1}
+\contentsline {subsection}{\numberline {1.2}Examples of algebroid}{2}
+\contentsline {subsubsection}{\numberline {1.2.1}Tangent bundle algebroid in all its manifestations}{2}
+\contentsline {subsubsection}{\numberline {1.2.2}Algebroid $T^*M\to M$ in all its manifestations for Poisson manifold $(M,P)$}{3}
+\contentsline {subsection}{\numberline {1.3}Morphisms of algebroids}{3}
+\contentsline {section}{\numberline {2}$L_\infty $ algeborids. Definition in all its manifestations.}{3}

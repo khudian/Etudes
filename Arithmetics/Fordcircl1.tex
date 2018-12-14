@@ -1,0 +1,157 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{hyperref}
+\usepackage[mathscr]{eucal}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\inputencoding{cp1251}
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+%\def\K {{\bf K}}l
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{{\omega}}
+
+
+\author{{\sc О.~М.~Худавердян}}
+
+%\address{School of Mathematics, University of Manchester, Manchester, M60 1QD, United Kingdom}
+
+%\email{theodore.voronov@manchester.ac.uk, khudian@manchester.ac.uk}
+
+
+
+
+\def\a{\alpha}
+\def\e{\varepsilon}
+\def\s{\sigma}
+\def\O{\Omega}
+\def\D{\Delta}
+\def\G {\Gamma}
+\def\o{\omega}
+\def\d{\delta}
+\def\t{\theta}
+\def\Log {{\rm \, Log}}
+
+
+
+\begin{document}
+\centerline {\bf  Удивительное рядом. }
+
+\medskip
+
+
+\centerline {\bf  Ford circles  and  Farey sequences}
+
+\author
+
+\bigskip
+
+{We will discuss here the following beautiful phenomenon.
+  For every rational number $p/q$ (where $p,q$ are coprimes) consider a circle
+ $C(p,q)$ in the upper half plane such that
+  it is tangent to $x$-axis  at the point $p/q$ and has a diameter $1/q^2$:
+           $$
+ C[p/q]\colon\,\,    \left(x-p/q\right)^2+\left(y-{1\over 2q^2}\right)
+            $$
+The circles $C[p/q]$ are called {\bf Ford circles}.
+
+These circles have the following striking property:
+
+{\tt Every two Ford circles do not intersect or are tangent to each other}
+
+\bigskip
+Можно ли построить круги, по одному для каждой рационалйной точке,
+ так, чтобы каждая рациональная точка
+была бы окружена ''своим кругом'' и чтобы эти круги не пересекались?
+  Что за бред, конечно, нельзя!
+  Но, оказывается, немного ослабив условия, можно. А именно, можно построить непересекающиеся круги,
+  по одному для каждой рациональной точке
+  так, чтобы через каждую рациональную точку проходила бы "своя" окружность, граница круга!
+
+\m
+
+  Как?
+
+\m
+
+Рассмотрим в верхней полуплоскости $y\geq 0$ две окружности  $C_1, C_2$, которые касаются оси абсцисс
+в точках, отстоящих на расстоянии $a$ друг от друга. Пусть $R_1, R_2$ радиусы этих окружностей.
+  Квадрат расстояния между центрами окружностей будет равен $a^2+(R_1-R_2)^2$.
+   Окружности не пересекаются если и только если это больше чем $(R_1+R_2)^2$. Мы приходим к заключению:
+                      $$
+    \hbox{окружности  $C_1, C_2$ не пересекаются}\Leftrightarrow a^2>4R_1R_2\,,
+                      $$
+  то есть  окружности $C_1$ и $C_2$ не пересекаются
+  если расстояние между точками касания этих окружностей с осью абсцисс
+  больше чем среднее геометрическое их диаметров,
+            окружности касаются друг друга,
+  если расстояние между точками касания равно среднему геометрическому их диаметров.
+
+  \m  
+
+
+{\footnotesize
+  {\bf Замечание} Красивая геометрическая картинка (см. рис.1) для случае касания:
+    Пусть $PM$ общая касательная, $A,B$ касания (см. рис.1). Треугольник $O_1MO_2$ прямоугольный, так как
+    $\angle PMO_2={1\over 2}\angle PMA$ и $\angle PMO_1={1\over 2}\angle PMB$, значит
+      $\angle O_1MO_2={\pi\over 2}$.  Отрезок $MP$, это высота, проведенная на гипотенузу $O_1O_2$.
+      Этот отрезок с одной стороны равен
+    половине отрезка $AB$, а с другой сторону среднему геометрическому отрезков гипотенузы.
+   То есть
+                       $$
+                     {a\over 2}=\sqrt{R_1R_2}\,.
+                       $$
+}
+
+Теперь рассмотрим две произвольные рациональные дроби $\a=p/q$ и $\beta=r/s$, $p/q<r/s$. Mы положим, что эти дроби
+несократимы, то есть пары $(p,q)$ и $(r,s)$ взаимно просты.
+Oбозначим символом $C_a(r)$ окружность радиуса $r$, касающуюся оси абсцисс
+в точке  $а$.  Заметим, что
+              $$
+       |\a-\beta|=\left|{r\over s}-{p\over q}\right|=\left|{rq-ps\over qs}\right|\geq {1\over qs}
+              $$
+
+
+Поэтому мы приходим к выводу, что
+       
+множество кругов    не если и только если  
+
+
+
+\end{document} 

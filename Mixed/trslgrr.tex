@@ -1,0 +1,173 @@
+
+
+\documentclass{article}
+
+\usepackage[koi8-r]{inputenc}% [cp-1251]
+\usepackage[russian]{babel}
+\usepackage{plain}
+
+\begin{document}
+
+\begin{plain}
+
+%\input{file} % Input a Plain TeX file.
+             % You may also type Plain TeX commands here
+             % directly, without \input'ing any file.
+
+%\end{plain}
+
+%\end{document}
+
+
+
+\magnification=1200
+
+\def \a {\alpha}
+\def\s {\sigma}
+
+\def \F {{\cal F}}
+\def \L {{\cal L}}
+\def \D {{\cal D}}
+\def \N {{\cal N}}
+\def\p{\partial}
+\def\d{\delta}
+\def \P {{\cal P}}
+\def \Pi {{\cal Pi}}
+\def \V {{\cal V}}
+\def\R {\bf R}
+\def \O{\Omega}
+
+  {\it The most exciting point of this etud is that
+   the space of planes which are tranvesal
+   to the given plane $X$ in the linear space $E$
+   is the space of projectors
+   on the $X$ and this space is associated to the
+   linear space of operators on $E$ which
+    vanish {\bf on} $X$ and which take values {\bf in} $X$.
+    This space appeared in proving the Theorem of
+    irredusible representations for semisimple algebras
+    via Whitehead lemmas...}
+
+                 $$ $$
+ \centerline{  The description  of lagrangian surfaces transversal to the
+      given one.}
+
+   $$ $$
+
+   Let $X$ be given lagrangian surface in linear symplectic space.
+
+   How to desctibe the space of planes transversal to it?
+
+   \smallskip
+
+   First of all we consider the space of all trasversal planes (ignoring the symplectic structure).
+
+
+   Let $Y_0$ be any transversal plane. Consider the pair $(X,Y_0))$. If $Y$ is any
+   other plane transversal to $X$  then one can consider linear operator
+    $A\colon\quad Y_0\rightarrow X$ such that
+                   $$
+                   Y=Y_0\oplus AY_0
+                    \eqno (1)
+                   $$
+   The operator $A$ defines uniquely the operator $W$ on $E$ such that
+    $W\Big\vert_{X}=0$. This operator obeys to relation
+                  $$
+                  {\bf\rm Im}W\subset X\subset {\bf\rm ker}W
+                     \eqno (2)
+                  $$
+
+
+     {\bf Proposition 1}
+     The space of surfaces transversal to $X$ is affine space. The associated linear
+     space is the linear space of operators $W\in {\rm Hom}(E,E)$ obeying to (2).
+
+
+
+    In fact the best way to describe the affine space of transcversal surfaces it is to use
+     projection operators for which $X$ is kernel, or for which $X$ is identity domain.
+
+     Let $P_0$ be a  projection operator
+  corresponding to the plane $Y_0$ transversal to $X$, i.e.
+  $P_0\big\vert_{Y_)}={\bf \rm id}$ and ${\rm ker}P_0=X$
+     (or $\tilde P_0=1-P_0$ is the projection operator such
+      that ${\rm ker}\tilde P_0=Y_0$ and $\tilde P_0\big\vert_X={\bf \rm id}$).
+          It is easy to see that projection operator corresponding to the
+    the plane $Y$  is equal to the
+                      $$
+                  P=P_0+W
+                       $$
+
+{\bf Proposition 2}
+     The affine space of planes transversal to $X$ is
+     the affine space of projectors of $E$ on the $X$.
+     For arbitrary projector $P_0$ of $E$ on the $X$
+     $P$ is    projector $P_0$ of $E$ on the $X$ also,
+     if and only if $W=P-P_0$ belongs to the linear space (2)
+
+
+  {\bf Remark} What is the meaning of the cohomology of (2) ($W^2=0$).
+
+   $$ $$
+
+   Now we return to symplectic and lagrangian structure.
+This put additional conditions on $W$ and $P$.
+
+The operator $A$ in (1) is the linear operator on Lagrangian surface $Y_0$
+ with values in Lagrangian surface $X$.
+ Correspondingly the operator $W$ in (1) is the linear operator the whole symplectic
+ space $E$ into itself such that it takes values
+ with values in Lagrangian plane $X$ which belongs to its kernel.
+ Identifying $E$ with dual space $E^*$ (via symplectic product) we put in
+ correspondence to the linear operator $W$ the {\bf bilinear form} $\O$:
+                               $$
+                               \O(a,b)=<W(a),b>
+                                  \eqno (4)
+                                $$
+    Correspondingly identifying lagrangian plane $X$ with dual to $Y_0$
+    we put in correspondence to $A$ in (1) the bilionear form on $Y_0$.
+  From (1) it follows  that $<Au,v>+<u,Av>=0$, for arbitrary $u,v,\in Y_0$,
+  because $Y$ is lagrangian plane also. Correspondingly for $W$
+  $<Wu,v>+<u,Wv>=0$, for arbitrary $u,v,\in E$.
+  Hence $\O$ is bilinear symmetric form.
+
+
+ {\bf Proposition 1L}
+     The space of lagrangian planes transversal to
+     the given lagrangian plane $X$ in the linear symplectic
+     space  is affine space.
+     The associated linear
+     space is the linear space of symmetric bilinear forms
+     on $E$ which vanish on $X$ (forms on $E/X$).
+
+   {\bf Remark}. In component language it is nothing but
+    constructing lagrangian surface $Y$ as graph of the linear function
+    generating by quadratic function on $Y$.
+
+
+  One can see easily that condition that $X$ and $Y$ are lagrangian put the following
+   constraints on the projector $P$:
+                              $$
+                   <Pu,v>+<u,Pv>=<u,v>
+                                  \eqno (5)
+                              $$
+Note that from (2) it follows that
+ $<Wu,v>+<u,Wv>=0$ $<Wu,v>=<Wv,u>$.
+И ещё заметим, что (5) как у Стернберга!!!
+
+{\bf Proposition 2L}
+     The affine space of lagrangian planes transversal to
+      the lagrangian plane $X$ is
+     the affine space of projectors of $E$ on the $X$,
+      obeying to (5).
+     For arbitrary such projector $P_0$ of $E$ on the $X$
+     $P$ is  projector $P_0$ of $E$ on the $X$ which also
+       defines transversal lagrangian plane
+     if and only if
+      $W=P-P_0$ belongs to the linear space (2)
+      and $<W...,...>$ is symmetric.
+
+\bye
+\end{plain}
+
+\end{document}

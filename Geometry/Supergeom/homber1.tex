@@ -1,0 +1,257 @@
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+\def \exer {{\sl Exercise$\,\,$}}
+
+ \centerline   {\bf Determinant and Berezinian. Their homological interpretation.}
+
+
+\bigskip
+
+I will give here shortly homological interpretation of
+(super)determinant.  Reading this text you have to do  exercises.
+
+
+ First consider determinant.
+
+         {\sl ${\cal x}$1. Determinant}
+
+\medskip
+
+   Let $V$ be linear space. Consider the space $\Pi V\otimes V^*$.
+
+   Consider the space $C$ of polynomials on $\Pi V\otimes V^*$. Let $\{\bf e_i\}$ be an arbitrary basis
+   in $V$, $\{\bf e^i\}$ be a dual basis in $V^*$,and $\{\bf \Pi \e_i\}$ be corresponding basis in $\Pi V$.
+   We denote by $\{\theta^i\}$ coordinates of vectors in $V$ and by $\{p_i\}$ coordinates of vectors in $\Pi V$
+   in these bases.
+
+   Note that $\{\theta^i\}$ are odd.
+
+   Polynomials on $C$ are polynomials on $\theta^i, p_i$.
+
+   Consider the polynomial
+           $$
+           Q=\theta^ip_i=\theta^1p_1+\dots+\theta^np_n
+           \eqno (1.1)
+           $$
+\exer 1.1  Show that $Q$ is well-defined, i.e. it does not depend on the choice of basis $\{\e_i\}$ in $V$.
+
+\exer 1.2 Show that $Q^2=0$.
+
+
+One can consider $Q$ as a differential on the space $C$.
+
+    Calculate (co)homology of $Q$:
+             $$
+          H={Z\backslash B},
+             $$
+where $Z$ is space of cocycles: $P\in Z$ if $QP=0$ and $B$ is space of coboundaries: $P\in P$ if $P=QR$.
+
+   Consider the following Laplacian on $C$:
+          $$
+       \Delta P(p,\theta)={\p^2\over \p \theta^i\p p_i} P(p,\theta)
+       \eqno (1.2)
+          $$
+
+\exer 1.3
+  Calculate anticommutator
+              $$
+            [\Delta, Q]_+=\Delta Q+ Q\Delta
+              $$
+on the space  $C$.
+
+Consider $C=\oplus_{k,r}C_{kr}$ where $C_{kr}$ is the subspace of polynomials which have weight $k$ on $\theta$
+and weight $r$ on $p$, i.e.:
+            $$
+   P\in C_{k,r} \,\, {\rm if}\,\,     \theta^i{\p\over \p\theta^i}P=kP,\,\, p_i{\p\over \p p_i}P=rP\,.
+            $$
+
+\exer 1.4   Calculate $[\Delta, Q]_+$ on subspaces $C_{k,r}$. More exactly show that there exist number $\nu_{k,r}$ such that
+for an arbitrary $P\in C_{k,r}$
+            $$
+[\Delta, Q]_+P=\nu_{k,r}P
+            $$
+
+
+
+\exer 1.5 Show that all cocycles coboundaries in all subspaces except the subspace $C_{n,0}$, where
+$n$-dimension of the vector space $V$.
+
+
+\exer 1.6 Consider cohomology class $c=[\theta^1\theta^2\dots, \theta^n]$.  Show that it is not trivial.
+
+
+\exer 1.7  Show that  every cohomology class is proportional to $c$, i.e. $H(Q,C)=\R$.
+
+\medskip
+
+   If you did all these exercises then you are ready to see that for an arbitrary linear operator $A$ on $V$
+                $$
+                \det A={[\hat Ac]\over [c]}
+                \eqno (1.!!!)
+                $$
+where $[c]$ is an arbitrary non-zero cohomology class, and $\hat Ac$ the induced action of $A$ on $c$.
+
+The last formula is cohomological definition of determinant. The pessimist will tell that it is  just the translation from "Enlgish
+(Russian) to French" of the well-known formula
+              $$
+             \det A={\omega(A\x_1,A\x_2,\dots, A{\x_{n-1}}A\x_n)\over \omega(\x_1,\x_2,\dots, {\x_{n-1}}\x_n)},
+             \eqno (1.!!!??)
+              $$
+where $\omega$ is an arbitrary $n$-form , and ${\x_1,\dots,\x_n)}$
+is an arbitrary set of $n$-vectors such that
+$\omega(\x_1,\dots,\x_n)\not=0$.
+
+Yes, in some sense pessimist is  right, but on the other had the advantage of the formula  (1.!!!) is that it can be easily
+generalised for the
+supercase opposite to the formula (1.!!!?).
+
+
+\bigskip
+       {\sl ${\cal x}$1. Berezinian (superdetermiant)}
+
+\medskip
+
+  Now  let $V$ be $p|q$-dimensional  superspace.  Shortly what is it:
+
+  Consider $Z_2$-graded vector space $V_0\oplus V_1$ such that dimension of $V_0$ equals $p$ and dimension of $V_1$ equals $q$.
+  The basis in $V$-$\{\e_i,\f_\a\}$, $i=1,,\dots,p;\,\a=1,\dots,q$. An arbitrary vector  $\x$ in $V$ can be decomposed.
+                    $$
+             \x=a^i\e_i+b^\a\f_\a
+             \eqno (2.1)
+                    $$
+Consider
+expressions (2.1) where coefficients $a^i$ are even elements and coefficients $b^\a$ are odd elements
+of an arbitrary Grassmann algebra $\Lambda$. Thus we come to the set
+             $$
+          V_\Lambda=\Lambda_0\otimes V_0\oplus  \Lambda_1\otimes V_1
+             $$
+of $\Lambda$-points of the superspace $V$ \footnote{$^{1)}$}{Superspace is a functor which assigns to an arbitrary
+Grassmann algebra  $\Lambda$ the set $V_\Lambda$ of $\Lambda$-points.}
+
+
+
+
+ One can consider even linear operators on the super-space $V$:
+They are given by $K$ be an even $p|q\times p|q$  matrices
+       $$
+  K=\pmatrix
+       {
+  K_{00} & K_{01} \cr
+  K_{10} & K_{11} \cr
+  }
+       $$
+where entries of $p\times p$ matrix $K_{00}$ and $q\times q$ matrix
+$K_{11}$ are even numbers (even elements of a Grassmann algebra),
+and entries of $p\times q$ matrix $K_{01}$ and $q\times p$ matrix
+$K_{10}$ are odd numbers (odd elements of a Grassmann algebra)
+
+   Respectively $\Pi V$ is $q|p$ dimensional superspace.
+
+
+   Consider the space $\Pi V\otimes V^*$.
+   Coordinates on the space $\Pi V$ are
+   $\{\theta^i,y^\a\}$ where $\theta^i$ are anticommuting (odd elements of Grassmanm algebra)
+   ($i=1,2,\dots,p$) (have parity opposite to the parity of $a^i$) and $y^\a$
+   are commuting $\a=1,\dots,q$ (have parity opposite to the parity of $b^\a$)
+
+
+   Coordinates of the space $\Pi V\otimes V^*$ are
+   $\{\theta^i,y^\a, p_i,\varphi_\a\}$, where $\theta^i, \varphi_\a$ are odd and $y^\a,p_i$ are even.
+
+
+
+   We have
+           $$
+           Q=\theta^ip_i+y^\a\varphi_\a.
+           \eqno (1.1)
+           $$
+\exer 1.1  Show that $Q$ is well-defined, i.e. it does not depend on the choice of basis $\{\e_i\}$ in $V$.
+
+\exer 1.2 Show that $Q^2=0$.
+
+
+In the same way as for pure bosonic case one can consider $Q$ as a differential on the space $C$ and consider
+ (co)homology of $Q$:
+             $$
+          H={Z\backslash B},
+             $$
+To calculate the cohomology we consider the same Laplacian:
+          $$
+       \Delta ={\p^2\over \p \theta^i\p p_i}+{\p^2\over \p y^\a\p \varphi_\a}
+       \eqno (1.2)
+          $$
+\exer In the same way like before calculate  $[\Delta, Q]_+=\Delta Q+ Q\Delta$ and show that
+cohomology not vanish only in the one-dimensional subspace of polynomials
+        $$
+      P=a\theta^1\theta^2\dots, \theta^p\varphi_1\dots\varphi_q
+        $$
+
+\exer Show that cohomology class  $c=[\theta^1\theta^2\dots, \theta^n \varphi_1\dots\varphi_q]$ is not trivial.
+
+
+
+Finally we come to Berezinian. Consider a matrix of an arbitrary even operator:
+            $$K=\pmatrix
+       {
+  K_{00} & K_{01} \cr
+  K_{10} & K_{11} \cr
+  }
+       $$
+where entries of $p\times p$ matrix $K_{00}$ and $q\times q$ matrix
+$K_{11}$ are even numbers (even elements of a Grassmann algebra),
+and entries of $p\times q$ matrix $K_{01}$ and $q\times p$ matrix
+$K_{10}$ are odd numbers (odd elements of a Grassmann algebra)
+
+
+ Calculate the action of this operator on cohomology class $c=[\theta^1\theta^2\dots, \theta^n \varphi_1\dots\varphi_q]$
+   we come to the formula:
+           $$
+       [\hat K c]={\rm Ber K}[c],
+           $$
+where
+           $$
+{\rm Ber K}={\det \left(K_{00}-K_{10}K_{11}^{-1}K_{01}\right)\over \det K_{11}}
+           $$
+
+Do it!
+\bye

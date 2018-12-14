@@ -1,0 +1,276 @@
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\f {{\bf f}}
+\def\pt {{\bf pt}}
+\centerline  {\bf Shape operator $=$ square root of curvature two-form}
+
+\centerline {\bf and}
+
+\centerline {\it Teorema Egregium}
+
+\bigskip
+
+
+
+{\it We give here very simple proof of the fact why for an even-dimensional surface
+curvature defined by shape operator is invariant of isometries and
+show why this does  not work for odd-dimensional case\footnote{$^*$}
+{\noindent {\sl Thedya Voronov
+suggested to make these calculations using moving frames formalism.  This
+works very nice.}}.}
+
+
+
+\bigskip
+
+  Let $M$ be a surface of codimension $1$ in $n+1$-dimensional Riemannian space.
+   One can consider unit normal vector field $\n$. Since $(\n,\n)=1$ then
+  the derivative of vector field $\n$ along an arbitrary vector $\x$ tangent to the
+  surface is tangent vector also. We come to
+  Shape operator $S$ defined on the vectors tangent to the surface:
+             $$
+           S(\x)=-\p_\x \n
+           \eqno (0.1)
+             $$
+One can see that $\det S$ is equal to the density of volume form induced on the surface
+ by the volume form on $n$-dimensional sphere in $\E^n$ through Gauss map
+ ($M\ni \pt\to \n\vert_{\pt}$)., i.e.
+      an integral
+           $$
+         \int \det S d\sigma
+         \eqno (0.2)
+           $$
+is equal to the degree of Gaussian map.
+($d\sigma$ is volume form on the surface induced by the Riemannian metric:$d\sigma=\sqrt {\det g}$)
+
+ The integrand in this formula is total divergence. ({\tt Explain why?})
+
+  \smallskip
+
+  In the case if surface $M$ is {\it even}-dimensional then one can say more:
+  $\det S$ is proportional to Gaussian curvature, it is invariant of isometries, i.e. it depends
+  on the induced metric and does not change if we change embedding and does not change induced metric.
+  It is Gauss Egregium Teorema. In this case $\det S d\sigma$ is local expression for Euler class.
+
+
+
+
+  We would like to show this by simple calculations. Our plan is following:
+  we show that $\det S$ is equal to the pfaffian of the determinant
+  of curvature-two form.
+
+
+\m
+{\bf Remark} Note that   Note that shape operator (0.1) is defined up to a sign as well as normal unit vector.
+Hence the density $\det S$ in (0.2) is defined up to a sign if dimension $M$ is odd and it is well-defined
+if dimension of $M$ is even: $\det (-S)=(-1)^n\det S$.
+
+
+\bigskip
+
+\centerline {\it General stuff}
+
+\m
+ In his paragraph we consider relations between curvatures of tangent and normal bundle for an arbitrary
+ $k$-dimensional surface in $n$-dimensional Euclidean space $\E^n$.
+
+  Let $x^i(\xi^\a)$ ($i=1,\dots,n,\a=1,\dots,k$) be a
+  parameterisation of the given surface $M$. The trivial
+  (canonical) connection in $\E^n$ induces connection on surface and
+  on normal bundle to the surface.
+   Consider an orthonormal (in general non-holonomic) basis $\{\e_a,\n_p\}$, $a=1,\dots,k,p=1,\dots,n-k$
+   on the points of the surface $M$ such that vectors $\e_1,\dots,\e_k$ are tangent to the surface
+   and vectors $\n_1,\dots,\n_{n-k}$ are normal vectors:
+          $$
+        \e_a(\xi)=e_a^\a x^i_\a {\p\over \p x^i}\big\vert_{x^i_\a={\p x^i(\xi)\over \p \xi^\a}}
+        ,\,\, (a=1,\dots,k),\,\,
+        (\e_a,\e_b)=\delta_{ab},(\e_a,\n_p)=0,(\n_p,\n_q)=\delta_{pq}
+          $$
+  One  can consider  basis vectors $\{\e_a,\n_p\}$ as functions, $0$-forms on the points of the manifold $M$
+  with values in the vectors of $\E^n$,
+  $\{\e_a(\xi)=\e_a(x(\xi)),\n_p(\xi)=\n_p\left(x\left(\xi\right)\right)\}$.
+
+ Consider $1$-forms $d\e_a$, $d\n_p$ on $M$ with values in vectors in $\E^n$. Expanding them over the basis
+$\{\e_a,\n_p\}$ we come to the equations:
+              $$
+              d
+              \pmatrix{\e_a\cr\n_p\cr}=
+              \pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}
+              \pmatrix{\e_b\cr\n_q\cr}
+              $$
+            $$
+            d\e_a=A_{ab}d\e_b+L_{aq}\n_q,\,\,\qquad d\n_p=S_{pb}\e_b+T_{pq}\n_q,
+            \eqno (1)
+            $$
+where $(A_{ab},L_{aq},S_{pb},R_{pq})$ are one-forms.
+The matrix  $\pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}$ is antisymmetric since $(\e_a,\n_p)$ is an arthonormal
+ basis at any point of $M$:
+               $$
+            A_{ab}=-A_{ba},\,\,   L_{ap}=-S_{pa},\,\,\, T_{pq}=-T_{qp}
+            \eqno (2)
+               $$
+
+ The condition that $d^2\e_a=0, d^2 \n_b=0$ leads to identities:
+                $$
+        0=d^2 \pmatrix{\e_a\cr\n_p\cr}=
+        \pmatrix {dA_{ab} &dL_{aq}\cr dS_{pb} &dT_{pq}}\pmatrix{\e_b\cr\n_q\cr}-
+        \pmatrix {A_{ab} &L_{aq}\cr S_{pb} &T_{pq}}\pmatrix{d\e_b\cr d\n_q\cr}=
+                $$
+                $$
+               \left(
+        \pmatrix {dA_{ab} &dL_{aq}\cr dS_{pb} &dT_{pq}}-
+        \pmatrix {A_{ac} &L_{ar}\cr S_{pc} &T_{pr}}
+        \pmatrix {A_{cb} &L_{cq}\cr S_{rb} &T_{rq}}
+        \right)
+        \pmatrix{\e_b\cr\n_q\cr}
+                $$
+Hence we have four conditions (structure equations)
+             $$
+             \matrix
+             {
+         dA_{ab}-A_{ac}\wedge A_{cb}-L_{ar}\wedge S_{rb}=0\cr
+         d L_{aq}-A_{ac}\wedge L_{cq}-L_{ar}\wedge T_{rq}=0\cr
+          dS_{pb}-S_{pc}\wedge A_{cb}-T_{pr}\wedge S_{rb}=0\cr
+          dT_{pq}-S_{pc}\wedge L_{cq}-T_{pr}\wedge T_{rq}\cr=0
+               }
+             $$
+In a view of (2) we come to the following three conditions on one-forms $A_{ab}, S_{pb}, T_{pq}$ :
+                    $$
+                     \matrix
+             {
+         dA_{ab}-A_{ac}\wedge A_{cb}+S_{ra}\wedge S_{rb}=0\qquad\qquad &(*)\cr
+          dS_{pb}-S_{pc}\wedge A_{cb}-T_{pr}\wedge S_{rb}=0\qquad\qquad &(**)\cr
+          dT_{pq}+S_{pc}\wedge S_{qc}-T_{pr}\wedge T_{rq}=0\qquad\qquad &(***)\cr
+               }
+               \eqno (3)
+                    $$
+Clarify geometric meaning of these conditions.
+
+1. One-forms $\{A_{ab}\}$ in (1) define parallel transport of tangent vectors and
+connection in the tangent bundle such that $\e_b$-component of covariant derivative of
+vector field $\e_a(x(\xi))$
+along tangent vector $\X$ is equal to  $A_{ab}(\X)$.
+   For any section $u^a\e_a$  the one-form  with values in tangent vectors to $M$
+                $$
+                D(u^a\e_a)=du^a\e_a+u^aD\e_a=du^a\e_a+u^aA_{ab}\e_b,
+                  $$
+  where $D$ is covariant differential.  Respectively
+                  $$
+            \nabla_\X \left({u^a\e_a}\right)=D(u^a\e_a)\left(\X\right)=
+            du^a\left(\X\right)\e_a+u^aD\e_a\left(\X\right)=
+            \p_\X u^a \e_a+u^aA_{ab}(\X)\e_b\,.
+                $$
+
+
+ One can show that this is Levi-Chivita connection of the metrics $g_{\a\b}$ ($\e g\e^+=1$) ({\tt Show it!}).
+       The action of $D^2$ defines curvature operator:
+                $$
+         D^2(u^a\e_a)=D\left(du^a\e_a+u^aA_{ab}\e_b\right)=-du^aD\e_a+d(u^aA_{ab})\e_b-u^aA_{ab}D\e_b=
+            u^a{\cal R}^{\rm tang}_{ab}\e_b
+               $$
+where for curvature-form  ${\cal R}^{\rm tang}_{ab}$
+             $$
+{\cal R}^{\rm tang}_{ab}=dA_{ab}-A_{ac}\wedge A_{cb}
+             $$
+Hence the first condition in (3) means
+           $$
+   {\cal R}^{\rm tang}_{ab}=-S_{ra}\wedge S_{rb}
+   \eqno (4)
+           $$
+This is our central statement.
+
+ Analogously we can consider connection and curvature of normal bundle.
+ In particular we see that for curvature ${\cal R}^{\rm norm}_{pq}$ of normal bundle
+            $$
+            {\cal R}^{\rm norm}_{ab}=dT_{pq}-T_{pr}\wedge T_{rq}
+            $$
+and third condition means
+          $$
+  {\cal R}^{\rm norm}_{ab}=--S_{pc}\wedge S_{qc}
+  \eqno (5)
+            $$
+            We see that both curvatures of normal and tangent bundle are defined via the one forms
+  $S_{pr}$.
+
+
+
+  \bigskip
+            \centerline  {\it Surfaces of codimension 1}
+ Now return to one-codimensional case. All becomes much simpler: Derivation equation (1) have now the
+ following appearance:
+         $$
+          d\e_a=A_{ab}d\e_b-S_a\n,\,\,\qquad d\n_p=S_{b}\e_b,
+         $$
+        The one-form $S_a$ is nothing but shape operator (0.1)
+  Indeed if $S_\a^{\beta}$ are components of shape operator in coordinate basis
+        and one-form $S_a=d\xi^\a S_{\a a}$ then
+               $$
+               {\p \n\over \p \xi^\a}=-S_\a^\beta {\p\r(\xi)\over \p\xi^\beta}=S_{\a b}\e_b=
+               S_{\a b}e_b^\beta {\p\r(\xi)\over \p\xi^\beta},
+               $$
+i.e.
+                   $$
+         =-S_\a^\beta=S_{\a b}e^\beta_b,\qquad  (\e_b=e_b^\beta x^i_\beta)
+                   $$
+condition (4) for hypersurface becomes:
+            $$
+               {\cal R}^{\rm tang}_{ab}=-S_{a}\wedge S_{b},
+               \eqno (2.1)
+            $$
+`This formula contains all the answer!
+
+
+\bye
+ To understand it first consider two examples
+
+ {\bf Example 1} Two-dimensional surface $x^i=x^i(\xi^1,\xi^2)$ in three dimensional Euclidean space.
+
+ Curvature two form ${\cal R}_{ab}$ has one essential component
+ ${\cal R}_{12}=R_{12}(\xi^1,\xi^2)d\xi^1\wedge d\xi^2$
+ (${\cal R}_{21}=-{\cal R}_{12}, {\cal R}_{11}={\cal R}_{22}=0$).
+  For one-forms $S_a$ ($a=1,2$) and shape operator $S$ we have
+   $S({\bf u})=S_a({\bf u})\e_a=S_1({\bf u})\e_1+S_2({\bf u})\e_2$
+
+ According to
+ (2.1)
+                  $$
+{\cal R}_{12}=R_{12}(\xi^1,\xi^2)d\xi^1\wedge d\xi^2=-S_1\wedge S_2=()
+                  $$
+\bye

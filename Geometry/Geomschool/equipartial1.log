@@ -1,0 +1,18 @@
+This is TeX, Version 3.1415926 (MiKTeX 2.7) (preloaded format=tex 2010.10.11)  25 OCT 2010 14:55
+**equipartial1.tex
+(equipartial1.tex
+Overfull \hbox (0.57088pt too wide) in paragraph at lines 86--88
+[][]\tenbf Example\tenrm . Show that rect-an-gle $^^E[]$ with sides $\tensy f\t
+enrm 1\teni ; \tenrm 2\tensy g$ \tenrm and square $^^E[]$ with sides $\tensy f[
+]\teni ; []\tensy g$|
+
+\hbox(9.07217+2.5)x391.46176, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\special{src:86equipartial1.tex}
+.\tenbf E
+.\tenbf x
+.\tenbf a
+.etc.
+
+[1] [2] )
+Output written on equipartial1.dvi (2 pages, 10224 bytes).

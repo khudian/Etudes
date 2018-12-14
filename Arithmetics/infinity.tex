@@ -1,0 +1,88 @@
+
+
+       \magnification=1200
+
+     \centerline {\bf Points on Integer Distances}
+
+    \medskip
+
+Yulii Rudyak gave me the following problem:
+
+ {\bf $X$ is the set of the points on the plane, such that
+ not all the points are on the same line and all the distances
+ between the points are integers. Prove that in this case $X$
+ has to be a finite set.}
+
+\smallskip
+
+ {\bf Remark} One can easily to construct for every $N$ a set of
+$N$ points which are not on the same line and
+ all the distances are
+ integer. One can also construct the infinite set $X$
+of points not on the same line with rational distances
+between them.
+
+E.g. consider the points
+ $\{A_0,A_1,\dots.A_p,\dots\}$ which have following
+cartesian coordinates:
+               $A_0$ has coordinates $(0.2)$ and
+the point $A_k$ has coordinates $(k-{1\over k})$ ($k=0,1,2,3,\dots$).
+It is easy to see that all the distances between these points are rational.
+On the other hand for arbitrary $N$ under
+dilatation $(x,y)\rightarrow$ $(N!x,N!Y)$ the subset of first
+ $N+1$ points transforms to the set with integer distances.
+
+\smallskip
+
+ Now we go to the proof of the Rudyak,s statement.
+
+ Let $A,B,C$ be three points from the set $X$
+ which are not on the same line and
+  there lengths are equal to $|AB|=c$, $|BC|=a$
+
+We consider the subset $X_{pq}$ which is defined in the following way:
+                            $$
+    X_{pq}\colon \quad {\bf r} \in X_{pq}\quad{\rm iff}
+                         \,\,{\bf r}\in X\quad {\rm and}\,
+                       \cases
+                         {
+                  |\rho({\bf r},A)-\rho({\bf r},B)|=p\,,\cr
+                  |\rho({\bf r},A)-\rho({\bf r},C|= q\,\cr
+                         }
+                                    \eqno (1)
+                        $$
+In other words $X_{pq}$ are the points of $X$ whose distances
+between $A$ and $B$ differs on $p$ and between $A$ and $C$
+differs on $q$.
+
+It is evident that the integers $p$ and $q$ are restricted by
+   integers $c$ and $b$ respectively: $0\leq p\leq c$,$0\leq q\leq b$,
+
+Hence it remains to prove that all $X_{pq}$ are finite sets,
+because
+                        $$
+      X=\bigcup_{p\leq c, q\leq b}X_{pq}
+                \eqno (2)
+                         $$
+The fact that every $X_{pq}$ is the finite sets immediately follows from the
+  fact that  belongs simultaneously to hyperbole
+  $\Gamma_p^1$ {\bf r} {\bf r} with focuses in the points $A$ and $B$,
+   defined by the first equation in (1) and
+to the hyperbole $\Gamma_q^2$ with focuses in the points $A$ and $C$
+ defined by the second equation in (1).
+ Hence these hyperboles have not more than $4$ general points,
+because their focuses do not belong to the same line.
+ (The degenerated hyperboles: $\Gamma^1_0$, $\Gamma^2_0$---lines
+ and $\Gamma^1_c$ and $\Gamma^2_b$---rayons are considered also like hyperboles.
+ "Hyperboles" $\Gamma^1_c$ and $\Gamma_b^2$ --- rayons
+ have infinite set of general points if $A,B,C$ would be on the same line)
+
+ We came to the conclusion that the number of ponts in $X_{pq}$
+is not more that $4$. From (3) and (2) it follows that number of points in
+ $X$ is not more than $4bc$.
+The statement is proved.
+
+
+
+
+\bye

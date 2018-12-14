@@ -1,0 +1,368 @@
+\def \h {{\cal q}}
+\def \e {{\bf e}}
+\def \R {{\bf R}}
+\def \Q {{\bf Q}}
+\def \K {{\bf K}}
+\def \C {{\bf C}}
+\def\a {{\alpha}}
+
+                        \bigskip
+                  \centerline {\bf On relation between quadratic and bilinear form}
+
+             \bigskip
+
+             \centerline {\bf ${{\cal x} 1}$  {\bf Standard stuff}}
+\bigskip
+
+\def\l {\lambda}
+  Bilinear symmetric form $B(x,y)$ on vector space $V$ defines quadratic form
+                   $$
+         A(x)=B(x,x)
+                     \eqno (1.1)
+                    $$
+which obeys the homogeneity relations:
+                   $$
+                  A(\l x)=\l^2 \Q(x)\quad
+                  \hbox {for arbitrary coefficient $\l$ from the field of scalars}
+                  \eqno (1.2)
+                   $$
+and parallelogram identity:
+                        $$
+         A(x+y)+A(x-y)\equiv 2A(x)+2A(y)
+         \eqno (1.3)
+                        $$
+Conditions (1.1), (1.2) immediately follow from the relation (1.1)
+
+At what extent  conditions (1.2), (1.3) define bilinear form?
+
+The answer seems to be easy: It follows from (1.2) that
+                   $$
+      B(x,y)={1\over 2}\left(A(x+y)-A(x)-A(y)\right)
+      \eqno (1.4)
+                   $$
+Question: Is it right that (1.4) defines symmetric bilinear form if conditions (1.2),
+(1.3) are obeyed?
+
+\bigskip
+
+
+     \centerline {\bf ${{\cal x} 2}$  An easy proof of linearity over $\bf Q$}
+\medskip
+
+We suppose that field of scalars is the field of characteristic zero,
+i,e, field containing $\Q$. We denote the field by scalars by $\K$.
+(It can be that $\K=\R$ ois a field of real numbers, or $\K=\C$ is a field
+of complex numbers. In some examples $K$ is just arbitrary extension of $\Q$.
+
+\smallskip
+
+One can easy prove the following
+
+{\bf Proposition}
+
+\smallskip
+
+ {\it Let function $A(x)$  obeys homogeneity and parallelogram conditions.
+  Then the function $B(x,y)$ defined by (1.4) is symmetric bilinear form over $\bf Q$
+ (not over field $\R$ of scalars).}
+
+\smallskip
+
+Consider function $B(x,y)$ defined by (1.4). It is evident that it is symmetric:
+                   $$
+               B(x,y)=B(y,x)
+               \eqno (2.1)
+                   $$
+{\it Claim}: $B(x,y)$ is biadditive, i.e.
+                 $$
+                 B(x+x',y)=B(x,y)+B(x',y),\quad B(y,x+x')=B(y,x)+B(y,x')
+                 \eqno (2.2)
+                 $$
+It suffices to prove that $B(x+x',y)=B(x,y)+B(x',y)$.
+
+Proof:  First note that according to (1.2) $A(2x+y)+A(y)=
+{1\over2}A(2x+2y)+{1\over 2}A(y)$ $=2A(x+y)+2A(y)$. Hence
+$A(2x+y)-A(2x)-Q(y)=2A(x+y)-2A(x)-2A(y)$,i.e.
+                      $$
+           B(2x,y)=2B(x,y)
+           \eqno (2.3)
+                      $$
+   Now using this relation and condition (1.2) we see that
+                    $$
+  2B\left({u+v\over 2},y\right)+2B\left({u-v\over 2},y\right)=
+  A\left({u+v\over 2}+y\right)+A\left({u-v\over 2}+y\right)-
+A\left({u+v\over 2}\right)-A\left({u-v\over 2}\right)-2A\left(y\right)
+                    $$
+                    $$
+=2A\left({u\over 2}+y\right)-2 A\left({u\over 2}\right)-
+2 A\left(y\right)=4B({u\over 2},y)=2B(u,y)
+\eqno (2.4)
+                    $$
+
+\medskip
+
+The statement  of Proposition follows easy from this claim:
+For every rational $\l={p\over q}$
+                     $$
+             B\left(\l x,y\right)=\l B(x,y)\quad {\bf if}\quad \lambda={p\over q}
+                  \quad \hbox {is rational number}
+                  \eqno (2.5)
+                     $$
+
+\smallskip {\bf Remark}  Note that the linearity over $\Q$, i.e. additivity can be
+proved under weaker condition  if we put instead homogeneity condition (1.2)
+just the condition   $A(0)=0$. T
+
+\medskip
+
+Is it possible to prove the linearity for  arbitrary real $\lambda$?
+
+
+
+
+\medskip
+
+     \centerline {\bf ${{\cal x} 3}$  Continuity interferes}
+\medskip
+
+    Suppose that field of scalars is $\R$ (or $\C$).
+
+   Suppose that  function $A(x)$ is continuous (with respect to some norm)
+on the vector space $V$.  Then  $B(x,y)$ is continuous also with respect of this norm.
+  $B(x,y)$ is linear over $\Q$.
+  Hence $B(x,y)$ is linear over $\bf R$ because it is linear over $\Q$.
+
+
+Note that $A(x)$ obeying condition (1.3) itself defines a norm
+in the case if the following additional conditions hold:
+                   $$
+        A(x)\geq 0, \quad A(x)=0 \,\,{\bf iff}\,\,  x=0
+                   \eqno (3.1)
+                   $$
+and  so called triangle inequality
+                     $$
+\sqrt {A(x+y)}\leq  \sqrt {A(x)}+\sqrt {A(y)}
+                     \eqno (3.2)
+                     $$
+We see that in this case $A$ is continuous with respect to the norm which is defined
+by $A$. (This means by the way that if $V$ is finite-dimensional then it is continuous
+with respect to any norm, because all norms on finite dimensional space are equivalent.)
+
+
+We come to fully algebraic reformulation of continuity condition:
+
+\smallskip
+
+{\bf Theorem} {\it The function $A(x)$ which obeys the homogeneity condition (1.2),
+parallelogram condition (1.3) positivity condition (3.1) and triangle condition (3.2)
+defines bilinear symmetric form $B(x,y)$}
+
+\smallskip
+
+\medskip
+
+Note that one can prove this Theorem in the manner  "Dieux ex machina"
+without using explicitly concept of continuity\footnote {$^*$}{Nevertheless we have to use
+the definition of real numbers. here becomes evident the vicious cirvle with continuity conception:
+We define real numbers just in the way continuity be acceptable!}.
+
+\medskip {\bf Question}  At what extent it is important the triangle condition?
+Triangle inequality and positivity conditions seem to be not adequate at linear stuff.
+At what extent they are important?
+Does there exist an example of form $A$ which obeys conditions (1.2) and (1.3)
+such that corresponding form $B(x,y)$ is not linear?
+
+
+
+\medskip
+
+     \centerline {\bf ${{\cal x} 4}$  Attempts to construct counterexample}
+\medskip
+
+
+   Consider first finite-dimensional case.
+
+Let $A(x)$ be form which satisfies conditions (1.2),(1.3).
+
+Let $\{{\bf e}_i\}$  be basis in vector space $V$
+Without loss of generality suppose that
+               $$
+               B({\bf e}_i,{\bf e}_k)=0
+               \eqno (4.1)
+               $$
+If condition (4.1) is not obeyed one can consider
+$A'=A-x^B({\bf e}_i,{\bf e}_k)x^k$ which satisfies to conditions (1.2), (1.3), (1.4)
+
+It follows from (1.2), (1.3) that
+               $$
+   B(\l x,\l y)=\l^2B(x,y)
+   \eqno (4.2)
+               $$
+Put $\l\to \l+\mu$ in (4.2).
+We see that for any basis vector ${\bf e}_i$
+                       $$
+                       B(\lambda {\bf e}_i,\mu {\bf e}_i)=0
+                       \eqno (4.3)
+                       $$
+                       for an arbitrary coefficients $\l,\mu$
+and
+                         $$
+  B(\lambda {\bf e}_i,\mu {\bf e}_k)=-  B(\mu {\bf e}_i,\l {\bf e}_i)
+                \eqno (4.4)
+                         $$
+Let $h_\a$ be a basis in $\bf R$ over $\Q$\footnote{$^*$}
+{to construct this basis we need Choice Axiom}
+
+
+\medskip
+
+     \centerline {\bf ${{\cal x} 4'}$  Attempts to construct counterexample
+     in two dimensions.}
+\medskip
+
+
+Consider the case of two-dimensional vector space.
+(If finite-dimensional counterexample exists then it exists in two dimesions)
+
+Let ${\bf e,f}$ be basis in $V$. Let $K$ be an extension of the field $\bf Q$
+with the basis $\{r_\a\}$. We consider now an extension of $\bf Q$
+which is a subfield in $\bf R$.
+If $K=\bf R$ then we come to Hammel basis.
+
+
+Suppose that $B(e,e)=B(f,f)=0=B(e,f)$. Then form is totally characterized by
+                $$
+                S_{\a\beta}=B(r_\a {\bf e}, r_\beta {\bf f})
+                \eqno (4'.1)
+                $$
+$S$ is antisymmetric according to  (4.4).
+
+Express quadratic form in terms of $S$:
+
+Every vector $x\in V$ is nothing but the pair of vectors $a,b$
+where $\{a^\a,b^\beta \}$ are expansion components:
+                   $$
+   x=a^\a r_\a {\bf e}+b^\beta r_\beta {\bf f}
+   \eqno (4'.2)
+     $$
+
+For every vector $x$
+                $$
+       A(x)=a^\a S_{\a\beta}b^\beta=S(a,b)
+       \eqno (4'.3)
+                $$
+
+The condition of homogeneity restricted  for $\l\in K$ will give that:
+            $$
+A(\l x)=a^\a A_\a^\gamma(\l)S_{\gamma\delta}A_\beta^\delta (\l) b^\beta=
+       \l^2 A(x)=\l^2  a^\a S_{\a\beta}b^\beta
+       \eqno (4'.4)
+            $$
+To find counterexample we have to find non-trivial bilinear (over $\Q$) antisymmetric $S$
+form
+which obeys the condition:
+               $$
+      S(\l a, \l b)=\l^2 S(a,b),\quad \hbox{for all $\l\in \K$}
+      \eqno (4'.5)
+               $$
+To be more exact we have to rewrite $\l a$ as $A_\l a$,
+where $A(\l)$ is linear operator in $K$ (over $\bf Q$) corresponding to the multiplication
+on $\lambda$. It is easy to make the following conclusion:
+
+{\it There is no counterexample in finite extension of $\Q$, i.e. bilinear form
+ $B$ is linear over any finite field extension}.
+ This follows from the fact that to multiplication on $\l$ corresponds
+ transformation $S\to A^+ SA$ of matrix $S$
+
+ It is very instructive to consider the case of extension of degree $3$.
+
+
+\medskip
+
+     \centerline {\bf ${{\cal x} 5}$  Counterexample?}
+\medskip
+
+In this section I try to construct counterexample for the case when $\K$
+is simple transcendent extension.
+
+I still can say nothing about extension by $\R$.
+
+\def\Q {{\bf Q}}
+
+Consider simple transcendental extension $K=\Q(t)=\Q(\pi)$
+
+Then $V$ is two-dimensional vector space over the field $K=\Q(t)$.
+Elements of $\Q(t)$ can be viewed as fractions of polynomials.
+Elements of $V$ as columns with two entries.
+  Consider
+                 $$
+         S(f(t),g(t))=f(t)g'(t)-f'(t)g(t),
+          \eqno (5.1)
+                 $$
+where $f(t),g(t)\in \Q(t)$ are fractions, $h'(t)$ is derivative.
+
+It is evident that  $S(f,g)$ is the antisymmetric bilinear (over $\Q$).
+One can easy to see that form $S(f,g)$
+(obeys the condition   (4'5):
+          $$
+   S(hf,hg)=hf(hg)'-(hf)'hg=h^2(fg'-f'g)=h^2S(f,g)\quad \hbox{for every $h(t)\in \Q(t)$}
+          $$
+Hence it defines quadratic form on the space $V$:
+               $$
+    \hbox {for every} \quad {\bf x}=\pmatrix {f(t)\cr g(t)\cr}\in V\quad
+                A({\bf x})=f(t)g'(t)-f'(t)g(t)
+               $$
+Form $A(\bf x)$ is defined over tw0-dimensional vectors space $V$ over $K=\Q(t)$.
+It takes values in the field $K=\Q(t)$. It obeys homogeneity condition (1.2):
+              $$
+              A(h{\bf x})=h^2(f(t)g'(t)-f'(t)g(t))=h^2(t)A({\bf x})
+              $$
+and it obeys the parallelogram condition (1.3)
+
+
+The quadratic form $A$ is not identical zero in spite of the fact that
+it is equal to zero on the vectors
+${\bf e}=\pmatrix {1\cr 0\cr}$, ${\bf v}=\pmatrix {0\cr 1\cr}$
+and ${\bf e}+{\bf f}=\pmatrix {1\cr 1\cr}$. Its corresponding
+biadditive form $B(x,y)$ defined by (1.4) is equal to
+                   $$
+       B(x,y)=B\left(\pmatrix {f(t)\cr g(t)\cr},\pmatrix {h(t)\cr w(t)\cr}\right)=
+       {1\over 2}\left(A(x+y)-A(x)-A(y)\right)=
+                        $$
+                        $$
+       {1\over 2}\left((f+h)(g+w)'-(f+h)'(g+w)-(fg'-f'g)-(hw'-h'w)\right)=
+                   $$
+                    $$
+{1\over 2}(fg'-f'g)+{1\over 2}(hw'-h'w)
+                    $$
+This is symmetric bilinear over $\Q$ form which produces $A$ by (1.1) but $B$
+is not linear over $\K=\Q(t)$: $B({\bf e},{\bf e})=B({\bf f},{\bf f})=B({\bf e},{\bf f})=0$
+but it is not identical zero.
+
+
+
+\medskip
+
+     \centerline {\bf ${{\cal x} 6}$  Are there non-trivial generalisations?}
+\medskip
+
+The constructions above has trivial generalisation:
+
+E.g. Let $\K$ be any finite transcendent extension  $\K=\Q(t_1,\dots,t_n)$
+where all $t_1,dots,t_n$ are undeterminates.   Let
+                $$
+                D=\sum A^i(t){\partial\over \partial t_i}
+                $$
+be an arbitrary vector field, (coefficients $A_i(t)$) belong to $\Q(t_1,\dots,t_n)$.
+Then
+                   $$
+    A=fDg-Dfg
+                   $$
+obviously is quadratic form which has  properties similar to form considered in previous
+paragraph.
+
+But how to reach field $\R$. Weather there exists a field $L$ such that
+$\R=L(t)?$ In this case one can construct counterexample in the manner of previous paragraph.
+And this will be form on $\R$
+
+ \bye

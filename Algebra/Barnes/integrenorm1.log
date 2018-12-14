@@ -1,0 +1,47 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdftex 2015.9.21)  7 DEC 2015 13:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**integrenorm1.tex
+(./integrenorm1.tex
+Overfull \hbox (20.57689pt too wide) detected at line 103
+[][] [] [] \tenrm = [][] [] [] = [] [] + \teni C[]\tenrm 	[] \teni ; []  C[] \t
+enrm = [][](1 \tensy ^^@ \teni e[]\tenrm )[] \teni ;|
+
+\hbox(20.50017+15.50017)x469.75499, glue set - 1.0
+.\hbox(0.0+22.22246)x5.55557, shifted -13.61122
+..\tenex Z
+.\vbox(24.76135+0.0)x8.93057, shifted 9.11122
+..\hbox(4.51111+0.0)x4.48613, shifted 4.44444
+...\sevenrm 1
+..\kern15.73914
+..\hbox(4.51111+0.0)x4.48613
+...\sevenrm 0
+.\glue(\thinmuskip) 1.66663
+.\hbox(17.50014+13.55754)x123.40982
+..\hbox(0.39998+29.60031)x7.91669, shifted -17.10016
+...\tenex  
+..\teni A
+..\tenrm (
+..\teni t
+..\tenrm )
+..etc.
+.\glue(\thinmuskip) 1.66663
+.etc.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on integrenorm1.pdf (1 page, 92318 bytes).
+PDF statistics:
+ 44 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

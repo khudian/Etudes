@@ -1,0 +1,134 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\E  {{\cal E}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def\o {\omega}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+\def\pt {{\bf p}}
+
+\centerline{    {\bf One fundamental fact}}
+
+
+\bigskip
+
+
+\m
+
+{\bf Theorem}  {\it Let $M$ be an $n$-dimensional manifold equipped with parallelism structure, i.e. there are globally
+defined $n$ vector fields $\e_1(x),\dots,\e_n(x)$ such that they are linearly 
+independent at any point  of $M$. (These vector
+fields define so called $\{1\}-structure$.).
+Consider the group $\E$ of all diffeomorphisms which preserve this  structure: diffeomorphism   $F\in \S$
+if it preserves all $n$ vector fields defining structure: $F^*\e_k=\e_k$. 
+
+Then  $\E$ is a Lie group.  This Lie group has dimension less or equal to $n$. One can say more:
+
+Consider for every point $x\in M$ the  map
+                           $$
+                   L_x\colon\qquad \E\ni F\mapsto F(x)
+                   \eqno (1)        
+                           $$ 
+Then $L_x$ is injective image of this Lie group in the manifold $M$. The image is closed  manifold.
+The structure of manifold on image is the manifolds structure on Lie group. 
+}
+
+This is standard statement (see Kobayashi. I like to study it since we see her the mnifestation of theisis
+that sometimes better proof is more clear than "intuitive")
+ 
+ 
+ 
+ 
+ 
+  Denote by $M_F$ the set of fixed points of the diffeomorphism $F\in \E$. 
+    
+    If $F={\bf id}$ then $M_F=M$. 
+    
+    {\bf Lemma}  If $M$ is connected manifold and diffeomorphism $F\in \E$ is not identity  then $M_F$ is empty set.
+     
+{\sl Proof}   The condition that diffeomorphism $F$ preserves basic fields $\{\e_1,\dots,\e_n\}$ means
+that  for an arbitrary point $x\in M$
+                    $$
+                  dF\circ \e_k\big\vert_x=\e_k\big\vert_{F(x)},\,\, k=1,2,\dots,n 
+                  \eqno (2a)   
+                    $$  
+This holds also for an arbitrary linear combination of basic vectors with constant coefficients: 
+                 $$
+        dF\circ \R\big\vert_x=\R\big\vert_{F(x)},\,\, k=1,2,\dots,n\,,
+                  \eqno (2b)
+                           $$
+if $\R=c_1\e_1+\dots+c_n\e_n$
+(with $c_1,c_2,\dots,c_n$ constants).
+
+One can integrate these equations considering the fluxes of vector fields:
+                              $$
+         F\left(\,{\rm exp}\, t\R|\x\rangle\right) =\,{\rm exp}\, t\R|F(\x)\rangle
+         \eqno (3)                    
+                              $$
+(for enough small times.)
+
+
+Consider the set $M_F$ of fixedd points. On on hand this is a closed set, since every point
+in $M_F$ is defined by equation $F(x)=x$. On the other hand it follows from the equation (3)
+that this is open set. Indeed suppose that  $\pt\in M_\F$. 
+Then one can see that for enough small $t$
+  $\pt'={\rm exp}\, t\R|\pt\rangle$ too:
+                 $$
+   F(\pt')=F\left({\rm exp}\, t\R|\pt\rangle\right)={\rm exp}\, t\R|F(\pt)\rangle=
+   {\rm exp}\, t\R|\pt\rangle=\pt\,.              
+                 $$
+We see that the set $M_F$ is open set and closed set. Hence since $M$ is connected and $F\not={\bf id}$
+then $M_F$ is empty set\footnote{$^1$}{It is here where we see that exact considerations are better than empiric.
+Taking many derivatives  of equation
+(2a) one will come to the same result but in terms of formal power series.
+(Sure the "trouble under the cover"
+is in the definition of $exp t\R$).
+}.\finish.
+
+The second step is to see that...the image is closed manifold. 
+
+
+
+\bye
+
+{\sl Proof}

@@ -1,0 +1,54 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdftex 2012.2.17)  26 MAR 2016 14:16
+entering extended mode
+ %&-line parsing enabled.
+**galped4.tex
+(./galped4.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (18.57411pt too wide) in paragraph at lines 139--142
+\tensl als. [] |
+
+\hbox(6.94444+1.94444)x391.46176, glue set - 1.0
+.\tensl a
+.\tensl l
+.\tensl s
+.\tensl .
+.\glue 4.44444 plus 4.99997 minus 0.37036
+.etc.
+
+[2] [3] [4]
+Overfull \hbox (6.01697pt too wide) detected at line 450
+[] []  \teni :|
+
+\hbox(25.5+20.5)x391.46176
+.\hbox(0.0+0.0)x0.0
+.\glue 1.66663
+.\vbox(25.5+20.5)x389.70107
+..\hbox(7.5+2.5)x389.70107
+...\glue(\tabskip) 0.0
+...\hbox(7.5+2.5)x389.70107, glue set 194.85054fil []
+...\glue(\tabskip) 0.0
+..\kern -12.0
+..\glue(\baselineskip) 2.0
+..\hbox(7.5+2.5)x389.70107
+...\glue(\tabskip) 0.0
+...\hbox(7.5+2.5)x389.70107, glue set 65.48036fil []
+...\glue(\tabskip) 0.0
+..\glue(\baselineskip) 2.0
+..etc.
+.\glue 1.66663
+.\glue 1.66663
+.etc.
+
+[5] [6] )</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/
+fonts/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi
+10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi5.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsl10.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb>
+Output written on galped4.pdf (6 pages, 98241 bytes).
+PDF statistics:
+ 69 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

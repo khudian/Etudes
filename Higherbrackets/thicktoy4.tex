@@ -1,0 +1,146 @@
+\magnification=1200
+
+\baselineskip=17pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\L {{\Lambda}}
+\def\LL {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf Toy example of thick morphism}
+
+Let
+  $V$ be a vector space.
+
+Let  $u^i$ be coordinates on $V$.
+
+Let  $w_i$ be arbitrary coordinates on $V^*$.
+
+
+ Consider on vector space $N=V\oplus V^*$
+canonical symplectic structure
+             $$
+   dp_i\wedge du^i=dw_i\wedge dq^i\,.
+        \eqno (1a)
+             $$     
+where $p_i, q^j$ are coordinates on $V^*, V$ dual to coordinates $u^i,w_j$.
+
+Consider on $N\times N$ the symplectic structure
+       $$
+     \Omega=\w_1-\w_2
+\eqno (1b)
+       $$
+If $(u,v)$ are coordinates on the first examplaire of $N$
+and $(q,w)$ are coordinates on the second exemplaire of $N$
+then
+       $$
+\Omega=dp_i\wedge du^i-dw_i\wedge dq^i\,.
+      \eqno (1c)
+       $$
+ Let $S(u,q)$ be an arbitrary (smooth) function.
+It defines Lagrangian surface
+          $$
+\L_S=\left\{(u,p,q,w)\colon 
+  p_i={\p S(u,q)\over \p u^i}\,,\,
+  w_i={\p S(u,q)\over \p q^i}\right\}
+\eqno (2a)
+         $$
+This is Lagrangian since its dimension is equal to $n$ ($n=\dim V$)
+and due to the construction
+   $$
+ \left(dS=p_idu^i+w_mdq^m\right)\big\vert_{\L_S}
+  \Rightarrow
+   (d^2S=0=d\left(p_idu^i+w_mdq^m\right)=dp_i\wedge du^i+dw_m\wedge dq^m=
+   \Omega)\big\vert_{\L_S}\,.
+\eqno (2b)
+    $$
+This Lagrangian surface defines anticanonical relation $\sim_S$:
+on sympletic vector space $N=V\oplus V^*$:
+              $$
+        (u,p)\sim_S (q,u) \,\,{\rm if}\,\,
+   (u,p,q,w)\in\L_S\,,{\rm i.e.}\,\,
+          p_i={\p S(u,q\p u^i)}\,,w_i={\p S(u,q\p q^i)}
+            \eqno (3a)
+              $$      
+For example bilinear form $S=u^iS_{ik}q^k$ defines canonical relation
+              $$
+(u,p)\sim_S (q,w) \,\,{\rm if}\,\,
+   \cases{p_i=S_{ik}q^k\cr w_i=u^mS_{mi}}
+    \eqno (3b)
+              $$
+ This canonical relation may define antisymplectic  transformation
+if it defines bijection of $N$ on $N$. E,g, if bikinear form $S$
+is non-degenerate, then
+      canonical relation (3b) defines anticanonical transformation 
+        $$
+      \cases
+        {
+    u^m=w_kS^{km}\cr  p_i=S_{ik}q^k\cr
+        }
+      \eqno (3c)
+        $$
+
+Now let  $S(u,q)$ be an arbitrary smooth function. It defines
+  lagrangian surface $\L_S$.
+
+  Consider the action of sympelctomorphism
+        $$
+\kappa \colo u^i\leftrightarrwo  q^i, p_j\leftrightarrow w_j, 
+        $$
+Under the action of this sympelctorphsim lagrangian surface
+$\L_=\L_S$ transforms to Lgrangian surface $\L^*=\L_{S^*}$, where
+           $$
+S^*(u,q)=S(q,u)
+           $$
+  These two anticanonical realtions are related with
+ symplectic transformation $\kappa$
+
+
+Now define thick morphisms
+\bye

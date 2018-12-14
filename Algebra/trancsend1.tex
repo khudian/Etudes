@@ -1,0 +1,216 @@
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\f {{\bf f}}
+\def\pt {{\bf p}}
+
+
+   \centerline  {\bf Transcendency of the number $"e"$}
+ 
+ \bigskip
+ 
+    
+    {\it This fact was proved by Hermit in 1873. The essential simplification of the proof was performed by Hilbert
+    in 1983 , and Gordan and Hurwitz. I  expose here this proof  based on the Easter lectures of  F. Klein in 1894.}
+    
+\bigskip    
+ \centerline {${\cal x}1$  Preliminary construction }
+
+\m   
+  
+  We consider the following algebraical transformation on polynomials:
+             $$
+P(x)\to \hat P(x)=\sum_k p_k(x)k! \quad {\rm if}\quad P(x+h)=\sum p_k(x)h^k\,.
+\eqno (1.1a)
+             $$
+  In other words is the finite sum
+           $$
+           \hat P(x)=P(x)+P'(x)+P''(x)+\dots=\sum_k {P^{(k)}(x)},
+           \eqno (1.1b)
+           $$
+  where ${P^{(k)}(x)}$ is $k$-th derivative of the polynomial $P(x)$.
+  
+
+   One can see that this transformation can be rewritten using the integration in the following way:
+             $$
+  P(x)\rightarrow \hat P(x)=\int_0^\infty e^{-t}P(x+t)dt\,.
+  \eqno (1.1c)          
+             $$
+  
+  
+  {\bf Proposition}  {\it For an arbitrary polynomial $P(x)$ and an arbitrary integer $k$ the following identity holds:}
+                 $$
+             e^k\hat P(0)=P(k)+q_{k,P}, \,\,{\rm where}\,\, q_{k,P}=e^k\int_0^ke^{-t}P(t)dt\,.
+                \eqno (1.2)
+                 $$
+  Proof follows immediately from the formula (1c) for the transformation $P\to \hat P$:
+                   $$
+     e^k\hat P(0)=e^k\int_0^\infty e^{-t}P(t)dt=e^k\int_0^k e^{-t}P(t)dt+\int_k^\infty e^{k-t}P(t)dt=
+       $$
+       $$
+  =\int_0^\infty e^{-t}P(k+t)dt+q_{k,P}=\hat P(k)+q_{k,P}\,.
+                   $$
+  \m
+
+
+
+
+ \centerline {${\cal x}2$  Proof of the transcendency}
+
+
+    Let $e$ be algebraic number, i.e. there exist rational numbers $C_i$ such that
+                  $$
+           C_0+C_1e+C_2e^2+\dots+C_Ne^N=0\,.
+           \eqno (2.1)
+                  $$
+  We can suppose that all $C_i$ are  integers.
+
+   \bigskip
+
+
+We will show that this is absurdity.
+
+\bigskip
+  Consider the following polynomial
+             $$
+ \Phi_p(x)={x^{p-1}\over (p-1)!}\left[(1-x)(2-x)\dots (N-x)\right]^p,
+ \eqno (2.2)
+             $$
+  depending on integers $N$ and $p$. We suppose that $N$ is the degree of the polynomial (1)
+  and $p$ is a prime number.
+
+
+\m
+
+   The scheme of the proof is the following:  We will choose a big integer $M$ and multiply  the equation $C_0+C_1e+C_2e^2+\dots+C_Ne^N=0$ on the integer $M$. Thus we come to the number
+                 $$
+  \Psi=M(C_0+C_1e+C_2e^2+\dots+C_Ne^N)\,.
+  \eqno (2.3)
+                 $$
+   We will show that the integer part of the number $\Psi$ is not equal to zero, thus coming to absurdity.
+
+\m
+
+ Take                       $$
+       M=\hat \Phi(0)=\Phi(0)+\Phi'(0)+\dots
+                    \eqno (2.4)
+                    $$
+       according to the relation (1.1b).
+
+One can easy to see that $M$ is indeed an integer number. Indeed it follows from the 
+construction (2.2) that in the expansion $\Phi(x)=\sum c_kx^k$ all the coefficients $c_k$ 
+vanish for $k=0,1,2,\dots,p-1$ and
+the polynomial $\Phi(x)$ equals to
+                      $$
+\Phi(x)={r_{p-1}x^{p-1}\over (p-1)!}+{r_{p}x^{p}\over (p-1)!}+{r_{p+1}x^{p+1}\over (p-1)!}+\dots+
+{r_{2p-1}x^{2p-1}\over (p-1)!}
+                              \eqno (2.5)
+                      $$
+where  all $r_i$ are integers and
+                  $$
+        r_{p-1}=(n!)^p,
+        \eqno (2.6)
+                  $$
+Hence
+              $$
+ M=M=\hat \Phi(0)=\sum_k k!c_k=r_{p-1}+ r_pp+r_{p+1}p(p+1)+\dots+
+r_{2p-1}p\cdot(p+1)\cdot\dots \cdot(2p-1)
+\eqno (2.7)
+              $$
+is an integer.
+
+  Now calculate the number $\Psi$ in (2.3) for $M=\hat\Phi(0)$.  Using the Proposition (1.2) we have
+           $$
+        \Psi=M(C_0+C_1e+\dots+C_Ne^N)=\sum_{k=0}^Ne^k\hat\Phi(0)C_k=
+                 $$
+                 $$
+        \underbrace{\hat\Phi(0)C_0+\hat\Phi(1)C_1+\hat\Phi(2)C_2+\dots+
+        \hat\Phi(N)C_N}_{I}+\underbrace{\sum_{k=0}^Ne^kq_{k,\Phi}C_k}_{II}
+        \eqno (2.8)
+           $$
+
+
+Now we show that if $p$ is enough big prime number then  $I$ in this equation is an integer which is not equal to zero
+and II is a small number (its module is less than 1).
+           We have
+             $$
+ I=\hat\Phi(0)C_0+\hat\Phi(1)C_1+\hat\Phi(2)C_2+\dots+\hat\Phi(N)C_N
+             $$
+All $C_i$ are integers. We already proved than $\hat\Phi(0)=M$ is an integer (see the equation (2.7)). 
+Analogously one can see that
+all $\hat\Phi(k)$ for $k=1,2,3,\dots,N$ are integers. Indeed according to (1.1) we have that
+for   $k=1,2,3,\dots,N$
+     $$
+  \Phi(k+t)={(k+t)^{p-1}\over (p-1)!}\left[(1-k-t)(2-k-t)\dots (N-k-t)\right]^p=
+         {t^p\over (p-1)!}L_k(t)
+     $$
+where $L_k(t)$ is a polynomial on $t$ with integer coefficients: $L_k(t)=\l_{k,r}t^r$  Hence according to (1.1a)
+         $$
+     \hat\Phi(k)=\sum_r \l_{k,r}{(p+r)!\over (p-1)!}=l_{1,0}p+l_{1,1}p(p+1)+\dots
+     \eqno (2.9)
+         $$
+We see that all $\hat \Phi(k)$ are integers. Moreover from the equations (2.6) and (2.7)
+we see that the integer $M=\hat\Phi(0)$ is the integer {\it which is not divisible on the prime number $p$}.
+On the other hand from the equation (2.9)we see that all the integers
+ $\hat\Phi(k)$ are the integers {\it which are divisible on the prime number $p$}.
+ Hence we see that the part $I$ of the number $\Psi$ in the equation  (2.8) all the terms $\hat \Phi(k)C_k$
+ are divisible on $p$ for  $k=1,2,3,\dots, N$ and the term  $C_0\hat \Phi(0)$ {is not divisible on $p$} in the case
+ if $p$ is bigger than $C_0$. This we see that the first term I is an integer which is not equal to zero.
+
+This is the central part of the proof.
+
+
+
+It remains to prove that the the module of the second term II in (2.8)  is smaller than 1if
+the prime number $p$ is big enough. One can very easy to estimate II.
+Indeed one can see that 
+         $$
+     |\Phi_p(x)|<{N^{p-1}C^p\over (p-1)!} \,\, \hbox{for $0\leq x\leq N$}    
+         $$
+where $C$ is the upper bound of the polynomial $(1-x)(2-x)\dots (N-x)$.  Hence
+$\Phi_p(x)$ uniformly tends to $0$ if $p\to \infty$ and
+                   $$
+       \left|\sum_{k=0}^Ne^kq_{k,\Phi}C_k\right|\leq\sum_{k=0}^N |C_k|e^k\left|\int_0^ke^{-t}\Phi_p(t)dt\right|\to 0\,\,
+       {\rm if}\,\,p\to \infty\,.
+       $$
+Hence we prove that the second term in (2.8) tends to zero. 
+
+We prove that $\Psi\not=0$ for enough big $p$. This contradicts  to  (2.1).\finish 
+    \bye

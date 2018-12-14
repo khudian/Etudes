@@ -1,0 +1,716 @@
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 21 July 2017
+
+    \centerline {\bf Uniformisation of bounded domain}
+
+This etude contains three topics:
+
+  In the first topic we will discuss 
+the following formula:
+If $M$ is an hypersurface  surface in $\E^n$, then the function
+       $$
+   F_M(\r)=\hbox {the angle that a surface $M$ is seen 
+   from the point $\r$}
+       $$
+obeys the equation
+        $$
+  \Delta F_M=0\,, F_M\big\vert_M=\pi   ????????
+        $$
+(in the case if $M$ is regular surface\footnote{$^*$}
+{some technical conditions: Lyapunov surfaces????})
+
+In the second topic we will discuss
+There are two well know constructions: 
+Dirichle integral,
+which produces the harmonic function $h\colon U\to \R$ function on the 
+domain $U$ of $\E^2$
+obeying boundary conditions
+                     $$
+                h\big\vert_{\p U}=u\,.
+                     $$
+In the third topic we will consider 
+holomorphic map $F\colon U\to D$ which maps
+ domain $U$ to the disc  $|w|<1$ in ${\bf C}$.
+
+    
+There is a deep relation between these 
+two constructions.
+and the conformlal maps.  
+This we will study in the third 
+topic.
+
+
+\bigskip
+ \centerline {${\cal x} 1$}
+
+  Let $C\colon \r=\r(t)$ be a curve in $\E^2$. 
+Consider the function
+            $$
+W(\R)=\hbox{the angle at which one sees the curve
+  $C$ from the point $\R$}=
+      \int_C F^*\w_{\rm angle}\R\,.
+         \eqno (1.1)
+            $$
+One can see that the function $W(\R)$
+tends to zero at infinity 
+
+{it obeys the boundary condition????
+           $$
+W\big\vert_{C}=\pi\,.
+       \eqno (1.2)
+           $$
+no}
+and it is harmonic function:
+       $$
+\Delta W=
+{\p^2 W(x,y)\over \p x^2}+
+{\p^2 W(x,y)\over \p y^2}=0\,.
+      \eqno (1.3)
+       $$
+{Condition (1.2) is almost evident AND WRONG!}, 
+We will prove (1.3)
+later.
+
+  To deal with function (1.1) we will express
+it as an intergral.
+
+ Consider  $1$-form $\w=\w_{\rm angle}$
+        $$
+\w=\w_{\rm angle}={xdy-ydx\over x^2+y^2}=d\varphi \,\,
+      \hbox{in polar coordinates}\,,
+         \eqno (1.4)
+         $$     
+      then one can see that
+     $$
+W(\R)=\int_{F_*(\R)C} \w=\int_{C} F^*(R)\w\,,
+    \eqno (1.5)
+      $$   
+where $F\colon$ is a map
+      $$
+   F\colon\quad F(\r)=\r-\R
+      $$
+
+{\it Examples}
+
+
+1. Let $AB$ be a segment 
+of straight line between points
+$A=(a,b)$
+and $B=(1,1)$ on the axis $Ox=X$,
+$A=(a,0)$, $B=(b,0)$.
+
+Consider an arbitrary point $P=(X,Y)$ on $\E^2$.
+ Let $N=(0,X)$ be a projection of the point $P$
+on the axis $OX$. Then it 
+is obvious that
+       $$
+W(P)=W(X,Y)=\angle PAN-\angle PBN=
+  {\rm arctan\,}{X-a\over Y}-
+  {\rm arctan\,}{X-b\over Y}\,.
+       \eqno (1.Ex1.1)
+       $$
+We come to the same formula using (1.4):
+     $$
+ F^*(P)\w=F^*(X,Y)\left({xdy-ydx\over x^2+y^2}\right)=
+ {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}\,,
+     $$
+a curve $C\colon \cases {x=t\cr y=0\cr}\,, a\leq t\leq b$,
+and
+          $$
+   W(P)= W(X,Y)=
+   \int_C F^*(P)\w=
+    \int_{\cases {x=t\cr y=0\cr} a\leq t\leq b}
+ {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}=
+    \int_a^b {Ydt\over (X-t)+Y^2}
+        \eqno (1, Ex.1.2)
+          $$
+Integrating we will come to formula
+(1, Ex 1.1). 
+
+\medskip
+
+{\bf Example 2}
+
+  Let $C$ be an arc of unit circle $x^2+y^2=1$:
+           $$
+    C\colon \cases {x=\cos t\cr y=\sin t\cr}\,
+        \a\leq t\leq \beta
+           $$
+then equation (1.5) implies that
+           $$
+       W_C(P)=\colon\,\hbox
+{angle such that  
+one can see the arc $C$ from the point $P$
+}=
+           $$
+       $$
+\int_{\cases {x=\cos t\cr y=\sin t\cr}\,,
+ \a\leq t\leq \beta}
+ {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}=
+\int_\a^\beta
+ {(x(t)-X)dy(t)-(y(t)-Y)dx(t)\over (x(t)-X)^2+(y(t)-Y)^2}=
+          $$
+          $$
+\int_\a^\beta
+ {(\cos t-r\sin\theta)\cos t-
+(\sin t-r\sin\theta)(-\cos t)\over 
+(\cos t-r\cos\theta)^2+(\sin t-\sin\theta)^2}dt=
+\int_\a^\beta
+ {1-r\cos(\theta-\varphi)\over 
+1+r^2-2r\cos (\theta-\varphi)}dt\,.
+       $$
+Here we denote $X=r\cos\theta, Y=r\sin\theta$
+coordinates of point $P$.
+
+ Integrating we come to
+          $$
+        W_{S^1}(P)=
+\int_\a^\beta
+ {1-r\cos(\theta-\varphi)\over 
+1+r^2-2r\cos (\theta-\varphi)}dt=
+   {\rm arctan\,}\left({\sin (t-\theta)\over 
+      \cos(t-\theta)-r}\right)\big\vert^\beta_\a\,.
+       $$
+
+
+(Sure one can guess antiderivative 
+knowing that this is
+the angle (1.1).)
+ 
+\bigskip
+The expressions calculated above are potentials
+of the double layer.  We will use them later.
+
+Consider the
+ kernel $A_{S^1}(\r,\R)$ 
+($\r=(\cos\varphi,\sin\varphi)$) 
+is the point on the circle, 
+$\R=(R\cos\theta,R\sin\theta)$ 
+is the observation point,
+and   $A_{S^1}(\r,\R)d\varphi$ is equal to 
+the differential of the angle at which one sees the
+arc $d\varphi$ from the point $\R$. We have
+          $$
+A_{S^1}(\r,\R)d\varphi=
+{\cos\angle (\n,\R)d\varphi\over |\r-\R|}=
+  {1-R\cos(\theta-\varphi)\over 
+    1+R^2-2R\cos(\theta-\varphi)}d\varphi\,.
+          $$
+Compare with expressions above.
+
+{\it Useful exercies  Show straightforwardly that
+the integral over circle is equal to $2\pi$
+or $\pi$ or $0$ depending on the position
+of the point $\R$.}
+
+  Write down also the angle function for unit sphere:
+          $$
+A_{S^2}=(\R,\r)=
+ {\cos\angle (\n,\R)\over |\r-\R|}=
+ {(\r-\R,\R)\over |\r-\R|^2}
+          $$
+here 
+$\r=(\sin\theta\cos\varphi,
+  \sin\theta\sin\varphi,\cos\theta)$
+is a point on the unit sphere,
+$\R=(R\Theta\cos\Phi,
+  Rsin\Theta\sin\Phi,R\cos\Theta)$
+is the observation point
+We come to
+          $$
+A_{S^2}=(\R,\r)=
+ {(\r-\R,\R)\over |\r-\R|^2}
+  {1-R\cos(\Theta-\theta)-
+R\sin\Theta\sin\theta
+\left(\cos(\Phi-\varphi)-1\right)\over
+1+^2-2R\cos\Theta-\theta)-
+2R\sin\Theta\sin\theta
+\left(\cos(\Phi-\varphi)-1\right)
+}
+          $$
+{\bf Remark}  Sure one can write the formula 
+for $1$-form like in Example 2, this is
+the form
+       $$
+{dx\wedge dy\wedge dz\over r^2dr}
+{xdy\wedge dz+ydz\wedge dx+zdx\wedge dy
+\over r^3}=\sin\theta d\theta d\varphi
+       $$
+(see Appendix)
+
+
+\bigskip
+
+
+
+
+\centerline {\bf Dirichle problem}
+
+
+Recall  Dirichle problem
+Let $U$ be ball-like domain,
+$\rho$ a functionon $U$ and
+   $\mu$ a function on the boundary.
+ We have to find a function  $F$
+such that
+       $$
+    \cases
+     {
+\Delta F=\rho\cr
+    F\big\vert_{\p U}=\mu
+    }
+\eqno (2.1)
+       $$
+
+
+
+
+To solve this problem we have to find Green function
+ $G_U(\r,\R)$, the function such that
+         $$
+        \cases
+       {
+  \Delta_{(\r)} G(\r,\R)=\delta(\r-\R)\cr
+      G(\r,\R)\big\vert_{\R\in \p U}=0
+       }
+\eqno (2.2)
+         $$
+If we find Green function then one can see that
+              $$
+f(R)=\int f(\r)G(\r,\R)+c\oint\mu(\r)\grad_{(\r)}G  
+              $$
+is a solution of (2.1)
+
+We can go another scenario.
+
+   We already know the fundamental solutions of
+  equation $\Delta\Phi_n=\delta(\r)$
+(see Appendix), and we know functions
+potentials of double layer...
+
+  We may try to express solutions
+and Green function in this way.
+
+W
+
+   Study relation between these approaches
+Let   $G_\infty$ be fundamental solution of
+Laplacian in $\E^n$
+       $$
+     G^{(2)}_\infty=2\pi\log r, 
+     G^{(3)}_\infty=-4\pi\log r,\dots, 
+     G^{(n)}_\infty=
+{\sigma_{n-1}\over n-2}\log r,\dots, 
+       $$
+(see Appendix)
+
+Later we will show how to deduce
+  $G$ knowing $G_\infty$ and using potential
+of double layer.
+  Now we just will see the relation between
+these functions.
+   We consider fundamental Green second identity:
+   for arbitrary (generalised) functions $B,C$
+            $$
+\int_U (U\Delta V-V\Delta U)\Omega=
+  \int_{\p U}\Omega{\cal c}
+   \left(B\grad C-C\grad B\right)
+            $$
+where  $\Omega$ is volume form and
+             $$
+  \Delta F\Omega=\L_{\grad F}\Omega=
+     d\left(\Omega{\cal c}\grad F\right)
+         $$
+in a more convenitional notations
+             $$
+\int_U (U\Delta V-V\Delta U)d^nx=
+  \oint_{\p U}
+\left(B\grad C-C\grad B\right)d{\bf S}
+            $$
+  
+Let $G$ be a Green function of Dirichle
+ 
+
+We perform considerations for $n=2$ and $n=3$.
+
+\centerline {n=2}
+
+Conisder unit circle $U\colon x^2+y^2<1$.
+Find function harmonic in $U$ such that  
+its value on the boundary is the function
+   $F(\varphi)$
+           $$
+\Delta u=0\,, u\big\vert
+           $$
+Later we will discuss in detail what happens
+at boundary.
+
+Instead using Green function method we
+will  use  functions considered in the 
+first paragraph.
+
+Table of functions:
+
+  Double layer Potential of unit circle:
+         $$
+w(r,\theta=\int
+     {1-r\cos(\theta-\varphi)
+          \over
+         1+r^2-2r\cos(\theta-\varphi)}
+       \nu(\varphi)d\varphi
+         $$ 
+
+1. If $\nu(\varphi)=1$ then 
+$w$ is angle (see the first paragraph).
+
+2. For arbitrary (continuous) $\nu(\varphi)$
+      $$
+   w(r,\varphi)\big\vert_{r\to 1_-}=
+   \pi\nu(\varphi)+w(r,\varphi)\big\vert_{r=1}\,,
+           \quad
+    w(r,\varphi)\big\vert_{r\to 1_+}=
+   -\pi\nu(\varphi)+w(r,\varphi)\big\vert_{r=1}\,.
+     $$
+
+  If $w$ is harmonic function
+
+
+
+\bigskip
+
+In the previous paragraph we described the solution of
+Dirichle problem. It seemed to be not so difficult.
+Sure we were save because we knew that this problem
+has solution and it is unique.
+In fact the Dirichle problem for domain  $U$
+in some sence is equivalent to
+biholomorphme map
+
+\bigskip
+
+  $$ $$
+\centerline {\bf Appendix. Green function}
+   
+   We consider $n$-dimensional Euclidean space $\E^n$.
+
+    Let $\Omega=dx^1\wedge\dots\wedge dx^n$
+be a volume form on $\E^n$.
+
+Note that in `polar' coordinates
+      $$
+\Omega=\sigma_n r^{n-1}dr \ss\,,
+      $$
+where $r=\sqrt{{(x^1)}^2+\dots+{(x^n)}^2}$ and
+       $$
+   \ss=(-1)^kx^k{\Omega\over r^ndx^k}=\sum_{k=1}^n
+       (-1)^k{x^k dx^1\dots dx^{k-1}\wedge 
+      dx^{k+1}\wedge\dots \wedge dx^n\over r^n }\,. 
+       $$
+Namely:
+           $$
+r^{n-1}dr \ss=r^{n-2}
+\sum_{i=1}^n\left(x^idx^i\right)\sum_{j=1}^n
+          \left( 
+        (-1)^k{x^k dx^1\dots dx^{k-1}\wedge 
+      dx^{k+1}\wedge\dots \wedge dx^n\over r^n }
+         \right)=\Omega\,.
+        \eqno (App1.1)
+           $$      
+(Note that area $\sigma_n$
+of $n$-dimensional
+unit sphere $S^n$ is equal to 
+       $$
+ \s_n=\int_{S^n\subset \E^{n+1}}\ss=
+{2\pi^{n+1\over 2}\over\Gamma
+\left({n+1\over 2}\right)}
+  \eqno (App1.1b) 
+     $$
+\footnote{$^*$}{Indeed in $$
+\int_{\E^{n+1}}e^{-r^2}\Omega=
+  \left(\int e^{-x^2}dx\right)^{n+1}=
+      \pi^{n+1\over 2}\,,
+   $$
+and on the other hand in `polar' coordinates
+          $$
+\int_{\E^{n+1}}e^{-r^2}\Omega=
+   \int_{\E^{n+1}}e^{-r^2}r^{n}dr\ss=
+   \int_{r=1}\ss\cdot 
+   \int_{\E^{n+1}}e^{-r^2}r^{n-1}dr\ss=
+\sigma_n\Gamma\left({n+1\over 2}\right)
+     $$
+This implies (App1.1b).
+   })
+
+Consider on $\E^n\backslash 0$ spherically invariant
+function $\Phi=\Phi(r)$ such that
+$n-1$-form
+               $$
+     \w_\Phi=  \Omega {\cal c} {\rm grad\,}\Phi-
+      \L_{{\rm grad\,}\Phi}
+               $$
+is closed form in $\E^n/0$.
+
+Thus we come to the statement
+
+We see that
+          $$
+  \w_\Phi=r^{n-1}dr{\cal c}
+     \left(
+       {d\Phi(r)\over dr}{\p\over \p r}
+      \right)=r^{n-1}{d\Phi(r)\over dr}\ss
+           $$
+Hence we have that for $\Phi=r^{2-n}$
+(and $\Phi=\log r$ for $\E^2$)
+the form $\w_\Phi$ is closed non-exact form.
+
+
+The function 
+  $$
+         \Phi_n=\cases 
+                {
+    r^{2-n} 
+    {\rm if\,} n\not= 2\cr
+    \log |r| {\rm if\,} n=2\cr
+         }
+           $$
+defines closed non exact form,  
+non-vanishing  charge (cohomology):
+if $C$ is a sphere such that origin belong to it, then
+         $$
+   \int_C\Omega{\cal c}{\rm grad\,}\Phi_n=
+    \oint_C {\rm grad \Phi}=
+     \cases 
+                {
+    {\sigma_{n-1}\over 2-n} 
+    {\rm if\,} n\not= 2\cr
+     {2\pi}\,\,  {\rm if\,} n=2\cr
+         }
+       \eqno (1.2a)
+         $$
+Notice that condition that form 
+$\Omega{\cal c}{\rm grad}\Phi_n$ is closed, means
+that 
+               $$
+{\rm for\,\,}\r\not=0, \Delta\Phi=0\,.
+               $$
+Indeed by definition
+        $$
+\Delta\Phi_n={\rm div\,}{\grad }\Phi_n=
+{\L_\grad\Phi_n\over \Omega}=
+   {d\left(
+ \Omega{\cal c}\grad\Phi_n
+  \right)
+\over \Omega}=0\,.
+        $$
+We come to 
+{\bf Proposition}
+Functions $\Phi_n$ are harmonic functions
+out of the origin:
+
+
+
+{\bf Theorem}  Laplacian of function $\Phi_n$,
+considered in the sence of generalised functions
+is eproportional to $\delta$-function:
+           $$
+\Delta\Phi_n={\sigma_{n-1}\over 2-n}\delta(\r)
+\,,\quad (2\pi\delta(r)\,,\quad
+\hbox{in the case if $n=2$}
+       \eqno (App1.3)
+           $$
+
+One can say that closedness of the form
+$\Omega{\cal c}\grad\Phi_n$ means that function
+$\Phi_n$ is harmonic function, and
+non-exactness of this form means that
+$\Phi_n$ is proportional to $\delta$-
+function\footnote{$^{**}$}
+{Cohomology--- generalsed functions}
+
+
+We will try to make the proof of this Theorem
+`almost' proper.
+
+   Let $\rho (\r)$ (density function)
+vanishes for big $R$. 
+We calculate derivatives in the sense
+of generalised functions
+          $$
+(\Delta\Phi_n,\rho)=(\Phi_n,\Delta\rho)\,.
+          $$
+Calculate the right hand side explicitly:
+            $$
+(\Phi_n,\Delta\rho)=
+\int_{\E^{n}}\Phi_n(\r)\Delta\rho(\r)d^nx=
+\lim_{\vare\to 0+}
+    \int_{r>\vare}\Phi_n(\r)\Delta\rho(\r)d^nx=
+  \lim_{\vare\to 0_+}I_\vare
+           $$
+We have
+             $$
+  I_\vare=
+\int_{r>\vare}\Phi_n(\r)\Delta\rho(\r)d^nx=
+\int_{r<\vare<R}\left(
+     \Phi_n(\r)\Delta\rho(\r)-
+     \rho(\r)\Delta\Phi_n(\r)\right)d^nx\,.
+         $$
+since $\Delta\Phi_n(r)\equiv 0$ for $\r\not=0$ then
+            $$
+I_\vare=\int_{r<\vare<R}\left(
+     \Phi_n(\r){\rm div\,}\grad\rho(\r)-
+     \rho(\r){\rm div\,}\grad\Phi_n(\r)\right)d^nx=
+             $$
+             $$
+\int_{r<\vare<R}\left(
+     \Phi_n(\r)d
+  \left(\Omega{\cal c}\grad\rho(\r)\right)-
+     \rho(\r)d
+      \left(
+     \Omega{\cal c}
+     \grad\Phi_n(\r)
+         \right)
+           \right)\,.
+            $$        
+Now using Stokes Theorem we rewrite this integral 
+as integral over the boundary of the 
+integration domain of $n-1$-form:
+         $$
+I_\vare=\int_{\p[{r<\vare<R}]=[{r=R}]-[{r=\vare}]}
+\left(
+     \Phi_n(\r)
+  \left(\Omega{\cal c}\grad\rho(\r)\right)-
+     \rho(\r)
+      \left(
+     \Omega{\cal c}
+     \grad\Phi_n(\r)
+         \right)
+           \right)\,.
+  \eqno(App1.4a)
+         $$
+This integral can be in other notations:
+         $$
+I_\vare=\oint_{\p[{r<\vare<R}]=[{r=R}]-[{r=\vare}]}
+          \left(
+     \Phi_n(\r)\grad\rho(\r)-
+     \rho(\r)
+      \grad\Phi_n(\r)
+        \right)d{\bf S}\,.
+  \eqno(App1.4b)
+         $$
+Now using the fact that function $\rho$
+vanishes at big $R$ we rewrite (1.4a)
+as
+       $$
+I_\vare=-\left[
+  \int_{r=\vare}\left(
+     \Phi_n(\r)
+  \left(\Omega{\cal c}\grad\rho(\r)\right)-
+     \rho(\r)
+      \left(
+     \Omega{\cal c}
+     \grad\Phi_n(\r)
+         \right)
+           \right)\right]\,.
+       $$
+Look carefully on two integrals in this 
+last expression. The first integral
+        $$
+  -\int_{r}\left(
+     \Phi_n(\r)
+  \left(\Omega{\cal c}\grad\rho(\r)\right)\right)
+        $$
+tends to zero if $\vare\to 0$ since
+are of the sphere of radius $r$ is equal  
+to  $\sigma_{n-1}\vare^{n-1}$.
+
+For the second integral using the cohomology
+formula (1.2a) we come to
+$$
+\lim_{\vare\to 0_+}
+I_\vare=
+     -\left[
+  -\int_{r=\vare}
+     \rho(\r)
+  \left(\Omega{\cal c}\grad\Phi_n(\r)\right)
+     \right]=
+\rho(0)\int_{r}\Omega{\cal c}\grad\Phi_n=
+\cases{
+ \rho(0){\sigma_{n-1}\over 2-n}\,\,
+ {\rm if}\,n\not=2\cr
+ 2\pi \rho(0)\,\,{\rm if}\, n=2\cr
+}
+$$  
+Thus we calculated $(\Delta\Phi_n,\rho)$
+and Theorem is proved.
+
+\medskip
+
+  This Theorem may be used to construct Green 
+functions of $\Delta$ on $\E^n$.
+      (see details in the second paragraph)
+          Consider the function
+        $$
+G_n(\r,\R)=\cases
+           {
+       {2-n\over\sigma_{n-1}}\Phi_n(\r-\R)
+          \,\,{\rm if}\, n\not=2\cr
+       {1\over 2\pi}\log (\r-\R)
+         \,\,{\rm if}\, n=2\cr
+         }
+        $$
+Due to Theorem for every $\rho$ with compact support
+the function      
+ $$
+U(\R)=\int \rho(\r)G(\r,\R)d^x
+      $$
+
+\bye

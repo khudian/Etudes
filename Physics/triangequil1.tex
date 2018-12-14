@@ -1,0 +1,145 @@
+\magnification=1200 \baselineskip=14pt
+
+%\font\magnifiedfiverm=cmr5 at 10 pt
+
+\def\p {\partial}
+\def \D {\Delta_{d{\bf v}}}
+\def \Ds  {\Delta^{\#}}
+\def\t{\tilde}
+\def\s {\sigma}
+\def\L {\Lambda}
+\def\Darboux {$z^A=$  $x^1,\dots,x^n$, $\theta_1,\dots,\theta_n$}
+\def\a{\alpha}
+\def\O{\Omega}
+\def\d{\delta}
+\def\dv  {{d{\bf{v}}}}
+\def\A {{\cal A}}
+\def\R {I\!R}
+\def\t {\tilde}
+
+
+{\it  Consider the angle $\varphi$ with the vertex is at the origin.  
+Consider the  rod of the length $l=1$.  What is the
+equilibrium position of the rod in this angle under the gravitational
+force. This problem was sugested by John Parkinson
+on tutorials. I was really surprised realising that this problem
+is not trivial.}
+   
+  
+  For simplicity consider the case if bisectrix of the angle
+is vertical. Thus we have to study the stationary points of the function
+          $$
+    F=x+y\,,\qquad \hbox{under the constrain}\,\,
+     x^2+y^2-2xy\cos\varphi =1\,.
+          $$
+Solving this constrain we see that there are two triangles if
+$x<1$, one triangle if $1<x\leq {1\over \sin\varphi}$,
+and no triagnle if $x>{1\over \sin\varphi}$: 
+         $$
+\cases 
+  {
+    y_+=x\cos\varphi +\sqrt {1-x^2\sin^2\varphi}\,\,\quad
+ \hbox {if $x<{1\over \sin\varphi }$}\cr
+    y_-=x\cos\varphi-\sqrt {1-x^2\sin^2\varphi}\,\,\quad
+ \hbox {if $x\leq 1$}\cr
+       }
+         $$
+Symmetry arguments: 
+      $$
+     F(x,y)=F(y,x) 
+      $$
+give us that one of the stationary points
+of the function $F$ is the isocseles triangle: 
+      $$
+x_0={1\over 2\sin {\varphi\over 2}}\,,  (x_0>11)\,.
+     $$
+(isocseles triangle).  In this case $x>1$, and this point
+is a stationary point of the function $F_+$.
+
+Is this point equilibrium point?  Consider a function
+$F_+$ in the vicinity of this point:
+         $$
+x=
+{1\over 2\sin {\varphi\over 2}}+u\,,
+         $$
+
+We come to
+       $$
+\Phi_+(u)=x+y=
+x+x\cos\varphi+\sqrt {1-x^2\sin^2\varphi}=
+       $$
+      $$
+(1+\cos\varphi)
+         \left(
+{1\over 2\sin {\varphi\over 2}}+u
+         \right)
+            +
+  \sqrt{1-\left(
+{1\over 2\sin {\varphi\over 2}}+u
+         \right)^2\sin^2\varphi
+}=
+   \left({\cos^2{\varphi\over 2}\over \sin{\varphi\over 2}}
+     +
+2\cos^2{\varphi\over 2}u\right)+
+      $$
+      $$
+\sqrt {
+    1-\cos^2{\varphi\over 2}-
+       4\sin{\varphi\over 2}
+     \cos^2{\varphi\over 2}u-
+       4\sin^2{\varphi\over 2}
+     \cos^2{\varphi\over 2}u^2
+      }=
+   \left({\cos^2{\varphi\over 2}\over \sin{\varphi\over 2}}
+     +
+2\cos^2{\varphi\over 2}u\right)+
+      $$
+         $$
+\sin {\varphi\over 2}
+ \sqrt 
+      {
+    1- 
+      4
+     {\cos^2{\varphi\over 2}
+          \over\sin{\varphi\over 2}
+               }u-
+       4
+     \cos^2{\varphi\over 2}u^2
+     }=
+   \left({\cos^2{\varphi\over 2}\over \sin{\varphi\over 2}}
+     +
+2\cos^2{\varphi\over 2}u\right)+
+         $$
+       $$
+\sin {\varphi\over 2}
+        \left
+           ( 
+    1- 
+        2
+     {\cos^2{\varphi\over 2}
+          \over\sin{\varphi\over 2}
+               }u-
+       2
+     \cos^2{\varphi\over 2}u^2
+           -
+     {1\over 8}
+            \left(
+        4\cos^2\varphi
+        \left({u\over \sin {\varphi\over 2}}+u^2\right)
+       \right)^2  +{1\over 16}\left(4\cos^2{\varphi\over 2}\over 
+      \sin{\varphi\over 2}\right)^3+\dots
+          \right)=
+        $$
+       $$
+       $$
+(Here we use the binom formula:
+     $$
+\sqrt {1+x}=1+{1\over 2}x+
+{1\over 2}\cdot {1\over 2}\left(-{1\over 2}\right)x^2+
+{1\over 6}\cdot {1\over 2}\cdot \left(-{1\over 2}\right)
+  \cdot \left(-{3\over 2}\right)x^3+\dots=
+    1+{x\over 2}-{x^2\over 8}+{x^3\over 16}+
+ +\dots=
+      $$
+
+\bye

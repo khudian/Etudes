@@ -1,0 +1,105 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+\def \A {{\cal A}}
+\def \L {{\cal L}}
+           \centerline {\bf Free lagrangian on Riemannian manifold.}
+
+
+Let $G=g_{ik}d x^id x^k$ be  Riemannian metric on manifold $M$ and
+$L={g_{ik}\dot x^i\dot x^k\over 2}$ the corresponding free
+Lagrangian.
+
+ Let $\rho(t)dt$ be volume form on the standard line $\R$.
+ Consider the Lagrangian-density
+           $$
+         {\cal L}_\sigma=L^{{\s\over 2}-1}\rho^{1-\sigma}
+           $$
+This is Lagrangian-density of the weight $1$.  The Euler-Lagrange equations of this Lagrangian
+are
+                $$
+              \widehat\nabla_t p_i=0
+                $$
+where $p_i={\p L\over \p \dot x^i}=g_{ik}\dot x^k$ and for the curve $x^i=x^i(t)$ the covariant derivative $\widehat\nabla_t$
+              $$
+            \widehat\nabla_t p_i={d\over dt}p_i-\dot x^m(t)\Gamma_{mi}^k(x(t)) p_k+\gamma(\sigma)p_i
+              $$
+where $\Gamma_{mi}^k$ are Christoffel symbols of Levi-Civita connection of metric $G$ and $\gamma(\sigma)$
+is connection on $\R$ which is affine sum of the connections induced by volume form $\rho$ and
+Lagrangian $L$:
+               $$
+            \gamma(\sigma)=(2-\sigma)\gamma_L+(\sigma-1)\gamma_\rho,\qquad ((2-\sigma)+(\sigma-1)=1)
+               $$
+The connection $\gamma_\rho$ induced by the density $\rho dt$ of the weight $1$ equals to
+$\gamma_\rho=-{d\log \rho\over dt}$
+and the connection $\gamma_L$ induced by the density $L dt^2$ of the weight $1$ equals to
+$\gamma_L=-{d\log L\over dt}$.
+
+ We have two connections on $\R$: the connection $\nabla_G$, the Levi-Civita connection on vectors and covectors
+ on the curve in $M$ and the connection $\nabla_{\rm dens}(\sigma)$ which is the connection on densities on $\R$.
+ The connection $\widehat\nabla$ acts on the vectors (co-vectors)  $\otimes$ densities,
+ Left hand side of Euler-Lagrange equations is the operator on co-vectors $\otimes$ densities of the weight $1$
+ sending them to the co-vectors $\otimes$ densities of the weight $2$.
+
+
+
+Multiplying the Euler-Lagrange equation on $\dot x^i$ we come:
+                   $$
+    \widehat\nabla_t p_i \dot x^i=\nabla p_i\dot x^i+\gamma(\sigma)(p_i\dot x^i)=
+                   $$ 
+        $$
+      ={d\over dt}L+2\gamma(\sigma)L=... {d\over dt}\L(\s)=0\,.
+        $$
+        Three cases: $\s=1$, $\s=2$ and $\s\not=1,2$
+
+1) if $\s=2$ we choose the coordinate on $\R$ such that $\rho\equiv 1$ (time). In this case $\gamma_\rho=0$
+and since $\s=2$ we come to the equation $\nabla p_i=0$ for geodesics and we come to $L\equiv 1$ (natural parameter.)
+
+2) If $\s=1$  we choose the coordinate on $\R$ such that $L\equiv 1$ (natural parameter). In this case $\gamma_L=0$
+and since $\s=1$ we come again to the equation $\nabla p_i=0$ for geodesics.
+
+
+\bye

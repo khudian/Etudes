@@ -1,0 +1,185 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline  {\bf Killings of sphere in stereographic projection 
+          and Geodesics,}
+  \centerline {\bf (Runge-Lents-Laplace-like vectors)}
+
+\m
+
+{\sl 28 February 2013}
+
+\m
+Consider sphere of radius $1$ in stereographic projection 
+trough North Pole:
+         $$
+     u={x\over 1-z}, v={y\over 1-z}\,.
+         $$
+The metric is 
+                  $$
+   G={4(du^2+dv^2)\over (1+u^2+v^2)^2}\,.
+                  $$ 
+Volume form of the metric  is 
+              $$
+    dv=\det G={4du\wedge dv\over (1+u^2+v^2)^2}\,.
+              $$
+Recall that the nicest way to find Killings, 
+rotations of sphere, it is to consider
+them as linear Hamiltonians 
+restricted on the sphere , 
+        $$
+H=ax+by+cz=a\sin\theta\cos\varphi+b\sin\theta\sin\varphi+c\cos\theta\,,
+        $$
+which is provided with symplectic structure
+$\w=dv=\sin\theta\wedge d\varphi$.
+(Symplectic structure on the sphere
+is the Kirillov symplectic structure on orbit 
+($=S^2$) in coalgebra $so(3)=E^3$;
+linear Hamiltonians are elements of this coadjoint algebra.)
+Do it in stereographic coordinates:
+         $$
+H_x=x={2u\over 1+u^2+v^2},\, H_y=y={2v\over 1+u^2+v^2},\, 
+H_z=z={u^2+v^2-1\over 1+u^2+v^2}\,,
+         $$
+Using that $D_H=\w^{-1}dH$ we come to
+        $$
+D_x=\w^{-1}dH_x={1+v^2-u^2\over 2}\p_v+uv\p_u\,,
+         $$
+        $$
+D_y=\w^{-1}dH_x={1+u^2-v^2\over 2}\p_u+uv\p_v
+         $$
+        $$
+D_z=\w^{-1}dH_x=\pm(v\p_u-u\p_v)\,.
+         $$
+It is representation of $so(3)$: 
+        $$
+ [D_x,D_y]=D_z,\,\,
+ [D_y.D_z]=D_x,\,\,
+ [D_z.D_x]=D_y\,.
+       $$
+
+We call them Runge-Lentz since under
+suitable transformation free particle on sphere becomes particel in Coulomb
+field and these inegrals are just Runge-Lentz-Laplace -vectors. 
+
+It is interesting to find geodesics of sphere (great circles)
+via these Runge-Lentz vector fields
+in stereographic coordinates. Of course we know already answer:
+  Image of circles are circles 
+($u+iv=z\mapsto z'={Az+B\over -\bar Bz+\bar A }$ is $SU(2)$transformation.)
+
+Great circle passes through two antipodal points: 
+images of antipodal points 
+are points $z,z'$, such that $z'=-{1\over \bar z}$. Hence geodesics
+are circles such that images of antipodal points are edges of
+their diameters.
+
+But try to claculate them trough geodesics. Geodesics of sphere are 
+equation of motion of Lagrangian
+            $$
+   L=L_G=G_{ik}\dot x^i\dot x^k=
+  {2(\dot u^2+\dot v^2)\over (1+u^2+v^2)^2}\,.
+            $$ 
+Instead solving second order equations consider three
+integrals of motion
+ $I=K^i{\p L\over \p \dot x^i}$ 
+corresponding to Killing vector fields $\{D_x,D_y,D_z\}$:
+              $$
+I_x={2\over (1+u^2+v^2)^2}\left(
+    2uv\dot u+(1+v^2-u^2)\dot v\right)=C_1\,,
+              $$
+          $$
+I_y={2\over (1+u^2+v^2)^2}\left(
+   (1+u^2-v^2)\dot u+2uv\dot v\right)=C_2\,,
+              $$
+        $$
+I_z={2\over (1+u^2+v^2)^2}\left(
+   v\dot u-u\dot v\right)=C_3\,.
+              $$
+We have three integrals of motion which are equal to constants
+$C_1,C_2,C_3$ on geodesics (paths of free particle).
+
+Above there are three equations on two unknowns $\dot u$ and $\det v$. 
+Hence we come from these three equations on 
+variables $\dot u,\dot v$ to equation
+       $$
+\det 
+\pmatrix
+   {
+  2uv &1+v^2-u^2 &C_1\cr
+  1+u^2-v^2 & 2uv  &C_2\cr
+  v     & -u        & C_3\cr
+     } =0
+       $$
+(Vectors of integrals of motions belong to the span to two vectors.)
+
+Calculating determinant we come to 
+       $$
+\det 
+\pmatrix
+   {
+  2uv &1+v^2-u^2 &C_1\cr
+  1+u^2-v^2 & 2uv  &C_2\cr
+  v     & -u        & C_3\cr
+     } =(1+u^2+v^2)\left[C_2v-C_1u+C_3(u^2+v^2-1)\right]=0\,,
+       $$
+i.e.
+      $$
+C_2v-C_1u+C_3(u^2+v^2-1)=0\,.
+      $$
+These are trajectories of free particle----geodeisics.
+
+
+Three cases  
+
+1st case: $C_3=0$ we come to straight lines $C_2v-C_1u=0$, images of meridians.
+
+2-nd case:  $C_1=C_2=0$ we come to $u^2+v^2=1$, the
+ image of Equator
+
+3-rd case $C_1\not=0$ or $C_2\not=0$ and $C_3\not=0$ we come to circles
+such that ''antipodal points'' are inversed.\finish 
+
+\bye

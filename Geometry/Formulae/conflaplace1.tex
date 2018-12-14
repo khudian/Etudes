@@ -1,0 +1,360 @@
+\magnification=1200 
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\a {\alpha}
+\def\N {{\bf N}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\d {{\delta}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\g {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\g {{\Gamma}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\tilde}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\pt {{\bf pt}}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+  It is well-known that Laplacian is 
+        $$
+\Delta+c_nR
+  \eqno (1)
+        $$
+\def\t {\tilde}
+\def\hDelta {\hat\Delta}
+ invariant with respect to conformal transformations
+     $$
+   \t g_{ik}=e^{2\s}g_{ik}
+       \eqno (2)
+     $$
+Here  $c_n$ is conastand depending on dimension of the space, $R$
+is a scalar curvature.
+
+What is the exact statement?
+
+  Why $R$ appears?
+
+
+Let $\bs=s|Dx|^\l$ be a density of weight $\l$. Consider our 
+operator
+          $\hat\Delta$ acting on this density:
+          $$
+ \hDelta_{g,\g}=\hDelta\bs= \left(
+   \p_m(g^{mn}\p_ns)+(2\l-1)\g^i\p_i s
+         \right)|Dx|^\l+\l\p_i\g^i \bs+
+   \l(\l-1)\g^i\g_i\bs
+      \eqno (3)
+           $$
+here $\g_i$ is a connection on densities. We know that
+          $$
+   \hDelta\bs =\rho^\l\Delta(\rho^{-\l}\bs )\,,
+      \eqno (4)
+          $$
+where $\rho=\sqrt {\det g}|Dx|$ is volume form on Riemannian manifold,
+   $\g_i=-\p_i\log\rho$ and $\Delta$ is Laplace-Beltrami Laplacian
+ on functions:
+             $$
+\Delta F={1\over\rho}\p_m\left(\rho g^{mn}\p_nF\right)\,
+           \eqno (5)
+             $$
+
+
+Now study how operator $\hDelta$ changes under conformal transformations:
+         $$
+g\to\t g=e^{2\s}g\,,
+  \rho\to\t\rho=\rho(\sqrt{\det g})^{n\over 2}=\rho e^{n\s}\,, 
+\g_i\to \t\g_i=-\p_i\log\t\rho=\g_i-n\p_i\s\,.
+         \eqno (6)
+         $$
+Then we come to operator
+       $$
+\hDelta'=\hDelta'_{\t g,\t \g}= 
+   \p_m(\t g^{mn}\p_n)+(2\l-1)\t\g^i\p_i+\l\p_i\t\g^i +
+   \l(\l-1)\t\g^i\t\g_i
+        \eqno (7)
+       $$
+   Study the relation between operators $\hDelta'$ and $\hDelta$.
+
+Using equations (6) we come to
+         $$
+\hDelta'=\hDelta_{\t g,\t \g}=
+   \p_m\left( e^{-2\s}g^{mn}\p_n\,\right)+
+ (2\l-1)\t\g^i\p_i 
+         +\l\p_i\t\g^i +
+   \l(\l-1)\t\g^i\t\g_i=
+         $$
+         $$
+   \p_m\left( e^{-2\s}g^{mn}\p_n\,\right)+
+    (2\l-1)e^{-2\s}g^{ij}(\g_j-n\p_j\s)\p_i 
+         +\l\p_i\left(e^{-2\s}g^{ij}
+       \left(\g_j-n\p_j\s\right)\right) +
+          $$
+          $$
+   \l(\l-1)e^{-2\s}g^{ij}(\g_i-n\p_i\s)
+    (\g_j-n\p_j\s)=
+         $$
+         $$
+         e^{-2\s}
+       \left[
+        \p_m\left(g^{mn}\p_n\,\,\right)
+        -2\p_m\s
+      g^{mn}\p_n\,\,\right]+
+            $$
+            $$+
+    e^{-2\s}(2\l-1)g^{ij}(\g_j-n\p_j\s)\p_i+
+            $$
+            $$ 
+         +e^{-2\s}\l
+              \left[
+                 -2\p_i\s g^{ij}(\g_i-n\p_j\s)+
+           \p_i\g^i-
+               n\p_i \left(g^{ij}\p_j\s\right)
+            \right] +
+              $$
+              $$
+   e^{-2\s}\l(\l-1)g^{ij}(\g_i-n\p_i\s)
+    (\g_j-n\p_j\s)
+       =
+         $$
+      $$
+e^{-2\s}\left[ 
+  \p_m( g^{mn}\p_n\,\,)+(2\l-1)\g^i\p_i+\l\p_i\g^i +
+   \l(\l-1)\g^i\g_i
+\right]
+     $$
+     $$
+   -e^{-2\s}\left[2+n(2\l-1)\right](\nabla\s)^m\p_m
++
+   $$
+      $$
+\l e^{-2\s}
+ \left[-2\p_i\s\g^i+2n(\nabla\s)^m\p_m\s-
+ n\p_i(\nabla^i\s)\right]+       
+     $$
+     $$
+-2e^{-2\s}\l(\l-1)n\g^i\p_i\s+
++e^{-2\s}\l(\l-1)n^2\nabla^i\s\p_i\s\,,
+     \eqno (8)
+        $$
+where $\nabla^i\s={\rm grad\,}_g \s=g^{ij}\p_j\s$.  
+Use also that
+      $$
+{\cal L}_\A\bs=
+(A^m\p_m s+\l\p_mA^m)|Dx|^\l
+    \eqno (9)
+      $$
+and the fact that:
+       $$
+\Delta\s=\p_n\nabla^m\s=\p_n(g^{mn}\p_m\s)-\g^m\p_m\s=
+(\hDelta)_{\l=0}\s\,.
+\eqno (10)  
+       $$
+Hence we have
+        $$
+\hDelta'\bs=\hDelta_{\t g=e^{2\s}g}\bs=e^{-2\s}\hDelta_{g}\bs
+        $$
+       $$
+-\left[2+n(2\l-1)\right]{\cal L}_{\nabla\s}\bs+
+\l\left[2+n(2\l-1)\right]\p_m\nabla^m\s\bs+
+       $$
+       $$
+\l e^{-2\s}
+ \left[-2\p_i\s\g^i+2n(\nabla\s)^m\p_m\s-
+ n\p_i(\nabla^i\s)\right]\bs+       
+     $$
+     $$
+-2e^{-2\s}\l(\l-1)n\g^i\p_i\s
++e^{-2\s}\l(\l-1)n^2\nabla^i\s\p_i\s\bs=
+    $$
+     $$
+e^{-2\s}
+    \left(
+       \Delta\bs-
+\left[2+n(2\l-1)\right]{\cal L}_{\nabla\s}\bs+
+   2\l[1+n(\l-1)]\left(\nabla^i\s\p_i\s-\g_i\s\right)\bs+
+    n\l\left[2+n(\l-1)\right]\nabla^i\s\p_i\s\bs
+    \right)
+     $$
+  $$
+=e^{-2\s}\left(
+       \Delta\bs-
+\left[2+n(2\l-1)\right]{\cal L}_{\nabla\s}\bs+
+   2\l[1+n(\l-1)]\left(\Delta\s\right)\bs+
+    n\l\left[2+n(\l-1)\right]\nabla^i\s\p_i\s\bs
+    \right)
+     $$
+or in other way:
+        $$
+e^{2\sigma}\hDelta'=\hDelta-
+   \left(2+n(2\l-1)\right){\cal L}_{\nabla\s}+
+   2\l\left(1+n(\l-1)\right)\Delta\s+
+    n\l\left(2+n(\l-1)\right)\nabla^i\s\p_i\s\,.
+        \eqno (11)
+           $$
+or in other way:
+             $$
+     \hDelta'=e^{-2\sigma}
+         \left(\hDelta+a(n,\l){\cal L}_{\nabla\s}+\Phi\right)\,,
+                $$
+where
+                 $$
+ a(n,\l)=\left(2+n(2\l-1)\right)\,,\,\,
+  \Phi=
+   2\l\left(1+n(\l-1)\right)\Delta\s+
+    n\l\left(2+n(\l-1)\right)\nabla^i\s\p_i\s\,.
+        \eqno (11a)
+             $$
+
+  We see that symbols of operator pencils
+$\hDelta'$ and $\hDelta$ coincide up to multiplier
+$e^{2\s}$. The pencil $\hDelta$ defines self-adjoint operator
+in algebra of densities. The
+ operator $e^{2\s}\hDelta'$ differs from operator $\Delta$
+on antiself-adjoint operator $\cal L$ and scalar function.
+
+Hence one can find a value of $\l$ such that operator is almost the same
+up to scalar:
+        $$
+2+(2\l-1)n=0\,\, {\rm i.e.}\,\,\l_{_0}={1\over 2}-{1\over n}
+        $$
+In this case we have that for equation (11)
+     $$
+  2\l(1+n(\l-1))\big\vert_{\l=\l_0}={n-2\over 2}\,,\, 
+  n\l(2+n(\l-1))\big\vert_{\l=\l_0}=-{(n-2)^2\over 4}\,.
+       \eqno (12) 
+     $$
+ We see that on the densities of weight 
+$\l_0={1\over 2}-{1\over n}$ the following realtion holds:
+        $$
+\hDelta'={e^{-2\s}}
+        \left(
+          \hDelta-
+   {n-2\over 2}\Delta\s-
+    {(n-2)^2\over 4}\p_m\s\nabla^m\s
+        \right)\,.
+    \eqno (13)
+        $$
+
+Thus we come to construction of the operator:
+       $$
+L=\hDelta-{n-2\over 4(n-1)}R\,\,
+\hbox{acting on densities of weight $\l={1\over 2}-{1\over n}$}.
+       $$
+
+\bigskip
+
+  Now we want to go further. Return to the formula (11)
+
+             $$
+     \hDelta'=e^{-2\sigma}
+         \left(\hDelta+a(n,\l){\cal L}_{\nabla\s}+\Phi\right)\,,
+                $$
+where
+                 $$
+ a(n,\l)=\left(2+n(2\l-1)\right)\,,\,\,
+  \Phi=
+   2\l\left(1+n(\l-1)\right)\Delta\s+
+    n\l\left(2+n(\l-1)\right)\nabla^i\s\p_i\s\,.
+        \eqno (11a)
+             $$
+ecall that operator pencil $\hDelta$ is constructed vial Beltrami-Laplace,
+and we know that $\hDelta$ is self-adjoint operator.
+       Consider operator
+                $$
+    \hDelta_{\delta}=\rho^\delta\hDelta=(\det g)^{n\over 2}|Dx|^\delta\hDelta
+                $$
+ This operator sends $\l$-densities to $\l+\delta$ dentisites.
+This is easy exercise to check that this is alos self-adjoint operator!
+   We denote by $\hDelta$ the Beltrami-Laplac pencil 
+defined by Riemannian ,metric $g_{ik}$
+  $\hDelta'$ the pencil cooresponding to the metric
+$\tilde{ g_{ik}}=e^{2\sigma}g_{ik}$,
+and we denote by $\hDelta_{(\delta)}$
+the weighted pencil $\hDelta_{(\delta)}=\rho^\delta\hDelta=
+\rho^\d\hDelta_{(0)}$.
+
+  The relation (11a) will take the form:
+              $$
+\hDelta'_{(\d)}=\tilde\rho^\delta\hDelta'=
+(\det \tilde g)^{n\delta\over 2}|Dx|^\d\hDelta'=
+ e^{n\s\delta}\rho^\delta\hDelta'=
+e^{n\s\delta}e^{-2\sigma}\rho^\delta
+         \left(\hDelta+a(n,\l){\cal L}_{\nabla\s}+\Phi\right)=
+                 $$
+                 $$
+e^{(n\delta-2)\s}\rho^\delta
+         \left(\hDelta+a(n,\l){\cal L}_{\nabla\s}+\Phi\right)=
+e^{(n\delta-2)\s}
+         \left(\hDelta_{(\d)}+
+a(n,\l)\rho^\d{\cal L}_{\nabla\s}+\rho^\d\Phi\right)\,.
+$$
+
+  Now we put
+               $$
+              \delta={2\over n}\,,\quad
+ {\rm then}\,\,\, \rho^\d=\det g\,.
+                $$
+We come to the statement:
+
+     If weight $\d={2\over n}$ then the weighted pencil
+  obeys the transformation:
+                $$
+\hDelta'_{{2\over n}}=
+\hDelta_{{2\over n}}+\det g\left(a(n,\l){\cal L}\nabla\s+\Phi\right)
+                $$
+Note  that
+              $$
+              a(n,\hat\l)^*=-a(n,\l)
+              $$
+We come to
+
+{\bf Proposition} I
+Weighted Operators $\hDelta,\hDelta'$ 
+both are self-adjoint weighted operators
+with the same principal symbol in the case if $\delta={1\over 2n}$.
+
+Using Vornov-Khudaverdian Theorem we come to the conclusion that
+          $$
+  \hDelta=t^\d\left(S^{ab}\p_b\p_a+\p_bS^{ba}\p_a+
+  +\left(2\hat\l+\d-1\right)\g^a\p_a+\hat\l\p_a\g^a+
+\hat\l(\hat\l+\d-1)\g^a\g_a\right)\,
+          $$ 
+and        $$
+  \hDelta=t^\d\left(S^{ab}\p_b\p_a+\p_bS^{ba}\p_a+
+  +\left(2\hat\l+\d-1\right)\g^a\p_a+\hat\l\p_a\g^a+
+\hat\l(\hat\l+\d-1)\g^a\g_a\right)\,
+          $$ 
+where $S^{ab}=\rho^\delta g^{ab}$
+\bye
+

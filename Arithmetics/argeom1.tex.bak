@@ -1,0 +1,146 @@
+%n this version on 20 january 2007
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+\centerline  {\bf Arithmetico-geometrical mean and periods}
+
+ let $M(a,b)$ be arithmetico-geometrical mean of two positive
+ numbers. The proof that it is equal to elliptic integral is very good demonstaration of so called
+  Zagier-Kontsevitch periods. Namely consider the following integral:
+           $$
+    S(a,b)=\int_0^{\pi\over 2}{ab\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt
+        \eqno (1)
+           $$
+We show that this integral does not change if $(a,b)\to (a_1,b_1)$ where $a_1$ is arithmetic mean of
+$a,b$ and $b_1$ is geometric mean of
+$a,b$. This implies that integral is proportional to aarithm.-geom.mean.
+
+{\bf Remark} Kontsevitch and Zagier conjectured that  two periods (integrals) are equal if
+it can be checked by standard operations.
+
+
+ The point is that we consider changing of integrand such that only $a,b$ change in {1}
+ \footnote{}{There is one beautiful anzats:
+ $\varphi\colon \tan \varphi={b\over a}\tan t$. Then one can easy check that
+ ${dt\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}={d\varphi\over \sqrt {(b^2\cos^2 \varphi+a^2\sin^2 \varphi)}}$,
+ i.e. integrand is invarian under changing $t\mapsto \varphi$, $a\to b$, $b\to a$. But this is "zamechanije v bok" }.
+
+
+First note that if we put $t\mapsto \sin t$ then we see that
+         $$
+     \int_0^{\pi\over 2}{ab\over \sqrt {(a^2\cos^2 t+b^2\sin^2 t)}}dt=
+     b\int_0^1{dt\over \sqrt{1-t^2}\sqrt {1-{b^2-a^2\over a^2}t^2}}, \,\, {\rm where}\,\, k=
+     \eqno (2)
+         $$
+Here we see so called elliptic integral of the first order:
+          $$
+      K(k)=\int_0^1{dt\over \sqrt{1-t^2}\sqrt {1-k^2t^2}}
+      \eqno (3)
+           $$
+and  we have that
+        $$
+        S(a,b)=aK\left(\sqrt {{b^2-a^2\over a^2}}\right)=bK\left(\sqrt {{a^2-b^2\over b^2}}\right)
+        \eqno (4)
+        $$
+Now we study integral (2). We consider anzats such that it changes only parameter $k$ in integral  (3).
+
+  \bigskip
+
+\def\k{{\kappa}}
+  Consider anzats:
+               $$
+               u={(1+\k)t\over 1+\kappa t^2}
+               \eqno (2.1)
+               $$
+
+Note that $u(0)=0$, $u(1)=1$ and if $0\leq k\leq 1$ and $0\leq \k \leq 1$ then $u(t)$ is regular reparameterisation
+of the interval $[0,1]$.
+  We see that
+         $$
+      du={(\kappa+1)(1-\k t^2)\over (1+\k t^2)^2}dt
+      \eqno (2.2)
+         $$
+and   $$
+   1-u^2=1-{(1+\k)^2t^2\over (1+\kappa t^2)^2}={(1+\kappa t^2)^2-(1+\k)^2t^2\over (1+\kappa t^2)^2}=
+       {(1-t^2)(1-\k^2 t^2)\over (1+\kappa t^2)^2}
+       \eqno (2.3)
+      $$
+This makes us to believe that anzats is not bad...
+
+Now put $\k=k$.
+
+Then for  integrand in  the (3) using (2.1), (2.2) and (2.3) we have
+         $$
+         {dt\over \sqrt{1-t^2}\sqrt {1-k^2t^2}}=
+         \left({dt\over du}du\right)
+         \left({1\over (1+k^2t^2)\sqrt{1-u^2}}\right)=
+         $$
+         $$
+         \left({(1+\k t^2)^2\over (\kappa+1)(1-\k t^2)}du\right)
+         \left({1\over (1+k^2t^2)\sqrt{1-u^2}}\right)=
+      {du\over u\sqrt {1-u^2}}{t\over 1-kt^2}
+         $$
+Comparing with (2.1) one can see that
+       $$
+{t\over 1-kt^2}={u\over \sqrt {(1+k)^2-4ku^2}}
+       $$
+Hence we have finally that
+  $$
+  {dt\over \sqrt{1-t^2}\sqrt {1-k^2t^2}}={du\over \sqrt {1-u^2}}{1\over \sqrt {(1+k)^2-4ku^2}}=
+  {du\over (1+k)\sqrt{1-u^2}\sqrt {1-{k'}^2u^2}}
+$$
+where
+         $$
+       k'={2\sqrt k\over 1+k}
+         $$
+Returning to elliptic function we see that
+
+
+      {\bf Proposition} Under transformation $t\to {(k+1)t\over (1+kt^2)}$ the integrand (3)
+      remains invariant (up to a multiplier) and
+                  $$
+              K(k)={1\over 1+k}K\left({2\sqrt k\over 1+k}\right)
+                  $$
+In particular returning to the integral $S(a,b)$ we see that
+             $$
+           S(a,b)=  
+             $$
+
+  \bye

@@ -1,0 +1,479 @@
+% I began this file on 30 October on the base of the file integral1.tex
+      \magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\I {{\bf I}}
+\def\FF {{\bf F}}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\b {{\bf b}}
+\def\ll  {{\bf l }}
+\def\ss  {{\bf s }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}} 
+\def\wv {{\buildrel \rightarrow\over \omega}}
+\def\Sv {{\buildrel \rightarrow\over \Sigma}}
+\def\grad {\rm grad\,}
+\def\div {\rm div\,}
+\def\rot {\rm rot\,}
+
+06 November 2013
+
+
+     \centerline {\bf On caluclation of some surface integrals .}
+\m {\it Let $p=p(\r)$ be a scalar function in $\E^3$. 
+We consider the following
+three surface integrals:
+              $$
+        \int_M p(\r)d\ss\,,\,\,(1)\,\,,\quad
+        \int_M \grad p(\r)d\ss\,,\,\,(2)\,\,,\quad
+        \int_M \grad p(\r)\times d\ss\, \,\,(3)\,.
+                  $$
+Here as always $d\ss$ is vector valued element of surface.
+
+Anybody  who learned basic vector calculus
+(or theoretical physics) knows many integrals like these.
+I would like to analyze difference between these
+three integrals. 
+
+
+In the case if $M=\p D$ is a boundary of a domain $D$ then
+the second integral can be calculated  
+by standard application of Gauss-Ostrogradsky formula:
+            $$
+    \int_{\p D} \grad p(\r)d\ss=
+  \int_D \div\grad p(\r)=\int_D\Delta p(\r)dV\,. 
+           $$
+For the first integral standard calculations (see below) 
+show that in the case if $M=\p D$ then
+         $$
+  \int_{\p D}p(\r)d\ss=\int_D \grad p(\r)dV\,.
+           $$
+This is nothing but Archimedes's principle.
+
+The third integral vanishes on closed surfaces and moreover
+for arbitrary surface $M$ it is reduced to integral over contour $\p M$: 
+            $$
+ \int_{M} \grad p(\r)\times d\ss=\int_{\p M}p(\r)d\ll,.
+            $$
+	The third integral looks peculiar: not only volume form and
+metric but also vector product is engaged in integrals construction.
+It  turns out that this integral  is topological: 
+rightly viewed it does not depend on metric structures.
+
+
+I am grateful to Grigory Vekstein who have focused my attention
+on the very beautiful integral (3).
+}
+
+
+
+\bigskip
+
+\centerline {${\cal x}\,\, 1$ \bf 
+Gauss-Ostrogradsky formula 
+ and differential forms}
+
+\m
+
+First of all recall Gauss-Ostrogradsky formula for flux of vector field.
+ If closed surface $M$ is the boundary of domain $D$, $M=\p D$, then
+this  formula expresses the flux of vector field
+through the surface via the integral over the domain:
+              $$
+           \int_{\p D} \K d\ss=\int_D {\rm div\,}\K d^3x\,.
+              $$
+The most illuminating way to understand this formula, is to use the
+language of differential forms.  The integrand in the left hand side is
+$2$-form, the integrand in the right hand side is a $3$-form.
+More in detail: the flux of vector field $\K$
+through the surface $M$ is equal to integral of $2$-form
+$\omega_\K=\Omega{\cal c}\K$ over surface $M$:
+             $$
+   \hbox {Flux of $K$ via $M$}=\int_M \K d\ss=\int\Omega{\cal c}\K\,,
+             $$ 
+where $\Omega$ is a volume form.
+Due to Stokes Theorem:
+       $$
+   \int_{\p D} \w=\int_D d\w\,,
+     $$
+ we have that if surface $M$ is a boundary, $M=\p D$ then:
+         $$
+\hbox {Flux of $K$ via $\p D$}=
+\int_{\p D} \K d\ss=\int_{\p D}\Omega{\cal c}\K=
+    \int_D d\left(\Omega{\cal c}\K\right)\,.
+           $$
+Cartan formula gives that
+          $
+d\left(\Omega{\cal c}\K\right)=\L_\K\Omega=
+  \left({\rm div}_\Omega\,\K\right)\Omega\,
+        $
+hence
+        $$
+\int_{\p D} \K d\ss=\int_{\p D}\Omega{\cal c}\K=
+    \int_D d\left(\Omega{\cal c}\K\right)=\int
+ \left({\rm div}_\Omega\,\K\right)\Omega\,.
+           $$
+In coordinates: if volume form $\Omega=\rho dx\wedge dy\wedge dz$ then
+           $$
+{\rm div}_\Omega\,\K={d\left(\Omega{\cal c}\K\right)\over \Omega}=
+          {
+  {d\left(\rho dx\wedge dy\wedge dz {\cal c}
+   \left(K_x\p_x+K_y\p_y+K_z\p_z\right)\right)}
+      \over \rho dx\wedge dy\wedge dz}=
+           $$
+        $$
+                {
+ d\left(\rho\left(K_x dy\wedge dz-K_ydx\wedge dz+
+ K_zdx\wedge dy\right)\right)
+    \over \rho dx\wedge dy\wedge dz
+        }=
+       {1\over\rho}
+           \left
+            (
+  {\p (\rho K_x)\over \p x}+
+  {\p (\rho K_y)\over \p y}+
+  {\p (\rho K_z)\over \p z}
+            \right)=
+       $$
+        $$
+  {\p  K_x\over \p x}+
+  {\p  K_y\over \p y}+
+  {\p \rho K_z\over \p z}+
+      K_x{\p\log \rho\over \p x}+
+      K_y{\p\log \rho\over \p y}+
+      K_z{\p\log \rho\over\p z}\,.
+        $$
+This is standard stuff. Integral over surface $M=\p D$ 
+is reduced to the integral
+over domain $D$ due to the fact that
+integrand is a differential form, and the Stokes formula works. 
+Of course not every surface integral over closed surface $M=\p D$
+can be reduced to the integral over domain $D$.  
+In general, integral over surface is an 
+integral of {\it density}. Reduction happens if the density
+is a differential form.
+
+ It often happens when we integrate over surface 
+not differential
+form, but {\it vector-valued} differential forms. 
+This is just the case with integrals (1) and (3).
+Note that flux of vector field which was
+calculated above is integral of a function over surface, not vector field.
+In the case if integrand is vector-valued  and it is differential form,
+Stokes-Gauss-Ostrogradsky like formula still works but there are some problems.
+ 
+   Return to calculations of integrals (1) and (3) considered above.
+
+  Both these integrals are integrals of vector valued differential form over
+surface---vector field is integrated over surface.
+(For the integral (2) scalar-valued form is integrated over surface.)
+   The integrals (1) and (3) are defined
+in Euclidean space where integration of vector field has a since since
+one can add two vectors attached at different points.
+In general integral of vector field over surface may be 
+defined only in spaces
+with absolute parallelism, where you have well defined transport of vectors
+ from point to point, independent on paths.
+
+\smallskip
+
+We first recall how to calculate these integrals using 
+standard trick\footnote{${^*)}$}{which every physicist 
+knows from books like
+ 'Batygin, Toptygin'}, then we will consider these 
+integrals in a more general framework.
+
+
+\smallskip
+
+{\sl Calculation of integral $\FF=\int_{\p D}p(\r)d\ss$.}
+
+\smallskip
+
+Calculate this integral (1) using the standard trick:
+take the scalar product of an arbitrary {\it constant} vector $\ac$   
+with  integrand in (1) in surface integral .
+  Then we come to the flux of vector field
+$p(\r)\ac$ through surface $\p D$: 
+       $$
+ {\FF}\cdot\ac= \oint_{\p D} \left (p(\r)\ac\right)d \ss\,.
+       $$ 
+Applying  Gauss-Ostogradsky law to this integral we come to 
+       $$
+ {\FF}\cdot\ac= \oint_{\p D} \left (p(\r)\cdot \ac\right)d \ss=
+     \int {\rm div\,}\left(p(\r)\ac\right)=
+    \ac\cdot\int_D \grad p(\r)dV\,.
+               $$
+Since this relation is obeyed for an arbitrary constant vector $\ac$ then
+     $$
+  \FF=\oint_{\p D} p(\r)d\ss=\int\grad p(\r)dV\,.
+     $$
+In particular if pressure $p=\rho gz$ then we come to Archimedes's law:
+     $$
+  \FF=\oint_{\p D} p(\r)d\ss=\int_D\grad p(\r)dV=\rho g\int_D dV=\rho gV_D\,. 
+     $$
+
+\m
+
+{\sl Calculation of integral $\I_M=\int_M \grad p(\r)\times d\ss$.}
+
+\smallskip
+
+
+ The same trick works for the integral (3): 
+
+$\ac\cdot (\grad p(\r)\times d\ss)=(\ac\times \grad p(\r))\cdot d\ss$.
+Hence if $\ac$ is constant vector then
+        $$
+ \ac \cdot \I_M=\int_{M} \ac\cdot(\grad p(\r)\times d\ss=
+ \int_{M}(\ac\times \grad p(\r))d\ss\,.
+            $$
+If $M=\p D$ is a boundary of domain $D$ then
+             $$
+ \ac \cdot{\bf I}_{\p D}=
+\int_{\p D} \ac\cdot(\grad p(\r)\times d\ss=
+ \int_{\p D}(\ac\times \grad p(\r))d\ss=
+   \int_D {\rm div\,}(\ac\times\grad p(\r))dV=0\,,
+        $$
+since ${\rm div\,}(\ac\times\grad p(\r))=
+a\cdot{\rm rot\,}\circ{\rm grad\,}p(\r)=0$. We see that 
+$\I_{M}=\int_M\grad p(\r)\times d\ss=0$
+if $M$ is a boundary. In fact we can say more:
+We have that 
+ $\ac\times\grad p(\r)=\rot (p(\r)ac))$. Hence
+        $$
+ \ac \cdot \I_M=\int_{M} \ac\cdot(\grad p(\r)\times d\ss=
+ \int_{M}(\ac\times \grad p(\r))d\ss=
+ \int_{M}\rot (p(\r)\ac)d\ss=\int_{\p M}p(\r)\ac\cdot d\ll\,.
+            $$
+Thus we see that for arbitrary surface $M$
+             $$
+      \I_M=\int_{M} \grad p(\r\times d\ss=\int_{\p M}p(\r)d\ll\,.
+             $$
+
+\m
+
+
+
+
+
+
+\centerline {${\cal x}\,\, 2$ Vector-valued forms}
+
+\medskip
+
+
+ Yes, integrals are calculated, but we prefer more illuminating 
+way to do it....
+
+One can consider integrals over surfaces in Euclidean spaces
+of vector-valued vector form.  
+First of all express vector valued area element 
+ in terms of vector valued form.
+
+  Let $\r=\r(\xi,\eta)$ be a local parameterisation of surface $M$ in $\E^3$.
+
+Then vector-valued surface element of $M$ is equal to  
+                 $$
+         d\s=|\r_\xi\times\r_\eta|d\xi\wedge d\eta=
+       \sqrt{\r_\xi^2\r_\eta^2-\left(\r_\xi\cdot\r_\eta\right)^2}
+                  d\xi\wedge d\eta=
+                 $$
+                 $$
+              \sqrt{
+          \left(x_\xi y_\eta-x_\eta y_\xi\right)^2+
+          \left(x_\xi z_\eta-x_\eta z_\xi\right)^2+
+          \left(z_\xi y_\eta-z_\eta y_\xi\right)^2
+                }d\xi\wedge d\eta
+               $$
+A normal unit vector to the surface is equal to 
+ $\n={\r_\xi\times\r_\eta\over |\r_\xi\times\r_\eta|}$ and vector 
+surface element is equal to 
+             $$
+   d\ss=\n d\s=\left(\r_\xi\times \r_\eta\right) d\xi\wedge d\eta
+             $$ 
+We see that vector surface element is expressed 
+trough vector valued $2$-form:
+        $$
+ \Sv\colon\quad     \wv(\r_\xi,\r_\eta)=\r_\xi\times \r_\eta\,,
+ \quad\Sv\big\vert_M d\xi d\eta=d\ss\,.
+         $$
+In Cartesian coordinates
+        $$
+        \Sv_{\rm surf}=
+       dx\wedge dy{\p \over \p z}-dx\wedge dz{\p \over \p y}+
+   dy\wedge dz{\p \over \p x}=
+{1\over 2}\epsilon_{ikm}dx^i\wedge dx^k{\p \over \p x^m}\,. 
+                  $$
+
+In arbitrary coordinates $u^i=(u^1,u^2,u^3)$
+          $$
+\Sv_{\rm surf}={1\over 2}\sqrt{\det g}\epsilon_{ikm}du^i\wedge du^k g^{mn}
+                 {\p\over \p u^n}\,,
+           $$
+where $g_{ik}$ is Euclidean metric in coordinates $u^i$.
+
+ This vector-valued form can be considered in arbitrary Riemannian manifold,
+but we can consider integral of the form (or any form $p(\r)\Sv$
+ over surface only if operation of vectors transport is well-defined
+(in spaces with absolute parallelism).
+
+{\it Integral of vector-valued forms over surface cannot be well-defined
+in an arbitrary Riemannian space.}
+
+On the other hand for vector valued forms one can consider functionals
+     $$
+ \Psi_M(\sigma)=\int_M\langle\wv,\s\rangle
+     $$
+on $1$-forms $\sigma$ which are well-defined since an
+integrand $\langle\wv,\sigma\rangle$
+is number-valued differential form.
+($\langle\,\,.\,\,\rangle$ is contraction of $1$-form 
+with vector (covector with vector)).
+  In the special case of Euclidean space one can consider 
+just constant $1$-forms.  This is a special case which was consider
+above when we calculated integrals using ``standard tricks''.
+
+Now we consider  functionals for integrals (1) and (3).
+ 
+\m
+
+\centerline 
+{\sl Functional $\Psi_M(\sigma)$ for integral $\int_M p(\r)d\ss$.}
+
+\smallskip
+
+
+      $$\int_M p(\r)d\ss\longrightarrow\,\,\,
+ \Psi_{M}(\s)=\int_{M} \langle p(\r)\Sv,\s\rangle
+         $$
+LHS is well-defined in Euclidean space. RHS is well defined 
+in arbitrary Riemannian manifold.
+Using previous calculations  we see that the 
+integrand is differential $2$-form such that its value on
+arbitrary two vectors $\v_1,\v_2$ tangent to $M=\p d$ is equal to
+          $$
+ \langle\Sv,\s\rangle(\v_1,\v_2)=\langle\Sv(\v_1,\v_2),\s\rangle=
+       \s(\v_1\times\v_2)
+$$
+Using formulae for vector-valued form $\Sv$ 
+we see that $2$-form $\langle\Sv,\s\rangle$ is equal to
+              $$
+\langle\Sv,\s\rangle=\sigma_z dx\wedge dy+
+       \sigma_y dz\wedge dx+\sigma_z dx\wedge dy\,,
+              $$
+in Euclidean space (in Cartesian coordinates),
+and for arbitrary Riemannian manifold
+          $$
+     \Sv_{\rm surf}=
+{1\over 2}\sqrt{\det g}\epsilon_{ikm}du^i\wedge du^k g^{mn}\s_n\,,
+           $$
+(Here $\sigma-\sigma_i(x)dx^i$.)
+Using Stokes Theorem and formulae above we see that
+in the case if $M=\p D$ then
+   $$
+\Psi_{\p D}(\sigma)=\int_{\p D}\langle p(\r)\Sv,\s\rangle=
+\int_D\s(\grad p)dV+\int p\div \xi_\s\,,
+   $$
+where $\xi_\s=g^{ik}\s_k$ is vector 
+field corresponding to $1$-form $\s\colon$.
+
+In particular if $\s=d\varphi$ is an exact form then
+   $$
+\Psi_{\p D}(\sigma=\varphi)=
+\int_{\p D}\langle\Sv,d\varphi\rangle=
+\int_D\s(\grad p)dV+\int p\Delta\varphi\,,
+   $$
+$\Delta$ is Laplace-Beltrami operator: 
+    $$
+ \Delta\varphi=
+ {1\over \sqrt{}}{\p\over \p x^m}\left(
+  \sqrt{\det g}g^{mn}{\p\varphi\over \p x^n}
+     \right)
+       $$
+This is generalisation of integral (1). In the case 
+if $\varphi$ is linear polynomial
+in $\E^3$ we come to standard Archimedes's integral. 
+It is interesting to look at this formula
+in the case if $\varphi$ is an arbitrary harmonic function.
+
+\m
+
+\centerline
+{\sl Functional $\Psi_M(\sigma)$for integral 
+$\int_M \grad p(\r)\times d\ss$.}
+
+
+Now consider generalisation of example (3).
+
+We come to the following functional on $1$-forms:
+      $$
+\int_M \grad p(\r)\times d\ss\longrightarrow\,\,\,
+ \Psi_{\p D}(\s)=\int_{M} \langle\grad p(\r)\times\Sv,\s\rangle\,.
+         $$
+LHS is defined in Euclidean space, RHS is defined in an arbitrary 
+Riemannian space. One can see that 
+{\it RHS is well-defined 
+for arbitrary manifold, it does not depend in fact on Riemannian structure.}
+Indeed for
+arbitrary two vectors $\v_1,\v_2$ tangent to $M=\p D$  we see that
+      $$
+\grad d p(\r)\times\Sv \left(\v_1,\v_2\right)=
+ \grad p(\r)\times\left(\v_1\times\v_2\right)=
+ \v_1 d p(\r)(\v_2)-\v_2d\varphi(\v_1)\,.
+      $$
+Hence we see that 
+      $$ 
+ \langle \grad p(\r)\times
+ \Sv,\s\rangle(\v_1,\v_2)=\sigma\left(
+    \v_1 d p(\r)(\v_2)-\v_2d\varphi\v_1
+         \right)=\sigma\wedge d\varphi (\v_1,\v_2)\,.
+$$
+We come to answer:
+      $$
+ \Psi_{M}(\s)=\int_{M} \langle\grad p(\r)\times\Sv,\s\rangle
+            =
+\int_{M}\sigma\wedge dp\,.
+      $$
+Thus we see that rightly viewed integral (3) does not 
+depend on any metric structure on the manifold.
+
+Due to Stokes formula
+     $$
+\Psi_M(\s)=\int_M\s\wedge d p=\int_M d(\s\wedge p)-\int_M d\s\wedge p=
+   \int_{\p M}\s\wedge p-\int_M d\s\wedge p\,. 
+     $$
+In particular if $1$-form $\s$ is closed the
+     $$
+\Psi_M(\s)=\int_{\p M}\s\wedge p\,.
+     $$
+
+\centerline { Le jeux en vaut la chandelle!}
+
+
+
+
+\bye

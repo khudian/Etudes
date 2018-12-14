@@ -1,0 +1,83 @@
+
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def \F {{\cal F}}
+
+\centerline {\bf Linear Differential Operators on the Real Line}
+
+
+
+
+Consider the space $Dens({\bf R})$ as an inner product space with canonical inner product and the space of linear differential operators over this space. We then have that a (n-)self adjoint operator of weight n ($L^{\dagger} = (-1)^{n}L$), with top term invertable, has the following form to second order,
+                  $$
+L  = t^{n+\delta} \left[ s \p_{x}^{n} + {n\over 2}(\partial_{x} s + 2 s \gamma \widehat{w}_{n+\delta})\partial_{x}^{n-1} + {n(n-1)\over 2}(\partial_{x}(s\gamma) + s(\gamma^{2} + \tau)\widehat{w}_{n+\delta})\widehat{w}_{n+\delta}\partial_{x}^{n-2} \right.
+          $$ \bye
+
+\[ \left. + \frac{n(n-1)}{2} \left( \frac{n-2}{6}\partial_{x}(s)\gamma - \frac{n+1+3\delta}{6}s \partial_{x}(\gamma) - \frac{n+1 + 3\delta(\delta+1)}{12}s\gamma^{2} + s \rho \right) \partial_{x}^{n-2} + ... \right] \]
+
+where $s$ is a density of weight $\delta$, $\gamma$ is a connection (on densities if weight 1), and $\tau$ and $\rho$ are both densities of weight 2. A particularly simplified structure becomes apparent when we consider s = 1, this also enforces the condition $\delta = 0$. Then if we act on the kernel of the operator $\widehat{w}_{n}$, i.e. densities of weight (1-n)/2 we come to the expression,
+
+\[ L = t^{n} \left[ \partial_{x}^{n} - \frac{(n+1)n(n-1)}{12}( \partial_{x} \gamma + \frac{1}{2} \gamma^{2} + \tau ) \partial_{x}^{n-2} \right. \]
+
+\[ \left. - \frac{(n+1)n(n-1)(n-2)}{24}\partial_{x}(\partial_{x}\gamma + \frac{1}{2}\gamma^{2} + \tau)\partial_{x}^{n-3} + ... \right] \]
+
+Note that the coefficient of $\partial_{x}^{n-2}$ in this equation transforms in the same way as a multiple of a Schwarzian.
+
+
+It is a classical result that to a non-degenerate projective curve, $f:\mathbb{R} \rightarrow \mathbb{R}P^{1}$, we can associate a second order \emph{self adjoint} differential operator (by non-degenerate we mean that our curve has non-zero speed). We shall now perform this construction - the language of densities is essential and a solution that is coordinate independant would be impossible without them. Firstly consider our linear operator above in the special case when n=2 acting on $-\frac{1}{2}$ densities;
+
+\[ L = t^{2}( \partial^{2} + Q) \]
+
+Then take two linearly independant solutions, $\phi_{i} \in Dens^{-\frac{1}{2}}(\mathbb{R})$ i =1, 2, and define the map $\Phi:\mathbb{R} \rightarrow \mathbb{R}P^{1}$ by $x \mapsto (\phi_{1}(x) : \phi_{2}(x))$. As The function $\Phi$ is well defined despite the fact that the $\phi$s are densities, this is because their ratio is a function and so is independant of frame. However the map, $L \mapsto \Phi$, is not completely well defined as we may choose another pair of solutions, but the dimension of the kernel of a Sturm-Liouville operator is 2 and therefore any solution may be written as a linear combination of $\phi_{1}$ and $\phi_{2}$. In particular if $\phi_{i}' \in Dens^{-\frac{1}{2}}(\mathbb{R})$ are another pair of linearly independant then
+
+\[ (\phi_{1}' , \phi_{2}') = (\phi_{1} , \phi_{2}) g \quad \quad g \in GL^{2}(\mathbb{R}) \]
+
+Therefore $\Phi' = \Phi \cdot g$, where $g$ is constant and the action is the standard one of projective transformations. This is equivalent to saying that the \emph{projective class} of the curve $\Phi$ is well defined.
+
+
+Conversely let $f: \mathbb{R} \rightarrow \mathbb{R}P^{1}$ be a projective curve, we can then get a lift of this curve $F: \mathbb{R} \rightarrow \mathbb{R}^{2}$ \footnote[1]{That this lift exists is a standard result of covering space theory. Namely $S^{n}$ can be considered as the double cover of $\mathbb{R}P^{n}$ and therefore any map $f:X \rightarrow \mathbb{R}P^{n}$ can be lifted to $S^{n}$ if $f_{\ast}(\pi_{1}(X)) \subseteq p_{\ast}(\pi_{1}(S^{n}))$, where p is the covering map. In our case $X$ is contractable and hence $f_{\ast} = 0$.}
+
+
+\end{document} 
+
+\bye

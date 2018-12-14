@@ -1,0 +1,104 @@
+\magnification=1200
+
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+{\bf Gamma function}
+
+\def\G {\Gamma}
+
+  We know very well the integral representation of Gamma function
+        $$
+   \G(x)=(x-1)!=\int_0^\infty t^{x}e^{-t}dt
+           \eqno (1)
+        $$
+We also know very well that
+         $$
+   B(x,y)={\G(x)\G(y)\over \G(x+y)}\,,
+              \eqno (2)
+         $$
+where
+          $$
+    B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt\,.
+          $$
+
+In fact Eiuler worked with 
+a different definition of Gamma-function,
+which was natural continuation on all $x$ of factorial.
+Using this definition he came to formulae (1) and (2).
+
+  I cannot avoid temptation to 
+ recall here this topic.
+
+
+  In fact Euler  observed gamma-function in the following way:
+He noted that
+            $$
+k!={(N+k)!\over (k+1)_N}={N!(N+1)_k\over (k+1)_N }=
+       \lim_{N\to \infty}{N! N^k\over (k+1)_N}\,,
+            $$
+where $(A)_r=A(A+1)\dots (A+r-1)$. Hence one can
+define
+            $$
+x!=\lim_{N\to \infty}{N! N^x\over (x+1)_N}
+            $$
+and respectively
+         $$
+\G(x)=(x-1)!=\lim_{N\to \infty}{N! N^{x-1}\over (x)_N}\,.
+       \eqno (3)
+         $$
+
+This definition looks not very beautiful, but one can easily imply
+equations (1), (2) and anbtoher identites.
+
+  E.g. one can easy to see that equation (3) implies
+ that
+           $$
+{1\over \G(x)}=xe^{\gamma x}\prod_{k=1}^\infty 
+  \left(\left(1+{x\over k}\right)e^{-{k\over n}}\right)\,,
+            $$
+where $\gamma=\lim_{N\to \infty}(1+{1\over 2}+\dots+{1\over N}-\log N)$
+is Euler constant.
+
+Indeed    
+             $$ 
+        {1\over\G(x)}=
+         $$
+\bye

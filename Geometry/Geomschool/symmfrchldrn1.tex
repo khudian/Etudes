@@ -1,0 +1,237 @@
+\magnification=1200
+
+
+  \centerline {\bf Symmetries}
+
+\bigskip
+
+
+
+  \centerline {\bf ${\cal x}1$Symmetries of triangles, quadrates, ....}
+
+\bigskip
+
+  We consider symmetries of polygons (triangles,....)
+
+  Symmetry, it is a transformation  of polygon such that the new polygon coincides with former one.
+
+\medskip
+
+{\bf 1}  Let $ABC$ be an isoscales triangle ($AC=CB$).
+
+We have transformation (reflection) $R=\pmatrix {AB\cr BA\cr}$. $R^2=I$:
+                    $$
+                    \pmatrix {AB\cr BA\cr}\circ \pmatrix {AB\cr BA\cr}=\pmatrix {AB\cr AB\cr}=I
+                       $$
+
+We come to {\it group} of transformations which possesses two elements $\{I, R\}$.
+Multiplication table is:
+             $$
+             I\circ I=I, I\circ R=R,    R\circ R=I
+             $$
+
+We will denote this group by $D_2$.
+
+\medskip
+
+{\bf 2}  Let $ABC$ be an equilateral triangle ($AB=BC=AC$).
+
+
+ We have much more symmetries:
+
+   There are three reflections
+                                  $$
+   R_{AB}\colon \,\,R_{AB}=\pmatrix {AB\cr BA\cr},\,R_{AB}\colon \,\,
+   R_{BC}=\pmatrix {BC\cr CB\cr}\,\,R_{AC}\colon \,\,R_{AC}=\pmatrix {CA\cr
+   BA\cr}\,.
+                                  $$
+ All reflections of course obey the law: $R\circ R=I$
+
+
+But there are also another symmetry transformations-- rotations. Consider rotation
+  $S\colon\,\, \pmatrix{ABC\cr BCA\cr}$.
+It is anticlock-wise rotation on the angle $120^\circ$. One can see that $S\circ S$ is
+anticlock-wise rotation on the angle $240^\circ$, or
+clock-wise rotation on the angle $120^\circ$:
+   $$
+S^2=I=\pmatrix{ABC\cr BCA\cr}\circ \pmatrix{ABC\cr BCA\cr}=\pmatrix{ABC\cr CAB\cr}
+   $$
+ So we have  $6$ symmetries (including identical)  $\{I,S,S^2, R_{AB}, R_{AC}, R_{BC}\}$:
+                             $$
+I=\pmatrix{ABC\cr ABC\cr},S=\pmatrix{ABC\cr BCA\cr},S^2=\pmatrix{ABC\cr CAB\cr},
+                         $$
+                         $$
+R_{AB}=\pmatrix{ABC\cr BAC\cr},R_{AC}=\pmatrix{ABC\cr CBA\cr},R_{BC}=\pmatrix{ABC\cr ACB\cr}
+                             $$
+
+Look on multiplication table.
+Now multiplication table is not so simple. In particular
+$R_{AB}\circ S=\pmatrix{ABC\cr BAC\cr}\circ \pmatrix{ABC\cr BCA\cr}=\pmatrix{ABC\cr CBA\cr}=R_{AC}$,
+but  $S\circ R_{AB}=\pmatrix{ABC\cr BCA\cr}\circ \pmatrix{ABC\cr BAC\cr}=\pmatrix{ABC\cr ACB\cr}=R_{BC}$.
+We see that now multiplication is not commutative:
+              $$
+              R_{AB}\circ S\not=S\circ R_{AB}\,.
+              $$
+
+ We denote the group by $D_3$.
+
+
+{\bf Exercise 1} (for sixthformers)
+
+Calculate multiplication table.
+
+
+
+
+
+ {\bf Exercise 2}  Consider subsets $\{I, S,S^2\}$, $\{I,R_{AB}\}$, $\{S, R_{AB}\}$. Analyse which sets are subgroups?
+
+
+ {\bf Exercise 3} Describe all subgroups in $D_3$.
+
+
+ \bigskip
+
+  The group $D_3$ of symmetries of triangle possesses $6$ elements: Note that it is just group of {\it all permutations}
+  of three elements (group $S_3$), say $\{A,B,C\}$ or say $\{pen, chair, table\}$....
+
+
+{\bf Exercise 4}  Consider quadrat: quadrat $ABCD$. Find all symmetry transformations.
+
+ {Exercise} Find all symmetry transformations.
+
+
+   {\bf Exercise 5} How many permutations one can do if we have four elements $\{A,B,C,D\}$ or say
+     $\{pen, pencil, chair, table\}$
+
+ {Exercise} Is it TRUE or FALSE:  Any permutation of letters $\{A,B,C,D\}$ is a symmetry transformation.
+
+
+
+
+
+\bigskip
+
+
+\centerline {\bf ${\cal x}2$ Applications of symmetries to polynomial equations.}
+
+  Consider now the problem from algebra.
+
+\medskip
+
+  Let $x_1,x_2$  be roots of quadratic polynomial $x^2+px+q=0$.
+
+  By the reasons which will be clear later denote one root by $A$ and the second root by the letter $B$
+  Consider the following expressions:
+
+     a) $A-B$, $A+B$, $A^2+B^2$, $A^3-B^3$, $AB+B$, $AB+A+B$
+
+  Apply to these expressions symmetry group $D_2$ of isoscales.
+
+ We see that some of these expressions are  $D_2$-invariant, some not.
+
+\smallskip
+
+  {\bf Theorem } (Vi\`ete Theorem). $A+B=-p$, $AB=q$. This you know well. But Vi\`ete Theorem
+  is  equivalent to another theorem
+
+  \smallskip
+
+  {\bf Theorem $^\prime$} An arbitrary polynomial on $A,B$ (recall that $A,B$ are roots of quadratic equation $x^2+px+q$)
+      which is $D_2$-invariant can be expressed as a polynomial on $p,q$
+
+
+You see the relation of group $D_2$ of isoscales with the problem of calculation expressions formed with the roots
+of quadratic polynomial:
+
+      \bigskip
+\centerline {\bf
+  $D_2$-symmetric expressions is easy to calculate!}
+
+
+  {\bf Exercises} (for sixthformers)
+
+    1. Let $A,B$ be roots of polynomial $x^2-x+1$.
+
+    a) Calculate $a_n=A^n+B^n$ for $n=1,2,3,\dots$
+
+     b) Calculate $A^2+B^2$ for the polynomial $x^2+x+10$.
+     (The answer will be negative number. Explain it)
+
+    c) something of this type
+
+
+    d) {\it Formula for roots via Vi\`ete Theorem}
+
+    Calculate $A-B=\pm \sqrt {(A-B)^2}=\pm \sqrt {(A+B)^2-4AB}$
+
+
+    Note that $$
+         A,B={(A+B)\pm (A-B)\over 2}={(A+B)\pm \sqrt {(A+B)^2-4AB}\over
+         2}=\dots
+            $$
+We come to the formula for roots of quadratic polynomial.
+
+
+
+
+\bigskip
+
+
+
+ Above we see that $D_2$-invariant expressions of roots $A,B$ of quadratic polynomial $x^2+px+q$ is easy to calculate,
+ i.e. you do not need to find roots themself.
+
+
+   What about... $D_3$-invariant expressions of roots $A,B,C$ of cubic  polynomial $x^3+px^2+qx+r$
+
+
+This question is much more tricker? Not only you do not know how to calculate rooots of the cubic polynomial,
+but people who know it realise that formulae are much more complicated and out of practical use.
+
+It turns out that in spite of the fact that we cannot calculate roots but Vi`ete Theorem still works:
+
+  Let $x_1,x_2,x_3$ be roots. As before we denote them by $A,B,C$ Then comparing polynomials $x^3+px^2+qx+r$
+
+We come to
+            $$
+         A+B+C=-p, AB+AC+BC=q, ABC=-r
+            $$
+Note that expressions in left hand side are $D_3$-invariant.
+
+  We come to
+
+ {\bf Theorem 2} (Vi\`ete Theorem). $A+B=-p$, $AB=q$. This you know well. But Vi\`ete Theorem
+  is  equivalent to another theorem
+
+  \smallskip
+
+  {\bf Theorem $2^\prime$} An arbitrary polynomial on $A,B,C$ (recall that $A,B,C$
+  are roots of cubic equation $x^3+px^2+qx+r=0$)
+      which is $D_3$-invariant can be expressed as a polynomial on $p,q$
+
+
+ {\bf Exercises} Consider expressions $A^2+B^2-C^2$, $A^2+B^2+C^2$... $A^2B+B^2C+C^2A$,
+   $A^2B+B^2C+C^2A+AB^2+BC^2+CA^2$ where $A,B,C$ are roots of polynomial $x^3-x-1=0$
+
+ where $A,B,C$ are roots of
+   Find $D_3$-invariant expresisions
+
+   Calculate $D_3$-invariant expression.
+
+
+    $$ $$
+
+    What next.
+
+
+     One can try to consider group $D_4$. It is related with quadratic equation.
+
+      May be you heard the name of Evarist Galois...
+
+    Express
+
+
+
+
+\bye

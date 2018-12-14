@@ -1,0 +1,130 @@
+
+
+
+%%% eto tex-file (ne LateX) a obychnyj TeX
+
+\magnification=1200
+
+  Dorogoj Volodya
+
+ Eto cohenj interesnaja kontsruktsija
+kotoruju mohzno ispoljzovatj dlja vychilsnije realjnykh kogomologij.
+ja popytajusj objasnitj ejo po krajnej mere na algoritmicheskom urovne.
+
+
+
+Zeta funktsija algebrajicheskogo mnogoobrazia nad konechnym polem
+eto projizvodjashaja funtsija kotoraja opissyvajet
+posledovateljnostj kolichestva tochek mnogoobrazija
+ot stepeni rashirenija polja.
+ Vychislenije Zeta-funtksiji to odin iz spossobov vychislenija
+kogomologij.
+
+
+ Podrobneje:
+Rassmotrim $n$-mernoje vectornoje prostransvo $A^n$
+nad polem $F_p$  ($F_p=Z/pz$).
+Nabor mnoochelnov (s koeffitsientami iz $F_p$) zadajot
+mnogoobrazije kotoroje my budem oboznachatj bukvoj $X$.
+
+Pustj Eto mnogoobrazije soderzhit $v_1$ tochek
+(kolichetsvo tochek mnogoobrazija shcitajestsja pereborom vsekh $p^n$
+tochek $A^n$ i proverkoj oni lezhat v $X$ ili net.)
+
+Teperj my budem rashirjatj pole koeffitsientov:
+S  $F_p$ perejdjom k $F_{p^2}$ zatem k k $F_{p^3}$ i.t.d.
+jasno shto kolichestvo tochek mnogoobrazija budet rasti.
+Oboznachim cherez $n_k$ kolichestvo tochek (to estj kolichestvo)
+nulej mnogochelnov (s koeffitsinetami iz $F_p$!!!!)
+v pole $F_{p^k}$
+A teperj mozhno opredelitj zeta-funktsiju kak:
+                $$
+Z(t)=\exp P(t)
+                  $$
+gde
+             $$
+           P(t)=\exp \sum {n_kt^k\over k}
+             $$
+Otkuda takoje vitievatoje opredelnije?
+ Primer: rassmotrim pustoje uravnenije, to estj
+ v kachestve $X$ rassmotrim vse  tochki! Togda:
+      $n_k=p^k$, $P(t)=\log (1-pt)$ i
+$Z(t)={1\over 1-pt}$. Zamenoj $t=p^{-s}$ mozhnopidti k obychnoj
+zeta-funtsiji
+
+ Teperj samoje udiviteljnoje:
+
+  Okazyvajetjsa $Z(t)$ ratsionaljnaja funtsija, po-drugomu:
+posledovateljnostj $n_k$ rekurrentnaja posledovateljnostj
+ Poetomu ejo mozhno schitatj na kompjutere.
+
+ Dostatochno vychislitj pervyje neskoljko chlenov posledovateljosti,
+daljshe vsjo shiotajejsja.
+
+
+ Primer Rassmotrim mnogochlen $x^2-y^2=0$ nad $A^2$
+
+Kolichestvo reshenij  uravnenija $x^2-y^2=0$ v $F_{p^k}$
+ravno $2p^k-1$ tak kak $x$ proizvoljnyj element i  $y=\pm x$.
+Esli $x\not =0$ to  kazdomu $x$ sootvetstvujut dva $y$.
+
+Itak $n_k=2p^k-1$. Legko poshitatj $P$ i $Z$:
+                    $$
+                 P(t)=\sum_{k=1}^0 {2p_k-1\over k}t^k=
+              =\log {1-t\over (1-pt)^2}
+                      $$
+
+                  $$
+  Z(t)= {1-t\over (1-pt)^2}
+                   $$
+
+Boleje interesnyj primer: rassmotrim "okruzhnostj"
+   $x^2+y^2=1$ v $F_p$. Ja eto segodnja schital:
+vrode by otvet: $n_k=p^k+1$ i
+        $$
+        Z(t)={1\over (1-t)(1-pt)}
+             $$
+
+Vopros: zachem vsjo eto nuzhno?
+
+ Napirmer mozhno na mashine shciotatj kogomologiji
+nastojashejikh mnogoobrazij.  Tedutsirovatj
+obychnyje mnogoobrazija po modulju $p$
+shcitajt zeta-funtskiju. Ona soderzhit informatsiju
+o kogomologijakh po modulju $p$. Daljhse ty sam ponimajehsj
+kak eto vazhno.
+
+Govorjat shto takim sposobom byli podschitany realjnyje otvety.
+
+
+
+               Hovik
+
+\bye
+
+                        Dr Hovhannes Khudaverdyan
+                                   Department of Mathematics
+                                      tel. 0161-2008975
+
+
+On Tue, 25 Jan 2005, Vladimir Kornyak wrote:
+
+> Dorogoy Ovik
+>
+> >   Esli tebe netrudno, poka popriderzhi denjgi pri sebe.
+>
+> Konechno netrudno - oni mnogo mesta ne zanimayut,
+> deystvitel'no, vdrug Mitya ob'yavitsa.
+>
+> > Ja tut razgovarival s rebjtatami pro $\zeta$-funktsiju konechnogo
+> > polya i v razgovore vdrug vspomnilisj tvoji kogomologiji
+> > nad konechnymi poljami: eto dejsviteljno khoroshij vychisliteljnyj spossob
+> >  schitatj chisla Betti pri pomoshi tvojikh neravenstv.
+>
+> A chto takoe $\zeta$-funktsija konechnogo polya?
+> Yesli konstruktsii etoy funktsii ne vyhodyat iz polya,
+> ona dolzhna byt' polinomom?
+>
+> Volodya
+>
+>

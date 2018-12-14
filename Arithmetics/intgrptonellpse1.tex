@@ -1,0 +1,165 @@
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+
+\centerline  {\bf Integer points on the ellipse}
+
+\bigskip
+
+Consider on $\R^2$ an ellipse
+             $$
+   ax^2+2bxy+cy^2=1,\quad (ac-b^2>0, a>0)
+   \eqno (1)
+             $$
+such that
+                $$
+       ac-b^2=1,\,\,{\rm and}\,\,\,a,c,b\in \Z,
+                $$
+   i.e. quadratic form  $ax^2+2bxy+cy^2$ is defined by symmetric
+   matrix in $SL(2,\Z)$\footnote{$^*$}{A group $SL(2,\Z)$ is a group of $2\times 2$ matrices with integer entries.}.
+\medskip
+
+What about integer points (points with integer coordinates) on this ellipse, in the interior of this  ellipse?
+
+{\it {\bf Fact 1} The interior of the ellipse (2) possesses $4$ points with integer coordinates
+(except the origin $(0,0)$ ). All these points are on the ellipse (1).}
+
+
+{\bf Remark } It is well-known that any domain $M$ of the area $1$
+possesses at least two points $\r_1,\r_2$ such that vector $\r_2-\r_1$ has integer coordinates (Minkovsky lemma).
+  This implies the following
+
+{\it {\bf Fact 2} Any central-symmetric convex domain $M$ of the area $S(M)=4$ possesses at least one
+point with integer coordinates except the point $(0,0)$}.
+
+It is evident that for an arbitrary $\varepsilon>0$, there exists
+central-symmetric convex domain $M_\varepsilon$ of the area $S(M)=4-\varepsilon$ which does not possess
+ any point with integer coordinates except the point $(0,0)$.
+On the other hand it follows from the {Fact 1} that the ellipse
+(1) is a central-symmetric convex domain of the area
+$S(\Delta)=\pi<4$ which possesses 4 integer points.
+
+\medskip
+
+   {\sl Proof of the Fact 1}.
+
+  This is evident in the case if $a=b=1$ and $b=0$. Ellipse becomes circle which possesses exactly four
+   integer points $(1,0)$,  $(1,1)$, $(-1,0)$ and $(1,1)$ (on the boundary).
+
+  The Fact 1 follows from the following Proposition
+
+\m
+
+  {\bf Proposition}  {\it A matrix equation $X^+X=B$
+          has a solution $X\in SL(2,\Z)$  if $B$ is symmetric matrix in
+          $SL(2,\Z)$.}
+
+
+
+\m
+
+Indeed let $X=\pmatrix {\a &\beta\cr \gamma &\delta}$, ($\a,
+\beta\,\gamma, \delta\in \Z$) be a solution of the equation (3)
+where $B$ is a matrix of quadratic form $ax^2+2bxy+cy^2$, which
+defines an ellipse (1): $B=\pmatrix {a &b\cr b&c}$. Then linear
+transformation
+             $
+         \pmatrix {x\cr y\cr}\rightarrow  \pmatrix {\a &\beta\cr \gamma &\delta}\pmatrix {x\cr y\cr}=
+         \pmatrix {\alpha x+\beta y\cr \gamma x+\delta y\cr}
+             $
+transforms circle $x^2+y^2=1$ onto the ellipse (1). This linear
+transformation  establishes one-one map of lattice of points with
+integer coordinates onto itself, since $\det X=1$. Points with
+integer coordinates on the ellipse (1) are images of the points
+  $(1,0)$,  $(1,1)$, $(-1,0)$ and $(1,1)$. They are 4 points
+  $(\alpha,\gamma)$, $(\beta,\delta)$,  $(-\alpha,-\gamma)$ and $(\beta,\delta)$.
+
+  It remains to prove the Proposition.
+
+  {\sl Proof}
+
+  Consider matrices $
+              S=\pmatrix {0 & 1\cr -1 &0}$ and $T=\pmatrix {1 &1\cr -1 &0}$
+ in $SL(2,\Z)$, $S^2=1$ and $T^3=1$\footnote{$^*$}{Matrices $T,S$ are generators of the group $SL(2,\Z)$.
+ The proof of Proposition is in the spirit of the proof of this statement.}.
+        Analyze the action of these matrices $T$ and $S$ on the quadratic form $ax^2+2bxy+cy^2$:
+                             $$
+B=\pmatrix {a &b\cr b &c}\to S^+BS=\pmatrix {0 & -1\cr 1 &0}\pmatrix {a &b\cr b &c}\pmatrix {0 & 1\cr -1 &0}=
+                  \pmatrix {c &-b\cr -b &a}
+                             $$
+and
+                           $$
+B=\pmatrix {a &b\cr b &c}\to T^+BT=\pmatrix {1 & -1\cr 1 &0}\pmatrix {a &b\cr b &c}\pmatrix {1 & 1\cr -1 &0}=
+                  \pmatrix {a+c-2b &a-b\cr a -b &a}\,.
+                           $$
+It suffices to show that subsequent actions of these transformations a
+matrix $B=\pmatrix {a &b\cr b &c}$ can be transformed
+to unity matrix $E=\pmatrix {1 &0\cr 0 &1}$, i.e.
+                $$
+          M^+BM=E,\quad {\rm where}\,\,\,
+M=S^{m_1}T^{n_1}S^{m_2}T^{n_2}\dots S^{m_{k-1}}T^{n_{k-1}}S^{m_k}T^{n_k}\,.
+                        \eqno (2)
+              $$
+In this case matrix  $B=X^+X$ and the matrix
+$X=T^{2n_k}S^{m_k}T^{2n_{k-1}}S^{m_{k-1}}\dots T^{2n_2}S^{m_2}T^{2n_1}S^{m_1}$
+is a solution of equation in Proposition.
+
+  To prove the relation (2) note that if $b=0$ (in matrix $B$) then $B=E$.
+    If $B\to S^+BS$ then $b\to -b$, if
+     $B\to T^+BT$ then $b\to a-b$ and if
+     $B\to T^+T^+BTT$ then $b\to c-b$.  On the other hand
+     if $b>0$ then $|a-b|<b$ or $|c-b|<b$. Therefore acting on
+     $B$ by one of the matrices $T$, or $T^2$, $TST$, $ST$, or $ST^2$ or $STST$
+     we decrease absolute value of $b$ at lest on one. Repeating this procedure we come to $b=0$
+     \footnote{$^{**}$}
+      {More puristic way to say it is following:  For a given matrix $B$ consider a set $\cal M$
+     of all matrices  $K^+BK$ where $K$ is a matrix generated by matrices $S$ and $T$
+       ($K=S^{m_1}T^{n_1}S^{m_2}T^{n_2}\dots
+                  S^{m_{k-1}}T^{n_{k-1}}S^{m_k}T^{n_k}$). Consider in this set the matrix
+                  $B_0=\pmatrix{a &b\cr b &a}$ such that
+                 entry $b=B_{12}$ is minimal. Show that $b=0$, thus $B_0=E$.
+                 Suppose that $b\not=0$, then acting on $B$ by matrices $S$ and $T$ we can decrease the value of $|b|$.
+                 Contradiction.}\finish
+
+
+
+
+\bye

@@ -1,0 +1,223 @@
+\magnification=1200
+\baselineskip=14pt
+       Davidik, here is
+
+        \centerline {\bf On a interpretation of Poisson formula}
+
+\medskip
+
+              \centerline  {${\cal x}  1$  Poisson Formula}
+\smallskip
+
+   Let $F(x)$  be a good function on real numbers which tends to zero at infinity.
+   Let $G(k)$ be the component of its Fourier expansion:
+                        $$
+        F(x)=\int_{-\infty}^\infty G(k)e^{ikx}dk
+                       \eqno (1)
+                     $$
+
+ Note that\footnote{$^*$}{We do not need formulae (2),(3) for obtaining Poisson formula.
+ We need them for interpretations}
+                     $$
+   G(k)={1\over 2\pi}\int_{-\infty}^\infty F(x)e^{-ikx}dx
+                            \eqno  (2)
+           $$
+           and in particularly
+            $$
+  G(0)={1\over 2\pi}\int_{-\infty}^\infty F(x)dx
+                            \eqno  (2^\prime)
+           $$
+One can prove the following very beautiful identity.
+                 $$
+ \sum_{n\in {\bf Z}}F(na)={2\pi \over a}\sum_{n\in {\bf Z}}
+ G\left({2\pi n\over a}\right),
+\eqno (3)
+                  $$
+Here $a$ is an arbitrary parameter. Summation goes over all integers.
+This is famous Poisson identity. It says that {\it sum of the values of function over a
+lattice  coincides with sum of the values of its Fourier image over reciprocal
+lattice.}
+
+
+{\bf Example 1}. Consider $F(x)=e^{-|x|}$.  One can  see that
+                       $$
+      F(x)=e^{-|x|}=\int_{-\infty}^{\infty}{e^{ikx}dk\over \pi(1+k^2)},
+             \quad G(k)={1\over \pi (1+k^2)}
+\eqno (4)
+                     $$
+and  respectively
+                       $$
+               G(k)=
+{1\over 2\pi}\int_{-\infty}^\infty e^{-|x|}e^{-ikx}dx=
+{1\over 2\pi}\left(\int_{0}^\infty e^{-x}e^{-ikx}dx+
+\int_{0}^\infty e^{-x}e^{ikx}dx\right)={1\over\pi(1+k^2)}
+\eqno (5)
+                       $$
+
+Then Poisson formula gives that  for $a>0$
+                        $$
+\sum_{n\in {\bf Z}}e^{-|n|a}=1+2\sum_{n=1}^\infty
+e^{-na}={2\pi \over a}\sum_{n\bf Z}{1\over \pi\left(1+{4\pi^2  n^2\over  a^2}\right)}=
+\sum_{n\in {\bf Z}}
+    {2a\over a^2+4\pi^2n^2}
+\eqno (6)
+                         $$
+
+{\bf Example 2}
+ Consider $F(x)=e^{-x^2}$.  One can  see that
+                       $$
+      F(x)=e^{-x^2}=
+ {1\over 2\sqrt \pi}
+\int_{-\infty}^{\infty}e^{-k^2\over 4}e^{ikx}dk,
+             \quad G(k)={e^{-{k^2\over 4}}\over 2\sqrt\pi }
+\eqno (4)
+                     $$
+and  respectively
+                       $$
+               G(k)=
+{1\over 2\pi}\int_{-\infty}^\infty e^{-x^2}e^{-ikx}dx=
+{1\over 2\pi}\int_{-\infty}^\infty e^{-(x+{ik\over 2})^2-{k^2\over 4}}dx
+={1\over 2\sqrt \pi}e^{-{k^2\over 4}}
+\eqno (5)
+                       $$
+
+Then Poisson formula gives that  for $a>0$
+                        $$
+\sum_{n\in {\bf Z}}e^{-n^2a^2}=1+2\sum_{n=1}^\infty
+e^{-n^2a^2}=
+{\sqrt {\pi}\over a}\sum_{n\in {\bf Z}}
+    e^{-\pi^2 n^2\over a^2}
+\eqno (6)
+                         $$
+
+\medskip
+
+              \centerline  {${\cal x}  2$  Proof of the Poisson Formula}
+\smallskip
+
+
+
+Before analysing it meaning prove it:
+
+\medskip
+
+{\it Proof  of Poisson formula}
+
+Consider a function
+                 $$
+ H(x)=\sum_{n\in {\bf Z}}F(x+na)
+                 $$
+This is periodic function: $H(x)=H(x+a)$. Consider its Fourier expansion in series:
+               $$
+         H(x)=\sum_{n\in {\bf Z}}c_ne^{2i\pi nx\over a}, \quad {\rm with}\quad
+               c_n={1\over a}\int_0^{a}H(x)e^{-2i\pi nx\over a}dx
+           $$
+(To calculate $c_k$ we multiply the relation above on $e^{-2i\pi kx\over a}$ integrate
+it over $x$ using the relation $\int_0^{a}e^{2i\pi (n-k)x\over a}dx$
+$=a\delta_{kn}$).
+
+Now considering  the following chain of identities:
+                  $$
+ \sum_{n\in {\bf Z}}F(na)=H(0)=\sum_{n\in {\bf Z}}c_n=
+{1\over a}\sum_{n\in {\bf Z}}\int_0^{a}H(x)e^{-2i\pi nx\over a}dx=
+{1\over a}\sum_{n,m\in {\bf Z}}\int_0^{a}F(x+ma)e^{-2i\pi nx\over a}dx=
+                  $$
+             $$
+{1\over a}\sum_{n,m\in {\bf Z}}\int_{ma}^{(m+1)a}F(t)e^{-2i\pi n(t-ma)\over a}dt=
+{1\over a}\sum_{n\in {\bf Z}}\int_{-\infty}^{\infty}F(t)e^{-2i\pi nt\over a}dt=
+                     $$
+                     $$
+                 {2\pi \over a} \sum_{n\in\bf Z}G\left({2\pi n\over a}\right)
+                     $$
+
+\medskip
+
+              \centerline  {\it ${\cal x}  3$  Poisson Formula  and
+              approximation of integral by series}
+\smallskip
+
+It is commonplace the relation between Darboux series and integrals:
+                   $$
+                   \int_\infty^\infty F(x)dx\approx  a\sum_{n\in \bf Z} F(na), \quad
+                     \hbox{if $a$ is small, i.e.}\quad
+                   \int F(x)dx =\lim_{n\to\infty}\left(a\sum_{n\in \bf Z} F(na)\right)
+                    $$
+Poisson formula gives exact meaning to the asymptotic of integral by series.
+Note that Poisson formula  (3) can be rewritten in the way:
+              $$
+               a\sum_{n\in {\bf Z}}F(na)=2\pi \sum_{n\in {\bf Z}}
+ G\left({2\pi n\over a}\right)=2\pi G(0)+2\pi \sum_{n\not=0}G\left({2\pi n\over a}\right)
+              $$
+ Now using (2$^\prime$) we come to:
+              $$
+ a\sum_{n\in {\bf Z}}F(na)=\int_{-\infty}^\infty F(x)dx+
+ 2\pi \sum_{n\not=0}G\left({2\pi n\over a}\right)
+              $$
+              or
+            $$
+           \int_{-\infty}^\infty F(x)dx=
+            {1\over a}\sum_{n\in {\bf Z}}F(na)-
+ 2\pi \sum_{n\not=0}G\left({2\pi n\over a}\right)
+ \eqno (\hbox{ approximation of integral})
+           $$
+This formula gives approximation of integral  by series.
+
+Consider again examples  1 and 2.
+
+
+{\bf Example 3}
+
+  Function $f=e^{-x}$
+
+Apply the approximation formula to the formulae in the example 1. We come to  ($a>0$):
+                       $$
+                       a\sum_{n\in {\bf Z}}e^{-|n|a}=2\pi G(0)+
+         2\pi \sum_{n\not=0}{1\over \pi\left(1+{4\pi^2 n^2\over  a^2}\right)}=
+\int_{-\infty}^\infty e^{-|x|}dx+
+\sum_{n=1}^\infty{4\over \left(1+{4\pi^2 n^2\over  a^2}\right)},
+                      $$
+   It can be rewritten with boundary term:
+                $$
+     \int_0^\infty e^{-x}dx={a\over 2}+a\sum_{n=1}^\infty e^{-na}-
+     \sum_{n=1}^\infty{4\over \left(1+{4\pi^2 n^2\over  a^2}\right)}
+                     $$
+
+{\bf Example 4}
+
+  Function $f=e^{-x^2}$
+
+It follows from the Example 2  and the last approximation formula that
+                   $$
+                   a\sum_{n\in {\bf Z}}e^{-n^2a^2}=
+\sqrt {\pi}+2\sqrt\pi\sum_{n=1}^\infty,
+    e^{-\pi^2 n^2\over a^2}
+                   $$
+i.e.
+                $$
+   \int_{-\infty}^\infty e^{-x^2}dx=a\sum_{n\in {\bf Z}}e^{-n^2a^2}-2\sqrt\pi\sum_{n=1}^\infty,
+    e^{-\pi^2 n^2\over a^2}
+                $$
+
+
+{\it N.B.}  The last formula is related with the preancestor  of Seeley formula:
+  It is about the following: Let $\lambda_n$ be eigenvalues of the Laplace operator,
+  then the asymptotic of the following function $Z(t)=\sum_n e^{-\lambda_nt}$
+  can be expressed in terms of basic terms. E.g. if $\lambda_n$ are eigenvalues of operator
+  $\partial^2$ on the closed interval $[0.L]$  then
+                 $$
+    Z(t)=\sum_n e^{-\lambda_nt}=\sum_n e^{-n^2 t\over l^2}\approx {l\over \sqrt t}
+                 $$
+In the general case:
+
+
+ One can prove the following: Let ${\lambda_i}$  be frequencies  for
+$d$-dimensional drum, i.e. eigenvalues of the Laplacian acting on this drum:
+Then
+                      $$
+                      Z(t)={V\over t^{d/2}}+\dots
+                      $$
+i.e. one can estimate dimension of the drum and its volume just hearing it!!!!
+
+
+
+\bye

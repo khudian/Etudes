@@ -1,0 +1,594 @@
+\def\vare {\varepsilon}
+\def\A {\bf A}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Tr {{\rm Tr\,}}
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+\theoremstyle{theorem}
+\newtheorem{thm}{Khimera}
+
+
+
+
+\title{Notes on some basic formulae of Differential Geometry}
+
+\begin{document}
+
+\title{Notes on some basic formulae of Differential Geometry}
+
+
+
+\tableofcontents
+
+ \section {}
+
+  In these notes we consider some formulae for hypersurfaces (surfaces of codimension $1$)
+   in the fashion very easy generalisable to supercase.
+
+Explain the idea on examples.
+
+ Consider a surface of codimension $1$ in $(n+1)$-dimensional Euclidean space
+  with cartesian coordinates $x^0,x^1,\dots, x^n$.
+ How to write invariant objects of integration over
+ hypersurfaces, without using our knowledge of differential
+ geometry (first and second quadratic forms and so on...).
+  Let an hypersurface be given by equation $G=0$.
+ Consider an expression
+  \begin{equation}\label{lengthdual}
+     A(\p G)=\sqrt{\p_\mu G\p_\mu G}=\sqrt{G_0^2+\dots+G_n^2}
+\end{equation}
+   One can see that:
+\begin {itemize}
+
+  \item  For function $\tilde G=HG$ which defines the same surface
+     \begin{equation}\label{idealdensity1}
+  A(\tilde G)\vert_{G=0}=HA(G)\vert_{G=0}
+     \end{equation}
+  \item $A(\p G)$ is invariant with respect to isometries of ambient space
+\begin{equation}\label{idealdensity2}
+\end{equation}
+
+\end {itemize}
+  These conditions allows us to assign to $A$ in \eqref{lengthdual}
+    the local functional $\Phi_C(A)$ on hypersurfaces ($n$-dimensional surfaces in $\E^{n+1}$)
+   in the following way: If surface $C$ is given by the equation
+   $G=0$ then
+   \begin{equation}\label{integralofdualdensity}
+   \Phi_C(A)=\int A(G)\delta(G)d^{n+1}x=\int \sqrt{\p_\mu G(x)\p_\mu G(x)}\delta(G(x))
+   dx^0\dots  dx^{n+1}
+     \end{equation}
+ It is easy to see that the functional $\Phi_A(C)$ {\it does not depend on the choice of the
+ function $G$ which defines the supersurface}:
+              $$
+     G\to G'=HG,\quad \int A(HG)\delta(HG)d^{n+1}x=\int A(G)\delta(G)d^{n+1}x
+              $$
+The formula (3) defines the functional on surfaces and this functional is
+invariant with respect to isometries. To revive  the geometricl meaning of this functional
+consider the special case when
+\begin{equation}\label{specialcase}
+    G(z)(z)=x^0-f(x^1,\dots,x^n)
+\end{equation}
+Then the functional  \eqref{integralofdualdensity} will have the appearance:
+\begin{equation}\label{specialapp}
+\Phi_C(A)=\int \sqrt
+                 {
+                 1+
+    \left({\p f\over\p x^1}\right)^2+
+                   \dots+
+    \left({\p f\over\p x^1}\right)^2
+                  }\delta
+      \left(x^0-f(x^1,\dots,x^n)\right)
+      dx^0 dx^1\dots dx^n
+\end{equation}
+\begin{equation}\label{specialapp2}
+   =\int \sqrt
+                 {
+                 1+
+    \left({\p f\over\p x^1}\right)^2+
+                   \dots+
+    \left({\p f\over\p x^1}\right)^2
+                  } dx^1\dots dx^n
+\end{equation}
+
+One can see that it is an area of the surface: The integrand is nothing but
+square root of determinant of the first quadratic form on the surface.
+
+
+
+\subsection {Density}
+
+The function $A$ depending on $G$ and its derivatives
+\begin{equation}\label{dualdensity}
+    A=A(G,\p_\mu G, \p^2_{\mu_{1}\mu_2}G,\dots,\p^k_{\mu_{1}\dots{\mu_k}}G)
+\end{equation}
+is called  {\it (dual) density of the weight $\sigma$ and rank $k$}
+if it obeys the following condition:
+                $$
+    A=A\left(
+    HG,\p_\mu\left(H G\right), \p^2_{\mu_{1}\mu_2}\left(H G\right),\dots,
+    \p^k_{\mu_{1}\dots{\mu_k}\left(H G\right)}
+    \right)
+    \vert_{G=0}=
+    $$
+    \begin{equation}\label{densityweightdefinition}
+    H^\sigma\cdot
+    A\left(
+    G,\p_\mu G, \p^2_{\mu_{1}\mu_2}G,\dots,\p^k_{\mu_{1}\dots{\mu_k}G}
+    \right)
+\end{equation}
+where $H$ is an arbitrary? function.
+
+The density of the weight $1$ defines functional on surfaces:
+If $G=0$ defines surface, then the integral
+\begin{equation}\label{surfacefunctional}
+    \Phi_C(A)=\int A(
+    G,\p_\mu G, \p^2_{\mu_{1}\mu_2}G,\dots,\p^k_{\mu_{1}\dots{\mu_k}G})\delta(G)d^{n+1}x
+\end{equation}
+defines the functional on the surface $C$ defined  by the equation $G=0$.
+
+{\it Density of the weight $\sigma=1$ defines volume form on surfaces.}
+
+E.g.  $A$ in \eqref{lengthdual} defines density of the weight $1$ and rank $1$.
+It defines volume form induced by Euclidean metric on embedded surfaces.
+We later call the density $A$ area density.
+
+The density of the weight $0$ defines the function on the surfaces.
+In principal any density of the weight $\sigma\not=0$ defines volume form
+$A^\s$, but it can happen that
+$A$ is nilpotent and the volume form is trivial. (E.g. invariant density
+for surfaces in symplectic superspace.)
+
+is density (dual density) of the rank $k$
+
+
+
+\subsection {Formula for mean curvature}
+
+One can see that conditions \eqref{idealdensity1},\eqref{idealdensity2}+ uniquely define
+the area functional in the {\it class of local functionals depending on first derivatives.}
+What if we consider functionals depending on higher derivatives?
+
+\medskip
+
+
+
+In this paragraph we consider the simplest possible density of the second rank
+(i.e. density depending on first and second derivatives)
+which is invariant under isometries.
+ Consider
+        \begin{equation}\label{zerothorder}
+    A_0(G)=\p_\mu \p_\mu G=\Delta G
+\end{equation}
+
+ This expression is invariant with respect to isometries
+ but the condition
+\eqref{densityweightdefinition} is not satisfied:
+ \begin{equation}\label{checkingthecondition1}
+\Delta \tilde G\vert_{G=0}=\Delta(HG)\vert_{G=0}=H\Delta G+2\p_\mu H\p_\mu G
+\end{equation}
+
+The term $\p_\mu H\p_\mu G$ is an obstacle to the condition \eqref{densityweightdefinition}.
+It survives only for $H\vert_{G=0}=consta$.
+
+Consider another invariant in second derivatives:
+                \begin{equation}\label{higherordersecondinvariant}
+             I_1(G)=\p_\mu G\p_\nu G \p_\mu\p_\nu G
+                 \end{equation}
+It is easy to see that
+\begin{equation}\label{checkingthecondition2}
+I_1(HG)\vert_{G=0}=H^3I_1(G)\vert_{G=0}+2H^2\left(\p_\mu H\p_\mu G\right)
+                 \left(\p_\nu G\p_\nu G\right)
+\end{equation}
+We already know (see \eqref{lengthdual}) that
+\begin{equation}\label{checkingthecondition3}
+\p_\nu (HG)\p_\nu (HG)\vert_{G=0}=H^2\p_\nu G\p_\nu G\,.
+\end{equation}
+Hence
+\begin{equation}\label{checkingthecondition4}
+{I_1(HG)\over \p_\nu (HG)\p_\nu (HG)}\vert_{G=0}=
+   H{I_1(G)\over \p_\nu (G)\p_\nu (G)}+2\p_\mu H\p_\mu G
+\end{equation}
+Comparing with condition \eqref{checkingthecondition1} for function \eqref{zerothorder}
+we see that for function
+\begin{equation}\label{formulaformeancurvature}
+    A(G)=\Delta G-{I_1(G)\over \p_\nu (G)\p_\nu (G)}=
+    \Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}
+\end{equation}
+the condition  \eqref{densityweightdefinition}  holds:
+\begin{equation}\label{formulaformeancurvature}
+    A(HG)\vert{G=0}=H\Delta G-H{I_1(G)\over \p_\nu (G)\p_\nu (G)}=
+    HA(G)
+\end{equation}
+Thus we see that expression \eqref{formulaformeancurvature}
+defines an invariant density of the second rank. Its weight is equal to $\s=1$.
+Comparing with the area density $A_{\rm area}$ (see \eqref{lengthdual})
+we come to the dnsity of the zeroth weight:
+\begin{equation}\label{formulaformeancurvature2}
+A_{\rm mean\,curv.}={1\over \sqrt {\p_\s G\p_\s G}}\left(
+\Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}
+                     \right)
+\end{equation}
+(The notation $A_{\rm mean\,curv.}$ will be justified below)
+
+\medskip
+
+
+Thus we come to the functional on surfaces
+The formula
+\begin{equation}\label{meancurvaturefunctional}
+\Phi_M(A)=\int \left
+[\Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}
+        \right]\delta(G)dx^0 dx^1\dots dx^n
+\end{equation}
+defines the functional on surface
+                  $M=\{x, G(x)=0\}$.
+                  This functional due to
+\eqref{formulaformeancurvature} does not depend on the function $G$
+defining a surface $M$ and is invariant with respect to isometries.
+
+There are not many functionals of this type.
+We will see in the next section that
+this is just functional of mean curvature.
+
+\subsection {Mean curvature and variation of area}
+
+We know that mean curvature functional is a
+variation of area functional.
+Show this. Namely we calculate Euler-Lagrange equations of area functional
+and show that this lead to the density \eqref{formulaformeancurvature}.
+
+It is standard calculations but here we obtain them in dual formalism:
+it is much easier.
+
+ Consider variation of area functional
+\footnote{we denote by the same letter
+"$\delta$" the symbol of variation and the symbol of generalised function.
+ Sorry for confusion}. If $G\to G+\vare F$ then \eqref{integralofdualdensity}
+\begin{equation}\label{variationofareafunctional}
+    {\delta \left[\int \sqrt{\p_\mu G(x)\p_\mu G(x)}\delta(G(x))d^{n+1}x\right]}=
+\end{equation}
+                    $$
+  \int
+         {\vare\p_\mu F\p_\mu G\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}\delta(G(x))d^{n+1}x+
+         \int \sqrt{\p_\mu G(x)\p_\mu G(x)}\delta'(G(x))\vare F(x)d^{n+1}x
+                    $$
+                        $$
+ =                     \int
+                       \left\{
+                         -\p_\mu
+                         \left[
+{\p_\mu G\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}\delta(G(x))
+                         \right]+
+                         \sqrt{\p_\mu G(x)\p_\mu G(x)}\delta'(G(x))
+                       \right\}
+                       \vare F(x)d^{n+1}x=
+                        $$
+                        $$
+                        \int
+                       \left\{
+                       -\p_\mu
+                         \left[
+{\p_\mu G\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}\delta(G(x))
+                         \right]\delta(G(x))
+                       \right\}
+                       \vare F(x)d^{n+1}x\,.
+                        $$
+The explicit expression for integrand will be:
+                        $$
+                        -\p_\mu
+                         \left[
+{\p_\mu G\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}\delta(G(x))
+                         \right]=
+-{1\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}
+                            \left(
+                          \Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}
+                            \right)=
+                           $$
+                           $$
+                           -{A(G)\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}
+                           $$
+where $A(G)$ mean curvature dual density.
+
+Hence we come to the answer: if $G\to G+\vare F$ then
+                     \begin{equation}\label{variationofareameandensity}
+{\delta \left[\int \sqrt{\p_\mu G(x)\p_\mu G(x)}\delta(G(x))d^{n+1}x\right]}=
+-\int  {A(G)\vare F\over \sqrt{\p_\mu G(x)\p_\mu G(x)}}\delta(G(x))d^{n+1}x
+\end{equation}
+\begin{equation}\label{stationarysurface}
+    A(G)\vert_{G=0}\equiv 0
+\end{equation}In particular the stationary surface for area functional will be:
+
+It is just the condition that mean curvature is equal to zero at stationary surface
+of area functional.
+
+We see  that
+
+
+ {\it The mean curvature density defines mean curvature volume form on surfaces
+               \begin{equation}\label{meancurvaturevolumeform}
+    A_{\rm mean\,curv}=\Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}
+                  \end{equation}
+It is a density of the weight $\s=1$ and rank $k=2$ and
+
+  The mean curvature itself  ---is the following
+  density of the weight $\s=0$ and rank $k=2$:
+             \begin{equation}\label{meancurvatureitself}
+   H= {A_{\rm mean\,curv}\over A_{\rm length}}=
+   {\Delta G\over \sqrt{\p_\mu G\p_\mu G}}-
+   {\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \left(\p_\nu (G)\p_\nu (G)\right)^{3/2}}
+                  \end{equation}
+}
+
+{\bf Note} The dual density $A_{\rm mean\,curv}$ corresponds to the density
+$H\sqrt {\det g_{ik}}$. It is instructive to do the following exercise:
+Consider the sphere of the radius $a$: $x^2+y^2+z^2-a^2=0$. Calculate $A$.
+It does not depend on $A$. Calculate $\int A\delta(\Phi)d^3 x$
+
+\subsection {Operator-valued densities}
+
+Now we try to write all invariants of rank $k=2$ on surfaces. It will be
+symmetric functions of eigenvalues of dshape oeprator, i.e. traces of exterior product
+of shape oeprator. E.g. mean curvature is nothing but a trace of shape operator.
+
+It turns out that our dual shape operator is the summ of usual shape operator
+and one-dimensional operator which is proportional to mean curvature.
+
+In the way similar  how we constructed a mean curvature we will construct now
+this operator: we will find {\it operator valued density}
+
+Operator valued density $\hat M(G)$ takes vales in oeprators.
+E.g. $\hat M(G)=\sqrt{\p_\mu G\p_\mu G}\delta^i_k$ is operator valued density
+of the weight $\s=1$ and rank $k=1$.
+
+In the previous subsection starting from the function $A_0=\Delta G$
+we come to the mean curvature density (see \eqref{zerothorder}---\eqref{formulaformeancurvature})
+
+Now we start from
+\begin{equation}\label{zerothorderoperatordensity}
+    A_0=\p_\mu\p_\nu G
+\end{equation}
+
+
+Sure it is not density but this expression gives rise to operator-valued density
+in the same way as in  \eqref{zerothorder}---\eqref{formulaformeancurvature}
+
+
+ {\bf Proposition 1}
+ {\it The following formula
+ \begin{equation}\label{operatorvalueddensity1}
+    M_{\mu\nu}(G,\p G, \p^2G)=
+   \p_\mu\p_\nu G+{\p_\mu G\p_\nu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\nu G+\p_\nu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}
+\end{equation}
+
+(summation is assumed over numb indices)
+ defines operator-valued density of the weight $\s=1$, rank $k=2$}
+
+\medskip
+
+
+
+
+
+ Proof: Direct Check
+
+\bigskip
+
+{\bf Remark} In Euclidean space we identify upper and down indices.
+
+Later the expression: "operator $M_{ik}$" means that by default one of the indices
+is risen by the metric $g_{ik}=\delta_{ik}$
+
+
+\smallskip
+
+
+Note that the trace of the operator-valued density  \eqref{operatorvalueddensity1}
+is up to a coefficient
+nothing but mean curvature-density\eqref{meancurvaturevolumeform}
+                 $$
+    \Tr \left(M_{\mu\nu}(G,\p G, \p^2G)\right)=
+   \Delta G+{\p_\mu G\p_\mu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\mu G+\p_\mu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}=
+            $$
+  \begin{equation}\label{traceofoperatorvalueddensity}
+2\left(\Delta G-{\p_\mu G\p_\nu G \p_\mu\p_\nu G\over \p_\nu (G)\p_\nu (G)}\right)=
+2 A_{\rm mean\,curv}
+\end{equation}
+
+
+It follows from Proposition1 and \eqref{lengthdual} that the
+The following formula
+\begin{equation}\label{operatorvalueddensity1}
+                 {1\over \sqrt {\p_\mu G\p_\mu G}} \left(
+   \p_\mu\p_\nu G+{\p_\mu G\p_\nu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\nu G+\p_\nu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}\right)
+\end{equation}
+defines operator-valued density of the weight $\s=0$, rank $k=2$
+
+We come to
+
+\bigskip
+
+{\bf Theorem}
+{\it The following formula
+ \begin{equation}\label{operatorvalueddensity1}
+                       \det
+                       \left(\delta_{\mu\nu}+
+                 {z\over \sqrt {\p_\rho G\p_\rho G}} \left(
+   \p_\mu\p_\nu G+{\p_\mu G\p_\nu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\nu G+\p_\nu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}\right)\right)
+\end{equation}
+where $z$ is a formal parameter
+defines density of the weight $\s=0$ and rank $k=2$.
+
+
+This density is generating function for all invariant densities
+}
+
+
+
+\bigskip  The density is characteristic polynomial of dual shape operator.
+
+
+Recall that shape operator $S$ for hypersurface
+$\r=\r(\xi^k)$ ($k=1,\dots,n$) is a linear operator defined via
+first quadratic form $g_{ik}=\left(\p_i{\bf r}, \p_k{\bf r}\right)$
+and second quadratic
+form  $A_{ik}=\left({\bf n}, \p^2_{ik}{\bf r}\right)$
+                    \begin{equation}\label{usualshpaeoperator}
+    S_{ik}=g^{ir}A_{rk}\left(\p_i{\bf r},
+    \left({\bf n}, \p^2_{ik}{\bf r}\right)\p_r{\bf r}\right)^{-1}\left({\bf n}, \p^2_{ik}{\bf r}\right)
+\end{equation}
+(as usual we identify lower and upper indices)
+
+Recall that mean curvature is equal to the trace of shape operator.
+
+\bigskip
+
+Now we clarify the relation of the operator $M_{\mu\nu}$ in the proposition 1
+and shape operator. The fact that the trace of operator $M_{\mu\nu}$
+is equal just twice to mean curvature is not ocasional.
+
+
+{\bf Theorem}
+{\it The operator \eqref{operatorvalueddensity1}
+is direct sum of shape operator and scalar operator of multiplication on mean curvature.
+Namely
+let $C$ be hypersurface defined by the equation $G=0$,
+ $p$ a point on it, $\bf n$ normal vector,
+ad $S$-shape operator at the point $p$.  Then
+
+\begin{equation}\label{directsum}
+   {M_{\mu\nu}\over \sqrt {\p_\rho G \p_\rho G}}=
+\left(
+   \begin{array}{cc}
+  S_{ik} & 0 \\
+      0& H{\bf n} \\
+   \end{array}
+   \right)
+\end{equation}
+
+In particular
+
+\begin{equation}\label{formulaefordulashape}
+    \Tr S^{\rm dual}=\Tr S+H=2H,\quad \det S^{\rm dual}=H\det S=HK
+\end{equation}
+where $K$-gaussian curvature.
+
+
+So shape operator is a "component" of operator \eqref{operatorvalueddensity1}.}
+
+\bigskip
+{\it Proof of the Theorem}.Calculate the action of the operator $S^{\rm dual}$
+on arbitrary tangent vector and arbitrary normal vector.
+
+Let ${\X}=X^\mu\p_mu$ is a tangent vector. Then  $X^\mu\p_\mu G=0$ if $G=0$.
+Proof that the vector $S^{\rm dual}\X$ is tangent to the surface too:
+                 $$
+\p_\mu G{M_{\mu\nu}X^\nu\over \sqrt {\p_\rho G \p_\rho G}}=
+                 $$
+                  $$
+                  {\p_\mu G\over \sqrt {\p_\mu G\p_\mu G}} \left(
+   \p_\mu\p_\nu G+{\p_\mu G\p_\nu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\nu G+\p_\nu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}\right)X^\nu
+                  $$
+                      $$
+            {\p_\mu G\over \sqrt {\p_\mu G\p_\mu G}} \left(
+   \p_\mu\p_\nu G X^\nu
+  -{\p_\mu G\p_\s G\p_\s\p_\nu GX^\nu
+  \over \p_\delta G\p_\delta G}\right)=
+  {\p_\mu G \p_\mu\p_\nu G X^\nu-\p_\s G\p_\s\p_\nu GX^\nu
+  \over \sqrt {\p_\mu G\p_\mu G}}
+  =0$$
+We proved that vectors tangent to surface remain tangent after action of
+$S^{\rm dual}$. Now consider arbitrary vector orthogonal to surface. It
+is proportional to $\p_mu G$. Calculate $S^{\rm dual}_{\mu\nu}\p_nu G$:
+                $$
+{M_{\mu\nu}{\p_\nu G}\over \sqrt {\p_\rho G \p_\rho G}}=
+                 $$
+                  $$
+                  {\p_\nu G\over \sqrt {\p_\mu G\p_\mu G}} \left(
+   \p_\mu\p_\nu G+{\p_\mu G\p_\nu G\Delta G\over \p_\s G\p_\s G}
+  -{\p_\mu G\p_\s G\p_\s\p_\nu G+\p_\nu G\p_\s G\p_\s\p_\mu G
+  \over \p_\delta G\p_\delta G}\right)=
+                $$
+              $$
+  {\p_\mu G\over \sqrt {\p_\mu G\p_\mu G}} \left(
+             \Delta G-
+   {\p_\s G\p_\s\p_\nu G\p_\nu G
+  \over \p_\delta G\p_\delta G}\right)=\p_\mu G H
+              $$
+              The proof is finished\finish
+
+
+              \bigskip
+
+
+ We can formally express the statement of the Theorem  in the following way:
+
+Instead extracting the mode $H{\bf n}$ in the operator $S^{\rm dual}$
+we {\bf add} again this mod but with changing parity: Consider the operator
+\begin{equation}\label{operarotinextendedspace}
+    \hat S=
+\left(
+\begin{array}{ccc}
+  S^{\rm dual} & 0  \\
+  0& H{\bf n}\\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+  S_{ik} & 0 & 0 \\
+  0& H{\bf n}& 0 \\
+  0 & 0 &  H{\bf n} \\
+\end{array}
+\right)
+\end{equation}
+where the last dimension is odd. Then it is easy to see that
+\begin{equation}\label{hostrelations}
+    {\rm Ber\,}\left(1+z\hat S\right)=\left(1+zS_{ik}\right)
+\end{equation}
+
+\end{document}

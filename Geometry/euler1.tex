@@ -1,0 +1,144 @@
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\g{{\bf g}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+  \centerline {\bf On one subset in $SO(3)$ and Euler Theorem}
+
+{\it This text was written around 2006.  
+Korchagina had a beautiful talk with very facinating 
+title ``On the second generation of proof of 
+Theorem on finite simple groups''. Sasha Borovik did some
+interesting remarks about status of this Theorem and 
+about relation between $\R P^3$ 
+and $SO(3)$.}
+
+\bigskip
+          {\it around 2006       
+   $\qquad\qquad\qquad\qquad\qquad$
+                         The group $S0(3)$ has
+                             fantom memories
+
+       $\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$ 
+        of lost operations}
+
+
+{\sl $\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$
+             (...initiated by remark of Sasha Borovik)}
+
+\bigskip
+
+It is well-well-known that $SO(3)\approx \R P^3$(as manifold) , 
+but in fact  one can say much more:
+ $S0(3)$ `knows' about structure of projective space.  In particular
+the subspace  $\R P^2\subset \R P^3$ can be
+canonically embedded  in $SO(3)$. It is the following
+subset (not subgroup!) in  $SO(3)$ :
+             $$
+    L=\{A\colon\,\, A\in SO(3),\, \det(1+A)=0\}\,.
+    \eqno (1)
+             $$
+Geometrically it means following: Operators $A\in L$
+are orthogonal transformations
+which are rotations around axis
+on the angle $\pi$. 
+It will be $\R P^2$\footnote{$^{1)}$}{
+   Any rotation =axis+angle of rotation=point of the
+ball of the radius $\pi$. Rotation on angle $\not=\pi$
+is an interior of this ball. The boundary of this ball 
+with fatorised antipodal points = $L$ } . 
+This is not hard to see. 
+  The subset $L$h naturally appears also in
+another algebraic proof of Euler Euler Theorem.
+
+ Recall first maybe the most beautiful proof of Euler Theorem (Coxeter Proof).
+Let $`A \in SO(3)$, $\{\e,\f,\g\}$ be an orthogonal basis 
+and  $\{\e,\f,\g\}$ be a new orthogonal basis,
+$\e'=A\e,\f'=A\e, \g'=A\g $.
+Consider a reflection $O_1$ which transforms $\e$ to $\e'$; the
+invariant plane of this reflection is spanned by vectors $\e+\e'$ and 
+$\e\times \e'$. Then consider 
+the reflection $O_2$ which  transforms
+$\f$ to $\f'$. The vector $\e'$ belongs to invariant plane of this 
+reflection. Under composition of these
+two reflections $f$ transforms to $f'$ too. Indeed 
+in other case we consider third reflection with respect to the
+plane $\e',\f'$ but composition of three reflections has determinant $-1$.)
+Hence $A=O_2O_1$. 
+The intersection of invariant planes of these reflection is an axis
+of rotation.\finish
+
+{\it  Now algebraic proof.} Let $A\in SO(3)$.
+Note first that if there exists eigenvector $\n$ 
+with eigenvalue $1$ then restriction of transformation
+$A$ on the plane orthogonal to the vector $\n$ is nothing 
+but orthogonal rotation of the plane $\a$.
+(Indeed if $\alpha$ is a plane which is orthogonal to
+$\n$, then it is obvious that $A$ maps $\alpha$ on $\alpha$,
+it is orthogonal operator on $\alpha$ and $\det A\vert_\alpha=1$. ).  
+Hence $A$ is rotation around axis $\n$. 
+It remains to prove that such an  eigenvector $\n$ exists.
+Consider characteristic polynomial
+$P(z)=\det(z-A)$. It is cubic polynomial, and it has at least one 
+real root. 
+Let $\lambda$ be its real root and $\n$ be corresponding eigenvector.
+Operator $A$ preserves scalar product. This implies that $\l=\pm 1$.
+if $\lambda=1$, then everything is already proved (see above).
+If $\lambda=:-1$, then $\det (1+L)=0$, i.e. $A\in L$
+\footnote{$^{2)}$}{Of course in this case also one can prove the existence
+of eigenvector with eigenvalue $1$, but it is much easier to do
+it straightforwardly}. 
+Let $\n$ be an eigenvector corresponding to the eigenvalue $\l=-1$: 
+$A\n=-\n$. Consider a plane $\a$,
+which is orthogonal to the eigenvector $\n$. 
+Restriction of
+$A$ on the plane $\a$ is orthogonal transformation with determinant $-1$,
+i.e. the restriction of $A$ on the plane $\a$ is a reflection of the plane
+with respect of a line $l\in\a$ ($A$ on $\a$ has eigenvectors  $\f,\g$
+with eigenvalues $1,-1$ respectively, and 
+$l$ is directed along vector $\f$.) 
+We see that in this special case $A$ is a rotation around axis $\l$
+on the angle $\pi$. Subset $L$ is in one-one correspondence with
+axis= lines which go over origin, i.e. $L=\R P^2$.
+\finish
+
+
+\bye

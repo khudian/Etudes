@@ -1,0 +1,573 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def\o {\omega}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+
+
+\centerline{    {\bf Some facts in projective Geometry}}
+
+\m
+
+\centerline   {\sl Lecture 1. (August 2011)}
+
+
+{\it We try to expose here some common facts of projective geometry about geodesics and
+projective class of connections.
+ First we define the projective class of connections which can be put in one-one correspondence
+with non-parameterised geodesics.  Then on the base of it we describe the class of all projective transformations
+and give a variant of a proof of the "old fashioned" statement about that all transformations preserving lines
+are projective.
+
+
+Everything sure is well-known, but on the other hand well-forgotten too.
+}
+
+
+
+$$ $$
+
+
+
+           \centerline {\bf ${\cal x} 1$ Projective class of connections and non-parameterised geodesics}
+
+\m
+
+
+
+Let $M$ be a manifold with affine connection. We consider only symmetric connections.
+
+   We say that two symmetric connections $\nabla$ and $\tilde \nabla$ belong to the same {\it projective}
+   class if
+   there exists $1$-form $\o$ such that
+             $$
+       \left(\tilde\nabla-\nabla\right)(\X,\Y)=\X \o(\Y)+\Y\o(\X)\,,
+       \eqno (1.1a)
+          $$
+   i.e. for Christoffel symbols    $$
+     \tilde \Gamma^i_{km}-\Gamma^i_{km}=\delta^i_k\o_m+\delta^i_m\o_k\,,
+     \eqno (1.1b)
+           $$
+
+   {\bf Proposition} {\it Two symmetric connections belong to the same projective class if and only if
+   their all geodesics coincide up to reparameterisation.}
+\m
+
+     Prove it. Let   $\x(t)$ be a geodesic of
+     connection $\nabla$, i.e.
+                   $$
+                {d^2 x^i\over d t^2}+ \Gamma^i_{km}(\x(t)){d x^k\over d t} {d x^m\over d t}=0\,.
+                \eqno (1.2a)
+                   $$
+
+     Let a connection $\tilde \nabla$ belong to the projective class of the connection $\nabla$.
+     Show that there exists reparameterisation  $\tau=\tau(t)$ such that
+                  $$
+               {d^2 \tilde x^i\over d \tau^2}+
+     \tilde\Gamma^i_{km}(\tilde \x(\tau)){d \tilde x^k\over d \tau} {d \tilde x^m\over d \tau}=0   \,.
+       \eqno (1.2b)
+                  $$
+     for $\tilde \x(\tau)=\x(t)$ for $\tau=\tau(t)$.
+
+     We rewrite  (1.2a) using that $\x_t=\x_\tau \tau_t$:
+                     $$
+                     {d^2 \tilde x^i\over d \tau^2}\tau_t^2+
+                     {d \tilde x^i\over d \tau}\tau_{tt}+\Gamma^i_{km}(\tilde \x(\tau))
+                     {d \tilde x^k\over d \tau} {d \tilde x^m\over d \tau}\tau_t^2=0\,.
+                     \eqno (1.3)
+                     $$
+ Dividing this equation on  $\tau_t^2$ and substracting from the equation (1.2b) we come to
+                 $$
+          -{d \tilde x^i\over d \tau}{\tau_{tt}\over \tau_t^2}+\left(\tilde\Gamma^i_{km}-\Gamma^i_{km}\right)
+          {d \tilde x^k\over d \tau} {d \tilde x^m\over d \tau}=
+          -{d \tilde x^i\over d \tau}{\tau_{tt}\over \tau_t^2}+
+ 2 {d \tilde x^i\over d \tau}\o_m\left(\tilde \x(\tau)\right){d \tilde x^m\over d \tau}=
+                 $$
+                 $$
+                 -{d \tilde x^i\over d \tau}
+                 \left[{\tau_{tt}\over \tau_t^2}-2\o_m(\tilde \x (t)){d \tilde x^m(t)\over d \tau}\right]=
+                 -{d x^i(t)\over d t}
+                 \left[{d\log \tau_t\over dt}-2\o_m(\x (t)){d  x^m(t)\over d }\right]t_\tau^2=
+                 0\,.
+                 \eqno (1.4)
+                 $$
+      Thus we see that if  $\x(t)$ is a geodesic of the connection $\nabla$ then
+      $\tilde \x(\tau)$ is a geodesic of the connection $\tilde\nabla$ if
+        $\tau=\tau (t)$ obeys the differential equation:
+               $$
+               {d\over dt}\log \tau_t-2\o_m(\x (t)){d x^m(t)\over d t}\,.
+               \eqno (1.4b)
+               $$
+   i.e. if
+                    $$
+         \tau(t)=\exp \left(\int^t F(t')dt'\right)\,\, {\rm where}\,\,\,
+          F(t)=\int^t \left[2\o_m(\x (t')){d x^m(t')\over d t'}\right]dt'
+          \eqno (1.5)
+                    $$
+
+Now prove the converse implication.
+
+Suppose that an arbitrary geodesic $\x(t)$ of the connection $\nabla$
+becomes the geodesic of the connection $\nabla$ after suitable reparameterisation
+$\tau(t)\colon \tilde \x(\tau)=\x(t)$. Then comparing the equations (1.2a) and (1.2b) we come
+instead the equation (1.4) to the equation
+                  $$
+-{d \tilde x^i\over d \tau}{\tau_{tt}\over \tau_t^2}+S^i_{km}
+          {d \tilde x^k\over d \tau} {d \tilde x^m\over d \tau}=0, \,\,{\rm where}\,\,\,
+             S^i_{km}=\tilde\Gamma^i_{km}-\Gamma^i_{km}
+             \eqno (1.6)
+                  $$
+We have to prove that in this case there exists $1$-form $\o$ such that
+  $S^i_{km}=\delta^i_k\o_m+\delta^i_m\o_k$.
+
+  This holds for the arbitrary velocity vector $\v={d\x \over d\tau}$. Hence this follows from the following algebraic statement:
+
+
+  {\it Let $\S=\S(\X,\Y)$ be symmetric bilinear form on the vector space $V$ with values in this space such that
+   for arbitrary vector $\X$ the quadratic form   $\S(\X,\X)$ is collinear  to $\X$. Then
+   there exists $1$-form (covector)  $\t$ such that
+                        $$
+               \S(\X,\Y)=\X \t(\Y)+\Y\t(\x), \qquad (t_i={1\over n+1}S^k_{ki})\,.
+                        $$
+
+
+    }
+
+(See the proof in the Appendix.)
+
+\m
+
+We introduced by (1.1.a) a {\it projective class of connections}.
+
+{\bf Definition} {\it projective connection} is the equivalence class $[\nabla]$ of connections. 
+We define the Christoffel symbols $\Pi([\Gamma])$ of projective connection as
+                   $$
+                 \Pi^i_{km}=\Gamma^i_{km}+{1\over n+1}\left(\delta^i_k\gamma_m+\delta^i_m\gamma_k\right)
+                 \eqno (1.7a)
+                   $$
+where
+                 $$
+              \gamma_k=-\Gamma_{ik}^i
+              \eqno (1.7b)
+                 $$
+is a connection on volume form induced by the connection $\Gamma$.
+
+
+One can see that  $\Pi^i_{km}$ in (1.7a) does not change if Christoffel symbols   $\Gamma^i_{km}$
+change in projective class: 
+               $$
+   \Gamma^i_{km}\mapsto \Gamma^i_{km}+\delta^i_k t_m+\delta^i_m t_k,\,\hbox {then $\Pi^i_{km}$ does not change}            
+               $$
+  Thus Christoffel symbols of projective class of connection are well. 
+               
+We see that non-parameterised connection is defined by projective class of symmetric connections
+and vice versa.
+
+\bigskip
+
+
+\centerline {${\cal x}2$.  \bf Projective transformations.}
+
+The projective transformations are
+           $$
+      x^i\mapsto y^i={A^i_k x^k\over 1+a_kx^k}
+      \eqno (2.1)
+           $$
+They transform straight lines to straight lines (some lines go to infinity).
+
+Is it true that any transformation of $\R^n$ that transform straight lines to straight lines
+is projective transformation?  Yes it is (up to infinity), but I never could find the proof of this fact in modern books.  Here I will show the elementary proof in the analytical case.
+
+It is evident that if Christoffels symbols of connection vanish in coordinates
+$x^i$ then straight lines $x^i=x^i_0+v^i t$ are geodesic of this connection. Moreover it follows from the
+considerations of the previous paragraph that straight lines in coordinates $\{x\}$ are geodesics of connection iff
+ Christoffel symbols of projective class of connection vanish in these coordinates, i.e.
+           $$
+      [\Gamma]=0 \Leftrightarrow \Pi^i_{km}=\Gamma^i_{km}+{1\over n+1}
+      \left(\gamma_k\delta^i_m+\gamma_m\delta^i_k\right)=0\,.
+      \eqno (2.2)
+           $$
+
+
+On the other hand it is easy to see that the following statement is valid:
+
+\m
+
+{\bf Proposition} {\it If Christoffel symbols vanish in coordinates $\{x\}$ then
+for an arbitrary projective transformation (2.1) the  Christoffel symbols have the appearance
+         $$
+     ^{^{{(y)}}}\Gamma^a_{bc}={\p y^a(x)\over \p x^r}{\p^2 x^r(y)\over \p y^b \p y^c}=
+     \delta^a_b p_c\Delta+\delta^a_c p_b\Delta
+     \eqno (2.3)
+         $$
+where $p_a$ are constants and $\Delta={1\over 1-p_m x^m}$.}
+
+
+
+
+
+\m
+
+Indeed let Christoffel symbols vanish in coordinates $\{x\}$.  It is evident that Christoffel symbols vanish in any new affine coordinates.
+On the other hand  one can see that every projective transformation (2.1) is a composition
+of affine transformation $x^i\mapsto c^i+A^i_k x^k$ and the special projective transformation
+              $$
+         y^i={x^i\over 1+ p_kx^k}, i.e. x^i={y^i\over 1- p_ky^k}
+         \eqno (2.3)
+              $$
+The direct calculations show that for this transformation
+Christoffels are defined by the expression  (2.2).
+
+(To say more nice: let  $x$ be Cartesian coordinates
+and $\Gamma$ define canonical connection, then under arbitrary projective transformation
+the difference of $\Gamma$ is a connection (2.2) defined by $1$-form $p_m dy^m\over 1-p_ky^k$)
+
+
+{\bf Remark} It is very useful for calculations to note that
+  ${\p \Delta\over \p y^k}=p_k\Delta^2$.
+
+\m
+
+One can easy to see that we proved little bit more: that
+The Proposition states that if coordinates $x$ and $y$ are related with projective transformation then
+ Christoffel symbols $\Pi^i_{km}$ of projective connection
+vanish in coordinates $y$ if they vanish in coordinates $x$.
+
+
+\bigskip
+
+Now we are ready to prove that any transforamtion  transforming straight lines to straight lines
+is a projective transformations. 
+
+From previous considerations one can see that this statement is equivalent
+to the following 
+
+{\bf Theorem.} Let $\nabla$ be canonical connection in $\R^n$ (with Cartesian coordinates $x$),
+(Christoffel symbols of the canonical connection vanish in Cartesian coordinates $x$).
+Consider the projective connection $[\nabla]$.
+If  the Christoffel symbols  of projective connections $[\nabla]$ vanish in local coordinates $y$,
+$\Pi^i_{km}=0 $, i.e. in coordinates $y$
+         $$
+       ^{^{{(y)}}}\!\Gamma^a_{bc}={\p y^a(x)\over \p x^r}{\p^2 x^r(y)\over \p y^b \p y^c}=
+     \delta^a_b \o_c+\delta^a_c \o_b
+     \eqno (2.4)
+         $$
+then the transformation $y=y(x)$ is a projective transformation (2.1) and due to  Proposition above
+in particular there exist
+constant $p_k$ such that $\o_k=p_k\Delta={p_k\over 1-p_ry^r}$.
+
+\m
+
+
+ Indeed let  under transformation $y=y(x)$ straight lines remain straight lines.
+  Then according to previous paragraph
+ the projective class of connection $[\nabla]$ has  vanishing Chrsitoffel symbols in coordinates  $y$ 
+ in the case if  connection $\nabla$ has vanishing Christoffel symbols in coordinates $x$.
+ Hence it follwos from the Theorem
+  that $y=y(x)$ it is a projective transformation.
+
+\m
+
+{\sl Proof of Theorem}.
+
+  {\it We prove this Theorem under the following simplyfying assumption: the transformation $y=y(x)$
+  is analytical transformation. More precisely we prove the statement for formal power series and it will be valid
+  for analytical functions.}
+
+   Without loss of generality we may assume that
+    for $y=y(x)$
+                      $$
+                 y^a=x^a+\hbox {terms of the order more than equal 3, i.e.}\,\,\,
+                 y^a=x^a+L^a_{bcd}x^bx^cx^d+\dots
+                 \eqno (2.5)
+                      $$
+   Indeed suppose that
+                 $$
+                 y^a=c^a+x^a+A^a_bx^b+K^a_{bc}x^bx^cx^a+L^a_{bcd}x^bx^cx^d+\dots
+                 $$
+Then making  suitable affine transformation $y^a\mapsto B^i_k\left(y^a-c^a\right)$ with $B=A^{-1}$
+ we can consider new coordinates $y'$ that in these coordinates
+                   $$
+                   y'^a=x^a+K^a_{bc}x^bx^cx^a+L^a_{bcd}x^bx^cx^d+\dots
+                   \eqno (2.5b)
+                   $$
+  Now one can suppose that in (2.5b) $K^b_{ba}=0$. Indeed if $K^b_{ba}=s_a\not=0$ one can consider the
+  special projective transformation (2.3) which eliminates the trace $K^b_{ba}$.
+  Finally if the transformation has the appearance
+                   $$
+                    y^a=x^a+K^a_{bc}x^bx^cx^a+\dots \,\,{\rm with}\,\, K^b_{ba}=s_a=0
+                   \eqno (2.5c)
+                   $$
+ then according to  (2.4) and (2.5c)
+                   $$
+                   ^{^{{(y)}}}\Gamma^a_{bc}\big\vert_{x=0}=
+                   {\p y^a(x)\over \p x^r}{\p^2 x^r(y)\over \p y^b \p y^c}\big\vert_{x=0}
+      =L^a_{bc}=
+     \left(\delta^a_b \o_c+\delta^a_c \o_b\right)\big\vert_{x=0}=0
+                   $$
+  since $\o_b\big\vert_{x=0}={K^b_{ba}\over n+1}=0$.
+
+  Hence we see that under suitable "tuning" we come to the transformation $y=y(x)$ such that
+                   $$
+   y^a=x^a+L^a_{bcd}x^bx^cx^d+\dots
+               $$
+               $$
+   y^a_rx^r_{bc}=\delta^a_b t_c+\delta^a_c t_b\,\,{\rm with} t_c\big\vert_{x=0}=0
+   \eqno (2.6)
+                   $$
+       Now one can easy prove by induction that all higher derivatives vanish too.
+
+   {\it First step}. Prove that $L^a_{bcd}=0$. Differentiating the equation
+   $y^a_rx^r_{bc}=\delta^a_b t_c+\delta^a_ct_b$ at the $x=0$
+   and using the fact that $y^a=x^a+\dots$ and second derivatives vanish we come to
+                           $$
+       \left(y^a_rx^r_{bc}\right)_d\big\vert_{x=0}=L^a_{bcd}=\delta^a_b t_{c,d}+\delta^a_ct_{b,d}
+                           $$
+        We have symmetricity condition: $L^a_{bcd}=L^a_{bdc}$. Hence
+             $$
+\delta^a_b t_{c,d}+\delta^a_ct_{b,d}=\delta^a_b t_{d,c}+\delta^a_dt_{b,c}
+\eqno (2.7a)
+             $$
+  Taking trace with respect to indices $a,b$ we come to $(n+1)t_{d,c}=(n+1)t_{c,d}$. Hence
+$t_{d,c}=t_{c,d}$ we have in (2.7) that
+                      $$
+\delta^a_ct_{b,d}=\delta^a_dt_{b,c}
+\eqno (2.7b)
+                      $$
+Taking trace with respect to indices $a,c$ we come to $nt_{b,d}=t_{b,d}$, i.e. $t_{b,d}=0$. Hence we see that
+       $$
+        \left(y^a_rx^r_{bc}\right)_d\big\vert_{x=0}=L^a_{bcd}=\delta^a_b t_{c,d}+\delta^a_ct_{b,d}=0
+       $$
+i.e. $L^a_{bcd}=0$. It is easy to see that under assumption that the first $k$ derivatives equal to zero
+the $k+1$-th derivative equals to zero also. \finish
+
+
+$$ $$
+
+
+
+
+
+
+
+
+
+
+
+
+\def\K {{\bf K}}
+\def \App {{\rm App\,}}
+
+\centerline {\bf Appendix }
+
+  Here we prove the following simple statement:
+
+  {\it Let $\S=\S(\X,\Y)$ be symmetric bilinear form on the vector space $V$ with values in this space such that
+                   $$
+    \S(\X,\X)\,\, \hbox{ is  collinear to $\X$ for arbitrary vector $\X$ }\,.
+   \eqno (\App 1a)
+                    $$ Then
+   there exists $1$-form (covector)  $\t$ such that
+                        $$
+               \S(\X,\Y)=\X \t(\Y)+\Y\t(\x),\qquad (t_i={1\over n+1}S^k_{ki})\,.
+               \eqno (\App 1b)
+                        $$
+
+
+    }
+
+
+Proof. We have that  $S^i_{km}=S^i_{mk}$ and
+$S^i_{km}a^ka^m=a^i\lambda(\ac)$ for arbitrary vector $\ac=a^i$. This means that for arbitrary $i,j$
+$a^jS^i_{km}a^ka^m=a^{i}S^j_{km}a^ka^m $.
+
+Consider the set vectors $\ac$ with first component $a^1=0$.  Then for $i=2,3,\dots,n$ we come
+                      $$
+a^1S^i_{km}a^ka^m=S^d_{bc}a^ba^c+2S^d_{1c}a^c+S^d_{11}=a^{i}S^{1}_{km}a^ka^m=
+        a^d\left(S^1_{bc}a^ba^c+2S^1_{1c}a^c+S^1_{11}\right)\
+        \eqno (\App 2a)
+                      $$
+         where indices $b,c,d$ run over $\{2,3,\dots,n\}$.
+Comparing these quadratic polynomials we see that
+                  $$
+          S^d_{bc}=\delta^d_b S^1_{1c}+\delta^d_cS^1_{1b},\quad
+           S^d_{1c}=S^d_{c1}=\delta^d_c S^1_{11},\quad
+                     S^d_{11}=0\,.
+                     \eqno (\App 2b)
+                  $$
+Consider the object $(t_1,t_2,\dots,t_n)$ such that
+          $
+       t_1={1\over 2}S^1_{11},\,\,\, t_a=S^1_{1a}\, (a=2,\dots,n)
+          $.
+(We still do not know is it a vector!)
+      It is easy to see from equations (App 4) that
+             $$
+         S^i_{km}=\delta^i_k t_m+\delta^i_mt_k
+             $$
+We come to the equation ($\App 2$): $t_m={1\over n+1}{\rm Tr}S= {1\over n+1}S^k_{km}$ is a covector.
+\bye
+
+
+
+Denote by ${\rm tr}_1 S$ the contraction of the tensor $S$ with respect to upper and low indices:
+                 $
+                {\rm tr}_1 S(\x)=\sum_i {\e}^i\left(s(\e_i,\x)\right)
+                 $,
+  where $\{\e_i\}$ is an arbitrary basis and $\{\e^i\}$ is a dual one. In components
+  ${\rm tr}_1 S_i=S^m_{mi}$.
+
+  Consider projector
+                $$
+  S\to PS=S-{1\over n+1}\left({\rm {\bf id}}\otimes {\rm tr}_1 S+{\rm tr}_1 S\otimes {\rm {\bf id}}\right)
+  \eqno (App 3)
+                              $$
+  In components
+                   $$
+             \left(PS\right)^i_{km}=S^i_{km}-{1\over n+1}\left(\delta^i_k S^n_{nm}+\delta^i_m S^n_{nk}\right)
+\eqno (App 2a)
+                   $$
+In what follows all formulae will be written in components.
+
+It is easy to see that under projection $P$ trace of $S$ vanishes:
+                  $$
+                  (PS)^n_{nm}=0.
+                  $$
+    To prove the statement (App2) it suffices to show that $S=0$ if the condition (App 1) holds and  $S=PS$.              Indeed it follows from this fact that  the tensor $S-PS$ vanishes. Hence $S=PS$ and $\t={\rm tr}_1 S$.
+
+
+\bye
+
+
+Date: Fri, 19 Aug 2011 13:30:29 +0000
+From: Samuel Danagoulian <danagous@ncat.edu>
+To: H Khudaverdian <khudian@manchester.ac.uk>
+Subject: Re: Barevner Safarian Stjopajits ev Khudaverdian
+     Hovikts
+Resent-From: <Hovhannes.Khudaverdyan@manchester.ac.uk>
+Parts/Attachments:
+   1   OK     ~83 lines  Text (charset: ISO-8859-1)
+   2 Shown   ~125 lines  Text (charset: ISO-8859-1)
+----------------------------------------
+
+Dear Hovik,
+I was looking over my mails and discovered that I
+did not answer to your mail.
+Though, when I received your mail (It was the day
+before the last day of our stay
+in Yerevan, two days later we took a flight to US,
+home), it was very pleasant
+surprise. We were reading your mail with Minassian
+Martin (now he is our neighbor
+in Yerevan) and Sveta, then we went to your
+homepage, looked at you.
+It was a pleasure to find Stepa as well. He was
+one of our (me and Sveta) best
+friends when we were students. How often do you
+see Stepa? Please say
+hello to him for us. What Stepa does
+in  Gottingen?
+We were in Yerevan with our two grand kids during
+July 13 - August 10. We kept
+our apartment. Yerevan was great, but expensive
+this time. We saw Sedrakian
+Araik with his wife, Gurzadian Vahagn and Pasha
+with his wife. We went to
+Ashtarak river gorge and spent time together with
+barbecue.
+
+Now we are back, our classes started. Svetlana's
+classes start this coming
+Monday.  We live in Greensboro NC. Ones a year we
+go to Yerevan, Paris
+or London (in London we stay just a day in between
+two flights. Our daughter
+lived there years ago, she graduated from LSE with
+M.S.). We have good
+friends in Paris since we worked in Orsay in 90s.
+We have four grand kids.
+How about you? How is your life? Give me more
+information please.
+
+Svetlana says hello to you.
+
+Take care,
+
+Samvel
+
+
+
+Samuel Danagoulian
+Professor of Physics,
+North Carolina A&T State University
+1601 E. Market St. Greensboro, NC 27411
+Tel. (336) 285-2111, Fax: (336) 334-7423
+
+
+
+
+
+On Mon, Aug 8, 2011 at 6:09 AM, H Khudaverdian
+<khudian@manchester.ac.uk> wrote:
+
+        Barev Samvel dzhan!
+
+       Erek Stjopaji het hishetsink kez u
+      Svetajin
+
+       Es hima Manchesterumn em
+      (see home page
+      "www.maths.manchester.ac.uk/khudian")
+      Kins hima indz het e. Tornikner es
+      Moskvajumn en.
+
+       Stjopa n aprum e Gottingenum ira
+      @ntaniki het
+
+       Menk urakh enk and erdhznik enk (at
+      least when we meet)
+        Il faut vivre!
+
+        Barevnerov
+             Hovik, Stjopa

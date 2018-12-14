@@ -1,0 +1,664 @@
+% this text I began to write on 1-st November
+%on the base of the text dhl2.tex
+
+      \magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\FF {{\bf F}}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\b {{\bf b}}
+\def\ss  {{\bf s }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}} 
+\def\wv {{\buildrel \rightarrow\over \omega}}
+
+\def\K{{\bf K}}
+\def\locus {\hbox{locus of $\K$}}
+
+
+$\qquad$ {\sl 28 October 2013}
+
+\bigskip
+
+\centerline {\bf On Duistermaat-Heckman localisation Theorem II}
+
+\m
+
+{\it
+   Here we will give a formulation (with supermathematics flavor),
+the proof and concrete calculations
+for DH (Dustermaat-Heckman) localisation formula. This etude is essentially
+based on the papers of Armen Nersessian [1], and
+of  Oleg Zaboronsky and Albert Schwarz [2], my etude
+[4] (see the previous etude on this topic) which was based on calculations 
+of A.Belavin.) It is interesting also to note the paper [3].
+This etude is a  developped exposition of my talk
+on the Geometry seminars in Manchester
+(17 October and 23 October, 2013).}
+
+
+\m
+      \medskip
+{\sl
+  $\qquad\qquad$$\qquad\qquad$$\qquad\qquad$ If a form, 
+  is invariant with respect to odd vector field
+
+
+$\qquad\qquad$$\qquad\qquad$$\qquad\qquad$  
+  $Q=d\circ \iota_\K+\iota_\K\circ d=\sqrt {\L_\K}$ 
+   where $\L_\K$ is Lie derivative 
+
+$\qquad\qquad$$\qquad\qquad$$\qquad\qquad$ with respect
+ to $U(1)$-vector field $\K$, then integral of this 
+
+$\qquad\qquad$$\qquad\qquad$$\qquad\qquad$ form over manifold
+  $M$ is localised at the zero locus 
+
+$\qquad\qquad$$\qquad\qquad$$\qquad\qquad$ of vector fied $K$. This is the
+ meaning.
+
+$\qquad\qquad$$\qquad\qquad$$\qquad\qquad$ 
+of Dustermaat-Heckman localisation formula.
+
+}
+ $$ $$
+
+
+\centerline {${\cal x} 0\quad$\bf Recallings}
+
+
+  Recall briefly the DH (Duistermaat-Heckman) localisation formula
+and perform some calculations based on calculations in [4].
+
+Let $(M,\Omega)$ be compact symplectic supermanifold
+($\Omega$ is non-degenerate closed two form, ${\rm dim\,}M=2n$).
+Let $H$ be a Hamiltonian and
+$\K=D_H\colon\, dH=-\iota_\K\Omega$, its Hamiltonian vector field.
+Let vector field $K$ obeys the following conditions:
+         $$
+\hbox{
+$\K=D_H$ is compact vector field, i.e. it
+defines $U(1)$-action on $M$\footnote{$^{1)}$}
+{Vector field is compact if its Lie group is compact subgorup in group of
+diffeomorphisms (see [2]).}
+}
+\eqno (0.1)
+         $$
+      $$
+\hbox {Zero locus of vector field $\K$, $\K(x_i)=0$,
+ is a set $\{x_i\}$ of 
+      isolated points}
+   \eqno (0.2)
+     $$
+
+DH-localisation formula states that
+if conditions (0.1) and (0.2) are obeyed then
+            $$
+    \int e^{i H}dV_\Omega=
+      \int e^{i(H+\Omega)}=
+            \sum_{x_i} 
+                {
+ e^{i H}\sqrt {\det \Omega_{ik}}
+              \over 
+   \sqrt {\det {\rm Hess\,}H}
+             }\big\vert_{x_i}
+              =
+     \sum_{x_i} 
+              {
+             e^{i H(x_i)}
+             \over 
+             \sqrt 
+              {
+             \det 
+              \left(
+               {\p K(x)\over \p x}
+              \big\vert_{x=x_i}
+               \right)
+               }
+              }\,.
+      \eqno (0.3)
+            $$
+{\sl Comments to this formula:}
+
+1. Here and later we often omit all the coefficients proportional to 
+$\pi^a, n!, i^n$, 
+
+2.  $x_i\colon \, \K(x_i)=0$, is a locus (zero locus) of Hamiltonian
+vector field $\K$, i.e. stationary points of Hamiltonian $H$,
+  
+3. $dV_\Omega$ is invariant volume forme:
+      $$
+dV_\Omega=\Omega^n=
+\underbrace{\Omega\wedge \dots\wedge \Omega}_{\hbox{$n$-times}}
+\,\hbox {is Lioville volume form}\,,
+       $$
+ in local coordinates
+$dV_\Omega={\rm Pfaf\,}\Omega d^{2n}x=
+ \sqrt {\det\Omega}d^{2n}x$,
+${\rm Hess\, }H={\p^2 H\over \p x^i\p x^k}$ is bilinear form
+at stationary points; as well as ${\p K\over \p x}$ is linear
+operator at zero locus of vector field $\K$.
+
+\m
+
+
+   Shortly show how to calculate (0.3) using ideas of [4].
+
+
+Let $\w$ be  an arbitrary $\K$-invariant $1$-form:
+          $$
+   \L_\K\w=d\circ\iota_\K\w+\iota_\K\circ d\w=0\,.
+            \eqno (0.4)
+          $$
+Consider `partition function
+               $$
+ Z(t)=\int_M e^{i\left(\left(H+\Omega\right)+td_\K\w\right)}\,,
+       \eqno (0.5)
+               $$
+where $d_\K=d+\iota_\K$.
+One can see that condition (0.4) and condition
+$d_\K(H+\Omega)=0$ imply that
+this partition function does not depend on $t$:
+          $$
+{dZ(t)\over dt}=
+ i\int_M d_K
+ \left(\w e^{i\left(\left(H+\Omega\right)+td_\K\w\right)}\right)
+        =0\,,
+     \eqno (0.6)
+          $$
+  because for an arbitrary differential form $F$,
+$\int_Md F=0$ (Stokes Theorem) and $\int_M\iota_\K F=0$ also,
+since form $\iota_\K F$ has order less than equal $2n$
+($2n$ is the dimension of $M$ is an order of  top form.)
+
+Partition function $Z(t)$ at $t=0$ is the left hand side of equation (0.3),
+the initial integral;  this function at $t\to \infty$ 
+can be calculated using
+sationary phase method. So using (0.6) we reduce calculations of the
+integral to quasiclassical calculations for $t\to \infty$:
+            $$
+Z(0)=\lim_{t\to\infty}Z(t)=\sum_{k,r}
+         {t^r\over k!r!}
+     \int_M e^{i\left(H+th\right)}\tilde\Omega^r\Omega^m\,,
+        \eqno (0.7)
+            $$
+where $\tilde\Omega=d\w$, $h=\iota_\K \w$.
+ Now calculate partition function at $t\to \infty$.
+$dh=d(\iota_\K\w)=-\iota_\K{\tilde\Omega}$. Hence at zero locus of 
+$\K$, i.e. $dh=0$ we have 
+$$
+{\rm Hess\,}H\big\vert_{x_i}={\p^2 H\over \p x^m\p x^n}\big\vert_{x_i}=
+   \tilde\Omega_{mn}\big\vert_{x_i}\,.
+       \eqno (0.8)
+ $$
+Hence using the fact that for symmetric bilinear form $A(\x,\x)$
+in $k$-dimensioonal Euclidean space  $\R^k$ 
+                $$
+           \int_{\R^k}e^{it A(\x,\x)}d^k x= 
+           \int_{\R^k} 
+e^{itA_{ij}x^i x^j}d^k x=
+ {e^{i\pi k\over 4}\sqrt{\pi^k}\over t^{k\over 2}\sqrt {\det A}}\,,
+             $$
+we obtain that at the 
+quasiclassical limit for partition function $Z(t)$ in (0.7)
+is equal to 
+       $$
+\lim_{t\to\infty}Z(t)=\sum_{r=0}^n
+         {t^r\over (n-r)!r!}
+     \int_M e^{i\left(H+th\right)}\tilde\Omega^r\Omega^{n-r}=
+          $$
+          $$
+       \lim_{t\to\infty} \sum_{r=0}^n\sum_{x_i} 
+                {t^r\over (n-r)!r!}
+                 {
+ e^{i H}\sqrt {\det \tilde\Omega_{ik}}
+              \over 
+  t^{n} \sqrt {\det {\rm Hess\,}H}             
+             }\big\vert_{x_i}
+  =\sum_{x_i} 
+                 {
+ e^{i H}\sqrt {\det \tilde\Omega_{ik}}
+              \over 
+   \sqrt {\det {\rm Hess\,}H}             
+             }\big\vert_{x_i}
+       $$
+Now choose $\w$ such that $\tilde\Omega=d\w$ is non-degenerate
+at locus of $K$.
+We have $dh=\iota_\K\tilde\Omega$. Hence  at locus of $\K$  
+                  $$
+{\rm Hess\,}H={\p^2 H(x)\over \p x^m x^n}=
+   \tilde\Omega_{mr}{\p K^r\over \p x^n}\,,
+            $$
+and we have finally that
+          $$
+\lim_{t\to \infty}Z(t)=\sum_{x_i} 
+                 {
+ e^{i H}\sqrt {\det \tilde\Omega_{ik}}
+              \over 
+   \sqrt {\det {\rm Hess\,}H}             
+             }\big\vert_{x_i}
+\sum_{x_i} 
+ {e^{i H}
+              \over 
+   \sqrt {\det {\p K\over \p x}}             
+             }\big\vert_{x_i}
+          $$
+Thus due to relation (0.6) leads to (0.3).
+
+{\bf Remark 1} The form $\tilde\Omega=d\w$ and new hamiltonian $h=\iota_\K\w$
+define the same Hamiltonian vector field $\K$ as a pair $(\Omega,H)$.
+  On the other hand the pair $(\tilde\Omega,\w)$ is more suitable for
+calculation of quasiclassical approximation. The $U(1)$-vector field
+$\K$ is fundamental object of DH-localisation formula, not the
+pair which produces this field (see in detail ${\cal x} 2$).
+
+\m
+
+{\bf Remark 2}
+
+
+One of the way to produce $\K$-invariant form $\w$ is the following:
+One can 
+take  $\w$-covector $\K$ with respect to 
+$U(1)$-invariant metric: $\w=\w_idx^i$,
+ $w_i=g_{ik}K^k$ and $g_{ik}$ is $U(1)$-invariant Riemannian metric
+(average over gropu $U(1)$).
+It is crucial for calculation that $\tilde\Omega=d\w$ 
+is non-degenerate
+at zero locus of $\K$. Is it an additional condition, or it 
+follows from the fact that vector field $\K$ generates $U(1)$-action
+(and $M$ is even-dimensional manifold)?
+ On one hand I cannot prove this completely, on the 
+other hand natural counterexamples deal with non-compact vector field.
+
+
+\bigskip
+
+
+
+\centerline {${\cal x} 1\quad$
+   \bf DH-formula and supersymmetric mechanics. Nersessian's approach.}
+
+{\it The considerations of this paragraph are based on the work [2]}
+
+\m
+
+ The calculations above can be put in supersymmetric framework.
+Differential form on $M$ can be considered as a function
+on $\Pi TM$---tangent bundle to $M$ with reversed parity fo fibers
+         $w_i(x)dx^i\to w_i(x)\xi^i,\dots$.
+Integral of form over $M$ is the integral of a function over supermanifold
+$\Pi TM$ with invariant volume form $dx^1\dots dx^{2n}d\xi^1\dots
+d\xi^{2n}$.
+
+
+ In the very nice paper [1] Armen Nersessian suggested the supersymmetric
+framework of the calculations above. I will try to explain it here.
+Recall that for an arbitrary Poisson manifold $M$ 
+(manifold with Poisson bracket $\{\,\,,\,\,\}$) one can consider
+odd Koszul bracket $[\,\,,\,\,]$ on $\Pi TM$ such that
+for arbitrary functions $f,g$ on $M$ we have that
+         $$
+   [f,g]=0\,,[f,dg]=\{f,g\}\,\,[df,dg]=d\{f,g\}\,.
+  \eqno (1.1)
+         $$
+In local coordinates $
+  [x^i,x^k]=0$, $[x^i,\xi^k]=\Omega^{ik}$,
+$[\xi^i,\xi^k]=\xi^r\p_r\Omega^{ik}$.
+
+If Poisson structure is symplectic one then 
+          $$
+  [\Omega, F]=dF\,,\qquad (\Omega=\Omega_{ik}\xi^i\xi^k)
+        \eqno (1.2)
+        $$
+If $H$ is an arbitrary Hamiltonian on $M$ and $\K=D_H$ hamiltonian
+vector field then
+          $$
+     [H,F]=\iota_{\K}F
+\eqno (1.3)
+          $$
+We see that
+              $$
+   (d+\iota_k)F=[\Omega+H,F]
+              $$
+and
+           $$
+\L_\K F=(d+\iota_\K)^2=
+ [H+\Omega, [H+\Omega,F]]=[[H,\Omega],F]\,.
+           $$
+Thus we come to core of Dustermaat-Heckman formalism:
+
+Form $F$ is invariant with 
+respect to odd vector field $d_\K=d+\iota_\K$
+if it is integral of motion of 'Hamiltonian' $H+\Omega$,
+form $F$ is invariant with respect to Hamiltonian vector
+field $\K=D_H$ if it is integral of motion of 'Hamiltonian'
+$G=[H,F]$.
+
+The partition function (0.5) can be rewritten as
+      $$
+Z(t)=\int e^{i(H-\Omega-t[H+\Omega,\tilde G])}\,.
+      $$
+{\bf Remark 3} Hamiltonians $\{H+\Omega,H-\Omega,\Omega\}$ form superalgebra.
+ 
+
+
+  \bigskip
+
+\centerline {${\cal x} 2$\bf Schwarz-Zaboronsky supersymmetric formalism}
+
+\m
+
+In this paragraph we will speak about approach developed in the paper [2],
+where supergeometry is powerfully used for 
+formulating localisation formula in a more general case. 
+
+
+\m
+   It will always be assumed that
+$M$ is compact manifold  and $\K$ is compact vector field on it, 
+i.e. vector field which generates $U(1)$
+action. We denote by $$
+   Q_\K=d+\iota_\K\,,\quad \hbox
+ {in ``supernotations''}\,\,
+Q_\K=\xi^i{\p\over \p x^i}+K^i(x){\p \over \p \xi^i}\,,
+              $$
+where $x^i,\xi^i=dx^i$ are local coordiantes on $\Pi TM$.
+
+Odd vector field $Q_\K$ is a ``square root'' of a Lie derivative 
+$\L_K=\iota_\K\circ d+d\circ \iota_\K$:
+               $$
+\L_\K=Q_\K^2=\left(\xi^i{\p\over \p x^i}+K^i(x){\p \over \p \xi^i}\right)^2=
+       K^i(x){\p \over \p x^i}+\xi^r{\p K^i\over \p \xi^r}{\p\over \p \xi^i}\,,
+              \eqno (1) 
+              $$
+or in classical notations
+                   $$
+\L_\K=Q_\K^2=(d+\iota_k)^2=d\circ \iota_\K+\iota_\K\circ d\,.
+                   $$
+We formulate the following version of DH localisation theorem:
+
+
+{\it 
+
+{\bf Theorem}   Let $H= H(x,dx)$ be a $Q_\K$-invatriant form on $M$,
+ i.e.
+          $$
+dH+\iota_\K H=0\,.
+          \eqno (2)
+           $$
+Then the integral $\int_M H(x,dx)$ is localised at locus of $K$.
+This means follows: let $U_K$ be an arbitrary $U(1)$-invariant\footnote{$^*$}
+{the condition to be $U(1)$-invariant may be is not necessary. 
+We will use it for constructing $U(1)$-ivariant 
+partition of unity. This condition is absent in the paper [1].}
+ tubular neighborhood of 
+locus of $K$ and let $G_U=G_U(x,dx)$ be a $Q_\K$-invariant 
+form such that it is equal to $1$
+at the locus of vector field $\K$ and it  vanishes out of neighborhood
+$U_\K$: 
+            $$
+Q_\K G_U=0,\,({\rm i.e.\,} dG_U+\iota_\K G_U=0), 
+  \quad G_U\big\vert_{\locus}=1,\quad G_U\big\vert_{M\backslash U_K}=0\,. 
+\eqno(3)
+            $$ 
+(Bump-form of zero locus of $\K$.)
+(We will prove the existence of such a bump-form)
+
+\medskip
+
+Then 
+
+                $$
+   \int_MH=\int_M HG_U\,. 
+            \eqno (4)
+                $$
+
+}
+\medskip
+
+{\bf Example} Let $M$ be a symplectic manifold, i.e.
+ non-degenerate closed two-form  $\Omega$ is defined on $M$
+($M$ is even-dimensional). Let $h=h(x)$ be a Hamiltonian such that
+its Hamiltonian vector field $D_h$ ($D_h\colon\quad 
+\iota_{_{D_h}}\Omega=-dh$) is compact, i.e. it 
+defines $U(1)$ action. 
+  Consider the form
+        $$
+   H(x,dx)=\exp i\left(\Omega+h\right)\,.
+      \eqno (5)
+        $$
+This form is $Q_\K$-invariant. Indeed since $K$ is hamiltonian vector field
+$D_h$ hence
+       $$
+\iota_\K \Omega+dh=0.{\rm i.e.\,} Q_\K(h+\Omega)=0\Rightarrow
+   Q_\K H=0\,.
+       $$
+Then 
+     $$
+\int H(x,dx)=\int \exp i\left(\Omega+h\right)={i^n\over n!}
+\int \exp i h\underbrace{\Omega\wedge\dots\wedge\Omega}_{\hbox{$n$ times}}
+     $$
+is localised.
+
+\smallskip
+
+{\bf Remark 4}  Note that this example is a basic example in classical 
+background.  Compact vector field $\K$ appears naturally in this example
+as hamiltonian vector field of Hamiltonin $h$.  In 
+Schwarz-Zaboronsky approach the vector field $\K$ appears
+independetly without symplectic structure and 
+Hamiltonian. In this approach the localisation formula is stated
+for a function $H(x,dx)$ on $\Pi TM$ (sum of differential forms of different
+orders). The classical condition that sum of differential forms
+is invariant with respect to equivariant differential $d_\K=d+\iota_\K$
+becomes the condition  that ``function''
+ \footnote{$^2$} 
+{$H(x,dx)$ is non-homogeneous differential form on $M$. It is a
+function on tangent bundle $\Pi TM$ with reversed parity of fibers.}
+
+$H(x,dx)$ is invariant with respect to odd vector field
+$Q_\K$ which is the square root of Lie derivative along the vector field
+$\K$ $\colon Q_K^2=\L_\K$.
+
+
+
+
+{\bf Remark 5} 'Superlanguage' becomes essentially imporant
+for constructing of partiion of unity for forms.
+
+\smallskip
+
+{\sl Proof of Theorem}
+First we prove the existence of a form $G_U=G_U(x,dx)$ which 
+obeys the condition (3), then we will show that an arbitrary 
+ $Q_\K$-invariant ``function''
+(form) which obeys conditions (3) yields the localisation formula (4).
+
+Using partiion of unity arguments consider a function
+$F=F(x)$ such that 
+            $$
+F(x)\big\vert_{\locus}=0,
+ \quad F(x)\big\vert_{M\backslash U_K}=1\,. 
+\eqno(6)
+            $$ 
+(We may consider partiion of unity which is subordinate
+ to covering $V_1\cup V_2$,
+where $V_1=U_\K$ and $V_2=M\backslash \hbox{locus of $K$}$.
+
+
+We may assume that $F(x)$ is $\K$-invariant function.
+(Here we use the $U(1)$-ivariance of neighborhood of 
+locus (see the footnote.)).
+
+   
+ It is useful to  consider the differential $1$-form
+       $$
+    \w_\K\colon \w_\K(\x)\langle \K,,\x\rangle\,,\w_i=g_{im}K^mdx^i\,,
+         \eqno (7)
+      $$
+where $\langle \K,,\x\rangle$ is $U(1)$-invariant Riemannian
+metric on $M$. Now we are ready to define form $G_U$ which obeys
+the condition (3):
+            $$
+   G_U(x,dx)=1-Q_\K\left({\w_\K(x,dx)\over Q_\K \w_\K}F(x)\right)
+                \eqno(8)
+            $$
+Straightforward calculations show that this function obeys conditions (3).
+Indeed $F(x)=0$ if $x$ belongs to locus of $K$
+(and in a vicinity of the locus), hence the right hand side 
+of equation (8) is well-defined on the locus of $\K$, where
+the form $\w_\K$ is not defined. Using the fact that
+$Q_\K\left({\w_\K(x,dx)\over Q_\K \w_\K}\right)=1$ (if $\K(x)\not=0$)
+we immediately come to the condition (3).
+
+ Let $\tilde G_U=\tilde G_U(x,dx)$ be an arbitrary $Q_\K$-invariant
+ form which obeys the condition
+(3). Then consider the difference $L(x,dx)=\tilde G_U-G_U$.
+The form  $L(x,dx)$ is $Q_\K$-invariant and it is equal to $0$ at the locus
+of $K$, Hence 
+              $$
+   L(x,dx)=Q_\K\left({\w_\K(x,dx)\over Q_\K \w_\K}L(x,dx)\right)\,.
+        \eqno (9)
+             $$
+Thus we see that $Q_\K$-invariant  form $G_U(x,dx)$ in (8)
+which obeys the condition (3) as well as an arbitrary
+$Q_\K$-invariatn  form $\tilde G_U(x,dx)$ 
+which obeys the condtion (3) obey the condition
+that
+      $$
+    \matrix
+           {
+   G_U(x,dx)=1+Q_\K(...)\cr
+   \tilde G_U(x,dx)=1+Q_\K(...)\cr
+      }
+       $$
+  This immediately implies the relation (4):
+            $$
+\int_M H(x,dx)G_U(x,dx)=\int_M H(x,dx)(1+Q_\K(\dots))=
+\int_M H(x,dx)
+       $$
+ since $\int_M Q_\K (\dots)=0$\footnote{$^{**}$}{since $Q_K=d+\iota_K$,
+ and $\iota_K \w$ 'does not contain' top form.  
+This follows also from the vanishing of divergence of
+odd vector field $Q_\K$ with respect to canonical volume form
+in $\Pi TM$}\finish
+
+
+\m
+
+{\it Concrete calculations}
+
+   Now based on the Theorem we present concrete calculations.
+which are very similar to calculations in paragraph $0$.
+
+Let $H=H(x,dx)$ be $Q_\K$ invariant form and 
+locus (zero locus)
+of $U(1)$-invariant 
+vector field $\K$ is a set $\{x_i\}$ of isolated points.
+
+Using bump-form $G_U$, the form which vanishes out vicinites of
+points $\{x_i\}$ (see the considerations above) we calculate
+$\int_M H(x,dx)$.
+
+
+ {\bf Lemma}  For an arbitrary $Q_\K$-invariant form $H(x,dx)$ the integral
+            $$
+   Z(t)=\int H(x,dx)e^{itQ_\K(\w_\K)}\,, 
+            $$
+where $\w_\K$ is $U(1)$-invariant form 
+(7) does not depend on $t$.
+
+  Proof:
+              $$
+ {dZ(t)\over dt}=
+           i\int_M 
+  H(x,dx)Q_\K
+   \w_\K
+  e^{itQ_\K(\w_\K)}=
+    i\int_M Q_\K
+          \left(
+  H(x,dx)e^{itQ_\K(\w_\K)}
+          \right)=0\,.
+              $$
+Now using lemma and bump-form which localises integrand in vicinity of
+points $\{x_i\}$ we come to 
+           $$
+\int_M H(x,dx)=\int_M H(x,dx)G_U(x,dx)=
+\left(
+\int_M H(x,dx)G_U(x,dx)e^{itQ_\K(\w_\K)}\right)
+\big\vert_{t=0}
+             $$
+             $$
+              =
+\left(\int_M H(x,dx)G_U(x,dx)e^{itQ_\K(\w_\K)}\right)
+\big\vert_{t\to\infty}
+           $$ 
+Using method of stationary phase and assuming that $d\w$ is non-degenerate
+at locus of $\K$\footnote{$^*$}{See the remark 2}  we calculate the last integral
+(see [4]) and come to the answer
+           $$
+\int_M H(x,dx)=
+              =
+\left(\int_M H(x,dx)G_U(x,dx)e^{itQ_\K(\w_\K)}\right)
+\big\vert_{t\to\infty}=
+\sum_{x_i}{i^n\over n!}{H(x,dx)\big\vert_{x_i}\over 
+  \sqrt  {{\p K\over \p x}\big\vert_{x_i}} }
+           $$ 
+If $H(x,dx)\big\vert_{x_i}=H_0(x_i)$, where
+$H(x,dx)=H_0(x)+H_1(x,dx)+\dots$ is a sum of differential forms. 
+ 
+
+$$ $$
+
+\centerline {\bf References}
+
+ [1]  A. Nersessian {\it Antibrackets and localisation of (path) integrals
+                    }
+   arXix: hep-th/9305181, (published in JETP)
+\m
+
+ [2] Albert Schwarz and Oleg Zaboronsky. 
+ {\it Supersymmetry and localisation}. arXiv: hep-th/951112v1,
+  (published in CMP)
+
+
+ \m
+
+
+        
+ [3] {\it On the Duistermaat-Heckman localisation 
+ formula and Integrable systems} 
+arXiv: hep-th/9402041v1
+
+\m
+
+
+ [4] homepage: maths.manchester.ac.uk/khudian/Etudes/Geometry/Dustermaat-Heckman  localisation formula. 
+{\it Etude based on the fragment of the lecture of 
+A.Belavin in Bialoveza, summer 2012.} 
+
+\bye

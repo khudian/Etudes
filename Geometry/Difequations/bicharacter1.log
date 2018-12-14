@@ -1,0 +1,51 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdftex 2011.7.3)  15 JUL 2016 14:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bicharacter1.tex
+(./bicharacter1.tex [1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updma
+p/pdftex.map}]
+Overfull \hbox (30.9924pt too wide) detected at line 198
+[] [] |
+
+\hbox(61.5+56.5)x391.46176
+.\hbox(0.0+0.0)x0.0
+.\glue 1.66663
+.\vbox(61.5+56.5)x419.12091
+..\hbox(7.5+2.5)x419.12091
+...\glue(\tabskip) 0.0
+...\hbox(7.5+2.5)x206.21797, glue set 103.109fil []
+...\glue(\tabskip) 0.0
+..\kern -12.0
+..\glue(\baselineskip) 0.70158
+..\hbox(8.79842+3.44841)x419.12091
+...\glue(\tabskip) 0.0
+...\hbox(8.79842+3.44841)x206.21797, glue set 46.78708fil []
+...\glue(\tabskip) 0.0
+...\hbox(8.79842+3.44841)x212.90294, glue set 49.75455fil []
+...\glue(\tabskip) 0.0
+..\glue(\baselineskip) 1.05159
+..etc.
+.\glue 1.66663
+.\rule(*+*)x5.0
+
+[2] [3] )</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
+7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
+cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on bicharacter1.pdf (3 pages, 138922 bytes).
+PDF statistics:
+ 66 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

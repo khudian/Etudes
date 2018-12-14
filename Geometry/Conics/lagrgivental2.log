@@ -1,0 +1,72 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdftex 2016.8.6)  17 JUL 2017 00:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lagrgivental2.tex
+(./lagrgivental2.tex
+Overfull \hbox (14.21123pt too wide) detected at line 178
+\teni C\tenrm : [] []  \teni C[]\tenrm : []|
+
+\hbox(14.5001+9.50012)x391.46176
+.\teni C
+.\kern0.71527
+.\tenrm :
+.\glue(\thinmuskip) 1.66663
+.\hbox(14.5001+9.50012)x85.4615
+..\hbox(0.39998+23.60025)x7.50002, shifted -14.10013
+...\tenex ^^Z
+..\glue 1.66663
+..\vbox(13.54224+8.54224)x75.09486
+...\hbox(8.14003+1.94444)x75.09486 []
+...\glue(\baselineskip) 3.22224
+...\hbox(6.83331+1.94444)x75.09486 []
+..\hbox(0.0+0.0)x1.2, shifted -2.5
+.etc.
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (6.53494pt too wide) in paragraph at lines 250--252
+[]\tentt teaching math-e-mat-ics to keeds (see his home-page in Berke-ley Uni-v
+er-sity). |
+
+\hbox(6.94444+2.22223)x391.46176
+.\hbox(0.0+0.0)x20.0
+.\tentt t
+.\tentt e
+.\tentt a
+.\tentt c
+.etc.
+
+[2] [3] [4] [5] [6]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmti10!
+Missing character: There is no € in font cmti10!
+Missing character: There is no ™ in font cmti10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [7] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 197 ({)
+### bottom level</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on lagrgivental2.pdf (7 pages, 186541 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,243 @@
+
+
+
+\magnification=1200
+
+
+ \def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf On Barnes sinus-functions }
+
+
+
+  We define  Barnes sinus-function (its logarithm) by relation
+           $$
+    Sn(z|a_1,\dots,a_n)=\Psi(z|a_1,\dots,a_n)-
+       (-1)^n\Psi\left(\sum a_i-z|a_1,\dots,a_n\right)\,,
+      \eqno (1)
+           $$
+where
+           $$
+\Psi(z|a_1,\dots,a_n)={d\over ds}\zeta(s,z|a_1,\dots,a_n)\big\vert_{s=0}=
+ \left[{d\over ds}\sum_{r_1,\dots r_n=1}^{\infty}
+{1\over (z+a_1 r_1+\dots a_n r_n)^s}\right]_{\hbox {regularised}}
+           $$
+       $$
+   =\int_0^\infty\left(A(t)-A_-(t)-A_0e^{-t}\right){dt\over t}\,,
+       $$ 
+where
+          $$
+  A(t)={e^{-zt}\over \prod_i(1-e^{-a_it})}
+       \eqno (2)
+          $$
+Respectively for the function $Sn$ we have that
+   $$
+  Sn(z|a_1,\dots,a_n)=
+\int_0^\infty\left(A^{(Sn)}(t)-A^{(Sn)}_-(t)-
+A^{(Sn)}_0e^{-t}\right){dt\over t}
+    $$
+            with
+            $$
+    A^{(Sn)}(z,t)={e^{-zt}-(-1)^ne^{\left({\sum a_i-z}\right)t}
+    \over \prod_i (1-e^{-a_it})}\,.
+          \eqno (3)
+         $$
+Dividing the numerator and denominator of this fraction on 
+$\prod_i e^{a_it\over 2}$ we come to 
+                 $$
+    A_n^{(Sn)}(z,t)=
+             \cases
+                   {
+   {{\rm sh\,}\left({\sum_i a_i\over 2}-z\right)t
+    \over \prod_i {\rm sh\,}{a_it\over 2}}\,\, \hbox {for even $n$}\cr
+                              \cr
+    {{\rm ch\,}\left({\sum_i a_i\over 2}-z\right)t
+    \over \prod_i {\rm sh\,}{a_it\over 2}}\,\, \hbox {for odd $n$}\cr
+                   }
+          \eqno (4)
+                 $$
+Study this function.
+  First of all this is an odd function, and in particular
+   $A^{(Sn)}_0=0$.
+Thus one can see that
+                  $$  Sn(z|a_1,\dots,a_n)=
+\int_0^\infty\left(A^{(Sn)}(t)-A^{(Sn)}_-(t)-
+A^{(Sn)}_0e^{-t}\right){dt\over t}=
+{1\over 2}\int_{-\infty}^{\infty}A^{(Sn)}(t){dt\over t+i0}
+            \eqno (5)
+                  $$
+(where function $A^{(Sn)}(t)$ is defined for negative $t$ by its odness:
+ $A^{(Sn)}(t)=A^{(Sn)}(-t)$.
+
+   The function $Sn$ is not physical but it does not possesses zero term.
+
+
+  One can see that
+       $$
+   Sn_{_{2k}}(z|a_1,a_2,\dots, a_{2k})=
+          {1\over 2}\int_{-\infty}^\infty
+             {
+    {\rm sh\,}\left({\sum_i a_i\over 2}-z\right)t
+          \over\prod_i {\rm sh\,}{a_it\over 2}}
+         {dt\over t+i0} 
+         $$
+         $$
+        = {1\over 2}\int_{-\infty}^\infty
+             {
+    {\rm sh\,}\left({{a_1\over 2}+\sum_{i>1} a_i\over 2}-z\right)t
+          \over {\rm sh\,}{a_1t\over 2}\prod_{i>1} 
+        {\rm sh\,}{a_it\over 2}}
+         {dt\over t+i0}=
+       $$
+       $$
+           {1\over 2}\int_{-\infty}^\infty
+             {{\rm sh\,}{a_1t\over 2}
+       {\rm ch\,}\left(\sum_{i>1} {a_i\over 2}-z\right)t
+           +  {\rm ch\,}{a_1t\over 2}
+    {\rm sh\,}\left({\sum_{i>1} a_i\over 2}-z\right)t
+          \over {\rm sh\,}{a_1t\over 2}\prod_{i>1}
+               {\rm sh\,}{a_it\over 2}
+                    }
+         {dt\over t+i0}=
+       $$
+      $$
+   Sn_{_{2k-1}}()z|a_2,\dots,a_{2k})+
+   {1\over 2}{\rm coth\,\,}{a_1 t\over 2}
+\int_{-\infty}^\infty
+             {
+    {\rm sh\,}\left({\sum_{i=2}^{2k} a_i\over 2}-z\right)t
+          \over \prod_{i=2}^{2k}
+               {\rm sh\,}{a_it\over 2}
+                    }
+         {dt\over t+i0}
+      \eqno (6)
+      $$
+Analogous for $n=2k-1$. Sure the last integral possesses
+non-pleasant term at the power $t=0$
+
+
+Note that one can find another representation for the function $Sn$.
+To see it return to general formulae:
+   Let $A(t)$ be an arbitrary rapidly decreasing at infinity
+function which is smooth at all the points excluding origin,
+and has finite Laurent series at origin.
+   The function $\zeta_A(s)={1\over \G(s)}\int_0^\infty t^{s-1}A(t)dt$
+is well-defined analytical function for  $\Re s>C$, and
+one can consider analytical continuation of this function for all $s$:
+for enough big $N$
+              $$
+\zeta^{\hbox {reg.}}_A(s)=
+{1\over \G(s)}\int_0^\infty t^{s-1}A(t)dt=
+{1\over \G(s)}\int_0^1 t^{s-1}A(t)dt+
+{1\over \G(s)}\int_1^\infty t^{s-1}A(t)dt=
+              $$ 
+           $$
+   \sum_{k\leq N}{A_k\over \G(s)(k+s)}+
+{1\over \G(s)}\int_0^1 t^{s-1}\left(A(t)dt-
+ \sum_{k\leq N}A_kt^k\right)dt+
+{1\over \G(s)}\int_1^\infty t^{s-1}A(t)dt\,,
+           $$
+where $A(t)=\sum A_kt^k$ in a vicinity of origin.
+For example    $\zeta^{\hbox {reg.}}_A(0)=$
+            $$
+        \left[
+   \sum_{k\leq 0}{A_k\over \G(s)(k+s)}+
+{1\over \G(s)}\int_0^1 t^{s-1}\left(A(t)dt-
+ \sum_{k\leq 0}A_kt^k\right)dt+
+{1\over \G(s)}\int_1^\infty t^{s-1}A(t)dt`
+        \right]_{s=0}=A_0
+           $$
+since $\G(s)\sim {1\over s}$ in a vicinity of origin and
+
+               $$
+          \G_A =\left({d\over ds}\zeta^{\hbox {reg.}}_A(s)\right)
+             \big\vert_{s=0}=
+               $$
+               $$ 
+    \sum_{k<0}{A_k\over k}+
+  {d\over ds}\left({1\over \G(s+1)}\right)_{s=0}A_0+
+\int_0^1 \left(A(t)dt-
+ \sum_{k\leq 0}A_kt^k\right){dt\over dt}+
+        \int_1^\infty A(t){dt\over t}=
+            $$
+                  $$ 
+    \int_1^\infty\left(-\sum_{k< 0}A_kt^k-e^{-t}A_0\right){dt\over dt}
+   +
+\int_0^1 \left(A(t)dt-
+ \sum_{k<0}A_kt^k-e^{-t}A_0\right){dt\over dt}+
+        \int_1^\infty A(t){dt\over t}+
+            $$
+           $$
+   \left(-\G'(1)+\int_0^1 {e^{-t}-1\over t}dt)+
+     \int_1^\infty {e^{-t}\over t}dt\right)A_0=
+            \eqno (***)
+           $$
+                   $$ 
+    \int_0^\infty
+  \left(A(t)-\sum_{k< 0}A_kt^k-e^{-t}A_0\right){dt\over t}\,.
+        \eqno (7)
+            $$
+(The term (***) vanishes. This can be checked straightforwardly or 
+to prove it in the following way: Coefficient in front of $A_0$ does not depend
+on a function $A_0$. Take $A(t)=e^{-t}$, 
+ then it is evidently vanishes  \finish)
+           
+ {\sl Revenons \'a nos moutons}. We return to formula (2). It is
+evident from the formulae above that odd part of function $A(t)$ (2)
+is a function $A^{(Sn)}$. Using this fact calculate
+           $$
+    \int_{-\infty}^\infty A(t){dt\over t-i0}
+        \eqno (8)
+           $$       
+{\bf Fact}  Here we use that $A(t)$ is meromorphic function
+in a vicinity of origin. Exact calculations show that
+           $$
+    \int_{-\infty}^\infty A(t){dt\over t-i0}=
+    \int_{|t|\geq \vare} \left(A^{\rm even}(t)+A^{\rm odd}(t)\right)
+       {dt\over t-i0}=2\int_\vare^\infty A^{\rm odd}(t){dt\over t}+ 
+          +\int_{|z|=\vare, {\rm Im\,}z <0}A^{\rm even}(z){dz\over z}=
+           $$
+\bye

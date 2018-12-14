@@ -1,0 +1,89 @@
+\magnification=1200
+
+
+\def\a{\alpha}
+\def\x{{\bf x}}
+\def\y{{\bf y}}
+\def\R {{\bf R}}
+ \def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline  {\bf Order of operator}
+
+
+
+    Functions on supernmanifold $M=N\times\Pi\R$
+can be identified with pair of functions ---function on $N$ and function
+on $\Pi N$:
+                         $$
+   C(N\times \Pi \R)=C(N)\oplus C(\Pi N)\,,
+\quad \Phi(x,\tau)=F(x)+\tau G(x)\mapsto
+         \pmatrix{F(x)\cr G(x)\cr}
+                         $$   
+   Let $\X$ be a vector field on $N$.
+  Consider on supermanifold $M=N+\Pi\R$ 
+ the operator
+               $$
+\Delta\colon \pmatrix{F(x)\cr G(x)\cr}\mapsto
+                \p_\X\pmatrix{F(x)\cr G(x)\cr}=
+                \pmatrix{\p_\X F(x)\cr \p_\X G(x)\cr}=
+            (X^a\p_aF+\tau X^a\p_a G)
+               $$
+ The following statements hold:
+
+1.  The operator $\Delta_\X$ is first order operator
+if $\X$ is the even vector field and it is the second order operator
+if $\X$ is odd vector field. On the space $M$
+                    $$
+    \Delta_\X=\cases{
+            \p_\X=X^a\p_a\,\, \hbox{if $\X$ is even vector field}\cr
+              2\tau X^a\p_a\p_\tau+X^a\p_a
+           \hbox{if $\X$ is an odd  vector field}
+                    }
+                    $$
+Relation with our work: if $\X=\eta$ is odd vector field then
+$\Delta_\X$ is our second order operator, but for
+$\eta^2$ it becomes first order operator.
+  I am so lucky to udnerstand it!
+(Matthew I was today in the middle of depseration trying 
+to solve this paradox.)
+
+\bye

@@ -1,0 +1,278 @@
+
+      \magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\FF {{\bf F}}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\b {{\bf b}}
+\def\ss  {{\bf s }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}} 
+\def\wv {{\buildrel \rightarrow\over \omega}}
+
+     \centerline {\bf Integration of vector-valued forms}
+
+
+\medskip
+
+
+\centerline {${\cal x} 1$ Archimedes principle and Gauss-
+               Ostrogradsky law}
+
+
+In mathematical physics we often have to use Stokes formula for
+integrals which take vector values. Very good example is 
+the deriving of Archimedes principle.
+   If $p=p(\r)$ is a presure of liquid then the force 
+ acting on the body is equal to
+       $$
+ {\FF}=   \oint_{\p D} p(\r)d \ss=\int_D \nabla p(\r)dV\,.
+        \eqno (1a)
+       $$ 
+In the case if $p(\r)=consta$ then this integral is equal to zero.
+In the case if $p(\r)=mgz$, then we come to
+       $$
+ {\FF}= \oint_{\p D} p(\r)d \ss=\int_D \nabla p(\r)dV
+ =mgV=\hbox{weight of the liquid that the body displaces}\,.
+        \eqno (1a)
+       $$ 
+This is standard Archimedes principle.
+
+
+
+There is a simple truck to derive the formula (1). It is the following: 
+take the scalar product of an arbitrary {\it constant} vector $\ac$   
+with  integrand in (1) in surface integral in (1a).
+  Then we come to the flux of vector field
+$p\cdot\ac$ through surface $\p D$: 
+       $$
+ {\FF}\cdot\ac= \oint_{\p D} \left (p(\r)\cdot \ac\right)d \ss\,.
+        \eqno (2a)
+       $$ 
+Apply Gauss-Ostogradsky law to this flux we come to 
+       $$
+ {\FF}\cdot\ac= \oint_{\p D} \left (p(\r)\cdot \ac\right)d \ss=
+     \int {\rm div\,}\left(p(\r)\ac\right)=
+    \ac\cdot\int_D \nabla p(\r)dV\,.
+        \eqno (1a)
+               $$
+This relation implies (1a) since it
+ is true for an arbitrary constant vector 
+$\ac$.
+
+Two words about essence of Gauss-Ostogradsky law for students
+For student who know differential forms. 
+
+Let $\K$ is an arbitrary vector field and respectively $M$ be an 
+arbitrary surface in $\E^3$.  Then the flux of vector field $\K$
+throug the surface $M$ is equal to integral of $2$-form
+$\omega_\K=\Omega{\cal c}\K$ over surface $M$:
+             $$
+   \hbox {F`lux of $K$ via $M$}=\int_M \K d\ss=\int\Omega{\cal c}\K\,,
+          \eqno (3a)
+             $$ 
+where $\Omega$ is a volume form.
+Due to Stokes Theorem ($\int_{\p D} \w=\int_D d\w$ we have that
+in the case if surface $M$ is a boundary, $M=\p D$ then
+the integral (3a) is equal to the integral of $3$-form
+$\Omega{\cal c}\K$ over body $D$:
+         $$
+\hbox {F`lux of $K$ via $\p D$}=
+\int_{\p D} \K d\ss=\int_{\p D}\Omega{\cal c}\K=
+    \int_D d\left(\Omega{\cal c}\K\right)\,.
+         \eqno (3b)
+           $$
+Now the Cartan formula gives that
+          $$
+d\left(\Omega{\cal c}\K\right)=\L_\K\Omega=
+  \left({\rm div}_\Omega\,\K\right)\Omega\,
+        $$
+and
+        $$
+\int_{\p D} \K d\ss=\int_{\p D}\Omega{\cal c}\K=
+    \int_D d\left(\Omega{\cal c}\K\right)=\int
+ \left({\rm div}_\Omega\,\K\right)\Omega\,
+         \eqno (3b)
+           $$
+In coordinates: if volume form $\Omega=\rho dx\wedge dy\wedge dz$ then
+           $$
+{\rm div}_\Omega\,\K={d\left(\Omega{\cal c}\K\right)\over \Omega}=
+          {
+  {d\left(\rho dx\wedge dy\wedge dz {\cal c}
+   \left(K_x\p_x+K_y\p_y+K_z\p_z\right)\right)}
+      \over \rho dx\wedge dy\wedge dz}=
+           $$
+        $$
+                {
+ d\left(\rho\left(K_x dy\wedge dz-K_ydx\wedge dz+
+ K_zdx\wedge dy\right)\right)
+    \over \rho dx\wedge dy\wedge dz
+        }=
+       {1\over\rho}
+           \left
+            (
+  {\p (\rho K_x)\over \p x}+
+  {\p (\rho K_y)\over \p y}+
+  {\p (\rho K_z)\over \p z}
+            \right)=
+       $$
+        $$
+  {\p  K_x\over \p x}+
+  {\p  K_y\over \p y}+
+  {\p \rho K_z)\over \p z}+
+      K_x{\p\log \rho\p x}+
+      K_y{\p\log \rho\p y}+
+      K_z{\p\log \rho\p z}\,.
+        $$
+
+Now return to the integral (1). The derivation above is alright but it looks
+little bit artificial.  We may avoid it introducind 
+{\it vector-valued forms}.
+
+
+\centerline {${\cal x} 2$ Oriented area---vector valued form }
+
+ Let $\r=\r(\xi,\eta)$ be a local parameterisation of surface $M$ in $\E^3$.
+
+Then surface element of $M$ is equal to  
+                 $$
+         d\s=|\r_\xi\times\r_\eta|d\xi\wedge d\eta=
+       \sqrt{\r_\xi^2\r_\eta^2-\left(\r_\xi\cdot\r_\eta\right)^2}
+                  d\xi\wedge d\eta=
+                 $$
+                 $$
+              \sqrt{
+          \left(x_\xi y_\eta-x_\eta y_\xi\right)^2+
+          \left(x_\xi z_\eta-x_\eta z_\xi\right)^2+
+          \left(z_\xi y_\eta-z_\eta y_\xi\right)^2
+                }d\xi\wedge d\eta
+               $$
+A normal unit vector to the surface is equal to 
+ $\n={\r_\xi\times\r_\eta\over |\r_\xi\times\r_\eta|}$ and vector 
+surface element is equal to 
+             $$
+   d\ss=\n d\s=\left(\r_\xi\times \r_\eta\right) d\xi\wedge d\eta
+             $$ 
+We see that vector surface element is expressed trough vector valued $2$-form:
+        $$
+ \wv\colon\quad     \wv(\r_\xi,\r_\eta)=\r_\eta\times \r_\eta\,.
+         $$
+In Cartesian coordinates
+        $$
+      {\buildrel \rightarrow\over \omega}=
+       dx\wedge dy\p_z-dx\wedge dz\p_y+dy\wedge dz\p_x 
+        $$
+In arbitrary coordinates $u^i=(u^1,u^2,u^3)$
+          $$
+\wv=\sqrt{\det g}\epsilon_{ikm}du^i\wedge du^k g^{mn}\p_m\,,
+           $$
+where $g_{ik}$ is Riemannina metric in coordinates $u^i$.
+
+We have that
+          $$
+       \int_M d\ss=\int_M \n d\s=\int_M 
+      {\buildrel \rightarrow\over \omega}\,.
+          $$
+In these notations we have immediately that 
+
+
+01.10.2013
+
+Yesterday Grisha Vekstein showed me the surface integral:
+           $$
+      \int_M (ds\times \nabla\varphi)
+           \eqno (1)
+                 $$
+ He realises well that this integral is equal to zero. How to show it
+properly?    
+
+\bigskip
+
+First of all naive approach.
+Use the formulae of ''naive'' vector calculus:
+
+  Take an arbitrary constant vector $\ac$. Then we have
+                 $$
+         \ac\cdot \int_M (d\ss \times \nabla\varphi)=
+     \int_M d\ss \cdot (\nabla\varphi\times \ac)
+              \eqno (1a)
+             $$
+If $M=\p D$ then due to Ostogradsky-Gauss Theorem we have that
+     $$
+         \ac\cdot \int_M (d\ss \times \nabla\varphi)=
+     \int_M d\ss \cdot (\nabla\varphi\times \ac)=
+         \int_D {\rm div\,}\left(\nabla\varphi\times \ac\right)=0\,,
+                         $$
+
+since $\ac$ is constant vector and
+                  $$
+{\rm div\,}\left(\nabla\varphi\times \ac\right)=
+ {\rm rot\,}\nabla\varphi\times \ac=0
+                  $$
+Hence the integral (1) is equal to zero too if $M=\p D$.
+
+Alright, the asnwer is equal to zero. Ifg this is the case in
+arbitrary coordinates, then it has to be a nice formula,
+ On the other 
+formulae for gradient of function, vector product, e.t.c. 
+in general heavily depend on additional structures such that
+Riemannian metric, volume form, e.t.c. 
+
+E.g. if $g$ is Riemannian metric in a given coordinates, then
+for gradient of a function
+               $
+\nabla\varphi=g^{ik}{\p \varphi \over \p x^k}{\p \over \p x^i},\quad
+              $
+and for vector product of two vectors $\ac,\b$
+$(\ac\times \b)_i=\sqrt{\det g}\epsilon_{ikm}a^kb^m$,
+and respectively
+              $$
+(\ac\times \b)^i=\sqrt{\det g}g^{ij}\epsilon_{jkm}a^kb^m,
+              $$
+Now what object have to be considered instead constant vector
+$\ac$, which obviously is meaningless in covariant approach.
+Consider an arbitary covector $\omega_i$ (one-form 
+${\bf\omega}=\omega_idx^i$)\footnote
+{$^*$}{Why covector, not vector? Later we will see that
+closed covector palys the role of constant vector.}. 
+
+   We consider now the value of $1$-form $\omega$  on the integrand
+ $d\ss\times \nabla\phi$ instead (1a) the integral
+                 $$
+       \int_M (d\ss \times \nabla\varphi)=
+     \int_M d\ss \cdot (\nabla\varphi\times \ac)
+              \eqno (1a)
+             $$
+
+
+
+The fact that 
+the integral is equal to zero,
+means that the integral in fact {\it does not depend } on metric.
+
+One can see that the integral (1) can be viewed in the following way:
+
+\bye

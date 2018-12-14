@@ -1,0 +1,287 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def \F {{\cal F}}
+\def\s {\sigma}
+\def\o {\omega}
+\def \ggb {\Gamma_{_{\bullet}}}
+\def \gb {\Gamma_{_{\bullet}}}
+
+
+\centerline{    {\bf Some facts in projective Geometry}}
+
+{\it We try to expose here some common facts of projective geometry about geodesics and
+projective class of connections.}
+
+
+\centerline {\sl { Lecture 2}}
+
+\m
+{\it
+
+Differential equations for parameterised geodesics define symmetric connection. Unparameterised geodesics define
+projective class of connections. We come using  to the notion of Thomas bundle when projective class of connections
+on the manifold define the connection on speciall one-dimensional bundle over $M$.
+
+Everything sure is well-known, but on the other hand well-forgotten too.
+}
+
+
+
+
+
+$$ $$
+
+\centerline {\bf ${\cal x}1$.  \bf First steps to Thomas bundle.}
+
+
+  A symmetric connection on manifold $M$ define differential equations of parameterised geodesics:
+                 $$
+                {d^2 x^i\over dt^2}+\Gamma^i_{km}{d x^k\over dt}{d x^m\over dt}=0\,. 
+                \eqno (1.1)
+                 $$
+Let $[\nabla]$  be a projective connection, and $\Gamma^i_{km}$ be Christoffel symbols
+of an arbitrary connection in this class.   We have
+                 $$
+                  \Gamma^i_{km}=\Pi^i_{km}-{1\over n+1}\left(\delta^i_k\gamma_m+\delta^i_m\gamma_k\right)\,,
+                  $$
+                  where
+                  $$
+         \Pi^i_{km}=\Gamma^i_{km}+{1\over n+1}\left(\delta^i_k\gamma_m+\delta^i_m\gamma_k\right),\,\,
+         {\rm with} \,\,\gamma_k=-\Gamma^i_{ik}
+                  \eqno (1.2)
+                 $$ 
+where $\Pi^i_{km}$ are Christoffel symbols for projective class of connections $[\nabla]$.
+
+
+ We come to differential equations:
+                  $$
+         {d^2 x^i\over dt^2}+\Gamma^i_{km}{d x^k\over dt}{d x^m\over dt}=
+         {d^2 x^i\over dt^2}+\Pi^i_{km}{d x^k\over dt}{d x^m\over dt}+2{d x^i\over dt}\gamma_k(x) {d x^k\over dt}\,.
+                \eqno (1.3)         
+                  $$
+Changing $\Gamma$ in projective class changes the {\it parameterisation} of geodesics. As it was explained
+in the lecture 1 this equation defines {\it non-parameterised} geodesics. 
+The equation (1.3) assigns to non-parameterised geodesics the family of differential equations
+depending on covector field $\o_k(x)$:
+changing $\gamma_k\to \gamma_k+\o_k$ does not change non-parameterised geodesics.
+ We try to write one equation instead this family of equation.
+
+
+Consider first the simple case.  
+
+ Let $\nabla$ be a connection such that its Christoffel symbols vanish in coordinates $x$.
+ 
+ Let $y=y(x)$ be new coordinates such that Christoffel symbols vanish up to a term $\delta t+t \delta$,
+ i.e. Christoffel symbols of projective connection  $[\nabla]$ vanish in coordinates $y$:
+            $$
+    ^{^{(y)}}\!\Gamma^a_{bc}={\p y^a\over \p x^r}{\p^2 x^r\over \p y^b \p y^c}=\delta^a_b t_c+\delta^a_c t_b        
+            $$
+            We know from the Theorem in the previous lecture that this means that
+           $$
+   ^{^{(y)}}\!\Gamma^a_{bc}={\p y^a\over \p x^r}{\p^2 x^r\over \p y^b \p y^c}=\delta^a_b 
+   {p_c\over 1+p_k y^k}+\delta^a_c {p_b\over 1+p_k y^k}
+   \eqno (1.4)
+           $$
+where constants $p_b$ are parameters of special projective transformation. 
+
+ Sure geodesic is straight lines. Look again on differential equations for geodesic in coordinates $x$
+ and $y$:
+                         $$
+               {d^2 x^i\over dt^2}=0,\,,\, {d^2 y^a\over dt^2}+
+               ^{^{(y)}}\!\Gamma^a_{bc}{d y^b\over dt}{d y^c\over dt}=
+               {d^2 y^a\over dt^2}+2{dy^a\over dt}p_c\Delta {dy^c\over dt}\,,
+               \eqno (1.5)
+                         $$
+where we denote by $\Delta={1\over 1-p_ky^k}=1+p_k x^k$
+\m
+
+Now very important step: Add a  new coordinate $x^0$  to the set of coordinates $x^i$ and respectively $y^0$ 
+to the set of coordinates $y^a$ and consider instead equation above the following equations:
+                     $$
+                   \cases
+                     {
+                     {d^2 x^i\over dt^2}+2{dx^i\over dt}{dx^0\over dt}=0\cr
+                     {d^2 x^0\over dt^2}+ {dx^0\over dt}{dx^0\over dt}=0  \cr
+                     } \qquad \qquad
+                     \cases
+                     {
+                     {d^2 y^a\over dt^2}+2{dy^a\over dt}{dy^0\over dt}=0\cr
+                     {d^2 y^0\over dt^2}+ {dy^0\over dt}{dy^0\over dt}=0  \cr
+                     }\,.
+                     \eqno (1.5a)
+                     $$
+We want these equations to be equivalent to previous ones.
+  Thus we need to put
+                  $$
+                  {dy^0\over dt}=p_c \Delta {d y^c\over dt} ={p_c \over 1-p_ky^k}{d y^c\over dt}\,.
+                  \eqno (1.6)
+                  $$
+  In this case we have that
+                   $$
+ {d^2 y^0\over dt^2}=p_c {d\Delta\over dt} {d y^c\over dt}+p_c \Delta {d^2 y^c\over dt^2}=
+           \left( p_c\Delta {d y^c\over dt}\right)^2+p_c\Delta \left(-2{dy^c\over dt}{dy^0\over dt}\right)=-
+           \left({dy^0\over dt}\right)^2\,.
+           \eqno (1.7)                 
+                   $$
+  Note that  in (1.5 a) ${dx^0\over dt}=0$ and using (1.6) we come to 
+                      $$
+             0  ={dx^0\over dt}=  \left({dy^0\over dt}-p_c {d\Delta\over dt} {d y^c\over dt}\right)=
+                    {d\over dt}\left(y^0-\log \Delta\right)     
+                      $$
+What is it geometrical meaning of $\Delta$? For special projective transformation
+                            $$
+           y^a={x^a\over \Delta}={x^a\over 1+p_kx^k}\,, x^k=y^k\Delta
+                            $$                     
+            one can easy to see that  $\Delta$ is an exponent of jacobian 
+                       $$
+      J=\det \left({\p y\over \p x}\right)=\det\left( {\delta ^i_k\over \Delta}-{p_k x^i\over \Delta^2} \right)=
+                \Delta^{-n}\det \det\left( {\delta ^i_k}-{p_k x^i\over \Delta} \right)=\Delta^{-n-1} 
+                       $$                
+ Thus                      
+               $$
+  0  ={dx^0\over dt}=
+                    {d\over dt}\left(y^0-\log \Delta\right)=
+                    {d\over dt}\left(y^0+{1\over n+1}\log \det 
+                    \left({\p y\over \p x}\right)\right)              
+               $$
+ We come to 
+ 
+ \m
+ 
+ {\bf Observation}  Let $x,y$ be two local coordinate systems related with the transformation
+  projective transformation. Add additional coordinate $x^0$ to coordinates $x^i$ and respectively
+     coordinate $y^0$ to coordinates $y^i$ such that 
+                     $$
+          y^0=x^0+{k\over n+1}\log \det \left({\p y \over \p x}\right)           
+                     $$
+ Then the system of differential equations                     
+          $$
+          \cases
+                     {
+                     {d^2 x^i\over dt^2}+2{dx^i\over dt}{dx^0\over dt}=0\cr
+                     {d^2 x^0\over dt^2}+ {dx^0\over dt}{dx^0\over dt}=0  \cr
+                     } 
+          $$           
+  remains the same in coordinates $y$ and solutions of these equations are straight lines.
+  
+  These differential equations describe non-parameterised straight lines in arbitrary projective coordinates.              
+               
+Let $M$ be a projective manifold, i.e. smooth manifold equipped with an atlas such that
+all transition maps are projective transformations.
+
+One can consider on the projective manifold the projective class of connections $[\nabla]=0$. It is well-defined due
+the fact that projective transformations do not change the class. (See the previous section.)
+  Let $\{x^i\}$ be an arbitrary local coordinates belonging to the projective atlas.
+  Consider the bundle $\hat M$ with coordinate transformation for coordinate $x^0$
+  defined by the equation
+  Consider differential equations
+
+
+          $$
+         \Gamma^i_{km}\to  \Gamma^i_{km}+\delta^i_k\o_m+\delta^i_m\o_k
+          $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\centerline {\bf ${\cal x}2$.  \bf Thomas bundle.}
+
+
+    Let $M$ be a manifold equipped with projective class of connections, i.e.
+    a class $[\nabla]$ of connections is defined on it.
+     (We say that two connections belong to the same class if the condition (1.1) is obeyed.)
+    E.g. if $M$ is $\R^n$ then consider connection which Christoffel symbols vanish in cartesian coordinates
+    The projective class of connections have Christoffel symbols
+      $\G^i_{km}=\delta^i_k \o_m+\delta^i_m \o_k$ where $\o_k$ is an arbitrary covector.
+      Geodesics of these connections are straight lines (in Cartesian coordinates.)
+
+
+
+    Add a new coordinate $t$, i.e. consider expanded manifold $\hat M$ with coordinates
+    $x^\mu=(t,x^i), t=x^0.$
+     We come to so called  so called Thomas one-dimensional bundle $\hat M$.
+
+     Under changing of coordinates
+       $x^{i'}=x^{i'}(x^i)$ the coordinate $x^0$ changes in the following way:
+                   $$
+                x^{0'}=\log \left(\det\left({\p x^i\over \p x^{i'} }\right)\right)+x^0
+                  $$
+    {\bf Theorem.} Let $[\nabla]$ be a projective class of connections on $M$. One can assign to this class the connection
+$\hat \nabla$ in $\hat M$ with the following Christoffel symbols:
+  $\Pi^\mu_{\nu\rho}$  ($\mu,\nu,\rho=0,1,2,\dots,n$) are such that
+                              $$
+                       \Pi^i_{km}=\Gamma^i_{km}+{1\over n+1}\left(\delta^i_k\gamma_m+\delta^i_k\gamma_m \right)
+                              $$
+for $i=1,2,3,\dots,n$ where $\gamma_i=-\Gamma^k_{ik}$,
+               $$
+            \Gamma^i_{k0}=\Gamma^i_{0k}=-{\delta^i_k\over n+1}
+               $$
+and so on.
+
+To understand this so called so on, let us consider in detail the special case:
+
+
+{\bf Remark} Please pay attention that in the formulae above the right hand side is defined
+up to
+
+
+
+
+
+\bye
+
+
+$$ $$
+
+
+

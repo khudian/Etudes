@@ -1,0 +1,245 @@
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline  {\bf Killing vectors of Lobachevsky plane 
+          and Geodesics,}
+
+
+Killing vector field of Rimeannina manifold $(M,G)$ is an
+infinitesimal isometry of the Rimeannian metric $G$:
+ under infinitesimal transform $x\to x+\vare\K, x^i\to x^i+\vare K^I(x)$ 
+($\vare^2=0$)
+metric does not change:
+        $$
+  g_{ik}(x)dx^idx^k=
+g_{ik}(x^r+\vare K^i)(dx^i+\p_m K^idx^m)(dx^k+\p_n K^kdx^n)\,.
+         \eqno (1)
+        $$
+Expanding this formula by $\vare$ and using the fact that $\vare^2=0$ 
+we come to
+                $$
+   K^i\p_i g_{km}+\p_kK^r g_{rm}+\p_mK^r g_{rk}=0\,,
+\eqno (1a)
+                $$
+(i.e. Lie derivative $\L_\K G=0$.)
+
+\m
+
+Examples: Killings of plane, sphere, cylindre, Lobachevsky plane.....
+
+\m
+
+
+
+{\bf Theorem}
+Let $V$ be a vector space of all Killing vector fields
+of Riemannian manifold $M$. Then the dimension of $V$ is less or equal
+than $n(n+1\over 2)$. 
+
+\m
+
+It means that for surfaces the number of independent Killing vector fields
+is less or equal to $3$.
+
+ One can prove that it is only for plane, sphere and Lobachevsky plane that
+number of independent Killing vector fiels is equal to $3$.
+
+
+We calculate here Killing vector fields for Lobachevsky plane and use them
+for finding geodesics. 
+
+\m
+
+
+{\bf Theorem} Let $\K$ be Killing tor field on Riemannian manifold
+$(M,G)$ , and 
+$L={g_{kp}\dot x^k\dot x^p\over 2}$ Lagragian of 
+`free' particle on $M$.  We know that geodesics are solutions
+of its equations of motions. 
+
+
+The magnitude
+              $$
+I=I_\K=K^i(x){\p L(x,\dot x)\over \p \dot x^i}
+             $$
+is an integral of motion, i.e. it is preserved along geodesics.
+
+\m
+
+The proof of the Theorem is obvious. The condition that $\K$ is 
+Killing vector field means
+that 
+             $$
+   L(x^i+\vare K^i,\dot x^i+\vare \dot K^i)\,,
+     \eqno (2)
+             $$
+i.e.
+           $$
+ K^i(x){\p L\over \p x^i}+{dK^i\over dt}{\p L\over \p \dot x^i}=0\,.
+           \eqno (2a)
+          $$
+   Hence 
+               $$
+{d\over dt}I_\K={d\over dt}\left(
+ K^i(x){\p L(x,\dot x)\over \p \dot x^i}
+\right)={dK^i\over dt}{\p L(x,\dot x)\over \p \dot x^i}+
+    K^i{d\over dt}\left({\p L(x,\dot x)\over \p \dot x^i}\right)=
+            $$
+               $$
+                 \underbrace
+                       {
+K^i(x){\p L\over \p x^i}+{dK^i\over dt}{\p L\over \p \dot x^i}
+                   }_
+                  {\hbox{condition that $\K$ is Killing}}
+                        +
+  K^i\underbrace{\left({\p L(x,\dot x)\over \p x^i}-
+                     {\p L(x,\dot x)\over \p \dot x^i}\right)}_
+           {\hbox {equations of motion}}=0\,.
+              $$
+
+Use this Theorem to find geodesics.
+
+First find Killing vector fields, i.e. infinitesimal isometries.
+
+Since the dimension is equal $2$, the dimension of
+space of Killing vector fields  is $\leq 3$. 
+We will find three independent 
+Killing vector fields.
+
+There are two evident Killing vectors:
+Metric $G={dx^2+dy^2\over y^2}$ is evidently invariant with respect
+to translations $x\to x+a$ and homothety: 
+$\cases {x\to \lambda x\cr y\mapsto \l y}$:
+ ${d(\l x)^2+d(\l y)^2\over (\l y)^2}={d x^2+d y^2\over  y^2}$.
+
+Infinitesimal translation is $x'=x+\vare,y'=y$, the vector field
+$D_1={\p\over \p x}$. Infinitesimal homothety is 
+ $x'=x+\vare x, y'=y+\vare y$, the vector field 
+$D_2=x{\p\over \p x}+y{\p\over \p y}$. 
+
+
+Now most interesting:
+find the third Killing vector field.
+Use the fact that inversion 
+$\O\colon (x,y)\mapsto \left({x\over x^2+y^2},{y\over x^2+y^2}\right)$ preserves
+the metric. Consider the infinitesimal transformation
+  $L_\vare=\O\circ T_\vare\circ \O$ ($L_0={\bf id}$):
+         $$
+         L_\vare\colon\quad
+\pmatrix{x\cr y\cr}\to
+\pmatrix {{x\over x^2+y^2}\cr {y\over x^2+y^2}}\to
+\pmatrix {{x\over x^2+y^2}+\vare\cr {y\over x^2+y^2}}\mapsto
+\pmatrix {{{x\over x^2+y^2}+\vare\over
+  \left({x\over x^2+y^2}+\vare\right)^2+
+     \left({y\over x^2+y^2}\right)^2 }\cr {{y\over x^2+y^2}\over
+  \left({x\over x^2+y^2}+\vare\right)^2+
+     \left({y\over x^2+y^2}\right)^2 } }\,.
+         $$
+We have
+     $$
+x\to  {{x\over x^2+y^2}+\vare\over
+  \left({x\over x^2+y^2}+\vare\right)^2+
+     \left({y\over x^2+y^2}\right)^2 }=
+      {x+\vare(x^2+y^2)\over 
+      1+2\vare x}=x+\vare (y^2-x^2)\,,\, (\vare^2=0)\,
+     $$
+and
+      $$
+y\to {{y\over x^2+y^2}\over
+  \left({x\over x^2+y^2}+\vare\right)^2+
+     \left({y\over x^2+y^2}\right)^2 }= 
+      {y\over 
+      1+2\vare x}=y-2\vare xy\,,\, (\vare^2=0)\,
+      $$
+The corresponding vector field is $D_3=(y^2-x^2)\p_x-2xy\p_y$.
+
+(these fiellds form complex representation of $so(3)$.)
+
+  Every Killing vector field $K^i\p_i$ induces integral of motion
+$I_k=K^i{\p L\over\p \dot x^i}$. Hence we have:
+      $$
+\matrix
+   {
+D_1=\p_x\mapsto I_1={\p L\over\p \dot x}={\dot x\over y^2}\cr
+D_2=x\p_x+y\p_y\mapsto I_2=x{\p L\over\p \dot x}+y{\p L\over\p \dot y}=
+ {x\dot x+y\dot y\over y^2}\cr
+D_3=(y^2-x^2)\p_x-2xy\p_y\mapsto I_3=
+(y^2-x^2){\p L\over\p \dot x}-2xy{\p L\over \p \dot y}=
+     {(y^2-x^2)\dot x-2xy\dot y\over y^2}\cr
+}
+      $$
+Geodesics is trajectory of free particle. It is well-defined by 
+three conditions $I_1=C_1, I_2=C_2, I_3=C_3$. We have linear equations
+ on $\dot x,\dot y$           $$
+                          \cases
+                             {
+                    \dot x =       y^2 C_1\cr
+                   x \dot x+y \dot y=y^2 C_2\cr
+                 (y^2-x^2)\dot x-2xy \dot y=y^2 C_3\cr
+                              }
+                               $$
+Compatibility of three linear equations on
+two variables $\dot x,\dot y$ implies that
+              $$
+\det\pmatrix {
+         1 &0 & y^2 C_1\cr
+         x &y & y^2 C_2\cr
+        (y^2-x^2) &-2xy & y^2 C_3  
+            }=0
+              $$
+
+Calculating the determinant we come to
+          $$
+    y^3(C_3-2xC_2+C_1(x^2+y^2))=0\,.
+         $$
+The curves which are given by these equations are non-prameterised geodesics
+($y\not=0$). We see that these curves are half-circles with centre 
+on the absolute ($y=0$), or vertical rays (if $C_1=0$).
+   Parameter of geodesic is proportional 
+to the natural (length) since connection is Levi-Civita connection.
+
+\bye
+ 

@@ -1,0 +1,100 @@
+\def\vare {\varepsilon}
+\def\B {{\mathcal B}}
+\def\C {{\mathcal C}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\e{{\bf e}}
+\def\w{{\omega}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\Ber {{\rm Ber\,}}
+\def\Tr {{\rm Tr\,}}
+\def\Pf {{\rm Pf\,}}
+
+ \centerline {\bf Two formulae for determinants}
+  
+ Let $A$ be $m\times n$ matrix and $B$ be $n\times m$ matrix. Then
+           $$
+        \det(1+MN)=\det (1+NM)
+        \eqno (1)   
+           $$   
+ {\sl Proof} $\Tr (MN)^k=\Tr (NM)^k$. Hence characteristic polynomials $\det(1+zMN)$ and $\det (1+zNM)$ coincide. Thus we come to (1).
+ 
+ How to prove it in another way? 
+ 
+ 
+ In particular it follwos from that if $M=(x^1,x^2,\dots,x^n)$ is $1\times n$ matrix then
+            $$
+       \det(\delta^{ik}+x^ix^k)=\det(1+M^+M)=\det(1+MM^+)=\det(1+x^ix^i)=1+(x^1)^2=\dots+(x^n)^2     
+            $$
+   \bigskip
+        The relation (1) has very interesting "generalisation":
+           
+        
+        Let $\cal B,\cal D$ be $p\times p$ matrices such that there entries are... odd "numbers", i.e. 
+         "numbers" which anticommute(e.g.  odd elements of Grassmann algebra):
+                    $$
+       {\cal B}=({\cal B}_{ik})\,\, \hbox {such that}\,\,\,
+       {\cal B}_{ik}{\cal B}_{rs}=-{\cal B}_{rs}{\cal B}_{ik}              
+                    $$
+         the same for $\cal D$:
+                  $$
+                  {\cal D}=({\cal D}_{ik})\,\, \hbox {such that}\,\,\,
+       {\cal D}_{ik}{\cal D}_{rs}=-{\cal D}_{rs}{\cal D}_{ik}
+                   $$ 
+            Then  the following identity holds:
+                       $$
+                       \det(1+{\cal B}{\cal D})=1\,\, 
+                       \eqno (2)
+                       $$
+                    if ${\cal B}$ is symmetrical matrix and ${\cal D}$ is antisymmetrical matrix:
+                    ${\cal B}_{ik}=-{\cal B}_{ik}$, ${\cal D}_{ik}={\cal D}_{ik}$
+              This is very important identity\footnote{$^*$}{In particular it follows form this identity
+               that square root of Berezinian (superdeterminant) of linear canonical transformation is equal to the
+               determionant of its boson-boson sector}
+            
+              The identity (2) follows from the fact that 
+                       $$
+                     \Tr \left({\cal B}{\cal D}\right)^k=0
+                     \eqno (3) 
+                       $$
+           Indeed in the same way as for identity (1) the relation (3) implies that characteristic polynomial
+           $\det(1+z{\cal B}{\cal D})$ equals to $1$.
+           
+            Prove (3).
+            For 
+                          $$
+                  ({\cal B}{\cal D}\dots{\cal B}{\cal D})        
+                          $$
+           
+           \bye

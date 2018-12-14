@@ -1,0 +1,143 @@
+
+\def\w {\omega}
+\def \R {{\cal R}}
+\def \x {{\bf x}}
+\magnification=1200
+\def \y {{\bf y}}
+\def \a   {{\bf \alpha}}
+\def \y {{\bf y}}
+
+
+The regular representation of group contains all irreducible representations
+
+
+   The well-known (Burnside?)  lemma states that for finite group $G$
+                   $$
+   \sum n_i^2=|G|\,,
+                 $$
+where $n_i$ is a dimension of irreducible representation. E.g.
+the group $S_3$ has two $1$-dimensional irreducible representations:
+(identical and alternating) and one $2$-dimensional representation
+(symmetry of the triangle in the plane) and $1^2+2^2+1^2=6$.
+
+  There are many different proofs of this lemma. I will present here the proof
+which makes me to remember the story of the commode which is full of the dishes
+(this proof ) but these dishes never  breake.....
+
+
+  \bigskip
+
+
+   The proof is founded on the following construction:
+
+  Let $\rho$ be a representation of a group $G$ in finite-dimensional space $V$.
+Then arbitrary element  $\w$ in the dual space $V^*$ defines the map
+$\iota_{\rho,\w}$ of $V$ in the space $\R_G$ of of functions on $G$:
+          $$
+\iota_{\rho,\w}(\x)\colon\,\,\,
+=\iota_{\rho,\w}(\x|g)=
+ \langle \rho_g(\x),\w\rangle\,.
+      \eqno (1)
+          $$
+The kernel of this map, the subspace $V'\subseteq V$  
+is invariant with respect to the action of the group $G$. Hence
+$V'=0$ if $\w\not=0$ and the representation 
+$\rho$ is irreducible representation. Hence  
+map (1) of $V$ into regular representation $\R$ is injection map in the case 
+if representation $\rho$ is irreducible and $\w\not=0$. 
+ %  If $V$ is the space of irreducible representation $\rho$, then we denote
+% by  $V^{(\rho,\w)}$ the image of the space $V$ under the embedding map (1).
+
+
+ {\bf Observation}.
+  Let $(\rho_1,V_1)$ and $(\rho_2,V_2)$ be two irreducible representations
+of group $G$, and $\w_1,\w_2$ be two non-zero covectors,
+$\w_1\in V^*_1$, $\w_2\in V^*_2$. Consider the reciprocal position of
+images of spaces $V_1$ and $V_2$
+under injection (1) under the injection (1). The following statement is valid:
+
+{\it if representations $\rho_1,\rho_2$ are not equivalent and then
+the images intersect only by zero element. If  these
+representations are equivalent, $\rho_1\approx \rho_2$ 
+i.e. there exists interwining
+bijection  $T\colon V_1\to V_2, \rho_2\circ T=T\circ \rho_1$,
+then the images intersect only by zero element if and only if
+covectors $\w_1$ and $T^*\w_2$ are linear independent. In the
+case if these covectors are proportional then the images coicide.
+}
+
+Indeed suppose that there exist $\x\in V_1,\y\in V_2$ such that
+                $$
+\forall g\,\, \langle \rho_1(g)(\x), \w_1\rangle=
+\langle \rho_2(g)(\y), \w_2\rangle\,,\quad (\w_1\not=0, \x\not=0)\,.
+                     \eqno (2)
+                $$ 
+This condition defines invariant subspaces in $V_1$ and $V_2$.
+Since representations are irreducible and $\x\not=0$ we see that
+this condition holds for all $\x\in V_1$. Since the injectivity of maps
+(1) we see that condition (2) defines interwinning operator $T$
+on $V_1$ such that $T(\x)=\y$. Hence by Schur lemma these representations
+are equvalent. We may identify spaces $V_1$ and $V_2$ by the
+interwinning operator. In this case $T(\x)=\lambda \x$, i.e. $\w_1=\lambda \w_1$.
+
+Using this observations perform the following operation: 
+
+Let $\{\rho_a, V_\a\}$ be a set of {\it all} irreducible  
+representations of the group $G$.  They all are finite-dimnesional. For every
+representation $(\rho_\a,V_\a$ consider an arbitrary basis
+$\{\w_{i_\a}\}=\{\w_1,\dots,\w_{n_\a}\}$
+in $V_\a$ ($n_\a$ is dimension of the space $V_\a$). Then
+an arbitrary irreducible representation $(\rho_\a,V_\a)$  defines $n_\a$
+embeddings $\iota_{\w_{i_\a},\rho_\a}$ such that all images of these embeddings
+intersect by zero element in the ``universal commode'', the regular representation
+$\R$. Two {\rm non-equivalent representations} 
+$(\rho_\a, V_\a), (\rho_\beta, V_\beta)$, $\rho_\a\not\approx\rho_\beta$  define
+ two collections of subspaces in $\R$, the collection of $n_\a$ subspaces,
+and the collection of 
+second $n_\beta$ subspaces. All these subspaces will intersect by zero element.
+Consider the union of the embeddings in the ``universal commode''
+$\R$ of {\rm all} pairwise non-equivalent representation; every
+representation $\rho_\a$ is embedded $n_\a$ times: 
+                  $$
+         \oplus_{_{\rho_\a\colon \rho_\a\not\approx \rho_{\a'}}} 
+        \oplus_{i_\a}  \iota_{\w_{i_\a},\rho_\a}(V_\a)\subseteq \R,
+                 \eqno (3)
+                  $$
+i.e.                    
+                  $$
+   \sum_\a ({\rm dim\,} V_\a)^2=\sum n^2_\a \leq {\rm dim\,}\R=|G|\,.
+                  \eqno (3a)  
+                  $$
+(The number relation 3a is the corollary of the relation (3))
+It remains to prove that order of $G$ is not bigger than $\sum_\a n^2_\a$.
+
+Consider in $\R$ the subspace $W$ which is orthogonal to all subspaces dual to 
+images of subspaces $V_\a$. This subspace contains some irreducible
+subspace of functions $(\rho_0, V_0)$.  This subspace of functions
+is equivalent to one of irreducible representation
+  $(\rho_{\a_0}, V_{\a_0})$ and hence it is equivalent to its image
+(1) to the subspace in the ``universal commode'' $\R$.
+Two euivalent irreducible subspaces in the same space have to coincide
+by Schur Lemme. Hence $W=0$. We proved that  
+                  $$
+         \oplus_{\rho_\a\colon \rho_\a\not\approx \rho_{\a'}} 
+        \oplus_{i_\a}  \iota_{\w_{i_\a},\rho_\a}(V_\a)= \R,
+                 \eqno (3)
+                  $$
+i.e.                    
+                  $$
+   \sum_\a ({\rm dim\,} V_\a)^2=\sum n^2_\a = {\rm dim\,}\R=|G|\,.
+                  \eqno (3a)  
+                  $$
+  
+The proof is finished.
+
+{\it Many years ago giving this proof to students in Yerevan University
+I told them the story about ``universal commode'': you buy after marriage
+the commode in two three months it becomes full ofthings, there is not free space,
+but everything is put there safely. This is exactly what happens here:
+all irreducible representations are packed in the regular representation.}
+
+
+\bye
+ 

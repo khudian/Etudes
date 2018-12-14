@@ -1,0 +1,187 @@
+\bigskip
+\centerline {\bf Appendix 3}
+
+\medskip
+\def\t{\tilde}
+\def\p{\partial}
+ In this Appendix we prove that for any given
+ special canonical transformation  $\{x^i,\theta_j\}\rightarrow$
+ $\{\t x^i,\t\theta_j\}$ of the first kind
+ (\cantransform a) there exists Hamiltonian that generates this
+ transformation via differential equations (\hamiltoniandeformation)
+ and this Hamiltonian is defined uniquely by the condition
+                        $$
+Q=O(\theta^2)\quad (Q(x,\theta)=Q^{ik}\theta_i\theta_k+\dots
+                                       \eqno ({\rm Ap}3.1)
+                      $$
+
+\def\Ocal {{A}}
+
+For every Hamiltonian (odd function)
+$Q(x,\theta)$ obeying to condition (Ap3.1)
+consider one-parametric family of functions (coordinates)
+ $\{y^i(t),\eta_j(t)\}$ ($i,j=1,\dots,n$)
+ that are solution to differential equation (\hamiltoniandeformation):
+                   $$
+                    \cases
+                     {
+ {d y^i(t)\over dt}= \{Q(y,\eta),y^i\}=
+ -{\p Q(y,\eta)\over \p\eta_i}\,,\cr
+{d \eta_j(t)\over dt}= \{Q(y,\eta),\eta_j\}=
+{\p Q(y,\eta)\over\p \eta_i}\,,\cr
+              }
+              \quad
+              (0\leq t\leq 1)\,,
+                        \eqno ({\rm Ap}3.2)
+                    $$
+with initial conditions
+                    $$
+y^i(t)\big\vert_{t=0}=x^i,\,
+  \eta_i(t)\big\vert_{t=0}=\theta_i\,.
+                   $$
+
+From condition (Ap3.2) it follows that at every $t$
+coordinates $\{y^i(t),\eta_j(t)\}$
+are related with initial coordinates by
+special canonical transformation of the first kind:
+$y^i(t)=x^i+O(\theta)$, $\eta_i(t)\vert_{t=0}=0$.
+We note that for every special canonical transformation
+of first kind $\{x^i,\theta_j\}\rightarrow$
+ $\{\t x^i,\t\theta_j\}$
+  functions $\{\theta_i(x,\theta)\}$ are uniquely defined
+  by functions $\{\t x^i(x,\theta)\}$. Functions
+  $\t x^i(x,\theta)=x^i+f^i(x,\theta)$
+  obey to conditions:
+                     $$
+     \{x^i+f^i(x,\theta),x^j+f^j(x,\theta)\}=0\,,{\rm with}\quad
+               f^i(x,\theta)\in O(\theta)\,.
+                          \eqno ({\rm Ap}3.3)
+                     $$
+Thus we need to prove only the following Lemma:
+
+{\bf Lemma 3}
+   {\it For every set of functions $\{f^i(x,\theta)\}$ ($i=1,\dots,n$)
+   obeying conditions} (Ap3.3) {\it there exists unique Hamiltonian
+   $Q$ obeying condition} (Ap3.1)
+    {\it such that functions $\{y^i\}$ solutions to differential
+   equation (Ap3.2) obey conditions $y^i(t)\vert_{t=1}=x^i+f^i(x,\theta)$
+   ($i=1,\dots,n$).}
+
+   Prove this Lemma.
+
+ Consider a ring $A$ of functions on $(x^1,\dots,x^n$,
+  $\theta_1,\dots,\theta_n)$.(As always functions take values in an arbitrary
+  Grassmann algebra $\L$).
+  Consider in $A$ the following gradation:
+  $A_{(p)}$ is a space of functions that are linear combinations
+   of $p$-th order monoms on variables $\{\theta_1,\dots,\theta_n\}$:
+   $f\in A_{(p)}$ iff $\sum_k\theta_k{\p f\over\p\theta_k}=pf$.
+   $A_{(p)}=0$ for $p\geq n+1$.
+ For every function $f\in A$ we denote by $f_{(p)}$ its component in $A_{(p)}$.
+  $f=f_{(0)}+f_{(1)}+\dots+f_{(n)}$.
+   It is evident that for canonical Poisson bracket
+   (\darbouxtheorem)
+                     $$
+                     \{f,g\}_{(p)}=\sum_{i=0}^n \{f_{(i),g{(p+1-i)}}\}\,.
+                       \eqno (Ap3.4)
+                       $$
+  Consider also a corresponding filtration:
+              $$
+               0=\Ocal^{(n+1)}\subset \Ocal^{(n)}\subset
+ \dots\subset \Ocal^{(1)}\subset \Ocal^{(0)}=\Ocal\,,
+              $$
+ where $A^{(p)}=\oplus_{k\geq n} A_{(k)}$.
+(Do not confuse this filtration with
+filtration (Ap2.2) considered in the Appendix 2).
+
+  We denote by $\Ocal^+$ ($\Ocal^-$) a subspace of even-valued
+  (odd valued) functions in $\Ocal$.
+   Respectively we denote by $\Ocal^{\pm}_{(k)}=\Ocal_{(k)}\cap\Ocal^{\pm}$
+  and $\Ocal^{\pm(k)}=\Ocal^{(k)}\cap\Ocal^{\pm}$.
+
+
+  We note first that condition (Ap3.1) () implies that
+  solutions to equations (Ap3.2) are well defined.
+  Indeed consider arbitrary function $\varphi(x,\theta)$,
+  odd Hamiltonian $Q\in A^{-(2)}$ and differential equation
+  $\dot\varphi=\{Q,\varphi\}$. Projecting this differential
+  equation on the subspace $A_{(p)}$ we come  using (Ap3.4) to
+  $\varphi_{(p)}=\{Q_{(p+1)},\varphi_{(0)}\}+\dots+
+  \{Q_{(2)},\varphi_{(p-1)}\}$. This equations can be solved
+  recurrently because
+  Recurrently  we come to the solution:
+  $\varphi_{(0)}\big\vert_{t=a}=\varphi_{(0)}\big\vert_{t=0}$,
+  $\varphi_{(1)}\big\vert_{t=a}=\varphi_{(1)}\big\vert_{t=0}+$
+  $t\{Q_{(2)},\varphi_{(0)}\}$ and for arbitrary $p$:
+
+                     $$
+  \varphi_{(p)}\big\vert_{t=a}=
+ \sum_{\sigma\in I_p}
+                 {a^{|\sigma|}\over |\sigma|!}
+              \underbrace
+ {\{Q_{i_1},\{Q_{(i_2)},\dots,\,\{Q_{(i_k)},}_{|\sigma|\,\, {\rm times}}
+ \varphi_{(q)}\vert_{t=0}\}\dots\}\}=
+  \left[
+                    \sum_{k=0}^n
+                      {a^k\over k!}
+    \underbrace
+ {\{Q,\{Q,\dots,\,\{Q,}_{k\,\, {\rm times}}
+ \varphi_{(q)}\vert_{t=0}\}\dots\}\}
+ \right]_{(p)}
+                     \,,
+                    $$
+     where $\sigma$ is multiindex $\sigma=[i_1,\dots,i_k]$,
+        $|\sigma|=k$,
+         $I_p$ is a finite set of multiindexes $\sigma$
+         such that $i_1+\dots i_k+q-k=p$.
+  It is important to note that in this expression
+  for every
+                    $$
+  \hbox{for every p}\,
+  \varphi_{(p)}\big\vert_{t=a}=\varphi_{(p)}\big\vert_{t=a}+
+  a\{Q_{(p)},\varphi_{(0)}\}+\hbox{terms depending on $Q_{(2)},\dots,Q_{p}$}\,.
+                \eqno ({Ap3}.5)
+                $$
+
+ \def\N{{\cal N}}
+   \def\H {{\cal H}}
+ Denote by $\N$ a space  of even-valued functions $\{f^i(x,\theta)\}$
+  ($i=1,\dots,n$) such that these functions obey to condition (Ap3.3).
+  Consider a map that assigns to every Hamiltonian $Q\in A^{-(2)}$
+  the solutions $\{y^i(t)\vert_{t=1}\}$ to differential equations
+  (Ap3.2). Thus we define map $\H\colon$ $A^{-(2)}\rightarrow\N$.
+   Relations (Ap3.5) for $\varphi=x^i$ imply that
+                $$
+      f^i_{(p)}=-{\p Q_{p+1}\over\p\theta_i}+
+      \hbox{terms depending on
+            $Q_{(2)},\dots,Q_{p}$}\eqno ({Ap3}.6)
+              $$
+   where we denote by dots {terms depending on
+            $Q_{(2)},\dots,Q_{p}$}.
+   Consider a map $\delta$
+    a map $\delta\colon$ $\N\rightarrow A^{-(2)}$
+   such that $f^i(x)\mapsto -\sum \theta_if^i(x,\theta)\theta_i$.
+
+    If $\t Q=\delta (f^i)$ then from (Ap3.3) and (\darbouxtheorem)
+    it follows that
+   $f^i=-\{x^i,\t Q\}-\sum_m\theta_m\{x^i,f^m\}+\sum_m\theta_m\{f^i,f^m\}$
+   Projection of this equation on subspace $A_{(p)}$ implies
+                    $$
+    f^i_{(p)}=-{\p \t Q_{p+1}\over\p\theta_i}+
+    \hbox{terms depending on
+    $f^i_{(1)},\dots f^i_{(p-1)}$}.
+       $$
+We see that $\delta$ is injection and
+comparing this relation with
+relation (Ap3.6) we see that
+ for every $p=1,\dots,n$ $\t Q_{(p)}=Q_{(p)}+$  terms depending on
+            $Q_{(2)},\dots,Q_{p}$. Thus the map
+            $\delta\circ\H$ is surjective.
+ For every $\{f^i\}\in\N$ the odd function
+ $Q=(\H\circ\delta)^{-1} (-\theta_mf^m)$
+ is the required unique Hamiltonian in $A^{(2)}$.
+\finish.
+
+
+
+%\bye

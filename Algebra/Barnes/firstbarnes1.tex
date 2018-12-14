@@ -1,0 +1,125 @@
+
+
+
+ \def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf First gamma-function $\G_1$, 
+Euler gamma function $\G_E$ and Froullani integral}
+
+   We know that for first gamma-function $\G_1=\G_1(z|a)$,
+  $$
+\log\G_1(z|a)={p\over p s}\zeta(s,z|a)=
+  \int_0^\infty\left({e^{-zt}\over 1-e^{-at}}-\dots\right){dt\over t}= 
+  \int_0^\infty\left({e^{-zt}\over 1-e^{-at}}-{1\over at}-
+\left({1\over 2-z}\right)e^{-t}\right){dt\over t}= 
+  $$
+Now chaning $t\mapsto at$ we come to the integral:
+ $$
+\log\G_1(z|a)=
+  \int_0^\infty\left({e^{-{z\over a}t}\over 1-e^{-t}}-{1\over t}-
+\left({1\over 2}-{z\over a}\right)e^{-{t\over a}}\right){dt\over t}= 
+  $$
+   $$
+   \underbrace
+       {
+ \int_0^\infty\left({e^{-{z\over a}t}\over 1-e^{-t}}-{1\over t}-
+\left({1\over 2}-{z\over a}\right)e^{-t}\right){dt\over t} 
+       }
+       _{\hbox{I-st }}+
+   \left({1\over 2}-{z\over a}\right)
+        \underbrace
+             {
+   \int_0^\infty\left(e^{-t}-e^{-{t\over a}}\right)
+            {dt\over t}
+           }_{\hbox {II-nd integral}} 
+  $$
+  First integral is just integral for usual Gamma-function
+with argument $z\over a$.  The
+Second integral is just usual Froullani integral
+\footnote{$^*$}{Froullani integral:
+      $$
+    {f(at)-f(bt)\over t}=f(0)\log {b\over a}
+       $$
+To calculate this integral you have just to calculate limits at 
+$0$ and at the infinity!!!}:
+     $$
+ \int_0^\infty\left(e^{-t}-e^{-{t\over a}}\right)
+            {dt\over t}
+    =-\log a\,.
+     $$
+Using Froullani integral we can deduce the fact that the first integral
+is the usual Euler gamma function. 
+Indeed one can show that the first integral obeys the 
+standard relation for logarithm of Euler 
+gamma function   $\log\G(w+1)=\log\G(w)+\log w$, i.e. it is just 
+Euler Gamma function (up to scaling of argument).
+ Show it: Denote temporarly the first inetgral by
+  $\Psi (w)$, where $w={z\over a}$.
+   Then one can see that
+         $$
+\Psi(w+1)-\Psi (w)=
+   $$
+   $$
+ \int_0^\infty\left({e^{-(w+1)t}\over 1-e^{-t}}-{1\over t}-
+\left({1\over 2}-{w+1}\right)e^{-t}\right){dt\over t}- 
+    \int_0^\infty\left({e^{-wt}\over 1-e^{-t}}-{1\over t}-
+\left({1\over 2}-w\right)e^{-t}\right){dt\over t}= 
+          $$
+    $$
+\int_0^\infty\left(-e^{-wt}-e^{-t}\right){dt\over t}=\log w=\log {z\over a}
+   $$
+Thus we see that
+        $$
+\log \G_1(z|a)=\log\Gamma_E\left({z\over a}\right)+
+    \left({z\over a}-{1\over 2}\right)\log a
+         $$
+
+{\sl Resum\'e}  First Barnes function differs from usual gamma function
+on the Froullani untegral factor. 
+
+It is interestijng to see how to calculate analytical continuation for 
+Froullani untegral....
+\bye

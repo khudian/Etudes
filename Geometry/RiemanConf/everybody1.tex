@@ -1,0 +1,326 @@
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\f {{\bf f}}
+\def\la{\langle}
+\def\ra{\rangle}
+\centerline  {\bf Everybody has to know this}
+
+
+   Symmetric matrices.
+  
+  
+  
+  Let $A=||a_{ik}||$ be $n\times n$ symmetrical matrix with real entries. 
+   
+   
+   
+      Matrix $A$ defines symmetric bilinear form $A(\X,\Y)$ in $\R^n$:
+                      $$
+                      A(\X,\Y)=A_{ik}X^iY^k\,,\qquad \hbox{   (summation over repeated indices)}
+                      \eqno (0.1)
+                      $$
+ where $\X,\Y$ are vectors from $\R^n$.
+   
+          \m
+          
+             \centerline {{${\cal x} 0$. } Geometrical meaning of $\R^n$}         
+   
+   \m
+   
+   $\R^n$ is a vector space of $n$-tuples: $\R^n=(x^1,x^2,\dots,x^n)$.  
+    One can consider canonical basis $\{\e_1,\e_2,\dots,\e_n\}$ in $\R^n$, where
+                        $$
+                        \matrix
+                         {
+                     \e_1=& (1,0,0\dots,0,0) \cr
+                    \e_2=& (0,1,0\dots,0,0) \cr
+                    \dots & \dots \cr
+                    \e_n=& (0,0,0\dots,0,1) \cr
+                    }
+                             $$
+Then for an arbitrary vector   $\R^n\ni \ac=(a^1,a^2,a^3,\dots,a^n)$
+                     $$
+            \ac=(a^1,a^2,a^3,\dots,a^n)=a^i\e_i
+                  $$
+        One can consider canonical scalar product $\la\,,\,\ra_0$ in $\R^n$ such that
+                             $$
+                 \la \e_i,\e_j\ra_0=\delta_{ij}, 
+                 \quad \la\X,\Y\ra_0=X^1Y^1+X^2Y^2+\dots X^nY^n\,.
+                             $$          
+ The canonical basis $\{\e_i\}$ is orthonormal basis with respect to the canonical scalar product.
+ 
+   We say that an arbitrary basis $\{\f_1,\dots\f_n\}$ is orthonormal (with respect to canonical scalar product)
+    if
+             $$
+             \la\f_i,\f_j\ra_0=\delta_{ij}
+              $$ 
+   One can see that the basis $\{\f_i\}$ is orthonormal if and only if the transition matrix $O$
+    from the canonical basis $\{\e_i\}$ to the basis $\{\f_i\}$ is orthonormal matrix:
+                   $$
+                   \f_i=O_{i}^j\e_{j}, \qquad     O^{^T}O=I\,.
+                   \eqno (1.1)
+                   $$
+   
+              
+                \centerline {{${\cal x} 1$. } Geometrical meaning of symmetrical matrix.}
+   Now return to the formula (0.1). It defines bilinear form on $\R^n$.
+   
+   Lete  $\{\f_1,\dots,\f_n\}$ be an arbitrary  basis, (not necessarily orthonormal!)
+    then  $\f_i=P_i^m\e_m$, where $P$ is non-degenerate.  We see that
+                 $$
+                A(\f_i,\f_j)=A(P_i^m\e_m,P_j^n\e_n)=P_i^m A_{mn}P_j^n=\left(PAP^{^T}\right)_{ij} 
+                \eqno (1.2)
+                 $$
+     Entries of the matrix $A=||a_{ij}||$ are components of bilinear form  $A(\X,\Y)$ with respect to the canonical basis $\{\e_i\}$.
+     Entries of the matrix  $A'=PAP^{^T}=||P_i^ma_{mn}P_j^n||$ are components of the bilinear form
+     $A(\X,\Y)$ with respect to the  new basis $\f_i=P_i^m\e_m$.
+   
+ 
+   
+ Note also that symmetric bilinear form $A$ together with canonical scalar product $\la\,,\,\ra_0$
+ defines a linear operator    which  we denote by $\hat A$:
+                    $$
+                   \hat A\colon\quad \la \hat A \X, \Y\ra_0=A(\X,\Y) 
+                   \eqno (1.3)
+                    $$
+ 
+ 
+   \m
+
+1.There are two  absolutely fundamental questions: at what extent we can simplify matrix components  of bilinear form  $A(\X,\Y)$ by basis  transformation?
+   
+2.  What can we say about eigenvalues of operator $S_A$?   
+
+\bigskip
+   
+   
+          \centerline {{${\cal x} 2$. } Answer on the first question}   
+ 
+ \m
+   
+At beginning   we answer the first question in the special but very important case.
+   
+   {\bf Definition}  Symmetric bilinear form $A(X,Y)$ or corresponding quadratic form
+   $A(X,X)$ is called positive-definite if the quadratic form takes positive values on all non-zero vectors:
+                $$
+              A(X,X)>0\,\,\, {\rm if} X\not=0\,.  
+              \eqno (2.1)
+                $$
+   Respectively matrix $||a_{ik}||$ is called positive-definite if corresponding quadratic form $A(X,X)=a_{ik}X^iX^k$
+   is positive-definite.
+
+\m
+   
+   {\bf Remark}
+   {\it One can see that in this case $A(\X,\Y)$ defines a scalar product
+    (In general another scalar product , not canonical one)}.
+
+\m
+
+  
+   
+   We prove the following 
+   
+   {\bf Theorem} Let $A(X,Y)$ be symmetric bilinear such that it is positive-definite.
+   Then there exists a new basis $\{\f_i\}$ (not necessarily orthonormal!) such that
+   in this basis           
+                    $$
+            A(\f_i,\f_j)=\delta_{ij}\,.
+            \eqno (2.2)
+                    $$
+     It means that for every vector $\x=x^i\f_i$ ($x^i$ are components of vector in the new basis $\{\f_i\}$)
+                  $$
+  A(\x,\x)=(x^1)^2+(x^2)^2+\dots+\dots+(x^{n-1})^2+(x^{n})^2
+                  $$
+   In other words the new scalar product $\la\,,\,\ra_A=A(X,Y)$
+   has a canonical appearance and the new basis $\{\f_1,\dots,\f_n\}$
+   is a orthonormal basis with respect to this new scalar product (see (2.2)):
+   
+   $$ $$
+   
+   {\sl Proof}  We will  construct explicitly the new basis $\{\f_i\}$ such that (2.2) is obeyed.
+   
+   Before doing this note that
+    if $A(X,X)$ is positive definite then all main minors are not equal to zero.
+    
+   
+      Construct $f_1,f_2,\dots,f_n$ by induction using triangular linear transformations.
+      
+        Inductive hypothesis:
+        
+       For every integer $k=1,2,\dots,n$,  there exists a set of vectors  $\{\f_1,\f_2,\dots,\f_k\}$
+       such that
+                           $$
+                           \cases
+                           {
+                           \f_1= S_1^1 \e_1\cr
+                           \f_2=S_2^1\e_1+S_2^2\e_2\cr
+                           \f_3=S_3^1\e_1+S_3^2\e_2+S_3^3\e_3\cr
+                           \dots \cr
+                           \f_k=S_k^1\e_1+S_k^2\e_2+S_k^3\e_3+\dots+S_k^k\f_k\cr
+                            }
+                           $$
+       and       
+                     $$
+               A(\f_i,\f_j)=\delta_{ij},\quad \hbox{for $i,j\leq k$}      
+                     $$
+       
+      I $k=1$.  $A(\e_1,\e_1)=a_{11}>0$ due to positive definiteness. 
+      Consider 
+                 $$
+               f_1={1\sqrt {a_11}}\e_1.  
+                   $$
+  We see that $A(\f_1,\f_1)=1$ 
+  
+     II $k=m$ Suppose that  there exists a set of vectors  $\{f_1,\f_2,\dots,f_m\}$ such that
+                $ A(\f_i,\f_j)=\delta_{ij}$, for all $i,j\leq m$.
+                
+                
+   
+   
+  
+  
+  In the general case the answer is given by the following Theorem 
+   
+   {\bf Theorem 2} Let $A=A(\X,\Y)$ be a symmetric bilinear form.
+    Assume that it is non-degenerate. Then there exists a new basis $\{\f_1,\dots,\f_n\}$ such that in this basis
+                  $$
+                   A(\f_i,\f_j)=\cases 
+                   {
+                  \delta_{ij} \qquad \hbox{for $i,j \leq p$}\cr
+                  -\delta_{ij} \qquad \hbox{for $i,j >p$}\cr
+                   }   
+                  $$
+   It means that every vector $\x=x^i\f_i$ ($x^i$ are components of vector in the new basis $\{\f_i\}$)
+                  $$
+  A(\x,\x)=(x^1)^2+(x^2)^2+\dots+(x^p)^2-(x^{p+1})^2-(x^{p+2})^2-\dots-(x^{n-1})^2-(x^{n})^2
+                  $$
+     $A(\X,\X)$ is quadratic form corresponding to symmetric bilinear form $A(\X,\Y)=A(\Y,\X)$.
+   
+   
+  In matrix notations this means that there exist matrix $P$ such that for the matrix
+                                 $$
+                     PAP^{^T}=||P_{i}^ma_{mn}P_{j}^n||=
+                            \pmatrix
+                                 {
+                            I_{p} &0\cr
+                              0     & -I_{n-p}\cr
+                              }={\rm diag}[\underbrace{1,1,\dots,1}_{\hbox{$p$ times}} \underbrace{-1,-1,\dots,-1}_{\hbox{$n-p$ times}}]
+                                 $$
+where we denote by $I_k$ unit $k\times k$ matrix.
+   A number $p$ is called the index of the form $A$. It is an invariant (does not depend on basis $\{\f_i\}$.)
+   
+   
+   We first will answer the special (very important case) of this question.
+   
+   
+   Suppose a matrix $A$ is such that 
+   
+   To answer this question we will describe the explicit construction of the basis $\{\f_i\}$
+   which diagonalizes  the  bilinear form.
+   
+   Consider $\f_1=c_1\e_1$
+   
+   
+   
+   
+   $$ $$
+
+
+          \centerline {{${\cal x} 3$. } Answer on the second question}
+
+   
+   {\bf Theorem 2} There exist a new orthonormal basis $\{\f_1,\dots,\f_n\}$ such that in this orthonormal 
+   basis
+                  $$
+                   A(\f_i,\f_j)=\lambda_i \delta_{ij} \quad \hbox{(no summation)}
+                  $$
+   
+This means that the  vectors $\{\f_1,\dots,\f_n\}$
+are eigenvectors of the operator $\hat A$ corresponding to bilinear form $A(\X,\Y)$ and canonical scalar product
+$\la\,,\,\ra_0$ (see 1.3):
+                          $$
+                   \A \f_i=\lambda_i \f_i      
+                          $$
+
+
+  In matrix notations this means that there exist orthogonal matrix $0$ such that for the matrix
+                                 $$
+                     PAP^{^T}=OAO^{-1}
+                                $$
+              is a diagonal matrix.
+              
+     
+    
+              
+                               $$ 
+                            \pmatrix
+                                 {
+                            I_{p} &0\cr
+                              0     & -I_{n-p}\cr
+                              }={\rm diag}[\underbrace{1,1,\dots,1}_{\hbox{$p$ times}} \underbrace{-1,-1,\dots,-1}_{\hbox{$n-p$ times}}]
+                                 $$
+where we denote by $I_k$ unit $k\times k$ matrix.
+   
+   
+      
+   
+   
+   1) If matrix $A$ is symmetric and non-degenerate then there is a basis 
+   
+   1)  
+  
+  
+  
+  
+  
+  {\bf Definition} We say that matrix $A=||a_{ik}||$ is positive definite if
+                $$
+        A(\X,\X)>0\, \qquad {\rm for}\quad \X\not=0.
+                $$
+
+   {\it One can see that in this case $A(\X,\Y)$ defines a scalar product
+    (In general another scalar product , not canonical one)}.
+
+   
+  
+  \bye
+  

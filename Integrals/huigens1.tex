@@ -1,0 +1,168 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\B {{\bf B}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\k {{\bf k}}
+\def\x {{\bf x}}
+\def\y {{\bf y}}
+\def\V {{\cal V}}
+\def\L {{\cal L}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\N {{\cal N}}
+\def\Z {{\bf Z}}
+\def\E {{\bf E}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+  \centerline  {\bf Huigens principle}
+  ({Here I will present my calculations based on memories and textbooks...})
+  Consider differential
+
+   Consider in $\E^n$ differential equation
+         $$
+       \cases
+          {
+         u_{tt}-\Delta u=0\cr
+           u(t,\x)\big\vert_{t=0}=\varphi(\x)\cr
+           {\p u(t,\x)\over \p t}\big\vert_{t=0}=\psi(xx)\cr
+            }
+           $$
+    One can see that formal solution in Fourrier series will be
+              $$
+     C_n\int e^{i\k (\x-\y)}\left(\varphi(y)\cos kt+
+       \psi(y){\sin kt\over k}\right)d^n\k d^n \y\,, (),
+           \eqno (*)
+              $$
+where $C_n={2\pi}^{-{n\over 2}}$, $\k,\x$ are vectors, $k$ is modulus
+of vector $\k\,k=|\k|$.
+
+
+   We calculate this integral and show that
+for odd $n$ it implies Huigens.
+
+   \medskip
+
+
+  Preliminary calculation:  Calculate preliminary the average
+of the function   $e^{i\k(\x-y)}$ over unit $n-1$-dimensional 
+ sphere  (in $\k$ space.
+ 
+ Denote by $\s_n$ area of $n$-dimensional unit sphere:
+         $$
+ \s_0=2,\s_1=2\pi\,,\s_2=4\pi\,\dots,  
+\s_n={2\pi^{n+1\over 2}\Gamma\left(n+1\over 2\right)}\,.
+                $$
+(It is funny to note that volume of $0$-dimensional sphere $\s_0=2$ 
+is given by the general formula.)
+
+   Function $\k\x$  is not constant on $n-1$ dimensional sphere $kx=1$,
+but it is constant on $n-2$ dimensional spheres $\k\x\cos\theta=c$
+($\theta$ is angle between $\k$ and $\x$ and $|c|\leq 1$).
+  We have
+    $$
+F_n(kx)= <e^{i\k \x}>_{k=1}
+  ={1\over \s_{n-1}}
+  \int_{k=1} e^{i\k\x} d\Omega_{n-1}=
+      {\s_{n-2}\over \s_{n-1}}
+   \int_0^\pi e^{ix\cos\theta}\sin^{n-2}\theta d\theta
+      $$
+One can see that answers for even and odd will be different.
+   For odd $n$ it is just elementary function, and 
+   for even $n$ they are expressed via special function
+   $j(x)=\int_0^\pi e^{ix\cos\theta}d\theta$.
+   
+In moe details.
+ First consider special cases
+(we ofen omit later all the coefficients....)
+         $$
+n=2, J(x)=F_2(x)=\s_0\int_0^{\pi} e^{ix\cos\varphi}d\varphi=
+        \int_0^{2\pi} e^{ix\cos\varphi}d\varphi\,,
+         $$ 
+         $$
+n=3, F_3(x)=\s_1\int_0^{\pi} e^{ix\cos\varphi}\sin \varphi d\varphi=
+        2\pi\int_{-1}^{1} e^{ix u}du=2i{\sin x\over x}\,.
+         $$ 
+It is easy to see that the answer for $n=0$ produces all the answers
+for even $n$ and the answer for $n=3$ produces all the answers for
+odd $n$:
+
+
+   One can see that all fnctions $F_(x)$ can be produced from function
+$J(a)$ and $f(a)={\sin a\over a}$ by differentiation, e,g,
+                     $$
+      F_7(x)=\s_{5}
+   \int_0^\pi e^{ix\cos\theta}\sin^{5}\theta d\theta=
+   s_5\int_0^\pi e^{ix\cos\theta}\sin^{4}\theta d\cos\theta=
+   s_5\int_0^\pi e^{ix u}(1-2u^2+u^4)du=
+         $$
+            $$
+\left(1+2{d^2\over du^2}+4{d^4\over du^4}\right)
+        \int_0^\pi e^{ix u}du=
+2i\s_5\left(1+2{d^2\over dx^2}+4{d^4\over dx^4}\right)
+        {\sin x\over x}
+           $$
+
+Now we return to the integral (*). Calculate it for odd $n$.
+Using functions $F_n(a)$  which are averaging
+of exponent over spere we come to
+               $$
+  u(t,\x)=C_n\int e^{i\k (\x-\y)}\left(\varphi(y)\cos kt+
+       \psi(y){\sin kt\over k}\right)d^n\k d^n\y\,.
+           =\int F_n(k|\x-\y|)\left(\varphi(y)\cos kt+
+       \psi(y){\sin kt\over k}\right)k^{n-1}dk d^n \y=
+              $$
+We denote
+             $$
+     G^{(0)}_n(\x,\y,t)=
+   \int F_n(k|\x-\y|)\left(\varphi(y)\cos kt+
+       \psi(y){\sin kt\over k}\right)k^{n-1}dk =
+             $$
+We see that
+        $$
+   u(\x,t)=
+    \int G(\x,\y,t)
+    \left(\varphi(y)\cos kt+
+       \psi(y){\sin kt\over k}\right)d^n\k d^n\y\
+        $$
+\bye

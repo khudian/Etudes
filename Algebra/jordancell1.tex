@@ -1,0 +1,265 @@
+
+% this text I began in October 2012
+
+\def\p{\partial}
+\def\t {\tilde}
+\def \m {\medskip}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+
+
+
+\def\a {\alpha}
+\def\vare{{\varepsilon}}
+\def\l {\lambda}
+\def\s {{\sigma}}
+
+\def\G {{\Gamma}}
+
+\def\A {{\bf A}}
+\def\C {{\bf C}}
+\def\E  {{\bf E}}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\Q {{\bf Q}}
+\def\R  {{\bf R}}
+\def\V {{\cal V}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\Z {{\bf Z}}
+
+
+
+\def\ac {{\bf a}}
+\def\e{{\bf e}}
+\def\f {{\bf f}}
+\def\n {{\bf n}}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+\def\pt {{\bf pt}}
+
+
+
+\centerline {\bf On Jordan normal form}
+
+  {\it you may find in any good textbook of linear algebra 
+what is it Jordan normal form.
+  I discussed with my students appearance of Jordan normal form 
+in many other places, in
+  particular in decomposition of finite Abelian groups. 
+Here is the exposition of standard linear algebra subject from 
+this point of view. }
+
+
+\medskip
+
+Consider a pair $(A,V)$ where $A$ is a linear operator on vector space
+ $V$. If $V$ is vector field over algebraically closed field
+(e.g. $\C$, we consider only this case) 
+then $A$ has an eigenvector, i.e. $V$ possesses 
+one-dimensional subspace $L_A$ invariant with respect to operator $A$.
+
+
+{\bf Definition} Let $A$ be a non-zero linear operator acting on 
+finite-dimensional vector space $V$.
+We say that the pair $(A,V)$ is Jordan cell  if  the vector 
+space $V$ possesses unique 
+one-dimensional invariant subspace.
+
+\m
+
+\m
+
+{\bf Example} Let $J^{\lambda,n}=(A,\R^n)$ be a pair of 
+$n$-dimensional arithmetic vector space
+$\R^n$ and an operator $A$ such that in the canonical basis 
+$\{\e_1,\dots,\e_n\}$
+                          $$
+   A\e_1=\l\e_1,\quad {\rm and}\,\, A_{\e_i}=\lambda\e_i+\e_{i-1}\quad
+   \hbox {for $i=2,\dots,n$}
+                       $$
+   It is easy to see that this is Jordan cell. Indeed let 
+$\f=x^i\e_i$ be a vector which defines
+   invariant subspace: $\f\not=0$ and $A\f=\mu \f$, i.e.
+                   $$
+   A(x^i\e_i)=x^1\l\e_1+x^2(\l \e_2+\e_1)+\dots+x^n(\l\e_n+\e_{n-1})=\mu x^i\e_i
+      $$
+ This implies that $x_i=0$ if $i=2,\dots,n$, i.e. $\f$ 
+is proportional to $\e_1$. We see that there is a unique invariant subspace.
+
+
+
+   Note that if $(A,V)$ is a Jordan cell and $L$ is invariant subspace
+then  the sequence
+        $$
+    0\rightarrow L\rightarrow V\rightarrow [V]\rightarrow 0
+        $$
+is not splitted with respect to operator $A$, i.e. every $n-1$-dimensional
+subspace in $V$ is not invariant with respect to operator $A$.
+
+\m
+
+ {\bf Statement A} If $V$ is Jordan cell with respect to 
+linear operator $A$ acting on it, then
+ $(V,A)$ is isomorphic to $J^{\l,n}$  for some number $\l$ and natural $n$.
+
+
+ \m
+ 
+ This statement can be formulated in the following equivalent way:
+
+  {\bf Statement A$^\prime$}  Let n-dimensional vector space $V$ 
+be a Jordan cell with respect to operator $A$. 
+  Then there exists a number $\l$  
+  and a flag of invariant subspaces $\{V_k\}$, $k=1,\dots,n$  such that  
+  every $V_k$ provided with action   of $A$ on it is isomorphic to $J^{\l,k}$.
+  
+  This flag is unique.
+  
+   It is easy to see that this statement implies 
+
+{\bf Proposition A$^{\prime\prime}$}  Let $A$ be $N$-dimensional 
+space where acts an operator $A$. Then
+       $V$ is a direct sum of Jordan cells.
+
+   \m
+   
+   
+   Prove the statement by induction on dimension.
+   
+   For $n=1$ it is alright. Suppose it is true if ${\rm dim\,}V=k$. 
+     Prove it for
+   ${\rm dim\,}V=k+1$.   
+
+  It is illuminating first to consider  the case $k=1$.
+   
+   Let $V$ be two-dimensional Jordan cell with respect to operator $A$.
+  Let $\e_1\not=0$ be an eigenvector of operator $A\colon A\e=\l\e$.
+ By definition of Jordan cell it is unique (up to  a coefficient).
+
+
+  Consider an arbitrary non-zero vector $\f$ which is not 
+  colinear to the vector $\e$.
+  Let $Af=\mu \e+a\f$. Vector $\f$ is not eigenvector since 
+  $V$ is Jordan cell. Hence $a\not=0$.
+  By changing $\f\to {1\over a}\f$ we come to $A\f=\mu\f+\e$. 
+  Show that $\mu=\l$. If this is not the case then
+ the vector $\f'=\f+{\e\over \mu-\l}$ 
+is second eigen-vector of operator $A$:
+           $$
+  A\f'= A\left(\f+{\e\over \mu-\l}\right)=\mu\f+{\l\e\over\mu-\l}=
+      \mu\left(\f+{\e\over \mu-\l}\right)=\mu\f'\,.
+      $$
+ Contradiction. Hence $\mu=\l$ and $A\f=\l\e+\f$.
+Thus pair $(V,A)$ is Jordanian cell $J^{\l,2}$.
+
+
+Now consider general case. Let $V$ ne $n+1$-dimensional Jordanian cell, 
+$n\geq 1$.
+Let $\e_1\not=0$ be an eigenvector of operator $A\colon A\e=\l\e$.
+ By definition of Jordan cell this is unique (up to  a coefficient)
+eigenvector.
+ 
+ Consider $n-1$ vector space $[V]=V\backslash L_{\e}$, 
+  where $L_{\e}$ is one-dimensional invariant
+ subspace spanned by the vector $\e$. 
+$[V]$ is Jordan cell too with respcet to the action of operator $[A]$.
+ and dimension of this Jordanian cell is equal to $n$. 
+Hence by inductive hypothesis, it is isomorphic to $J^{\mu,n}$ 
+for some eigenvalue $\mu$, i.e. there exists a basis 
+ $\{[\f_1],[\f_2],\dots [\f_n]\}$ in the factor-space $[V]$ such that
+         $A[\f_1]=\mu[\f_1]$ and $A[\f_{i+1}]=\mu[\f_{i+1}]+[\f_i]$.
+  This means that for vectors $\{\e,\f_1,\dots,\f_n\}$
+                   $$
+                 \cases
+               {
+        A\e=\l\e\cr
+          A\f_1=\mu\f_1+a_1\e\cr
+         A\f_2=\mu\f_2+\f_1+a_2\e\cr
+         A\f_3=\mu\f_3+\f_2+a_3\e\cr
+         A\f_4=\mu\f_4+\f_3+a_4\e\cr
+        \dots\dots\dots\dots\cr
+         A\f_n=\mu\f_n+\f_{n-1}+a_n\e\cr
+               }
+                   $$
+Consider the first two equations in the system above.
+We already showed that $a_1\not=0$ 
+and $\mu=\l$ since if $a_1=0$ or $\l\not=\mu$ then the operator
+$A$ possesses second eigen vector in the span of vectors $\e$ and $\f$
+(see the case $k=2$ above). 
+
+Hence by multiplying  all the vectors $\f_i$ by $1\over a_1$  we come to
+the equations
+                $$
+                 \cases
+               {
+        A\e=\l\e\cr
+       A\f_1=\l\f_1+\e\cr
+         A\f_2=\l\f_2+\f_1+a_2\e\cr
+         A\f_3=\l\f_3+\f_2+a_3\e\cr
+         A\f_4=\l\f_4+\f_3+a_4\e\cr
+        \dots\dots\dots\dots\cr
+         A\f_n=\l\f_n+\f_{n-1}+a_n\e\cr
+               }
+                   $$
+  Now one can see (again) by induction that 
+that we have the flag of spaces $\{V_k\}$ such of these spaces is $J^{\l,k}$.
+
+Indeed consider spaces $V_k$ which are spans of vectors 
+$\e,\f_1,\dots,\f_{k-1}$. All these spaces are Jordanian cells with same 
+eigenvalue $\l$.  By induction hypothesis  there exists a basis
+$\e,\f'_1,\f'_2,\dots,\f'_{n-1}$ in $V_{n-1}$ such that
+the 
+          $$
+      \cases
+               {
+        A\e=\l\e\cr
+       A\f'_1=\l\f'_1+\e\cr
+         A\f'_2=\l\f'_2+\f'_1\cr
+         A\f'_3=\l\f'_3+\f'_2\cr
+         A\f'_4=\l\f'_4+\f'_3\cr
+        \dots\dots\dots\dots\cr
+         A\f'_{n-1}=\l\f'_{n-1}+\f_{n-2}\cr
+               }\,.
+            $$
+Then for vector $\f_n$
+        $$
+      A\f_n=\l \f_n+b_0\e+b_1\f'_1+
+  b_2\f'_2+b_3\f'_3+\dots+b_{n-1}\f'_{n-1}
+       $$
+
+If we choose 
+        $$
+     \f'_n=\f_n-b_0\f_1+-b_1\f_2-\dots
+        $$
+we come to the answer\finish         
+
+
+      \centerline {Jordanclells in Abelian group classification}
+
+Consider the abelian finite group 
+         $$
+       C_k=\Z\backslash k\Z
+         $$
+
+Then if $k=p^2$ ($p$ is prime number) then $C_k$ is Jordanian cell.
+The group $C_{p^n}$ possesses subgroup $C_p$ and the sequence
+       $$
+  0\rightarrow C_p\rightarrow C_p^2\rightarrow C_p\rightarrow 0
+       $$ 
+is not splitted.
+
+
+  Standard classfication theorem says  
+        that $C_N$ is direct sum of the groups
+   $C_{p_k^{n_k}}$ where $N=\prod_i p_i^{n_i}$ is expansion over primes
+This is expansion on Jordanian cells.
+
+   $C_{p^k}$ is ``analog'' of $k$-dimensional  Jordanian cell. 
+\bye

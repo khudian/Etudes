@@ -1,0 +1,122 @@
+\magnification=1200
+
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\y{{\bf y}}
+
+
+       \centerline {\bf Lie Theorem of existence and uniqueness 
+                  of highest vector}
+
+
+     \centerline {\bf Important lemma}
+
+
+   Let $L=H+X_+$ be Lie algebra of upper triangular $n\times n$  matrices.
+   ($H$ is Lie algebra of diagonal matrices, $X_+$ is sublagebra if 
+strictly upper trinagular matirces.)
+
+   {\bf Lemma} Irreducible representation of $L$ in complex space $V$
+is one-dimensional.
+
+
+
+    Proof.
+
+Let $V$ is irreducible representation of Lie algebra $L=H+X_+$.
+
+  Let $V_0$ be a subspace of $V$ such that it is irreducible with respect
+to subalgebra $X_+$. Then it is easy to see that $V_0$ is one-dimensional.
+
+The proof easy follows from Shur Lemma and commutation relations.
+Indeed first note that operators $\{E_{1i}\}$ belong to the centre of the 
+algebra $X_+$. Hence all these operators are proprotional to identity
+operator on $V_0$. On the other hand all the operators $\{E_{1i}\}$ 
+except the operator $E_{12}$ are traceless on $V_0$ since they belong 
+to subalgera $[X_+,X_+]$ (they are expressed via commutators).
+Hence we proved that for $i=3,\dots,n$ all the
+operators $E_{1i}=0$ on $V_0$ and $E_{12}$ is a scalar operator.
+ using this fact and Shur lemma we immediately come to the result
+that   
+
+
+  Now take an arbitrary such a subspace $V_0$ in $V$
+which  is irreducible one-dimensional representation of $X_+$.
+  For every $x\in X_+$ denote by $\lambda(x)$ the eigenvalue
+of $x$ on $V_0$:
+            $$
+       x(\e_0)=\lambda (x)\e_0
+            $$
+  where $\e_0\in V_0$.
+
+
+  Consider the flag of subspaces
+              $$
+         V_0\subset V_1\subset V_2\subset\dots \subset V_k 
+           $$
+such that all the factor spaces $V_{r+1}\backslash V_r$
+ have weightfunction  $\lambda(x)$ for elements of the algebra  $X_+$: 
+if $\{\e_0,e_1,\dots,\e_k\}$ s a basis in $V_k$ adjusted to the flag
+  ($\e_s\in V_s$) then     
+        $$
+ \hbox {for every $x\in X_+$}\qquad  
+    x(\e_s)=\lambda (x) \e_s+\dots
+              $$      
+where dots are vectors belonging to $V_{s-1}$.
+
+Suppose now that $V_k$ is maximal flag with weight function $\lambda(x)$
+in the vector space $V$,
+i.e. for every non-zero vector $\f\in V$ such that $\f\not\in V_k$
+there exists an element  $x\in X_+$ such that $x(\f)-\lambda(x)x$
+does not belong to $V_k$ also.
+
+By definition $V_k$ is invariant with respect to subalgebra $X_+$.
+Show that this is invariant with respect to the whole algebra $L$ also.
+
+Indeed consider a vector $\y=E_{pp}\e$, where $\e\in V_k$ ($E_{pp}\in H$)
+Suppose that $\y\not\in V_k$. From commutation relations
+            $$
+[E_{pp}, E_{ij}]=\delta_{pi}E_{pj}-\delta_{jp}E_{ip}
+         \eqno(1)
+            $$
+it follows that
+            $$
+       x(\y)=\lambda(x)\y+\dots
+          $$
+where we denote by dots vector in $V_k$. Hence the flag $V_k$ is not maximal.
+Contradiction. So we proved that the flag space $V_k$ is invariant with respect to the whole alge
+bra $L$. Hence the flag space $V_k$ coincides with 
+the space $V$, $V=V_k$.  Consider again an arbitrary element $x\in X_+$.
+ The fact that  $\lambda(x)$ is the weight function of the flag, i.e.
+       $$
+  x(\e_k)=\lambda(x)+\hbox {vector in $V_{k-1}$}
+      $$
+means that trace of an arbitrary operator $x$ is equal to $N\lambda(x)$,
+where $N$ is dimension of the space $V=V_k$. On the other hand due to 
+ commutation relations (*) trace of an arbitrary operator $x\in X_+$
+is equal to $0$. Hence we have proved that $\lambda(x)=0$ (for $x\in X_+)$.
+Now we see that the action of Lie algebra $L=H+X_+$ on the space 
+$V$ is reduced to the action of abelian Lie algebra $H$. Hence
+$V$ is $1$-dimensional. Lemma is proved.
+
+
+$$ $$
+  Now we are ready to prove the Theorem.
+
+  A finite dimensional representation of the algebra $gl(n,C)$
+or $sl(n,C)$ has a (up to a coefficient) highest vector.
+It is a unique (up to a multiplier) if representation is irreducible.
+
+
+Indeed consider in $W$ a subspace $V$ which is irreducible representation
+of the subalgebra $L=H+X_+$ (for $sl(n,C)$ we consider traceless 
+diagoanl matrices). Due to the lemma this is one-dimensional vector space.
+It is spanned by a vector $\e$. This vector is highest vector.
+
+
+Let $W$ be finite-dimensional 
+
+
+
+
+\bye        

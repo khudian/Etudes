@@ -1,0 +1,173 @@
+
+
+
+
+
+
+\magnification=1200
+
+\baselineskip=17pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf Thick morphisms of vector spaces.}
+
+ Let $U,W$ be a vector spaces, and $L\colon U\to W$ linear map from
+   $U$ to $W$. One can consider its adjont $L^*\colon V^*\to U^*$:
+                      $$
+L^*\colon W^*\to U^*\,\, \hbox {such that for arbitr.}\,\,
+     \Y\in U, \langle\Y, L^*(\w) \rangle
+              =\langle L(\Y), \w \rangle\,.
+            \eqno (0.1)
+                      $$
+  In the case if $W=U^*$ both  $L$ and $L^*$
+map $U\to U^*$.
+  Map $L$ is self-adjoint (anti-self adjoint if $L=L^*$.
+   This is standard text-book stuff. Using
+   Vornov's thick mrophisms in fact generalise
+this statement for non-linear maps.
+
+   All the constructions will be based on
+   Voronov's thick morphisms.
+
+
+  For linear spaces $U,W$ consider linear space
+          $$
+T=U\oplus U^*\oplus W\oplus W^*
+\eqno (1.1)
+          $$
+
+If $V$ is an arbitrary vector space then denote by $\w_{_V}$
+$2$-form on vector space $V\oplus V^*$ such that
+                $$
+    \cases
+     {
+\w_{_V}(\X,\Y)=0\,{\rm if}\, \X\,,\Y\in V\,,\cr
+\w_{_V}(t,\X)=t(\X)\,{\rm if}\,\X\in V \in\,,t \in V^*\cr
+\w_{_V}(t,s)=0\,{\rm if}\,t\,,s \in V^* \cr
+     }\,, \hbox{in coordinates}\,
+  \w_{_U}=dp_i\wedge du^i\,
+  \eqno (1.1a)
+                $$
+if $p_i$ coordinates on $V^*$ dual to coordinates to $u^j$.
+
+Spaces $U\oplus U^*$ and $W\oplus W^*$can be provided with 
+canonical sympletic structures  $\w_{_U},\w_{_W}$,
+and the space
+$T=U\otimes U^*\otimes W\otimes W^*$ with sympelctic structure
+     $$
+\Omega=\w_{_U}-\w_{_V}=dp_i du^i-dq_a dw^a\,
+  \eqno (1.1b)
+      $$
+where we denote by $u^i$ some coordinates on $U$,
+$p_i$ coordinates on $U^*$ dual to $u^i$,
+and
+$w^a$ some coordinates on $W$,
+$q_a$ coordinates on $W^*$ dual to $w^a$,
+
+\medskip
+
+{\bf Definition} Let $S=S(u,q)$ be a smooth function on $V\times W^*$.
+  This function defines Lagrangian surface
+          $$
+\L_S=   \left\{(u^i,p_j,w^a,q_b)\colon\,\, 
+    p_j={\p S(u,q)\over \p u^i}, w^a={\p S(u,q)\over \p q_a}
+        \right\}
+      \eqno (1.2a)
+          $$
+ {\bf Definition} The function $S$ and Lagrangian  surface
+ $\L_S$ define thich morhism
+        $$
+ \Phi_S\colon \,  U\rightarrow W\,.
+   \eqno (1.2b)
+        $$
+Thick morphism $\Phi_S$ defines pull-back of functions
+       $$
+ \Phi^*_S\colon \,  U\leftarrow W\,.
+\eqno (1.2c)
+       $$
+which is the following non-linear map:
+      $$
+C(W)\ni g\to f=f(u)=g(w)+S(u,q)=q(w)\,,
+ \eqno (1.3) 
+      $$
+Geometrical meaning of this map:  Function $g$ defines Lagrangian
+surface 
+            $$
+      \L_g=\left\{(w^a,q_b)\colon\,\, 
+     q_a={\p g(w)\over \p w^a}
+        \right\}
+        \eqno (1.4a)
+       $$
+This is -graph of the function  $dg$ in the symplectic space 
+$W\oplus W^*$. 
+Respectively, function $f$ defines Lagrangian
+surface $\L_f=\left\{(x^i,p_j)\colon\,\, 
+     p_j={\p f(x)\over \p x^i}
+        \right\}$.
+This is -graph of the function  $dg$ in the symplectic space 
+$W\oplus W^*$.  The ansatz (1.3) means that Lagrangian
+surfaces $\L_F,\L_g$ are related via the Lagrangian surface $\L_S$:
+         $$
+\L_f=\L_S\circ \L_g
+     \eqno (1.5)
+      $$
+Note that the relations (1.5) define pullback up to a constant.
+ ({ecrire mieux})
+
+
+In the special case if
+       $$
+   S=\Psi^a(x)q_a
+      $$
+then thick morphism $\Phi_S$ is nothing but the morphism
+   $w^a=\Psi^a(x)$.
+\bye

@@ -1,0 +1,240 @@
+
+% I began this file on 18 July 2016
+
+
+
+\magnification=1200
+
+\baselineskip=17pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\P {{\cal P}}
+\def\S {{\cal S}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \D   {{\cal D}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf Monge cone and characteristic for equation
+        $F(x,u,p,q)=0$}
+
+  Consider partial differential equation
+             $$
+          F(x,y,u,p,q)=0
+             $$
+on function $u=u(x,y)$, where $p=u_x, q=u_y$.
+
+Function $u$, solution of this equation defines surface $u_F$.
+
+Differential equation is a function on space of $1$-forms
+
+
+  Pick an arbitrary point $\pt$ at the surface $M_u$.
+
+The set of all $1-forms$ at the space  $T^*_\pt R^3$
+which obey the equation $F\big\vert_\pt=0$ defines
+one-parametric curve in projective space $P^{*2}$.
+  This curve is Monge cone.
+
+The dula of this curve, the curve in $P^2$
+defined by vectors, directions, which 
+annihilate these forms.
+
+   This is {\it dual Monge cone}.
+
+
+
+
+    Calculations:
+    
+Consider projective curve  of $1$-forms $[a(s):b(s):c(s)]=[p(s):q(s):-1]$
+such that $F(p,q)=0$ (at the point $\pt$, i.e.) 
+
+  It annihilates tangent vectors. A curve
+   $[\a(s):\beta(s):\gamma(s)]$ dual to the curve
+   $[a(s):b(s):c(s)]$ can be defined by relation
+                 $$
+  \det\pmatrix
+         {
+         a(s) &\dot a(s)  &\alpha (s)\cr
+         b(s) &\dot b(s)  &\beta (s)\cr
+         c(s) &\dot c(s)  &\gamma (s)\cr
+          }=0
+                 $$ 
+  For the Monge curve $[p(s):q(s):-1]$ we have
+                  $$
+\det\pmatrix
+         {
+         p(s) &\dot p(s)  &\alpha (s)\cr
+         q(s) &\dot q(s)  &\beta (s)\cr
+         -1 & 0  &\gamma (s)\cr
+          }=0\Rightarrow 
+    \left[\matrix{\a(s)\cr\beta(s)\cr\gamma(s)\cr}\right]=
+    \left[
+           \pmatrix{ p(s)\cr q(s)\cr -1\cr}
+                   \times
+         \pmatrix{\dot p(s)\cr\dot q(s)\cr 0\cr}
+               \right]=
+    \left[\matrix{ \dot q(s)\cr-\dot p(s)\cr p(s)
+        \dot q(s)-q(s)\dot p(s)\cr}\right]\,.
+                 $$        
+Recalling that
+                 $$
+           F_p\dot p+F_q\dot q=0
+                 $$
+we come to
+               $$
+[\a(s):\beta(s):\gamma(s)]=
+    \left[ \dot q(s): -\dot p(s): 
+         p(s)\dot q(s)-q(s)\dot p(s)\right]=
+        [F_p:F_q:pF_p+qF_q]
+               $$
+This is characteristic, more precisely the projection of
+bicharacteristic on the points space.
+
+  For every point $\pt=(x,y,u)$ and for every point 
+ $[p:q:-1]$ on the Monge cone over point $\pt$
+  (Monge cone is one-parametric curve in projective space)
+   there is a direction 
+            $$
+   [dx:dy:du]=[F_p:F_q:pF_p+qF_q]\,,
+            $$
+which is a point
+on the dula curve corresponding to the point $[p:q:-1]$.
+
+This direction is nothing is defined by the projection
+of bicharacteristic 
+         $$
+          \X=K_F=F_p
+          $$
+(see the file on bicharacteristics) 
+on the points space.
+  
+  We defined in the previous file $\X$
+as a field sympelctorthogonal to tnagent vector fields
+which annihilate the contact strucutre.
+
+ Here we will calculate the bicharacteristics $\X$
+direction (i.e. vectgor field (up to multiplier)
+just using Monge cone considerations.
+
+For every point $(x,y,u, p,q)$ on the manifold
+  $M_f$  we will define
+       $$
+        \pmatrix {\dot x\cr\dot y\cr\dot u\cr \dot p \cr \dot q\cr}
+       $$
+
+We consider curve 
+       $$
+        \pmatrix {x(s)\cr y(s)\cr u(s)\cr p(s) \cr q(s)\cr}
+       $$
+We have already that
+         $$
+   [\dot x:\dot y:\dot u]=[F_p:F_q: pF_p+qF_q]
+          $$
+It is convenient to choose  $\dot x=F_p, \dot y=F_q$
+(we calculate up to a multiplier.)
+   Now caclulate $\dot p, \dot q$. 
+          $$
+{dp(s)\over ds}={d\over ds}u_x(x(s,y(s)))=p_x x_s+p_y y_s
+          $$
+Use the fact that 
+             $$
+p_y=q_x\,,\, \quad\hbox {Lagrangian surface}
+              $$
+We have
+    $$
+{dp(s)\over ds}={d\over ds}u_x(x(s,y(s)))=p_x x_s+p_y y_s=
+        p_xF_p+p_yF_q=p_xF_p+q_x F_q=
+          $$
+              $$
+(F_x+F_uu_x+F_pp_x+F_qq_x)-F_x-F_uu_x\,.
+               $$
+Now note that 
+             $$
+ (F_x+F_uu_x+F_pp_x+F_qq_x)={d\over dx}\left(F(x,y,u,p,q)\right)_
+{u=u(x,y)\,,p=p(x,y)\,,q=q(x,y)}=0\,.
+             $$
+Hence we come to
+                    $$
+{dp(s)\over ds}=-F_x+F_uu_x\,.
+               $$
+In the same way we calculate
+                 $$
+{dq(s)\over ds}=-F_y+F_uu_y\,.
+               $$
+nd we come to bicharacteristic direction
+              $$
+  dx:dy:du:dp:dq=F_p:F_q:pF_p+qF_q:-(F_x+u_xF_u):-(F_x+u_xF_u)
+              $$
+            This is in accordance with the fact that bicharacteristic 
+vector field is equal to  
+             $$
+\X=K_F=F_p{\p \over \p x}+F_q{\p \over \p y}-
+   \left(F_x+u_xF_u\right){\p\over \p p}+
+   \left(F_y+u_yF_u\right){\p\over \p q}+
+      \left(pF_p+qF_q\right){\p \over \p u}
+             $$ 
+If we ingnore $u$ we come to Hamiltonian vector field.
+
+{\bf Example}  Consider linear case
+      $$
+au_x+bu_y=c, 
+      $$
+i.e. $F=ap+bq-c$.
+In this case answer is obvious without any calculation:
+Characteristic vector direction is  $$
+a:b:c=F_p:F_q:pF_p+F_qF_q=p:q:ap+bq=p:q:c
+       $$
+The equation defines $1$-parametric set of $1$-forms
+$pdx+qdy-du$ such that $ap+bq=c$. They define the line
+in projective space $P^{*2}$. The dual to this line
+will be a point in $P^2$ defined by direction
+ $a:b:c$.
+
+\bye

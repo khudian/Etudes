@@ -1,0 +1,182 @@
+\magnification=1200
+
+\baselineskip=14pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf One construction}
+
+We consider two fibre bundles 
+ $E_1=\Pi T^*M\to M$ and $E_2=\Pi TM\to M$.
+
+  Coordinates on $E_1$ are $(x^a,\theta_b)$, coordinates on $E_2$ are 
+$(y^a,\xi^b)$.
+
+  We consider also $T^*E_1=T^*(\Pi T^*M)$ with coordinates
+            $$
+           (x^a,\theta_b; p_a,\eta^b)
+        $$
+and $T^*E_2=T^*(\Pi TM)$ with coordinates
+            $$
+           (y^a,\xi^b; q_a,\pi_b)
+        $$
+We consider canonical Hamiltonian
+      $$
+   h=\xi^aq_a\quad\hbox{on $\Pi T^*M$}
+      $$
+This is linear Hamiltonian, and
+        $
+   (h,h)=0
+       $
+where $(\,,\,)$ is canonical Poisson bracket in $T^*(\Pi TM)$.
+
+  The image of this linear Hamiltonian under  MX symplectomorphism
+             $\kappa\colon  T^*(\Pi T^*M)\to T^*(\Pi TM)$ is 
+quadratic Hamiltonian
+           $$
+        H=k^*h=p_a\eta^a
+           $$
+Hamiltonian $h$ generates degenerate
+  homotopy Schouten bracket on $\Pi T^*M$---de Rham differential
+and Hamiltonian $H$ generates canonical Schoutten bracket on $\Pi T^*M$:
+            $$
+       \matrix
+         {
+\hbox{for arbitrary function $F$ on $\Pi T^*M$}\,, (h,F)=dF\cr    
+\hbox{for arbitrary functions $G,H$ on $\Pi TM$}\,, ((H,G),H)=[G,H]\cr    
+         }   
+         $$
+all other brackets vanish.
+
+Let as usual $P$ be a function on $\Pi T^*M$ such that
+        $$
+    [P,P]=((H,P),P)=0\,.
+        $$
+This master-function defines on $\Pi T^*M$ Lichnerowicz differential
+        $$
+   d_P F=[P,F]=((H,P),F)
+        $$
+Consider on $\Pi T^*M$
+{\it linear Hamiltonian $H_P$ such that the Lichneroitch differential
+ is just its homotopy Schouten bracket}, i.e.
+      $$
+  (H_P, F)=d_PF
+      $$
+  Hence
+      $$
+   H_P=(P,H)
+ =(P,H)=(P,p_a\eta^a)=
+ p_a{\p P(x,\theta)\over \p \theta_a}+
+    \eta^a{\p P(x,\theta)\over \p x^a}\,.
+     $$
+Now consider the Hamiltonian $h_P$ in $\Pi TM$, which is
+ image of  $H_P$ under MX symplectomorphism:
+          $$
+    h_p={(\kappa^{-1})}^*H_p
+=q_a{\p P(x,\pi)\over \p_a}+
+    \xi^a{\p P(x,\pi)\over \p x^a}
+          $$  
+(znaki ne proverial)
+
+We just come to Hamiltonian which generates
+  homotopy Schoutem nracket on $\Pi TM$---higher Koszul bracket.
+
+  We have pair of Hamiltonians $(H,H_P)$ on $T^*(\Pi T^*M)$,
+           $H_P=(H,P)$
+  and
+   pair of Hamiltonians $(h,h_P)$
+  on $T^*(\Pi TM)$ which are their MX image.
+
+
+The quadratic Hamiltonian $H$ (linear Hamiltonian $h$)
+generates canonical odd Poisson bracket on $\Pi T^*M$
+   (de Rham differential on $\Pi TM$).
+
+The linear Hamiltonian $H_P$ (Hamiltonian $h_P$)
+generates Lichnerowicz differential  on $\Pi T^*M$
+   (Higher Koszul bracket on $\Pi TM$)
+
+\medskip
+
+Now go to the map $\varphi_P\colon \Pi T^*M\to \Pi TM$
+            $$
+\phi_P\colon x^a=y^a, \xi^a={\p P(x,\theta)\over \p x^a}.
+            $$ 
+
+       We know that 
+   $$
+`   d_P(\varphi^*\w)=(H_P,\varphi^*\w)=\varphi^*(d\w)=
+\varphi^*(h,\w)
+           $$
+in other words
+{\it morphism  $\varphi_P\colon \Pi T^*M\to \Pi TM$
+(more precisely, lifting of this morphism, canonical
+  transformation of $T^*(\Pi TM)$
+  $\hat {\varphi_P}$)   
+interwins Hamiltonians $H_P$ and $h$:
+
+
+
+{\it Conjugate thick morphism $\Phi^{(thick)}_P$
+interwins Hamiltonians $H$ and $h_P$:
+      $$
+      $$
+
+We see that we have {\bf three symplectomorphisms}
+One MX symp,ectomrophism and two symoplectomorphisms
+ thick and usual related with the map $P$.
+  The later both are conjugate with each other via MX symplectomorpshim.
+
+
+   
+\bye
+            
+

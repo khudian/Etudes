@@ -1,0 +1,1041 @@
+
+%  \magnification=1200 
+% this is the file of the Galois lecture
+% which I did 22 November 2017
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}%[section]
+%\theoremstyle{remark}
+\newtheorem{example}{Example}%[section]
+\newtheorem{remark}{Remark}%[section]
+%
+
+%\theoremstyle{theorem}
+%\newtheorem{thm}{Theorem}
+
+%\theoremstyle{lemma}
+%\newtheorem{lm}{Lemma}
+
+
+%\theoremstyle{remark}
+%\newtheorem{rm}{Remark}
+
+%\theoremstyle{Lemma}
+%\newtheorem{lm}{Lemma}
+
+\numberwithin{equation}{section}
+
+
+\title{Locally Euclidean Geometries and hyperbolic geometry}
+\date{}
+
+
+
+\begin{document}
+\maketitle
+
+
+
+
+%\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\AA {{\bf A}}
+\def\A {{\cal A}}
+\def\t {\tilde}
+\def\bs {{\bf s}}
+\def\a {\alpha}
+\def\d {\delta}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\B {{\cal B}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\R {{\bf R}}
+\def\L {{\cal L}}
+\def\F {{\cal F}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+%\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def \grad {{\rm grad\,}}
+\def\e {{\bf e}}
+\def\f {{\bf f}}
+\def\g {{\bf g}}
+
+
+
+
+  \centerline {H.M.Khudaverdian}
+
+\m
+
+\centerline {{\tt GALOIS GROUP} lecture for UG students, 
+             University of Manchester}
+
+
+\m
+
+     \centerline {22 November 2017}
+
+\m
+
+{\tt The talks is based on the book 
+``Geometry and groups'' of 
+S.Nikuin, R.Shafarevich}
+
+\medskip
+
+\begin{abstract}
+
+
+Geometry on the surface of the cylinder is 
+locally Euclidean. An "ant-mathematician" who lives 
+on the cylinder will not  distinguish the geometry of  
+the surface at small distances from the Euclidean  
+geometry; the Pythagorean Theorem will be almost the same, 
+and for "not too large" triangles the sum of the angles will
+ be $\pi$.
+      In the first part of talk, we will study locally 
+Euclidean two-dimensional geometries. We will study  
+these geometries by using discrete subgroups of the 
+isometry group of the Euclidean 
+plane $E^2$. The list of locally Euclidean geometries is 
+exhausted by the geometries  on the surface of the cylinder, 
+on the surface of the torus, on the surface of the 
+"twisted cylinder" (the Moebius band), 
+and on the so-called Klein bottle.
+         In the second part of the talk, we will 
+consider the set of locally Euclidean  geometries, 
+and will show that this set can be naturally 
+parametrized by the points of the Lobachevsky 
+(hyperbolic) plane.
+
+
+\end{abstract}
+
+
+\tableofcontents
+
+\section {Locally Euclidean surfaces}
+
+\subsection 
+{ (Uniformly) locally Eucldean surfaces}
+
+  We consider locally Euclidean $2$-dimensional 
+geometries.  An arbitrary $2$-dimensional  geometry 
+can be considered as
+$2$-dimensional  Riemannian surface, $(M,G)$.
+$M$ is a surface, and $G$ defines scalar product of
+tangent vectors, i.e. length of an arbitrary curve.
+For arbitrary curve
+  $\x=\x(t), t_1\leq t\leq t_2$
+             $$
+ \hbox {length of the curve}=
+   \int_{t_1}^{t_2} \sqrt{\left(\v(t),\v(t)\right)}dt\,,\,
+\hbox{scalar product}\,\,  
+\left(\v(t),\v(t)\right)=G(\v(t),\v(t))\,, 
+             $$
+where $\v(t)$ is velocity vector. 
+ In local coordinates $x^i$,
+the curve has appearance  $\x(t)=x^i(t)$,
+    $G=g_{ik}(x)dx^idx^k$,
+  $\v(t)=v^i(x(t))\p_i$,
+and 
+the scalar product of velocity vector on itself 
+is equal to
+      $$
+\left(\v,\v\right)=
+ v^i(x(t))g_{ik}(x(t))v^k(x(t))=
+ {d x^i(x(t))\over dt}
+   g_{ik}(x(t))
+ {d x^k(x(t))\over dt}\,,
+      $$
+i.e.
+      $$
+ \hbox {length of the curve}=
+   \int_{t_1}^{t_2} \sqrt{\left(\v(t),\v(t)\right)}dt
+      =
+    \int_{t_1}^{t_2} \sqrt{
+  {d x^i(x(t))\over dt}
+   g_{ik}(x(t))
+ {d x^k(x(t))\over dt} \,.   
+             }dt
+      $$
+We consider surfaces which locally look as Euclidean plane.
+
+We say that $M$ is uniformly locally Eucldean
+if
+
+\begin {itemize}
+
+\item 
+in a vicinity of arbitrary points there exist
+ Eucldean coordinates, i.e. the coordinates  $u,v$
+such that  $G=du^2+dv^2$ in these coordinates.
+
+
+\item this  neighborhood is enough large:
+there exists $r>0$ such that 
+   in a vicinity of arbitrary point there exist
+Eucldiean coordinates  $u,v$ which are  defined at least in
+the circle of radius $\geq r$.
+
+\end{itemize}
+
+
+
+\medskip
+
+{\bf Exercise}  Show that the surface of 
+cylindre
+is locally Eucldean.
+
+\smallskip
+
+{\bf Exercise}  Show that the surface of sphere
+is not locally Eucldean.
+
+\smallskip
+
+{\bf Exercise}  Show that domain $a<x<b$ of $\E^2$
+is locally Eucldean but it is not uniformly 
+locally Eucldean, and compare it with surface
+of cylindre, (which is uniformly locally 
+Euclidean.)
+
+(We suppose that metric on the surface
+$M$ in $\E^3$
+is  the metric induced from $\E^3$.)
+
+In this talk we will consider only uniformly locally 
+Euclidean surface, and we will call 
+them sometimes just
+locally Eucldean.
+
+
+
+  \subsection
+{Examples of locally Euclidean surfaces and 
+subgroups of $\E(2)$.}
+
+We considered surface of cylindre. It is
+uniformly locally Euclidean surface.
+  How to come to another examples.
+Here we suggest the regular way to come
+to all such examples. It is in the spirit of
+Klein Erlangen programme.
+
+
+
+\subsubsection
+{Subgroups of group $\E(2)$ and surfaces}
+
+ 
+  Let $\G$ be an arbitrary subgroup
+of group of isometries of $\E^2$.
+
+
+Assign to the group $\G$ a
+space $M_\G$ of orbits of $\G$-group action
+on $\E^2$,
+$M_\G=\E^2\backslash \G$.
+
+ We denote the points of the space $M_\G$, 
+by handwriting letters $\A,\B,C,\D,\dots$. These
+points are orbits of group $\G$ action.
+Every  point $A\in \E^2$ produces the point
+$\A\in \E^2\backslash \G$, the equivalence class
+of a point $A$ with respect to the group $\G$:
+         $
+\A=[A]_\G\,,\qquad  g\in \G\,,
+A'=g(A)\in [A] 
+        $.
+
+  To establish the geometry on $M$
+we define the distance between points $\A,\B$
+as the minimal distance between the orbit
+   $\{A^g\}$ and $\{B^g\}$:
+            $$
+\hbox{if $\A=[A]$ and $\B=[B]$ then}\,\,
+d(\A,\B)=\min_{g,g'\in\G}d(A^g,B^{g'})
+            $$ 
+{\bf Exercise 1}  Let $\ac\not=0$ be an arbitrary vector
+in $\E^2$ and $\G=\{T_{n\ac}\}$ be a group of translations
+generated by the translation on vector $\ac$:
+                 $$
+T_{n\ac}\colon \r\to \r+n\ac\,.
+                 $$
+
+  Describe the geometry $M_\G$
+and show that this is geometry of cylinder.
+
+
+
+\m
+
+{\bf Exercise 2}  Let $\G=C_2$ be group of reflection
+with respect to the line $l$.
+
+  Describe the geometry $M_\G$
+and show that this is not uniformly locally Euclidean manifold.
+
+  
+
+
+
+\subsubsection 
+{Uniformly discontinuous subgroups of $\E(2)$}
+
+We say that the subgroup $\G$ acts properly discontinuous
+on $\E^2$ if there exists $\delta$ such that
+for an arbitrary point $A\in \E^2$, and for an arbitrary
+non-identity element $g\in \G$ 
+        $$
+      d(A,g(A))\geq \delta\,.
+        $$
+ In other words it means that the distance between 
+distinct points of an arbitrary orbit exceeds the  $\delta$.
+
+Why these groups are interesting?  
+Because every such a group
+defines locally Eucldean manifold\footnote
+{In fact the inverse implication is true also,
+ and 
+the set of all
+ (uniformly) locally Euclidean surfaces
+is in one-one correspondence with the
+set of all uniformly discontinuous subgroups
+of group $\E^2$.(see further)}.  
+
+
+
+\begin{proposition}\label{1}
+
+If action of group $\G$ has a fixed point
+ (there exists $\r_0\in \E^2$ such that 
+for all $g\in \G$,
+$g(\r_0)=\r_0$) ({\it il faut dire mieux}),
+then $M_\G$ is not uniformly locally 
+Euclidean.
+\end {proposition}
+\begin{proof}
+ If $A=\r_0$ is a fixed point, then
+for arbitrary $g\not=1$  $d(A,A^g)\geq \delta$, and
+on the other hand $d(A,A^g)=0$, if $\G$ 
+acts uniformly discontinuou. Contradiction.
+\end{proof}
+
+
+\begin{proposition}\label{2}
+If $\G\in \E(2)$  is uniformly discontinuous group, then
+the surface  $M_\G=\E^2\backslash \G$ is uniformly local.  
+
+\end{proposition}
+
+\begin{proof}.
+
+Let $\G$ be uniformly discontinuous, i.e.
+there exists $\delta >0$ such that 
+for an arbitrary $g\in \G$
+and for an arbitrary point $A\in \E^2$
+         $d(A^g,A)<\delta \Rightarrow
+   g=1$.
+  Let $B$ be an arbitrary point  
+which belongs to the disc $D_{\delta\over 2}(A)$
+Consider orbits $\A$ and $\B$ of these points.
+It is easy to see from triangle inequality that
+for arbitrary points $A'\in\A$ and $B'\in \B$
+the distance between these points is bigger or equal to
+  $r={\delta\over 2}$. Indeed let $A"=A^g$, and 
+$B'=B^h$. Denote $\tilde B=B^{hg^{-1}}$. Then
+$d(A',B')=
+d\left(A, \left(B^h\right)^{g^{-1}}\right)=
+d\left(A, \tilde B\right)$, and by triangle inequality
+     $$
+d(A',B')=d(A,\tilde B)\geq \left|d(B,\tilde B)-d(A,B)\right|
+>\delta
+     $$
+if $B\not=\tilde B$.
+Thus we see that in the case if two points $A$
+and $B$ are closer than $\delta\over 2$,
+then the distance between orbits $\A$ and $\B$
+is equal to the distance $d(A,B)$.
+This implies  that $M_\G$ is uniformly locally Euclidean
+if $\G$ is uniformly discontinous.
+
+
+
+
+\end{proof}
+
+\subsubsection {Classiication of all
+uniformly discontinuous subgroups of $\E(2)$}
+
+
+  First of all recall the classic Theorem:
+ 
+\begin{theorem} (Chazles+?)
+  Any isometry of $\E^2$ is rotation, or translation or
+  glided reflection.
+\end{theorem}
+
+  This Theorem possesses two statements. First that an arbitrary
+(even non-linear map ) which is isometry has appearance
+            $$
+   F(\r)=A\r+\b\,,
+            $$ 
+where $A$ is linear operator, and the second statement
+that this linear map is rotation (with respect to some centre)
+or translation or glided reflection.
+
+    We can prove the first statement under the assumption that
+  $F(\r)$ is smooth map of $\E^2$ in $\E^2$.
+
+
+     Suppose now  that $F(\r)=A(\r)+\b$.
+   
+\smallskip
+
+  I-st case) orientation is preserved, i.e. $\det A=1$.
+If $A=1$ then it is translation, if $A\not=1$ then operator
+$A-1$ is invertible, and
+              $$
+\r=A(\r)+\b=\ac+\left(A\left(\r-\ac\right)\right)\,,
+{\rm where}\,\,,  \ac= (1-A)^{-1}(\b)\,,
+              $$
+i.e. this affine transformation is a rotation around
+the point $O-\ac$.
+
+\smallskip
+
+II-nd case) orientation is not preserved, i.e. $\det A=-1$.
+  This operator has eigenvector  $\n$ 
+
+One can see that we come to reflection with respect to the line
+along the vector $\n$ and translation along $\n$, i.e. glided
+reflection.
+ 
+
+
+  Now using this Theorem classify 
+   uniformly discontinuous subgroups of isometry group.
+
+
+
+   Let $\G$ be a subgroup of $\E(2)$ which acts on
+$\E^2$ uniformly discontinuous, i.e. there exists
+$\delta>0$ such that for an arbitrary point $A\in \E^2$
+and an arbitrary $g\in \G$
+                  $$
+                 d(A,A^g)<\delta 
+       \Rightarrow g=1\,.
+                   $$
+ It follows from proposition \ref{1} that the subgroup $\G$
+contains only translations and non-trivial 
+glide reflections.
+
+  If group $\G=e$ this is trivial: $M_\G=\E^2$.
+
+Denote by $\G^{(0)}$ the subgroup 
+of $\G$
+which preserve orientation, i.e. 
+subgroup of translations.
+
+
+\begin{proposition}\label{3}
+The subgroup $\G^{(0)}$ of uniformly discontinuous
+grroup $\G$
+of orientation preserving transformations
+is 
+
+\begin{itemize}
+\item the group of translations generated
+  by arbitrary non-zero vector $\ac$
+        $$
+ \G^{(0)}=\G^{(0)}0_{\ac}=
+\{T_{n\ac}\colon T_{n\ac}(\r)=\r+n\ac,\,,
+{\rm where}\,\, n=0,\pm 1,\pm 2,\dots\}
+        $$
+\item the group of translations generated
+  by arbitrary two non-zero linearly independent 
+vectors $\ac,\b$
+        $$
+ \G^{0)}=\G^{(0)}_{\ac,\b}=
+\{T_{m\ac+n\b}\colon T_{m\ac+n\b}(\r)=
+\r+m\ac+n\b,\,,
+{\rm where}\,\, m,n=0,\pm 1,\pm 2,\dots\}
+        $$
+\end{itemize}
+
+
+\end{proposition}
+
+On the base of this proposition study 
+the general case.
+
+\m
+
+Let $\G$ be an arbitrary uniformly 
+discontinuous subgroup of $\E(2)$.
+Then $\G^{(0)}=\G^{(0)}_\ac$
+or $\G^{(0)}=\G^{(0)}_{\ac,\b}$.
+
+{\tt First case} $\G^{(0)}=\G^{(0)}_\ac$.
+
+if $\G=\G_0=\{T_{n\ac}\}$,
+and $M=\E^2\backslash \G$ is cylindre.
+
+Now suppose  $\G\not=\G_0$,
+i.e. $\G$ possesses glide reflections.
+Let $S=S_{l,\b}\in \G$
+(reflection with respect to the line 
+$l$ directed along the vector
+$\b$ and translation
+on the vector $\b$ ). Then
+$S^2=T_{2\b}$. Hence $\b={k\ac\over 2}$
+for some integer $k$. This integer $k$ has to be odd,
+since if $p=2p$ then the transformation $T_{-p\ac}S$
+is the reflection, and it possesses fixed point
+(see the porposition \ref{1}). 
+We see that in this case $G$ is generated by translation
+$T_\ac$ and glided reflection  $S_{l,{\ac\over 2}}$
+
+In this case
+$M=\E^2\backslash \G$ is twisted cylindre, 
+(Mobius strip
+with infinite sides)
+\m
+
+
+{\tt Second case} $\G^{(0)}=\G^{(0)}_{\ac,\b}$.
+
+Let   $\G_0=\{T_{n\ac}\}$. Study again 
+ two possibilites.
+
+First:
+$\G=\G_0=\{T_{n\ac}\}$. In this case
+
+$M=\E^2\backslash \G$ is a torus.
+
+
+Suppose now that $\G\not=\G_0$ and it possesses glided
+reflections. One can see that this can happen
+only if vectors $\ac$ and $\b$ are orthogonal to each
+other. We will come to
+$M=\E^2\backslash \G$ is a Klein bottle.
+
+We come to the theorem classifying
+all the locally Euclidean surfaces corresponding
+to uniformly discontinuous isometry subgroups.
+
+ \begin{theorem}  Let $\G$ be 
+an arbitrary uniformly discontinuous
+subgroup of isometries group of $\E^2$. 
+Then the following possibilities
+may occur ({\it ca il faut dire mieux!!!})
+
+\begin{itemize}
+
+\item
+I-st case (trivial)
+
+$\G={e}$ has only identity element. Then $M=M\backslash \G=\E^2$ 
+
+\item
+II-nd case 
+
+
+Group $\G=\{T_{m\ac}\}$
+is generated by translation on vector $\ac$,
+where $\ac$ is an arbitrary non-zero vector.
+Then $M=M\backslash \G$ is cylindre 
+
+\item
+III-rd  case 
+
+
+Group $\G\colon \G^{(0)}=\{T_{n\ac}\}$,
+however, $\G\not=\G^{(0)}$. This group 
+is generated by translation on vector $\ac$,
+and glide reflection $S_{l,{\ac\over 2}}$,
+where the line
+$l$ goes along the vector $\ac$
+Then $M=M\backslash \G$ is twisted cylindre 
+(Mobius).
+
+\item
+IV-th case 
+
+
+Group $\G=\{T_{m\ac+\n\b}\}$
+is generated by translation on vectors $\ac$
+and $\b$,
+where $\ac,\b$ are  arbitrary 
+linearly independent vectors.
+Then $M=M\backslash \G$ is a torus
+
+\item
+V-th case 
+
+
+Group
+is generated by translation on 
+vectors $\ac$
+and $\b$, and glided 
+reflection $S_{l,{\ac\over 2}}$,
+where the line
+$l$ goes along the vector $\ac$
+where $\ac,\b$ are  arbitrary non-zero vectors which are
+{\it orthogonal!} to each other.
+Then $M=M\backslash \G$ is a Klein bottle.
+
+\end{itemize}
+\end{theorem}
+
+\subsection  {The final classification}
+
+We classified in the Theorem above all 
+locally Euclidean surfaces which are generated
+by uniformly discontinuous groups.
+
+Is an arbitrary uniformly locally Euclidean surface
+$M$ generated by uniformluy discontinuous group?
+  Yes!
+
+
+To prove this statement we consider the 
+following construction.
+
+Take an arbitrary point $A\in \E^2$ 
+and $\A\in M$. Choose  arbitrary Cartesian
+coordinates $x,y$ in $\E^2$ adjusted to the point
+$A$ ($x_A=y_A=0$ and choose 
+arbitrary local Euclidean 
+coordinates  $\{u_0,v_0\}$ on $M$
+in vicinity of point $\A$ ($u_M=v_M=0$).
+Thus we define a map $\E^2\to M$
+  for an arbitrary point $\r\in \E^2$
+which is in the disc $D_r(A)$.
+If point is on the distance bigger than $r$
+but less than $2r$ we can consider two discs, e.t.c....
+
+
+This we will construct a map
+   $$
+  \begin{matrix}
+        \E^2\cr
+         p\downarrow\cr
+          M\cr
+     \end{matrix}
+      $$
+such that $p(A)=\A$.
+Taking the preimage of arbitrary point
+$\B\in M$ one come to the set of points
+ which define the uniformly discontinuous group.
+
+
+We come to 
+
+\begin{theorem}  Let $M$ be an arbitrary 
+uniformly locally Euclidean surface. Then there
+exists uniformly discontinuous group
+  $\G$ such that 
+       $$
+    M=M_\G
+       $$
+\end{theorem}
+
+It follows from this Theorem and Proposition \ref{3}
+the following corollary
+
+\begin{corollary} Let  $M$
+be an arbitrary uniformly locally Eucldean
+surface. Then $M=\E^2$ or $M$ is cylindre,
+or $M$ is twisted cylidnre,
+or $M$ is torus, or $M$ is Klein bottle.
+\end{corollary}
+
+
+\section {Space of locally Eucldean geometries}
+
+  Geometries on cylindres are similar to each other,
+  the same about geometries of twisted cylindres and Klein 
+bottles.
+
+  Consider the space of geometries on tori.
+
+Every lattice $T_{\ac,\b}$ defines
+geometry $M_{\ac,b}=M\backslash 
+{\{T_{m\ac+n\b}\}}$.
+
+Questions arises. 
+
+  At what extend lattices depend on vectors
+$\ac,b$. At what extend geometries (tori)
+ $M_{\ac,\b}$ depend on lattices?
+
+  What is a geometry in the space
+of geometries on tori?
+
+
+\subsection {Lattices---
+Geometries on tori---unimodular group }
+
+\begin{definition}
+Consider pair of arbitrary 
+lattices $T_{\ac,b}$
+and $T_{\ac',\b'}$ and corresponding tori
+  $M_{\ac,\b}$ and $M_{\ac',\b'}$.
+
+\smallskip
+Two geometries 
+  $M_{\ac,\b}$ and $M_{\ac',\b'}$
+are the same if 
+    \begin{equation}\label{sim1}
+\hbox{lattices $T_{\ac,b}$ and $T_{\ac',\b'}$
+coincide}\,.
+   \end{equation}
+
+\smallskip
+
+Two geometries are the same if
+      \begin{equation}\label{sim2}
+\hbox{there exists isometry $F$ such that
+$\ac'=F(\ac)$ and $\b'=F(\b)$\,.}
+   \end{equation}
+
+
+Two geometries  $M_{\ac,b}$
+and $M_{\ac',b'}$ are similar if 
+       \begin{equation}\label{sim3}
+\ac'=\lambda\ac\,, \b'=\lambda \b\,.
+   \end{equation}
+
+
+\end{definition}
+
+The first and second  conditions are obvious,
+the condition is natural. 
+They lead
+to very amazing consequences.
+
+\m
+
+\begin{proposition}
+Two lattices $T_{\ac,\b}$ and $T_{\ac',\b'}$
+coincide if and only if
+            $$
+  \begin{pmatrix}
+      \ac'\cr
+       \b'\cr
+  \end{pmatrix}=  
+     \begin{pmatrix}
+      p & q\cr
+        r & s\cr
+  \end{pmatrix}
+     \begin{pmatrix}
+      \ac\cr
+       \b\cr
+  \end{pmatrix}
+            $$
+such that
+      $$
+    ps-qr=\pm 1
+      $$
+and
+       $$
+p,q,r,s \quad \hbox {are integers}
+       $$
+in other words if these lattices are related by
+unimodular transformation in integers.
+
+
+\end{proposition}
+
+
+The proof is evident, and it is very illuminating
+tpo do the following exercises.
+
+\m
+
+{\bf Exercise}
+Check that 
+ lattices 
+     $$
+  T_{\ac,\b} \quad {\rm and}\quad
+   T_{41 \ac+5\b, 8\ac+\b}
+     $$
+are the same in spite of the fact that 
+parallelograms 
+$\Pi_{\ac,\b}$ and
+$\Pi_{41 \ac+5\b, 8\ac+\b}$
+look very different!
+
+\smallskip
+
+{\bf Exercise}
+Prove that lattices $T_{\ac,\b}$
+and $T_{\ac',\b}$
+coincide if and only if
+parallelograms  $\Pi_{\ac,\b}$
+and $\Pi_{\ac',\b'}$
+have the same area.
+
+\m
+
+Now identify all similar tori and tori 
+which are related
+with each other by unimodular transfromation, 
+and find distance between geometries.
+
+Let $T_{\ac,\b}$ be a lattice.
+
+Assign to this lattice the  complex number
+         $$
+z={a_x+ia_y\over b_x+ib_y}
+         $$
+in the case if $\ac\times \b$ is poisitve, and
+the inverse complex number in the case if
+  $\ac\times \b$ is negative.
+
+Thus using equations \eqref{sim2}
+and \eqref{sim3} we come to 
+
+\begin{proposition}  Set of all lattices
+is in one-one correspondence with
+points of upper half-plane $\bf H$.
+\end{proposition}
+
+It follows from \eqref{sim1}
+the following fundamental statement
+
+\begin{theorem}
+Set of all lattices
+is the set of all points of upper half-plane,
+and two points define the same geometry
+if they are related with transformation 
+  \begin{equation}\label{sim4}
+   z'={pz+q\over rz+s}\,,{\rm with}\,
+      ps-qr=1\,,
+   \quad {\rm or}\,\,
+   z'={p\bar z+q\over r\bar z+s}\,,{\rm with}\,
+      ps-qr=-1\,,
+        \end{equation}
+where
+      \begin{equation}\label{integers}
+\hbox{p,q,r,s, are integers}
+    \end{equation}
+i.e. they are related with transformation
+of group $PSL_2(\Z)$ and its conjugate. 
+\end{theorem}
+
+
+
+
+Notice that we come to Lobachevsky (hyperbolic)
+plane \footnote
+{If we omit the condition \eqref{integers}
+we come to the group \eqref{sim4} 
+of all 
+holomorphic bijections
+${\bf H}\leftrightarrow \bf H$.}.
+
+ One can see using equation \eqref{sim1}
+that the following statement holds:
+
+
+\begin{theorem}
+The set of all geometries on tori 
+can be parameterised by the points 
+of Lobachevsky (hyperbolic) plane.
+ Two geometries are similar if and only if
+they are related by transformation
+\eqref{sim4}, i.e. transformation of
+ group $PSL(2,R)+{\rm conjugate}$ . 
+\end{theorem}
+
+
+\subsection {Geodesics and Metric of hyperbolic geometry}
+
+
+  Group of isometries defines geodesics and metrics
+(up to proportionality) of hyperbolic geometry
+
+ We know that ransformations 
+  \begin{equation}\label{hypisometry}
+ z'={pz+q\over rz+s}\,,{\rm with}\,
+      ps-qr>0\,,
+   \quad {\rm or}\,\,
+   z'={p\bar z+q\over r\bar z+s}\,,{\rm with}\,
+      ps-qr<1\,,
+ \end{equation}
+i.e. transformations \eqref{sim4} without
+condition \eqref{integers}\footnote{One can see that
+this is equivalent \eqref{sim4} in spite of the fact that
+we did not put the condition of unimodularity} 
+are isometries of this geometry. 
+\m
+
+\subsubsection{Hyperbolic isometries}\label{exercises}
+
+
+{\bf Exercise} Show that translations
+are hyperbolic isometries
+
+
+\smallskip
+
+\noindent {\bf Exercise} Show that dilations 
+are hyperbolic isometries
+
+
+\smallskip
+
+
+\noindent {\bf Exercise}  Show that inversion with 
+centre at $y=0$ is hyperbolic isometry. 
+
+
+\smallskip
+
+\noindent {\bf Exercise}  Show that arbitrary
+hyperbolic isometry is composition of these transformations. 
+
+
+
+\subsubsection {Geodesics as locus of fixed points}
+
+
+
+  \begin{lemma}
+Let a curve $C$ be a locus of fixed points of an isometry.
+Then this curve is geodesic.
+\end{lemma}
+
+\m
+
+{\bf Exercise} Prove this lemma
+
+\m
+
+Using this lemma and exercises in \ref{exercises} 
+one can see that
+an arbitrary upper-half circle with the centre
+at $y=0$ and
+vertical lines are geodesics.
+
+\subsubsection
+  {Formula for distance}
+
+
+
+A distance on $\H$,
+$d(z_1,z_2)$  has 
+
+\begin{itemize}
+
+\item
+  to obey metric axioms: positive, triangle,.....
+
+\item
+ has to be  $PSL(2,\R)+{\rm conjug.}$-nvariant,
+i.e. invariant  with respect to transformations
+\eqref{hypisometry}
+
+
+\item
+be additive on geodesics
+
+
+\end{itemize}
+
+\begin{theorem}
+Let $G$ be a Riemannian metric which is 
+invariant with resepct to the
+action of the group \eqref{hypisometry} of $\bf H$.
+ Then  up to multiplier is defined
+by equation
+         $$
+G={dz d\bar z\over (z-\bar z)(\bar z-z)}
+       $$
+
+\end{theorem}
+
+This theorem follows from the lemma 
+
+  \begin{lemma}
+Let $d=d(ia,ib)$ be metric on vertical line $y=0$,
+($a,b>0$).
+  Then
+         \begin{equation*}
+      d(ia,ib)=\left|\log\left(a\over b\right)\right|\,,
+       \end{equation*}
+\end{lemma}
+since using group of isometry we can define the distance
+between two arbitrary points.
+
+Prove the lemma
+
+\begin{proof}Transformation $z\to\lambda z$, and 
+$z\to -{\lambda\over z}$ are symmetry transfromations,
+hence for arbitrary points $z=ia,ib$
+and for arbitrary real $\l$
+   $$
+d\left(ia,ib\right)=
+d\left(i\lambda,i\lambda b\right)=
+d\left(i{\lambda\over a},i{\lambda\over b}\right)=
+   $$
+Moreover since vertical line is geodesic hence
+for arbitrary three points $ia,ib,ic$
+      $$
+   d(ia,ic)=d(ia,ib)+d(ib,ic)\,,\qquad
+{\rm if}\,\, a<b<c
+      $$
+It follows from these equations that 
+$d(ia,ib)=\log {a\over b}$
+
+
+
+\end{proof}
+\end{document}
+
+\bye

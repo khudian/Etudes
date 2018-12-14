@@ -1,0 +1,95 @@
+
+\magnification=1200
+\baselineskip=14pt
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\B {{\bf B}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\k {{\bf k}}
+\def\x {{\bf x}}
+\def\y {{\bf y}}
+\def\V {{\cal V}}
+\def\L {{\cal L}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\N {{\cal N}}
+\def\Z {{\bf Z}}
+\def\E {{\bf E}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \R   {{\bf R}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+  \centerline {volume of sphere}
+
+Denote by $w_{n+1}$ or $\s_n$ volume of $n$-dimensional sphere.
+  (Notation $w_{n+1}$ is sign of respect to old books)
+  We know very well that
+         $$
+w_n=\s_{n-1}={2\pi^{n\over 2}\over\Gamma\left(n\over 2\right)}
+       \eqno (1)
+         $$
+The quickest way to show it is to use identity
+      $$
+\int e^{-\x^2}d^nx=\pi^{n\over 2}=w_n\int e^{-r^2}r^{n-1}dr.
+      $$
+Using this formula one can calculate the volume $d_n$ of unit ball:
+         $$
+    d_n=\int_0^1 r^{n-1}\w_ndr={w_n\over n}\,.
+         $$
+Nothice that inductive formula via $B$-function relates $w_n,w_n+1$:
+                 $$
+w_{n+1}=\int_0^\pi \sin^{n-1} w_n\theta d\theta=
+    2w_n\int_0^1 (1-u^2)^{n-2\over 2}du=\int(1-t)^{n-2\over 2}t^{1\over 2}dt=
+    w_nB\left({n\over 2},1\over 2\right)=
+            $$
+            $$
+       {\Gamma\left( n\over 2\right)
+             \Gamma\left( 1\over 2\right)\over
+           \Gamma\left( n+1\over 2\right)}w_n=
+        {\sqrt \pi\Gamma\left( n\over 2\right)
+            \over
+           \Gamma\left( n+1\over 2\right)}w_{n}\,. 
+                 $$
+This is in accordance with equation (1).
+
+
+  Note that it is reasonable to say that ``volume'' of
+``unit sphere'' on the line, the set of two points  $\pm 1$
+is equal to $2$. This is in accordance with equation (1). 
+\bye

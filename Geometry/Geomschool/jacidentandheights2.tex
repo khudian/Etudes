@@ -1,0 +1,112 @@
+% I begin this version on 20 january 2007
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+\centerline  {\bf  Jacobi identity and intersection of altitudes}
+
+\bigskip
+
+  It is many years that I know the expression which belongs to Arnold which sounds something like
+  that: ''Altitudes (heights) of triangle intersect in one point because of Jacoby identity''.
+  or may be even more aggressive: "The geometrical meaning of Jacoby identity is contained in the fact that
+    altitudes of triangle are intersected in the one point".
+  Today preparing exercises for students I understood a meaning of this sentence. Here it is:
+
+\m
+
+  Let $ABC$ be a triangle. Denote by $\ac$ vector $BC$, by $\b$ vector $CA$ and by $\c$ vector $AB$:
+  $\ac+\b+\c=0$.
+   Consider vectors $\N_A=[\ac,[\b,\c]]$, $\N_B=[\b,[\c,\ac]]$ and $\N_C=[\c,[\ac,\b]]$.
+   Vector $\N_A$ is applied at the point $A$ of the triangle $ABC$, it  belongs to the plane of triangle, and
+   it is perpendicular to
+   the side $BC$ of this triangle.  Hence the altitude (height) $h_A$ of the triangle
+    which goes via the vertex $A$
+   is the line $h_A\colon\quad A+t\N_A$. The same is true for vectors $\N_B$ and $\N_C$:
+    Altitude $h_B$ is a line which goes via the vertex $B$ along the vector $\N_B$ and
+    altitude $h_C$  is a line which goes via the vertex $C$ along the vector $\N_C$.
+
+    Due to Jacobi identity sum of vectors $\N_A, \N_B, \N_C$ is equal to zero:
+                      $$
+         \N_A+\N_B+\N_C=[\ac,[\b,\c]]+[\b,[\c,\ac]]+[\ac,[\b,\c]]=0\,.
+         \eqno (1)
+                      $$
+ To see that altitudes $h_A\colon\quad A+t\N_A$, $h_B\colon\quad B+t\N_B$ and $h_C\colon\quad C+t\N_C$
+intersect  in one point it is enough to show that
+ the sum of torques (angular momenta) of vectors $\N_A$ at the line $h_A$,
+ $\N_B$ at the line $h_B$ and $\N_C$ at the line $h_C$  vanishes with respect to at least one point $M$:
+                 $$
+          [MA,\N_A]+[MB,\N_B]+[MC,\N_C]=0,
+                 \eqno (2)
+                  $$
+  because sum of these vectors is equal to zero.
+ Indeed note that if relation (2) obeys for any given point $M$then it obeys for an arbitrary point $M'$
+ because of relation (1).
+Suppose lines  $h_A$, $h_B$ intersect  at the point $O$. Take a
+point $O$ instead a point $M$ in the relation (2). Then evidently
+$[OA,\N_A]=[OB,\N_B]=0$. Hence $[OC,\N_C]=0$ too, i.e.point $O$ also
+belongs to the  line $h_C$. Or on other words all altitudes inersect
+at the point $O$.
+   Hence it suffices to show that relation (2) is satisfied.
+   Take an arbitrary point $M$. Denote $MA=\x$ then
+   for left hand side of the equation (2) we have
+                  $$
+ [MA,\N_A]+[MB,\N_B]+[MC,\N_C]= [\x,\N_A]+[\x+\c,\N_B]+[\x-\b,\N_C]=[\c,\N_B]-[\b,\N_C]
+                 $$
+  because $\c=AB, -\b=AC$ and $[\x,\N_\ac+\N_\b+\N_\c]=0$ (due to (1)). Now
+   recall that
+             $$
+             \N_B=[\b,[\c,\ac]]=[\b,[\c,-\b-\c]]=[\b,[\b,\c]],\,
+             \N_C=[\c,[\ac,\b]]=[\c,[-\b-\c,\b]]=[\c,[\b,\c]]
+             $$
+         since $\ac+\b+\c=0$. Hence (and here we again use Jacobi identity!)
+                $$
+[\c,\N_B]-[\b,\N_C]=[\c,[\b,[\b,\c]]]-[\b,[\c,[\b,\c]]]=\left[\left[\b,\c\right],\left[\b,\c\right]\right]=0.
+                $$
+                This proves relation (2).
+  Hence altitudes of triangle intersect in one point!  Zabavno, da?\finish
+
+\medskip
+
+$\qquad\qquad\qquad\qquad$  {\it Hovik Khudaverdian (24.01.07)}
+
+
+
+  \bye

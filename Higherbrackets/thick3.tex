@@ -1,0 +1,262 @@
+\magnification=1200
+
+\baselineskip=17pt
+
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\bf S}}
+\def\s {{\sigma}}
+\def\bs {{\bf s}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\L {{\cal L}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def\diag {\rm diag\,\,}
+\def\pt {{\bf p}}
+\def\w {\omega}
+\def\la{\langle}
+\def\ra{\rangle}
+\def\x{{\bf x}}
+\def\m {\medskip}
+\def\thick {{\buildrel \to\over \to}}
+
+  \centerline{\bf Thick morphism in the third order}
+
+{\it This is an attempt of straightforward calculations for
+Voronov's  thick morphism $M_1\to M_2$}.
+
+
+We consider manifolds $M_1$ and $M_2$.
+Let $(x^i)$ be local coordinates on $M_1$
+and let $(y^\a)$ be local coordinates on $M_2$.
+Respectively let $(p_i,x^i)$ be local coordinates on $T^*M_1$
+and let $(q_\a,y^\beta)$ be local coordinates on $T^*M_2$
+
+
+
+
+
+Let  
+       $$
+S(x,q)=S(x)+S^\a(x)q_\a+{1\over 2}S^{\a\beta}q_\beta q_\a
++{1\over 6}S^{\a\beta\gamma}q_\gamma q_\beta q_a
++{1\over 24}S^{\a\beta\gamma\pi}q_\pi q_\gamma q_\beta q_\a+\dots
+       $$
+be a function which defines Lagrangian surface 
+$\Lambda_S$ in $T^*M_1\times (-T^*M_2)$:
+            $$
+\Lambda_S=\left\{(p_i,x^j,q_\a,y^\beta)\colon\, 
+p_i={\p S(x,q)\over \p x^i}\,,y^\a={\p S(x,q)\over \p q_\a}\right\}
+            $$
+($\Lambda_S$ is Lagrangian with respect to canonical symplectic form 
+$dp_i\wedge dx^i-dq_\a dy^\a$ on $T^*M_1\times T^*M_2$.)
+
+
+  This Lagrangian surface define V-thick morphism $\varphi_S$ 
+$M_1\thick M_2$
+in the following way:
+                $$
+C(M_2) \ni g=g(y)\to f=f(x)
+                $$
+        such that Lagrangian surfaces defined by graphs
+of functions $f$ and $g$ are related with Lagrangian 
+surface $\Lambda_S$, i.e.
+          $$
+p_i={\p f(x)\over \p x^i}={\p S(x,q)\over \p x^i}\,,\quad
+q_\a={\p g(y)\over \p y^a}\,,\quad y^\a={\p S(x,q)\over \p q^\a}\,.
+ $$
+
+
+One can see that in local coordinates
+      $$
+f(x)=S(x,q)+g(y)-y^\a q_\a
+      $$
+(see T.Voronov [1].)
+
+We suppose that $g\to \vare g$ is infinitesimal function.
+Thick morphism defines non-linear map of infinitesimal functions
+$\vare g$ on $M_2$ to infinitesimal functions on $M_1$.
+        
+Solve these equations indictively up to an arbitrary order.
+Since $y^\a={\p S(x,q)\over \p q_\a}$ 
+and $q_\a={\p g(y)\over \p y^\a}$ hence we
+see that $q_\a=q_\a(x)$ and $y^a=y^\a(x)$ can be 
+recurrently expressed
+due to the relation:
+         $$
+q_\a(x)={\p g(y)\over \p y^\a}
+        \big\vert_{y^\beta=S^{\beta\pi}q_\pi+\dots}
+         $$
+We have
+       $$
+y^\a={\p S(x,q)\over \p q_\a}=
+ S^\a(x)+S^{\a\beta}q_\beta 
++{1\over 2}S^{\a\beta\gamma}q_\gamma q_\beta 
++{1\over 6}S^{\a\beta\gamma\pi}q_\pi q_\gamma q_\beta +\dots
+       $$
+and expanding in Taylor series we come to
+       $$
+q_\a=\vare{\p g(y)\over \p y^\a}\big\vert_{y^a=
+S^\a+S^{\a\beta}q_\beta 
++{1\over 2}S^{\a\beta\gamma}q_\gamma q_\beta+\dots}=
+     $$ 
+        $$
+\vare{\p g(y)\over 
+\p y^\a}\left(
+   S^\a(x)+S^{\a\beta}(x)q_\beta 
++{1\over 2}S^{\a\beta\gamma}(x)q_\gamma q_\beta+\dots
+        \right)=
+     $$
+        $$
+\vare\sum {1\over n!}{\p^{n+1} g(y)\over 
+\p y^\a\p y^{\sigma_1}\dots \p y^{\sigma_n}}\left(
+   S^\a(x)\right)T^{\sigma_1}\dots T^{\sigma_n}\,,
+     $$
+where
+     $$
+ T^\a=S^{\a\beta}q_\beta 
++{1\over 2}S^{\a\beta\gamma}q_\gamma q_\beta 
++{1\over 6}S^{\a\beta\gamma\pi}q_\pi q_\gamma q_\beta +\dots
+     $$
+Hence we come to
+            $$
+q_\a=\vare q^{(1)}_\a+
+          \vare^2 q^{(2)}_\a+
+          \vare^3 q^{(3)}_\a+\dots
+         \eqno (*)
+       $$
+where recurrently:
+       $$
+    q^{(1)}_\a=q^{(1)}_\a(x)=
+     {\p g(y)\over \p y^\a}\left(
+   S^\a(x)\right)=l_\a\,,
+       $$
+       $$
+    q^{(2)}_\a=q^{(2)}_\a(x)=
+    l_{\a\sigma}S^{\sigma\beta}l_\beta\,,\quad
+     l_{\a\sigma}={\p^2 g(y)\over \p y^\a \p y^\sigma}(y)
+\big\vert_{y^\a=S^\a(x)}  
+       $$
+       $$
+    q^{(3)}_\a=q^{(3)}_\a(x)=
+    l_{\a\sigma}S^{\sigma\beta}l_{\beta \omega}S^{\omega\pi}l_\pi
+   +{1\over 2}l_{\a\sigma}S^{\sigma\beta\gamma}l_\beta l_\gamma
+    +{1\over 2}l_{\a\sigma}S^{\a\beta}S^{\sigma\omega}l_\beta l_\omega\,,
+          \quad
+     l_{\a\sigma}={\p^2 g(y)\over \p y^\a \p y^\sigma}(y)
+\big\vert_{y^\a=S^\a(x)}  
+       $$
+One can express all answers in terms of series (*).
+  We use notation:
+          $$
+   S(x,q)=S(x)+S^\a(x)q_\a+{1\over 2}S^{\a\beta}q_\beta q_\a
++{1\over 6}S^{\a\beta\gamma}q_\gamma q_\beta q_a
++{1\over 24}S^{\a\beta\gamma\pi}q_\pi q_\gamma q_\beta q_\a+
++{1\over 120}S^{\a\beta\gamma\pi\rho}q_\rho q_\pi q_\gamma q_\beta q_\a
++\dots=
+      $$
+       $$
+=\sum_{r\geq 0} S_r(x,q)=S_0+\sum_{r\geq 0} V^\a_{r}(x,q)q_\a
+          $$
+   We have
+      $$
+f(x)=S(x,q)+g(y)-y^\a q_\a=
+        $$
+         $$
+       \sum_r S_r(x,q)+
+         g\left( {\p S(x,q)\over \p q^\a}=V^\a(x)+
+                \sum_{r\geq 1}V(x,q)q_\a\right)-
+     \left({\p S(x,q)\over \p q^\a}q_\a=\sum_r r S_r(x,q)\right)\,.
+      $$
+    $$
+S_0(x)+\sum_{r\geq 2} S_r\left(x,l_\a+\sum_{k\geq 2} q^{(k)}_\a\right)+
+   g\left(
+S^\a+\sum_{r\geq 2} S_r\left(x,l_\a+\sum_{k\geq 2} q^{(k)}_\a\right)\right)
+     $$
+
+  $$ $$
+
+{\bf Example}
+   $$
+   g=c+\vare y^r_\a\Rightarrow f=f(x)=c+S(x,r) (\vare?????)
+   $$
+     $$
+   g=c+\vare y^r_\a+{1\over 2}t_{\a\beta}y^\a y^\beta\Rightarrow f=f(x)=?????
+   $$
+
+
+\centerline {\bf Example}
+Let $M_1=M_2=\R$ and
+        $$
+       S(x,q)=a(x)+\varphi(x)q+{1\over 2}bq^2
+        $$
+Then
+     $$
+      \cases
+        {
+   y=\varphi(x)+b(x)q\cr
+      q=g'(y)\cr
+        }`
+   \Rightarrow
+       \cases
+        {
+   y=\varphi(x)+b(x)g'(y)\cr
+      q=g'(\varphi(x)+b(x)q)\cr
+        }\Rightarrow
+        $$
+         $$
+    \cases
+        {
+   y=\varphi+bg'(\varphi+bg')=
+   \varphi+bl'+bl''b(l'+bl''bl')+{b\over 2}l'''bl'bl'+\dots\cr
+      q=g'(\varphi(x)+b(x)q)=l'+l''b(l'+l''bl')+{1\over 2}l'''bl'bl'+\cr
+        }``
+     $$
+where $l=g(\varphi)$, $l'=g'(y)|big\vert_{y=\varphi(x)}$,
+$l''=g''(y)|big\vert_{y=\varphi(x)}$,\dots
+ We have
+      $$
+g(y)=g(\varphi+bq)=\dots
+      $$
+and
+     $$
+f(x)=a+\varphi q+{1\over 2}bq^2+g(y)-yq=
+     a+\varphi q+{1\over 2}bq^2+g(y)-(\varphi +bq)q=
+    a+{1\over 2}bq^2+g(\varphi+bq)-bq^2
+          $$
+          $$
+     a+{1\over 2}b(l'+bl'l''+b^2l''l''l'+{1\over 2}b^2l'l'l''')^2
+     $$
+\bye

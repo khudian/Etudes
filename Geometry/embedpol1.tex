@@ -1,0 +1,124 @@
+
+   \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+
+    \centerline {\bf On polynomials on hypersurfaces }
+
+ \bigskip
+
+   Let $M$ be $n$-hypersurface $C\subset \E^{n+1}$ in $\E^n$.
+   One can assign  a (formal) polynomial to this surface in the following way:
+                  $$
+               P_M(z)=\int \det
+               \left(
+               \delta_{\beta}^\alpha+zg^{\alpha\gamma}
+               {
+               \left(
+         \r_{\gamma\beta},\N\right)
+               \over
+             \sqrt{\det g}}
+               \right)d^{n}\xi
+                  $$
+Here $x^i=x^i(\xi)$ is a parameterisation of surface, $x^i_\alpha
+x^i\beta$ induced metric;
+                         $$
+      {\bf N}=*\underbrace{{\bf r}\wedge\dots\wedge {\bf r}} _{n-{\rm times}},
+      \quad {{\bf N}\over \sqrt {\det g}}=\n\,\,
+      \hbox {is unit normal vector to the surface}
+                            $$
+
+ Integral has meaning if $M$ is compact. In general case one have to multiply integrand
+on function something like $e^{-r^2}$ which tends to zero at
+infinity)
+
+Expansion in power series give invariants.In particular if $n=2$
+then the term proportional to $z$ is mean curvature, the next one
+Gaussian.
+
+
+  It seems to be interesting to consider this polynomial in dual approach:
+
+Suppose a surfaces is given by the equation $\Phi=0$.
+
+ Long ago I knew a part of an answer:
+   The expression
+                    $$
+   T=\Delta\Phi-{\nabla_i\Phi\nabla_k\Phi\nabla_{ik}\Phi\over \nabla_r^2\Phi}
+                    $$
+is a dual density corresponding to mean curvature: if $\Phi\to f\Phi$ then $T\to fT$ on
+$\Phi=0$.
+                   $$
+   \int \left(\Delta\Phi-{\nabla_i\Phi\nabla_k\Phi\nabla_{ik}\Phi\over \nabla_r^2\Phi}\right)
+   \delta(\Phi)d^{n+1}x
+                     $$
+is integral of mean curvature.
+
+
+It is just integral corresponding to term linear by $z$.
+
+  The detailed  answer is following:
+            $$
+            \tilde P_M(z)=\int \det(\delta_{ik}+zM_{ik}(\Phi))\delta(\Phi)d^{n+1}x\,,
+            $$
+where
+            $$
+M_{ik}(\Phi)=\p_i\p_k\Phi+{\p_i\Phi\p_k\Phi\Delta\Phi\over
+\p_r\Phi\p_r\Phi}
+   -{{\p_i\Phi\p_m\Phi\p_m\p_k\Phi+\p_k\Phi\p_m\Phi\p_m\p_i\Phi
+   \over \p_r\Phi\p_r\Phi}}
+            $$
+
+      {\bf Statement} Integral above does not depend on the function $\Phi$
+      defining the surface.
+
+      {\it Proof}. It follows from the identity:
+                 $$
+             M_{ik}\left(\lambda(x)\Phi(x)\right)=\lambda(x)
+             M_{ik}(\Phi(x))+G(\lambda(x),\Phi(x))\Phi(x)
+                    $$
+                    which can be easily checked.
+Note that this integral has power on $z$ $n+1$. E.g. the term proportional to $z^{}n+1$
+is a product of mean and Gaussian curvatures.
+
+The detailed analysis lead to the following answer:
+Consider the linear operator corresponding to the matrix $M_{ik}$
+$M_{ik}$ is bilinear form,
+$G^{ik}M_{kn}$ is linear operator where $G$ is Riemannian
+tensor in embedded $\E$.
+{\it This linear operator is a direct sum of two
+operators: Weingerten shape operator and the one-dimensional operator which multiplies
+normal vector on mean curvature!!!!
+                 $$
+           \det (1+zM)=(1+zH)\cdot P_M(z)
+                 $$
+
+
+ }
+
+
+
+ \bye

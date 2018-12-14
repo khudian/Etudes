@@ -1,0 +1,251 @@
+\magnification=1200
+
+      {\bf Dve  raznyje zadachki}
+
+Corollary 1 and Corollary 2 are the reason why it is not worthless
+ to read this text. If you had a trouble to calculate degrees of freedom of
+ symmetrical tensors of rank $k$ on $n$-dimensional space
+ then may be you will not be angry on this text.
+
+ Problem formulated in Corollary 2 was suggested to me by Senja Veinstein in 1997.
+
+
+   So...
+
+   \medskip
+
+ In this etude we consider two isomorphisms of
+different nature between the following sets.
+
+1) $A$--is the set of not-decreasing finite sequences of natural
+numbers. $\{a_1,\dots,a_n\}\in A$ if
+   $a_1\leq a_2\leq\dots\leq a_n$
+
+2) $B$ is the set of increasing natural numbers.
+$\{a_1,\dots,a_n\}\in B$ if
+   $a_1< a_2<\dots< a_n$.
+
+   The first isomorphism $\varphi_1$:
+
+
+                    $$
+  \forall \{a_1,\dots,a_n\}\in A
+                   \varphi (\{a_1,\dots,a_n\})=
+                    \{a_1,a_2+2,\dots,a_n+n\}\in B
+                      \eqno (1)
+                            $$
+
+It is evident that $\varphi$ is an isomorphism
+
+
+To construct the second isomorphism we first identify the space
+$A$, the set of not-decreasing finite sequences of natural
+numbers, with the set $A^\prime$--the set of not-decreasing
+finite sequences of odd natural  numbers by isomorphism
+                  $$
+     \tau\colon\quad
+       \forall \{a_1,\dots,a_n\}\in A_0,
+       \tau (\{a_1,\dots,a_n\})=
+         \{2a_1-1,2a_2-1,\dots,2a_n-1\}\in A^\prime
+            $$
+   and consider the following "tricky" isomorphism between
+    $A^\prime$ and $B$.
+    Let $b=\{b_1,\dots,b_n\}\in B$. For every $b_i\in b$ there
+    exist natural numbers $p_i$ and $q_i$ such that
+                    $$
+            q_i \,\,{\rm is\,\, odd\,\,and}\quad
+            b_i=2^{p_i}q_i
+            \eqno (4)
+                       $$
+         We put in correspondence to the sequence
+         $\{b_1,\dots,b_n\}$ the sequence
+                           $$
+         \left\{
+     {\underbrace {q_1,q_1,\dots,q_1}_{p_1\, {\rm times}}}\,,\,
+     {\underbrace {q_2,q_2,\dots,q_2}_{p_2\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_n,q_n,\dots,q_n}_{p_n\, {\rm times}}}
+         \right\}
+         $$
+Then rearrange the odd numbers $\{q_1,\dots,q_n\}$ in
+not-decreasing order  $q_{i_1}\leq q_{i_2}\leq\dots\leq q_{i_n}$
+we finally come to isomorphism $\varphi_2$:
+                             $$
+                    \varphi_2 (\{b_1,\dots,b_n\})=
+     \left\{
+     {\underbrace {q_{i_1},q_{i_1},\dots,q_{i_1}}_{p_{i_1}\, {\rm times}}}\,,\,
+     {\underbrace {q_{i_2},q_{i_2},\dots,q_{i_2}}_{p_{i_2}\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_{i_n},q_{i_n},\dots,q_{i_n}}_{p_{i_n}\, {\rm times}}}
+         \right\}
+                         $$
+between $B$ and $A^\prime$. The inverse to $\varphi_2$ isomorphism
+is following. Consider
+                  $$
+      \left\{
+     {\underbrace {q_1,q_1,\dots,q_1}_{f_1\, {\rm times}}}\,,\,
+     {\underbrace {q_2,q_2,\dots,q_2}_{f_2\, {\rm times}}}\,,
+                   \dots\,
+     {\underbrace {q_n,q_n,\dots,q_n}_{f_n\, {\rm times}}}
+         \right\}\in A^\prime
+             \eqno (lalala)
+                        $$
+                        then
+                     every number $f_i$ can be uniquely
+                     represented as
+                    $$
+                    f_i=\sum_k 2^k \delta_{ik}\quad {\rm
+                    where}\,\, \delta_{ik}=0,1
+                        $$
+
+
+We consider the numbers $2^{k}q_i$ if $\delta_{ik}\not=0$ and
+arrange the sequence from $B$.
+
+They are so far from each other isomorphisms $\varphi_1$ and
+$\varphi_2$!!!
+
+For every sequence $a$ in $A$, $A^\prime$ or $B$
+we denote by $\#(a)$ the number of elements of this sequence and
+by $s(a)$ the sum of elements of this sequence.
+The following relations are obvious:
+
+1.
+                 $$
+           \#(\varphi_1(a))=\#(a),
+                   $$
+2. If $\#(a)=n$, then
+                   $$
+             s(\varphi_1(a))=
+             s(a)+{n(n+1)\over 2}
+                $$
+                $$
+           \quad s(a)=s(\varphi_2(a))
+                     \eqno ()
+                   $$
+These relations leads to interesting corollaries:
+
+{\bf Corollary 1}.
+
+  {\it Dimension of the space of symmetrical tensors of rank $k$ in
+   $n$-dimensional
+   space is equal to the
+ a dimension of the space of antisymmetrical tensors of rank $k$ in
+   $\left(n+{k(k+1)\over 2}\right)$-dimensional space.
+  space.}
+
+
+
+
+
+{\bf Corollary 2}.
+
+{\it For every integer number $N$
+a number
+of choices such that $N$ can be represented as a sum of different
+natural numbers is equal
+a number
+of choices such that $N$ can be represented as a sum of
+odd natural numbers.}
+ (We do not differ two choices
+which differ by rearrangement.)
+
+
+We can use the corollary 1 for calculating the dimension of symmetrical tensors space:
+because
+for antisymmetrical tensors it can be calculated  straightforwardly:
+
+
+{\bf Corollary 3}.
+
+  {\it Dimension of the space of symmetrical tensors of rank $k$ in $n$-dimensional
+   space is equal to the}
+               $$
+               C^k_{n+{k(k+1)\over 2}}=
+                     {
+                     \left(n+{k(k+1)\over 2}\right)!
+                         \over
+                         k!
+                         \left(n+{k(k-1)\over 2}\right)!
+                         }
+                       $$
+ We denote by $A_n$ the number of choices for odd numbers
+and $B_n$ the number of choices for different natural numbers.
+It is evident that
+              $$
+           \sum_{n=1}^\infty B_n x^n=
+           \sum_i\left(
+           \sum_{n_1\geq 1,\dots n_i\geq 1}
+              x^{n_1}x^{n_1+n_2}\dots x^{n_1+\dots+n_i}
+           \right)=
+            $$
+            $$
+            \sum_{n=1}^\infty
+                 {x^{n(n+1)\over 2}\over
+   (1-x)(1-x^2)(1-x^3)\dots (1-x^n)
+                 }
+              $$
+   and
+           $$
+           \sum_{n=1}^\infty A_n x^n=
+           \sum_i\left(
+           \sum_{n_1\geq 0,\dots n_i\geq 0}
+              x^{2n_1+1}x^{2n_1+2n_2+1}\dots x^{2n_1+\dots+2n_i+1}
+           \right)=
+            $$
+            $$
+            \sum_{n=1}^\infty
+                 {x^n\over
+   (1-x^2)(1-x^4)(1-x^6)\dots (1-x^{2n})
+                 }
+              $$
+       We come to
+{\bf Corollary 4}
+                         $$
+                \sum_{n=1}^\infty
+                 {x^n\over
+       (1-x^2)(1-x^4)(1-x^6)\dots (1-x^{2n})
+                 }=
+             \sum_{n=1}^\infty
+                 {x^{n(n+1)\over 2}\over
+   (1-x)(1-x^2)(1-x^3)\dots (1-x^n)
+                 }
+                 $$
+in a vicinity of $x=0$:
+
+
+I cannot calculate the number of choices  $A_n$ and $B_n$(see Corollary 2)
+but one interesting identity for this.
+We denote by $S^p_N$ the number of choices that $N$ can be represented
+by $p$ different integers.
+It is evident that
+                  $$
+                  S^p_N=\sum_k S^{p-1}_{N-pk}
+                  $$
+   Applying this equation many times we come to the
+
+   {\bf Corollary 5}
+   The number of choices for $N$ is equal to the number of solutions
+    of the equation
+                  $$
+                2x_1+3x_2+4x_3+........<N
+                   $$
+                   plus $1$
+    where $x_1,\dots,x_n$ are {\bf non-negative} integers.
+(Do not confuse with number of values less that $N$!)
+In other words we take $N$ (representing as one number)
+then calculate the number of $x_1$ such that
+  $2x_1< N$,
+  ...
+
+  For example
+   $S^1_20=1$, $S^2_20=9$,
+   $$
+   S^3_20=S^2_17+S^2_13+.....$$
+      $$
+      S^4_20=S^3_16+S^3_12+...$$
+
+
+
+
+ \bye

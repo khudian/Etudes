@@ -1,0 +1,178 @@
+
+
+  % \magnification=1200
+  % \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def\A{{\bf A}}
+\def\B{{\bf B}}
+\def\pt{{\bf p}}
+
+{\it
+In the coursework in Riemannian geometry appeared an integral.
+Its straighforward calculations is interesting...}
+
+\centerline {\bf Appendix}
+
+Straightforward calculations of the lenght of the curve $C'$
+lead to the following integral:
+           $$
+I(z=)\int_0^{2\pi} {d\varphi\over 1-z\cos \varphi}\,,, (|z|<1)
+              $$
+  Here I present two different ways to calcualte this integral.
+
+{\it First way}
+
+  This integral can be calculated explicitly, the answer is beautiful:
+           $$
+I(z)=\int_0^{2\pi} {d\varphi\over 1-z\cos \varphi}={2\pi\over \sqrt {1-z^2}}\,.
+              $$
+Do it.
+   One can see that for $|z|<1$,
+                    $$
+I(z)=\int_0^{2\pi} {d\varphi\over 1-z\cos \varphi}=
+   \int_0^{2\pi} \left(1+z\cos\varphi+z^2\cos^2\varphi+\dots\right)d\varphi=
+                    $$ 
+                    $$
+   \int_0^{2\pi} \left(\sum z^n\cos ^n\varphi\right)d\varphi=
+  \sum_{n=0}^\infty c_nz^n\,, {\rm where}  \,\, c_n=
+\int_0^{2\pi}\cos^n\varphi d\varphi\,.
+                    $$ 
+Calculate $c_n$:
+                     $$
+c_n=\int_0^{2\pi}\cos^n\varphi d\varphi=
+\int_0^{2\pi}\left(e^{i\varphi}+e^{-i\varphi}\over 2\right)^nd\varphi=
+               \cases
+                      {
+2\pi {C^{k}_{2k}\over 2^k} \hbox {for $n=2k$}\cr
+    0  \,\, \hbox { for $n=2k+1$}\cr
+                      }\,.
+                     $$
+since $(a+b)^n=\sum_jC^j_n a^j b^{n-j}$, and 
+$\int_0^{2\pi} e^{ik\varphi}d\varphi=0$ if $k\not=0$.
+Hence we have that
+                    $$
+I(z)=\int_0^{2\pi} {d\varphi\over 1-z\cos \varphi}=
+2\pi\sum_{n=0}^\infty c_nz^n=
+\sum_{n=0}^\infty z^n=\sum {C^n_{2n}z^{2n}\over 2^n}
+                ={2\pi\over \sqrt {1-z^2}}\,.
+                    $$ 
+
+\m
+
+{\bf Remark} One can see that 
+   $$P(z)=\sum C^n_{2n}z^{n}
+                ={2\pi\over \sqrt {1-4z}}\$
+         $$
+Looking at this funtion it is 
+difficult to avoid temptation to write something like:
+           $$
+\sum C^n_{2n}=P(1)=....={2\p\over \sqrt{-3}}\, ???!
+           $$
+
+{\it Second way}
+                  $$
+I(z)=\int_0^{2\pi}{d\varphi\over 1-z\cos\varphi}=
+\int_0^{2\pi}{\sin\varphi d\varphi\over \sin\varphi(1-z\cos\varphi)}=
+\int_0^{2\pi}{d\cos\varphi\over (\sqrt{1-\cos^2\varphi})(1-z\cos\varphi)}=
+                     $$
+                     $$
+\int_0^1{dw\over (\sqrt{1-w^2})(1-zw)}=
+{1\over2}\int_0^1{dw\over (\sqrt{1-w^2})(1-zw)}\,.
+                     $$
+Now consider an integrand, the  function 
+$F(w)={1\over {\sqrt {1-w^2}}(1-zw)}$
+in the plane excluding the neigborhood of the interval
+$[-1,1]$ which connects the branching points of this function.
+   We take the following branch $F'(w)$ of this function
+such that it is holomorphic
+ function in the plane without neighborhood of the segment
+\footnote{$^{1}$}
+{If $P=w=u+iv$ is an arbitrary point of complex plane,
+  $A=-1$ and $B=1$,
+ and $\varphi$ is an angle between $AB$ and $AP$ (anti-clock wise),
+ and $\psi$ is an angle between $BA$ and $BP$ (anti-clock wise),
+  then  $F'=\sqrt {|AP||BP|}e^{i{\phi+\psi\over 2}}$.
+  In particular $F(w)=i{\sqrt{w^2-1}}$ if $w$ is  a real number which is greater
+than $1$.}
+Now we note that the integral of function over the great circle tends to zero.
+   The function $F'(w)$ has a pole at the point $w={1\over z}$.
+  Hence if $|z|<1$ $F(z')$ is holomorphic function in plane without
+ noiborhood of interval $AB$. We have:
+                      $$
+  0= \int_{C_1} F'(w)dw+\int_{C_2}F(w)dw=I(z)-
+         {1\over z}\int_{C_2}{1\over i\sqrt{w^2-1}\left(w-{1\over z}\right)}=
+                     $$
+                     $$
+           I(z)-{2\pi i\over z}\left({1\over i\sqrt{w^2-1}}\right)
+           \big\vert_{w={1\over z}}=I(z)-{2\pi\over \sqrt{1-z^2}}
+\Rightarrow   I(z)={2\pi\over \sqrt{1-z^2}}\,.
+                      $$ 
+where we denote by $C_1$ the closed curve around the interval $AB$,
+and $C_2$ the circle of small radius around
+      
+
+
+\bye
+
+

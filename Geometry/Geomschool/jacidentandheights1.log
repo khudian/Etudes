@@ -1,0 +1,42 @@
+This is TeX, Version 3.1415926 (MiKTeX 2.7) (preloaded format=tex 2010.10.11)  25 OCT 2010 14:53
+**jacidentandheights1.tex
+(jacidentandheights1.tex
+Overfull \hbox (16.77957pt too wide) detected at line 100
+[] \tensy ^^@ [] \tenrm = [] \tensy ^^@ [] \tenrm = [] = [] = 0|
+
+\hbox(7.5+2.5)x391.46176, glue set - 1.0
+.\hbox(7.5+2.5)x52.2012
+..\hbox(7.5+2.5)x2.77779
+...\tenrm [
+..\tenbf c
+..\teni ;
+..\glue(\thinmuskip) 1.66663
+..\hbox(7.5+2.5)x37.09013
+...\hbox(7.5+2.5)x2.77779 []
+...\tenbf b
+...\teni ;
+...\glue(\thinmuskip) 1.66663
+...\hbox(7.5+2.5)x20.7013 []
+...etc.
+..etc.
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tensy ^^@
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\hbox(7.5+2.5)x53.47897
+..\hbox(7.5+2.5)x2.77779
+...\tenrm [
+..\tenbf b
+..\teni ;
+..\glue(\thinmuskip) 1.66663
+..\hbox(7.5+2.5)x37.09013
+...\hbox(7.5+2.5)x2.77779 []
+...\tenbf c
+...\teni ;
+...\glue(\thinmuskip) 1.66663
+...\hbox(7.5+2.5)x21.97906 []
+...etc.
+..etc.
+.etc.
+
+[1] )
+Output written on jacidentandheights1.dvi (1 page, 5708 bytes).

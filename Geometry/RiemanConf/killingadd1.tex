@@ -1,0 +1,223 @@
+
+\magnification=1200 
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\L {{\cal L}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \pt   {{\bf p}}
+\def \y   {{\bf y}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline  {\bf Killing vectors and Levi-Ciovita conenction}
+ 
+{\sl This lecture is the addition to the subsection 1.6 
+``Infinitesimal isometries
+of Riemannian manifold''}
+  
+
+  Let $M$ be Riemannian manifold with Riemannian metric $G$.
+   Recall that a vector field $\K$ is Killing vector field,
+i.e. it defines infinitesimal isometry, 
+  (given in local coordinates by the formula 
+$x^i\mapsto x^i+\vare K^i$, $\vare^2=0$) if  Lie derivative
+of metric with respect to vector field vanishes:
+                       $$
+\L_\K G=K^i{\p g_{mn}(x)\over \p x^i}+
+  {\p K^i(x)\over\p \p x^m}g_{in}(x)+
+  {\p K^i(x)\over\p \p x^n}g_{im}(x)=0\,.
+                \eqno (1)
+                       $$
+(see  subsection 
+``Infinitesimal isometries
+of Riemannian manifold'' of Lecture notes.)
+
+   Let $\nabla$ be Levi-Civita connection of Riemannian metric:
+in local coordinates Christoffel symbols of this connection are
+                  $$
+   \G^i_{km}={1\over 2}g^{ij}(x)
+\left(
+{\p g_{jk}\over \p x^m}+
+{\p g_{jm}\over \p x^k}-
+{\p g_{km}\over \p x^j}
+\right)\,,
+\eqno (2)
+            $$
+ where $g^{ij}$ is tensor inverse to $g_{ik}$.
+                 
+  Consider  the following construction.
+
+  Let $\K$ be an arbitrary vector fields 
+ (not necessarily Killing vector field) on manifold $M$,
+  Consider the following operation on vector fields:
+   to every vector field $\X$ we assign the vector field
+                 $$
+\left(\nabla_\K-\L_\K\right)\X, 
+                      \eqno (3)
+                 $$
+where  $\nabla$ is Levi-Civita connection (2) and
+w$\L_\K$ is Lie derivative of $\X$ with respect to $\K$:
+                 $$
+\L_\K\X=[\K,\X],    \quad
+       [\K,\X]^i=K^m{x}{\p X^i(x)\over \p x^m}-
+        X^m{x}{\p K^i(x)\over \p x^m},
+                 $$ 
+Hence we have that equation  (3) can be written as
+                 $$
+\left(\nabla_\K-\L_\K\right)\X=
+                  $$
+                  $$
+                   \left(
+                  \left(
+                K^m
+                 \left({\p X^i\over \p x^m}+\G^i_{mn}X^n
+                  \right)
+                   \right)
+                    -
+                \left(
+    K^m{\p X^i\over \p x^m}-
+        X^m{\p K^i\over \p x^m} 
+            \right)
+                   \right){\p \over \p x^i}=
+                 $$
+                $$
+                  X^m
+                {\p K^i\over \p x^m}+
+                   K^m\G^i_{mn}X^n=
+                   X^m{\p K^i\over \p x^m}+
+                   X^n\G^i_{mn}K^M=
+                X^m{\p K^i\over \p x^m}+
+                   X^n\G^i_{nm}K^m=\nabla_\X\K
+                \eqno (4)
+               $$
+since Levi-Civita connection is symmetric: $\G^i{mn}=\G^i_{nm}$.
+   We see that operation (3) defines linear operator $A_\K$
+ in the following way:
+  to every vector $\X$ tangent to manifold at the point $\pt$,
+   $\X\in T_{\pt}M$ operator $A_\K$ assigns vector $\nabla_\X \K$:
+                   $$
+T_\pt M\ni \X\mapsto A_\K(\X)=\nabla_\X\K=
+                 \left(
+      \left({\p K^i\over \p x^m}+\G^i_{mn}K^n\right)X^m
+           \right){\p \over \p x^i}
+                        \eqno (4a)
+                   $$
+
+It follows from formulae (3) and (4) that for every vector
+field $\X$ on $M$
+                $$
+   A_\K(\X)=\left(\nabla\X-\L_\K\right)\X\,.
+               \eqno (4b)
+                $$
+In the left hand side of this  formula $\X$ 
+is the value of vector field at the given point $\pt$
+and on the right hand side covarinat derivative and Lie derivative
+act on vector  field. More accurate we have to write this formula
+in the following way: 
+  $$
+   A_\K\left(\X\big\vert_\pt\right)=
+         \left(
+      \left(\nabla_\K-\L_\K\right)\X
+            \right)
+         \big\vert_\pt
+               \eqno (4c)
+                $$
+Now we formulate and prove the Proposition
+
+\medskip
+
+{\bf Proposition} Let $M$ be Riemannian manifold
+ and $\nabla$ be its Levi-Civita connection. 
+Vector field $\K$ is Killing vector field 
+of Riemannina manifold $M$ if and only if
+  the linear operator
+  $A_\K$ defined by (4) is antisymmetric operator, i.e.
+if for arbitrary vector fields $\X,\Y$
+                    $$
+\langle A_\K(\X),\Y\rangle=-\langle \X,A_\K(\Y)\rangle\,.
+                  \eqno (5)
+                    $$
+where $\langle \,\,,\,\, \rangle$ is Riemannian scalar product:
+                   $$
+  \langle\X,\Y\rangle= X^i(x)g_{ik}(x)Y^k(x)\,.
+                   $$
+
+{\sl Proof}  
+
+
+
+Let $\X,\Y$ be two arbitrary vector fields.
+
+The condition that $\nabla$ is Levi-Civita connection means
+that
+              $$
+     \L_\K\langle\X,\Y\rangle=
+     \p_\K\langle\X,\Y\rangle=
+     \langle\nabla_\K\X,\Y\rangle+
+     \langle\X,\nabla\Y\rangle\,.
+          \eqno (6)
+              $$
+(See the subsection in Lecture notes about Levi-Civita connection.)
+(Lie derivative of function is just directional derivative:
+ $\L_\K F=\p_\K F$).
+
+The condition that $\K$ is Killing vector field
+is the condition that $\K$ preserves Riemannian metric,
+scalar product (see (1)). Hence
+                  $$
+     \L_\K\langle\X,\Y\rangle=
+     \p_\K\langle\X,\Y\rangle=
+     \langle\L_K\X,\Y\rangle+
+     \langle\X,\L_\X\Y\rangle
+                  \eqno (6a)
+                  $$
+ Now substract an equation (6a) from the equation (6).
+Using relations (4a,4b,4c) we come to
+                $$
+\langle\left(\nabla_\K-\L_\K\right)\X,\Y\rangle+
+\langle\X, \left(\nabla_\K-\L_\K\right)\Y\rangle=
+\langle \nabla_\X\K,\Y\rangle+
+\langle\X,\nabla_\Y\K\rangle=
+\langle A_\K(\X),\Y\rangle+
+\langle\X,A_\K(\Y)\rangle=0\,.
+                $$
+Thus relation (5) is proved \finish
+\bye
+

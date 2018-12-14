@@ -1,0 +1,126 @@
+
+
+
+\magnification=1200 \baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+
+
+
+\centerline{\bf One combinatorial problem}
+
+{\it Autumn, 2012}
+
+{\it It was long long long ago when I solved the following exercise:
+Denote by $S_k$ a number of sequences of $n$ natural numbers 
+$\{1,2,3,\dots,k\}$ such that all the numbers are on the wrong places,
+i.e. the first number is not $1$, the second number is not $2$, e.t.c.
+
+   I forget the calculations. I just rememeber that they were not nice, but
+the answer  was beautiful, something like $S_k\approx k!/e$. Two months ago
+   I found a following beautiful solution. Here it is}:
+
+   
+          $$
+ \hbox{One can see that}\quad   \sum_{k=1}^nC^k_nS_k=n!\,,
+\eqno (1)
+          $$ 
+where $C^k_n=\pmatrix{n\cr k\cr}={n!\over k! (n-k)!}$.
+(The right hand sight of equation (1) is the number of
+all permutations of the set with $n$ elements. The summand $C^k_n S_k$
+  in the left hand side is the number of permutations such that 
+  exactly $n-k$ elements are fixed.)
+
+Recall that the  $n$-th derivative of the product $FG$ of two functions
+$F$ and $G$ is given by the formula
+        $$
+     \left( d^n\over dx^n\right)\left(F(x)G(x)\right)=
+     \sum_{k=1}^n C^k_n\left( d\over dx\right)^k\left( F(x)\right)
+        \left( d\over dx\right)^{n-k}\left(G(x)\right)\,.
+       $$ 
+ Comparing this formula with relation (1) we see that if we choose 
+       $$
+F=\sum {S_k\over k!} x^k\,,\qquad {\rm and }\,\,   G=e^x\,,
+       $$
+  then
+         $$
+     \left( d^n\over dx^n\right)\left(F(x)G(x)\right)_{x=0}=
+      \left( d^n\over dx^n\right)\left(F(x)e^x\right)_{x=0}=
+   \sum_{k=1}^n C^k_n S_k=n!\,.
+         $$
+Hence
+        $$
+F(x)e^x={1\over 1-x}=1+x+x^2+x^3+\dots
+        $$
+in a vicinity of $x=0$. We come to the answer:
+       the sequence $S_k$ is such that
+       $$
+F=\sum_{k=0}^\infty {S_k\over k!} ={e^{-x}\over 1-x}\,.
+        $$
+Using this formula we write down the explicit formula for $S_k$.
+Denote by $s_k={S_k\over k!}$. We have that
+          $$
+\sum_{k=0}^\infty {S_k\over k!}x^k=\sum_{k=0}^\infty s_kx^k={e^{-x}\over 1-x}=
+\left(1-x+{x^2\over 2}-{x^3\over 3!}+
+{x^4\over 4!}-{x^5\over 5!}+\dots\right)
+\left(1+x+x^2+x^3+\dots\right)
+          $$
+        $$
+=1+\left(1-1\right)x+\left(1-1+{1\over 2!}\right)x^2+
+   \left(1-1+{1\over 2!}-{1\over 3!}\right)x^3+
+\left(1-1+{1\over 2!}-{1\over 3!}+{1\over 4!}\right)x^4+\dots
+        $$
+i.e.
+         $$
+    s_k={S_k\over k!}=\sum_{p=0}^k {(-1)^p\over p!},\,\,
+        {\rm and}\,\, S_k=k!\sum_{p=0}^k {(-1)^p\over p!}\,.
+         $$
+    
+In particular
+          $$
+         s_\infty=\lim_{k\to\infty}=
+\sum_{p=0}^\infty {(-1)^p\over p!}={1\over e}\,,
+           $$
+i.e. the probability that all terms of the sequence 
+  $\{1,2,3,\dots,N\}$
+are on the wrong places equals to $\approx {1\over e}$ when $N\to \infty$.
+
+
+\bye
+

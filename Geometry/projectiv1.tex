@@ -1,0 +1,233 @@
+% I commenced  this version on 7-th  March 2009
+\magnification=1200 %\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{{\omega}}
+\centerline  {\bf  Projective transformations:
+pedestrian's point of view}
+
+\bigskip
+
+\centerline  {\bf $\cal x$0. Projective transformations}
+
+\bigskip
+
+   The group of projective transformations of $n$-dimensional projective space $\R P^n$ is  $PGL(n,\R)$.
+   It is
+   is a factor of $GL(n+1,R)$ by matrices which do not move any line, i.e.
+   it is the factor of $SL(n+1,R)$ by the centre of this group.
+  This is immediate consequence of definition of projective
+  space as set of  lines in $\R^{n+1}$ passing through the origin---
+   the linear transformations in $GL(n+1,\R)$ induces projective
+   transformations.  If $[x^0:x^1:\dots:x^n]$---homogeneous
+   coordinates in $\R P^n$  and $u^1,u^2,\dots,u^n$ not-homogeneous coordinates
+   in $\R P^n$  such that
+              $$
+           u^i={x^n\over x^0},\qquad i=1,\dots,n,\,\,x^0\not=0
+              $$
+   (in a chart of $\R P^n$) then projective
+   transformation in homogeneous coordinates is
+                  $$
+              x^\mu\mapsto A^\mu_\nu x^\nu\quad (\mu,\nu=0,1,2,\dots,n)
+              \eqno (0.2)
+                  $$
+      and in nothomogeneous coordinates it will be
+                    $$
+           u^i\mapsto {A_k^i u^k+t^i\over 1+\w_ru^r}
+                    \eqno (0.3)
+                    $$
+
+ The definitions of projective group follows from (1).
+
+
+    Let us stand on  naive point of view,.  Projective transformations
+    has to be understood  in the following way:
+                $$
+   Projective\,\, transformations\,\, are\,\, transformations\,\, which\,\, transform\,\, lines\,\, to\,\, lines
+                $$
+
+
+   The transformation (3) transforms an arbitrary line to the line\footnote{$^*$}
+    {I do not want to make this statement exact, involving
+     "infinities"}. This is because line in $\R P^n$ it is a plane in
+     $\R^{n+1}$, and the transformation (0.2) transforms planes to planes.
+
+     Hence it is projective transformation in the naive sense.
+
+
+{\bf Question:}  {\it Is the converse true? Is it true that
+any transformations transforming lines to lines are all described by (3)?}
+
+
+   {\bf Yes, it is }
+
+
+
+\m
+      This statement and its proof sure was
+     known centuries ago , but not so easy to find it in modern
+     textbooks.
+  I show that this is true, on infinitesimal
+  level. All calculations are elementary.
+
+\m
+
+\centerline  {\bf $\cal x$1. Infinitesimal transformations of lines to lines}
+
+\m
+
+     Let $F$ be
+    a transformation of $\R P^n$ which transforms straight lines to straight lines.
+     (In other words a vector field
+            ${\bf F}=F^m(u){\p\over \p u^m}$ is considered).
+
+
+              Take an arbitrary line: $s_r u^r=1$.  Write down the
+              condition that this line transforms to a
+              line:
+                           $$
+                         s'_mu^m-1=0 \,\,\hbox {if and only if}\,\, s_m u'^m-1=0
+                         \eqno (1.1)
+                           $$
+         where $s'_m=s'_m(s_1,\dots,s_n)$ are coefficients of
+         the transformed line, $u'^m$ are coordinates of
+         transformed points:
+                          $$
+    s'_m(s)=s_m+\vare L_m(s),\,\,\, u'^m=u^m+\vare F^m(u),\quad  (\vare^2=0)
+    \eqno (1.2)
+                          $$
+  (The condition $\vare^2=0$ encodes the fact that we consider infinitesimal small magnitudes of the first order only)
+ Taking care about proportionality coefficient in (1.2) we come
+  to the equation:
+               $$
+   (s_m+\vare L_m(s))u^m-1=(1+\vare\Lambda(u,s))\left(s_m(u^m+\vare F^m(u)-1\right)),\qquad (\vare^2=0)
+               $$
+  Due to $\vare^2=0$ this equation is equivalent to the equation:
+              $$
+         L_m(s)u^m-s_mF^m(u)=\Lambda(s,u)(s_mu^m-1)
+           \eqno (1.3)
+              $$
+Solve this equation in polynomials (Why in polynomials?).
+
+\m
+
+\centerline  {\bf $\cal x$2.  Description of vector fields transforming lines to lines}
+
+\m
+
+The equation (1.3) means that $(s_mu^m-1)$ divides
+$L_m(s)u^m-s_mF^m(u)$.
+
+ We have to find polynomials $F^m(u)$ which obey this equation,
+ tio.e. $F$ such that there exist polynomials (Why polynomials?)
+ $L_m,\Lambda$ such that the equation (2.1) is obeyed.
+
+It is linear equation. Solve it in steps
+
+
+I case. $0$-degree polynomials: $F^m(u)=F^m$:
+         $$
+         L_m(s)u^m-s_mF^m=\Lambda(s,u)(s_mu^m-1)
+         $$
+
+%            $$
+%F^m(u)=F^m+F^m_pu^p+F^m_{pq}u^pu^q+\dots
+ %           $$
+
+\m
+
+We see that arbitrary $F^m$  obeys the equation. (We can put
+$L_m(s)=s_m s_rF^r$, $\Lambda=s_rF^r$)
+
+\m
+
+II case. First degree polynomials:  $F^m(u)=F^m_pu^p$. Then
+         $$
+        L_m(s)u^m-s_mF^m_pu^p=\Lambda(s,u)(s_mu^m-1)
+         $$
+We see that arbitrary $F^m_p$  obeys the equation. (We can put
+$L_m(s)=F^p_ms_p$, $\Lambda=s_rF^r$)
+
+\m III case. Second degree polynomials:  $F^m(u)=F^m_{pq}u^pu^q$.
+Then
+         $$
+        L_m(s)u^m-s_mF^m_{pq}u^pu^q=\Lambda(s,u)(s_mu^m-1)
+         $$
+Solve this equation. Let $\Lambda(s,u)=\L(s)+\L_k(s)s^k+\dots$.
+Comparing zeroth order terms with respect to $u$ we come to
+condition $\Lambda(s)=0$. Comparing terms of the first order we
+come to the equation:
+               $$
+         L_m(s)u^m=-\Lambda_k(s)s_k, \,\, {\rm
+         i.e.}\,\,\Lambda_m(s)=-L_m(s)
+               $$
+Now looking on second order terms we come to
+          $$
+        -s_mF^m_{pq}u^pu^q=\L_k(s)s^k s_mu^m=-L_k(s)u^k s_mu^m, i.e.
+          $$
+           $$
+         2F^m_{pq}=L_p\delta^m_q+L_q\delta^m_p
+           $$
+We come to solution:
+             $$
+   F^m_{pq}={1\over 2}\left(t_p\delta^m_q+t_q\delta^m_p\right), \,\,\hbox {where $t_i$ are constants}
+             $$
+where we can put $L_r(s)=t_r, \L(s,r)=-t_r ã:ê$
+
+
+IV and the  last case. Show that in the higher degrees there are not solutions.
+Indeed let $F$ is of the order $k$ over $u$ with $k\geq 3$. Then left hand side posseses
+ temrs of first degree and third degree over $u$. Hence $\Lambda$ cannot be a polynomial.
+ If degree of $\L$ is less or equal to $n$ then the right hand side possesses the terms pf the order
+ $n$ and $n+1$.
+
+
+Collecting all the cases we come to the answer
+
+
+\m
+  The algebra of transformations (vector fields) which transform line to the line is the following:
+                  $$
+    F^m(u)=r^m+a^m_pu^p+{1\over 2}\left(t_p\delta^m_q+t_q\delta^m_p\right)u^pu^q\,.
+                  $$
+One can easy see that this algebra coincides with algebra of infinitesimal transformations from (0.3) \finish
+
+\bye

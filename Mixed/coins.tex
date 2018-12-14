@@ -1,0 +1,188 @@
+\magnification=1200
+
+\centerline {The problem of the coins}
+
+\bigskip
+  \centerline {Along the paper of  Mario Marteli and Gerald Ganon:}
+
+
+  \centerline {The College Mathematics journal, 28, No5, pp. 365-367,1997}
+
+
+
+ It is the very old problem how to find the odd coin from 12 coins
+ by 4 measurements.
+
+    \bigskip
+
+   \centerline {\it DIVIDE ET IMPERA}
+
+      $$ $$
+  For finding the strategy we first solve three preliminary
+  problems:
+
+       $$
+       1)\rightarrow 2)\rightarrow 3)\rightarrow 4)
+                    $$
+
+  {\bf Proposition 1}
+   Number of coins is equal to $3^n$ and {\bf odd coin is heavier}.
+    One can find it by $n$ measurements.
+
+
+    The proof (trivial): The case $n=1$ is evident. Let $n=k+1$. During the
+    first measurement we put $3^k$ coins on left and $3^k$ on the
+    right. If "$left > right$" by induction we choose odd coin in
+    the left set by $k$ measurements. If "left=right" we do it
+    with $3^k$ remaining coins.
+
+       \bigskip
+
+     {\bf Proposition 2}
+      Number of coins is $3^n$. Coins are marked: they are red or black and
+     red coins are heavier or equal by weight to black,
+     i.e. odd coin is heavier if it is red and it is  lighter if it
+     is black.
+     One can find it by $n$ measurements.
+
+     The proof. The case $n=1$ is trivial again.
+   Let the statement is right for $n=k$.
+
+      Let $n=k+1$.
+     We always can choose $2a$ red and
+    $2b$ black coins such that $a+b=3^n$ $(a=0,1,2,\dots)$ and put on the left
+    pan $a$ red coins and $b$ black coins, the same on the
+     right pan. If "$left> right$" hence the odd
+  coin is one of the $a$ red or one of the $b$ black.
+  We take $3^n=a+b$ coins ($a$ red from the left and $b$ right
+  from the right and by $n$ measurements find the odd one.
+
+    If "$left=right$" the we find odd one in the remaining $3^n$
+    coins.
+
+ \bigskip
+
+   {\bf Proposition 3}
+       Number of coins is equal to $s_n={3^n-1\over 2}$,
+    ($s_1=1,s_2=4,s_3=13,s_4=40,s_5=121,\dots$ ($s_{n+1}=3s_n+1$).
+
+   The coins are not marked and
+   we do not know is the odd coin heavier or odd but we have
+    {\bf additionally the coin which sure is not odd.}
+    One can find it by $n$ measurements!?
+
+    {\bf Proof} The case $n=1$ is evident. We compare the coin
+    with test one and see is it odd or not.
+
+
+   Let we can find the odd one for $n=k$
+   and consider the case $n=k+1$.
+
+                   $$
+    s_{k+1}=s_k+s_k+s_k+1
+                    $$
+    We put aside $s_k$ coins. We put $s_k$ coins and
+     additional test coin on the left pan and $s_k+1$
+      coins on the right pan.
+      If "left>right" we throw out the test coin,
+      mark the $s_k$ coins on the left pan by red paint,
+       mark the $s_k+1$ coins on the right pan by black pain.
+       We have $s_k+s_k+1=3^k$ marked coins. Using
+        Proposition 2) we find the odd coin by $k$ measurements.
+
+        If "left=right" we know that odd coin
+        is in the rest $s_k$ coins and we find it
+        with test coins by $k$ measurements.
+
+
+                $$ $$
+
+   Finally we come to
+
+           {\bf Theorem}
+     Number of coins is equal to $p_n s_n-1={3^n-3\over 2}$,
+    ($p_1=0,p_2=3,p_3=12,p_4=39,p_5=120,\dots$ ($p_{n+1}=3p_n+3$).
+
+   We do not know is the odd coin heavier or odd!
+
+    One can find it by $n$ measurements!!!
+
+
+      {\bf Proof}
+
+
+    Let $n=k+1$.
+
+   One can see that
+                  $$
+                 p_{k+1}=(p_k+1)+(p_k+1)+(p_k+1)
+                    $$
+
+           We put $p_k+1$ coins on the left side and $p_k+1$ on the right.
+
+           a) If "$left>right$" It means
+            that odd coin is "red" if it is on the
+           left pan and it is right if it is on the
+            right pan (See Proposition 2).
+            We mark coins on the left pan by red and coins on the
+            right pan by black, add one coin from
+            the remaining coins. (This additional coin is sure not odd,
+            so it can be marked as we want red or black)
+               $(p_k+1)+(p_k+1)+1=3^k$. Hence we have $3^k$
+               marked coins and we can find the odd coin amongst
+               them, according to Proposition 2)
+
+
+      b) "left=right". In this case we know that odd coin is
+      in the remaining $p_k+1$ coins. But $p_k+1=s_k$ (See Proposition 3)
+
+          We take remainig $s_k$ coins and the test coins from
+          the coins which we measured also and due to Proposition 3)
+          we find it by $k$ measurements.
+                 \bigskip
+                    It is all!
+
+     {\bf Example} Let we have 12  $\{1,2,3,4,5,6,7,8,9,10,11,12\}$ coins.
+
+    First meauserement:
+      $\{1,2,3,4\}$ on the left and $\{5,6,7,8\}$ on the black.
+
+           \medskip
+
+     a)If $\{1,2,3,4\}>\{5,6,7,8\}$ we mark $\{1,2,3,4\}$ by red, $\{5,6,7,8\}$
+   by black and consider $\{1_r,2_r,3_r,4_r,5_b,6_b,7_b,8_b,10_b\}$.
+
+     We do second measurement:
+       $\{1_r,2_r,5_b\}$ on the left and $\{3_r,4_r,6_b\}$
+   on the right.
+   If $\{1_r,2_r,5_b\}>\{3_r,4_r,6_b\}$ it means that
+   odd is or on the left and red or on the right and black.
+   We take the coins
+   $\{1_r,2_r,5_b\}$ and find by the third measurement
+    the odd one, putting $1_r$ on the left and $_b$ on the right.
+
+    If $\{1_r,2_r,4_b\}=\{3_r,4_r,5_b\}$ it means that
+    the odd is in the set $\{7_b,8_b,10_b\}$ and we
+    find it by one measurement,
+    putting $7_b$ on the left and $8_b$ on the right.
+
+  Now consider the second case:
+
+   \medskip
+   a)If $\{1,2,3,4\}=\{5,6,7,8\}$. Then the odd is in the set
+    $\{9,10,11,12\}$. We take the coin $1$ as the test coin and add it to
+    the set $\{9,10,11,12\}$. Consider the set $\{1,9,10,11,12\}$
+    where $1$ is the test coin (sure not odd).
+
+     We do the second measurement according to the proof of Proposition 3):
+     putting the coins $\{1,9\}$ on the left pan and
+     $\{10,11\}$ on the right pan.
+    Now if $\{1,9\}>\{10,11\}$ we mark ( coin by red and 10 and 11 by black
+     and during the third measurement we
+     put the coin 9 on the left pan and 10 on the right pan
+     and find the odd coin in the set $\{9,10,11\}$.
+   If $\{1,9\}=\{10,11\}$ then the odd coin is the coin $12$
+   and we do not need the third measurement.
+
+
+  \bye

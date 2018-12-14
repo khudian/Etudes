@@ -1,0 +1,209 @@
+Nijenhuis 
+\magnification=1200 
+
+\baselineskip=14pt
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\B {{\bf B}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\L {{\cal L}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\N {{\cal N}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+
+\centerline {\bf Nijenhuis bracket of differnetial 
+     forms valued vector fields}
+
+
+{\it Let $A(x)$ be a linear operator on tangent vectors: 
+$A(x)\colon\quad T_xM\to T_x(M)$. Then one can define $[A,A]$
+ which is linear operator from $T_xM\wedge T_x M\to T_xM$. 
+This is a special case
+of Nijenhuis bracket. We first do it in straightforward way, then
+  comne to this formula using general formalism.}
+
+  Let  $A(x)$ be an operator-valued function on manifold $M$. Consider
+   the following function on vector fields:
+                      $$
+    \X,\Y\mapsto
+ \N(\X,\Y)=\left[L(\X),\,L(\Y)\right]-
+                    L\left(
+              \left[\X,\,L(\Y)\right]-\left[\Y,\,L(\X)\right]
+                    \right)+
+                      L\left(
+                    L\left(
+              \left[\X,\,\Y\right]
+                    \right)
+                     \right)\,.
+                      $$
+where $[\,\,,\,\,]$ is commutator of vector fields:
+  $[\A,\B]=[\A,\B]^i\p_i=(A^r\p_r B^i-B^r\p_r A^i)\p_i$.
+
+   $\N(\X,\Y)$ is vector field on $M$.  One can see  which that:
+              $$
+ \N(\X,\Y)=-\N(\Y,\X)
+              $$
+ {\bf Fact}   $\N(\X,\Y)$ is not only linear over vector fields, it is
+linear over  algebra of functions on $M$:
+  in particular for arbitrary function $f$
+               $$
+\N(f\X,\Y)=f\N(\X,\Y)\,,
+               $$
+(this implies linearity over functions),
+
+\m
+
+This statement means that at every point $x_0$,
+ $\N$ is linear function
+on vectors $\X,\Y$ tangent to $M$ at this point. 
+
+
+ Show it,  Note that 
+  $[f\X,Y]=f[\X,\Y]-(\Y f)\X$. Hence
+         $$
+  \N(f\X,\Y)=
+ \left[L(f\X),\,L(\Y)\right]-
+                    L\left(
+              \left[f\X,\,L(\Y)\right]-\left[\Y,\,L(f\X)\right]
+                    \right)+
+                      L\left(
+                    L\left(
+              \left[f\X,\,\Y\right]
+                    \right)
+                     \right)=
+               $$ 
+               $$
+          f\left[L(\X),\,L(\Y)\right]-\left(L(\Y)f\right)L(\X)
+      -fL\left(\left[\X,\,L(\Y)\right]\right)+\left(L(\Y)f\right)L(\X)+
+            $$
+            $$
+          +fL\left(
+             \left[\Y,\,L(f\X)\right]
+                    \right)+
+                \left(\Y f\right)L\left(L\left(\X\right)\right)
+                +f L\left(
+                    L\left(
+              \left[\X,\,\Y\right]
+                    \right)
+                     \right)-
+     \left(\Y f\right)L\left(L\left(\X\right)\right)
+             =f\N(\X,\Y)\,.
+                    $$
+In components
+        $$
+\N(\X,\Y)=N^i_{kp}X^kY^p, 
+        $$
+where $$
+N^m_{kp}\p_m=\N(\p_k,\p_p)=\left[L(\p_k),\,L(\p_p)\right]-
+                    L\left(
+              \left[\p_k,\,L(\p_p)\right]-\left[\p_p,\,L(\p_k)\right]
+                    \right)+
+                      L\left(
+                    L\left(
+              \left[\p_k,\,\p_p\right]
+                    \right)
+                     \right)=
+           $$
+            $$
+     L^i_k\p_i L^m_p-L^i_p\p_i L^m_k-
+      L^m_r\left(\p_kL_p^r-\p_p L_k^r\right)
+           $$
+{\bf Theorem (Neveinhuisen)} Operator valued function $L(x)=$
+  vector valued differential $1$-form  defines
+  vector valued differential $2$-form:
+  $$
+  L\colon L=dx^kL_k^i\p_\mapsto [L,L]=dx^p\wedge dx^k
+      \left(L^i_k\p_i L^m_p-
+      L^m_r\p_kL_p^r
+\right)\,. 
+            $$ 
+  This is  bracket of $L$ with itself.
+In fact Nijenhuis defines bracket for vector fields valued 
+in differential forms of arbitrary rank.
+  We will describe them using supermathematics.
+
+     \centerline  {\bf General approach}
+
+  For  manifold $M$ of dimension $n$ consider $n|n$-dimensional
+supermanifold $\Pi TM$, i.e. nothing that tangent bundle $TM$ with
+changing parity of fibers.
+
+    Note that usual $k$-form on $M$ 
+$dx^{i_1}\wedge\dots\wedge dx^{i_k}\w_{i_1\dots i_k}$ defines a function
+            $$
+    \w(x,dx)=dx^{i_1}\dots dx^{i_k}\w_{i_1\dots i_k}(x)
+            $$
+ which is even if $k$ is even and odd if $k$ is odd
+($dx^i$ are odd variables: $dx^idx^j=-dx^jdx^i$.)
+
+  Differential form-valued vector field  $\X(x,dx)=X^i(x,dx)\p_i$ 
+is nothing but
+ vector field on $\Pi TM$ such that its vertical components
+vanishes. Sure the vanishing of vertical components is not
+covariant condition.  Better to say, that form-valued vector field
+defines differentiation of functions on $M$ with values in differential
+forms. One can  define canonical lifting of this object on 
+vector field on whole $\Pi TM$:
+                 $$
+\X(x,dx)=X^i(x,dx)\p_i\mapsto \widehat{\X(x,dx)}=
+ X^i(x,dx)\p_i+(-1)^{p(\X)}dx^k\p_k X^i(x,dx){\p\over \p dx^i}
+                 $$ 
+$p(\X)=0$ if it values in forms of even rank and it is equal to $1$
+if it values in forms of an odd rank.
+
+ This canonical lifting is uniquely defined by the condition that 
+veector field $\widehat \X$ commutes wioth de Rham differential $d=dx^k{\p_k}$.
+
+
+  {{\bf Definition} of Nijenuis bracket}
+Let $\A=A^i(x,dx)\p_i, \B=B^i(x,dx)\p_i$ 
+be vector valued differential forms
+Then
+         $$
+  [\A,\B]_{\rm N}\colon\,\,
+   \widehat {[\A,\B]}_{\rm N}=[\hat \A,\hat \B]\,,
+         $$
+where on the right hand side is usual commutato of vector fields.
+ This is all\finish
+\bye
