@@ -55,8 +55,9 @@
 
 {\tt 22 December 2018}
 
+\centerline {\bf On Taylor identity}
 A  standard proof of Taylor Theorem 
-for smooth function,
+for smooth (infinitely differentiable) function,
      $$
 f(x)=\sum_{k=0}^n f^{(k)}(x_0){(x-x_0)^k\over k!)}+
      O(x^{n+1})
@@ -78,17 +79,17 @@ This identity immediately leads to (1).
 Sasha Karabegov  acquinted  me with the problems
 suggested on the PUTNAM competition 
 in USA universities
-\footnote{$^{*}$}
+\footnote{$^{1)}$}
 {see https://kskedlaya.org/putnam-archive/2018.pdf}.
-  Sasha actively participated in the organisation of this 
-competition.  He has suggested 
+  Sasha was local organiser of this
+competition  in his University.  He has suggested 
 the beautiful solutions of some questions,
 and  in particular
-of the question A5 on this competition.
-\footnote{$^{**}$}
+of the question A5 on this competition
+\footnote{$^{2)}$}
 {see the fourth solution of this question
 in  https://kskedlaya.org/putnam-archive/2018s.pdf
-or the Appendix 1 to this text}.
+or the Appendix  to this text}.
    His elegant proof is based on the identity (2).
 In fact in this proof he deduces 
 in elementary way
@@ -102,25 +103,33 @@ this function and
  its all derivatives at all the points 
 take non-negative values.
 Then the condition that function $f$ vanishes 
-at arbitrary point
-   implies that it vanishes at all the points:
-                   $$
- \forall x,n f^{(n)}(x)\geq 0\,\, \&\,\, 
-f(x_0)=0\Rightarrow f\equiv 0\,.
+at arbitrary pointmplies that it vanishes at all the points:
+              $$
+\forall x, \forall n   f^{(n)}(x)\geq 0\, {\rm and}\,\,
+    f(x_0)=0\Rightarrow f(x)\equiv 0\,.
           \eqno (3)
-                   $$
+              $$
 }
+
+This statement is related with the Bernstein's 
+Theorem on monotone functions\footnote{$^{3)}$}
+ {see the second solution
+of the question in 
+ https://kskedlaya.org/putnam-archive/2018s.pdf}.
+ 
+
+
 \bigskip
-In what follows I show the identity (1)
-and reproduces karabegov's proof.
+In what follows I expalin  the identity (1)
+and reproduce Karabegov's proof.
 
 \medskip
 
 \centerline {\bf Taylor identity}
 
-{\tt I know this identity "hundred  years". 
+{\tt I have known  this identity  ` for hundred  years'. 
 Karabegov's proof makes me to realise that
-this is really effective.}
+this is really very effective.}
 
 \medskip
 
@@ -171,7 +180,7 @@ f(0)+f'(0)x
           $$
 f(0)+f'(0)x
 +f^{''}(0){x^2\over 2}
-+    {1\over 6 }\int_0^x {d^3\over dt^3} f(t)
+-    {1\over 6 }\int_0^x {d^3\over dt^3} f(t)
     \s\left(\left(x-t\right)^3\right)dt
            =
           $$
@@ -234,7 +243,10 @@ and so on:
 {d^{n+1}\over dt^{n+1}}f(t)(x-t)^ndt
           $$
 
-\centerline {Appendix 1}
+\bigskip
+
+
+\centerline {\bf Appendix }
 {\tt Here I reproduce the Karabegov's proof
 of the Theorem (3).}.
 
@@ -252,7 +264,8 @@ f(x)=
    \eqno (A1)
             $$
 for an arbitary $n$.
-Hence for every $x_1$ and for every $n$
+Hence integrating this identity we see that
+for every $x_1$ and for every $n$
          $$
 \int_{x_0}^{x_1} f(x)dx=
 \int_{x_0}^{x_1} dx\left({1\over n!}\int_{x_0}^x 
@@ -267,24 +280,25 @@ f^{(n+1)}(t)(x-t)^ndx\right)=
 f^{(n+1)}(t)(x_1-t)^{n+1}\,.
     \eqno (A2)
          $$
-Choose an arbitrary $x_1>x_0$. Then
-    $x_1-t<x_1-x_0$.  Thus it follows from equations 
+Choose an arbitrary $x_1>x_0$. Then  
+it follows from equations 
 (A2) and
 (A1) that
        $$
-{\rm for}\,\, x_1>x_0\,\,
 \int_{x_0}^{x_1} f(x)dx=
 {1\over (n+1)!}\int_{x_0}^{x_1}
 f^{(n+1)}(t)(x_1-t)^{n+1}\leq
          $$
         $$
-{x_1-x_0\over n}
+{x_1-x_0\over n+1}
 \left(
  {1\over n!}\int_{x_0}^{x_1}
 f^{(n+1)}(t)(x_1-t)^{n}
 \right)=
-{x_1-x_0\over n}f(x_1)\Rightarrow f(x_1)=0{\hbox{\finish}}
+{x_1-x_0\over n+1}f(x_1)\Rightarrow f(x_1)=0{\hbox{\finish}}
           $$
-since this unequality holds or arbitrary $n$.
+since this inequality holds or arbitrary $n$.
 
 \bye
+
+
