@@ -1,6 +1,10 @@
-This is TeX, Version 3.1415926 (TeX Live 2011) (format=tex 2011.7.3)  2 NOV 2013 08:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdftex 2016.8.6)  12 SEP 2019 16:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **dhl2.tex
-(./dhl2.tex [1] [2] [3]
+(./dhl2.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex
+.map}] [2] [3]
 Overfull \hbox (19.46965pt too wide) in paragraph at lines 362--365
 []\tenrm [4] home-page: maths.manchester.ac.uk/khudian/Etudes/Geometry/Dusterma
 at-Heckman|
@@ -13,5 +17,23 @@ at-Heckman|
 .\glue 3.33333 plus 1.66666 minus 1.11111
 .etc.
 
-[4] )
-Output written on dhl2.dvi (4 pages, 15620 bytes).
+[4] )</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on dhl2.pdf (4 pages, 165907 bytes).
+PDF statistics:
+ 69 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

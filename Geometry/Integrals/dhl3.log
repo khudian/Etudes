@@ -1,6 +1,10 @@
-This is TeX, Version 3.1415926 (TeX Live 2011) (format=tex 2011.7.3)  2 NOV 2013 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdftex 2016.8.6)  12 SEP 2019 16:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **dhl3.tex
-(./dhl3.tex [1] [2] [3] [4] [5] [6]
+(./dhl3.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex
+.map}] [2] [3] [4] [5] [6]
 Overfull \hbox (9.93716pt too wide) in paragraph at lines 639--642
 []\tenrm [1] A. Ners-es-sian \tenit An-tibrack-ets and lo-cal-i-sa-tion of (pat
 h) in-te-grals  \tenrm arXix: hep-th/9305181,|
@@ -26,5 +30,24 @@ at-Heckman|
 .\glue 3.33333 plus 1.66666 minus 1.11111
 .etc.
 
-[7] )
-Output written on dhl3.dvi (7 pages, 28656 bytes).
+[7] )</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on dhl3.pdf (7 pages, 197561 bytes).
+PDF statistics:
+ 84 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
