@@ -1,0 +1,209 @@
+\magnification=1200 
+
+\baselineskip=14pt
+
+
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\O {{\bf O}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w{\omega}
+\def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+\centerline  {\bf Orthocentre of triangle and related problems}
+
+
+  Three heights of triangle intersect at the point.  
+     This is  well-known statement \footnote{$^*$}
+     {Arnold makes it famous
+     claiming  that this happens due to Jacobi identity.
+     (see my etude:)
+     However we will speak here about other topic.}
+     
+     
+     I remember how I was surprised
+     when I realised that this happens since
+     orthocentre of $\triangle ABC$ coincides
+     with orthocentre of 'double' triangle 
+     $\triangle A'B'C'= 2\times \triangle ABC$!
+
+  {\bf Remark}   
+     We will use notation 
+$\triangle A'B'C'= 2\times \triangle ABC$
+for triangle such that 
+                   $$
+         \matrix
+	 {
+\hbox {side $A'B$  passes via the point $C$ and $A'B'||AB$}\cr
+\hbox {side $B'C$  passes via the point $A$ and $B'C'||BC$}\cr
+\hbox {side $A'C'$  passes via the point $B$ and $A'C'||AC$}\cr
+    }
+                 $$
+
+\medskip
+
+We consider another remarkable point of $\triangle ABC$:
+intersection of heights  of double triangle: 
+     $\triangle A'B'C'= 2\times \triangle ABC$ or in other words
+     the orthocentre of the 'quatre' triangle
+
+    $\triangle\tilde A\tilde B\tilde C=2\times \triangle A'B'C'$
+   
+   where   $\triangle A'B'C'= 2\times \triangle ABC$.
+
+
+
+
+
+     Many years ago I was solving the following problem
+     : Let $ABCD$ be thetraedron such
+     that all its fsces are four euqal triangles with sides $a,b,c$.
+     Calculate its volume\footnote{$^{**}$}
+     {THis problem comes from 1984 when I was tutoring Vahagn Minasian...}
+      At that time I came to the following very beautiful 
+      solution of this problem:
+
+      Consider right parallelipiped $ABCDA'B'C'D'$  with sides $x,y,z$
+         such that this tetrahedron is inscribed in this parallelepiped:
+	           $$
+		    \cases
+		     {
+		   AD=BC=A'D'=B'C'=x\cr
+	    AB=CD=A'B'=C'D'=y\cr
+           AA"=BB'=CC"=DD"=z\cr
+	          }\,,\quad
+		  {\rm where}\,\,
+               \cases
+		   {
+		   x^2+y^2=a^2\cr
+		   y^2+z^2=b^2\cr   
+		   z^2+x^2=c^2\cr
+		   }
+                  \,\,i.e.
+		  \cases
+		       {
+           x=\sqrt {a^2+c^2-b^2\over 2}\cr
+           y=\sqrt {b^2+a^2-c^2\over 2}\cr
+           z=\sqrt {b^2+c^2-a^2\over 2}\cr
+			       }
+		 		   $$
+      We see that triangle which forms tetrahedron has to be acute
+      (not obtuse),
+      since $x,y,z$ have to be positive (or non zero)
+     
+     Now we see that  volume of our tetrahedron is equal to
+             $$
+	  {\rm Vol\, }(AB'CD')=
+	  {\rm Vol \,}(ABCDA'B'C'D')-
+	{\rm Vol\, }(BACB')-
+	{\rm Vol \,}(C'B'D'C)-
+	        $$
+		$$
+	{\rm Vol\,}(DACD')-
+	{\rm Vol\,}(A'B'D'A)=
+	xyz-{xyz\over 6}\cdot 4={xyz\over 3}=
+	     $$
+	     $$
+	     {\sqrt 2\over 12}
+	     \sqrt
+	     {
+		     (a^2+b^2-c^2)     
+		     (b^2+c^2-a^2)     
+		     (c^2+a^2-b^2)     
+		     }
+		     $$
+	 Yes, this is beautiful.  However there is also another solution.
+Thirty years ago trying to construct this tetrahedron, I came the equations
+                   $$
+		   \cases
+		   {
+	         {a'}^2+h^2=a^2\cr		   
+	         {b'}^2+h^2=b^2\cr		   
+	         {c'}^2+h^2=c^2\cr		   
+			   }\,.
+		   $$
+	  Here $a,b,c$  are edges of the $\triangle ABC$,
+	       $AB=c,BC=a$ and $AC=b$.
+	       For an arbitrary point $P$ on the plane denote by
+	       $a'=PA$, $b'=PB$ and $c'=PC$.
+	    If you find a point $P$ such that these equations
+	    are fullfilled then, 
+	             $$
+		 {\rm Vol\,} (thetrahedron)=
+		 {h{\rm Area of the\,}  \triangle ABC\over 3}=
+		     $$
+I could not solve these equations.  A week ago 
+i told this problem to my friend, Hovik Nersessian
+and he realised that 
+
+	       
+	       {\bf Theorem}
+	       There is unique point $P$ such that
+	           $$
+		   \cases
+		   {
+	    {a'}^2-{b'}^2=b^2-a^2\cr		   
+	    {b'}^2-{c'}^2=c^2-b^2\cr		   
+	    {c'}^2-{a'}^2=a^2-c^2\cr		   
+			   }
+		   $$
+and this point is orthocentre of triangle $ABC$.
+
+\bigskip
+
+
+There is unique point $P$ such that
+	           $$
+		   \cases
+		   {
+	    {a'}^2-{b'}^2=a^2-b^2\cr		   
+	    {b'}^2-{c'}^2=b^2-c^2\cr		   
+	    {c'}^2-{a'}^2=c^2-a^2\cr		   
+			   }
+		   $$
+and this point is orthocentre of triangle $ABC$.
+
+
+
+	    
+	    
+     
+     \bye
