@@ -72,22 +72,25 @@ for triangle such that
                    $$
          \matrix
 	 {
-\hbox {side $A'B$  passes via the point $C$ and $A'B'||AB$}\cr
-\hbox {side $B'C$  passes via the point $A$ and $B'C'||BC$}\cr
+\hbox {side $A'B'$  passes via the point $C$ and $A'B'||AB$}\cr
+\hbox {side $B'C'$  passes via the point $A$ and $B'C'||BC$}\cr
 \hbox {side $A'C'$  passes via the point $B$ and $A'C'||AC$}\cr
     }
+    \eqno (1)
                  $$
 
 \medskip
 
 We consider another remarkable point of $\triangle ABC$:
-intersection of heights  of double triangle: 
-     $\triangle A'B'C'= 2\times \triangle ABC$ or in other words
+                    $$
+\hbox {intersection of heights  of double triangle} 
+     \triangle A'B'C'= 2\times \triangle ABC$ 
+                 \eqno (2)
+                 $$
+ or in other words
      the orthocentre of the 'quatre' triangle
-
-    $\triangle\tilde A\tilde B\tilde C=2\times \triangle A'B'C'$
-   
-   where   $\triangle A'B'C'= 2\times \triangle ABC$.
+   $\triangle\tilde A\tilde B\tilde C=2\times \triangle A'B'C'$,
+      where   $\triangle A'B'C'= 2\times \triangle ABC$.
 
 
 
@@ -149,6 +152,7 @@ intersection of heights  of double triangle:
 		     (b^2+c^2-a^2)     
 		     (c^2+a^2-b^2)     
 		     }
+		     \eqno (*)
 		     $$
 	 Yes, this is beautiful.  However there is also another solution.
 Thirty years ago trying to construct this tetrahedron, I came the equations
@@ -159,6 +163,7 @@ Thirty years ago trying to construct this tetrahedron, I came the equations
 	         {b'}^2+h^2=b^2\cr		   
 	         {c'}^2+h^2=c^2\cr		   
 			   }\,.
+			   \eqno (**)
 		   $$
 	  Here $a,b,c$  are edges of the $\triangle ABC$,
 	       $AB=c,BC=a$ and $AC=b$.
@@ -167,12 +172,14 @@ Thirty years ago trying to construct this tetrahedron, I came the equations
 	    If you find a point $P$ such that these equations
 	    are fullfilled then, 
 	             $$
-		 {\rm Vol\,} (thetrahedron)=
-		 {h{\rm Area of the\,}  \triangle ABC\over 3}=
+		 {\rm Vol\,} (tetrahedron)=
+		 {h\cdot {\rm Area of the\,}  \triangle ABC\over 3}=
 		     $$
 I could not solve these equations.  A week ago 
-i told this problem to my friend, Hovik Nersessian
-and he realised that 
+i told this problem to my friend, Hovik Nersessian.
+He suggested that a point $P$ is related with orthocentre...
+Due to hom I realised that the following statements are obeyed:
+
 
 	       
 	       {\bf Theorem}
@@ -185,7 +192,7 @@ and he realised that
 	    {c'}^2-{a'}^2=a^2-c^2\cr		   
 			   }
 		   $$
-and this point is orthocentre of triangle $ABC$.
+and this point is {\it the orthocentre of triangle $ABC$.}
 
 \bigskip
 
@@ -199,7 +206,8 @@ There is unique point $P$ such that
 	    {c'}^2-{a'}^2=c^2-a^2\cr		   
 			   }
 		   $$
-and this point is orthocentre of triangle $ABC$.
+and this point is {\it the orthocentre of 'double'
+triangle $ABC$.}
 
 
 
