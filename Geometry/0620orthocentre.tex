@@ -48,21 +48,24 @@
 \def\w{\omega}
 \def\finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
 
+
+16 June, 2020
+
 \centerline  {\bf Orthocentre of triangle and related problems}
 
 
-  Three heights of triangle intersect at the point.  
+  Three heights (altitudes) of triangle intersect at the point.  
      This is  well-known statement \footnote{$^*$}
      {Arnold makes it famous
      claiming  that this happens due to Jacobi identity.
-     (see my etude:)
+     (see the etude in my homepage)
      However we will speak here about other topic.}
      
      
-     I remember how I was surprised
+     I remember how I was surprised in school
      when I realised that this happens since
      orthocentre of $\triangle ABC$ coincides
-     with orthocentre of 'double' triangle 
+     with centre of  circumstribed circle of 'double' triangle 
      $\triangle A'B'C'= 2\times \triangle ABC$!
 
   {\bf Remark}   
@@ -83,12 +86,12 @@ for triangle such that
 
 We consider another remarkable point of $\triangle ABC$:
                     $$
-\hbox {intersection of heights  of double triangle} 
+\hbox {intersection of heights  (altitudes) of double triangle} 
      \triangle A'B'C'= 2\times \triangle ABC 
                  \eqno (2)
                  $$
  or in other words
-     the orthocentre of the 'quatre' triangle
+     the centre of circumscribed circle  of the 'quatre' triangle
    $\triangle\tilde A\tilde B\tilde C=2\times \triangle A'B'C'$,
       where   $\triangle A'B'C'= 2\times \triangle ABC$.
 
@@ -96,11 +99,12 @@ We consider another remarkable point of $\triangle ABC$:
 
 
 
-     Many years ago I was solving the following problem
-     : Let $ABCD$ be thetraedron such
-     that all its fsces are four euqal triangles with sides $a,b,c$.
+     Many years ago I was solving the following problem: 
+     Let $ABCD$ be tetraedron such
+     that all its faces are four equal triangles (with sides $a,b,c$).
      Calculate its volume\footnote{$^{**}$}
-     {THis problem comes from 1984 when I was tutoring Vahagn Minasian...}
+     {This problem comes from 1984 when I was tutoring Vahagn Minasian...
+     {\tt Ou es-tu maintenant, Vahagn?}}
       At that time I came to the following very beautiful 
       solution of this problem:
 
@@ -127,6 +131,7 @@ We consider another remarkable point of $\triangle ABC$:
            y=\sqrt {b^2+a^2-c^2\over 2}\cr
            z=\sqrt {b^2+c^2-a^2\over 2}\cr
 			       }
+			       \eqno (3)
 		 		   $$
       We see that triangle which forms tetrahedron has to be acute
       (not obtuse),
@@ -152,7 +157,7 @@ We consider another remarkable point of $\triangle ABC$:
 		     (b^2+c^2-a^2)     
 		     (c^2+a^2-b^2)     
 		     }
-		     \eqno (*)
+		     \eqno (4)
 		     $$
 	 Yes, this is beautiful.  However there is also another solution.
 Thirty years ago trying to construct this tetrahedron, I came the equations
@@ -163,55 +168,180 @@ Thirty years ago trying to construct this tetrahedron, I came the equations
 	         {b'}^2+h^2=b^2\cr		   
 	         {c'}^2+h^2=c^2\cr		   
 			   }\,.
-			   \eqno (**)
+			   \eqno (5)
 		   $$
 	  Here $a,b,c$  are edges of the $\triangle ABC$,
 	       $AB=c,BC=a$ and $AC=b$.
 	       For an arbitrary point $P$ on the plane denote by
-	       $a'=PA$, $b'=PB$ and $c'=PC$.
+	       $x_a=PA$, $x_b=PB$ and $x_c=PC$.
 	    If you find a point $P$ such that these equations
 	    are fullfilled then, 
 	             $$
 		 {\rm Vol\,} (tetrahedron)=
-		 {h\cdot {\rm Area of the\,}  \triangle ABC\over 3}=
+		 {h\cdot {\rm Area\,  of\, the\,}  \triangle ABC\over 3}=
+		    \eqno (6)
 		     $$
-I could not solve these equations.  A week ago 
-i told this problem to my friend, Hovik Nersessian.
+I could not solve these equations thirty years ago.  A week ago 
+I told this problem to my friend, Hovik Nersessian.
 He suggested that a point $P$ is related with orthocentre...
-Due to hom I realised that the following statements are obeyed:
+This solves the puzzle!
+I realised that the following statements are obeyed:
 
 
 	       
 	       {\bf Theorem}
-	       There is unique point $P$ such that
-	           $$
+
+{\it	Let $ABC$ be a triangle on the plane with edges,
+	$a=BC$, $b=AC$ and $c=AB$.   For every point $P$ on the plane
+   consider
+              $$
+	      \cases
+	      {
+	  x_a=PA=\hbox{the length of the 
+	   segment from point $P$ to the point $A$}\cr
+	   x_b=PB=\hbox{the length of the 
+	   segment from point $P$ to the point $B$}\cr
+	   x_c=PC=\hbox{the length of the 
+	   segment from point $P$ to the point $C$
+	    }
+	    }\,.
+	    \eqno (7)
+	      $$
+	  Then 
+	  
+1)	  there exist a unique point $P=M_1$
+	  such that at this point
+	            $$
 		   \cases
 		   {
-	    {a'}^2-{b'}^2=b^2-a^2\cr		   
-	    {b'}^2-{c'}^2=c^2-b^2\cr		   
-	    {c'}^2-{a'}^2=a^2-c^2\cr		   
+	    x_a^2-x_b^2=b^2-a^2\cr		   
+	    x_b^2-x_c^2=c^2-b^2\cr		   
+	     x_c-x_a^2=a^2-c^2\cr		   
 			   }
-		   $$
-and this point is {\it the orthocentre of triangle $ABC$.}
+			\eqno (8)   
+			$$   
 
-\bigskip
+and this point is orthocentre of the triangle $ABC$.			
 
-
-There is unique point $P$ such that
-	           $$
+2)	  there exist a unique point $P=M_2$
+	  such that at this point
+	            $$
 		   \cases
 		   {
-	    {a'}^2-{b'}^2=a^2-b^2\cr		   
-	    {b'}^2-{c'}^2=b^2-c^2\cr		   
-	    {c'}^2-{a'}^2=c^2-a^2\cr		   
+	    x_a^2-x_b^2=a^2-b^2\cr		   
+	    x_b^2-x_c^2=b^2-c^2\cr		   
+	     x_a-x_c^2=a^2-c^2\cr		   
 			   }
-		   $$
-and this point is {\it the orthocentre of 'double'
-triangle $ABC$.}
+			 \eqno (9)  
+			$$   
+and this point is orthocentre of the double triangle triangle $ABC$.		
 
+({\tt 
+Note, please that RHS in equations (8) and (9) differ by sign!})
 
+3) the transformation
+   $$
+\cases
+{
+x_a^2\mapsto 2x_b^2+2x_c^2-a^2\cr	
+x_b^2\mapsto 2x_a^2+2x_c^2-b^2\cr	
+x_c^2\mapsto 2x_a^2+2x_b^2-c^2\cr	
+}
+\eqno (10)
+   $$
+ transforms  solutions of the equation (8) to solutions of 
+  equation (9); and vice versa 
+  $$
+\cases
+{
+	x_a^2\mapsto 
+{
+x_b^2+x_c^2-x_a^2+b^2+c^2-a^2\over 4}\cr
+	x_b^2\mapsto 
+{
+x_a^2+x_c^2-x_b^2+a^2+c^2-b^2\over 4}\cr
+	x_c^2\mapsto 
+{
+x_a^2+x_b^2-x_c^2+a^2+b^2-c^2\over 4}\cr
+	}
+	\eqno (11)
+   $$
+ transforms  solutions of the equation (9) to solutions of 
+  equation (8)\footnote{$^\dagger$} {One can see
+  that formal transformation 
+  $x_a\mapsto ix_a$
+  $x_b\mapsto ix_b$
+  $x_c\mapsto ix_c$
+ does this!}; 
 
-	    
-	    
-     
-     \bye
+4) If $DABC$ is tetrahedron such that all its faces are equal to
+the triangle $ABC$, then it is acute triangle,
+if  $M_2$ is the pointin $\triangle ABC$
+which is the orthocentre of the double triangle,
+then $DM_2$ is the height.
+}
+	    The proof
+	    is almost evident.
+
+Notice that points on the line  which passes via the
+point $C$ and is orthogonal to the edge $AB$
+is the locus of the points $M$ such that
+         $$
+	d(M,A)^2-d(M,B)^2=b^2-a^2\,.
+	 $$
+We see that points on the height obey this property.	 
+The same is true for the line orthogonal to $BC$
+which passes through the vertex $A$ and for the line
+orthogonal to $AC$ which passes via vertex $B$.
+
+Thus we see that three heights of triangle intersect 
+at the point and equation (8) is obeyed.
+
+Equation (9) looks almost the same, but...!!!
+here we come to a different point.
+
+  Points  on the line  which passes via the
+point $C'$ (vertex of the double triangel)
+and is orthogonal to the edge $AB$
+is the locus of the points $M$ such that
+         $$
+	d(M,A')^2-d(M,B')^2=a^2-b^2\,,
+	 $$
+and respectively points on the line  which passes via the point $B$
+and is orthogonal 
+to the edge $AC$
+is the locus of the points $M$ such that
+         $$
+	d(M,A)^2-d(M,C)^2=a^2-c^2\,,
+	 $$
+and respectively
+points on the line  which passes throug the point
+$A$ and is orthogonal to the edge $BC$
+is the locus of the points $M$ such that
+         $$
+	d(M,B)^2-d(M,C)^2=b^2-c^2\,.
+	 $$	 
+	 These equations imply that $M_2$
+	 is the intersection point of 
+	 heights of double trianfgle.
+    
+    Now about symmetry between equations (8) and (9)
+   
+It is convenient to denote by $x_a,x_b,x_c$ solutions of equation
+(8) and by $y_a,y_b,y_c$
+solutions of equation (9).
+
+First consider transformation (10)
+Consider double triangle $A'B'C'$
+and triangle $C'M_2B'$, where $M_2$ is orthocentre of the double triangle.
+We see that $M_2A=y_a$. Point $M_2$ is orthocentre of the big triangle.
+Hence by similarity
+with edges $C'M_2=2x_c$ and $B'M_2=2x_b$, and  $y_a$ is median.
+We come to
+       $$
+      y_a^2=2x_b^2+2x_c^2-a^2\,. 
+       $$
+       This proves (10). To prove transformation
+       (11) consider in triangle $ABC$  half-triangle
+       $A'B'C'$. We will come to (11).
+    \bye
