@@ -67,7 +67,7 @@
 {\it Famous Stirling formula is a good problem which explains 
 staionary phase method including its non-trivial part.
 I deduce standard Stirling formula using Ted
-Vornov's comments on Fedoruk paper}    
+Voronov's comments on Fedoruk paper}    
 
 {\tt I returned to this text again in June 2020...(see another version
 in math Blog on October 2019)}
@@ -89,6 +89,7 @@ and Hessian at this point is not degenerate,	 then
       \int\exp {i S(x)\over \hbar}u(x)dx = 
 	   C\exp {i S(x_0)\over \hbar}
 	   {(\pi \hbar)^{n\over 2}\over \sqrt {\det A}}
+	   \left(1+O(\hbar)\right)\,.
 	   \eqno (01)
 	       $$
 People say that if $\hbar\to 0$ then
@@ -117,21 +118,22 @@ A^{ab}
  \eqno (02)
       $$
    {\it whereas the expression in big brackest is an expansion
-   over  positive powers of $\hbar$.}
+   over  positive powers of $\hbar$.}, i.e. 
+   $O(\hbar)$ in equation (01)
+is polynomial on $\hbar$,
                $$
 	       \hbox
-{Only positive powers of $\hbar$ have imput in the integral
-(02).}
-\eqno (03)
+{Only positive powers of $\hbar$ have imput in $O(\hbar)$}  
+        \eqno (03)
              $$
  
- This is non-trivial statement.
 
 On one hand everybody knows the statement (01),
-on the other way the statement (02) is not simple.
+on the other way the statement (02) is not simple, and it is
+highly non-trivial.
 
     The best way to see this 
-    statement it is to study Stirling formula.
+    statement it is to study famous Stirling formula.
 
     Recall that Striling formula says that
          $$
@@ -141,10 +143,12 @@ on the other way the statement (02) is not simple.
 	   $$
 The "easy part" of Stirling formula, i.e. the statement
          $$
-	N!\approx \left(N\over e\right)^N\sqrt {2\pi N}
+	N!\approx \left(N\over e\right)^N\sqrt {2\pi N}\,,\quad
+	N!= \left(N\over e\right)^N\sqrt {2\pi N}
+	\left(1+O\left(1\over N\right)\right)\,,
 	   $$
-is related with (01), and equation ({\rm Stirling})
-is 'difficult part'
+is related with (01). Equation ({\rm Stirling})
+is the 'difficult part'.
 of Stirling formula. In particular studying this equation
 it is impossible to avoid the question: why in formal series
 appear only negative powers of $N$ (compare with (02,03)).
