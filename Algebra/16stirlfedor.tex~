@@ -1,8 +1,5 @@
 
 
-
-
-
 \magnification=1200
 \baselineskip=14pt
 
@@ -247,7 +244,7 @@ dx}\right)^2}\int \tilde \varphi(k)e^{ikx}
  \left[
 \int \tilde \varphi(k)
 \left(e^{-{k^2\over 2N}}\right)e^{ikx}
-\right]_{x=0}=
+\right]_{x=0}+
 \int \tilde \varphi(k)
 e^{-{k^2\over 2N}}dk\,.
        $$
@@ -263,37 +260,25 @@ e^{ik(x_0-x)}
   $$
 \int \tilde f(k)
 e^{ikx_0}
-\tilde u(p)e^{i(p-k)x}dx dk dp=
-2\pi \int \tilde f(k)
+\tilde u(p)e^{i(p-k)x}dx dk dp
+\int \tilde f(k)
 e^{ikx_0}
 \tilde u(p)\delta(p-k) dk dp=
   $$
   $$
-2\pi \int \tilde f(k)
+\int \tilde f(k)
 e^{ikx_0}
 \tilde u(k) dk=
-2\pi  \tilde f\left({1\over i}{d\over dx}\right)
-      u(x)\big\vert_{x=x_0}\,,
+ f\left({1\over i}{d\over dx}\right)
+      u(x)\big\vert_{x=0}\,.
       \eqno (\hbox {Fedoruc identity})
      $$
-
-where  $\tilde f,\tilde u$ are Fourier images of functions $f,u$:
-    $$
-  g(x)=\int \tilde g(k)e^{ikx}dk\,,\quad {\rm with}  
-  \quad \tilde g(k)={1\over 2\pi }
-   \int \tilde g(k)e^{-ikx}dk\,. 
-    $$
 ]
 
-Namely apply identity (***)  to equation (2)
-using the fact that according to 
-equation (****),
-Fourier image of function $f(x)=e^{-Nx^2\over2}$
-is equal to $\tilde f (k)=
-{e^{-k^2\over 2N}\over \sqrt {2\pi N}}$: 
-$$
+Namely apply identity (***)  to equation (2):
+ $$
 N!=
-N\left(N\over e\right)^N
+\left(N\over e\right)^N\sqrt {2\pi N}
 \int_{-1}^\infty e^{-N
    \left(
   {x^2\over 2 }
@@ -302,7 +287,7 @@ N\left(N\over e\right)^N
    \right)}dx=
    $$
    $$
-N\left(N\over e\right)^N
+\left(N\over e\right)^N\sqrt {2\pi N}
 \int e^{-N{x^2\over 2}}
      e^{
       N
@@ -313,38 +298,25 @@ N\left(N\over e\right)^N
  }dx=
      $$
      $$
-N\left(N\over e\right)^N
-\int 
+\left(N\over e\right)^N\sqrt {2\pi N}
+\int e^{-N{x^2\over 2}}
 \underbrace
-    {
-e^{-N{x^2\over 2}}
-}_{f}
-\overbrace
   {
-\underbrace
-   {
      e^{
       N
      \left(
  {x^3\over 3 }
  -{x^4\over 4 }+\dots
      \right)
-     }
- }_{u}
- }^{\hbox 
- { terms of order $\geq 3$ in $x$}}
+ }
+ }_{\hbox {terms of order $\geq 3$ in $x$}}
  dx=
   $$
   $$
-N\left(N\over e\right)^N\cdot 2\pi
+\left(N\over e\right)^N\sqrt {2\pi N}
 \left\{
-	{
-	e^{\left(
-	-{1\over 2N}
-	\left({1\over i}
- {d\over dx}\right)^2
-      \right)}
-     \over \sqrt {2\pi N} }
+ e^{-{1\over 2N}\left({1\over i}
+ {d\over dx}\right)^2}
     \left[
      e^{
       N
@@ -354,25 +326,8 @@ N\left(N\over e\right)^N\cdot 2\pi
      \right)
  } 
 \right]
-\right\}_{x=0}=
+\right\}_{x=0}\,.
      $$
-   $$
-\left(N\over e\right)^N\cdot \sqrt {2\pi N}
-	e^{
-	{1\over 2N}
- {d^2\over dx^2}
-          }
-    \left[
-     e^{
-      N
-     \left(
- {x^3\over 3 }
- -{x^4\over 4 }+\dots
-     \right)
- } 
-\right]_{x=0}=
-     $$
-     
 
 ... and here the mystery began: since the expression
 $    \left[
