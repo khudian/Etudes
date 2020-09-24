@@ -1,0 +1,207 @@
+
+\magnification=1200
+\baselineskip=14pt
+
+\def\A {{\bf A}} 
+\def\B {{\cal B}}
+\def\C {{\bf C}}
+\def\CC {{\cal C}}
+\def\Cl {{\tt \hbox{Cliff}}}
+\def\E {{\bf E}}
+\def\EE {{\cal E}}
+\def\F {{\cal F}}
+\def\FF {{\cal F}}
+\def\G {\Gamma}
+\def\GG {{\cal G}}
+\def\H {{\bf H}}
+\def\K {{\bf K}}
+\def\L {{\cal L}}
+\def\M {{\cal M}}
+\def\N {{\bf N}}
+\def\R {{\bf R}}
+\def\Sb {{\bf S}}
+\def\SS {{\cal S}}
+\def\Tr {{\rm Tr\,}}
+\def\V {{\cal V}}
+\def\X {{\bf X}}
+\def\XX {{\cal X}}
+\def\Y {{\bf Y}}
+\def\Z {{\bf Z}}
+
+\def\a {\alpha}
+\def\ac {{\bf a}}
+\def\b {{\bf b}}
+\def\bs {{\bf s}}
+\def\c {{\bf c}}
+\def\d {\delta}
+\def\dist {{\tt \hbox{distance}}}
+\def\e {{\bf e}}
+\def\f {{\bf f}}
+\def\finish {\blacksquare}
+\def\g {{\bf g}}
+\def\grad {{\rm grad\,}}
+\def\h {\hbar}
+\def\k {{\bf k}}
+\def\l {{\bf l}}
+\def\m {{\bf m}}
+\def\n {{\bf n}}
+\def\nameofthefile {\centerline}
+\def\p {\partial}
+\def\pb {{\bf p}}
+\def\pt {{\bf pt}}
+\def\q {{\bf q}}
+\def\r {{\bf r}}
+\def\s {\sigma}
+\def\ss {{\bf s}}
+\def\t {{\bf t}}
+\def\tS {{\tilde \Sigma}}
+\def\td {\tilde}
+\def\v {{\bf v}}
+\def\vare {\varepsilon}
+\def\x {{\bf x}}
+\def\y {{\bf y}}
+\def\w {\omega}
+
+\nameofthefile {\bf Geometrical object (look from outside)}
+
+
+{\it Long ago I red the definiiton of geometrical object
+in Beklemishev (Manuel on Analytical geometry).
+ I was very happy to know how physisists define vectors,
+ tensors,...
+ and honestly long time did not understand the question:
+ "does it exist"...., and the fact that it is the cocycle condition
+ (see equation (3) below which guarantees it!))
+ 
+ I struggled with this during all my life.
+ My friend Ted Voronov always  emphasized  the  importance
+ of cocycle condition for the existence of object.. 
+ The proverb: "vek zhivi, vek uchisj, 
+ durakom pomrjoshj" works fine in this case.}
+
+
+
+   {\bf Definition}  We say that at the points of
+   manifold $M$ we define {\tt geometrical object}
+   if for every point $\pt\in M$ and for every local coordinates 
+  $x^i_{(\a)}$ which are defined in the vicinity
+  of this points we define the sequence
+  $\Sigma^I$ of numbers 
+        $$
+\{x^i_{(\a)}\}\mapsto\quad
+\Sigma^I=\Sigma^I\left(x^i_{(\a)}\right)
+\eqno (1)
+	$$
+   such that
+  the following conditions are obeyed:
+
+1) Let $x^i_{(\a)}$ and $x^{i'}_{(\beta)}$
+be two arbitrary coordinates which are defined in
+the vicinity of the point $\pt$, then 
+         $$
+\Sigma^{I'}\left(x^{i'}_{(\beta)}\right)=
+\Psi^{I'}_{\beta\a}\left(
+\Sigma^{I}\left(x^{i}_{(\alpha)}\right)
+\right)\,.
+\eqno (2)
+	 $$
+
+2)  Let $x^i_{(\a)}$, $x^{i'}_{(\beta)}$,
+$x^{i''}_{(\gamma)}$
+be three  arbitrary coordinates which are defined in
+the vicinity of the point $\pt$, 
+and let object $\Sigma$ is defined 
+              $$
+	      \matrix
+	      {
+\hbox {in coordinates $\{x^i_{(\a)}\}$   by  the sequence 
+    $\Sigma^I_\a\left(x^i_{(\a)}\right)$}\cr
+\hbox {in coordinates $\{x^{i'}_{(\beta)}\}$   by  the sequence 
+    $\Sigma^{I'}_\beta\left(x^{i'}_{(\beta)}\right)$}\cr
+\hbox {in coordinates $\{x^{i''}_{(\gamma)}\}$   by  the sequence 
+    $\Sigma^{I''}_\gamma\left(x^{i''}_{(\gamma)}\right)$}\cr
+              }
+        $$
+	Then
+          $$
+\Psi^{I}_{\a\gamma}
+    \left(
+\Sigma^{I''}_\gamma
+\left(
+x^{i''}_{(\gamma)}
+\right)
+\right)=
+\Psi^{I}_{\a\beta}
+    \left(
+\Psi^{I'}_{\beta\gamma}
+\left(
+\Sigma^{I''}
+\left(
+x^{i''}_{(\gamma)}
+\right)
+\right)
+\right)=
+\eqno (3)
+  $$
+
+Equation (2) defines transformation of components of
+geometrical object when we transform coordinates.
+
+Equations (3)  (cocycle conditions ) guarantee
+that if you transform coordinates in different ways, the answer is
+idependent. For example if we have  five different local coordinates
+      $$
+      x_{(\a)}\,,
+      x_{(\beta)}\,,
+      x_{(\gamma)}\,,
+      x_{(\delta)}\,,
+      x_{(\rho)}\,,
+      x_{(\omega)}\,,
+         $$
+     such that
+       $$
+     x_{(\a)}\left(x_{(\beta)}
+     \left(
+     x_{(\gamma)}
+     \left(
+     x_{(\delta)}
+     \right)
+     \right)
+     \right)
+     =
+     x_{(\a)}\left(x_{(\rho)}
+     \left(
+     x_{(\omega)}
+     \left(
+     x_{(\delta)}
+     \right)
+     \right)
+     \right)  
+       $$
+then the coycle condition (3) guqrantees that
+answer will be the same if you go from coordinates
+$x_{(\delta)}$ to coordinates $x_{(\a)}$
+through coordinates  $x_{(\gamma)}$
+and $x_{(\beta)}$ or if you go from coordinates
+$x_{(\delta)}$ to coordinates $x_{(\a)}$
+through coordinates  $x_{(\omega)}$
+and $x_{(\rho)}$ or if you go.
+
+
+Cocycle conditions guarantees existence of the object.
+
+\bigskip
+
+Examples? It is crazy easy.   Remember how physisists define  vectors.
+The define vector as array of components which transforms in a given
+way if you change a basis.  It is only sometimes very curious students
+ask question: does at least one vector  exist
+\footnote{$^*$} {the existence is guaranteed by the
+condition...[try to write it!!!] (Usually 
+this question makes angry a lecturer if his (her)
+level of mathematical culture is not too high)
+}?
+
+   \bye
+  
+ 
