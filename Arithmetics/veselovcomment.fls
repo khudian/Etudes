@@ -1,0 +1,5 @@
+PWD /home/khudian/Repo/git/Etudes/Arithmetics
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /usr/share/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT veselovcomment.tex
+OUTPUT veselovcomment.log

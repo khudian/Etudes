@@ -1,0 +1,138 @@
+
+
+
+
+
+
+
+\magnification=1200
+
+\def\p {\partial}
+\def\a {\alpha}
+
+
+ \centerline {\bf A number such that its square 
+ finishes on it and Veselov's comment on it}
+
+
+ Find  a number $x$ such that its square , a number $x^2$
+finishes with it. More precisely this means the following:
+We say that a number $x$ {\it  has $m$-digits and it is finished with it}
+ if
+                  $$
+            10^m\leq x <10^{m+1} \,, and\quad
+            x^2-x \hbox {divides $10^m$}\,.      
+            \eqno(1)
+                   $$
+     {\bf Remark}           
+                   E.g. a number $x=
+                   0625$ has 4 digits and it is finished with it:                          $$                     
+          625^2-625=390000\,.         
+                   $$
+  \medskip
+
+
+                    
+
+This is very old problem for me {It is one of the first
+problems which I solved. } 
+
+{\bf Theorem}  There are two exactly two sequences
+               $$
+              a_1,a_2,\dots, a_n,\dots=5,25,625,
+               $$
+and               
+               $$
+              b_1,a_2,\dots, a_n,\dots=6,76,376,
+               $$
+such that
+
+
+1) all the numbers in these sequences obey 
+the cohdition, that their squares finishes  by them.
+
+2) Any number  $a_n$ in the first sequence possesses  
+not more than $n$ digits:
+ $a_n<10^n$.   
+
+2) Any number such that its square finish by it belongs to the first or 
+to the second sequence
+
+ This follows from the following 
+induction statement
+
+ {\bf  Lemma}
+ 
+ Suppose by induction that a number $a_n$ contains $n$ digits
+ (zeroes are permitted (see the Remark))
+ and {\it it is finished by it}:
+
+                  $$
+            a_n <10^{n} \,, and\quad
+            a_n^2-a_n \quad \hbox {divides $10^{n}$}\,.    
+                   \eqno(3)
+                   $$
+    Then there exists a number $x=0,1,2,3,4,5,6,7,8,9$
+ such that a number $a_{n+1}=10^n x+a_n$
+ contains $n+1$ digits and {\it it is finished by it}:
+                       $$
+                a_{n+1}<10^{n+1}\,,  
+            a^2_{n+1}-a_{n+1} \quad \hbox {divides $10^{n+1}$}\,.
+            \eqno(4)
+                       $$
+          (if $x =0$ then 
+                        a number $a_{n+1}$ may ''slip''   a digit.
+                        (see the remark after equation (1).))                     
+
+  Prove the lemma, i.e. prove that (3) implies (4). 
+   First note that by inductive hypothesis (3) 
+                       $$
+                       a_n^2-a_n=10^{n}s_n
+                        $$
+             with $s_n$ integer. Hence           
+                          $$
+                    a^2_{n+1}-a_{n+1}=(10^nx+a_n)^2-(10^n x+a_n)=
+     10^n\left(10^nx^2+2xa_n+s_n-x\right)\,.
+                          $$
+This expression has to be divisible on $10^{n+1}$. Hence one has to choose $x$ such that
+                              $$
+                              2xa_n+s_n-x \quad\hbox {has to be divisible on 10}
+                              \eqno (5)
+                               $$
+
+Consider examples.
+
+
+
+ Take $N=1$ and $a_1=5$.
+ $a_1^2-a_1=20$, $s_1={a_1^2-a_1\over 10}=2$. Choose x in (5).  We have
+                                $$
+                      2xa_n+s_n-x=2\cdot x\cdot  5+2-x 
+                      \quad\hbox{is divisible on 10}\Rightarrow x=2,
+                      a_2=2,a_2=25\,.         
+                                $$
+ Take $N=2$ and $a_2=25$.
+ $a_2^2-a_2=600$, $s_2={a_2^2-a_2\over 100}=6$. Choose x in (5).  We have
+                                $$
+                      2xa_n+s_n-x=2\cdot x\cdot  25+6-x 
+                      \quad\hbox{is divisible on 10}\Rightarrow x=6,
+                      a_2=2,a_2=25\,.         
+                                $$
+
+
+ 
+take
+ $N=2$ and $a_2=25$. $a_2^2-a_2=600$, $x=s_2={a_2^2-a_2\over 100}=6$. $a_3=10^nx+a_2=625$
+ 
+ 
+ take
+ $N=3$ and $a_3=625$. $a_2^2-a_2=390.000$, $x=s_2={a_2^2-a_2\over 1000}=390$. $a_4=a_3=625$
+ 
+ take
+ $N=4$ and $a_4=0625$. , $x=s_4={a_2^2-a_2\over 10000}=39$. $a_5=90625$
+ 
+ $N=5$ and $a_5=90625$. , $x=s_5={a_5^2-a_5\over 100000}=39$. $a_5=90625$
+ 
+ 
+
+ \bye
